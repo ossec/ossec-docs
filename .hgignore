@@ -8,4 +8,5 @@ syntax: glob
 *~
 *.swp
 _build
+docs/docs
 
