@@ -7,4 +7,5 @@ syntax: glob
 *.tmp 
 *~
 *.swp
+_build
 
