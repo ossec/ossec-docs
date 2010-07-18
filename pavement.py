@@ -11,7 +11,8 @@ options(
 
 @task
 @needs('paver.doctools.html')
-def html():
+def html2():
+    """Generate Publishable HTML docs using sphinx"""
     builtdocs = path("docs") / options.sphinx.builddir / "html"
     destdir = path("docs") / "docs"
     destdir.rmtree()
