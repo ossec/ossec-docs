@@ -6,12 +6,40 @@ options(
     sphinx=Bunch(
         builddir="_build",
         sourcedir="."
+    ),
+    ossec=Bunch(
+        base="/var/ossec",
+        version="2.4.1",
     )
 )
 
+@task 
+def auto():
+    """Auto load the ossec config if installed and readable"""
+    p = path("/etc/ossec-init.conf")
+    try:
+        data = p.open().read()
+
+    except IOError:
+        return 
+
+@task 
+def tests():
+    """Run all tests on all rules that have them"""
+    import or_utils.runtests
+    pass
+
+
+@task 
+def rules2rst():
+    """Convert all rules in to rst pages to act as documations"""
+    from or_utils import rules2rst 
+    pass
+
 @task
 @needs('paver.doctools.html')
-def html2():
+@needs('rules2rst')
+def html():
     """Generate Publishable HTML docs using sphinx"""
     builtdocs = path("docs") / options.sphinx.builddir / "html"
     destdir = path("docs") / "docs"

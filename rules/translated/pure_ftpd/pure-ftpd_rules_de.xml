@@ -10,7 +10,7 @@
   <rule id="11300" level="0">
     <decoded_as>pure-ftpd</decoded_as>
     <description>Grouping for the pure-ftpd rules.</description>
-  </rule><b>
+  </rule>
   
   <rule id="11301" level="3">
     <if_sid>11300</if_sid>

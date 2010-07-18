@@ -29,29 +29,25 @@ def runTest(log, rule, alert, decoder, section, name, debug=False):
     else:
         sys.stdout.write(".")
 
+def run(tpath="./tests"):
+    debug = False
+    for aFile in os.listdir(tpath):
+        aFile = os.path.join(tpath, aFile)
+        print "- [ File = %s ] ---------"%(aFile)
+        if aFile.endswith(".ini"):
+            tGroup = ConfigParser.ConfigParser()
+            tGroup.read([aFile])
+            tSections = tGroup.sections()
+            for t in tSections:
+                rule = tGroup.get(t, "rule")
+                alert = tGroup.get(t, "alert")
+                decoder = tGroup.get(t, "decoder")
+                for (name, value) in tGroup.items(t):
+                    if name.startswith("log "):
+                        if debug: 
+                            print "-"* 60
+                        runTest(value, rule, alert, decoder, t, name)
+            print ""
 
-debug = False
-for aFile in os.listdir("./tests"):
-    aFile = os.path.join("./tests", aFile)
-    print "- [ File = %s ] ---------"%(aFile)
-    if aFile.endswith(".ini"):
-        tGroup = ConfigParser.ConfigParser()
-        tGroup.read([aFile])
-        tSections = tGroup.sections()
-        for t in tSections:
-            rule = tGroup.get(t, "rule")
-            alert = tGroup.get(t, "alert")
-            decoder = tGroup.get(t, "decoder")
-            for (name, value) in tGroup.items(t):
-                if name.startswith("log "):
-                    if debug: 
-                        print "-"* 60
-                    runTest(value, rule, alert, decoder, t, name)
-        print ""
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    run()
