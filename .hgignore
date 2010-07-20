@@ -9,5 +9,6 @@ syntax: glob
 *.swp
 _build
 docs/docs
+docs/rules/
 *.pyc
 
