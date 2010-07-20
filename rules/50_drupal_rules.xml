@@ -1,0 +1,49 @@
+<!--
+
+        DRUPAL RULES
+        (use custom drupal decoder)
+
+- -->
+
+  <rule id="104110" level="3">
+    <decoded_as>drupal</decoded_as>
+    <match>Drupal</match>
+    <description>Drupal syslog message</description>
+  </rule>
+
+  <rule id="104120" level="6">
+    <if_sid>104110,1002</if_sid>
+    <match>Login attempt failed</match>
+    <description>Drupal failed login!</description>
+  </rule>
+
+  <rule id="104225" level="11">
+    <if_sid>104120</if_sid>
+    <!-- Note "admin" should be changed to whatever your uid 1 account is -->
+    <match>Login attempt failed for admin.</match>
+    <description>Drupal failed attempt to log in as admin!</description>
+  </rule>
+
+  <rule id="104130" level="10" frequency="4" timeframe="360">
+    <if_matched_sid>104120</if_matched_sid>
+    <description>Possible Drupal brute force attack </description>
+    <description>(high number of logins).</description>
+  </rule>
+
+  <rule id="104140" level="10">
+    <if_sid>104110</if_sid>
+    <match>Illegal choice</match>
+    <description>Drupal possible input injection (XSS/XSRF) attack!</description>
+  </rule>
+
+  <rule id="104150" level="7">
+    <if_sid>104110,1002</if_sid>
+    <match>Access denied</match>
+    <description>Drupal access denied error (permissions rejected).</description>
+  </rule>
+
+  <rule id="104160" level="10">
+    <if_sid>104150</if_sid>
+    <match>admin/</match>
+    <description>Drupal access denied to admin screen.</description>
+  </rule>
