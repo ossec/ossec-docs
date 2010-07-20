@@ -2,7 +2,14 @@ from paver.easy import *
 import paver.doctools
 
 
+import sys
+sys.path.append("./")
+
+
 options(
+    tests=Bunch(
+        tdir="./tests/",
+    ),
     sphinx=Bunch(
         builddir="_build",
         sourcedir="."
@@ -26,8 +33,8 @@ def auto():
 @task 
 def tests():
     """Run all tests on all rules that have them"""
-    import or_utils.runtests
-    pass
+    from or_utils import runtests
+    runtests.run(options.tests.tdir)
 
 
 @task 

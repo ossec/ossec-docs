@@ -1,0 +1,7 @@
+<decoder name="avahi">
+  <program_name>avahi-daemon</program_name>
+</decoder>
+
+<decoder name="avahi-dnsconfd">
+  <program_name>avahi-dnsconfd</program_name>
+</decoder>

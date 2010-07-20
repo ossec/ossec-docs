@@ -1,0 +1,20 @@
+
+<decoder name="bsd_kernel">
+  <program_name>/bsd</program_name>
+</decoder>
+
+<decoder name="bsd_arp">
+  <parent>bsd_kernel</parent>
+  <prematch offset="after_parent">^arp </prematch>
+  <regex offset="after_prematch"> for (\S+) by (\S+) on \S+</regex>
+  <order>dstip, extra_data</order>
+</decoder>
+<!--
+<decoder name="bsd_hd">
+  <parent>bsd_kernel</parent>
+  <use_own_name>true</use_own_name>
+  <prematch offset="after_parent">^wd|^sd</prematch>
+  <regex>^(wd\d)|(sd\d)</regex>
+  <order>extra_data</order>
+</decoder>
+-->

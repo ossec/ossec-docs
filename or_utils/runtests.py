@@ -4,15 +4,15 @@ import os
 import sys
 import os.path 
 
-def runTest(log, rule, alert, decoder, section, name, debug=False):
+def runTest(log, rule, alert, decoder, section, name, negate=False, debug=False):
     formated = "%s:%s:%s"%(rule,alert,decoder)
-    p = subprocess.Popen(['/var/ossec/bin/ossec-logtest', '-U',formated],
+    p = subprocess.Popen(['sudo', '/var/ossec/bin/ossec-logtest', '-U',formated],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             stdin=subprocess.PIPE,
             shell=False)
     std_out = p.communicate(log)[0]
-    if p.returncode != 0:
+    if (p.returncode != 0 and not negate) or (p.returncode == 0 and negate):
         print "" 
         print "-" * 60
         print "Failed: Exit code = %s"%(p.returncode) 
@@ -46,7 +46,13 @@ def run(tpath="./tests"):
                     if name.startswith("log "):
                         if debug: 
                             print "-"* 60
-                        runTest(value, rule, alert, decoder, t, name)
+                        if name.endswith("pass"):
+                            neg = False 
+                        elif name.endswith("fail"):
+                            neg = True
+                        else:
+                            neg = False 
+                        runTest(value, rule, alert, decoder, t, name, negate=neg)
             print ""
 
 if __name__ == "__main__":

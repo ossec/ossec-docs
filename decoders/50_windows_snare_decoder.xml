@@ -1,0 +1,37 @@
+
+
+
+<!-- Windows decoder - Snare format. 
+  - Will extract extra_data (as win source), action (as category), id,
+  - username and computer name (as system_name).
+  -
+  - These logs must be tab-separated (as specified in the Snare format)
+  -
+  - Examples:
+  - Aug 11 11:11:11 xx.org MSWinEventLog  1       System 59221    Thu Aug 11 01:11:11 2006        17      Windows Update Agent    Unknown User
+  - Jan 16 05:52:15 hostname.xx.org MSWinEventLog 1
+  Security        13049   Tue Jan 16 05:52:15 2007        680     Security
+  SYSTEM  User    Success Audit   ACTUATE Account Logon
+  Account Used for Logon by: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+  Account Name:     IUSR_HOSTNAME    Workstation:      ACTUATE
+  12653
+  - Jan 16 13:02:24 hostname.yy.org MSWinEventLog 1
+  Application     14539   Tue Jan 16 13:02:24 2007        1704    SceCli
+  Unknown User    N/A     Information     ACTUATE None      Security
+  policy in the Group policy objects are applied successfully.    67
+  - Jan 16 15:41:37 hostname.zz.org MSWinEventLog 1       System
+  15059   Tue Jan 16 15:41:37 2007        10      Print   username User
+  Information     HOSTNAME None            Document 76,
+  /directory/directory/directory/directory/directory/date/Afilename owned
+  by username was printed on hostname_duplex via port hostname_duplex.
+  Size in bytes: 19543296; pages printed: 162        361
+  -->
+<decoder name="windows-snare">
+  <type>windows</type>
+  <prematch>^MSWinEventLog\t\d\t\.+\t\d+\t\w\w\S+ \w\w\w \d\d \d\d</prematch>
+  <regex offset="after_prematch">^:\d\d:\d\d \d\d\d\d\t(\d+)\t(\.+)</regex>
+  <regex>\t(\.+)\t\.+\t(\.+)\t(\.+)\t</regex>
+  <order>id, extra_data, user, status, system_name</order>
+  <fts>name, id, location, user, system_name</fts>
+</decoder>
+

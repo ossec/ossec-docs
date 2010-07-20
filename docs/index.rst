@@ -11,6 +11,19 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :glob:
+
+
+
+Rules Documations
+=================
+
+.. toctree::
+   :maxdepth: 3
+   :glob:
+
+   program/*
+   rules/*
 
 Indices and tables
 ==================

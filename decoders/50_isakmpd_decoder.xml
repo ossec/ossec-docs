@@ -1,0 +1,20 @@
+
+<decoder name="isakmpd">
+  <program_name>isakmpd</program_name>
+</decoder>
+
+<!--Apr 10 13:22:52 tiny isakmpd[6988]: dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE-->
+<decoder name="isakmpd-from">
+  <parent>isakmpd</parent>
+  <prematch>message from </prematch>
+  <regex>from (\S+) port 500</regex>
+  <order>srcip</order>
+</decoder>
+
+<!--Nov  4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500-->
+<decoder name="isakmpd-response">
+  <parent>isakmpd</parent>
+  <prematch>response from peer </prematch>
+  <regex>from peer (\S+):500$</regex>
+  <order>srcip</order>
+</decoder>

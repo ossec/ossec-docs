@@ -1,0 +1,73 @@
+
+
+
+<!-- Iptables decoder.
+  - Will extract the srcip, dstip, srcport, dstport, protocol
+  - Examples:
+  - kernel: FIREWALL_OUT IN= OUT=eth0
+    SRC=192.168.6.57 DST=216.161.248.225 LEN=40 TOS=0x00 PREC=0x00 TTL=64
+    ID=18547 DF PROTO=TCP SPT=46388 DPT=37628 WINDOW=6930 RES=0x00 ACK RST
+    URGn=0
+  - kernel: IPTABLE IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:00:03:93:db:2e:b4:08:00 
+    SRC=10.4.11.40 DST=255.255.255.255 LEN=180 TOS=0x00 PREC=0x00 TTL=64 
+    ID=4753 PROTO=UDP SPT=49320 DPT=2222 LEN=160
+  - kernel: [4475569.016000] IN= OUT=lo SRC=192.168.2.11 DST=192.168.2.11 
+    LEN=52 TOS=0x10 PREC=0x00 TTL=64 ID=49546 DF PROTO=TCP SPT=43068 
+    DPT=22 WINDOW=8192 RES=0x00 ACK URGP=0     
+  - Aug 17 10:03:37 myhostname kernel: SFW2-INext-DROP-DEFLT IN=eth0 OUT= MAC=00:08:02:da:c8:51:00:0f:f7:74:31:8a:08:00 SRC=1.2.3.36 DST=1.2.3.194 LEN=28 TOS=0x00 PREC=0x00 TTL=44 ID=60200 PROTO=ICMP TYPE=8 CODE=0 ID=10466 SEQ=21229   
+  -->
+<decoder name="iptables">
+   <program_name>^kernel</program_name>
+</decoder>
+     
+<decoder name="iptables-1">
+   <parent>iptables</parent>
+   <type>firewall</type>
+   <prematch>^[\d+.\d+] \S+ IN=</prematch>
+   
+   <regex>^[\d+.\d+] (\S+) \.+ SRC=(\S+) DST=(\S+)</regex>
+   <regex> \.+ PROTO=(\w+) </regex>
+   <order>action,srcip,dstip,protocol</order>
+</decoder>
+
+<decoder name="iptables-1">
+   <parent>iptables</parent>
+   <type>firewall</type>
+   <regex offset="after_regex">^SPT=(\d+) DPT=(\d+) </regex>
+   <order>srcport,dstport</order>
+</decoder>
+
+<decoder name="iptables-2">
+   <parent>iptables</parent>
+   <type>firewall</type>
+   <prematch>^\S+ IN=</prematch>
+   
+   <regex>^(\S+) \.+ SRC=(\S+) DST=(\S+) \.+ </regex>
+   <regex>PROTO=(\w+) </regex>
+   <order>action,srcip,dstip,protocol</order>
+</decoder>
+
+<decoder name="iptables-2">
+   <parent>iptables</parent>
+   <type>firewall</type>
+   <regex offset="after_regex">^SPT=(\d+) DPT=(\d+) </regex>
+   <order>srcport,dstport</order>
+</decoder>
+
+<decoder name="iptables-shorewall">
+   <parent>iptables</parent>
+   <type>firewall</type>
+   <prematch>^Shorewall:\S+:</prematch>
+   
+   <regex offset="after_prematch">^(\S+):\.+ SRC=(\S+) DST=(\S+) \.+ </regex>
+   <regex>PROTO=(\w+) </regex>
+   <order>action,srcip,dstip,protocol</order>
+</decoder>
+
+<decoder name="iptables-shorewall">
+   <parent>iptables</parent>
+   <type>firewall</type>
+   <regex offset="after_regex">^SPT=(\d+) DPT=(\d+) </regex>
+   <order>srcport,dstport</order>
+</decoder>   
+
