@@ -33,8 +33,7 @@ def auto():
 @task 
 def tests():
     """Run all tests on all rules that have them"""
-    from or_utils import runtests
-    runtests.run(options.tests.tdir)
+    sh("nosetests or_utils.runtests")
 
 
 @task 
