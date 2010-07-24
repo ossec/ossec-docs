@@ -12,7 +12,8 @@ options(
     ),
     sphinx=Bunch(
         builddir="_build",
-        sourcedir="."
+        sourcedir=".",
+        destdir = path("docs") / "docs"
     ),
     ossec=Bunch(
         base="/var/ossec",
@@ -47,11 +48,28 @@ def rules2rst():
     pass
 
 @task
-@needs('paver.doctools.html')
-@needs('rules2rst')
+@needs('clean_docs', 'paver.doctools.html','rules2rst')
 def html():
     """Generate Publishable HTML docs using sphinx"""
     builtdocs = path("docs") / options.sphinx.builddir / "html"
-    destdir = path("docs") / "docs"
-    destdir.rmtree()
-    builtdocs.move(destdir)
+    builtdocs.move(options.sphinx.destdir) 
+
+@task 
+def clean_docs():
+    """ Clean up and remove all gerenated files"""
+    options.sphinx.destdir.rmtree()
+
+
+@task
+def clean_tests():
+    """ Clean up and remove all temp files created during tests runs"""
+    path("nosetests.xml").unlink() 
+
+
+@task 
+@needs('clean_docs', 'clean_tests')
+def clean():
+    """Clean up and remove all build and other non required files"""
+    pass 
+
+

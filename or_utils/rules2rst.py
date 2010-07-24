@@ -29,13 +29,11 @@ full_tree = {}
 for aFile in rulesDir.walkfiles():
     if aFile.endswith("xml"):
         x = fromstring("<newroot>" + aFile.bytes() + "</newroot>")
-        print x
         r = x
         rstFile = docsDir / "{0}.rst".format(aFile.name )
         f = rstFile.open(mode="w")
         f.write(rh_data.format({"title":aFile.name, "filename":aFile}))
         if r:
-            print r
             for i in r.findall("./group"):
                 f.write("\n\n.. describe:: groups {0}\n".format(i.get("name")))
                 if i:
