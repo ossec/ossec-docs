@@ -10,7 +10,7 @@ import nose
 class LogtestError(Exception):
     pass 
 
-def runTest(log, rule, alert, decoder, section, name, negate=False):
+def runTest(rule, alert, decoder, section, name, log, negate=False):
     formated = "%s:%s:%s"%(rule,alert,decoder)
     p = subprocess.Popen(['sudo', '/var/ossec/bin/ossec-logtest', '-U',formated],
             stdout=subprocess.PIPE,
@@ -54,8 +54,8 @@ def test_generator(tpath="./tests"):
                         else:
                             neg = False 
                         
-                        yield runTest, value, rule, alert, decoder, t, name, neg
+                        yield runTest, rule, alert, decoder, t, name, value, neg
 
 
-#if __name__ == "__main__":
-#    run()
+if __name__ == "__main__":
+    nose.run(".")

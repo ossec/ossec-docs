@@ -26,14 +26,18 @@ def auto():
     p = path("/etc/ossec-init.conf")
     try:
         data = p.open().read()
-
     except IOError:
         return 
 
 @task 
+@cmdopts([("xunit", 'x', 'Create XUnit output files')])
 def tests():
     """Run all tests on all rules that have them"""
-    sh("nosetests or_utils.runtests")
+    if options.xunit:
+        sh("nosetests --with-xunit or_utils.runtests")
+    else:
+        sh("nosetests or_utils.runtests")
+
 
 
 @task 
