@@ -56,13 +56,13 @@ def html():
 
 @task 
 def clean_docs():
-    """ Clean up and remove all gerenated files"""
+    """Clean up and remove all gerenated files"""
     options.sphinx.destdir.rmtree()
 
 
 @task
 def clean_tests():
-    """ Clean up and remove all temp files created during tests runs"""
+    """Clean up and remove all temp files created during tests runs"""
     path("nosetests.xml").unlink() 
 
 
