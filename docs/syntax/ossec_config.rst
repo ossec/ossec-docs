@@ -9,4 +9,6 @@ ossec.conf: syntax and options
 
     head_ossec_config.global
     head_ossec_config.syscheck
+    head_ossec_config.rules
+
 
