@@ -13,17 +13,23 @@ Contents:
    :maxdepth: 2
    :glob:
 
+   manual/manual*
+
+   faq/faq
 
 
-Rules Documations
-=================
+
+Reference 
+=========
 
 .. toctree::
-   :maxdepth: 3
-   :glob:
+    :maxdepth: 1
+    
+    syntax/ossec_config
+    programs/programs
+    rules/rules
 
-   program/*
-   rules/*
+
 
 Indices and tables
 ==================
