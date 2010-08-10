@@ -8,14 +8,14 @@ OSSEC HIDS will perform rootkit detection on every system where the agent is
 installed. The rootcheck (rootkit detection engine) will be executed every X minutes 
 (user specified - by default every 2 hours) to detect any possible rootkit installed. 
 Used with the log analysis and the integrity checking engine, it will become a very 
-powerful monitoring solution 
+powerful monitoring solution.
 
 Checks that rootcheck preforms 
 ------------------------------
 
 #. Read the rootkit_files.txt which contains a big database of rootkits and files 
    used by them. It will try to stats, fopen and opendir each specified file. We 
-   use all these system calls, because some kernel-level rootkits, hide files 
+   use all these system calls because some kernel-level rootkits hide files 
    from some system calls. The more system calls we try, the better the detection. 
    This method is more like an anti-virus rule that needs to be updated constantly. 
    The chances of false-positives are small, but false negatives can be produced 
@@ -28,13 +28,13 @@ Checks that rootcheck preforms
    files and the Makedev script. A lot of rootkits use the /dev to hide files. 
    This technique can detect even non-public rootkits.
 #. Scan the whole filesystem looking for unusual files and permission problems. Files 
-   owned by root, with written permission to others are very dangerous and the rootkit 
+   owned by root, with write permission to others are very dangerous, and the rootkit 
    detection will look for them. Suid files, hidden directories and files will also be 
    inspected.
 #. Look for the presence of hidden processes. We use getsid() and kill() to check if 
    any pid is being used or not. If the pid is being used, but "ps" can't see it, it 
    is the indication of kernel-level rootkit or a trojaned version of "ps". We also 
-   verify the output of kill and getsid that should be the same.
+   verify that the output of kill and getsid are the same.
 #. Look for the presence of hidden ports. We use bind() to check every tcp and udp port 
    on the system. If we can't bind to the port (it's being used), but netstat does not 
    show it, we probably have a rootkit installed
