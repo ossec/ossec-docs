@@ -7,7 +7,9 @@
 Welcome to OSSEC's documentation!
 =================================
 
-Contents:
+Manual & FAQ 
+============
+
 
 .. toctree::
    :maxdepth: 2
@@ -23,11 +25,11 @@ Reference
 =========
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     
-    syntax/ossec_config
+    syntax/index
     programs/index
-    rules/rules
+    rules/index
 
 
 

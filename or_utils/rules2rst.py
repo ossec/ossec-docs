@@ -18,8 +18,9 @@ def indent(elem,level=1):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
+decoderDir = path("./decoders/")
 rulesDir = path("rules")
-docsDir = path("docs/rules")
+docsDir = path("docs/rules/rules")
 rule_header = path("docs") / path("header.template.rst")
 rh_data = rule_header.bytes()
 rule_footer = path("docs") / path("footer.template.rst")

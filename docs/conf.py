@@ -48,7 +48,7 @@ copyright = u'2010, Lots of people'
 # built documents.
 #
 # The short X.Y version.
-version = '0.0.1'
+version = '2.5.0'
 # The full version, including alpha/beta/rc tags.
 release = '0.0.1'
 
@@ -91,10 +91,11 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-sys.path.append(os.path.abspath('_themes'))
+#sys.path.append(os.path.abspath('_themes'))
 #html_theme_path = ['_themes']
 #html_theme = 'flask'
 #html_theme = 'haiku'
+html_theme = 'sphinxdoc'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -113,7 +114,7 @@ sys.path.append(os.path.abspath('_themes'))
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = 'ossec_logo.jpg'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
