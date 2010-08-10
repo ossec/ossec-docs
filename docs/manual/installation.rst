@@ -18,7 +18,7 @@ OSSEC HIDS Manager/Agent Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Devicesnstallation of the OSSEC HIDS is very simple. Just follow these few steps to have 
+Installation of the OSSEC HIDS is very simple. Just follow these few steps to have 
 it working.  Please make sure that you understand the type of installation you are choosing 
 (manager, agent, local, etc) and are also aware of the order (always install the manager 
 first). If you don’t know what I’m talking about, it’s a good idea to visit the `install types
@@ -36,14 +36,14 @@ page`.
 
 .. note:: 
 
-    If you want a step by step guide, you can use one of the many step by step install guids
+    If you want a step by step guide, you can use one of the many step by step install guides
     from `here`_
 
 #. Download the lastest version and verify it's checksum.
 
     .. note:: 
 
-        on some systems, the command md5, sha1 or wget may not exist, so try md5sum, sha1sum 
+        On some systems, the command md5, sha1 or wget may not exist, so try md5sum, sha1sum 
         or lynx respectively instead.
 
     .. code-block:: console
