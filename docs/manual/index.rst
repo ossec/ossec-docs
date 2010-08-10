@@ -13,6 +13,7 @@ Contents:
     supported-systems
     installation
     syscheck
+    rootcheck
     agentless-monitoring
     process-monitoring
     agent-configuration
