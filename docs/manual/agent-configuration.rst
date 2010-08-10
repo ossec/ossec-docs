@@ -23,8 +23,8 @@ ossec.conf
 
     <agent_config>
         <localfile>
-        <location>/var/log/my.log</location>
-        <log_format>syslog</log_format>
+            <location>/var/log/my.log</location>
+            <log_format>syslog</log_format>
         </localfile>
     </agent_config>
 

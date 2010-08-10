@@ -25,7 +25,7 @@ XML except to show location:
     <ossec_config> 
         <email_alerts> 
             <!-- 
-            Global options here
+            Email_alerts options here
             --> 
         </email_alerts> 
     </ossec_config> 

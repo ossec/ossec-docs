@@ -7,8 +7,6 @@ ossec.conf: syntax and options
     :maxdepth: 2
     :glob:
 
-    head_ossec_config.global
-    head_ossec_config.syscheck
-    head_ossec_config.rules
-
+    head_ossec_config*
+    
 
