@@ -19,7 +19,6 @@ Contents:
     output/output
     ar/ar
     
-    tools/agent_control
 
 
 
