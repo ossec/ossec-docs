@@ -10,10 +10,45 @@
 
         - This will enable realtime/continous montoring on linux using the inotify system calls.
 
+    - **report_changes**: Value=yes 
+
+        - Report diffs of files changes.  This is limited to text files at this time.  
+
     - **check_all**: Value=yes 
 
-        - When used and you specify a directory, it will monitor all its files recursively
+        - All the following check_* options are used together.  
         
+    - **check_sum**: Value=yes
+
+        - Check the md5 and sha1 hashs of the  of the files will be checked.  
+
+          This is the same as using both check_sha1sum="yes" and check_md5sum="yes"
+          
+    - **check_sha1sum**: Value=yes
+
+        - When used only the sha1 hash of the files will be checked.  
+
+    - **check_md5sum**: Value=yes
+
+        - The md5 hash of the files will be checked.  
+
+    - **check_size**: Value=yes
+
+        - The size of the files will be checked.  
+
+    - **check_owner**: Value=yes
+
+        - Check the owner of the files selected 
+
+    - **check_group**: Value=yes  
+
+        - Check the group owner of the files/directories selected 
+
+    - **check_perm**: Value=yes 
+       
+        - Check the UNIX permission of the files/directories selected.
+          On windows this will still on check POSIC permissions. 
+
     **Allowed:** Any directory or file name 
 
 .. object:: ignore 

@@ -24,9 +24,9 @@ decoderDir = path("./decoders/")
 rst_rulesDir = path("docs/rules/rules")
 rst_decoderDir = path("docs/rules/decoders/")
 
-rule_header = path("docs") / path("header.template.rst")
+rule_header = path("docs") / path("header.template")
 rh_data = rule_header.bytes()
-rule_footer = path("docs") / path("footer.template.rst")
+rule_footer = path("docs") / path("footer.template")
 rf_data = rule_footer.bytes()
 
 full_tree = {} 
