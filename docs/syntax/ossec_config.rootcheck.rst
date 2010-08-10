@@ -1,3 +1,16 @@
+.. object:: base_directory
+
+    The base directory that will be append to the following options:
+
+    - rootkit_files 
+    - rootkit_trojans 
+    - windows_malware 
+    - windows_audit 
+    - windows_apps 
+    - systems_audit 
+
+    **Allowes:** Path to a directory 
+
 .. object:: rootkit_files
 
     You should change this file if you want rootcheck to read the signatures from somewhere else.
@@ -13,6 +26,14 @@
     **Default:** /etc/shared/rootkit_trojans.txt
 
     **Allowed:** A file with the trojans signatures
+
+.. object:: windows_audit 
+
+.. object:: system_audit 
+
+.. object:: windows_apps
+
+.. object:: windows_malware 
 
 .. object:: scanall 
     

@@ -3,11 +3,11 @@
 Frequently asked questions
 ##########################
 
-Contents:
+Sections
+--------
 
 .. toctree::
     :maxdepth: 3
-    :numbered:
     :glob:
 
     *
