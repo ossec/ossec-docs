@@ -8,6 +8,7 @@ Notification within OSSEC to email are broken down into sections.
 
 * Single Notification E-Mail addresses 
 * Granular Notifications to any number of E-mail addresses
+* Daily E-mail Reports 
 
 .. warning:: 
 
@@ -19,3 +20,4 @@ Notification within OSSEC to email are broken down into sections.
 
     standard-email-output 
     granular-email-output
+    reports-email-output 

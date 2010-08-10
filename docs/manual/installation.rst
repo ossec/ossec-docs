@@ -83,10 +83,12 @@ page`.
 OSSEC HIDS Windows agent Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Windows agent installation has its own page at: :ref:`manual-win-install`. 
+
 OSSEC HIDS agentless Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Agentless installation has its own page at: `Agentless Monitoring` 
+Agentless installation has its own page at: :ref:`manual-agentless`.
 
 OSSEC Updates
 ~~~~~~~~~~~~~

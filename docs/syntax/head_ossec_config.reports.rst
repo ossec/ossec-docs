@@ -1,7 +1,7 @@
 
-.. _ossec_config.reports: 
+.. _ossec_config.global: 
 
-ossec.conf: Reports options
+ossec.conf: Global options
 ==========================
 
 Overview 
@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Reports options are avaiable in the the following installation types:
+Global options are avaiable in the the following installation types:
 
 * server
 * local 
@@ -18,7 +18,7 @@ Reports options are avaiable in the the following installation types:
 Location 
 ^^^^^^^^
 
-All reports options must be configured in the /var/ossec/etc/ossec.conf 
+All global options must be configured in the /var/ossec/etc/ossec.conf 
 and used within the <ossec_config> tag.  
 
 XML except to show location:
@@ -26,15 +26,15 @@ XML except to show location:
 .. code-block:: xml 
 
     <ossec_config> 
-        <reports> 
+        <global> 
             <!-- 
-            Reports options here
+            Global options here
             --> 
-        </reports> 
+        </global> 
     </ossec_config> 
 
 
 Options
 -------
 
-.. include:: ossec_config.reports.rst 
+.. include:: ossec_config.global.rst 
