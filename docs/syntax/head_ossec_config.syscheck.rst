@@ -1,5 +1,7 @@
+.. _ossec_config.syscheck: 
+
 ossec.conf: Syscheck Options
-======================
+============================
 
 Overview 
 --------

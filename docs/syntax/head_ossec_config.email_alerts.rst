@@ -1,5 +1,7 @@
+.. _ossec_config.email_alerts: 
+
 ossec.conf: Granular Email options
-====================
+==================================
 
 Overview 
 --------

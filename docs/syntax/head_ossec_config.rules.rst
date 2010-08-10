@@ -1,5 +1,8 @@
+.. _ossec_config.rules: 
+
+
 ossec.conf: Rules options
-====================
+=========================
 
 Overview 
 --------

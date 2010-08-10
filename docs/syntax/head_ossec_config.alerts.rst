@@ -1,5 +1,8 @@
+.. _ossec_config.alerts:
+
+
 ossec.conf: Alerts Options
-======================
+==========================
 
 Overview 
 --------

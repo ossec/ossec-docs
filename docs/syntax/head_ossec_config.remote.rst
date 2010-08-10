@@ -1,5 +1,7 @@
-ossec.conf: remote Options
-======================
+.. _ossec_config.remote: 
+
+ossec.conf: Remote Options
+==========================
 
 Overview 
 --------

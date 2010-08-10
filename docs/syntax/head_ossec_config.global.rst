@@ -1,5 +1,8 @@
+
+.. _ossec_config.global: 
+
 ossec.conf: Global options
-====================
+==========================
 
 Overview 
 --------

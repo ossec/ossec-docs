@@ -1,4 +1,6 @@
-ossec.conf: rootcheck options
+.. _ossec_config.rootcheck: 
+
+ossec.conf: Rootcheck options
 =============================
 
 Overview 
