@@ -21,16 +21,16 @@ the manager, making it easy to administer even a large number of agents.
 Agents
 ~~~~~~
 
-The agent is a small program installed on the systems you desire to monitor. It 
-will collect information on real time and forward to the manager for analysis 
-and correlation. It has a very small memory and CPU footprint by default, not 
-affecting with the system’s usage.
+The agent is a small program or collection of programs installed on the systems 
+you desire to monitor. The agent will collect information in real time and forward 
+it to the manager for analysis and correlation. It has a very small memory and CPU 
+footprint by default, not affecting system?\x80\x99s usage.
 
 *Agent security*: It runs with a low privilege user (created during the 
 installation) and inside a chroot jail isolated from the system. Most of the 
-agent configuration is pushed from the manager, with just some of them are stored 
-locally on each agent. In case these local options are changed, the manager will 
-receive the information and will generate an alert.
+agent configuration is pushed from the manager, with just some of configuration 
+stored locally on each agent. In case these local options are changed, the manager 
+will receive the information and will generate an alert.
 
 Agentless
 ~~~~~~~~~
@@ -43,11 +43,11 @@ Virtualization/Vmware
 ~~~~~~~~~~~~~~~~~~~~~
 
 OSSEC allows you to install the agent on the guest operating systems or inside 
-the host (Vmware ESX). With the agent installed inside the VMware ESX you can get 
+the host (Vmware ESX). With the agent installed inside VMware ESX you can get 
 alerts about when a VM guest is being installed, removed, started, etc. It 
 also monitors logins, logouts and errors inside the ESX server. In addition to 
-that, OSSEC performs the CIS checks for Vmware, alerting if there is any 
-insecure configuration option enabled or any other issue.
+that, OSSEC performs the Center for Internet Security (CIS) checks for Vmware, 
+alerting if there is any insecure configuration option enabled or any other issue.
 
 Firewalls, switches and routers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
