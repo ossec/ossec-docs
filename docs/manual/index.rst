@@ -16,7 +16,7 @@ Contents:
     agentless-monitoring
     process-monitoring
     agent-configuration
-    output/output
+    output/index 
     ar/ar
     
 

@@ -1,6 +1,45 @@
 
-.. _manual-out-database:
+.. _manual-out-prelude:
 
-Sending output to a Database
-============================
+Sending output to Database
+=========================
+
+OSSEC supports MySQL and PostgreSQL database outputs.
+
+
+Enabling Database Support
+-------------------------
+
+.. note::
+
+    You must have the MySQL or PgSQL Client  libraries installed on the OSSEC server.
+
+Before you run the "./install.sh" script execute the following to compile OSSEC with
+database support. 
+
+.. code-block:: console 
+
+    # cd ossec-hids-*
+    # cd src; make setdb; cd ..
+    # ./install.sh 
+
+Enable Database output in the configuration
+------------------------------------------
+
+After installation is complete database support needs to be turned on and enabled. 
+The following command will enable database daemons on the next restart. 
+
+.. code-block:: console 
+
+    # /var/ossec/bin/ossec-control enable database 
+
+
+Database Spacfic Setup
+----------------------
+
+.. toctree::
+    
+    mysql-database-output 
+    pgsql-database-outout
+
 

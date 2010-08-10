@@ -13,9 +13,9 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   manual/manual*
+   manual/index
 
-   faq/faq
+   faq/index
 
 
 
@@ -26,7 +26,7 @@ Reference
     :maxdepth: 1
     
     syntax/ossec_config
-    programs/programs
+    programs/index
     rules/rules
 
 

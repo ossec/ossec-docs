@@ -7,9 +7,11 @@ Contents:
 
 .. toctree::
     :maxdepth: 2
-    :glob:
 
-    *
+    database-output 
+    prelude-output
+    syslog-output
+
 
 
 
