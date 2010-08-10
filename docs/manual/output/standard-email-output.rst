@@ -39,4 +39,12 @@ Notification.
 Full details on all the options are avaiable at :ref:`ossec_config.alerts`
 
 
+Restart OSSEC to complete the changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+OSSEC needs to be restarted for the change to take effect. 
+
+.. code-block:: console 
+
+    # /var/ossec/bin/ossec-control restart 
 

@@ -48,7 +48,7 @@ def rules2rst():
     pass
 
 @task
-@needs('clean_docs', 'paver.doctools.html','rules2rst')
+@needs('clean_docs', 'rules2rst', 'paver.doctools.html')
 def html():
     """Generate Publishable HTML docs using sphinx"""
     builtdocs = path("docs") / options.sphinx.builddir / "html"

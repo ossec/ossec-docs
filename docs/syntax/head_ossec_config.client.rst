@@ -1,6 +1,6 @@
 .. _ossec_config.client:
 
-ossec.conf: client Options
+ossec.conf: Client Options
 ==========================
 
 Overview 

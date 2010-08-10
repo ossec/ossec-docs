@@ -48,14 +48,14 @@ page`.
 
     .. code-block:: console
 
-        [root@ossec ~]# wget http://www.ossec.net/files/ossec-hids-latest.tar.gz
-        [root@ossec ~]# wget http://www.ossec.net/files/ossec-hids-latest_sum.txt
-        [root@ossec ~]# cat ossec-hids-latest_sum.txt
+        # wget http://www.ossec.net/files/ossec-hids-latest.tar.gz
+        # wget http://www.ossec.net/files/ossec-hids-latest_sum.txt
+        # cat ossec-hids-latest_sum.txt
         MD5 (ossec-hids-latest.tar.gz) = XXXXXXX
         SHA1 (ossec-hids-latest.tar.gz) = YYYYYYYY
-        [root@ossec ~]# md5 ossec-hids-latest.tar.gz
+        # md5 ossec-hids-latest.tar.gz
         MD5 (ossec-hids-latest.tar.gz) = XXXXXXX
-        [root@ossec ~]# sha1 ossec-hids-latest.tar.gz
+        # sha1 ossec-hids-latest.tar.gz
         SHA1 (ossec-hids-latest.tar.gz) = YYYYYYYY
 
 
@@ -64,10 +64,9 @@ page`.
 
     .. code-block:: console 
 
-        [root@ossec ~]# tar -zxvf ossec-hids-*.tar.gz (or gunzip -d; tar -xvf)
-        [root@ossec ~]# cd ossec-hids-* 
-
-        [root@ossec ~]# ./install.sh
+        # tar -zxvf ossec-hids-*.tar.gz (or gunzip -d; tar -xvf)
+        # cd ossec-hids-* 
+        # ./install.sh
 
 #. Remember to open the port 1514 (UDP) if there is a firewall between the server and 
    the agents (if you didn’t choose the local installation).
@@ -79,7 +78,7 @@ page`.
 
     .. code-block:: console 
 
-        [root@ossec ~]# /var/ossec/bin/ossec-control start  
+        # /var/ossec/bin/ossec-control start  
 
 OSSEC HIDS Windows agent Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
