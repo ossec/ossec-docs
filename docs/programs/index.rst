@@ -8,8 +8,7 @@ Contents:
 .. toctree::
     :glob:
 
-    agent_control
-    ossec-logtest
+    *
     
 
 
