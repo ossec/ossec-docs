@@ -1,17 +1,17 @@
-.. object:: server-ip 
+.. xml:element:: server-ip 
 
     Specify the IP address of the analysis server
 
     **Allowed:** Any Valid IP Address 
 
-.. object:: server-hostname 
+.. xml:element:: server-hostname 
 
     Specify the hostname of the analysis server 
 
     **Allowed:** Any Valid hostname 
 
 
-.. object:: port 
+.. xml:element:: port 
 
     Specifies the port to send the events (must be the same to the one used by the analysis server). 
 

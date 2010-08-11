@@ -3,8 +3,6 @@
 Manual
 ######
 
-Contents:
-
 .. toctree::
     :maxdepth: 2
 
@@ -15,7 +13,7 @@ Contents:
     syscheck
     rootcheck
     agentless-monitoring
-    process-monitoring
+    log-monitoring
     agent-configuration
     output/index 
     ar/ar

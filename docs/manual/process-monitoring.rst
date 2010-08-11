@@ -11,7 +11,7 @@ to monitor the output of commands via OSSEC and treat those just like they were
 log files.
 
 For example, if you wanted to monitor the disk space utilization, you would need
-to setup a cron job to dump the output of “df -h” to a log file (maybe
+to setup a cron job to dump the output of "df -h" to a log file (maybe
 /var/log/df.log) and configure OSSEC to look at it.
 
 Now, with the new version of OSSEC you can do it directly in there with the
@@ -36,7 +36,7 @@ the following when any partition reached 100%::
     ossec: output: "df -h": /dev/sdb1 24G 12G 11G 100% /var/backup
 
 Another example, if you want to monitor the load average, you can configure
-OSSEC to monitor the “uptime” command and alert when it is higher than 2, for
+OSSEC to monitor the "uptime" command and alert when it is higher than 2, for
 example: 
 
 .. code-block:: xml 

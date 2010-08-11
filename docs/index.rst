@@ -30,6 +30,7 @@ Reference
     syntax/index
     programs/index
     rules/index
+    glossary
 
 
 

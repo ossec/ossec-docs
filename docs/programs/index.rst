@@ -1,15 +1,12 @@
 
-######################
-Programs and Man pages
-######################
-
-Contents:
+#########
+Man pages
+#########
 
 .. toctree::
     :glob:
 
-    agent_control
-    ossec-logtest
+    *
     
 
 

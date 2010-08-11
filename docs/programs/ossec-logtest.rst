@@ -19,9 +19,6 @@ osssec-logtest augument options
 
 .. program:: ossec-logtest 
 
-   ossec-logtest will interactively allow for testing of rules, decoders, and lists.  This 
-   is very useful for writing and managing ossec rules 
-
 .. option:: -d 
 
    Print debug output to the terminal.   
