@@ -1,3 +1,46 @@
+
+.. element:: rule 
+
+    Defines a rule 
+
+    **Attrubutes:** 
+
+    - *level* 
+
+        - Specifies the level of the rule. Alerts and responses use this value. 
+        - **Allowes:** Any number (0 to 16) 
+
+
+    - *id* 
+
+        - Specifies the ID of the rule. 
+        - **Allowes:** Any number from 100 to 99999 
+
+    - *accuracy* 
+
+        - Specifies if the rule is accurate or not (0 is not, 1 is yes)
+        - **Allowes:** 0/1 
+
+    - *maxsize* 
+
+        - Specifies the maximum size of the event. 
+        - **Allowes:** Any number from 1 to 99999 
+
+    - *frequency* 
+
+        - Specifies the number of times the rule must have matched before firing it.
+        - **Allowes:** Any number from 1 to 999
+
+    - *timeframe* 
+
+        - The timeframe used for the frequency. 
+        - **Allowes:** Any number from 1 to 9999
+
+    - *ignore* 
+
+        - The time to ignore this rule after firing it (to avoid floods). 
+        - **Allowes:** Any number from 1 to 9999
+
 .. element:: match
 
     Any string to match against the event (log).
@@ -178,7 +221,7 @@
 
     CVE related to the rule. 
 
-    This element is no longer used.  Please use :element:`info` with the cve type. 
+    This element is no longer used.  Please use :xml:`info` with the cve type. 
 
 .. element:: options 
 
