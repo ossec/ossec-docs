@@ -43,7 +43,7 @@ for aFile in rulesDir.walkfiles():
                 if i:
                     for a in i.findall("./rule"):
                         #f.write("\n\nRule ID: {0}\n^^^^^^^^^^^^^^^^^^^^^^\n\n".format(a.get("id")))
-                        f.write("\n\n.. describe:: rule-id-{0}\n\n".format(a.get("id")))
+                        f.write("\n\n.. xml:element:: rule-id-{0}\n\n".format(a.get("id")))
                         for z in a.findall("./description"):
                             f.write("\n\n{0}\n\n".format(z.text))
         
