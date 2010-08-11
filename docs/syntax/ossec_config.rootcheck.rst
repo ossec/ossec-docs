@@ -9,7 +9,7 @@
     - windows_apps 
     - systems_audit 
 
-    **Allowes:** Path to a directory 
+    **Allowed:** Path to a directory 
 
 .. object:: rootkit_files
 
