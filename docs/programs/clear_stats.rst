@@ -6,7 +6,7 @@ clear_stats
 
 Clear the events stats 
 
-clear_stats augument options 
+clear_stats argument options 
 ----------------------------
 
 .. program:: clear_stats 
