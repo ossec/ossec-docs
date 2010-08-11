@@ -6,10 +6,40 @@ manage_agents
 
 manage_agents is available in two versions:
 
--a version for OSSEC server installations
--a version for OSSEC agent installations
+- a version for OSSEC server installations
+- a version for OSSEC agent installations
 
-The purpose of manage_agents is to provide an easy-to-use interface to handle authentication keys for OSSEC agents. These authentication keys are required for secure (encrypted and authenticated) communication between the OSSEC server and its affiliated agent instances.
+The purpose of manage_agents is to provide an easy-to-use interface to handle authentication 
+keys for OSSEC agents. These authentication keys are required for secure (encrypted and 
+authenticated) communication between the OSSEC server and its affiliated agent instances.
+
+manage_agents augument options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. program:: manage_agents 
+
+.. option:: -h
+
+    Display the help message 
+
+.. option:: -V 
+
+    Display OSSEC Version 
+
+.. option:: -l 
+
+    List available agents. 
+
+.. option:: -e <id> 
+
+    Extracts key for an agent (Manager only).
+
+.. option:: -i <id> 
+
+    Import authentication key (Agent only). 
+
+Usage 
+===== 
 
 To add an agent to a server with manage_agents you need to follow the steps below.
 
@@ -36,7 +66,8 @@ The server version provides an interface to
 Running manage_agents and start screen
 ======================================
 
-To run manage_agents, you have to execute the following command on the OSSEC server as a user with appropriate privileagues (e.g. root):
+To run manage_agents, you have to execute the following command on the OSSEC server as a 
+user with appropriate privileagues (e.g. root):
 
 .. code-block:: console
 
@@ -77,13 +108,20 @@ This can for example be the hostname. In this example the agent name will be age
       Please provide the following:
        * A name for the new agent: agent1
 
-After that you have to specify the IP adress for the agent. This can either be a single IP adress (e.g. 192.168.1.25) or a range of IPs (e.g. 192.168.2.0/24). The latter way is preferrable if the IP of the agent will change a lot, e.g. by being assigned a new IP via DHCP after each boot.
+After that you have to specify the IP adress for the agent. This can either be a single 
+IP adress (e.g. 192.168.1.25) or a range of IPs (e.g. 192.168.2.0/24). The latter way 
+is preferrable if the IP of the agent will change a lot, e.g. by being assigned a 
+new IP via DHCP after each boot.
 
 .. code-block:: console
 
        * The IP Address of the new agent: 192.168.2.0/24
 
-The last information you will be asked for is the ID you want to assign to the agent. manage_agents will suggest a value for the ID to you. This value is the lowest positive number that is not already assigned to another agent. The ID 000 is assigned to the OSSEC server. To accept the suggestion, simply press ENTER. To choose another value, type it in and press ENTER.
+The last information you will be asked for is the ID you want to assign to the agent. 
+manage_agents will suggest a value for the ID to you. This value is the lowest positive 
+number that is not already assigned to another agent. The ID 000 is assigned to the 
+OSSEC server. To accept the suggestion, simply press ENTER. To choose another value, 
+type it in and press ENTER.
 
 .. code-block:: console
 
@@ -100,13 +138,18 @@ Now you have to confirm adding the agent and you are done with this step.
     Confirm adding it?(y/n): y
     Agent added.
 
-After that manage_agents appends the agent information to /var/ossec/etc/client.keys and goes back to the start screen.
+After that manage_agents appends the agent information to /var/ossec/etc/client.keys 
+and goes back to the start screen.
 
 
 Extracting the key for an agent
 ===============================
 
-After adding an agent, a key for the agent is created that has to be copied to the agent. To get the key, use the E option in the manage_agents start screen. You will be given a list of all agents already added to the server. To extract the key for an agent, simply type in the ID of the respective agent. It is important to note that you have to enter all digits of the ID.
+After adding an agent, a key for the agent is created that has to be copied to the 
+agent. To get the key, use the E option in the manage_agents start screen. You will be 
+given a list of all agents already added to the server. To extract the key for an agent, 
+simply type in the ID of the respective agent. It is important to note that you have 
+to enter all digits of the ID.
 
 .. code-block:: console
 
@@ -121,12 +164,16 @@ After adding an agent, a key for the agent is created that has to be copied to t
 
     ** Press ENTER to return to the main menu.
 
-You can now copy that key to the agent1 and import it there via the agent version of manage_agents.
+You can now copy that key to the agent1 and import it there via the agent version of 
+manage_agents.
 
 Removing an agent
 =================
 
-If you want to detach an OSSEC agent from the server, use the R option in the manage_agents start screen. You will be given a list of all agents already added to the server. To remove an agent, simply type in the ID of the respective agent, press enter and confirm the deletion. It is important to note that you have to enter all digits of the ID.
+If you want to detach an OSSEC agent from the server, use the R option in the manage_agents 
+start screen. You will be given a list of all agents already added to the server. To remove 
+an agent, simply type in the ID of the respective agent, press enter and confirm the deletion. 
+It is important to note that you have to enter all digits of the ID.
 
 .. code-block:: console
 
@@ -138,7 +185,10 @@ If you want to detach an OSSEC agent from the server, use the R option in the ma
     Confirm deleting it?(y/n): y
     Agent '001' removed.
 
-Afterwards the agent information manage_agents invalidates the agent information in /var/ossec/etc/client.keys. Only the values for ID and the key are still being stored to avoid conflicts when adding other agents later. The deleted agent can no longer communicate with the OSSEC server.
+Afterwards the agent information manage_agents invalidates the agent information in 
+/var/ossec/etc/client.keys. Only the values for ID and the key are still being stored to 
+avoid conflicts when adding other agents later. The deleted agent can no longer 
+communicate with the OSSEC server.
 
 
 manage_agents on OSSEC agents
@@ -172,6 +222,10 @@ The agent version provides an interface for importing authentication keys.
     ** Press ENTER to return to the main menu.
 
 
-After that you can quit manage_agents. For the changes to be in effect you have to restart the server and start the agent.
+After that you can quit manage_agents. For the changes to be in effect you have to 
+restart the server and start the agent.
+
+
+
 
 
