@@ -7,6 +7,7 @@ Syntax and Options
     :maxdepth: 2
 
     regex 
+    analysis
     ossec_config
 
 
