@@ -1,4 +1,4 @@
-.. object:: location 
+.. xml:element:: location 
 
     Specify the location of the log to be read.
 
@@ -6,7 +6,7 @@
 
     **Allowes:** Any log file 
 
-.. object:: log_format 
+.. xml:element:: log_format 
 
     The format of the log being read. 
     
@@ -30,7 +30,7 @@
     - apache
     - command 
 
-.. object:: command 
+.. xml:element:: command 
 
     The command to run a all output will be read as a log file.  
 

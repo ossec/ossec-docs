@@ -1,28 +1,28 @@
-.. object:: hostname 
+.. xml:element:: hostname 
 
     IP Address of the database server. 
 
     **Allowes:** any valid IP address 
 
-.. object:: username 
+.. xml:element:: username 
 
     Username to access the database. 
 
     **Allowes:** Any Valid Username 
 
-.. object:: password 
+.. xml:element:: password 
 
     Password to access the database. 
 
     **Allowes:** Any Password 
 
-.. object:: database  
+.. xml:element:: database  
 
     Database name to store the alerts. 
 
     **Allowes:** database name  
 
-.. object:: type
+.. xml:element:: type
 
     Type of the database (Mysql or PostgreSQL). 
 

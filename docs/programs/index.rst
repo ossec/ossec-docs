@@ -1,9 +1,7 @@
 
-######################
-Programs and Man pages
-######################
-
-Contents:
+#########
+Man pages
+#########
 
 .. toctree::
     :glob:
