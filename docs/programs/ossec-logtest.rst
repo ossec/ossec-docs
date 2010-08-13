@@ -14,7 +14,7 @@ Something ossec-logtest can help with:
 
 ossec-logtest accepts standard input for all log to test.  
 
-osssec-logtest augument options
+osssec-logtest argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-logtest 

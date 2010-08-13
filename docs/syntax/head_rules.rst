@@ -1,4 +1,4 @@
-.. _ossec_config.alerts:
+.. _rules.rules:
 
 
 Rules Syntax
@@ -11,4 +11,4 @@ Overview
 Options 
 ------- 
 
-.. include:: ./rules.rst 
+.. include:: ./rules.rst

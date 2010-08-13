@@ -13,7 +13,7 @@ The purpose of manage_agents is to provide an easy-to-use interface to handle au
 keys for OSSEC agents. These authentication keys are required for secure (encrypted and 
 authenticated) communication between the OSSEC server and its affiliated agent instances.
 
-manage_agents augument options
+manage_agents argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: manage_agents 
@@ -39,7 +39,7 @@ manage_agents augument options
     Import authentication key (Agent only). 
 
 Usage 
-===== 
+-----
 
 To add an agent to a server with manage_agents you need to follow the steps below.
 
@@ -64,7 +64,7 @@ The server version provides an interface to
 - list all agents already added to the OSSEC server.
 
 Running manage_agents and start screen
-======================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To run manage_agents, you have to execute the following command on the OSSEC server as a 
 user with appropriate privileagues (e.g. root):
@@ -91,7 +91,7 @@ After that, you see the start screen:
 You can now choose one of the actions.
 
 Adding an agent
-===============
+^^^^^^^^^^^^^^^
 
 To add an agent type A in the start screen:
 
@@ -143,7 +143,7 @@ and goes back to the start screen.
 
 
 Extracting the key for an agent
-===============================
+-------------------------------
 
 After adding an agent, a key for the agent is created that has to be copied to the 
 agent. To get the key, use the E option in the manage_agents start screen. You will be 
@@ -168,7 +168,7 @@ You can now copy that key to the agent1 and import it there via the agent versio
 manage_agents.
 
 Removing an agent
-=================
+-----------------
 
 If you want to detach an OSSEC agent from the server, use the R option in the manage_agents 
 start screen. You will be given a list of all agents already added to the server. To remove 
