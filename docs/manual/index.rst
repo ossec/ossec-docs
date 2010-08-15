@@ -12,9 +12,8 @@ Manual
     installation
     syscheck
     rootcheck
-    agentless-monitoring
+    agent
     log-monitoring
-    agent-configuration
     output/index 
     ar/ar
     
