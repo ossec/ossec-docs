@@ -26,9 +26,15 @@ import sys, os
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 sys.path.append("docs")
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinx.ext.todo',
-        'sphinx.ext.pngmath', 'sphinx.ext.ifconfig', 'sphinx.ext.viewcode',
-        "sphinx.ext.graphviz", "_ext.xml_domain"]
+extensions = [
+        'sphinx.ext.autodoc', 
+        'sphinx.ext.intersphinx', 
+        'sphinx.ext.todo',
+        'sphinx.ext.pngmath', 
+        'sphinx.ext.ifconfig', 
+        'sphinx.ext.viewcode',
+        "sphinx.ext.graphviz", 
+        "_ext.xml_domain"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -171,7 +177,7 @@ html_static_path = ['_static']
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'OSSECRulesdoc'
+htmlhelp_basename = 'OSSECdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -185,7 +191,7 @@ htmlhelp_basename = 'OSSECRulesdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'OSSECRules.tex', u'OSSEC Rules Documentation',
+  ('index', 'OSSECRules.tex', u'OSSEC Documentation',
    u'Jeremy Rossi', 'manual'),
 ]
 
@@ -218,7 +224,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'ossecrules', u'OSSEC Rules Documentation',
+    ('index', 'ossecrules', u'OSSEC Documentation',
      [u'Jeremy Rossi'], 1)
 ]
 
