@@ -20,21 +20,21 @@ manage_agents argument options
 
 .. option:: -h
 
-    Display the help message 
+    Display the help message. 
 
 .. option:: -V 
 
-    Display OSSEC Version 
+    Display OSSEC Version. 
 
 .. option:: -l 
 
     List available agents. 
 
-.. option:: -e <id> 
+.. option:: -e <agent_id> 
 
     Extracts key for an agent (Manager only).
 
-.. option:: -i <id> 
+.. option:: -i <key> 
 
     Import authentication key (Agent only). 
 
