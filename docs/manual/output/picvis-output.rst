@@ -6,7 +6,7 @@ Sending alerts to picvis
 
 .. warning:: 
 
-    PicVis support is experimnetal, and not fully supported.  Bug reports and 
+    PicVis support is experimental, and not fully supported.  Bug reports and 
     improvements are needed. 
 
 Installation of PicVis 
@@ -33,7 +33,7 @@ For more full details on this section of the config see :ref:`ossec_config.globa
 Start up PicVis 
 --------------- 
 
-On picviz side, an OSSEC template is available in the template directory and Picviz should be run like this:
+On the picviz side, an OSSEC template is available in the template directory and Picviz should be run like this:
 
 .. code-block:: console 
 

@@ -14,7 +14,7 @@ Enabling Prelude Support
 
     You must have the Prelude libraries installed on the OSSEC server.
 
-Before you run the "./install.sh" script externalecute the following to compule OSSEC with
+Before you run the "./install.sh" script execute the following to compile OSSEC with
 prelude support. 
 
 .. code-block:: console 
