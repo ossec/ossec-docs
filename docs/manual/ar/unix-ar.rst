@@ -1,4 +1,4 @@
-.. _manual-unix-ar: 
+.. _manual-ar-unix: 
 
 UNIX: Active Response Configuration
 ===================================
