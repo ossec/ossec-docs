@@ -3,7 +3,7 @@
 Daily E-Mail Reports
 ====================
 
-Daily E-Mail reports are summaries of the happening of the day from OSSEC presepective.  
+Daily E-Mail reports are summaries of the happening of the day from an OSSEC presepective.  
 
 
 Configuration options
