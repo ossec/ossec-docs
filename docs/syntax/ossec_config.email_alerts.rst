@@ -2,25 +2,25 @@
 
     E-Mail recipients of alerts 
 
-    **Allowes:** Any valid e-mail address 
+    **Allowed:** Any valid e-mail address 
 
 .. xml:element:: level  
 
     Minimum alerting level to forward the e-mails.
 
-    **Allowes:** Any alert level 0 to 16 
+    **Allowed:** Any alert level 0 to 16 
 
 .. xml:element:: group 
 
     The alert that must match this group to be forwarded.
 
-    **Allowes:** Any group/category 
+    **Allowed:** Any group/category 
 
 .. xml:element:: event_location 
 
     The alert must match this event location to be forwarded.
 
-    **Allowes:** Any agent name, ip address or log file 
+    **Allowed:** Any agent name, ip address or log file 
 
 .. xml:element:: format 
 
@@ -31,7 +31,7 @@
 
     **Default:** full 
 
-    **Allowes:** full/sms 
+    **Allowed:** full/sms 
 
 .. xml:element:: do_not_delay 
 

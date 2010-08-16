@@ -2,25 +2,25 @@
 
     IP Address of the database server. 
 
-    **Allowes:** any valid IP address 
+    **Allowed:** any valid IP address 
 
 .. xml:element:: username 
 
     Username to access the database. 
 
-    **Allowes:** Any Valid Username 
+    **Allowed:** Any Valid Username 
 
 .. xml:element:: password 
 
     Password to access the database. 
 
-    **Allowes:** Any Password 
+    **Allowed:** Any Password 
 
 .. xml:element:: database  
 
     Database name to store the alerts. 
 
-    **Allowes:** database name  
+    **Allowed:** database name  
 
 .. xml:element:: type
 
@@ -30,4 +30,4 @@
         
          OSSEC must be compiled with the database type that is to be used. 
 
-    **Allowes:** mysql/postgresql 
+    **Allowed:** mysql/postgresql 

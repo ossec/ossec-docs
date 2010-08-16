@@ -3,7 +3,7 @@
 
     Load a single rule file.  
 
-    **Allowes:** Path and file name of rule to load example: rules/config.xml 
+    **Allowed:** Path and file name of rule to load example: rules/config.xml 
 
         
 .. object:: rule 
@@ -11,7 +11,7 @@
     
     Load a single rule file.  
 
-    **Allowes:** Path and file name of rule to load example: rules/config.xml 
+    **Allowed:** Path and file name of rule to load example: rules/config.xml 
 
     .. note:: 
 
@@ -30,7 +30,7 @@
         
         - *Defaults*: regex "_rules.xml$" is used unless another one is specified. 
       
-    **Allowes:** Path to a directoy of rule files 
+    **Allowed:** Path to a directoy of rule files 
 
     **Example:**
 
@@ -63,7 +63,7 @@
         If no decoders are spcified in ossec.conf the lagacy etc/decoder.xml and 
         etc/local_decoder.xml are loaded
 
-    **Allowes:** Path and file name of decoder to load example: rules/decoder/decoder.xml 
+    **Allowed:** Path and file name of decoder to load example: rules/decoder/decoder.xml 
 
 
 .. object:: decoder_dir 
@@ -78,7 +78,7 @@
         
         - *Defaults*: regex "_decoder.xml$" is used unless another one is specified. 
       
-    **Allowes:** Path to a directoy of decoder files 
+    **Allowed:** Path to a directoy of decoder files 
 
     **Example:**
 
@@ -113,6 +113,6 @@
         program the file extenstion should not be include in this directive.  ossec's 
         tools will correct append the correct .cdb or .txt extenstion as needed. 
 
-    **Allowes:** Path to a list file to be loaded and compiled. 
+    **Allowed:** Path to a list file to be loaded and compiled. 
 
 

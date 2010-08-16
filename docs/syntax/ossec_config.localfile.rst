@@ -4,7 +4,7 @@
 
     **Default:** Multiple (eg /var/log/messages)
 
-    **Allowes:** Any log file 
+    **Allowed:** Any log file 
 
 .. xml:element:: log_format 
 
@@ -16,7 +16,7 @@
 
     **Default:** syslog 
 
-    **Allowes:** 
+    **Allowed:** 
 
     - syslog 
     - snort-full 
@@ -34,7 +34,7 @@
 
     The command to run a all output will be read as a log file.  
 
-    **Allowes:** And commandline and arguments. 
+    **Allowed:** And commandline and arguments. 
 
 
 

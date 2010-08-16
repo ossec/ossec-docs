@@ -9,7 +9,7 @@ Daily E-Mail reports are summaries of the happening of the day from an OSSEC pre
 Configuration options
 ---------------------
 
-All these configurations options can be specified in the /var/ossec/etc/ossec.conf. 
+All of these configurations options can be specified in the /var/ossec/etc/ossec.conf. 
 
 .. include:: ../../syntax/ossec_config.reports.rst 
 

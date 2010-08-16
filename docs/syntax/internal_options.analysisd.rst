@@ -4,7 +4,7 @@
 
     **Default:** 360 
 
-    **Allowes:** Any interger 
+    **Allowed:** Any interger 
 
 .. intopt:: analysisd.stats_maxdiff
 

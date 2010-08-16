@@ -14,15 +14,15 @@
 
 .. element:: program_name 
 
-    **Allowes:** Any :ref:`os_match`
+    **Allowed:** Any :ref:`os_match`
 
 .. element:: prematch 
 
-    **Allowes:** Any :ref:`os_match`
+    **Allowed:** Any :ref:`os_match`
 
 .. element:: regex 
 
-    **Allowes:** Any :ref:`os_regex`
+    **Allowed:** Any :ref:`os_regex`
 
 .. element:: order 
 
