@@ -16,11 +16,11 @@ All of these configurations options can be specified in the /var/ossec/etc/ossec
 Examples
 --------
 
-Receive summary of all the authentication success
+Receive summary of all the authentication success alerts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The follow example added to ossec.conf will send a daily report 
-on all authentication_success and sorted by the related feild srcip.
+The following example added to ossec.conf will send a daily report 
+on all authentication_success alerts sorted by the related field srcip.
 
 .. code-block:: xml 
     
@@ -32,7 +32,7 @@ on all authentication_success and sorted by the related feild srcip.
             <email_to>me@example.com</email_to>
             
 
-Receive summary of all File integrity monitoring 
+Receive summary of all File integrity monitoring alerts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following example added to the ossec.conf will send 

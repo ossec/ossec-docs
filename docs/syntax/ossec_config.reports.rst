@@ -41,7 +41,7 @@
 
 .. xml:element:: user 
 
-    Filter by the user name.  This will match on ether srcuser or dstuser 
+    Filter by the user name.  This will match on either srcuser or dstuser 
 
     **Allowed:** Any username 
 
@@ -59,4 +59,5 @@
 
     This is a required feild for a report to function.  
 
+    **Allowed:** Any email address
 
