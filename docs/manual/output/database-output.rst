@@ -43,7 +43,7 @@ The following command will enable the database daemon on the next restart.
     # /var/ossec/bin/ossec-control enable database 
 
 
-Database Spacfic Setup
+Database Specific Setup
 ----------------------
 
 .. toctree::
