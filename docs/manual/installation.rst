@@ -90,6 +90,12 @@ OSSEC HIDS agentless Installation
 
 Agentless installation has its own page at: :ref:`manual-agentless`.
 
+OSSEC HIDS Binary installation 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+On systems that do not have a C compiler or one is not allowed by policy 
+installation can be done using :ref:`manual-install-binary`
+
 OSSEC Updates
 ~~~~~~~~~~~~~
 

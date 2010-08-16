@@ -7,3 +7,4 @@ Log Analysis Syntax
     :maxdepth: 2
 
     head_rules 
+    head_decoders 

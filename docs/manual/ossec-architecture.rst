@@ -79,6 +79,40 @@ following documents:
 
 .. _a link http://ossec.net/ossec-docs/auscert-2007-dcid.pdf 
 
+.. graphviz::
+
+    digraph ossecflow {
+        subgraph agent_1 {
+            style=filled;
+            color=blue;
+            label = "Agent 1";
+            node [style=filled,color=white]; 
+            rootcheck1;
+            syscheck1;
+            logcollector1;
+            agent1 [shape=box];
+            execd1;
+        }
+        agent2 [shape=box];
+        agent3 [shape=box];
+        rootcheck1 -> syscheck1; 
+        syscheck1 -> agent1; 
+        logcollector1 -> agent1; 
+        agent1 -> remoted;
+        agent2 -> remoted;
+        agent3 -> remoted;
+        rootcheck -> syscheck; 
+        syscheck -> analysisd; 
+        remoted -> analysisd; 
+        agentlessd -> analysisd; 
+        logcollector -> analysisd; 
+        analysisd -> dbd; 
+        analysisd -> execd; 
+        analysisd -> agent1 -> execd1; 
+        analysisd -> csyslog; 
+        analysisd -> maild; 
+    }
+
 Support
 ~~~~~~~
 
