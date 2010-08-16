@@ -88,7 +88,7 @@
 
     .. warning:: 
         
-        PicVis is expairmental. 
+        PicVis is experimental. 
 
 
     **Allowed:** yes 
