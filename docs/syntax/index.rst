@@ -9,6 +9,7 @@ Syntax and Options
     regex 
     analysis
     ossec_config
+    internal_options
 
 
     
