@@ -36,7 +36,7 @@ Enable Database output in the configuration
 ------------------------------------------
 
 After installation is complete database support needs to be turned on and enabled. 
-The following command will enable database daemons on the next restart. 
+The following command will enable the database daemon on the next restart. 
 
 .. code-block:: console 
 
