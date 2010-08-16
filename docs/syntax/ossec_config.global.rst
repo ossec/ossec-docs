@@ -1,6 +1,6 @@
 .. xml:element:: email_notification
 
-    nable or disable e-mail alerting.
+    Enable or disable e-mail alerting.
 
     **Default:** no
 
@@ -27,7 +27,7 @@
 
 .. xml:element:: email_maxperhour
 
-    Specifies the maximum number of e-mails to be sent per hour. It will store the extra ones and send them together if this number is reached.
+    Specifies the maximum number of e-mails to be sent per hour. All emails in excess of this setting will be queued for later distribution.
 
     **Default:** 12
 
