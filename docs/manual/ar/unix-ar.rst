@@ -3,7 +3,7 @@
 UNIX: Active Response Configuration
 ===================================
 
-The Active response configuration is divided by two parts. In the first one you
+The Active response configuration is divided into two parts. In the first one you
 configure the commands you want to execute. In the second one, you bind the
 commands to rules or events.
 
