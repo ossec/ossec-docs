@@ -21,7 +21,7 @@ Location
 All rootcheck options must be configured in the /var/ossec/etc/ossec.conf or 
 /var/ossec/etc/shared/agents.conf and used within the <ossec_config> tag.  
 
-XML except to show location if part of ossec.conf:
+XML excerpt to show location if part of ossec.conf:
 
 .. code-block:: xml 
 
@@ -33,7 +33,7 @@ XML except to show location if part of ossec.conf:
         </rootcheck> 
     </ossec_config> 
 
-xml except to the Location if part of agent.conf 
+XML excerpt to the Location if part of agent.conf 
 
 
 .. code-block:: xml 
