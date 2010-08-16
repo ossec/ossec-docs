@@ -24,7 +24,7 @@
 
 .. xml:element:: type
 
-    Type of the database (Mysql or PostgreSQL). 
+    Type of database (Mysql or PostgreSQL). 
 
     .. note:: 
         
