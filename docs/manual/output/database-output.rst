@@ -10,7 +10,7 @@ OSSEC supports MySQL and PostgreSQL database outputs.
 Configuration options
 ---------------------
 
-All these configurations options can be specified in the agent ossec.conf file.
+These configurations options can be specified in the server or local install ossec.conf file.
 
 
 .. include:: ../../syntax/ossec_config.database_output.rst 
