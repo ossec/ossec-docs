@@ -20,7 +20,7 @@ mitigation techniques.
 
 **Benefits**:
 
-- Fast (time-based) response on attacks. If an attack is detected,
+- Fast (time-based) response to attacks. If an attack is detected,
   an action can be taken immediately.
 - Extremely good deterrent against port scans, brute forces and some
   other types of “information gathering” attacks.
@@ -37,7 +37,7 @@ mitigation techniques.
 - Comes with granular options, allowing you to only block on rules with low
   false-positive rate.
 - Allows the specification of timeouts. Even if someone is blocked by
-  mistake, after a few minutes he or she will be able to access again.
+  mistake, after a few minutes he or she will be given access again.
 
 Configure and running active Response
 -------------------------------------
