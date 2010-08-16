@@ -54,7 +54,7 @@ database.
 Complete PgSQL Output 
 ^^^^^^^^^^^^^^^^^^^^^ 
 
-All this is left is to restart ossec for the changes to take effect. 
+All that is left is to restart ossec for the changes to take effect. 
 
 .. code-block:: console 
 
