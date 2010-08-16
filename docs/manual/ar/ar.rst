@@ -1,7 +1,7 @@
 
 .. _manual-ar:
 
-Active Responces
+Active Responses
 ================
 
 Overview
@@ -39,7 +39,7 @@ mitigation techniques.
 - Allows the specification of timeouts. Even if someone is blocked by
   mistake, after a few minutes he or she will be able to access again.
 
-Configure and running active Responce
+Configure and running active Response
 -------------------------------------
 
 .. toctree::
