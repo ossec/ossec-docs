@@ -1,9 +1,9 @@
 
 
-:mod:`{0[filename]}`
+:mod:`%(filename)s`
 ===============
 
-.. module:: {0[filename]}
+.. module:: %(filename)s
    :platform: 
    :synopsis: 
 

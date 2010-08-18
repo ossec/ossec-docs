@@ -34,20 +34,20 @@ for aFile in rulesDir.walkfiles():
     if aFile.endswith("xml"):
         x = fromstring("<newroot>" + aFile.bytes() + "</newroot>")
         r = x
-        rstFile = rst_rulesDir / "{0}.rst".format(aFile.name )
+        rstFile = rst_rulesDir / path("%s.rst"%(aFile.name ))
         f = rstFile.open(mode="w")
-        f.write(rh_data.format({"title":aFile.name, "filename":aFile}))
+        f.write(rh_data%({"title":aFile.name, "filename":aFile}))
         if r:
             for i in r.findall("./group"):
-                f.write("\n\n.. describe:: groups {0}\n".format(i.get("name")))
+                f.write("\n\n.. describe:: groups %s\n"%(i.get("name")))
                 if i:
                     for a in i.findall("./rule"):
                         #f.write("\n\nRule ID: {0}\n^^^^^^^^^^^^^^^^^^^^^^\n\n".format(a.get("id")))
-                        f.write("\n\n.. xml:element:: rule-id-{0}\n\n".format(a.get("id")))
+                        f.write("\n\n.. xml:element:: rule-id-%s\n\n"%(a.get("id")))
                         for z in a.findall("./description"):
-                            f.write("\n\n{0}\n\n".format(z.text))
+                            f.write("\n\n%s\n\n"%(z.text))
         
-        f.write(rf_data.format({"title":aFile.name, "filename":aFile}))
+        f.write(rf_data%({"title":aFile.name, "filename":aFile}))
         f.write(".. code-block:: xml\n")
         f.write("   :linenos:\n\n")
         for i in aFile.lines():
