@@ -34,4 +34,4 @@ XML excerpt to show location:
 Options 
 ------- 
 
-.. include:: ./ossec_config.client.rst
+.. include:: ./ossec_config.client.trst

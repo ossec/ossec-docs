@@ -11,4 +11,4 @@ Overview
 Options 
 ------- 
 
-.. include:: ./rules.rst
+.. include:: ./rules.trst

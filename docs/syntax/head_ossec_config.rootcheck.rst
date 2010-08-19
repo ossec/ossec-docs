@@ -49,4 +49,4 @@ XML excerpt to the Location if part of agent.conf
 Options
 -------
 
-.. include:: ossec_config.rootcheck.rst 
+.. include:: ossec_config.rootcheck.trst 

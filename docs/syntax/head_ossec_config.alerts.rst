@@ -36,4 +36,4 @@ XML excerpt to show location:
 Options 
 ------- 
 
-.. include:: ./ossec_config.alerts.rst
+.. include:: ./ossec_config.alerts.trst

@@ -37,4 +37,4 @@ XML excerpt to show location:
 Options
 -------
 
-.. include:: ossec_config.database_output.rst 
+.. include:: ossec_config.database_output.trst 
