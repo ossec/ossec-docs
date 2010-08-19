@@ -40,6 +40,11 @@ def tests():
         sh("nosetests or_utils.runtests")
 
 
+@task 
+def repo_pull():
+    """Pull updates from public repo"""
+    sh("hg pull")
+    sh("hg update")
 
 @task 
 def rules2rst():
