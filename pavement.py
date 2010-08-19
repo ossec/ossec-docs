@@ -7,6 +7,11 @@ sys.path.append("./")
 
 
 options(
+    incoming=Bunch(
+        jrossi="http://bitbucket.org/jrossi/ossec-rules", 
+        ddpbsd="http://bitbucket.org/ddpbsd/ossec-rules",
+        oscar="http://bitbucket.org/oscarschneider/ossec-rules",
+    ),
     tests=Bunch(
         tdir="./tests/",
     ),
@@ -31,6 +36,18 @@ def auto():
         return 
 
 @task 
+def incoming():
+    """Check for incoming changes from known bitbucket forks"""
+    for i in options.incoming.keys():
+        results = sh("hg incoming %s"%(options.incoming[i]),ignore_error=True,capture=True)
+        if "no changes found" in results:
+            info("%s -> no changes found"%(i))
+        else:
+            error("%s -> changes found: \n %s"%(i, 
+                "\n".join(["\t%s"%(x) for x in results.split("\n")])))
+
+
+@task 
 @cmdopts([("xunit", 'x', 'Create XUnit output files')])
 def tests():
     """Run all tests on all rules that have them"""
@@ -41,7 +58,7 @@ def tests():
 
 
 @task 
-def repo_pull():
+def fetch():
     """Pull updates from public repo"""
     sh("hg pull")
     sh("hg update")

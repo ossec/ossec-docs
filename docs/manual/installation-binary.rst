@@ -4,7 +4,7 @@ Binary Installation
 ===================
 
 On some system a compatible compiler is not available, this leads to problems for OSSEC                                                                                      
-standard install method. To work around this OSSEC supports being build on a different server
+standard install method. To work around this OSSEC supports being built on a different server
 then it's been installed on. 
 
 .. note:: 
