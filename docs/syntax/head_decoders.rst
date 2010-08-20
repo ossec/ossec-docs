@@ -11,4 +11,4 @@ Overview
 Options 
 ------- 
 
-.. include:: ./decoders.rst
+.. include:: ./decoders.trst

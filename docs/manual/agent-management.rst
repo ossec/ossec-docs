@@ -4,7 +4,7 @@
 Working with Agents 
 ===================
 
-To add an agent to a server with manage_agents you need to follow the steps below.
+To add an agent to a server with :ref:`manage_agents` you need to follow the steps below.
 
 1. Run manage_agents on the OSSEC server.
 2. Add an agent.
@@ -81,7 +81,7 @@ new IP via DHCP after each boot.
        * The IP Address of the new agent: 192.168.2.0/24
 
 The last information you will be asked for is the ID you want to assign to the agent. 
-manage_agents will suggest a value for the ID to you. This value is the lowest positive 
+:ref:`manage_agents` will suggest a value for the ID to you. This value is the lowest positive 
 number that is not already assigned to another agent. The ID 000 is assigned to the 
 OSSEC server. To accept the suggestion, simply press ENTER. To choose another value, 
 type it in and press ENTER.
@@ -101,7 +101,7 @@ Now you have to confirm adding the agent and you are done with this step.
     Confirm adding it?(y/n): y
     Agent added.
 
-After that manage_agents appends the agent information to /var/ossec/etc/client.keys 
+After that :ref:`manage_agents` appends the agent information to /var/ossec/etc/client.keys 
 and goes back to the start screen.
 
 
@@ -133,7 +133,7 @@ manage_agents.
 Removing an agent
 -----------------
 
-If you want to detach an OSSEC agent from the server, use the R option in the manage_agents 
+If you want to detach an OSSEC agent from the server, use the R option in the :ref:`manage_agents`
 start screen. You will be given a list of all agents already added to the server. To remove 
 an agent, simply type in the ID of the respective agent, press enter and confirm the deletion. 
 It is important to note that you have to enter all digits of the ID.
@@ -148,7 +148,7 @@ It is important to note that you have to enter all digits of the ID.
     Confirm deleting it?(y/n): y
     Agent '001' removed.
 
-Afterwards the agent information manage_agents invalidates the agent information in 
+Afterwards the agent information :ref:`manage_agents` invalidates the agent information in 
 /var/ossec/etc/client.keys. Only the values for ID and the key are still being stored to 
 avoid conflicts when adding other agents later. The deleted agent can no longer 
 communicate with the OSSEC server.
@@ -185,7 +185,7 @@ The agent version provides an interface for importing authentication keys.
     ** Press ENTER to return to the main menu.
 
 
-After that you can quit manage_agents. For the changes to be in effect you have to 
+After that you can quit :ref:`manage_agents`. For the changes to be in effect you have to 
 restart the server and start the agent.
 
 

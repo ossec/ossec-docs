@@ -34,4 +34,4 @@ XML excerpt to show location:
 Options 
 ------- 
 
-.. include:: ./ossec_config.remote.rst
+.. include:: ./ossec_config.remote.trst

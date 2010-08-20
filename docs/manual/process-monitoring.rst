@@ -4,11 +4,20 @@
 Process Monitoring
 ==================
 
+Overview 
+--------
+
 We love logs. Inside OSSEC we treat everything as if it was a log and parse it
 appropriately with our rules. However, some information is not available in log
 files but we still want to monitor them. To solve that gap, we added the ability
 to monitor the output of commands via OSSEC and treat those just like they were
 log files.
+
+Configuration examples
+---------------------- 
+
+Disk space utilization (df -h) example 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For example, if you wanted to monitor the disk space utilization, you would need
 to setup a cron job to dump the output of "df -h" to a log file (maybe
@@ -34,6 +43,9 @@ the following when any partition reached 100%::
     Src IP: (none)
     User: (none)
     ossec: output: "df -h": /dev/sdb1 24G 12G 11G 100% /var/backup
+
+Load average (uptime) Example 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Another example, if you want to monitor the load average, you can configure
 OSSEC to monitor the "uptime" command and alert when it is higher than 2, for

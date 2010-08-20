@@ -36,4 +36,4 @@ XML excerpt to show location:
 Options 
 ------- 
 
-.. include:: ./ossec_config.syscheck.rst
+.. include:: ./ossec_config.syscheck.trst

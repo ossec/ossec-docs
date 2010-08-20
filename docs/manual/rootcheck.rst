@@ -50,4 +50,4 @@ for the "auto_ignore"" and “alert_new_file” which are manager side options. 
 “ignore” option if specified on the manager becomes global for all agents.
 
 
-.. include:: ../syntax/ossec_config.rootcheck.rst 
+.. include:: ../syntax/ossec_config.rootcheck.trst 

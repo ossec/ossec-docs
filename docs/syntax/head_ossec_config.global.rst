@@ -37,4 +37,4 @@ XML excerpt to show location:
 Options
 -------
 
-.. include:: ossec_config.reports.rst 
+.. include:: ossec_config.reports.trst 
