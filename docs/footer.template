@@ -1,5 +1,5 @@
 
 
-Full XML Output: {0[filename]}
+Full XML Output: %(filename)s
 ------------------------------
 
