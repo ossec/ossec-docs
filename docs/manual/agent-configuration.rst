@@ -66,7 +66,7 @@ configuration will be pushed much quicker.
 Restart the agent 
 ^^^^^^^^^^^^^^^^^
 
-Once the configuration file is pushed, you can run the command agent_control to
+Once the configuration file is pushed, you can run the command :ref:`agent_control` to
 see if the agent received the config and restart the agent remotely.
 
 .. code-block:: console 

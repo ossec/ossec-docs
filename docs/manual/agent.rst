@@ -14,6 +14,7 @@ can be scripted.
     :maxdepth: 2
 
     agent-management
+    agent-dhcp-nat
     agent-configuration
     agentless-monitoring
 
