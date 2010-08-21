@@ -56,7 +56,7 @@
     
     The response will be executed on any event with this level or higher. 
 
-.. xml:elemnet:: active-response.timeout 
+.. xml:element:: active-response.timeout 
 
     How long until the reverse command is executed (IP unblocked, for example). 
 

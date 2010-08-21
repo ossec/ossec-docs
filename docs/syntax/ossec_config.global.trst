@@ -1,4 +1,4 @@
-.. xml:elemnet:: global 
+.. xml:element:: global 
 
 
 .. xml:element:: global.email_notification

@@ -1,4 +1,4 @@
-.. xml:elemnet:: email_alerts
+.. xml:element:: email_alerts
 
 
 .. xml:element:: email_alerts.email_to 
