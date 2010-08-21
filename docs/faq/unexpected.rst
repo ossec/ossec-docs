@@ -103,6 +103,8 @@ How to debug ossec?
     With some calls to verbose, recompile and replace the stock binary with your edited 
     one. Restart ossec and tail the log.
 
+.. _faq_unexpected_comm:
+
 The communication between my agent and the server is not working. What to do? 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -169,4 +171,105 @@ The communication between my agent and the server is not working. What to do?
 What does "1403 - Incorrectly formated message" means? 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+It means that the server (or agent) wasn't able to decrypt the message from the 
+other side of the connection.  See `The communication between my agent and the server is not working. What to do?`
+
+The main reasons for this to happen are:
+
+- Wrong authentication keys configured (you imported a key from a different agent).
+- The IP address you configured the agent is different from what the server is seeing.
+
+How to fix it: 
+
+- Check if you imported the right authentication keys into the agent.
+- Check if the IP address is correctly. 
+- You can also try to remove the agent (using manage_agents), add it back again 
+  and re-import the keys into the agent. Make sure to restart the server (first) 
+  and then the agent after that.
+
+What does "1210 - Queue not accessible?" mean?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Check queue/ossec/queue
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If you have logs similar to the following in ``/var/ossec/queue/ossec/queue``::
+
+    2008/04/29 15:40:39 ossec-syscheckd(1210): ERROR: Queue '/var/ossec/queue/ossec/queue' not accessible: 'Connection refused'.
+    2008/04/29 15:40:39 ossec-rootcheck(1210): ERROR: Queue '/var/ossec/queue/ossec/queue' not accessible: 'Connection refused'.
+    2008/04/29 15:40:45 ossec-logcollector(1210): ERROR: Queue '/var/ossec/queue/ossec/queue' not accessible: 'Connection refused'.
+    2008/04/29 15:40:45 ossec-logcollector(1211): ERROR: Unable to access queue: '/var/ossec/queue/ossec/queue'. Giving up..
+    2008/04/29 15:41:00 ossec-syscheckd(1210): ERROR: Queue '/var/ossec/queue/ossec/queue' not accessible: 'Connection refused'.
+    2008/04/29 15:41:00 ossec-rootcheck(1211): ERROR: Unable to access queue: '/var/ossec/queue/ossec/queue'. Giving up.. 
+
+It means that :ref:`ossec-analysisd` is not running for some reason.
+
+**The main reasons for this to happen are:**
+
+- :ref:`ossec-analysisd` didn't start properly. Look at the logs for any error from it.
+- :ref:`ossec-analysisd` didn't start at all. There is a bug in the init scripts that 
+  during system reboot, it may not start if the PID is already in use (we are working 
+  to fix it).
+
+**How to fix it:** 
+
+Stop OSSEC and start it back again:
+
+.. code-block:: console 
+
+    # /var/ossec/bin/ossec-control stop
+    (you can also check at /var/ossec/var/run that there is not PID file in there)
+    # /var/ossec/bin/ossec-control start
+
+If there is any configuration error, fix it. 
+
+Check queue/alerts/ar 
+~~~~~~~~~~~~~~~~~~~~~
+
+If you have logs similar to the following in ``/var/ossec/queue/alerts/ar``::
+
+    2009/02/17 12:03:04 ossec-analysisd(1210): ERROR: Queue '/queue/alerts/ar' not accessible: 'Connection refused'.
+    2009/02/17 12:03:04 ossec-analysisd(1301): ERROR: Unable to connect to active response queue.
     
+It means that there is nothing listening on the other end of the socket the 
+:ref:`ossec-analysisd` deamon would want to write to. This can happen in an ossec 
+server installation. The deamon that should be listening on this socket is 
+:ref:`ossec-remoted`.  
+
+**How to fix it:** 
+
+Add an OSSEC client (agent) with the :ref:`manage_agents` utility on both agent 
+and server. Then restart OSSEC. :ref:`ossec-remoted` should now be listening on 
+the socket.
+
+Errors when dealing with multiple agents 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When you have hundreds (or even thousands) of agents, OSSEC may not work 
+properly by default. There are a few changes that you will need to do:
+
+**Increase maximum number of allowed agents**
+
+To increase the number of agents, before you install (or update OSSEC), just do:
+
+.. code-block:: console 
+
+    #cd src; make setmaxagents (it will ask how many do you want.. )
+
+    Specify maximum number of agents: 2048 (to increase to 2048)
+    Maximum number of agents set to 20.
+
+    #cd ..; ./install.sh
+
+**Increase your system's limits**
+
+Most systems have limits regarding the maximum number of files you can have. 
+A few commands you should try are (to increase to 2048):
+
+.. code-block:: console 
+
+    # ulimit -n 2048
+    # sysctl -w kern.maxfiles=2048 
+
+
+
