@@ -1,8 +1,13 @@
+.. _faq_unexpected:
 
 When the unexpected happens: FAQ
 --------------------------------
 
-#. How do I troubleshoot ossec?
+.. contents:: 
+    :local:
+
+How do I troubleshoot ossec?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     
     If you are having problems with ossec, the first thing to do is to look at 
     your logs. 
@@ -28,7 +33,9 @@ When the unexpected happens: FAQ
     * Any other relevant information. 
 
 
-#. How to debug ossec?
+
+How to debug ossec?
+^^^^^^^^^^^^^^^^^^^^
 
     .. warning::
 
@@ -96,7 +103,8 @@ When the unexpected happens: FAQ
     With some calls to verbose, recompile and replace the stock binary with your edited 
     one. Restart ossec and tail the log.
 
-#. The communication between my agent and the server is not working. What to do? 
+The communication between my agent and the server is not working. What to do? 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     There are multiple reasons for it to happen. First, you should look at 
     your agent and server logs to see what they say.  If you don't know where they 
@@ -158,6 +166,7 @@ When the unexpected happens: FAQ
 
     If after that, it still doesn't work, contact our mailing list for help.
 
-#. What does "1403 - Incorrectly formated message" means? 
+What does "1403 - Incorrectly formated message" means? 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     

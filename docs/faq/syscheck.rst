@@ -1,9 +1,14 @@
+.. _faq_syscheck:
 
 Syscheck: FAQ
 -------------
 
+.. contents:: 
+    :local:
 
-#. How to force an immediate syscheck scan?
+
+How to force an immediate syscheck scan?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     Run agent control tool to perform a integrity checking immediately (option 
     -a to run on all the agents and -u to specify an agent id)
@@ -13,9 +18,10 @@ Syscheck: FAQ
         # /var/ossec/bin/agent_control -r -a
         # /var/ossec/bin/agent_control -r -u <agent_id>
 
-    For more infomation see the `Tool: Agent Control` documentation. 
+    For more infomation see the :ref:`agent_control` documentation. 
 
-#. How to tell syscheck not to scan the system when OSSEC starts?
+How to tell syscheck not to scan the system when OSSEC starts?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     Set the option <scan_on_start> to “no” on ossec.conf 
 
@@ -35,15 +41,17 @@ Syscheck: FAQ
             <hostname>mswin1|ubuntu-dns</hostname>
         </rule>
 
-#. How to know when the syscheck scan ran?
+How to know when the syscheck scan ran?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     Use the agent_control tool on the manager, to see this information.
 
-    More information see the `Tool: Agent Control` documentation. 
+    More information see the :ref:`agent_control` documentation. 
 
-#. How to get detailed reporting on the changes?
+How to get detailed reporting on the changes?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     Use the syscheck_control tool on the manager or the web ui for that. 
 
-    More information see the `Tool: Syscheck Control` documentation. 
+    More information see the :ref:`syscheck_control` documentation. 
 
