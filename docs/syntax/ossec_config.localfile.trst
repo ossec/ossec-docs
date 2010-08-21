@@ -1,4 +1,8 @@
-.. xml:element:: location 
+
+.. xml:elemnet:: localfile 
+
+
+.. xml:element:: localfile.location 
 
     Specify the location of the log to be read.
 
@@ -6,7 +10,7 @@
 
     **Allowed:** Any log file 
 
-.. xml:element:: log_format 
+.. xml:element:: localfile.log_format 
 
     The format of the log being read. 
     
@@ -30,7 +34,7 @@
     - apache
     - command 
 
-.. xml:element:: command 
+.. xml:element:: localfile.command 
 
     The command to run a all output will be read as a log file.  
 

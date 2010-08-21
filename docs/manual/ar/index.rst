@@ -39,6 +39,12 @@ mitigation techniques.
 - Allows the specification of timeouts. Even if someone is blocked by
   mistake, after a few minutes he or she will be able to access again.
 
+Configuration options 
+---------------------
+
+.. include:: ../../syntax/ossec_config.active-responce.trst
+
+
 Configure and running active Responce
 -------------------------------------
 

@@ -2,6 +2,7 @@
 Syscheck: FAQ
 -------------
 
+
 #. How to force an immediate syscheck scan?
 
     Run agent control tool to perform a integrity checking immediately (option 
