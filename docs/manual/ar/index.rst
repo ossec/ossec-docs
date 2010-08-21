@@ -45,7 +45,9 @@ Configure and running active Responce
 .. toctree::
     :glob:
     
-    *
+    ar-windows 
+    ar-unix
+    ar-custom
 
     
 

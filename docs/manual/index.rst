@@ -15,7 +15,7 @@ Manual
     agent
     log-monitoring
     output/index 
-    ar/ar
+    ar/index
     
 
 

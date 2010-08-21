@@ -69,6 +69,12 @@ def rules2rst():
     from or_utils import rules2rst 
     pass
 
+
+@task 
+@needs('paver.doctools.html')
+def docs():
+    pass 
+
 @task
 @needs('clean_docs', 'rules2rst', 'paver.doctools.html')
 def html():

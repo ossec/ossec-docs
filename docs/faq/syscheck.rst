@@ -1,6 +1,6 @@
 
-Syscheck FAQ
-------------
+Syscheck: FAQ
+-------------
 
 #. How to force an immediate syscheck scan?
 
