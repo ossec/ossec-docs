@@ -17,6 +17,8 @@ can be scripted.
     agent-dhcp-nat
     agent-configuration
     agentless-monitoring
+    agentless-scripts
+
 
 
     

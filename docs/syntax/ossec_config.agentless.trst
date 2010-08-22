@@ -1,0 +1,11 @@
+.. xml:element:: agentless 
+
+.. xml:elemnet:: agentless.type 
+
+.. xml:element:: agentless.frequency 
+
+.. xml:element:: agentless.host 
+
+.. xml:element:: agentless.state 
+
+.. xml:element:: agentless.arguments 
