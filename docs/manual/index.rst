@@ -13,7 +13,7 @@ Manual
     syscheck
     rootcheck
     agent
-    log-monitoring
+    monitoring/index
     output/index 
     ar/index
     
