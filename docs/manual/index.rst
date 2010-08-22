@@ -12,7 +12,7 @@ Manual
     installation
     syscheck
     rootcheck
-    agent
+    agent/index
     monitoring/index
     output/index 
     ar/index
