@@ -70,7 +70,6 @@ method has it's own page and examples.
 
     process-monitoring
     file-log-monitoring
-    rules-decoders/index
 
 
 

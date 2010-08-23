@@ -14,6 +14,7 @@ Manual
     rootcheck
     agent/index
     monitoring/index
+    rules-decoders/index
     output/index 
     ar/index
     
