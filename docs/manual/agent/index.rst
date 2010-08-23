@@ -9,6 +9,7 @@ OSSEC encryped message protocol.  Agentless are process that gathers infomation
 from remote systems use any RPC method be it ssh, snmp rdp, wmi, and what ever 
 can be scripted.  
 
+**Agent**
 
 .. toctree::
     :maxdepth: 2
@@ -16,6 +17,12 @@ can be scripted.
     agent-management
     agent-dhcp-nat
     agent-configuration
+
+**Agentless** 
+
+.. toctree::
+    :maxdepth: 2
+
     agentless-monitoring
     agentless-scripts
 
