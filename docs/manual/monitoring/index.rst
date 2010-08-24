@@ -58,7 +58,7 @@ Configuration Options
 These options should be specified locally on each agent ossec.conf file. Inside 
 the “localfile” element, you can have the following options. 
 
-.. include:: ../syntax/ossec_config.localfile.rst 
+.. include:: ../../syntax/ossec_config.localfile.rst 
 
 Monitoring logs 
 --------------- 

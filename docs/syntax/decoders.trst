@@ -1,4 +1,4 @@
-.. element:: decoder 
+.. xml:element:: decoder 
 
     **Attrubutes:** 
 
@@ -10,25 +10,25 @@
 
     - *status*: 
 
-.. element:: parent 
+.. xml:element:: decoder.parent 
 
-.. element:: program_name 
-
-    **Allowed:** Any :ref:`os_match`
-
-.. element:: prematch 
+.. xml:element:: decoder.program_name 
 
     **Allowed:** Any :ref:`os_match`
 
-.. element:: regex 
+.. xml:element:: decoder.prematch 
+
+    **Allowed:** Any :ref:`os_match`
+
+.. xml:element:: decoder.regex 
 
     **Allowed:** Any :ref:`os_regex`
 
-.. element:: order 
+.. xml:element:: decoder.order 
 
-.. element:: fts
+.. xml:element:: decoder.fts
 
-.. element:: ftscomment 
+.. xml:element:: decoder.ftscomment 
 
     Unused at this time. 
 

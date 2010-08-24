@@ -12,10 +12,11 @@ Manual
     installation
     syscheck
     rootcheck
-    agent
-    log-monitoring
+    agent/index
+    monitoring/index
+    rules-decoders/index
     output/index 
-    ar/ar
+    ar/index
     
 
 

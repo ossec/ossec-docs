@@ -1,5 +1,7 @@
+.. xml:element:: group 
 
-.. element:: rule 
+
+.. xml:element:: group.rule 
 
     Defines a rule 
 
@@ -41,140 +43,140 @@
         - The time to ignore this rule after firing it (to avoid floods). 
         - **Allowed:** Any number from 1 to 9999
 
-.. element:: match
+.. xml:element:: group.rule.match
 
     Any string to match against the event (log).
 
     **Allowed:** Any :ref:`os_match` 
 
-.. element:: regex 
+.. xml:element:: group.rule.regex 
 
     Any regex to match against the event(log). 
 
     **Allowed:** Any :ref:`os_regex`
 
-.. element:: decoded_as 
+.. xml:element:: group.rule.decoded_as 
 
     Any pre-matched string (see :ref:`syntax_decoders`)
 
     **Allowed:** Any string 
 
-.. element:: category
+.. xml:element:: group.rule.category
 
     The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
 
     **Allowed:** Any category :ref:`categories` 
 
-.. element:: srcip 
+.. xml:element:: group.rule.srcip 
 
     Any IP address (decoded as the source ip). Use "!" to negate it.
 
     **Allowed:** Any srcip 
 
-.. element:: dstip 
+.. xml:element:: group.rule.dstip 
 
     Any IP address (decoded as the dst ip). Use “!” to negate it.
 
     **Allowed:** Any dstip 
 
-.. element:: user 
+.. xml:element:: group.rule.user 
 
     any username (decoded as the username).
 
     **Allowed:** any :ref:`os_match` 
 
-.. element:: program_name
+.. xml:element:: group.rule.program_name
 
     Program name is decoded from syslog process name. 
 
     **Allowed:** any :ref:`os_match` 
 
-.. element:: hostname 
+.. xml:element:: group.rule.hostname 
 
     Any hostname (decoded as the syslog hostname).
 
     **Allowed:** any :ref:`os_match` 
 
-.. element:: time 
+.. xml:element:: group.rule.time 
 
     Time that the event was generated.
 
     **Allowed:** Any time range (hh:mm-hh:mm) 
 
-.. element:: weekday 
+.. xml:element:: group.rule.weekday 
 
     Week day that the event was generated. 
 
     **Allowed:** monday - sunday, weekday, weekend 
 
-.. element:: id 
+.. xml:element:: group.rule.id 
 
     Any ID (decoded as the ID). 
 
     **Allowed:** any :ref:`os_match` 
 
-.. element:: url 
+.. xml:element:: group.rule.url 
 
     Any URL (decoded as the URL).
     
     **Allowed:** any :ref:`os_match` 
 
-.. element:: if_sid 
+.. xml:element:: group.rule.if_sid 
 
     Matches if the ID has matched. 
 
     **Allowed:** Any rule id 
 
-.. element:: if_group 
+.. xml:element:: group.rule.if_group 
 
     Matches if the group has matched before. 
 
     **Allowed:** Any Group 
 
-.. element:: if_level 
+.. xml:element:: group.rule.if_level 
 
     Matches if the level has matched before. 
 
     **Allowed:** Any level from 1 to 16 
 
-.. element:: if_matched_sid 
+.. xml:element:: group.rule.if_matched_sid 
 
     Matches if the ID has matched. 
 
     **Allowed:** Any rule id 
 
-.. element:: if_matched_group 
+.. xml:element:: group.rule.if_matched_group 
 
     Matches if the group has matched before. 
 
     **Allowed:** Any group 
 
 
-.. element:: if_matched_level 
+.. xml:element:: group.rule.if_matched_level 
 
     Matches if the level has matched before. 
 
     **Allowed:** Any level from 1 to 16 
 
-.. element:: same_source_ip 
+.. xml:element:: group.rule.same_source_ip 
 
     Used together with frequency. Specifies that the source ip must be the same. 
 
-.. element:: same_source_port 
+.. xml:element:: group.rule.same_source_port 
 
     Used together with frequency. Specifies that the source port must be the same. 
 
-.. element:: same_location 
+.. xml:element:: group.rule.same_location 
 
     Used together with frequency. Specifies that the location must be the same.
 
-.. element:: description 
+.. xml:element:: group.rule.description 
 
     Rule description. 
 
     **Allowed:** Any string 
 
-.. element:: info 
+.. xml:element:: group.rule.info 
 
     Extra information about the rule.
 
@@ -217,13 +219,13 @@
             <info>Type text is the default</info>
         </rule>
 
-.. element:: cve 
+.. xml:element:: group.rule.cve 
 
     CVE related to the rule. 
 
-    This element is no longer used.  Please use :xml:`info` with the cve type. 
+    This xml:element is no longer used.  Please use :xml:`info` with the cve type. 
 
-.. element:: options 
+.. xml:element:: group.rule.options 
 
     Additional rule options (to do not e-mail/log) 
 

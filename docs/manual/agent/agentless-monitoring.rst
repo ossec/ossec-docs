@@ -10,6 +10,11 @@ switches and even Linux/BSD systems). It can be executed just like our normal fi
 integrity checking (alerting of checksum changes) or doing diffs and showing 
 exactly what has changed.
 
+Agentless configuration options 
+-------------------------------
+
+.. include:: ../../syntax/ossec_config.agentless.trst 
+
 Getting started with agentless
 ------------------------------
 
