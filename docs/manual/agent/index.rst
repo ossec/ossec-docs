@@ -3,7 +3,7 @@
 Agents 
 ====== 
 
-Their are two types of agents within OSSEC: installable agents and agentless 
+There are two types of agents within OSSEC: installable agents and agentless 
 agents.  Installable agents are installed on hosts, and they report back to 
 a central OSSEC server via the OSSEC encryped message protocol.  Agentless 
 agents require no installation on remote hosts. They are processes initiated 
