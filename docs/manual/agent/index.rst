@@ -3,11 +3,13 @@
 Agents 
 ====== 
 
-Their are two types of agents within OSSEC: agents/agentless.  Agents are full 
-installation on many servers that report back to a central OSSEC server utlizing 
-OSSEC encryped message protocol.  Agentless are process that gathers infomation 
-from remote systems use any RPC method be it ssh, snmp rdp, wmi, and what ever 
-can be scripted.  
+Their are two types of agents within OSSEC: installable agents and agentless 
+agents.  Installable agents are installed on hosts, and they report back to 
+a central OSSEC server via the OSSEC encryped message protocol.  Agentless 
+agents require no installation on remote hosts. They are processes initiated 
+from the OSSEC manager, which gather infomation from remote systems, and use 
+any RPC method (e.g. ssh, snmp rdp, wmi).
+
 
 **Agent**
 
