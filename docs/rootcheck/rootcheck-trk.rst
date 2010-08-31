@@ -14,7 +14,7 @@ Orgin of Rule
 
 This rootkit was taken from chkrootkit: 
 
-.. code-block:: shell
+.. code-block:: sh
 
     ### T.R.K
     expertmode_output "${find} ${ROOTDIR}usr/bin -name soucemask -o -name ct" 

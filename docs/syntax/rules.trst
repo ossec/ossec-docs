@@ -176,6 +176,77 @@
 
     **Allowed:** Any string 
 
+.. xml:element:: group.rule.list 
+
+    Preform a CDB lookup of a ossec list.  This is a fast on disk db that will 
+    always find keys within to seeks of the file.  
+
+    **Attrubutes:**
+
+    - *field* 
+        
+        Field that is used as the key to look up in the CDB file 
+
+        - Value: srcip 
+        - Value: srcport 
+        - Value: dstip 
+        - Value: dstport 
+        - Value: user 
+        - Value: url 
+        - Value: id
+        - Value: hostname 
+        - Value: program_name 
+        - Value: status 
+        - Value: action 
+
+    - *lookup*
+        
+        This is the type of lookup that is preformed. 
+
+        - Value: match_key
+
+            Positive key match: field is the key to search  wthin the cdb and will 
+            match if they key is present
+
+            This is the default if no lookup is specified 
+
+        - Value: not_match_key
+
+            Negative key match: feild is the key to search and will match if 
+            it *IS NOT* present in the database.
+            
+        - Value: match_key_value
+
+            Key and Value Match: field is searched for in the cdb and if found the 
+            value will be compired with regex from attrubute check_value. 
+
+
+        - Value: address_match_key 
+
+            Positive key match: field is an IP address and the key to search wthin 
+            the cdb and will match if they key is present
+
+        - Value: not_address_match_key
+
+            Negative key match: feild is an IP address the key to search and will 
+            match if it *IS NOT* present in the database:
+
+        - Value: address_match_key_value
+
+            Key and Value Match: field is an IP address searched for in the cdb 
+            and if found the value will be compired with regex from attrubute check_value. 
+
+    - *check_value* 
+        
+        regex pattern for matching on the value pulled out of the cdb when using 
+        lookip types: address_match_key_value, match_key_value 
+
+    **Allowed:** 
+        
+        String of path to the CDB file to be used for lookup.  This file must also be 
+        included in the ossec.conf file. 
+
+
 .. xml:element:: group.rule.info 
 
     Extra information about the rule.

@@ -8,3 +8,4 @@ Rules and Decoders
     :maxdepth: 2
 
     testing
+    rule-lists

@@ -1,5 +1,5 @@
 
-.. _analyze_beastkit:
+.. _analysis-beastkit:
 
 Analysis of a rootkit: Beastkit 
 ===============================
