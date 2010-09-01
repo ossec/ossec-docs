@@ -134,4 +134,26 @@ same applies to Windows too.
     Real time only works with directories, not individual files. So you can monitor the /etc 
     or C:\program files directory, but not an individual file like /etc/file.txt.
 
+Report Changes
+--------------
+
+OSSEC supports sending diffs when changes are made to text files on Linux and unix systems.
+
+The configuration is very simple. In the <directories option where files and directories
+to monitor are specified, adding the report_changes="yes" attribute will enable this 
+option.
+For example:
+
+.. code-block:: xml
+
+    <syscheck>
+        <directories report_changes="yes" check_all="yes">/etc</directories>
+        <directories check_all="yes">/bin,/sbin</directories>
+    </syscheck>
+
+.. notes::
+
+    Report Changes will only work with text files, and the changes are stored on the agent 
+    inside ``/var/ossec/queue/diff/local/dir/file``.
+
 .. include:: ../faq/syscheck.rst
