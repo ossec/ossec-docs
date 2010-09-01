@@ -4,16 +4,16 @@ Testing OSSEC rules/decoders
 ============================
 
 
-When you are troubleshooting OSSEC or trying to write new rules/decoders, the 
-first problem most people have is how to test them. In the past, it would require 
-manually restarting or creating a testing installation for it, but as from the 
-version 1.6 or greater, we built a tool to simplify this task (ossec-testrule).
+When troubleshooting OSSEC or trying to write new rules/decoders, the 
+first problem most people have is how to test them. In the past, this would require 
+manually restarting or creating a testing installation, but as of 
+version 1.6, there is a tool to simplify this task (ossec-testrule).
 
 Testing using ossec-logtest
 ---------------------------
 
-The tool :ref:`ossec-logtest` is installed into ``/var/ossec/bin``.  The way it works 
-is that it will read the current rules/decoder (from ``/var/ossec``` ) and accept any 
+The tool :ref:`ossec-logtest` is installed into ``/var/ossec/bin``. 
+It will read the current rules and decoder (from ``/var/ossec``` ) and accept any 
 log from stdin:
 
 .. code-block:: console 
@@ -41,7 +41,7 @@ log from stdin:
     Description: ‘First time user logged in.’
     **Alert to be generated.
 
-So, in the above example, we provided an authentication success log and 
+In the above example, we provided an authentication success log and 
 ossec-logtest showed us how it would be decoded, what information was extracted 
 and which rule fired. In the next example, we can see how it would extract a 
 user logoff message from Windows:
@@ -75,8 +75,8 @@ user logoff message from Windows:
     **Alert to be generated.
 
 
-In addition to this information, you can run :ref:`ossec-logtest -f` to get 
-full information on the rule path that the log is following:
+In addition to the information above, :ref:`ossec-logtest -f` can be used 
+to follow the log through the rule path:
 
 .. code-block:: console 
 

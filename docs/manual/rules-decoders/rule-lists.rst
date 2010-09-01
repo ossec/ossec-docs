@@ -1,7 +1,7 @@
 
 .. _manual-rule-lists:
 
-CDB List lookups from with in Rules
+CDB List lookups from within Rules
 ===================================
 
 Allow for CDB lookups from within rules in OSSEC (ossec-analysisd) of all possible 
@@ -12,10 +12,10 @@ Use cases
 
 Anything that has a large number of items. Some examples:
 
-- named with recursive logs plus www.malwaredomains.com gets some fun results
+- named with recursive logs checking the www.malwaredomains.com list for suspicious domains
 - lists of approved users by server
-- mstark (on irc) originally came up with suggestion for approved software based on a md5 list.
-- IP address lookups - their are large number of lists of bad addresses to match inside of ossec rules.
+- mstark (on irc) originally came up with suggestion for approved software based on a md5 list
+- IP address lookups - there are a large number of lists of suspicious or known bad IP addresses to match inside of ossec rules
 
 Syntax for Lists 
 ----------------
@@ -23,19 +23,19 @@ Syntax for Lists
 Rules 
 ~~~~~
 
-Inside of rules following systax would be used to look up a key within a CDB database.
+A rule would use the following systax to look up a key within a CDB database.
 
 Positive key match
 ^^^^^^^^^^^^^^^^^^
 
-This example is a search of the key within the ``rules/cdb_record_file`` and will match 
+This example is a search for the key within the ``rules/cdb_record_file`` and will match 
 if they key is present:
 
 .. code-block:: xml
 
      <list field="program_name" lookup="match_key">rules/records</list>
 
-The ``lookup="match_key"`` is default so can be left out as in this example:
+The ``lookup="match_key"`` is the default and can be left out as in this example:
 
 .. code-block:: xml 
 
@@ -54,19 +54,19 @@ it *IS NOT* present in the database:
 Key and Value match
 ^^^^^^^^^^^^^^^^^^^
 
-This example is a search for a key stored in the field attribute and if the key 
-is found the the returned value of the key will be processed using the regex stored 
-in the check_value attribute:
+This example is a search for a key stored in the field attribute, and on a positive
+match the returned value of the key will be processed using the regex in the
+check_value attribute:
 
 .. code-block:: xml 
 
-     <list field="program_name" lookup="match_key_value" check_value="^reject"> 
+     <list field="program_name" lookup="match_key_value" check_value="^reject">rules/records</list> 
 
 Positive IP address match 
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This example is a search for the IP address stored in the field attribute and 
-will match if *IS* prenset in the database.
+will match if it *IS* prenset in the database.
 
 .. code-block:: xml 
 
@@ -76,7 +76,7 @@ Negative IP address match
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This example is a search for the IP address stored in the field attribute and 
-will match if *IS NOT* prenset in the database.
+will match if it *IS NOT* present in the database.
 
 .. code-block:: xml 
 
@@ -85,20 +85,20 @@ will match if *IS NOT* prenset in the database.
 Key and Value Address Match
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This example is a search for a key stored in the field attribute and if the key is 
-found the the returned value of the key will be processed using the regex stored 
-in the check_value attribute:
+This example is a search for a key stored in the field attribute, and on a positive 
+match the returned value of the key will be processed using the regex in the
+check_value attribute:
 
 .. code-block:: xml 
 
-      <list field="srcip" lookup="address_match_key_value" check_value="^reject"> 
+      <list field="srcip" lookup="address_match_key_value" check_value="^reject">rules/records</list>
       
     
 ossec.conf 
 ~~~~~~~~~~
 
-List will need to defined and told to be avaiable using the ossec.conf file. Using
-the following syntax:
+Each list will need to be defined and told to be avaiable using the ossec.conf file. 
+Using the following syntax:
 
 .. code-block:: xml 
 
@@ -116,16 +116,16 @@ The command :ref:`ossec-makelists` will process and compile all lists if the mas
 rules have been changed. Basicly logic is as follows:
 
 - Read ossec.conf for all lists 
-- Check the mtime if list is newer then mtime of the compiled .cdb file
+- Check the mtime of each list and compare it to the mtime of the compiled .cdb file
 - if mtime is newer create new database file ending in .tmp
-- use atomic rename to change the .tmp to .cdb. This will invalided all mmap pages 
-  currently used my ossec-analysisd and will cause them to be reloaded with the new 
-  data as needed.
+- use atomic rename to change the .tmp to .cdb. This will invalidate all mmap pages 
+  currently in use by ossec-analysisd and will cause them to be reloaded with the new 
+  data as needed
 
 List text file format
 ~~~~~~~~~~~~~~~~~~~~~
 
-Creating cdb lists the following file format is speicified: ::
+Creating cdb lists the following file format is specified: ::
 
     key1:value
     key2:value
@@ -142,7 +142,7 @@ For IP addresses the dot notation is used for subnet matches ::
         
 
 Due to address lookups being based on the class boundary extra scripts are suggested 
-for create lists that need fine control. Example of IP address list file::
+for creating lists that need fine control. Example of IP address list file::
 
     192.168.: RFC 1918 Address space
     172.16.:RFC 1918 Address space
