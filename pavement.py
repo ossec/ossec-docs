@@ -11,6 +11,7 @@ options(
         jrossi="http://bitbucket.org/jrossi/ossec-rules", 
         ddpbsd="http://bitbucket.org/ddpbsd/ossec-rules",
         oscar="http://bitbucket.org/oscarschneider/ossec-rules",
+        xeno="http://bitbucket.org/XenoPhage/ossec-rules",
     ),
     tests=Bunch(
         tdir="./tests/",

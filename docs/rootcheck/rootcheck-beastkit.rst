@@ -9,7 +9,7 @@ we call it as "Beastkit 7.0".
 More Information
 ----------------
 
-For more info, look at this analyse (author unknown): :ref:`analyze_beastkit`
+For more info, look at this analyse (author unknown): :ref:`analysis-beastkit`
 
 
 Files
