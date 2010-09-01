@@ -14,7 +14,7 @@ move the binaries to the final box.
 Ubuntu
 ------
 
-Ubuntu you will need build *build-essential* in order to compile and install ossec. 
+Ubuntu you will need the *build-essential* package in order to compile and install ossec. 
 
 To install the package run the following command.  
 

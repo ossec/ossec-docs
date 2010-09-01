@@ -3,22 +3,22 @@
 Binary Installation 
 ===================
 
-On some system a compatible compiler is not available, this leads to problems for OSSEC                                                                                      
-standard install method. To work around this OSSEC supports being built on a different server
-then it's been installed on. 
+On some system a compatible compiler is not available, this leads to problems for the
+standard OSSEC install method. To work around this OSSEC supports being built on a different
+system than it has been installed on. 
 
 .. note:: 
 
-    Due to they way OSSEC is built the system compiling OSSEC must be the same OS and the 
-    same CPU platform for this work correctly. 
+    Due to the way OSSEC is built the system compiling OSSEC must be the same OS
+    CPU platform for this work correctly. 
 
 .. _manual-install-binary-build: 
 
 Compiling OSSEC for install on a second server 
 ----------------------------------------------
 
-First of all, download the OSSEC package corresponding to the version you want to 
-install and unpack it (On the system with a compiler).
+First download the OSSEC package corresponding to the version you want to 
+install and unpack it (on the system with a compiler).
 
 .. code-block:: console 
 
@@ -37,7 +37,7 @@ Enter in the source directory of the downloaded package and compile OSSEC.
     # make build
     # cd ../..
 
-Change ossec-hids-*/etc/preloaded-vars.conf to set BINARY_INSTALL to yes. 
+Modify ossec-hids-*/etc/preloaded-vars.conf to set BINARY_INSTALL to yes. 
 
 .. code-block:: console 
 
@@ -70,7 +70,7 @@ Complete the installation by unarchiving the binary package and running ./instal
     # cd ossec-* 
     # ./install.sh 
 
-After following the installation prompts you install will be complete.  
+After following the installation prompts your install will be complete.  
 
 
 
