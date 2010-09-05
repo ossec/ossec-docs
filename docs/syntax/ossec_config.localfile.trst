@@ -41,4 +41,11 @@
     **Allowed:** And commandline and arguments. 
 
 
+.. xml:element:: localfile.check_diff 
+
+    The first time it receives the event, it will store in an internal database. Every 
+    time it receives the same event, it will compare against what we have store and 
+    only alert if the output changes.
+
+
 

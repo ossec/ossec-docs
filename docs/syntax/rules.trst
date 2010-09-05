@@ -305,3 +305,7 @@
     - alert_by_email 
     - no_email_alert 
     - no_log
+
+.. xml:element:: group.rule.check_diff 
+
+    
