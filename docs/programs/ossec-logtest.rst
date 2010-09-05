@@ -73,6 +73,10 @@ osssec-logtest argument options
     This is the path that ossec-logtest will chroot to before it completes loading all rules, 
     decoders, and lists and processing standard input.  
 
+.. option:: -a 
+
+    Analyze of input lines as if they are live events.  
+
 
 ossec-logtest example usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,3 +150,136 @@ Example 1: Testing standard rules
                Info - Link: 'http://www.reedmedia.net/misc/dns/errors.html'
         **Alert to be generated.
 
+Example 2: Using OSSEC for the forensic analysis of log files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have one old log file that you want to check or if you are doing a 
+forensics analysis of a box and wants to check the logs with OSSEC, we 
+now have a solution too.
+
+Let’s say you have a file /var/log/secure that you want to analyze with OSSEC. 
+You need to use the ossec-logtest tool with the “``-a``” flag to reproduce 
+the alerts:
+
+.. code-block:: console 
+
+    # cat /var/log/secure | /var/ossec/bin/ossec-logtest -a
+
+    ** Alert 1264788284.11: - syslog,sshd,authentication_success,
+    2010 Jan 29 14:04:44 enigma->stdin
+    Rule: 5715 (level 3) -> ‘SSHD authentication success.’
+    Src IP: a.b.2.15
+    User: dcid
+    Jan 15 10:25:01 enigma sshd[17594]: Accepted password for dcid from a.b.2.15 port 47526 ssh2
+
+    ** Alert 1264788284.12: - syslog,sshd,authentication_success,
+    2010 Jan 29 14:04:44 enigma->stdin
+    Rule: 5715 (level 3) -> ‘SSHD authentication success.’
+    Src IP: 127.0.0.1
+    User: dcid
+    Jan 15 11:19:20 enigma sshd[18853]: Accepted publickey for dcid from 127.0.0.1 port 6725 ssh2
+
+You will get the alerts just like you would at /var/ossec/logs/alerts.log. The 
+benefit now is that you can pipe this output to :ref:`ossec-reported` to get a 
+better view of what is going on:
+
+.. code-block:: console 
+
+    # cat /var/log/secure | /var/ossec/bin/ossec-logtest -a |/var/ossec/bin/ossec-reported
+    Report completed. ==
+    ————————————————
+    ->Processed alerts: 522
+    ->Post-filtering alerts: 522
+
+    Top entries for ‘Source ip’:
+    ————————————————
+    89.200.169.170 |41 |
+    127.0.0.1 |33 |
+    83.170.106.142 |20 |
+    204.232.206.109 |16 |
+    ..
+
+    Top entries for ‘Username’:
+    ————————————————
+    root |247 |
+
+    Top entries for ‘Level’:
+    ————————————————
+    Severity 5 |406 |
+    Severity 3 |41 |
+    Severity 10 |32 |
+
+    Top entries for ‘Group’:
+    ————————————————
+    syslog |522 |
+    sshd |509 |
+    authentication_failed |369 |
+    invalid_login |146 |
+
+    Top entries for ‘Rule’:
+    ————————————————
+    5716 - SSHD authentication failed. |223 |
+    5710 - Attempt to login using a non-existent.. |146 |
+    5715 - SSHD authentication success. |41 |
+    5702 - Reverse lookup error (bad ISP or atta.. |37 |
+
+To get a report of all brute force attacks (for example) that scanned my 
+box:
+
+.. code-block:: console 
+
+    # cat /var/log/secure | /var/ossec/bin/ossec-logtest -a |/var/ossec/bin/ossec-reported -f group authentication_failures
+
+    Report completed. ==
+    ————————————————
+    ->Processed alerts: 522
+    ->Post-filtering alerts: 25
+
+    Top entries for ‘Source ip’:
+    ————————————————
+    83.170.106.142 |2 |
+    89.200.169.170 |2 |
+    114.255.100.163 |1 |
+    117.135.138.183 |1 |
+    124.205.62.36 |1 |
+    173.45.108.230 |1 |
+    200.182.99.59 |1 |
+    202.63.160.50 |1 |
+    210.21.225.202 |1 |
+    211.151.64.220 |1 |
+    213.229.70.12 |1 |
+    218.30.19.48 |1 |
+    221.12.12.3 |1 |
+    59.3.239.114 |1 |
+    61.168.227.12 |1 |
+    61.233.42.47 |1 |
+    67.43.61.80 |1 |
+    72.52.75.228 |1 |
+    77.245.148.196 |1 |
+    79.125.35.214 |1 |
+    85.21.83.170 |1 |
+    92.240.75.6 |1 |
+    94.198.49.185 |1 |
+
+    Top entries for ‘Username’:
+    ————————————————
+    root |24 |
+
+    Top entries for ‘Level’:
+    ————————————————
+    Severity 10 |25 |
+
+    Top entries for ‘Group’:
+    ————————————————
+    authentication_failures |25 |
+    sshd |25 |
+    syslog |25 |
+
+    Top entries for ‘Location’:
+    ————————————————
+    enigma->stdin |25 |
+
+    Top entries for ‘Rule’:
+    ————————————————
+    5720 - Multiple SSHD authentication failures. |24 |
+    5712 - SSHD brute force trying to get access.. |1 |
