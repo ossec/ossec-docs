@@ -4,17 +4,17 @@ Testing OSSEC rules/decoders
 ============================
 
 
-When troubleshooting OSSEC or trying to write new rules/decoders, the 
-first problem most people have is how to test them. In the past, this would require 
-manually restarting or creating a testing installation, but as of 
+The first problem most people have when troubleshooting OSSEC or trying to write new 
+rules and decoders is how to test them. In the past, this would require
+manually restarting OSSEC or creating a testing installation. As of 
 version 1.6, there is a tool to simplify this task (ossec-testrule).
 
 Testing using ossec-logtest
 ---------------------------
 
 The tool :ref:`ossec-logtest` is installed into ``/var/ossec/bin``. 
-It will read the current rules and decoder (from ``/var/ossec``` ) and accept any 
-log from stdin:
+It will read the current rules and decoder (from ``/var/ossec`` ) and accept 
+log input from stdin:
 
 .. code-block:: console 
 
