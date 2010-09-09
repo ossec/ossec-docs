@@ -7,11 +7,11 @@ Process Monitoring
 Overview 
 --------
 
-We love logs. Inside OSSEC we treat everything as if it was a log and parse it
+We love logs. Inside OSSEC we treat everything as if it is a log and parse it
 appropriately with our rules. However, some information is not available in log
-files but we still want to monitor them. To solve that gap, we added the ability
-to monitor the output of commands via OSSEC and treat those just like they were
-log files.
+files but we still want to monitor it. To solve that gap, we added the ability
+to monitor the output of commands via OSSEC, and treat the output of those commands
+ just like they were log files.
 
 Configuration examples
 ---------------------- 
@@ -23,7 +23,7 @@ For example, if you wanted to monitor the disk space utilization, you would need
 to setup a cron job to dump the output of "df -h" to a log file (maybe
 /var/log/df.log) and configure OSSEC to look at it.
 
-Now, with the new version of OSSEC you can do it directly in there with the
+As of OSSEC version 2.3 you can monitor commands directly in OSSEC 
 following configuration:
 
 .. code-block:: xml 
@@ -33,7 +33,7 @@ following configuration:
         <command>df -h</command>
     </localfile>
 
-Since we already have a sample rule for df -h included into OSSEC you would see
+Since we already have a sample rule for df -h included with OSSEC you would see
 the following when any partition reached 100%::
 
     ** Alert 1257451341.28290: mail - ossec,low_diskspace,
@@ -69,5 +69,5 @@ And in the rule:
         <description>Load average reached 2..</description>
     </rule>
 
-Lots of possibilities with this feature. If you have ideas of commands to
+There are lots of possibilities with this feature. If you have ideas for commands to
 monitor and rules, please comment.

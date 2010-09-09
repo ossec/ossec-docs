@@ -17,7 +17,7 @@ Configuration examples
 Simple example 
 ^^^^^^^^^^^^^^
 
-Configuring log analysis is very simple. You just need to provide the name of the 
+Configuring a log file to be monitored is simple. Just provide the name of the 
 file to be monitored and the format:
 
 .. code-block:: xml 
@@ -30,8 +30,8 @@ file to be monitored and the format:
 Windows EventLog Example 
 ^^^^^^^^^^^^^^^^^^^^^^^^ 
 
-To monitor a Windows event log entry, you need to provide the format as “eventlog” 
-and the location as the name of the event log. Example:
+To monitor a Windows event log, you need to provide the format as “eventlog” 
+and the location is the name of the event log. Example:
 
 .. code-block:: xml 
 
@@ -44,9 +44,9 @@ and the location as the name of the event log. Example:
 Multiple Files Example 
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To check multiple files, we support posix regular expressions to make the job easier. 
+To check multiple files, OSSEC supports posix regular expressions. 
 For example, to analyze every file that ends with a .log inside the /var/log directory, 
-do:
+use the following configuration:
 
 .. code-block:: xml 
 

@@ -6,16 +6,16 @@ Log monitoring/analysis
 
 Log Analysis (or log inspection) is done inside OSSEC by the logcollector and 
 analysisd processes. The first one collects the events and the second one 
-analyzes (decodes, filters and classify) them.
+analyzes (decodes, filters and classifies) them.
 
-It is done in real time, so as soon as an event is written, OSSEC will process 
+It is done in real time, so as soon as an event is written OSSEC will process 
 them. OSSEC can read events from internal log files, from the Windows event 
 log and also receive them directly via remote syslog.
 
 What is log analysis?
 ---------------------
 
-Inside OSSEC we call log analysis as LIDS (log-based intrusion detection). Our 
+Inside OSSEC we call log analysis a LIDS, or log-based intrusion detection. The 
 goal is to detect attacks, misuse or system errors using the logs.
 
 LIDS - Log-based intrusion detection or security log analysis are the processes 
@@ -26,8 +26,7 @@ software misuse, policy violations and other forms of inappropriate activities.
 Quick Facts
 ----------- 
 
-
-- How often? 
+- How often are logs monitored? 
   
   - In real time.
 
@@ -39,23 +38,24 @@ Quick Facts
   
   - For as long as your policy dictates (it is user configurable).
     
-- Where it helps me with compliance? 
+- Where does this help me with compliance? 
   
   - (PCI DSS, etc) It helps with the whole section 10 (log monitoring) of PCI.
 
-- How much CPU it uses? 
+- How much CPU does it use? 
   
-  - On the agent, it uses very little CPU/memory since it just read the events. 
-    On the manager, it depends on the number of EPS.
+  - On the agent, it uses very little CPU/memory since it just read the events 
+and forwards them to the manager. 
+    On the manager, it depends on the number of events per second (EPS).
 
-- How it deals with false positives? 
+- How does it deal with false positives? 
   
   - False positives can be eliminated using local rules.
 
 Configuration Options 
 ---------------------
 
-These options should be specified locally on each agent ossec.conf file. Inside 
+These options should be specified locally in each agent ossec.conf file. Inside 
 the “localfile” element, you can have the following options. 
 
 .. include:: ../../syntax/ossec_config.localfile.rst 
