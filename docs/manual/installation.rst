@@ -39,7 +39,7 @@ page`.
     If you want a step by step guide, you can use one of the many step by step install guides
     from `here`_
 
-#. Download the latest version and verify it's checksum.
+#. Download the latest version and verify its checksum.
 
     .. note:: 
 
@@ -68,10 +68,10 @@ page`.
         # cd ossec-hids-* 
         # ./install.sh
 
-#. Remember to open the port 1514 (UDP) if there is a firewall between the server and 
-   the agents (if you didn’t choose the local installation).
+#. Remember to open port 1514 (UDP) if there is a firewall between the server and 
+   the agents (not applicable to the local installation type).
 
-#. In case you are installing the server or the agent, remember to follow the `Managing 
+#. If you are installing the server or the agent, remember to follow the `Managing 
    the agents section`.
 
 #. Start OSSEC HIDS 
