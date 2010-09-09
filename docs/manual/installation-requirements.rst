@@ -7,8 +7,8 @@ Installations requirements
 UNIX
 ==== 
 
-For UNIX systems, ossec just requires gcc and glibc. However, 
-you always have the option to pre-compule it on any other system and 
+For UNIX systems, ossec just requires gcc and libc. However, 
+you always have the option to pre-compile it on any other system and 
 move the binaries to the final box. 
 
 Ubuntu

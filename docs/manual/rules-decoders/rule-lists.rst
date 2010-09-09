@@ -23,7 +23,7 @@ Syntax for Lists
 Rules 
 ~~~~~
 
-A rule would use the following systax to look up a key within a CDB database.
+A rule would use the following syntax to look up a key within a CDB database.
 
 Positive key match
 ^^^^^^^^^^^^^^^^^^
@@ -66,7 +66,7 @@ Positive IP address match
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This example is a search for the IP address stored in the field attribute and 
-will match if it *IS* prenset in the database.
+will match if it *IS* present in the database.
 
 .. code-block:: xml 
 
@@ -97,7 +97,7 @@ check_value attribute:
 ossec.conf 
 ~~~~~~~~~~
 
-Each list will need to be defined and told to be avaiable using the ossec.conf file. 
+Each list will need to be defined and told to be available using the ossec.conf file. 
 Using the following syntax:
 
 .. code-block:: xml 

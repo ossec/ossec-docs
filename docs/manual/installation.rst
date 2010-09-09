@@ -39,7 +39,7 @@ page`.
     If you want a step by step guide, you can use one of the many step by step install guides
     from `here`_
 
-#. Download the lastest version and verify it's checksum.
+#. Download the latest version and verify it's checksum.
 
     .. note:: 
 
