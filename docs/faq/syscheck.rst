@@ -18,7 +18,7 @@ How to force an immediate syscheck scan?
         # /var/ossec/bin/agent_control -r -a
         # /var/ossec/bin/agent_control -r -u <agent_id>
 
-    For more infomation see the :ref:`agent_control` documentation. 
+    For more information see the :ref:`agent_control` documentation. 
 
 How to tell syscheck not to scan the system when OSSEC starts?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -13,7 +13,7 @@ clear_stats argument options
 
 .. option:: -h 
 
-    Print and display a help message of all avaiable options to clear_stats 
+    Print and display a help message of all available options to clear_stats 
 
 .. option:: -a 
 

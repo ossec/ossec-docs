@@ -9,7 +9,7 @@ OSSEC HIDS list_agents: List available agents.
 list_agents is only available on OSSEC servers or local mode installations. 
 It can be used to retrieve
 
-- a list of all OSSEC agents that succesfully connected to the server in the past
+- a list of all OSSEC agents that successfully connected to the server in the past
 - a list of all OSSEC agents currently connected to the server
 - a list of all OSSEC agents that were connected to the server in the past but are currently not connected.
 
