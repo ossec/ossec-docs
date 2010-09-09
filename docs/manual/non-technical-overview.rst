@@ -30,7 +30,7 @@ Multi platform
 
 OSSEC lets customers implement a comprehensive host based intrusion detection 
 system with fine grained application/server specific policies across multiple 
-platforms such as Linux, Solaris, AIX, HP-UX, BSD, Windows, Mac and Vmware ESX.
+platforms such as Linux, Solaris, AIX, BSD, Windows, Mac OS X and VMware ESX.
 
 Real-time and Configurable Alerts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
