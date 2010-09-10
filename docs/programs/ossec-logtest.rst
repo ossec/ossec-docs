@@ -5,12 +5,12 @@ ossec-logtest
 =============
 
 ossec-logtest is the single most useful tool when working with ossec.  This tool allows oneself 
-to test and verify logfiles in the excate same way that `ossec-anaylistd` does.  
+to test and verify log files in the exact same way that `ossec-anaylistd` does.  
 
 Something ossec-logtest can help with: 
 
 - Writing rules (Debugging your custom rules) 
-- Troubleshooting false possitives or false negaitives 
+- Troubleshooting false positives or false negatives 
 
 ossec-logtest accepts standard input for all log to test.  
 
@@ -42,7 +42,7 @@ osssec-logtest argument options
 
     .. note:: 
 
-        This the key augument to trouble a rule, decoder problem.  
+        This the key argument to troubleshoot a rule, decoder problem.  
 
     .. note:: 
 

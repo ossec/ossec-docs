@@ -238,7 +238,7 @@ Agentless Script: ssh_integrity_check_linux
 -------------------------------------------
 
 Now that we have an understanding of how agentless scripts communicate with the parent 
-OSSEC preocess, let’s move on to a working example. The OSSEC supplied script 
+OSSEC process, let’s move on to a working example. The OSSEC supplied script 
 ``ssh_integrity_check_linux`` is a great place to start, so lets open it up and see 
 what is going on.
 
@@ -376,7 +376,7 @@ sha1sum to generate the data needed. Here is an example of the output checking.
 
     INFO: Finished.
 
-Modifing to make own Agentless Script: ssh_dmz_linux
+Modifying to make own Agentless Script: ssh_dmz_linux
 ----------------------------------------------------
 
 Using the built in OSSEC agentless scripts are great, but sometimes we need more 
@@ -441,7 +441,7 @@ and use find to locate the files.
 **Finding all files related to authentication and applications specific files**
 
 Finding all files with setuid and setgid was simple, but finding all files related to 
-authentication is more invloved. This of course will vary from system to system, but 
+authentication is more involved. This of course will vary from system to system, but 
 this should be good starting point.
 
 

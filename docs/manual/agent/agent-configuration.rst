@@ -11,7 +11,7 @@ detection (rootcheck) and log analysis.
 
 This is how it works.
 
-Create agent configuation
+Create agent configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First Create the file /var/ossec/etc/shared/agent.conf.

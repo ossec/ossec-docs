@@ -7,14 +7,14 @@ Installations requirements
 UNIX
 ==== 
 
-For UNIX systems, ossec just requires gcc and glibc. However, 
-you always have the option to pre-compule it on any other system and 
+For UNIX systems, ossec just requires gcc and libc. However, 
+you always have the option to pre-compile it on one system and 
 move the binaries to the final box. 
 
 Ubuntu
 ------
 
-Ubuntu you will need the *build-essential* package in order to compile and install ossec. 
+On Ubuntu you will need the *build-essential* package in order to compile and install ossec. 
 
 To install the package run the following command.  
 
@@ -22,7 +22,8 @@ To install the package run the following command.
 
     # apt-get install build-essential 
 
-If database support is needed also run the following command. 
+If database support is needed *mysql-dev* or *postgresql-dev* should be installed. 
+Run the following command to install these packages. 
 
 .. code-block:: console 
 
@@ -31,7 +32,7 @@ If database support is needed also run the following command.
 RedHat
 ------ 
 
-RedHat should have all packages needed by default, but if database support is need 
+RedHat should have all packages needed by default, but if database support is needed
 the package mysql-devel and/or postgresql-devel will need to be installed. 
 
 .. code-block:: console 

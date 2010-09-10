@@ -18,7 +18,7 @@ agent_control argument options
 
 .. option:: -l 
 
-    List avaiable (active or not) agents 
+    List available (active or not) agents 
 
 .. option:: -lc
 
@@ -26,7 +26,7 @@ agent_control argument options
 
 .. option:: -i <agent_id>
 
-    Extracts infrom from an agent 
+    Extracts information from an agent 
 
 .. option:: -r 
 
@@ -48,7 +48,7 @@ agent_control example usage
 Example 1: Listing all active agents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The first interesting argumnet is :option:`agent_control -lc`, to list the connected (active agents). To list 
+The first interesting argument is :option:`agent_control -lc`, to list the connected (active agents). To list 
 all of them, use :option:`agent_control -l` only.
 
 .. code-block:: console 

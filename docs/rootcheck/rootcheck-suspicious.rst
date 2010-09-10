@@ -6,14 +6,14 @@ The files listed here were found in some infected/owned machines. They are
 not part of any rootkit, but some "crackers" use them. They can be a log 
 of some sniffer, a sniffer or a lot of other things. 
 
-Take a carefull look if you find any of these files in your system. 
+Take a careful look if you find any of these files in your system. 
 
 More Information
 ----------------
 
 N/A
 
-Orgin of Rule
+Origin of Rule
 -------------
 
 N/A

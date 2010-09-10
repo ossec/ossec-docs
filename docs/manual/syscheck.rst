@@ -31,32 +31,33 @@ This is the explanation from the `OSSEC book`_:
 Quick facts
 -----------
 
-* How often? 
+* How often does it run? 
   
   - By default every 6 hours or at any configured time/day.
 
 * Where is the database stored? 
   
-  - In the manager.
+  - On the manager in ``/var/ossec/queue/syscheck``.
 
 * Where it helps me with compliance? (PCI DSS, etc) 
 
   - It helps with sections 11.5 (install FIM software) and 10.5 (integrity checking of log files) of PCI.
 
-* How much CPU it uses? 
+* How much CPU does it use? 
   
   - The scans are performed slowly to avoid using too much CPU/memory.
 
-* How it deals with false positives? 
+* How does it deal with false positives? 
   
-  - Files that change too often can be ignored on the configuration or using the rules.
+  - Files that change too often can be ignored in the configuration or using rules. By default when a 
+file changes 3 times it is automatically ignored.
 
 Configuration options
 ---------------------
 
-All these configurations options can be specified in each agent ossec.conf file, except 
-for the "auto_ignore"" and “alert_new_file” which are manager side options. The 
-“ignore” option if specified on the manager becomes global for all the agents.
+These configuration options can be specified in each agent ossec.conf file, except 
+for the "auto_ignore" and “alert_new_file” which are manager side options. The 
+“ignore” option becomes global for all the agents if specified on the manager.
 
 
 .. include:: ../syntax/ossec_config.syscheck.trst 
@@ -65,7 +66,7 @@ Configuration Examples
 ----------------------
 
 Configuring syscheck is very simple. First, you need to provide the files or directories 
-to check. Note that when you specify a directory, it will monitor all its files recursively. 
+to check. Note that when specifing a directory, syscheck will monitor all its files recursively. 
 Example:
 
 .. code-block:: xml
@@ -75,7 +76,7 @@ Example:
         <directories check_all="yes">/root/users.txt,/bsd,/root/db.html</directories>
     </syscheck>
 
-To ignore a few files or directories, use the “ignore” option (or registry_ignore 
+To ignore a file or directory, use the “ignore” option (or registry_ignore 
 for Windows registry entries):
 
 .. code-block:: xml 
@@ -90,7 +91,7 @@ You can also set the “type” attribute to sregex to specify a :ref:`regex`
 in the ignore option.
 
 If you want to have different severities for changes on specific directories, create a 
-local rule for it:
+local rule:
 
 .. code-block:: xml 
 
@@ -100,13 +101,13 @@ local rule for it:
         <match>/var/www/htdocs</match>
     </rule>
 
-In the above example, we created a rule to alert with high severity (12) on change to the htdocs.
+In the above example, we created a rule to alert with high severity (12) on changes to the htdocs.
 
 Real time Monitoring
 --------------------
 
-OSSEC supports realtime (continuous) file integrity monitoring on Linux (kernels 2.6) 
-and Windows systems.
+OSSEC supports realtime (continuous) file integrity monitoring on Linux (support was added 
+kernel version 2.6.13) and Windows systems. 
 
 The configuration is very simple. In the <directories> option where you specify what 
 files or directories to monitor, you just need to add the realtime=”yes” attribute. 
@@ -124,9 +125,9 @@ same applies to Windows too.
 
 .. warning:: 
 
-    The real time monitoring will not start right away. First ossec needs to scan the 
-    file system and adds each sub-directory to the realtime queue. It can take up to 
-    30 minutes for that (wait for the log "ossec-syscheckd: INFO: Starting real time 
+    The real time monitoring will not start immediately. First ossec needs to scan the 
+    file system and add each sub-directory to the realtime queue. It can take up to 
+    30 minutes for this to finish (wait for the log "ossec-syscheckd: INFO: Starting real time 
     file monitoring" ).
 
 .. note:: 

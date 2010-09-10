@@ -3,13 +3,13 @@
 Binary Installation 
 ===================
 
-On some system a compatible compiler is not available, this leads to problems for the
-standard OSSEC install method. To work around this OSSEC supports being built on a different
-system than it has been installed on. 
+On some systems a compatible compiler is not available, this leads to problems for the
+standard OSSEC install method. To work around this OSSEC supports being built on one
+system and installed on another.
 
 .. note:: 
 
-    Due to the way OSSEC is built the system compiling OSSEC must be the same OS
+    Due to the way OSSEC is built the system compiling OSSEC must be the same OS and
     CPU platform for this work correctly. 
 
 .. _manual-install-binary-build: 
@@ -54,7 +54,7 @@ Finally create an OSSEC package.
 Installation of the binary OSSEC package 
 ----------------------------------------
 
-On the target system (that does not have a c compiler) download your ossec-binary.tgz 
+On the target system (that does not have a C compiler) download your ossec-binary.tgz 
 created in the setups above. 
 
 .. code-block:: console 

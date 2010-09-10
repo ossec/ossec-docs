@@ -30,7 +30,7 @@ Running manage_agents and start screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To run manage_agents, you have to execute the following command on the OSSEC server as a 
-user with appropriate privileagues (e.g. root):
+user with appropriate privileges (e.g. root):
 
 .. code-block:: console
 
@@ -71,9 +71,9 @@ This can for example be the hostname. In this example the agent name will be age
       Please provide the following:
        * A name for the new agent: agent1
 
-After that you have to specify the IP adress for the agent. This can either be a single 
-IP adress (e.g. 192.168.1.25) or a range of IPs (e.g. 192.168.2.0/24). The latter way 
-is preferrable if the IP of the agent will change a lot, e.g. by being assigned a 
+After that you have to specify the IP address for the agent. This can either be a single 
+IP address (e.g. 192.168.1.25) or a range of IPs (e.g. 192.168.2.0/24). The latter way 
+is preferable if the IP of the agent will change a lot, e.g. by being assigned a 
 new IP via DHCP after each boot.
 
 .. code-block:: console

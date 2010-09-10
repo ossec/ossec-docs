@@ -7,7 +7,7 @@ If you want to install the agent on systems without a static IP address or
 behind a NAT device, you need to configure the agent using variable IP addresses. 
 
 It means that when the :ref:`manage_agents` tool asks you for an IP, you will give the 
-IP+netmask instead of a unique IP.
+IP and netmask instead of a unique IP.
 
 Setup Examples 
 --------------
@@ -53,6 +53,6 @@ the following format:
 
 .. note:: 
 
-    Since the ossec server is going to see them as if they were comming 
+    Since the ossec server is going to see them as if they were coming 
     from the nat server (10.1.1.x ip), it should work. Make sure to use one 
     separate key for each agent.

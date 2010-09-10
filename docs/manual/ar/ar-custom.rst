@@ -103,7 +103,7 @@ Restart OSSEC and test
 ^^^^^^^^^^^^^^^^^^^^^^
 
 After the configuration is done, you can restart OSSEC and test the configuration. For 
-thee above example, I can run the logger command to simular a segmentation fault message.
+thee above example, I can run the logger command to similar a segmentation fault message.
 
 .. code-block:: console 
 

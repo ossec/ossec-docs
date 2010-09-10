@@ -16,7 +16,7 @@ How do I troubleshoot ossec?
     * Windows: The logs are at  C:\Program Files\ossec-agent\ossec.log. 
 
     If by looking at them, you can't find out the error, we suggest you to send an 
-    e-mail to one of our mailling lists with the following information: 
+    e-mail to one of our mailing lists with the following information: 
 
     * OSSEC version number.
 
