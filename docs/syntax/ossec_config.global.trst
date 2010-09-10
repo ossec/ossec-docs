@@ -64,7 +64,7 @@
 
     List of IP addresses that should never be blocked by the active response (one per element).
 
-    **Mulitples Allowed:** yes 
+    **Multiples Allowed:** yes 
 
     **Allowed:** Any IP address or netblock
     

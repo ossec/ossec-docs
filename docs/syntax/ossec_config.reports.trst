@@ -58,9 +58,9 @@
 
 .. xml:element:: reports.email_to 
 
-    The email addres to send the completed report. 
+    The email address to send the completed report. 
 
-    This is a required feild for a report to function.  
+    This is a required field for a report to function.  
 
     **Allowed:** Any email address
 

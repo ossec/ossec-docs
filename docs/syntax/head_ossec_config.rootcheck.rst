@@ -9,7 +9,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-rootcheck options are avaiable in the the following installation types:
+rootcheck options are available in the the following installation types:
 
 * server
 * local 
