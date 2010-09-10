@@ -1,7 +1,7 @@
-.. _ossec_config.active-responce:
+.. _ossec_config.active-response:
 
 
-ossec.conf: Active Responce Options
+ossec.conf: Active Response Options
 ===================================
 
 Overview 
@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Alerts options are avaiable in the the following installation types:
+Alerts options are available in the the following installation types:
 
 * server
 * local 
@@ -18,7 +18,7 @@ Alerts options are avaiable in the the following installation types:
 Location 
 ^^^^^^^^
 
-All active-responce options must be configured in the /var/ossec/etc/ossec.conf 
+All active-response options must be configured in the /var/ossec/etc/ossec.conf 
 and used within the <ossec_config> tag.  
 
 XML excerpt to show location:
@@ -31,15 +31,15 @@ XML excerpt to show location:
             Command options here 
             --> 
         </command>
-        <active-responce> 
+        <active-response> 
             <!-- 
-            active-responce options here
+            active-response options here
             --> 
-        </active-responce> 
+        </active-response> 
     </ossec_config> 
 
 Options 
 ------- 
 
-.. include:: ./ossec_config.active-responce.trst
+.. include:: ./ossec_config.active-response.trst
 
