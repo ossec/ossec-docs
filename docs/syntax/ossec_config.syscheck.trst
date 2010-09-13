@@ -8,7 +8,7 @@
 
     - **realtime**: Value=yes 
 
-        - This will enable realtime/continous montoring on linux using the inotify system calls.
+        - This will enable realtime/continuous monitoring on linux using the inotify system calls.
 
     - **report_changes**: Value=yes 
 

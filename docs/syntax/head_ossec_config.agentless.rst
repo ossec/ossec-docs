@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Agentless options are avaiable in the the following installation types:
+Agentless options are available in the the following installation types:
 
 * server
 * local 

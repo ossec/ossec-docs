@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Database Output options are avaiable in the the following installation types:
+Database Output options are available in the the following installation types:
 
 * server
 * local 

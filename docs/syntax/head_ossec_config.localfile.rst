@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Localfile options are avaiable in the the following installation types:
+Localfile options are available in the the following installation types:
 
 * server
 * local 

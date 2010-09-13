@@ -9,7 +9,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-client options are avaiable in the the following installation types:
+client options are available in the the following installation types:
 
 * agent
 
