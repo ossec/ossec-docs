@@ -9,7 +9,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-remote options are avaiable in the the following installation types:
+remote options are available in the the following installation types:
 
 * server
 

@@ -36,7 +36,7 @@
 
     Used to link the response to the command 
 
-.. xml:element:: active-responce.location 
+.. xml:element:: active-response.location 
 
     Where the command should be executed. You have four options: 
 

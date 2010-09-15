@@ -9,7 +9,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Syscheck options are avaiable in the the following installation types:
+Syscheck options are available in the the following installation types:
 
 * server
 * local 

@@ -9,7 +9,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Global options are avaiable in the the following installation types:
+Global options are available in the the following installation types:
 
 * server
 * local 

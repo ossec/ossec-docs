@@ -5,7 +5,7 @@
 
     Defines a rule 
 
-    **Attrubutes:** 
+    **Attributes:** 
 
     - *level* 
 
@@ -181,7 +181,7 @@
     Preform a CDB lookup of a ossec list.  This is a fast on disk db that will 
     always find keys within to seeks of the file.  
 
-    **Attrubutes:**
+    **Attributes:**
 
     - *field* 
         
@@ -205,41 +205,41 @@
 
         - Value: match_key
 
-            Positive key match: field is the key to search  wthin the cdb and will 
+            Positive key match: field is the key to search  within the cdb and will 
             match if they key is present
 
             This is the default if no lookup is specified 
 
         - Value: not_match_key
 
-            Negative key match: feild is the key to search and will match if 
+            Negative key match: field is the key to search and will match if 
             it *IS NOT* present in the database.
             
         - Value: match_key_value
 
             Key and Value Match: field is searched for in the cdb and if found the 
-            value will be compired with regex from attrubute check_value. 
+            value will be compared with regex from attribute check_value. 
 
 
         - Value: address_match_key 
 
-            Positive key match: field is an IP address and the key to search wthin 
+            Positive key match: field is an IP address and the key to search within 
             the cdb and will match if they key is present
 
         - Value: not_address_match_key
 
-            Negative key match: feild is an IP address the key to search and will 
+            Negative key match: field is an IP address the key to search and will 
             match if it *IS NOT* present in the database:
 
         - Value: address_match_key_value
 
             Key and Value Match: field is an IP address searched for in the cdb 
-            and if found the value will be compired with regex from attrubute check_value. 
+            and if found the value will be compared with regex from attribute check_value. 
 
     - *check_value* 
         
         regex pattern for matching on the value pulled out of the cdb when using 
-        lookip types: address_match_key_value, match_key_value 
+        lookup types: address_match_key_value, match_key_value 
 
     **Allowed:** 
         
@@ -251,18 +251,18 @@
 
     Extra information about the rule.
 
-    **Attrubutes:**
+    **Attributes:**
 
     - *type* 
 
         - Value: text 
 
-            This is the default when no type is selected.  Just used for addintional 
-            infomation about the alert/event. 
+            This is the default when no type is selected.  Just used for additional 
+            information about the alert/event. 
 
         - Value: link
 
-            Link to more infomation about the alert/event.  
+            Link to more information about the alert/event.  
 
         - Value: cve 
 
@@ -272,11 +272,11 @@
 
             The osvdb id related to this alert/event. 
 
-    **Allowed:** String but content is dependant on the type attrubute. 
+    **Allowed:** String but content is dependent on the type attribute. 
 
     **Example:** 
 
-    .. code-block:: xml
+    .. code-block:: xmi
 
         <rule id="502" level="3">
             <if_sid>500</if_sid>

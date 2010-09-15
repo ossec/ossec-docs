@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Reports options are avaiable in the the following installation types:
+Reports options are available in the the following installation types:
 
 * server
 * local 

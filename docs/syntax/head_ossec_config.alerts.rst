@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Alerts options are avaiable in the the following installation types:
+Alerts options are available in the the following installation types:
 
 * server
 * local 

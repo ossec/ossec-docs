@@ -20,17 +20,17 @@
 
 .. object:: rule_dir 
 
-    Load a directory of rules.  The order of loaded files will be in alphebics order 
+    Load a directory of rules.  The order of loaded files will be in alphebical order 
     and will not load any files that have been loaded before. 
 
     **Attributes:** 
     
-    - *pattern*: is a regex match string use to detemine if a file needs to be 
+    - *pattern*: is a regex match string use to determine if a file needs to be 
       loaded. 
         
         - *Defaults*: regex "_rules.xml$" is used unless another one is specified. 
       
-    **Allowed:** Path to a directoy of rule files 
+    **Allowed:** Path to a directory of rule files 
 
     **Example:**
 
@@ -60,7 +60,7 @@
     
     .. note:: 
 
-        If no decoders are spcified in ossec.conf the lagacy etc/decoder.xml and 
+        If no decoders are specified in ossec.conf the legacy etc/decoder.xml and 
         etc/local_decoder.xml are loaded
 
     **Allowed:** Path and file name of decoder to load example: rules/decoder/decoder.xml 
@@ -105,13 +105,13 @@
 
 .. object:: list  
 
-    Load a single cdb refences for inclusion by other rules.  
+    Load a single cdb references for inclusion by other rules.  
 
     .. note:: 
 
         Due to the way cdb files are compiled using tmp files by the `ossec-makelists` 
-        program the file extenstion should not be include in this directive.  ossec's 
-        tools will correct append the correct .cdb or .txt extenstion as needed. 
+        program the file extension should not be include in this directive.  ossec's 
+        tools will correctly append the correct .cdb or .txt extension as needed. 
 
     **Allowed:** Path to a list file to be loaded and compiled. 
 

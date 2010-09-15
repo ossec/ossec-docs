@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Rules options are avaiable in the the following installation types:
+Rules options are available in the the following installation types:
 
 * server
 * local 
