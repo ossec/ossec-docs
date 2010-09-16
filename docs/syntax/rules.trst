@@ -276,7 +276,7 @@
 
     **Example:** 
 
-    .. code-block:: xmi
+    .. code-block:: xml
 
         <rule id="502" level="3">
             <if_sid>500</if_sid>
