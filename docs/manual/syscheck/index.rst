@@ -56,11 +56,11 @@ Configuration options
 ---------------------
 
 These configuration options can be specified in each agent ossec.conf file, except 
-for the "auto_ignore" and “alert_new_file” which are manager side options. The 
-“ignore” option becomes global for all the agents if specified on the manager.
+for the ``auto_ignore`` and ``alert_new_file`` which are manager side options. The 
+``ignore`` option becomes global for all the agents if specified on the manager.
 
 
-.. include:: ../syntax/ossec_config.syscheck.trst 
+.. include:: ../../syntax/ossec_config.syscheck.trst 
 
 Configuration Examples
 ----------------------
@@ -76,7 +76,7 @@ Example:
         <directories check_all="yes">/root/users.txt,/bsd,/root/db.html</directories>
     </syscheck>
 
-To ignore a file or directory, use the “ignore” option (or registry_ignore 
+To ignore a file or directory, use the ``ignore`` option (or ``registry_ignore`` 
 for Windows registry entries):
 
 .. code-block:: xml 
@@ -87,7 +87,7 @@ for Windows registry entries):
         <ignore type="sregex">.log$|.tmp</ignore>
     </syscheck>
 
-You can also set the “type” attribute to sregex to specify a :ref:`regex`
+You can also set the ``type`` attribute to sregex to specify a :ref:`regex`
 in the ignore option.
 
 If you want to have different severities for changes on specific directories, create a 
@@ -97,7 +97,7 @@ local rule:
 
     <rule id="100345" level="12">
         <if_matched_group>syscheck</if_matched_group>
-        <description>Changes to /var/www/htdocs – Critical file!</description>
+        <description>Changes to /var/www/htdocs - Critical file!</description>
         <match>/var/www/htdocs</match>
     </rule>
 
@@ -109,8 +109,8 @@ Real time Monitoring
 OSSEC supports realtime (continuous) file integrity monitoring on Linux (support was added 
 kernel version 2.6.13) and Windows systems. 
 
-The configuration is very simple. In the <directories> option where you specify what 
-files or directories to monitor, you just need to add the realtime=”yes” attribute. 
+The configuration is very simple. In the ``<directories>`` option where you specify what 
+files or directories to monitor, you just need to add the ``realtime="yes"`` attribute. 
 For example:
 
 .. code-block:: xml 
@@ -140,9 +140,10 @@ Report Changes
 
 OSSEC supports sending diffs when changes are made to text files on Linux and unix systems.
 
-The configuration is very simple. In the <directories option where files and directories
-to monitor are specified, adding the report_changes="yes" attribute will enable this 
+The configuration is very simple. In the ``<directories>`` option where files and directories
+to monitor are specified, adding the ``report_changes="yes"`` attribute will enable this 
 option.
+
 For example:
 
 .. code-block:: xml
@@ -157,4 +158,4 @@ For example:
     Report Changes will only work with text files, and the changes are stored on the agent 
     inside ``/var/ossec/queue/diff/local/dir/file``.
 
-.. include:: ../faq/syscheck.rst
+.. include:: ../../faq/syscheck.rst

@@ -9,9 +9,9 @@ Manual
     non-technical-overview
     ossec-architecture
     supported-systems
-    installation
-    syscheck
-    rootcheck
+    installation/index
+    syscheck/index
+    rootcheck/index
     agent/index
     monitoring/index
     rules-decoders/index

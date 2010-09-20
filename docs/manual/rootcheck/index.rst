@@ -46,8 +46,9 @@ Configuration options
 ---------------------
 
 All these configurations options can be specified in each agent ossec.conf file, except 
-for the "auto_ignore"" and “alert_new_file” which are manager side options. The 
-“ignore” option if specified on the manager becomes global for all agents.
+for the ``auto_ignore`` and ``alert_new_file`` which are manager side options. The 
+``ignore`` option if specified on the manager becomes global for all agents.
 
 
-.. include:: ../syntax/ossec_config.rootcheck.trst 
+.. include:: ../../syntax/ossec_config.rootcheck.trst 
+
