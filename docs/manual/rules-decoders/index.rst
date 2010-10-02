@@ -10,3 +10,4 @@ Rules and Decoders
     testing
     rule-lists
     create-custom
+    rule_decoder_dir
