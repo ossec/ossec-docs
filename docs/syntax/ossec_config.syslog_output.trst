@@ -1,0 +1,16 @@
+
+.. xml:element:: syslog_output 
+
+
+.. xml:element:: syslog_output.server
+
+    IP Address of the syslog server. 
+
+    **Allowed:** any valid IP address 
+
+.. xml:element:: syslog_output.level
+
+    Alert level of the alerts to forward
+
+    **Allowed:** 1 - 16 
+

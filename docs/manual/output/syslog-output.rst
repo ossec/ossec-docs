@@ -7,6 +7,17 @@ Sending alerts via syslog
 Syslog output allows you to send the OSSEC alerts to one or more syslog servers
 (granularly).
 
+Configuration options
+---------------------
+
+These configurations options can be specified in the server or local install ossec.conf file.
+
+.. include:: ../../syntax/ossec_config.syslog_output.trst 
+
+Enable Database output in the configuration
+------------------------------------------
+
+
 You can configure OSSEC with the syslog servers of your choice. In my example
 here, I am sending everything to server 192.168.4.1 and only the alerts above
 level 10 to 10.1.1.1:
