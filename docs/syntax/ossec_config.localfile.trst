@@ -36,7 +36,7 @@
 
 .. xml:element:: localfile.command 
 
-    The command to run a all output will be read as a log file.  
+    The command to run all output from as command will be read as a log file.  
 
     **Allowed:** And commandline and arguments. 
 
