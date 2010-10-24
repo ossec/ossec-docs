@@ -36,6 +36,10 @@
 
     **Allowed:** full/sms 
 
+.. xml:element:: email_alerts.rule_id
+
+    Option to send granular emails based on rule id.
+
 .. xml:element:: email_alerts.do_not_delay 
 
     Option to send the e-mail right away (no delay). 
