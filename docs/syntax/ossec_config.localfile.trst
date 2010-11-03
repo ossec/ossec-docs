@@ -33,6 +33,7 @@
     - nmapg 
     - apache
     - command 
+    - full_command
 
 .. xml:element:: localfile.command 
 
