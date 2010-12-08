@@ -1,6 +1,6 @@
 
 #########################
-Rules/Decoders Documation 
+Rules/Decoders Documentation 
 #########################
 
 Contents:

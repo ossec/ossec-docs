@@ -1,6 +1,6 @@
 
 ################
-Rules Documation 
+Rules Documentation 
 ################
 
 Contents:

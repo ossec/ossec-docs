@@ -51,7 +51,7 @@ use the following configuration:
 .. code-block:: xml 
 
     <localfile>
-        <location>/var/log/\*.log</location>
+        <location>/var/log/*.log</location>
         <log_format>syslog</log_format>
     </localfile>
 
