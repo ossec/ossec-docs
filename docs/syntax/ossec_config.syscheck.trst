@@ -8,11 +8,11 @@
 
     - **realtime**: Value=yes 
 
-        - This will enable realtime/continuous monitoring on linux using the inotify system calls.
+        - This will enable realtime/continuous monitoring on Linux using the inotify system calls.
 
     - **report_changes**: Value=yes 
 
-        - Report diffs of files changes.  This is limited to text files at this time.  
+        - Report diffs of file changes.  This is limited to text files at this time.  
 
     - **check_all**: Value=yes 
 
@@ -20,7 +20,7 @@
         
     - **check_sum**: Value=yes
 
-        - Check the md5 and sha1 hashs of the  of the files will be checked.  
+        - Check the md5 and sha1 hashes of the  of the files will be checked.  
 
           This is the same as using both check_sha1sum="yes" and check_md5sum="yes"
           
@@ -38,16 +38,20 @@
 
     - **check_owner**: Value=yes
 
-        - Check the owner of the files selected 
+        - Check the owner of the files selected.
 
-    - **check_group**: Value=yes  
+    - **check_group**: Value=yes
 
-        - Check the group owner of the files/directories selected 
+        - Check the group owner of the files/directories selected.
 
-    - **check_perm**: Value=yes 
+    - **check_perm**: Value=yes
        
         - Check the UNIX permission of the files/directories selected.
-          On windows this will still on check POSIC permissions. 
+          On windows this will only check the POSIX permissions. 
+
+    - **restrict**: Value=string
+
+        - A string that will limit checks to files containing that string in the file name.
 
     **Allowed:** Any directory or file name 
 
@@ -64,20 +68,6 @@
         - This is the regex pattern to use to filter out files to not generate alerts on.  
 
     **Allowed:** Any directory or file name 
-
-.. object:: restrict
-
-    A string that will limit checks to files containing that string in the file name.
-
-    **Default:** None
-
-    **Attributes:**
-
-    - **type**: Value=string
-
-        - This is the string used to match filenames.
-
-    **Allowed:** Any string
 
 .. object:: frequency
 
