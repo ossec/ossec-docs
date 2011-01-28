@@ -5,7 +5,7 @@ Syscheck
 ========
 
 **Syscheck** is the name of the integrity checking process inside OSSEC. It runs periodically 
-and checks if any configured file (or registry entry on Windows) has changed.
+to check if any configured file (or registry entry on Windows) has changed.
 
 Why Integrity checking?
 -----------------------
@@ -33,13 +33,13 @@ Quick facts
 
 * How often does it run? 
   
-  - By default every 6 hours or at any configured time/day.
+  - By default every 6 hours, but the frequency or time/day are configurable.
 
 * Where is the database stored? 
   
   - On the manager in ``/var/ossec/queue/syscheck``.
 
-* Where it helps me with compliance? (PCI DSS, etc) 
+* Where does it help with compliance? (PCI DSS, etc) 
 
   - It helps with sections 11.5 (install FIM software) and 10.5 (integrity checking of log files) of PCI.
 
@@ -50,7 +50,7 @@ Quick facts
 * How does it deal with false positives? 
   
   - Files that change too often can be ignored in the configuration or using rules. By default when a 
-file changes 3 times it is automatically ignored.
+file changes 3 times further changes are automatically ignored.
 
 Configuration options
 ---------------------
@@ -97,11 +97,11 @@ local rule:
 
     <rule id="100345" level="12">
         <if_matched_group>syscheck</if_matched_group>
-        <description>Changes to /var/www/htdocs - Critical file!</description>
         <match>/var/www/htdocs</match>
+        <description>Changes to /var/www/htdocs - Critical file!</description>
     </rule>
 
-In the above example, we created a rule to alert with high severity (12) on changes to the htdocs.
+In the above example, we created a rule to alert with high severity (12) on changes to the files in the htdocs directory.
 
 Real time Monitoring
 --------------------
