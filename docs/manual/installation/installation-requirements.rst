@@ -7,14 +7,14 @@ Installations requirements
 UNIX
 ==== 
 
-For UNIX systems, ossec just requires gcc and libc. However, 
+For UNIX systems, OSSEC just requires gcc and libc. However, 
 you always have the option to pre-compile it on one system and 
 move the binaries to the final box. 
 
 Ubuntu
 ------
 
-On Ubuntu you will need the *build-essential* package in order to compile and install ossec. 
+On Ubuntu you will need the *build-essential* package in order to compile and install OSSEC. 
 
 To install the package run the following command.  
 
