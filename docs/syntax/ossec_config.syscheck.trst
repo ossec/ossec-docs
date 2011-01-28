@@ -65,6 +65,20 @@
 
     **Allowed:** Any directory or file name 
 
+.. object:: restrict
+
+    A string that will limit checks to files containing that string in the file name.
+
+    **Default:** None
+
+    **Attributes:**
+
+    - **type**: Value=string
+
+        - This is the string used to match filenames.
+
+    **Allowed:** Any string
+
 .. object:: frequency
 
     Frequency that the syscheck is going to be executed (in seconds).
