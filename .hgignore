@@ -12,3 +12,4 @@ docs/docs
 docs/rules/
 *.pyc
 nosetests.xml
+*.bak
