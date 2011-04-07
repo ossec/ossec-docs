@@ -40,7 +40,7 @@
             
             <ossec_config>
                 <rules>
-                    <rules_dir>rules</rules_dir>
+                    <rule_dir>rules</rule_dir>
                 </rules>
             </ossec_config>
 

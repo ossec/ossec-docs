@@ -38,7 +38,7 @@ the rules dir that match the regex ``_rules.xml$``
 
     <ossec_config>
         <rules>
-            <rules_dir pattern="_rules.xml">rules</rules_dir>
+            <rule_dir pattern="_rules.xml">rules</rule_dir>
 
 The pattern is optional and defaults to _rules.xml for rules loading so this
 could be writen as:
@@ -47,11 +47,11 @@ could be writen as:
 
     <ossec_config>
         <rules>
-            <rules_dir>rules</rules_dir>
+            <rule_dir>rules</rule_dir>
 
 Order of the directives in ossec.conf is still respected, and duplicate files
 will not be loaded. In the following example 00_setup_rules.xml is always
-loaded first, and will *NOT* be loaded a second time by the rules_dir
+loaded first, and will *NOT* be loaded a second time by the rule_dir
 directive.
 
 .. code-block:: xml 
@@ -59,7 +59,7 @@ directive.
     <ossec_config>
         <rules>
             <include>rules/00_setup_rules.xml</include>
-            <rules_dir>rules</rules_dir>
+            <rule_dir>rules</rule_dir>
 
 For full details on all the Syntax see :xml:`rule_dir` and :xml:`decoder_dir`
 
@@ -93,8 +93,8 @@ subdirectories.
             <decoder_dir>rules/plugins</decoder_dir>
 
             <rule>rules/rules/00_rules_config.xml</rule>
-            <rules_dir pattern=".xml$">rules/</rules_dir>
-            <rules_dir>rules/plugins</rules_dir>
+            <rule_dir pattern=".xml$">rules/</rule_dir>
+            <rule_dir>rules/plugins</rule_dir>
         </rules>  
     </ossec_config>
 
