@@ -34,14 +34,14 @@ operating system:
 
 .. code-block:: xml 
 
-    <agent_config name="agent1|agent2">
+    <agent_config name="agent1">
         <localfile>
             <location>/var/log/my.log</location>
             <log_format>syslog</log_format>
         </localfile>
     </agent_config>
 
-    <agent_config os="Linux|OpenBSD">
+    <agent_config os="Linux">
         <localfile>
             <location>/var/log/my.log2</location>
             <log_format>syslog</log_format>
