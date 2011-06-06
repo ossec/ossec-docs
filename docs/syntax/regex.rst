@@ -59,7 +59,8 @@ To utilize the following characters they must be escaped::
     $ -> \$
     ( -> \(
     ) -> \)
-    \ -> \\   
+    \ -> \\
+    | -> \|
 
 
 .. _os_match:
