@@ -28,12 +28,10 @@
 
     - **Allowed** default, cef
 
-    .. xml:codeblock::
+    .. code-block:: xml
 
-    <syslog_output>
-      <server>10.0.0.1</server>
-
-      <port>514</port>
- 
-      <format>cef</format>
-    </syslog_output>
+    	<syslog_output>
+      	  <server>10.0.0.1</server>
+      	  <port>514</port>
+      	  <format>cef</format>
+    	</syslog_output>
