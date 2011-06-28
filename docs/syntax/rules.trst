@@ -216,7 +216,7 @@
 
             - Positive key match: field is the key to search within the cdb and will match if they key is present.
 
-            - This is the default if no lookup is specified 
+            - This is the default if no lookup is specified.
 
         - Value: not_match_key
 
@@ -245,6 +245,7 @@
     **Allowed:** 
         
         Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
+
     **Example:**
 
     .. code-block:: xml
