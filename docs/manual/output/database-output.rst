@@ -21,7 +21,7 @@ Enabling Database Support
 
 .. note::
 
-    You must have the MySQL or PgSQL Client  libraries installed on the OSSEC server.
+    You must have the MySQL or PgSQL Client libraries installed on the OSSEC server.
 
 Before you run the "./install.sh" script execute the following to compile OSSEC with
 database support. 
@@ -35,7 +35,7 @@ database support.
 Enable Database output in the configuration
 ------------------------------------------
 
-After installation is complete database support needs to be turned on and enabled. 
+After installation is complete database support needs to be enabled. 
 The following command will enable the database daemon on the next restart. 
 
 .. code-block:: console 
