@@ -44,148 +44,157 @@
         - The time (in seconds) to ignore this rule after firing it (to avoid floods). 
         - **Allowed:** Any number from 1 to 9999
 
+    - *overwrite*
+	- Used to supercede an OSSEC rule with local changes. This is useful to change the level or other options of rules included with OSSEC.
+	- **Allowed** yes
+
 .. xml:element:: match
 
-    Any string to match against the log event.
+    - Any string to match against the log event.
 
-    **Allowed:** Any :ref:`os_match` 
+    - **Allowed:** Any :ref:`os_match` 
 
 .. xml:element:: regex 
 
-    Any regex to match against the log event. 
+    - Any regex to match against the log event. 
 
-    **Allowed:** Any :ref:`os_regex`
+    - **Allowed:** Any :ref:`os_regex`
 
 .. xml:element:: decoded_as 
 
-    Any string pre-matched with a decoder (see :ref:`syntax_decoders`)
+    - Any string pre-matched with a decoder (see :ref:`syntax_decoders`)
 
-    **Allowed:** Any string 
+    - **Allowed:** Any string 
 
 .. xml:element:: category
 
-    The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
+    - The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
 
-    **Allowed:** Any category :ref:`categories` 
+    - **Allowed:** Any category :ref:`categories` 
 
 .. xml:element:: srcip 
 
-    Any IP address or CIDR block to be compared to an IP decoded as a srcip. Use "!" to negate it.
+    - Any IP address or CIDR block to be compared to an IP decoded as a srcip. Use "!" to negate it.
 
-    **Allowed:** Any srcip 
+    - **Allowed:** Any srcip 
 
 .. xml:element:: dstip 
 
-    Any IP address or CIDR block to be compared to an IP decoded as a dstip. Use “!” to negate it.
+    - Any IP address or CIDR block to be compared to an IP decoded as a dstip. Use “!” to negate it.
 
-    **Allowed:** Any dstip 
+    - **Allowed:** Any dstip 
 
 .. xml:element:: user 
 
-    Any username (decoded as the username).
+    - Any username (decoded as the username).
 
-    **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: program_name
 
-    Program name is decoded from syslog process name. 
+    - Program name is decoded from syslog process name. 
 
-    **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: hostname 
 
-    Any hostname (decoded as the syslog hostname).
+    - Any hostname (decoded as the syslog hostname).
 
-    **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: time 
 
-    Time that the event was generated.
+    - Time that the event was generated.
 
-    **Allowed:** Any time range (hh:mm-hh:mm) 
+    - **Allowed:** Any time range (hh:mm-hh:mm) 
 
 .. xml:element:: weekday 
 
-    Week day that the event was generated. 
+    - Week day that the event was generated. 
 
-    **Allowed:** monday - sunday, weekday, weekend 
+    - **Allowed:** monday - sunday, weekday, weekend 
 
 .. xml:element:: id 
 
-    Any ID (decoded as the ID). 
+    - Any ID (decoded as the ID). 
 
-    **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: url 
 
-    Any URL (decoded as the URL).
+    - Any URL (decoded as the URL).
     
-    **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: if_sid 
 
-    Matches if the ID has matched. 
+    - Matches if the ID has matched. 
 
-    **Allowed:** Any rule id 
+    - **Allowed:** Any rule id 
 
 .. xml:element:: if_group 
 
-    Matches if the group has matched before. 
+    - Matches if the group has matched before. 
 
-    **Allowed:** Any Group 
+    - **Allowed:** Any Group 
 
 .. xml:element:: if_level 
 
-    Matches if the level has matched before. 
+    - Matches if the level has matched before. 
 
-    **Allowed:** Any level from 1 to 16 
+    - **Allowed:** Any level from 1 to 16 
 
 .. xml:element:: if_matched_sid 
 
-    Matches if the ID has matched. 
+    - Matches if the ID has matched. 
 
-    **Allowed:** Any rule id 
+    - **Allowed:** Any rule id 
 
 .. xml:element:: if_matched_group 
 
-    Matches if the group has matched before. 
+    - Matches if the group has matched before. 
 
-    **Allowed:** Any group 
+    - **Allowed:** Any group 
 
 .. xml:element:: if_matched_level 
 
-    Matches if the level has matched before. 
+    - Matches if the level has matched before. 
 
-    **Allowed:** Any level from 1 to 16 
+    - **Allowed:** Any level from 1 to 16 
 
 .. xml:element:: same_source_ip 
 
-    Used together with frequency. Specifies that the source ip must be the same. 
+    - Used together with frequency. Specifies that the source ip must be the same. 
+    **Example** <same_source_ip />
 
 .. xml:element:: same_source_port 
 
-    Used together with frequency. Specifies that the source port must be the same. 
+    - Used together with frequency. Specifies that the source port must be the same. 
+
+    - **Example** <same_source_port />
 
 .. xml:element:: same_location 
 
-    Used together with frequency. Specifies that the location must be the same.
+    - Used together with frequency. Specifies that the location must be the same.
+
+    - **Example** <same_location />
 
 .. xml:element:: description 
 
-    Rule description. 
+    - Rule description. 
 
-    **Allowed:** Any string 
+    - **Allowed:** Any string 
 
 .. xml:element:: list 
 
-    Preform a CDB lookup of a ossec list.  This is a fast on disk db that will 
-    always find keys within to seeks of the file.  
+    Preform a CDB lookup using an ossec list.  This is a fast on disk database which will 
+    always find keys within two seeks of the file.  
 
     **Attributes:**
 
     - *field* 
         
-        Field that is used as the key to look up in the CDB file 
+        Field that is used as the key to look up in the CDB file:
 
         - Value: srcip 
         - Value: srcport 
@@ -201,55 +210,54 @@
 
     - *lookup*
         
-        This is the type of lookup that is preformed. 
+        This is the type of lookup that is preformed: 
 
         - Value: match_key
 
-            Positive key match: field is the key to search  within the cdb and will 
-            match if they key is present
+            - Positive key match: field is the key to search within the cdb and will match if they key is present.
 
-            This is the default if no lookup is specified 
+            - This is the default if no lookup is specified 
 
         - Value: not_match_key
 
-            Negative key match: field is the key to search and will match if 
-            it *IS NOT* present in the database.
+            - Negative key match: field is the key to search and will match if it *IS NOT* present in the database.
             
         - Value: match_key_value
 
-            Key and Value Match: field is searched for in the cdb and if found the 
-            value will be compared with regex from attribute check_value. 
-
+            - Key and Value Match: field is searched for in the cdb and if found the value will be compared with regex from attribute check_value.
 
         - Value: address_match_key 
 
-            Positive key match: field is an IP address and the key to search within 
-            the cdb and will match if they key is present
+            - Positive key match: field is an IP address and the key to search within the cdb and will match if they key is present.
 
         - Value: not_address_match_key
 
-            Negative key match: field is an IP address the key to search and will 
-            match if it *IS NOT* present in the database:
+            - Negative key match: field is an IP address the key to search and will match if it *IS NOT* present in the database.
 
         - Value: address_match_key_value
 
-            Key and Value Match: field is an IP address searched for in the cdb 
-            and if found the value will be compared with regex from attribute check_value. 
+            - Key and Value Match: field is an IP address searched for in the cdb and if found the value will be compared with regex from attribute check_value.
 
     - *check_value* 
         
-        regex pattern for matching on the value pulled out of the cdb when using 
-        lookup types: address_match_key_value, match_key_value 
+        - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
 
     **Allowed:** 
         
-        String of path to the CDB file to be used for lookup.  This file must also be 
-        included in the ossec.conf file. 
+        Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
+    **Example:**
+
+    .. code-block:: xml
+
+	<rule id="100000" level="7">
+	  <list lookup="match_key" field="srcip">path/to/list/file</list>
+	  <description>Checking srcip against cdb list file</description>
+	</rule>
 
 
 .. xml:element:: info 
 
-    Extra information about the rule.
+    Extra information may be added through the following attributes:
 
     **Attributes:**
 
