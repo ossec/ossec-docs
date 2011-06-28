@@ -4,7 +4,7 @@
 Sending alerts via E-Mail
 =========================
 
-Notification within OSSEC to email are broken down into sections.  
+There are currently three types of email alerts:
 
 * Single Notification E-Mail addresses 
 * Granular Notifications to any number of E-mail addresses
@@ -13,7 +13,7 @@ Notification within OSSEC to email are broken down into sections.
 .. warning:: 
 
     Single E-Mail Notification must be setup before Granular Notification
-    will work.  (This is to be to be addressed in a future version)
+    will work.
 
 
 .. toctree::
