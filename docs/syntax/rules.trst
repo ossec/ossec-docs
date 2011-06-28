@@ -1,7 +1,7 @@
 .. xml:element:: group 
 
 
-.. xml:element:: group.rule 
+.. xml:element:: rule 
 
     Defines a rule 
 
@@ -30,8 +30,10 @@
 
     - *frequency* 
 
-        - Specifies the number of times the rule must have matched before firing it.
+        - Specifies the number of times the rule must have matched before firing.
+	- The number of times the rule must be matched is actually 2 more than this number.
         - **Allowed:** Any number from 1 to 999
+	- **Example** frequency="2" would mean the rule must be matched 4 times
 
     - *timeframe* 
 
@@ -43,140 +45,140 @@
         - The time to ignore this rule after firing it (to avoid floods). 
         - **Allowed:** Any number from 1 to 9999
 
-.. xml:element:: group.rule.match
+.. xml:element:: match
 
     Any string to match against the event (log).
 
     **Allowed:** Any :ref:`os_match` 
 
-.. xml:element:: group.rule.regex 
+.. xml:element:: regex 
 
     Any regex to match against the event(log). 
 
     **Allowed:** Any :ref:`os_regex`
 
-.. xml:element:: group.rule.decoded_as 
+.. xml:element:: decoded_as 
 
     Any pre-matched string (see :ref:`syntax_decoders`)
 
     **Allowed:** Any string 
 
-.. xml:element:: group.rule.category
+.. xml:element:: category
 
     The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
 
     **Allowed:** Any category :ref:`categories` 
 
-.. xml:element:: group.rule.srcip 
+.. xml:element:: srcip 
 
     Any IP address (decoded as the source ip). Use "!" to negate it.
 
     **Allowed:** Any srcip 
 
-.. xml:element:: group.rule.dstip 
+.. xml:element:: dstip 
 
     Any IP address (decoded as the dst ip). Use “!” to negate it.
 
     **Allowed:** Any dstip 
 
-.. xml:element:: group.rule.user 
+.. xml:element:: user 
 
     any username (decoded as the username).
 
     **Allowed:** any :ref:`os_match` 
 
-.. xml:element:: group.rule.program_name
+.. xml:element:: program_name
 
     Program name is decoded from syslog process name. 
 
     **Allowed:** any :ref:`os_match` 
 
-.. xml:element:: group.rule.hostname 
+.. xml:element:: hostname 
 
     Any hostname (decoded as the syslog hostname).
 
     **Allowed:** any :ref:`os_match` 
 
-.. xml:element:: group.rule.time 
+.. xml:element:: time 
 
     Time that the event was generated.
 
     **Allowed:** Any time range (hh:mm-hh:mm) 
 
-.. xml:element:: group.rule.weekday 
+.. xml:element:: weekday 
 
     Week day that the event was generated. 
 
     **Allowed:** monday - sunday, weekday, weekend 
 
-.. xml:element:: group.rule.id 
+.. xml:element:: id 
 
     Any ID (decoded as the ID). 
 
     **Allowed:** any :ref:`os_match` 
 
-.. xml:element:: group.rule.url 
+.. xml:element:: url 
 
     Any URL (decoded as the URL).
     
     **Allowed:** any :ref:`os_match` 
 
-.. xml:element:: group.rule.if_sid 
+.. xml:element:: if_sid 
 
     Matches if the ID has matched. 
 
     **Allowed:** Any rule id 
 
-.. xml:element:: group.rule.if_group 
+.. xml:element:: if_group 
 
     Matches if the group has matched before. 
 
     **Allowed:** Any Group 
 
-.. xml:element:: group.rule.if_level 
+.. xml:element:: if_level 
 
     Matches if the level has matched before. 
 
     **Allowed:** Any level from 1 to 16 
 
-.. xml:element:: group.rule.if_matched_sid 
+.. xml:element:: if_matched_sid 
 
     Matches if the ID has matched. 
 
     **Allowed:** Any rule id 
 
-.. xml:element:: group.rule.if_matched_group 
+.. xml:element:: if_matched_group 
 
     Matches if the group has matched before. 
 
     **Allowed:** Any group 
 
 
-.. xml:element:: group.rule.if_matched_level 
+.. xml:element:: if_matched_level 
 
     Matches if the level has matched before. 
 
     **Allowed:** Any level from 1 to 16 
 
-.. xml:element:: group.rule.same_source_ip 
+.. xml:element:: same_source_ip 
 
     Used together with frequency. Specifies that the source ip must be the same. 
 
-.. xml:element:: group.rule.same_source_port 
+.. xml:element:: same_source_port 
 
     Used together with frequency. Specifies that the source port must be the same. 
 
-.. xml:element:: group.rule.same_location 
+.. xml:element:: same_location 
 
     Used together with frequency. Specifies that the location must be the same.
 
-.. xml:element:: group.rule.description 
+.. xml:element:: description 
 
     Rule description. 
 
     **Allowed:** Any string 
 
-.. xml:element:: group.rule.list 
+.. xml:element:: list 
 
     Preform a CDB lookup of a ossec list.  This is a fast on disk db that will 
     always find keys within to seeks of the file.  
@@ -247,7 +249,7 @@
         included in the ossec.conf file. 
 
 
-.. xml:element:: group.rule.info 
+.. xml:element:: info 
 
     Extra information about the rule.
 
@@ -290,22 +292,19 @@
             <info>Type text is the default</info>
         </rule>
 
-.. xml:element:: group.rule.cve 
+.. xml:element:: options 
 
-    CVE related to the rule. 
-
-    This xml:element is no longer used.  Please use :xml:`info` with the cve type. 
-
-.. xml:element:: group.rule.options 
-
-    Additional rule options (to do not e-mail/log) 
+    Additional rule options 
 
     **Allowed:** 
 
-    - alert_by_email 
-    - no_email_alert 
+    - *alert_by_email*
+	- Always alert by email.
+    - *no_email_alert* 
+	- Never alert by email.
     - no_log
+	- Do not log this alert.
 
-.. xml:element:: group.rule.check_diff 
+.. xml:element:: check_diff 
 
     
