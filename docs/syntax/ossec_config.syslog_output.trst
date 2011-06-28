@@ -2,15 +2,38 @@
 .. xml:element:: syslog_output 
 
 
-.. xml:element:: syslog_output.server
+.. xml:element:: server
 
-    IP Address of the syslog server. 
+    - IP Address of the syslog server. 
 
-    **Allowed:** any valid IP address 
+    - **Allowed:** any valid IP address 
 
-.. xml:element:: syslog_output.level
+.. xml:element:: port
 
-    Alert level of the alerts to forward
+    - Port to forward alerts to.
 
-    **Allowed:** 1 - 16 
+    - **Default** 514
 
+    - **Allowed:** Any valid port
+
+.. xml:element:: level
+
+    - Alert level of the alerts to forward
+
+    - **Allowed:** 1 - 16 
+
+.. xml:element:: format
+
+    - Format of alert output. The default format is "default", or full syslog output.
+
+    - **Allowed** default, cef
+
+    .. xml:codeblock::
+
+    <syslog_output>
+      <server>10.0.0.1</server>
+
+      <port>514</port>
+ 
+      <format>cef</format>
+    </syslog_output>
