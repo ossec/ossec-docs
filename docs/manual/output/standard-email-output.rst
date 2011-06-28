@@ -2,15 +2,14 @@
 Alerts to a single E-Mail Address 
 ---------------------------------
 
-In order to send Notification to a single address three items need to be setup 
-with in ossec.conf 
+In order to send notifications to a single address three items need to be setup 
+within ossec.conf 
 
 Global E-Mail address destination 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The /var/ossec/etc/ossec.conf file inside the <global> section needs to have 
-the destination email address setup along with the mail host to use if localhost 
-is not to be used.  
+The destination email address and mail host should be configured inside the 
+<global> section of the /var/ossec/etc/ossec.conf.
 
 .. code-block:: xml 
 
@@ -26,9 +25,8 @@ Full details on all the options are avaiable at :ref:`ossec_config.global`
 Set the alert levels that will send notifications 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Inside the /var/ossec/etc/ossec.conf file the section alerts and the option 
-email_alert_level is used to set the minumum level that alert will generate 
-Notification.  
+The minimum email_alert_level can be set inside the <alerts> section of the 
+/var/ossec/etc/ossec.conf file.
 
 .. code-block:: xml 
 

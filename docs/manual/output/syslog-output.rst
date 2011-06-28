@@ -4,23 +4,21 @@
 Sending alerts via syslog
 =========================
 
-Syslog output allows you to send the OSSEC alerts to one or more syslog servers
-(granularly).
+Syslog output allows you to send the OSSEC alerts to one or more syslog servers.
 
 Configuration options
 ---------------------
 
-These configurations options can be specified in the server or local install ossec.conf file.
+These configurations options require a server or local installation.
 
 .. include:: ../../syntax/ossec_config.syslog_output.trst 
 
-Enable Database output in the configuration
-------------------------------------------
+Enable Syslog output in the configuration
+-------------------------------------------
 
-
-You can configure OSSEC with the syslog servers of your choice. In my example
-here, I am sending everything to server 192.168.4.1 and only the alerts above
-level 10 to 10.1.1.1:
+OSSEC can be configured to send the alerts via syslog to the servers of your choice. 
+In this example all alerts are sent to 192.168.4.1, but only alerts of level 10 and 
+above are sent to 10.1.1.1:
 
 .. code-block:: xml
 
@@ -34,14 +32,19 @@ level 10 to 10.1.1.1:
     </syslog_output>
 
 
-After that, run the following command and restart OSSEC:
+After this change is made, the client-syslog process should be enabled:
 
 .. code-block:: console 
 
     # /var/ossec/bin/ossec-control enable client-syslog
-    # /var/ossec/bin/ossec-control start
 
-You should see now ossec-csyslog starting:
+And finally restart the OSSEC processes:
+
+.. code-block:: console 
+
+    # /var/ossec/bin/ossec-control restart
+
+ossec-csyslog should start along with the other OSSEC processes:
 
 .. code-block:: console 
 
@@ -50,7 +53,7 @@ You should see now ossec-csyslog starting:
     Started ossec-csyslogd...
     ..
 
-And on the logs:
+And in the logs:
 
 .. code-block:: console 
 
@@ -59,7 +62,7 @@ And on the logs:
     2008/07/25 12:55:16 ossec-csyslogd: INFO: Forwarding alerts via syslog to: ‘192.168.4.1:514′.
     2008/07/25 12:55:16 ossec-csyslogd: INFO: Forwarding alerts via syslog to: ‘10.1.1.1:514′.
 
-On the syslog server, this is what you should get (every log separated by level,
+This is what the syslog server should receive (every log separated by level,
 rule, location and the actual event that generated it):
 
 .. code-block:: console
