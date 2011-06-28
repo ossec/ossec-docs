@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Database Output options are available in the the following installation types:
+Syslog Output options are available in the the following installation types:
 
 * server
 * local 
@@ -18,8 +18,7 @@ Database Output options are available in the the following installation types:
 Location 
 ^^^^^^^^
 
-All syslog_output options must be configured in the /var/ossec/etc/ossec.conf 
-and used within the <ossec_config> tag.  
+All syslog_output options must be configured in the /var/ossec/etc/ossec.conf and used within the <ossec_config> tag.
 
 XML excerpt to show location:
 
@@ -28,7 +27,7 @@ XML excerpt to show location:
     <ossec_config> 
         <syslog_output> 
             <!-- 
-            Database Output options here
+            Syslog Output options here
             --> 
         </syslog_output> 
     </ossec_config> 
