@@ -1,6 +1,6 @@
 
-Granular to many E-Mail addresses 
-============================
+Granular E-Mail alerts to many E-Mail addresses 
+===============================================
 
 OSSEC allows very granular options for the e-mail alerting and its format (full or SMS).
 
@@ -69,7 +69,7 @@ To e-mail *cc@y.z* for every event with severity higher than 12, from agent qwer
         <do_not_delay />
     </email_alerts>
 
-Example 5: Multiple granular options together=====
+Example 5: Multiple granular options together
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can have as many granular options as you want. In this example, we want the following:
