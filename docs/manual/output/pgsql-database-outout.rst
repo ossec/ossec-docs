@@ -32,9 +32,9 @@ Create the necessary tables from the PostgreSQL schema
 OSSEC Setup 
 ^^^^^^^^^^^
 
-Inorder for ossec to output alerts and other data into the database the 
-/var/ossec/etc/ossec.conf will need to be updated and have the <database_output> 
-section completed.  
+In order for ossec to output alerts and other data into the database the 
+/var/ossec/etc/ossec.conf will need to be updated and a <database_output> 
+section will need to be added.
 
 .. code-block:: xml
 
@@ -48,7 +48,7 @@ section completed.
         </database_output>
     </ossec_config>
 
-The values will need to be corrected for your installations hostname, user, password, and 
+The values will need to be corrected for your installation's hostname, postgresql user, password, and 
 database.  
 
 Complete PgSQL Output 

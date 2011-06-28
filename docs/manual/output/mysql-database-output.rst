@@ -34,9 +34,9 @@ commands.
 OSSEC Setup 
 ^^^^^^^^^^^
 
-Inorder for ossec to output alerts and other data into the database the 
-/var/ossec/etc/ossec.conf will need to be updated and have the <database_output> 
-section completed.  
+In order for ossec to output alerts and other data into the database the 
+/var/ossec/etc/ossec.conf will need to have a <database_output> 
+section added.
 
 .. code-block:: xml
 
@@ -50,7 +50,7 @@ section completed.
         </database_output>
     </ossec_config>
 
-The values will need to be corrected for your installations hostname, user, password, and 
+The values will need to be corrected for your installations hostname, mysql user, password, and 
 database.  
 
 Complete MySQL Output 

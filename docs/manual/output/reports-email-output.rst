@@ -3,24 +3,24 @@
 Daily E-Mail Reports
 ====================
 
-Daily E-Mail reports are summaries of the happening of the day from an OSSEC perspective.  
+Daily E-Mail reports are summaries of the OSSEC alerts for the day.  
 
 
 Configuration options
 ---------------------
 
-All of these configurations options can be specified in the /var/ossec/etc/ossec.conf. 
+All of these configuration options should be specified in the /var/ossec/etc/ossec.conf. 
 
 .. include:: ../../syntax/ossec_config.reports.rst 
 
 Examples
 --------
 
-Receive summary of all the authentication success alerts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Receive a summary of all authentication success alerts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following example added to ossec.conf will send a daily report 
-on all authentication_success alerts sorted by the related field srcip.
+The following example will send a daily report  of all
+authentication_success alerts, sorted by the related field srcip.
 
 .. code-block:: xml 
     
@@ -33,10 +33,10 @@ on all authentication_success alerts sorted by the related field srcip.
             
 
 Receive summary of all File integrity monitoring alerts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following example added to the ossec.conf will send 
-a report on all events related to syscheck.  
+The following example will send a report
+of all events related to syscheck.  
 
 .. code-block:: xml 
 
