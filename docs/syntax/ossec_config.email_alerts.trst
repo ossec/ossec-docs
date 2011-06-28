@@ -1,31 +1,31 @@
 .. xml:element:: email_alerts
 
 
-.. xml:element:: email_alerts.email_to 
+.. xml:element:: email_to 
 
     E-Mail recipients of alerts 
 
     **Allowed:** Any valid e-mail address 
 
-.. xml:element:: email_alerts.level  
+.. xml:element:: level  
 
     Minimum alerting level to forward the e-mails.
 
     **Allowed:** Any alert level 0 to 16 
 
-.. xml:element:: email_alerts.group 
+.. xml:element:: group 
 
     The alert that must match this group to be forwarded.
 
     **Allowed:** Any group/category 
 
-.. xml:element:: email_alerts.event_location 
+.. xml:element:: event_location 
 
     The alert must match this event location to be forwarded.
 
     **Allowed:** Any agent name, ip address or log file 
 
-.. xml:element:: email_alerts.format 
+.. xml:element:: format 
 
     Specifies the format of the e-mail 
     
@@ -36,15 +36,15 @@
 
     **Allowed:** full/sms 
 
-.. xml:element:: email_alerts.rule_id
+.. xml:element:: rule_id
 
     Option to send granular emails based on rule id.
 
-.. xml:element:: email_alerts.do_not_delay 
+.. xml:element:: do_not_delay 
 
     Option to send the e-mail right away (no delay). 
 
-.. xml:element:: email_alerts.do_not_group
+.. xml:element:: do_not_group
 
     Option to do not group this e-mail (send by itself). 
 

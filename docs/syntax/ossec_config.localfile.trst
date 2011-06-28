@@ -2,7 +2,7 @@
 .. xml:element:: localfile 
 
 
-.. xml:element:: localfile.location 
+.. xml:element:: location 
 
     Specify the location of the log to be read.
 
@@ -10,7 +10,7 @@
 
     **Allowed:** Any log file 
 
-.. xml:element:: localfile.log_format 
+.. xml:element:: log_format 
 
     The format of the log being read. 
     
@@ -35,14 +35,14 @@
     - command 
     - full_command
 
-.. xml:element:: localfile.command 
+.. xml:element:: command 
 
     The command to run all output from as command will be read as a log file.  
 
     **Allowed:** And commandline and arguments. 
 
 
-.. xml:element:: localfile.check_diff 
+.. xml:element:: check_diff 
 
     The first time it receives the event, it will store in an internal database. Every 
     time it receives the same event, it will compare against what we have store and 

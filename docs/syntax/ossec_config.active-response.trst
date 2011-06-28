@@ -4,21 +4,21 @@
     You can have as many commands as you want. Each one should be inside their own 
     “command” element. 
 
-.. xml:element:: command.name 
+.. xml:element:: name 
 
     Used to link the command to the response. 
 
-.. xml:element:: command.executable 
+.. xml:element:: executable 
 
     It must be a file (with exec permissions) inside “/var/ossec/active-response/bin”.
 
     You don’t need to provide the whole path.
 
-.. xml:element:: command.expect
+.. xml:element:: expect
 
     The arguments this command is expecting (options are srcip and username). 
 
-.. xml:element:: command.timeout_allowed 
+.. xml:element:: timeout_allowed 
 
     Specifies if this command supports timeout
 
@@ -28,15 +28,15 @@
     You can have as many responses as you want. Each one should be inside their own 
     “active-response” element.
 
-.. xml:element:: active-response.disabled 
+.. xml:element:: disabled 
 
     Disables active response if set to yes.
 
-.. xml:element:: active-response.command 
+.. xml:element:: command 
 
     Used to link the response to the command 
 
-.. xml:element:: active-response.location 
+.. xml:element:: location 
 
     Where the command should be executed. You have four options: 
 
@@ -48,15 +48,15 @@
       agent_id to use)
     - *all*: or everywhere.
 
-.. xml:element:: active-response.agent_id 
+.. xml:element:: agent_id 
 
     The ID of the agent to execute the response (when defined-agent is set). 
 
-.. xml:element:: active-response.level 
+.. xml:element:: level 
     
     The response will be executed on any event with this level or higher. 
 
-.. xml:element:: active-response.timeout 
+.. xml:element:: timeout 
 
     How long until the reverse command is executed (IP unblocked, for example). 
 

@@ -1,13 +1,13 @@
 .. xml:element:: reports 
 
 
-.. xml:element:: reports.group
+.. xml:element:: group
 
     Filter by group/category.  
 
     **Allowed:** Any category used within OSSEC Rules. 
 
-.. xml:element:: reports.categories
+.. xml:element:: categories
 
     Filter by group/category. 
 
@@ -17,38 +17,38 @@
 
     **Allowed:** Any category used within OSSEC Rules. 
 
-.. xml:element:: reports.rule
+.. xml:element:: rule
         
     Rule ID to Filter for. 
 
     **Allowed:** Any Rule ID in OSSEC Rules. 
 
-.. xml:element:: reports.level
+.. xml:element:: level
 
     Alert level to filter for.  This is an inclusive option so all higher level 
     alerts will also match. 
 
     **Allowed:** Any Alert level 1 to 16 
 
-.. xml:element:: reports.location
+.. xml:element:: location
 
     Filter by the log location or agent name. 
 
     **Allowed:** Any file path or hostname or network.  
 
-.. xml:element:: reports.srcip 
+.. xml:element:: srcip 
 
     Filter by the source ip of the event. 
 
     **Allowed:** Any hostname or network 
 
-.. xml:element:: reports.user 
+.. xml:element:: user 
 
     Filter by the user name.  This will match on either srcuser or dstuser 
 
     **Allowed:** Any username 
 
-.. xml:element:: reports.title 
+.. xml:element:: title 
 
     The name of the report.  
     
@@ -56,7 +56,7 @@
 
     **Allowed:** Any Text 
 
-.. xml:element:: reports.email_to 
+.. xml:element:: email_to 
 
     The email address to send the completed report. 
 

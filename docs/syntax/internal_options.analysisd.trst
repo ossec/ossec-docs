@@ -1,4 +1,4 @@
-.. OS:intopt:: analysisd.default_timeframe 
+.. OS:intopt:: default_timeframe 
 
     Analysisd default rule timeframe
 
@@ -6,7 +6,7 @@
 
     **Allowed:** Any interger 
 
-.. OS:intopt:: analysisd.stats_maxdiff
+.. OS:intopt:: stats_maxdiff
 
 
 
