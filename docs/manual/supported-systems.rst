@@ -20,11 +20,12 @@ The following operating systems are supported by the OSSEC agent:
 * OpenBSD (all versions)
 * NetBSD (all versions)
 * Solaris 2.7, 2.8, 2.9 and 10
-* AIX 5.3 and 5.3
+* AIX 5.2 and 5.3
 * Mac OS X 10.x
+* HP-UX 11
 
-Devices support via Syslog
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Devices supported via Syslog
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 These systems/devices are also supported via remote syslog:
 
@@ -40,8 +41,9 @@ These systems/devices are also supported via remote syslog:
 * McAfee VirusScan Enterprise (v8 and v8.5)
 * Bluecoat proxy (all versions)
 * Cisco VPN concentrators (all versions)
+* VMWare ESXi 4.x
 
-Agentless supported devices and Operating Systems
+Devices and Operating Systems via Agentless
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Using OSSEC agentless options, the following systems are also supported (for 
