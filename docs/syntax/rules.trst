@@ -12,7 +12,6 @@
         - Specifies the level of the rule. Alerts and responses use this value. 
         - **Allowed:** Any number (0 to 16) 
 
-
     - *id* 
 
         - Specifies the ID of the rule. 
@@ -37,29 +36,29 @@
 
     - *timeframe* 
 
-        - The timeframe used for the frequency. 
+        - The timeframe (seconds) used for the frequency. 
         - **Allowed:** Any number from 1 to 9999
 
     - *ignore* 
 
-        - The time to ignore this rule after firing it (to avoid floods). 
+        - The time (in seconds) to ignore this rule after firing it (to avoid floods). 
         - **Allowed:** Any number from 1 to 9999
 
 .. xml:element:: match
 
-    Any string to match against the event (log).
+    Any string to match against the log event.
 
     **Allowed:** Any :ref:`os_match` 
 
 .. xml:element:: regex 
 
-    Any regex to match against the event(log). 
+    Any regex to match against the log event. 
 
     **Allowed:** Any :ref:`os_regex`
 
 .. xml:element:: decoded_as 
 
-    Any pre-matched string (see :ref:`syntax_decoders`)
+    Any string pre-matched with a decoder (see :ref:`syntax_decoders`)
 
     **Allowed:** Any string 
 
@@ -71,19 +70,19 @@
 
 .. xml:element:: srcip 
 
-    Any IP address (decoded as the source ip). Use "!" to negate it.
+    Any IP address or CIDR block to be compared to an IP decoded as a srcip. Use "!" to negate it.
 
     **Allowed:** Any srcip 
 
 .. xml:element:: dstip 
 
-    Any IP address (decoded as the dst ip). Use “!” to negate it.
+    Any IP address or CIDR block to be compared to an IP decoded as a dstip. Use “!” to negate it.
 
     **Allowed:** Any dstip 
 
 .. xml:element:: user 
 
-    any username (decoded as the username).
+    Any username (decoded as the username).
 
     **Allowed:** any :ref:`os_match` 
 
@@ -152,7 +151,6 @@
     Matches if the group has matched before. 
 
     **Allowed:** Any group 
-
 
 .. xml:element:: if_matched_level 
 
