@@ -1,6 +1,6 @@
 .. object:: directories
 
-    Use this option to add or remove directories to be monitored (they must be comma separated).
+    Use this option to add or remove directories to be monitored (they must be comma separated). All files and subdirectories will also be monitored.
 
     **Default:** /etc,/usr/bin,/usr/sbin,/bin,/sbin 
 
