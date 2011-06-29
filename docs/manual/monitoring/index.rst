@@ -44,9 +44,9 @@ Quick Facts
 
 - How much CPU does it use? 
   
-  - On the agent, it uses very little CPU/memory since it just read the events 
-and forwards them to the manager. 
-    On the manager, it depends on the number of events per second (EPS).
+  - On the agent, it uses very little CPU/memory since it just read the events and forwards them to the manager.
+
+  - On the manager, it depends on the number of events per second (EPS).
 
 - How does it deal with false positives? 
   
@@ -58,7 +58,7 @@ Configuration Options
 These options should be specified locally in each agent ossec.conf file. Inside 
 the “localfile” element, you can have the following options. 
 
-.. include:: ../../syntax/ossec_config.localfile.rst 
+.. include:: ../../syntax/ossec_config.localfile.trst 
 
 Monitoring logs 
 --------------- 
