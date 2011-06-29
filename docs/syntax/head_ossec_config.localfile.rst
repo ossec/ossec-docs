@@ -2,7 +2,7 @@
 .. _ossec_config.localfile: 
 
 ossec.conf: Localfile options
-==========================
+=============================
 
 Overview 
 --------
