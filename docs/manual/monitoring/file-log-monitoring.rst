@@ -59,7 +59,7 @@ Date Based Example
 
 For log files that change according to the date, you can also specify a strftime format 
 to replace the day, month, year, etc. For example, to monitor the log 
-C:\Windows\app\log-08-12-15.log, where 08 is the year, 12 is the month and 15 the 
+C:\\Windows\\app\\log-08-12-15.log, where 08 is the year, 12 is the month and 15 the 
 day (and it is rolled over every day), do:
 
 .. code-block:: xml 
