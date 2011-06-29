@@ -1,6 +1,6 @@
 .. xml:element:: base_directory
 
-    The base directory that will be append to the following options:
+    The base directory that will be appended to the following options:
 
     - rootkit_files 
     - rootkit_trojans 
@@ -9,11 +9,12 @@
     - windows_apps 
     - systems_audit 
 
-    **Allowed:** Path to a directory 
+    **Allowed:** Path to a directory
+    **Default:** /var/ossec 
 
 .. xml:element:: rootkit_files
 
-    You should change this file if you want rootcheck to read the signatures from somewhere else.
+    This option can be used to change the location of the rootkit files database.
 
     **Allowed:** A file with the rootkit files signatures 
 
@@ -21,7 +22,7 @@
 
 .. xml:element:: rootkit_trojans
 
-    You should change this file if you want rootcheck to read the signatures from somewhere else.
+    This option can be used to change the location of the rootkit trojans database.
 
     **Default:** /etc/shared/rootkit_trojans.txt
 

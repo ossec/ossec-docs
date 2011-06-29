@@ -13,7 +13,7 @@ powerful monitoring solution.
 Checks that rootcheck preforms 
 ------------------------------
 
-#. Read the rootkit_files.txt which contains a big database of rootkits and files 
+#. Read the rootkit_files.txt which contains a database of rootkits and files commonly
    used by them. It will try to stats, fopen and opendir each specified file. We 
    use all these system calls because some kernel-level rootkits hide files 
    from some system calls. The more system calls we try, the better the detection. 
@@ -45,9 +45,9 @@ Checks that rootcheck preforms
 Configuration options
 ---------------------
 
-All these configurations options can be specified in each agent ossec.conf file, except 
-for the ``auto_ignore`` and ``alert_new_file`` which are manager side options. The 
-``ignore`` option if specified on the manager becomes global for all agents.
+These configuration options can be specified in each agent's ossec.conf, except 
+``auto_ignore`` and ``alert_new_file`` which are manager side options. If the 
+``ignore`` option is specified on the manager the setting becomes global for all agents.
 
 
 .. include:: ../../syntax/ossec_config.rootcheck.trst 
