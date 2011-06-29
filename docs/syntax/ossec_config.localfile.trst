@@ -34,6 +34,9 @@
     - apache
     - command 
     - full_command
+    - djb-multilog
+    - syslog-pipe
+    - multi-line
 
 .. xml:element:: command 
 
