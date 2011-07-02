@@ -1,6 +1,6 @@
 .. _faq_ossec:
 
-Alerts: FAQ
+OSSEC: FAQ
 -------------
 
 .. contents:: 
