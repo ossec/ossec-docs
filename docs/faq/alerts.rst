@@ -10,9 +10,11 @@ Alerts: FAQ
 How do you monitor for usb storage?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    http://dcid.me/2010/03/detecting-usb-storage-usage-with-ossec/
+    Originally from: 'http://dcid.me/2010/03/detecting-usb-storage-usage-with-ossec/'
+    Also some data from: 'http://blog.rootshell.be/2010/03/15/detecting-usb-storage-usage-with-ossec/'
 
-    First configure the agents to check a registry entry with the ``reg`` command:
+
+    The first step is to configure the agents to check a registry entry with the ``reg`` command:
 
     .. code-block:: xml
 
