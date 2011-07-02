@@ -10,7 +10,7 @@ Welcome to OSSEC's documentation!
 OSSEC is an Open Source Host-based Intrusion Detection System. It performs log analysis, 
 integrity checking, Windows registry monitoring, rootkit detection, real-time alerting 
 and active response. It runs on most operating systems, including Linux, OpenBSD, 
-FreeBSD, MacOS, Solaris and Windows. A list with all supported platforms is available
+FreeBSD, Mac OS X, Solaris and Windows. A list with all supported platforms is available
 at: :ref:`supported-systems`
 
 Manual & FAQ 
