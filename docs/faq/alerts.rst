@@ -42,3 +42,9 @@ How do you monitor for usb storage?
     Also some data from: 'http://blog.rootshell.be/2010/03/15/detecting-usb-storage-usage-with-ossec/'
 
 
+Why does my frequency rule get triggered by 8 events when frequency is set to 6?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
