@@ -40,7 +40,7 @@ extensions = [
 extlinks = {
     'ossec':('http://tools.logs.to/jira/browse/OSSEC-%s', 'OSSEC-'),
     'ord':('http://tools.logs.to/jira/browse/ORD-%s','ORD-'),
-    'wiki':('http://www.ossec.net/wiki/%s', 'Wiki Page: %s'),
+    #'wiki':('http://www.ossec.net/wiki/%s', 'Wiki Page: %s'),
 }
 
 # Add any paths that contain templates here, relative to this directory.
