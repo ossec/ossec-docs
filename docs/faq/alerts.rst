@@ -10,10 +10,6 @@ Alerts: FAQ
 How do you monitor for usb storage?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    Originally from: 'http://dcid.me/2010/03/detecting-usb-storage-usage-with-ossec/'
-    Also some data from: 'http://blog.rootshell.be/2010/03/15/detecting-usb-storage-usage-with-ossec/'
-
-
     The first step is to configure the agents to check a registry entry with the ``reg`` command:
 
     .. code-block:: xml
@@ -38,7 +34,11 @@ How do you monitor for usb storage?
       </rule>
 
     When a USB drive is inserted into a Windows machine, an alert will not be triggered. 
-    The alert will contain the difference in the registry entry before the USB device was inserted, and after.
+    The alert will contain a diff of the registry entry before the USB device was inserted and after.
 
+
+    Originally from: 'http://dcid.me/2010/03/detecting-usb-storage-usage-with-ossec/'
+
+    Also some data from: 'http://blog.rootshell.be/2010/03/15/detecting-usb-storage-usage-with-ossec/'
 
 
