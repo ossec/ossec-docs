@@ -87,11 +87,11 @@
 
 .. xml:element:: picviz_output 
     
-    Enable picvis output.  
+    Enable picviz output.  
 
     .. warning:: 
         
-        PicVis is experimental. 
+        PicViz is experimental. 
 
 
     **Allowed:** yes 
@@ -99,7 +99,7 @@
 .. xml:element:: picviz_socket
 
     The full path of the socket that ossec will write alerts/events to.  This will 
-    then be read by picvis for processing.  
+    then be read by picviz for processing.  
 
     **Allowed:** File and path that ossec will create and feed events to. 
 
