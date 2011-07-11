@@ -7,43 +7,52 @@
 
     **Attributes:** 
 
+    .. _level:
+
     - *level* 
 
         - Specifies the level of the rule. Alerts and responses use this value. 
         - **Allowed:** Any number (0 to 16) 
+
+    .. _id:
 
     - *id* 
 
         - Specifies the ID of the rule. 
         - **Allowed:** Any number from 100 to 99999 
 
-    - *accuracy* 
-
-        - Specifies if the rule is accurate or not (0 is not, 1 is yes)
-        - **Allowed:** 0/1 
+    .. _maxsize:
 
     - *maxsize* 
 
         - Specifies the maximum size of the event. 
         - **Allowed:** Any number from 1 to 99999 
 
-    - *frequency* 
+    .. _frequency:
 
-        - Specifies the number of times the rule must have matched before firing.
-	- The number of times the rule must be matched is actually 2 more than this number.
-        - **Allowed:** Any number from 1 to 999
-	- **Example** frequency="2" would mean the rule must be matched 4 times
+    - *frequency*
 
-    - *timeframe* 
+          - Specifies the number of times the rule must have matched before firing.
+          - The number of times the rule must be matched is actually 2 more than this number.
+          - **Allowed:** Any number from 1 to 999
+	  - **Example** frequency="2" would mean the rule must be matched 4 times
 
-        - The timeframe (seconds) used for the frequency. 
+    .. _timeframe:
+
+    - *timeframe*
+
+        - The timeframe in seconds.
+        - This option is intended to be used with the frequency option.
         - **Allowed:** Any number from 1 to 9999
+
+    .. _ignore:
 
     - *ignore* 
 
         - The time (in seconds) to ignore this rule after firing it (to avoid floods). 
         - **Allowed:** Any number from 1 to 9999
 
+    .. _overwrite:
     - *overwrite*
 	- Used to supercede an OSSEC rule with local changes. This is useful to change the level or other options of rules included with OSSEC.
 	- **Allowed** yes
@@ -146,13 +155,16 @@
 
 .. xml:element:: if_matched_sid 
 
-    - Matches if the ID has matched. 
+    - Matches if an alert of the defined ID has been triggered in a set number of seconds. Rules utilizing if_matched_sid typically also use frequency_ and timeframe.
+
+    .. note::
+        Rules at level 0 are discarded immediately and cannot be used with `if_matched_sid`. The level must be at least `1`, but the `<no_log>` option can be added to the rule to make sure it does not get logged.
 
     - **Allowed:** Any rule id 
 
 .. xml:element:: if_matched_group 
 
-    - Matches if the group has matched before. 
+    - Matches if the defined group was matched in a previous alert. 
 
     - **Allowed:** Any group 
 
