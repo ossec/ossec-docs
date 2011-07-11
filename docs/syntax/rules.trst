@@ -1,5 +1,3 @@
-.. xml:element:: group 
-
 
 .. xml:element:: rule 
 
@@ -53,8 +51,10 @@
         - **Allowed:** Any number from 1 to 9999
 
     .. _overwrite:
+
     - *overwrite*
-	- Used to supercede an OSSEC rule with local changes. This is useful to change the level or other options of rules included with OSSEC.
+	- Used to supercede an OSSEC rule with local changes.
+        - This is useful to change the level or other options of rules included with OSSEC.
 	- **Allowed** yes
 
 .. xml:element:: match
@@ -71,9 +71,9 @@
 
 .. xml:element:: decoded_as 
 
-    - Any string pre-matched with a decoder (see :ref:`syntax_decoders`)
+    - Any decoder name (see :ref:`syntax_decoders`)
 
-    - **Allowed:** Any string 
+    - **Allowed:** Any decoder name
 
 .. xml:element:: category
 
@@ -83,13 +83,15 @@
 
 .. xml:element:: srcip 
 
-    - Any IP address or CIDR block to be compared to an IP decoded as a srcip. Use "!" to negate it.
+    - Any IP address or CIDR block to be compared to an IP decoded as srcip.
+    - Use "!" to negate it.
 
     - **Allowed:** Any srcip 
 
 .. xml:element:: dstip 
 
-    - Any IP address or CIDR block to be compared to an IP decoded as a dstip. Use “!” to negate it.
+    - Any IP address or CIDR block to be compared to an IP decoded as dstip.
+    - Use "!" to negate it.
 
     - **Allowed:** Any dstip 
 
