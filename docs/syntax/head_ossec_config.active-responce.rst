@@ -10,10 +10,21 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Alerts options are available in the the following installation types:
+Active-reponse options are available in the the following installation types:
 
 * server
 * local 
+
+Configuration pieces
+^^^^^^^^^^^^^^^^^^^^
+
+There are two pieces to an active-response configuration. 
+The first is the ``<command>`` section. 
+This details the command to be run, and the options it will use.
+There can be any number of command options.
+
+The second is the ``<active-response>`` section.
+This section defines when the command will be run.
 
 Location 
 ^^^^^^^^
@@ -38,8 +49,13 @@ XML excerpt to show location:
         </active-response> 
     </ossec_config> 
 
-Options 
-------- 
+Command Options 
+--------------- 
+
+.. include:: ./ossec_config.command.trst
+
+Active-response Options
+-----------------------
 
 .. include:: ./ossec_config.active-response.trst
 

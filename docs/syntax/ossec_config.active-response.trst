@@ -1,27 +1,3 @@
-.. xml:element:: command 
-
-    In the commands configuration you create new “commands” to be used as responses. 
-    You can have as many commands as you want. Each one should be inside their own 
-    “command” element. 
-
-.. xml:element:: name 
-
-    Used to link the command to the response. 
-
-.. xml:element:: executable 
-
-    It must be a file (with exec permissions) inside “/var/ossec/active-response/bin”.
-
-    You don’t need to provide the whole path.
-
-.. xml:element:: expect
-
-    The arguments this command is expecting (options are srcip and username). 
-
-.. xml:element:: timeout_allowed 
-
-    Specifies if this command supports timeout
-
 .. xml:element:: active-response 
 
     In the active-response configuration, you bind the commands (created) to events. 
