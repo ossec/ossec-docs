@@ -9,7 +9,7 @@ The :ref:`agent-auth` application is the client application used with ossec-auth
 
 There is no authentication involved in this transaction, so it is recommended that this daemon only be run when a new agent is being added.
 
-agent_control argument options
+ossec-authd argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-authd
