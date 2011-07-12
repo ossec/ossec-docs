@@ -49,13 +49,5 @@ XML excerpt to show location:
         </active-response> 
     </ossec_config> 
 
-Command Options 
---------------- 
-
-.. include:: ./ossec_config.command.trst
-
-Active-response Options
------------------------
-
 .. include:: ./ossec_config.active-response.trst
 

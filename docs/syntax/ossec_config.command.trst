@@ -1,8 +1,7 @@
 .. xml:element:: command
 
-    In the commands configuration you create new â\x80\x9ccommandsâ\x80\x9d to be used as responses.
-    You can have as many commands as you want. Each one should be inside their own
-    â\x80\x9ccommandâ\x80\x9d element.
+    In the commands configuration you create new "commands" to be used as responses.
+    You can have as many commands as you want. Each one should be inside their own "command" element.
 
 .. xml:element:: name
 
@@ -10,9 +9,9 @@
 
 .. xml:element:: executable
 
-    It must be a file (with exec permissions) inside â\x80\x9c/var/ossec/active-response/binâ\x80\x9d.
+    It must be a file (with exec permissions) inside ``/var/ossec/active-response/bin``.
 
-    You donâ\x80\x99t need to provide the whole path.
+    You don't need to provide the whole path.
 
 .. xml:element:: expect
 
