@@ -35,7 +35,7 @@ agent-auth argument options
     **Default** /var/ossec
 
 
-agentauth example usage
+agent-auth example usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Example: Adding an agent with a hostname
