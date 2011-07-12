@@ -71,7 +71,7 @@
 
 .. xml:element:: decoded_as 
 
-    - Any decoder name (see :ref:`syntax_decoders`)
+    - Any decoder name (see :ref:`rules_decoders`)
 
     - **Allowed:** Any decoder name
 
