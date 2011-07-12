@@ -6,7 +6,7 @@ ossec-maild
 
 The ``ossec-maild`` daemon sends OSSEC alerts via email.
 ``ossec-maild`` is started by ossec-control.
-Configuration for ossec-maild is handled in the ossec.conf. 
+Configuration for ossec-maild is handled in the ossec.conf. (see :ref:`ossec_config.global`)
 
 ossec-maild argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
