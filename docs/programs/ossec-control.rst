@@ -10,76 +10,81 @@ ossec-control
 ossec-control argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. program:: ossec-control
 
-.. option:: start
+    .. _ossec-control-start::
+    **start**
+      Start the OSSEC processes.
 
-    Start the OSSEC processes.
+    .. _ossec-control-stop::
+    **stop**
+      Stop the OSSEC processes.
 
-.. option:: stop
+    .. _ossec-control-restart::
+    **restart**
+      Restart the OSSEC processes.
 
-    Stop the OSSEC processes.
+    .. _ossec-control-status::
+    **status**
+      Determine which OSSEC processes are running.
 
-.. option:: restart
+    .. _ossec-control-enable::
+    **enable**
+      Enable OSSEC functionality.
 
-    Restart the OSSEC processes.
+        .. _ossec-control-enable-database::
+        **database**
+          Enable the ``ossec-dbd`` daemon for logging to a database.
 
-.. option:: status
+          **Available:** Server and local installs only.
 
-    Determine which OSSEC processes are running.
+          .. note::
+              Database support must be compiled in at install time.
 
-.. option:: enable
+        .. _ossec-control-enable-client-syslog::
+        **client-syslog**
+          Enable ``ossec-csyslogd`` for logging to remote syslog.
 
-    Enable OSSEC functionality.
+          **Available:** Server and local installs only.
 
-    .. option:: database
+        .. _ossec-control-enable-agentless::
+        **agentless**
+          Enable ``ossec-agentlessd`` for running commands on systems without OSSEC agents.
 
-        Enable the ``ossec-dbd`` daemon for logging to a database.
-        **Available:** Server and local installs only.
+          **Available:** Server and local installs only.
 
-        .. note::
-            Database support must be compiled in at install time.
-
-    .. option:: client-syslog
-
-        Enable ``ossec-csyslogd`` for logging to remote syslog.
-        **Available:** Server and local installs only.
-
-    .. option:: agentless
-
-        Enable ``ossec-agentlessd`` for running commands on systems without OSSEC agents.
-        **Available:** Server and local installs only.
-
-    .. option:: debug
-
-        Run all OSSEC daemons in debug mode.
+        .. _ossec-control-enable-debug::
+        **debug**
+          Run all OSSEC daemons in debug mode.
 
 
-.. option:: disable
+    .. _ossec-control-disable::
+    **disable**
+      Disable OSSEC functionality.
 
-    Disable OSSEC functionality.
+        .. _ossec-control-disable-database::
+        **database**
+          Disable the ``ossec-dbd`` daemon for logging to a database.
 
-    .. option:: database
+          **Available:** Server and local installs only.
 
-        Disable the ``ossec-dbd`` daemon for logging to a database.
-        **Available:** Server and local installs only.
+          .. note::
+              Database support must be compiled in at install time.
 
-        .. note::
-            Database support must be compiled in at install time.
+        .. _ossec-control-disable-client-syslog::
+        **client-syslog**
+          Disable ``ossec-csyslogd`` for logging to remote syslog.
 
-    .. option:: client-syslog
+         **Available:** Server and local installs only.
 
-        Disable ``ossec-csyslogd`` for logging to remote syslog.
-        **Available:** Server and local installs only.
+        .. _ossec-control-disable-agentless::
+        **agentless**
+          Disable ``ossec-agentlessd`` for running commands on systems without OSSEC agents.
 
-    .. option:: agentless
+          **Available:** Server and local installs only.
 
-        Disable ``ossec-agentlessd`` for running commands on systems without OSSEC agents.
-        **Available:** Server and local installs only.
-
-    .. option:: debug
-
-        Turn off debug mode.
+        .. _ossec-control-disable-debug::
+        **debug**
+          Turn off debug mode.
 
 
 
