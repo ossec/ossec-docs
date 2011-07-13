@@ -6,6 +6,7 @@ ossec-remoted
 
 ``ossec-remoted`` is the server side daemon that communicates with the agents.
 It can listen to port 1514/udp (for OSSEC communications) and/or 514 (for syslog).
+It runs as ossecr and is chrooted to ``/var/ossec`` by default.
 ``ossec-remoted`` is configured in the <remote> section of  ossec.conf. 
 (see :ref:`ossec_config.remote`)
 
