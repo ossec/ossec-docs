@@ -7,6 +7,7 @@ ossec-syscheckd
 The ``ossec-syscheckd`` daemon checks configured files for changes to the checksums, permissions or ownership.
 ``ossec-syscheckd`` is started by ossec-control.
 Configuration for ossec-syscheckd is handled in the ossec.conf. 
+
 See :ref:`manual-syscheck` for more detailed configuration information.
 
 ossec-syscheckd argument options
