@@ -44,7 +44,7 @@ ossec-makelists argument options
 
     **Default** /var/ossec/etc/ossec.conf
 
-..option:: -D <dir>
+.. option:: -D <dir>
 
     Chroot to <dir>.
 
