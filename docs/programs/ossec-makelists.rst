@@ -2,5 +2,75 @@
 .. _ossec-makelists:
 
 ossec-makelists
-==============
+=============
+
+The ``ossec-makelists`` utility to compile cdb databases.
+``ossec-makelists`` will scan ossec.conf for database files, check the mtime, and recompile all out of date databases.
+
+See :ref:`manual-rule-lists` for more information.
+
+ossec-makelists argument options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. program:: ossec-makelists 
+
+.. option:: -h
+
+    Display the help message. 
+
+.. option:: -V
+
+    Diplay the version and license information.
+
+.. option:: -d
+
+    Execute in debug mode.
+
+.. option:: -f
+
+    Force rebuild of all databases.
+
+.. option:: -u <user>
+
+    Run as <user>.
+
+.. option:: -g <group>
+
+    Run as <group>.
+
+.. option:: -c <config>
+
+    Run with configuration file of <config>.
+
+    **Default** /var/ossec/etc/ossec.conf
+
+..option:: -D <dir>
+
+    Chroot to <dir>.
+
+    **Default** /var/ossec
+
+
+
+ossec-makelists example usage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Example: Running ossec-makelists and an update is necessary
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+    # /var/ossec/bin/ossec-makelists
+     * File lists/blocked.txt.cdb need to be updated
+
+
+Example: Running ossec-makelists when no update is necessary
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console 
+
+    # /var/ossec/bin/ossec-makelists
+     * File lists/blocked.txt.cdb does not need to be compiled
 
