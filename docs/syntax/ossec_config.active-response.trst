@@ -1,26 +1,31 @@
-.. xml:element:: command 
+Command Options
+---------------
 
-    In the commands configuration you create new “commands” to be used as responses. 
-    You can have as many commands as you want. Each one should be inside their own 
-    “command” element. 
+.. xml:element:: command
 
-.. xml:element:: name 
+    In the commands configuration you create new "commands" to be used as responses.
+    You can have as many commands as you want. Each one should be inside their own "command" element.
 
-    Used to link the command to the response. 
+.. xml:element:: name
 
-.. xml:element:: executable 
+    Used to link the command to the response.
 
-    It must be a file (with exec permissions) inside “/var/ossec/active-response/bin”.
+.. xml:element:: executable
 
-    You don’t need to provide the whole path.
+    It must be a file (with exec permissions) inside ``/var/ossec/active-response/bin``.
+
+    You don't need to provide the whole path.
 
 .. xml:element:: expect
 
-    The arguments this command is expecting (options are srcip and username). 
+    The arguments this command is expecting (options are srcip and username).
 
-.. xml:element:: timeout_allowed 
+.. xml:element:: timeout_allowed
 
     Specifies if this command supports timeout
+
+Active-response Options
+-----------------------
 
 .. xml:element:: active-response 
 
@@ -60,5 +65,7 @@
 
     How long until the reverse command is executed (IP unblocked, for example). 
 
+.. xml:element:: repeated_offenders
 
+   A comma separated list of increasing timeouts in minutes for repeat offenders. There can be a maximum of 5 entries.
 

@@ -1,24 +1,24 @@
 
-.. _manual-out-picvis:
+.. _manual-out-picviz:
 
-Sending alerts to picvis
+Sending alerts to picviz
 ========================
 
 .. warning:: 
 
-    PicVis support is experimental, and not fully supported.  Bug reports and 
+    PicViz support is experimental, and not fully supported.  Bug reports and 
     improvements are needed. 
 
-Installation of PicVis 
+Installation of PicViz
 ---------------------- 
 
 This is out of the scope for this document, but the development version from 
-svn is required for PicVis to work with OSSEC.  
+svn is required for PicViz to work with OSSEC.  
 
-Setup OSSEC for PicVis 
+Setup OSSEC for PicViz 
 ----------------------
 
-Configure OSSEC to send events to PicVis.  The following configuation 
+Configure OSSEC to send events to PicViz.  The following configuation 
 needs to be added to /var/ossec/etc/ossec.conf. 
 
 .. code-block:: xml
@@ -30,7 +30,7 @@ needs to be added to /var/ossec/etc/ossec.conf.
 
 For more full details on this section of the config see :ref:`ossec_config.global`. 
 
-Start up PicVis 
+Start up PicViz 
 --------------- 
 
 On the picviz side, an OSSEC template is available in the template directory and Picviz should be run like this:

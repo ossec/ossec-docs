@@ -1,8 +1,8 @@
 
 .. _manual-out-prelude:
 
-Sending output to Database
-=========================
+Sending output to a Database
+============================
 
 OSSEC supports MySQL and PostgreSQL database outputs.
 

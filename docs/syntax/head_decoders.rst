@@ -1,4 +1,4 @@
-.. _rules.decoders:
+.. _rules_decoders:
 
 
 Decoders Syntax

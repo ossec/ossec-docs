@@ -2,7 +2,7 @@
 
 .. note:: 
     
-    This page orgianl was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
+    This page orginally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
 
 
 Create Custom decoder and rules 

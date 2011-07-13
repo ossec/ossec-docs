@@ -53,7 +53,7 @@
 
         - A string that will limit checks to files containing that string in the file name.
 
-    **Allowed:** Any directory or file name 
+        **Allowed:** Any directory or file name 
 
 .. object:: ignore 
 
@@ -65,7 +65,7 @@
 
     - **type**: Value=sregex 
 
-        - This is the regex pattern to use to filter out files to not generate alerts on.  
+        - This is a simple regex pattern to filter out files so alerts are not generated.  
 
     **Allowed:** Any directory or file name 
 
