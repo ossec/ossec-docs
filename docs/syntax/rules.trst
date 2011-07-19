@@ -338,6 +338,10 @@
 
 .. xml:element:: check_diff 
 
+    Used to determine when the output of a command changes.
+
+    **Usage:** <check_diff />
+
 .. xml:element:: group 
 
    - Add additional groups to the alert. 
