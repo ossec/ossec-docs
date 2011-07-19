@@ -132,7 +132,7 @@ In our example, after configuring OSSEC, I started netcat to listen on port
 Detecting USB Storage Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Xavier wrote a very interesting article on Detecting USB Storage Usage with 
+`Xavier Mertens <http://blog.rootshell.be/2010/03/15/detecting-usb-storage-usage-with-ossec/>`_ wrote a very interesting article on Detecting USB Storage Usage with 
 OSSEC. He used our policy auditing module for that, but I think USB monitoring 
 can be done in a much easier way with our new :xml:`check_diff` feature. 
 
