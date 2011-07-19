@@ -12,6 +12,8 @@ Why Integrity checking?
 
 This is the explanation from the `OSSEC book`_:
 
+.. _OSSEC book: http://www.amazon.com/OSSEC-Host-Based-Intrusion-Detection-Guide/dp/159749240X
+
     There are multiple types of attacks and many attack vectors, but there
     is one thing unique about all of them: they leave traces and always change
     the system in some way. From viruses that modify a few files, to kernel-level
