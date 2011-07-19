@@ -72,9 +72,9 @@ This can for example be the hostname. In this example the agent name will be age
        * A name for the new agent: agent1
 
 After that you have to specify the IP address for the agent. This can either be a single 
-IP address (e.g. 192.168.1.25) or a range of IPs (e.g. 192.168.2.0/24). The latter way 
-is preferable if the IP of the agent will change a lot, e.g. by being assigned a 
-new IP via DHCP after each boot.
+IP address (e.g. 192.168.1.25), a range of IPs (e.g. 192.168.2.0/24), or ``any``. Using a 
+network range or ``any`` is preferable when the IP of the agent may change frequently by 
+DHCP or other service.
 
 .. code-block:: console
 
