@@ -109,7 +109,7 @@
 
 .. xml:element:: hostname 
 
-    - Any hostname (decoded as the syslog hostname).
+    - Any hostname (decoded as the syslog hostname) or logfile.
 
     - **Allowed:** any :ref:`os_match` 
 
