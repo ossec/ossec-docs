@@ -338,6 +338,11 @@
 
 .. xml:element:: check_diff 
 
+    Used to determine when the output of a command changes.
+    `Daniel Cid <http://dcid.me/2010/03/alerting-when-a-log-or-output-of-a-command-changes/>`_ has written a blog post about the feature.
+
+    **Usage:** <check_diff />
+
 .. xml:element:: group 
 
    - Add additional groups to the alert. 
