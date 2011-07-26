@@ -1,4 +1,6 @@
 .. OS:intopt:: agent.debug
 
+    Run the agent's processes in debug mode.
+
     **Default:** 0
 
