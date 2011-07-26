@@ -1,3 +1,5 @@
+.. _remoted:
+
 .. OS:intopt:: remoted.recv_counter_flush
 
     **Default:** 128

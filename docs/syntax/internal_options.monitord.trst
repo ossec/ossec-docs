@@ -1,3 +1,5 @@
+.. monitord:
+
 .. OS:intopt:: monitord.day_wait
 
     Amount of time OSSEC will wait before compressing/signing log files.

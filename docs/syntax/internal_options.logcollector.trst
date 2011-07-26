@@ -1,3 +1,5 @@
+.. _logcollector:
+
 .. OS:intopt:: logcollector.loop_timeout
 
     **Default:** 2

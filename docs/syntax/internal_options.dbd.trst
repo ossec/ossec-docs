@@ -1,4 +1,6 @@
-.. OS:intopt:: bd.reconnect_attempts=10
+.. _dbd:
+
+.. OS:intopt:: dbd.reconnect_attempts
 
     The number of times ``ossec-dbd`` will attempt to reconnect to the database.
 

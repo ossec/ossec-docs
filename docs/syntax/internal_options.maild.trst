@@ -1,4 +1,6 @@
-.. OS:intopt:: maild.strict_checking=1
+.. _maild:
+
+.. OS:intopt:: maild.strict_checking
 
 
     **Default:** 1

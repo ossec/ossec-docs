@@ -1,3 +1,5 @@
+.. _analysisd:
+
 .. OS:intopt:: analysisd.default_timeframe 
 
     Analysisd default rule timeframe

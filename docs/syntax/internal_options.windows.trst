@@ -1,4 +1,6 @@
-.. OS:intopt:: windows.debug=0
+.. _windows:
+
+.. OS:intopt:: windows.debug
 
     
     **Default:** 0
