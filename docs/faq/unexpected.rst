@@ -210,6 +210,7 @@ It means that :ref:`ossec-analysisd` is not running for some reason.
 - :ref:`ossec-analysisd` didn't start at all. There is a bug in the init scripts that 
   during system reboot, it may not start if the PID is already in use (we are working 
   to fix it).
+- :ref:`ossec-analysisd` cannot access ``/queue/fts/fts-queue``. Look for the error message ``ossec-analysisd(1103): ERROR: Unable to open file '/queue/fts/fts-queue'.`` This can be fixed by ensuring that the ossec user owns ``/var/ossec/queue/fts/fts-queue``.
 
 **How to fix it:** 
 
@@ -270,6 +271,8 @@ A few commands you should try are (to increase to 2048):
 
     # ulimit -n 2048
     # sysctl -w kern.maxfiles=2048 
+
+
 
 
 
