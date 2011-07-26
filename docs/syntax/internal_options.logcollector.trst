@@ -1,0 +1,7 @@
+.. OS:intopt:: logcollector.loop_timeout
+
+    **Default:** 2
+
+.. OS:intopt:: logcollector.open_attempts
+
+    **Default:** 8

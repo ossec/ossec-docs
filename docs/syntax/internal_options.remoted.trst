@@ -1,0 +1,15 @@
+.. OS:intopt:: remoted.recv_counter_flush
+
+    **Default:** 128
+
+.. OS:intopt:: remoted.comp_average_printout
+
+    **Default:** 19999
+
+.. OS:intopt:: remoted.verify_msg_id
+
+    **Default:** 1
+
+.. OS:intopt:: remoted.debug
+
+    **Default:** 0
