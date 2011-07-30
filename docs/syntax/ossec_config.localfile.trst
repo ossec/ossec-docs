@@ -22,16 +22,16 @@
 
     **Allowed:** 
 
-      .. _logformat_syslog:
+      .. _logformat-syslog:
 
       - syslog
           This format is for plain text files in a syslog-like format. It can also be used when there is no support for the logging format, and the logs are single line messages.
 
-      .. _logformat_snort-full:
+      .. _logformat-snort-full:
       - snort-full 
           This is used for Snort's full output format.
 
-      .. _logformat_snort-fast:
+      .. _logformat-snort-fast:
       - snort-fast 
           This is used for Snort's fast output format.
 
