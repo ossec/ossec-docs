@@ -22,29 +22,72 @@
 
     **Allowed:** 
 
-    - syslog 
-    - snort-full 
-    - snort-fast 
-    - squid 
-    - iis 
-    - eventlog 
-    - mysql_log 
-    - postgresql_log 
-    - nmapg 
-    - apache
-    - command 
-    - full_command
-    - djb-multilog
-    - syslog-pipe
-    - multi-line
+      .. _logformat_syslog:
+      - syslog
+          This format is for plain text files in a syslog-like format. It can also be used when there is no support for the logging format, and the logs are single line messages.
 
+      .. _logformat_snort-full:
+      - snort-full 
+          This is used for Snort's full output format.
+
+      .. _logformat_snort-fast:
+      - snort-fast 
+          This is used for Snort's fast output format.
+
+      .. _logformat_squid:
+      - squid 
+
+      .. _logformat_iis:
+      - iis 
+
+      .. _logformat_eventlog:
+      - eventlog 
+          This is used for Microsoft Windows eventlog format.
+
+      .. _logformat_mysql:
+      - mysql_log 
+          This is used for `MySQL <http://dev.mysql.com/>`_ logs. It does not support multi-line logs.
+
+      .. _logformat_postgresql:
+      - postgresql_log 
+          This is used for `PostgreSQL <http://www.postgresql.org>`_ logs. It does not support multi-line logs.
+
+      .. _logformat_nmapg:
+      - nmapg 
+          This is used for monitoring files conforming to the grepable output from `nmap <http://nmap.org>`_.
+
+      .. _logformat_apache:
+      - apache
+          
+      .. _logformat_command:
+      - command 
+          This format will be the output from the command defined by command_. Each line of output will be treated as a separate log.
+
+      .. _logformat_full_command:
+      - full_command
+          This format will be the output from the command defined by command_. The entire output will be treated as a single log.
+
+      .. _logformat_djb:
+      - djb-multilog
+
+      .. _logformat_syslog-pipe:
+      - syslog-pipe
+
+      .. _logformat_multi-line:
+      - multi-line
+
+      .. warning::
+          ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
+
+.. _command:
 .. xml:element:: command 
 
-    The command to run all output from as command will be read as a log file.  
+    The command to run all output from as command will be read as a log file. 
 
-    **Allowed:** And commandline and arguments. 
+    **Allowed:** Any commandline and arguments. 
 
 
+.. _check_diff:
 .. xml:element:: check_diff 
 
     The first time it receives the event, it will store in an internal database. Every 
