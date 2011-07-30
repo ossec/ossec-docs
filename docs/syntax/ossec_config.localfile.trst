@@ -23,6 +23,7 @@
     **Allowed:** 
 
       .. _logformat_syslog:
+
       - syslog
           This format is for plain text files in a syslog-like format. It can also be used when there is no support for the logging format, and the logs are single line messages.
 
@@ -82,7 +83,7 @@
 .. _command:
 .. xml:element:: command 
 
-    The command to run all output from as command will be read as a log file. 
+    The command to be run. All output from this command will be read as one or more log messages depending on whether log_format_command_ or logformat_full_command_ is used.
 
     **Allowed:** Any commandline and arguments. 
 
@@ -90,9 +91,7 @@
 .. _check_diff:
 .. xml:element:: check_diff 
 
-    The first time it receives the event, it will store in an internal database. Every 
-    time it receives the same event, it will compare against what we have store and 
-    only alert if the output changes.
+    The output from an event will be stored in an internal database. Every time the same event is received, the output is compared to the previous output. If the output has changed an alert will be generated.
 
 
 
