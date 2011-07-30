@@ -28,53 +28,67 @@
           This format is for plain text files in a syslog-like format. It can also be used when there is no support for the logging format, and the logs are single line messages.
 
       .. _logformat-snort-full:
+
       - snort-full 
           This is used for Snort's full output format.
 
       .. _logformat-snort-fast:
+
       - snort-fast 
           This is used for Snort's fast output format.
 
       .. _logformat_squid:
+
       - squid 
 
       .. _logformat_iis:
+
       - iis 
 
       .. _logformat_eventlog:
+
       - eventlog 
           This is used for Microsoft Windows eventlog format.
 
       .. _logformat_mysql:
+
       - mysql_log 
           This is used for `MySQL <http://dev.mysql.com/>`_ logs. It does not support multi-line logs.
 
       .. _logformat_postgresql:
+
       - postgresql_log 
           This is used for `PostgreSQL <http://www.postgresql.org>`_ logs. It does not support multi-line logs.
 
       .. _logformat_nmapg:
+
       - nmapg 
           This is used for monitoring files conforming to the grepable output from `nmap <http://nmap.org>`_.
 
       .. _logformat_apache:
+
       - apache
           
       .. _logformat_command:
+
       - command 
           This format will be the output from the command defined by command_. Each line of output will be treated as a separate log.
 
       .. _logformat_full_command:
+
       - full_command
           This format will be the output from the command defined by command_. The entire output will be treated as a single log.
 
       .. _logformat_djb:
+
       - djb-multilog
 
       .. _logformat_syslog-pipe:
+
       - syslog-pipe
 
       .. _logformat_multi-line:
+
       - multi-line
 
       .. warning::
