@@ -13,7 +13,7 @@
 
     - **report_changes**: Value=yes 
 
-        - Report diffs of file changes.  This is limited to text files and command output.
+        - Report diffs of file changes.  This is limited to text files at this time.
 
     - **check_all**: Value=yes 
 
