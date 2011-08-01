@@ -13,7 +13,7 @@ verify-agent-conf example usage
 
 
 Example 1: Running verify-agent-conf on a working agent.conf
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -21,8 +21,8 @@ Example 1: Running verify-agent-conf on a working agent.conf
     #
 
 
-Example 2: Running verify-agent-conf on a working agent.conf
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example 2: Running verify-agent-conf on a non-working agent.conf
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 

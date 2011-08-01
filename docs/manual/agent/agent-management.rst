@@ -4,15 +4,15 @@
 Working with Agents 
 ===================
 
-To add an agent to a server with :ref:`manage_agents` you need to follow the steps below.
+To add an agent to an OSSEC manager with :ref:`manage_agents` you need to follow the steps below.
 
 1. Run manage_agents on the OSSEC server.
 2. Add an agent.
 3. Extract the key for the agent.
 4. Copy that key to the agent.
 5. Run manage_agents on the agent.
-6. Import the key copied from the server.
-7. Restart the OSSEC server.
+6. Import the key copied from the manager.
+7. Restart the manager's OSSEC processes.
 8. Start the agent.
 
 
