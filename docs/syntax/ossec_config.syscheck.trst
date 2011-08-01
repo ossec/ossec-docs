@@ -9,11 +9,11 @@
 
     - **realtime**: Value=yes 
 
-        - This will enable realtime/continuous monitoring on Linux using the inotify system calls.
+        - This will enable realtime/continuous monitoring on Linux (using the inotify system calls) and Windows systems.
 
     - **report_changes**: Value=yes 
 
-        - Report diffs of file changes.  This is limited to text files at this time.  
+        - Report diffs of file changes.  This is limited to text files and command output.
 
     - **check_all**: Value=yes 
 
