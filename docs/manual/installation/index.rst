@@ -34,11 +34,6 @@ page`.
     If you have experience with Unix, just download the latest version, uncompress it and run the 
     "./install.sh" script.
 
-.. note:: 
-
-    If you want a step by step guide, you can use one of the many step by step install guides
-    from `here`_
-
 #. Download the latest version and verify its checksum.
 
     .. note:: 
