@@ -89,7 +89,7 @@ to our users. For more information, visit the `OSSEC commercial support page <ht
  
 .. image:: logo_tagline_09.gif
    :align: center 
-   :target: http://www.thirdbrigade.com/support.aspx?id=775
+   :target: http://www.ossec.net/main/get-commercial-support
 
 
 

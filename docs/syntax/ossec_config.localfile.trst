@@ -4,7 +4,10 @@
 
 .. xml:element:: location 
 
-    Specify the location of the log to be read.
+    Specify the location of the log to be read. strftime formats may be used for logfile names.
+    For instance, a logfile named ``file.log-2011-01-22`` could be referenced with ``file.log-%Y-%m-%d``.
+    Wildcards may be used on non-Windows systems. When wildcards are used, the logfiles must exist at the time ``ossec-logcollector`` is started.
+    It will not automatically begin monitoring new logfiles.
 
     **Default:** Multiple (eg /var/log/messages)
 
@@ -22,34 +25,89 @@
 
     **Allowed:** 
 
-    - syslog 
-    - snort-full 
-    - snort-fast 
-    - squid 
-    - iis 
-    - eventlog 
-    - mysql_log 
-    - postgresql_log 
-    - nmapg 
-    - apache
-    - command 
-    - full_command
-    - djb-multilog
-    - syslog-pipe
-    - multi-line
+      .. _logformat-syslog:
 
+      - syslog
+          This format is for plain text files in a syslog-like format. It can also be used when there is no support for the logging format, and the logs are single line messages.
+
+      .. _logformat-snort-full:
+
+      - snort-full 
+          This is used for Snort's full output format.
+
+      .. _logformat-snort-fast:
+
+      - snort-fast 
+          This is used for Snort's fast output format.
+
+      .. _logformat_squid:
+
+      - squid 
+
+      .. _logformat_iis:
+
+      - iis 
+
+      .. _logformat_eventlog:
+
+      - eventlog 
+          This is used for Microsoft Windows eventlog format.
+
+      .. _logformat_mysql:
+
+      - mysql_log 
+          This is used for `MySQL <http://dev.mysql.com/>`_ logs. It does not support multi-line logs.
+
+      .. _logformat_postgresql:
+
+      - postgresql_log 
+          This is used for `PostgreSQL <http://www.postgresql.org>`_ logs. It does not support multi-line logs.
+
+      .. _logformat_nmapg:
+
+      - nmapg 
+          This is used for monitoring files conforming to the grepable output from `nmap <http://nmap.org>`_.
+
+      .. _logformat_apache:
+
+      - apache
+          
+
+      - command 
+          This format will be the output from the command defined by command_. Each line of output will be treated as a separate log.
+
+      .. _full_command:
+
+      - full_command
+          This format will be the output from the command defined by command_. The entire output will be treated as a single log.
+
+      .. _logformat_djb:
+
+      - djb-multilog
+
+      .. _logformat_syslog-pipe:
+
+      - syslog-pipe
+
+      .. _logformat_multi-line:
+
+      - multi-line
+
+      .. warning::
+          ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
+
+.. _command:
 .. xml:element:: command 
 
-    The command to run all output from as command will be read as a log file.  
+    The command to be run. All output from this command will be read as one or more log messages depending on whether command or full_command_ is used.
 
-    **Allowed:** And commandline and arguments. 
+    **Allowed:** Any commandline and arguments. 
 
 
+.. _check_diff:
 .. xml:element:: check_diff 
 
-    The first time it receives the event, it will store in an internal database. Every 
-    time it receives the same event, it will compare against what we have store and 
-    only alert if the output changes.
+    The output from an event will be stored in an internal database. Every time the same event is received, the output is compared to the previous output. If the output has changed an alert will be generated.
 
 
 

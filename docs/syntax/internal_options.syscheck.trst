@@ -1,0 +1,13 @@
+.. _syscheck:
+
+.. OS:intopt:: syscheck.sleep
+
+    ``ossec-syscheckd`` uses this setting to determine how long to sleep after reading ``syscheck.sleep_after`` number of files. By default ``ossec-syscheckd`` sleeps for 2 seconds after checking 15 files.
+
+    **Default:** 2
+
+.. OS:intopt:: syscheck.sleep_after
+
+    ``ossec-syscheckd`` reads this many files before sleeping for ``syscheck.sleep`` seconds.
+
+    **Default:** 15

@@ -1,0 +1,7 @@
+.. _dbd:
+
+.. OS:intopt:: dbd.reconnect_attempts
+
+    The number of times ``ossec-dbd`` will attempt to reconnect to the database.
+
+    **Default:** 10

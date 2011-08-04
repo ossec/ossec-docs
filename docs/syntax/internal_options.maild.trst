@@ -1,0 +1,24 @@
+.. _maild:
+
+.. OS:intopt:: maild.strict_checking
+
+
+    **Default:** 1
+
+    **Allowed:** 0 or 1
+
+.. OS:intopt:: maild.groupping
+
+    If set to ``1`` alerts will be grouped together in one email. These alerts may be of different types or levels, and may be from different systems.
+
+    **Default:** 1
+
+    **Allowed:** 1 or 2
+
+.. OS:intopt:: maild.full_subject
+
+    If set to ``1`` maild will use a full subject when sending alert emails. If set to ``0`` the subject is shortened.
+
+    **Default:** 0
+
+    **Allowed:** 0 or 1

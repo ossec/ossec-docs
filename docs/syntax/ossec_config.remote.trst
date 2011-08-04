@@ -19,6 +19,14 @@
 
     **Allowed:** Any port number from 1 to 65535
 
+.. xml:element:: protocol
+
+    Specifies the protocol to use for syslog events.
+
+    **Default:** udp
+
+    **Allowed:** udp or tcp
+
 .. xml:element:: allowed-ips 
 
     List of IP addresses that are allowed to send syslog messages to the server (one per element).

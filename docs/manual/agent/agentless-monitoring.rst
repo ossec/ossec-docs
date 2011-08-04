@@ -27,20 +27,20 @@ After you installed OSSEC, you need to enable the agentless monitoring:
 And provide the SSH authentication to the host you want to access. For Cisco devices 
 (PIX, routers, etc), you need to provide an additional parameter for the enable password. 
 The same thing applies if you want to add support for “su”, it must be the additional 
-parameter. In this example, I am adding a Linux box (xx.net) and a PIX firewall 
+parameter. In this example, I am adding a Linux box (example.net) and a PIX firewall 
 (pix.fw.local):
 
 .. code-block:: console 
 
-    # /var/ossec/agentless/register_host.sh add root@xx.net mypass1
-      *Host root@xx.netl added.
+    # /var/ossec/agentless/register_host.sh add root@example.net mypass1
+      *Host root@example.netl added.
     # /var/ossec/agentless/register_host.sh add pix@pix.fw.local pixpass enablepass
       *Host pix@pix.fw.local added.
 
     # /var/ossec/agentless/register_host.sh list
       *Available hosts:
     pix@pix.fw.local
-    root@xx.net
+    root@example.net
 
 If you want to use public key authentication instead of
 passwords, you need to provide NOPASS as the password and
@@ -71,7 +71,7 @@ ssh_generic_diff, you give a set of commands to run on the remote box and OSSEC
 will alert when the output of them changes. The ssh_pixconfig_diff will alert
 when a Cisco PIX/router configuration changes.
 
-So, for my first system (root@xx.net), I will monitor the /bin, /etc and /sbin
+So, for my first system (root@example.net), I will monitor the /bin, /etc and /sbin
 directories every 10 hours (if I was using the ssh_integrity_check_bsd, the
 argument would be the directories as well):
 
@@ -80,7 +80,7 @@ argument would be the directories as well):
     <agentless>
         <type>ssh_integrity_check_linux</type>
         <frequency>36000</frequency>
-        <host>root@xx.net</host>
+        <host>root@example.net</host>
         <state>periodic</state>
         <arguments>/bin /etc/ /sbin</arguments>
     </agentless>
@@ -97,17 +97,17 @@ For my PIX, the configuration looks like:
     </agentless>
 
 And just to exemplify the ssh_generic_diff I will also monitor ls -la /etc; cat
-/etc/passwd on the root@xx.net. Note that if you want to monitor any network
+/etc/passwd on the root@example.net. Note that if you want to monitor any network
 firewall or switch, you can use the ssh_generic_diff and just specify the
 commands in the arguments option. To use “su”, you need to set the value
-“use_su” before the hostname (eg: <host>use_su root@xx.net</host>).
+“use_su” before the hostname (eg: <host>use_su root@example.net</host>).
 
 .. code-block:: xml 
 
     <agentless>
         <type>ssh_generic_diff</type>
         <frequency>36000</frequency>
-        <host>root@xx.net</host>
+        <host>root@example.net</host>
         <state>periodic_diff</state>
         <arguments>ls -la /etc; cat /etc/passwd</arguments>
     </agentless>
@@ -144,8 +144,8 @@ When it connects to the remote system, you will also see:
 
 .. code-block:: 
 
-    2008/12/12 15:25:19 ossec-agentlessd: INFO: ssh_integrity_check_bsd: root@xx.net: Starting.
-    2008/12/12 15:25:46 ossec-agentlessd: INFO: ssh_integrity_check_bsd: root@xx.net: Finished.
+    2008/12/12 15:25:19 ossec-agentlessd: INFO: ssh_integrity_check_bsd: root@example.net: Starting.
+    2008/12/12 15:25:46 ossec-agentlessd: INFO: ssh_integrity_check_bsd: root@example.net: Finished.
 
 Alerts
 ------
@@ -157,7 +157,7 @@ For the ssh_generic_diff::
     OSSEC HIDS Notification.
     2008 Dec 12 01:58:30
 
-    Received From: (ssh_generic_diff) root@xx.net->agentless
+    Received From: (ssh_generic_diff) root@example.net->agentless
     Rule: 555 fired (level 7) -> "Integrity checksum for agentless device changed."
     Portion of the log(s):
 

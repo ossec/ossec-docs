@@ -1,0 +1,7 @@
+.. _windows:
+
+.. OS:intopt:: windows.debug
+
+    
+    **Default:** 0
+    **Allowed:** 0 or 1

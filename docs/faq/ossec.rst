@@ -23,6 +23,21 @@ Where are OSSEC's logs stored?
   Alerts are stored in ``/var/ossec/logs/alerts/alerts.log``, and rotated daily.
 
 
+Where can I view the logs sent to an OSSEC manager (or on a local install)?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  OSSEC does not store the logs sent to it by default. If a log does not trigger an alert it is discarded, and logs that do trigger alerts are stored with the alerts in ``/var/ossec/logs/alerts``.
+
+  The ``<log-all>`` option can be added to the ``<global>`` section (see: :ref:`ossec_config.global`) of the manager's ossec.conf. The manager's OSSEC processes should be restarted.
+  The raw logs will then be saved to files, organized by date, in ``/var/ossec/logs/archives``.
+
+  The headers attached to these log messages are in the format of ``"YYYY Month dd HH:MM:ss agent_name->/path/to/log/file "``.
+
+  .. code-block:: console
+
+      2011 Aug 04 00:00:01 server->/var/log/local7 Aug  4 00:00:26 server named[29909]: client 192.168.1.7#39323: query: fake.example.net IN AAAA +
+
+
 Can OSSEC's logs be saved to a different directory?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -31,5 +46,7 @@ Can OSSEC's logs be saved to a different directory?
   OSSEC does rotate its logs, but will not be able to move them from ``/var/ossec``.
 
   Be sure to allocate enough space to ``/var/ossec``.
+
+
 
 
