@@ -69,12 +69,11 @@
 
       - apache
           
-      .. _logformat_command:
 
       - command 
           This format will be the output from the command defined by command_. Each line of output will be treated as a separate log.
 
-      .. _logformat_full_command:
+      .. _full_command:
 
       - full_command
           This format will be the output from the command defined by command_. The entire output will be treated as a single log.
@@ -97,7 +96,7 @@
 .. _command:
 .. xml:element:: command 
 
-    The command to be run. All output from this command will be read as one or more log messages depending on whether log_format_command_ or logformat_full_command_ is used.
+    The command to be run. All output from this command will be read as one or more log messages depending on whether command or full_command_ is used.
 
     **Allowed:** Any commandline and arguments. 
 
