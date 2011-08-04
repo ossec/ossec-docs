@@ -75,10 +75,10 @@ page`.
 
         # /var/ossec/bin/ossec-control start  
 
-OSSEC HIDS Windows agent Installation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. OSSEC HIDS Windows agent Installation
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Windows agent installation has its own page at: :ref:`manual-win-install`. 
+.. Windows agent installation has its own page at: :ref:`manual-win-install`. 
 
 OSSEC HIDS agentless Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
