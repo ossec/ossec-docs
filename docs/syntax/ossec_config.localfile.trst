@@ -92,6 +92,28 @@
       .. _logformat_multi-line:
 
       - multi-line
+          This option will allow applications that log multiple lines per event to be monitored. This format requires the number of lines to be consistent.
+          ``multi-line:`` is followed by the number of lines in each log entry. Each line will be combined with the previous lines until all lines are gathered.
+          There may be multiple timestamps in a finalized event.
+
+          **Allowed:** <log_format>multi-line: NUMBER</log_format>
+
+          **Example:**
+              Log messages:
+
+              .. code-block:: console
+
+                  Aug  9 14:22:47 hostname log line one
+                  Aug  9 14:22:47 hostname log line two
+                  Aug  9 14:22:47 hostname log line three
+                  Aug  9 14:22:47 hostname log line four
+                  Aug  9 14:22:47 hostname log line five
+
+              Log message as analyzed by ossec-analysisd_:
+
+              .. code-block:: console
+
+                  Aug  9 14:22:47 hostname log line one Aug  9 14:22:47 hostname log line two Aug  9 14:22:47 hostname log line three Aug  9 14:22:47 hostname log line four Aug  9 14:22:47 hostname log line five
 
       .. warning::
           ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
