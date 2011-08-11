@@ -35,6 +35,7 @@ Reference
     
     syntax/index
     programs/index
+    whatsnew/index
     rules/index
     rootcheck/index
     glossary
