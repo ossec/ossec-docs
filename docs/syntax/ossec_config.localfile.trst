@@ -71,7 +71,19 @@
       .. _logformat_apache:
 
       - apache
-          
+          This format is for apache's default log format.
+
+          **Example:**
+ 
+         .. codeblock:: console
+
+              [Wed Jun  9 23:32:26 2010] [error] [client 192.168.1.100] File does not exist: /htdocs/favicon.ico
+
+          **Example:**
+
+          .. codeblock:: console
+
+              192.168.1.100 - - [21/Jan/2010:08:31:09 -0500] "GET / HTTP/1.0" 200 2212
 
       - command 
           This format will be the output from the command defined by command_. Each line of output will be treated as a separate log.
