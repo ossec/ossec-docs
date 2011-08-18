@@ -125,6 +125,13 @@
 
     **Allowed:** Any commandline and arguments. 
 
+.. _command_frequency:
+.. xml:element:: frequency
+
+    The minimum time in seconds between command runs. The command will probably not run every ``frequency`` seconds exactly, but the time between runs will not be shorter than this setting. This is used with command_ and full_command_.
+
+    **Allowed:** Time in seconds.
+
 
 .. _check_diff:
 .. xml:element:: check_diff 
