@@ -195,7 +195,7 @@
 
 .. xml:element:: same_dst_port
 
-    - Specifies that the source port must be the same.
+    - Specifies that the destination port must be the same.
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_source_port />
