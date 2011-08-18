@@ -33,7 +33,7 @@
           - Specifies the number of times the rule must have matched before firing.
           - The number of times the rule must be matched is actually 2 more than this number.
           - **Allowed:** Any number from 1 to 999
-	  - **Example** frequency="2" would mean the rule must be matched 4 times
+	  - **Example:** frequency="2" would mean the rule must be matched 4 times
 
     .. _timeframe:
 
@@ -184,21 +184,28 @@
     - Specifies that the source ip must be the same. 
     - This option is used in conjunction with frequency_ and timeframe_.
 
-    **Example** <same_source_ip />
+    **Example:** <same_source_ip />
 
 .. xml:element:: same_source_port 
 
     - Specifies that the source port must be the same. 
     - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Example** <same_source_port />
+    - **Example:** <same_source_port />
+
+.. xml:element:: same_dst_port
+
+    - Specifies that the source port must be the same.
+    - This option is used in conjunction with frequency_ and timeframe_.
+
+    - **Example:** <same_source_port />
 
 .. xml:element:: same_location 
 
     - Specifies that the location must be the same.
     - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Example** <same_location />
+    - **Example:** <same_location />
 
 .. xml:element:: description 
 
