@@ -18,7 +18,7 @@ Glossary
         while others perform virus detection.
 
     LIDS
-        
+
         LIDS (Log-based intrusion detection systems) is just a fancy term for tools that 
         perform security log analysis (specified above). It's goal is to detect misuse 
         (or attacks) using logs as the primary source of information. It is not a 

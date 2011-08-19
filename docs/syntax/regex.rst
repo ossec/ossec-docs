@@ -53,7 +53,7 @@ having all options is not crucial, but speed is.
 .. _os_regex_escape: 
 
 **Characters Escaping**
-    
+
 To utilize the following characters they must be escaped::
 
     $ -> \$
@@ -78,6 +78,4 @@ following special characters.
     ^ -> To specify the beginning of the text.
     $ -> To specify the end of the text.
     | -> To create an "OR" between multiple patterns.
-
-
 
