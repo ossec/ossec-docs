@@ -11,13 +11,3 @@ Contents:
 
     rules/index
     decoder/index
-
-    
-    
-
-
-
-    
-   
-
-

@@ -10,13 +10,3 @@ Syntax and Options
     analysis
     ossec_config
     internal_options
-
-
-    
-
-
-
-    
-   
-
-

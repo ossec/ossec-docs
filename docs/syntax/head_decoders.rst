@@ -4,11 +4,11 @@
 Decoders Syntax
 ===============
 
-Overview 
+Overview
 --------
 
 
-Options 
-------- 
+Options
+-------
 
 .. include:: ./decoders.trst

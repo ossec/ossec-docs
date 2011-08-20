@@ -32,7 +32,7 @@ Reference
 
 .. toctree::
     :maxdepth: 2
-    
+
     syntax/index
     programs/index
     whatsnew/index
