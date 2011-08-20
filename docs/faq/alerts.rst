@@ -42,9 +42,22 @@ How do you monitor for usb storage?
     Additional data from: 'http://blog.rootshell.be/2010/03/15/detecting-usb-storage-usage-with-ossec/'
 
 
+Why do I see alerts for agent2 in an email about agent1?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    When an email is being prepared alerts will be grouped together. The only real criteria for grouping alerts together is the timeframe.
+    To prevent alerts from being grouped together you can set ``maild.groupping`` to 0 in ``/var/ossec/etc/internal_options.conf``.
+    If this is set, alerts will be sent out individually. By default OSSEC will only send 12 emails per hour.
+    To increase this limit, modify or add the <email_maxperhour> setting in the ``<global>`` section of the ``ossec.conf``. (see: email_maxperhour_ .)
+
+
+
+    .. code-block:: xml
+        <global>
+          <email_maxperhour>100</email_maxperhour>
+
+
+
 Why does my frequency rule get triggered by 8 events when frequency is set to 6?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
 
