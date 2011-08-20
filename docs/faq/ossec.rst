@@ -7,6 +7,36 @@ OSSEC: FAQ
     :local:
 
 
+Can an OSSEC manager have more than 256 agents?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  By default OSSEC limits the number of agents to 256 per manager. This limitation is set in the code, but can be modified at compile time.
+  Depending on the event load, a manager running on modern hardware can handle many more agents.
+  Some users have more than 1000 agents on a single manager.
+  To change the maximum number of agents, cd into the src directory and run the following command:
+
+  .. code-block:: console
+
+      make setmaxagents
+
+
+  You should be prompted for the number of agents to allow.
+
+  One issue you may face after changing this setting is the number of files allowed to be open for a single user.
+  The users ``ossec`` and ``ossecr`` both open at least 1 file (syscheck database and rids file) per agent.
+  Raising this limit is operating system specific.
+
+  Some Linux distributions support a ``/etc/security/limits.conf``. Set the limits to be at least a few files above what the max agents is set to.
+
+  .. code-block:: console
+
+     ossec            soft    nofile          2048
+     ossec            hard    nofile          2048
+     ossecr           soft    nofile          2048
+     ossecr           hard    nofile          2048
+
+
+
 Where are OSSEC's logs stored?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
