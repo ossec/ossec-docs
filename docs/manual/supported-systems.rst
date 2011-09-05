@@ -16,9 +16,9 @@ The following operating systems are supported by the OSSEC agent:
 * GNU/Linux (all distributions, including RHEL, Ubuntu, Slackware, Debian, etc)
 * Windows 2000, XP, 2003, Vista, 2008
 * VMWare ESX 3.0,3.5 (including CIS checks)
-* FreeBSD (all versions)
-* OpenBSD (all versions)
-* NetBSD (all versions)
+* FreeBSD (all current versions)
+* OpenBSD (all current versions)
+* NetBSD (all current versions)
 * Solaris 2.7, 2.8, 2.9 and 10
 * AIX 5.2 and 5.3
 * Mac OS X 10.x
