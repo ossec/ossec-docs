@@ -89,3 +89,25 @@ The solution is to add an ignore clause to ossec.conf on the client:
     <ossec_config>
         <syscheck>
             <ignore>/var/named/chroot/proc</ignore> 
+
+
+Why aren't new files creating an alert?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By deffault OSSEC does not alert on new files.
+To enable this functionlity, <alert_new_files> must be set to yes inside the <syscheck> section of the ossec.conf.
+Also, the rule to alert on new files (rule 554) is set to level 0. 
+The alert level will need to be raised in order to see the alert.
+
+Add the following to local_rules.xml:
+
+.. code-block:: xml
+
+  <rule id="554" level="10" overwrite="yes">
+    <category>ossec</category>
+    <decoded_as>syscheck_new_entry</decoded_as>
+    <description>File added to the system.</description>
+    <group>syscheck,</group>
+  </rule>
+
+
