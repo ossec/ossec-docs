@@ -100,6 +100,7 @@
 
     **Allowed:** yes/no 
 
+.. _alert_new_files:
 .. object:: alert_new_files 
 
     Specifies if syscheck should alert on new files created. 

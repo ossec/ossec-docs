@@ -79,4 +79,15 @@ Can OSSEC's logs be saved to a different directory?
 
 
 
+I'm getting an error when starting OSSEC: "OSSEC analysisd: Testing rules failed. Configuration error. Exiting." Why?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  There was a small bug in the ossec-control script that was not caught in time for 2.6.
+  The error comes from the script trying to run ossec-logtest from the wrong directory.
+  The solution is to change the line where ossec-logtest is running to look like this:
+
+  .. code-block:: console
+
+      echo | ${DIR}/bin/ossec-logtest > /dev/null 2>&1;
+
 
