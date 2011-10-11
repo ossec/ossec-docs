@@ -91,3 +91,9 @@ I'm getting an error when starting OSSEC: "OSSEC analysisd: Testing rules failed
       echo | ${DIR}/bin/ossec-logtest > /dev/null 2>&1;
 
 
+Do the rules get pushed to the agents automatically?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    The rules only exist on the manager. All analysis is done on the manager.
+    Agents do not send alerts to the manager, they only send the raw logs.
+
