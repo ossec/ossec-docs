@@ -17,3 +17,12 @@
     **Default:** 1514 
 
     **Allowed:** Any port number from 1 to 65535
+
+.. xml:element:: server-ip
+
+    Specifies the ``agent.conf`` profiles to be used by the agent.
+
+    .. note:
+
+        This first appeared in OSSEC 2.7.
+

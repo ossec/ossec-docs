@@ -10,7 +10,7 @@
 
 .. OS:intopt:: logcollector.remote_commands=0
 
-    Allow the agents to run commands defined in `agent.conf`.
+    Allow the agents to run commands defined in ``agent.conf``.
 
     **Allowed:** 0,1
 
