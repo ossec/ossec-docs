@@ -10,7 +10,7 @@ Overview
 Supported types
 ^^^^^^^^^^^^^^^
 
-The agent.conf is configured on the manager.
+The agent.conf is valid on the server install only.
 
 Location 
 ^^^^^^^^
@@ -37,3 +37,8 @@ Options
 -------
 
 .. include:: agent_config.trst
+
+
+
+
+
