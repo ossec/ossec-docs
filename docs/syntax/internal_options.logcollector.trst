@@ -16,5 +16,9 @@
 
     **Default:** 0
 
+    .. note::
+
+        This option first appeared in OSSEC 2.7.
+
 
 
