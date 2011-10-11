@@ -2,3 +2,22 @@
 
 
 
+OSSEC 101: Tuning Syscheck:
+---------------------------
+
+
+Alert on new files:
+^^^^^^^^^^^^^^^^^^^
+
+
+Ignore a directory:
+^^^^^^^^^^^^^^^^^^^
+
+
+Configure realtime syscheck:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
