@@ -4,13 +4,19 @@
 OSSEC 101
 ----------
 
-What is this document?
-^^^^^^^^^^^^^^^^^^^^^^
+What is this OSSEC 101?
+^^^^^^^^^^^^^^^^^^^^^^^
 
   OSSEC 101 is an attempt to illustrate a walkthrough of an OSSEC lifecycle.
   The guide will be a walk-through from installation, to active response, and (most) everything in between.
 
 
+Who is this aimed at?
+^^^^^^^^^^^^^^^^^^^^^
+
+  Anyone interested in using OSSEC. We hope to include information for installations of all sizes.
+  A level of technical knowledge including (but not limited to) basic Linux administration is assumed.
+  This document will instruct you to edit files, but will not walk you through using a text editor.
 
 
 

@@ -7,7 +7,7 @@ OSSEC 101:
     :maxdepth: 3
     :glob:
 
-    *
+    intro 
 
     
     
