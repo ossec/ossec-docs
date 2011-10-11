@@ -2,3 +2,21 @@
 
 
 
+OSSEC 101: Install Windows Agent:
+---------------------------------
+
+
+
+Pre-requisites:
+^^^^^^^^^^^^^^^
+
+
+Installation:
+^^^^^^^^^^^^^
+
+
+Importing the agent key:
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
