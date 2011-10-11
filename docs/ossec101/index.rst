@@ -16,7 +16,8 @@ OSSEC 101:
     managing_agents
     syscheck_tuning
     rule_tuning
-
+    alert_output
+    front_ends
     
     
 
