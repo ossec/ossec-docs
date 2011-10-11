@@ -57,7 +57,18 @@ Why do I see alerts for agent2 in an email about agent1?
           <email_maxperhour>100</email_maxperhour>
 
 
+How do I ignore rule 1002?
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Why does my frequency rule get triggered by 8 events when frequency is set to 6?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Rule 1002 is a catch-all rule. It looks for keywords that are generally considered "bad."
+    It also means there is not currently a rule that deals with the log message.
+    It is configured to always send an email when it's triggered, and many users have found it annoying.
+    The best thing to do when you encounter something that triggers rule 1002 is write a rule. 
+    Contributing the logs and/or rules back to the project is also encouraged.
+    Unless the application creating the log is an internal application, someone else may find the rule useful.
+
+
+
+
+
 
