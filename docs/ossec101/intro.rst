@@ -4,7 +4,7 @@
 OSSEC 101
 ----------
 
-What is this OSSEC 101?
+What is OSSEC 101?
 ^^^^^^^^^^^^^^^^^^^^^^^
 
   OSSEC 101 is an attempt to illustrate a walkthrough of an OSSEC lifecycle.
