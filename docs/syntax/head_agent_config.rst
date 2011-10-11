@@ -7,6 +7,9 @@ agent.conf
 Overview 
 --------
 
+More information on using the agent.conf can be found `here <../manual/agent/agent-configuration.html>`_
+
+
 Supported types
 ^^^^^^^^^^^^^^^
 
