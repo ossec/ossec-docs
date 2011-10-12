@@ -12,14 +12,15 @@ OSSEC 101:
     install_agent_linux
     install_agent_windows
     install_local
-    authd
     managing_agents
+    authd
+    agentless    
     syscheck_tuning
     rule_tuning
     alert_output
+    active-response
     front_ends
-    
-    
+ 
 
 
 
