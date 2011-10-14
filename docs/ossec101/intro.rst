@@ -22,7 +22,7 @@ Who is this aimed at?
 What do I need to use OSSEC?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  A linux or unix system is required for an OSSEC server. Microsoft Windows is only supported as an agent and agents require a server.
+  A linux or unix system is required for an OSSEC server. Microsoft Windows is only supported as an agent, and agents require a server.
 
 
 
