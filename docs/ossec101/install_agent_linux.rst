@@ -5,10 +5,6 @@ OSSEC 101: Installing a Linux Agent
 -----------------------------------
 
 
-Pre-requisites:
-^^^^^^^^^^^^^^^
-
-
 Installation example:
 ^^^^^^^^^^^^^^^^^^^^^
 

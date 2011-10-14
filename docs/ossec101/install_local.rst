@@ -9,10 +9,6 @@ Why you may want a local installation:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Pre-requisites:
-^^^^^^^^^^^^^^^
-
-
 Forwarding alerts to another OSSEC system:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

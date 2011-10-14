@@ -8,6 +8,7 @@ OSSEC 101:
     :glob:
 
     intro 
+    installation_intro
     install_server
     install_agent_linux
     install_agent_windows

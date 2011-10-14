@@ -5,10 +5,6 @@
 OSSEC 101: Server Installation
 ------------------------------
 
-Pre-requisites:
-^^^^^^^^^^^^^^^
-
-
 Things to keep in mind:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
