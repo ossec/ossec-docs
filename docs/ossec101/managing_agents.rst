@@ -6,6 +6,18 @@ OSSEC 101: Managing Agents
 --------------------------
 
 
+ossec.conf and agent.conf:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Add a localfile:
+^^^^^^^^^^^^^^^^
+
+
+Add a command:
+^^^^^^^^^^^^^^
+
+
 manage_agents:
 ^^^^^^^^^^^^^^
 
