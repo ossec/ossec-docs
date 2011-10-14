@@ -9,4 +9,5 @@ Syntax and Options
     regex 
     analysis
     ossec_config
+    head_agent_config
     internal_options
