@@ -273,6 +273,43 @@ A few commands you should try are (to increase to 2048):
     # sysctl -w kern.maxfiles=2048 
 
 
+Fixing Duplicate Errors
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Ossec agents and server keep a counter of each message sent and received in files in .../ossec/queue/rids.
+This is a technique to prevent replay attacks. If the counters between agent and server don't match you'll see errors like this in the agents ossec.log file:
+
+.. code-block:: console:
+
+    2007/10/24 11:19:21 ossec-agentd: Duplicate error:  global: 12, local: 3456, saved global: 78, saved local: 91011
+    2007/10/24 11:19:21 ossec-agentd(<pid>): Duplicated counter for '<host name>'.
+    2007/10/24 11:19:21 ossec-agentd(<pid>): Problem receiving message from www.xxx.yyy.zzz.
+
+This normally happens when you restore the ossec files from a backup or you reinstall server or agents without performing an upgrade.
+The fix for this problem is:
+
+1. On every agent:
+ 
+  #. stop ossec
+
+  #. go to: .../ossec/queue/rids (or ossec-agent/rids on Windows) and remove every file in there.
+
+2. Go to the server:
+
+  #. Stop ossec
+
+  #. Remove the every file under rids too.
+ 
+3. Restart the server
+
+4. Restart the agents.
+
+To avoid this problem from ever happening again, make sure to:
+    * Always use the update option (when updating). Do not remove and reinstall the ossec server, unless you plan to do the same for all agents.
+    * Do not re-use the same agent key between multiple agents or the same agent key after you remove/re-install an agent. If you use the "update" options everything should just work.
+
+
+
 
 
 
