@@ -9,10 +9,6 @@ OSSEC 101:
 
     intro 
     installation_intro
-    install_server
-    install_agent_linux
-    install_agent_windows
-    install_local
     managing_agents
     authd
     agentless    
