@@ -13,7 +13,7 @@ Agent installs require the OpenSSL development libraries for agent-auth support.
 Debian packages:
 ^^^^^^^^^^^^^^^^
 
-.. code::console:
+.. code-block:: console
 
   build-essential make [libssl-dev] [libmysqlclient-dev] [libpq-dev] 
 
