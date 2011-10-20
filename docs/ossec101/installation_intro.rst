@@ -28,7 +28,7 @@ What are the installation pre-requisites?
     install_agent_linux
     install_agent_windows
     install_local
-
+    binary_install
 
 
 
