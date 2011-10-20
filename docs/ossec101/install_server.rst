@@ -78,4 +78,40 @@ Installation process:
 Adding an agent:
 ^^^^^^^^^^^^^^^
 
+* Adding agents is done with the manage_agents application:
+
+.. image:: images/install/manage_agents_intro.png
+   :align: center
+   :alt: OSSEC manage_agents introduction
+
+* The manage_agents menu is simple, enter ``a`` to add an agent:
+
+.. image:: images/install/manage_agents_add.png
+   :align: center
+   :alt: OSSEC manage_agents add
+
+* Enter the agent's information. In the IP address field a CIDR (192.168.1.0/24) or ``any`` can be used:
+
+.. image:: images/install/manage_agents_add2.png
+   :align: center
+   :alt: OSSEC manage_agents agent info
+
+* After confirming the addition, manage agents will notify you that the OSSEC processes must be restarted:
+
+.. image:: images/install/manage_agents_add3.png
+   :align: center
+   :alt: OSSEC manage_agents exit
+
+.. note::
+
+   Restarting the OSSEC processes is only necessary for the initial agent.
+   While subsequent additions will still give the message, the restart is not necessary.
+
+* Restarting the OSSEC processes:
+
+.. image:: images/install/manage_agents_restart.png
+   :align: center
+   :alt: OSSEC restart
+
+
 
