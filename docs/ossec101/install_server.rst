@@ -8,10 +8,16 @@ OSSEC 101: Server Installation
 Things to keep in mind:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-  * space requirements
+Many of the OSSEC daemons chroot to the installation directory (``/var/ossec`` by default, and as referenced in this document).
+All logs are currently kept in the ``/var/ossec/logs`` directory. Some are rotated daily, but OSSEC does not move logs outside of ``/var/ossec/logs``.
+Depending on a number of factors these logs can become large, so make sure you have enough space to store the logs you want to keep.
+
+Related to the amount of storage space you give to OSSEC is "events per second" (EPS). 
+There has not been any formal load testing on OSSEC, but informal testing has shown a local installation can handle 11,000 EPS. (`<email http://osdir.com/ml/ossec-list/2010-09/msg00217.html>`_ by Christopher Moraes)
+This test was done under mostly ideal conditions, but we would be interested in hearing performance reports from other users.
+
   * # of rules
   * # of agents
-  * EPS
 
  
 Installation process:
