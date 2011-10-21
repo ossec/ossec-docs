@@ -33,19 +33,19 @@ Installation process:
 
 .. image:: images/install/gpg-verify.png
    :align: center
-   :alt: OSSEC verify gpg 
+   :alt: gpg --verify ossec-hids-2.6.tar.gz
 
 * Unpack the tarball and change into the new directory. Run the install.sh script:
 
 .. image:: images/install/install_sh.png
    :align: center
-   :alt: OSSEC run install.sh
+   :alt: cd ossec-hids-2.6 && ./install.sh
 
 * Verify the information and press ENTER:
 
 .. image:: images/install/install_info.png
    :align: center
-   :alt: OSSEC installation information
+   :alt:  OSSEC installation information
 
 * The installation type for this install will be server, and we are using the default install directory:
 
@@ -88,19 +88,19 @@ Adding an agent:
 
 .. image:: images/install/manage_agents_intro.png
    :align: center
-   :alt: OSSEC manage_agents introduction
+   :alt: cd /var/ossec/bin && ./manage_agents
 
 * The manage_agents menu is simple, enter ``a`` to add an agent:
 
 .. image:: images/install/manage_agents_add.png
    :align: center
-   :alt: OSSEC manage_agents add
+   :alt: Add an agent with a
 
 * Enter the agent's information. In the IP address field a CIDR (192.168.1.0/24) or ``any`` can be used:
 
 .. image:: images/install/manage_agents_add2.png
    :align: center
-   :alt: OSSEC manage_agents agent info
+   :alt: OSSEC manage_agents agent information
 
 * After confirming the addition, manage agents will notify you that the OSSEC processes must be restarted:
 
@@ -117,7 +117,7 @@ Adding an agent:
 
 .. image:: images/install/manage_agents_restart.png
    :align: center
-   :alt: OSSEC restart
+   :alt: cd /var/ossec/bin && ./ossec-control restart
 
 
 
