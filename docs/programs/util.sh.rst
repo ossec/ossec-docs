@@ -7,6 +7,8 @@ util.sh
 The ``util.sh`` script can add a file to be monitored by ``ossec-logcollector``.
  It can also add a full_command to check for changes to a website, or for changes to the name server of a domain.  
 
+A `blogpost <http://dcid.me/2011/10/3woo-alerting-on-dns-ip-address-changes/>`_ from Daniel Cid (for 3WoO) introduced this utility.
+
 util.sh argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

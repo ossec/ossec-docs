@@ -10,7 +10,7 @@ What's new for 2.7
 
 * allow the agents to run remote commands in agent.conf again  `internal_options.conf <../syntax/head_internal_options.analysisd.html#intopt-logcollector.remote_commands=0>`_
  
-
+* `util.sh <../programs/util.sh.html`_
 
 
     
