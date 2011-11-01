@@ -8,34 +8,33 @@ OSSEC 101: Server Installation
 Things to keep in mind:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Many of the OSSEC daemons chroot to the installation directory (``/var/ossec`` by default, and as referenced in this document).
-All logs are currently kept in the ``/var/ossec/logs`` directory. Some are rotated daily, but OSSEC does not move logs outside of ``/var/ossec/logs``.
+Many of the OSSEC daemons chroot to the installation directory (``/var/ossec`` is the default, and is the reference directory for this document).
+All logs are currently kept in the ``/var/ossec/logs`` directory. Some log files are rotated daily, but OSSEC does not move logs outside of ``/var/ossec/logs``.
 Depending on a number of factors these logs can become large, so make sure you have enough space to store the logs you want to keep.
 
-Related to the amount of storage space you give to OSSEC is "events per second" (EPS). 
-There has not been any formal load testing on OSSEC, but informal testing has shown a local installation can handle 11,000 EPS. (`<email http://osdir.com/ml/ossec-list/2010-09/msg00217.html>`_ by Christopher Moraes)
+Related to the amount of storage space you give to OSSEC is the "events per second" (EPS) you expect to receive. 
+Michael Starks has provided a script to determine EPS in a blog post: `3WoO Day 2: Calculating Your EPS <http://www.immutablesecurity.com/index.php/2011/10/24/3woo-day-2-calculating-your-eps/>`_.
+There has not been any formal load testing on OSSEC, but some informal testing has shown a local installation can handle 11,000 EPS. (`email <http://osdir.com/ml/ossec-list/2010-09/msg00217.html>`_ by Christopher Moraes)
 This test was done under mostly ideal conditions, but we would be interested in hearing performance reports from other users.
 
-  * # of rules
-  * # of agents
-
+The number of rules and agents can also affect the speed of the OSSEC manager, and the amount of space necessary for to hold the logs. More agents means more logs.
  
 Installation process:
 ^^^^^^^^^^^^^^^^^^^^^
 
-* Download the OSSEC tarball and signature:
+* Download the OSSEC tarball and pgp/gnupg signature from `ossec.net <http://www.ossec.net/main/downloads>`_.
 
 .. image:: images/install/download.png
    :align: center
    :alt: OSSEC download
 
-* Use GnuPG or PGP to verify the download:
+* Use GnuPG or PGP to verify the download. Use ``gpg --import OSSEC-GPG-Key.asc`` to import the OSSEC gpg key, then ``gpg --verify ossec-hids-2.6.tar.gz.sid ossec-hids-2.6.tar.gz`` to verify the signature and file.
 
 .. image:: images/install/gpg-verify.png
    :align: center
    :alt: gpg --verify ossec-hids-2.6.tar.gz
 
-* Unpack the tarball and change into the new directory. Run the install.sh script:
+* Unpack the tarball and change into the new directory with ``tar -zxf ossec-hids-2.6.tar.gz``. Run the install.sh script to perform the installation ``./install.sh``:
 
 .. image:: images/install/install_sh.png
    :align: center
