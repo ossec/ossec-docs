@@ -40,37 +40,37 @@ Installation process:
    :align: center
    :alt: cd ossec-hids-2.6 && ./install.sh
 
-* Verify the information and press ENTER:
+* Verify the information and press ``ENTER``. ``System`` should detail the operating system and platform, ``User`` should be the current user, and ``Host`` should display the hostname.
 
 .. image:: images/install/install_info.png
    :align: center
    :alt:  OSSEC installation information
 
-* The installation type for this install will be server, and we are using the default install directory:
+* The installation type for this install will be server, and we are using the default install directory. It should be possible to install OSSEC anywhere in the system but selecting the default will be easiest. Items inside the brackets are the default answers.
 
 .. image:: images/install/install_questions.png
    :align: center
    :alt: OSSEC installation questions
 
-* This installation will be configured to send email, integrity check daemon, and the rootkit detection engine ([y] defaults to yes):
+* This installation will be configured to send email, integrity check daemon, and the rootkit detection engine.
 
 .. image:: images/install/more_questions.png
    :align: center
    :alt: OSSEC more installation questions
 
-* We will be disabling active response for now (active response will be covered later):
+* We will be disabling active response for now. Active response deserves its own section, and will be covered later.
 
 .. image:: images/install/active-response.png
    :align: center
    :alt: OSSEC disable active response
 
-* We will also disable remote syslog (this will also be covered later). The script provides us with information on an additional file that will be analyzed in addition to the typical logfiles. Press enter to continue:
+* We will also disable remote syslog (using OSSEC's syslog will be covered later). The script prints a log file that will be analyzed in addition to the typical log files. In this case it is a Debian specific log file.
 
 .. image:: images/install/disable-syslog.png
    :align: center
    :alt: OSSEC disable syslog
 
-* At this point OSSEC will be compiled. Hopefully there are no errors. After compilation has completed, the script provides more information:
+* At this point OSSEC will be compiled. After compilation has completed, the script provides more information:
 
 .. image:: images/install/post-installation.png
    :align: center
