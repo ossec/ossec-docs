@@ -1,0 +1,19 @@
+.. _install_pre-requisites::
+
+
+The installation pre-requisites are pretty simple and depend on the type of installation.
+All installation types require gcc and the basic development libraries.
+
+Server and local installs may require either MySQL or PostgreSQL client libraries if you plan on logging to a database.
+The OpenSSL development libraries are required for ossec-authd support.
+
+Agent installs require the OpenSSL development libraries for agent-auth support.
+
+
+Debian packages:
+^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  build-essential make [libssl-dev] [libmysqlclient-dev] [libpq-dev] 
+
