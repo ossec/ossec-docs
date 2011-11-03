@@ -6,7 +6,7 @@ Database Setup
 ^^^^^^^^^^^^^^
 
 Create a database, setup the database user, and add the schema (located in the 
-src/os_dbd directory of the distribution) with the following commands.
+``src/os_dbd`` directory of the distribution) with the following commands.
 
 .. code-block:: console 
 
