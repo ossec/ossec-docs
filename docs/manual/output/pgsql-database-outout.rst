@@ -22,11 +22,10 @@ Create a database for OSSEC
     $ sudo -u postgres createdb -O ossec_user ossecdb
     CREATE DATABASE
 
-Create the necessary tables from the PostgreSQL schema
+Create the necessary tables from the PostgreSQL schema located in the src/os_dbd directory of the distribution.
 
 .. code-block:: console 
 
-    $ wget http://www.ossec.net/files/other/postgresql.schema
     $ psql -h 127.0.0.1 -U ossec_user -d ossecdb -f postgresql.schema 
 
 OSSEC Setup 
