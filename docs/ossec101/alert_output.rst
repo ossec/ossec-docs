@@ -5,10 +5,6 @@ OSSEC 101: Alert Output:
 ------------------------
 
 
-Options:
-^^^^^^^^
-
-
 Email:
 ^^^^^^
 
@@ -19,6 +15,11 @@ Syslog:
 
 Database:
 ^^^^^^^^^
+
+  * MySQL
+
+
+  * PostgreSQL
 
 
 Prelude:
