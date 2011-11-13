@@ -1,8 +1,8 @@
 .. _ossec_101_intro:
 
 
-OSSEC 101
-----------
+OSSEC 101: Introduction
+-----------------------
 
 What is OSSEC 101?
 ^^^^^^^^^^^^^^^^^^^^^^^

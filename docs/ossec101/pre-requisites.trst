@@ -15,5 +15,18 @@ Debian packages:
 
 .. code-block:: console
 
-  build-essential make [libssl-dev] [libmysqlclient-dev] [libpq-dev] 
+  build-essential make [libssl-dev] [libmysqlclient-dev] [libpq-dev] [XXX prelude libs] [XXX inotify stuff]
+
+
+Redhat Enterprise Linux/CentOS packages:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. code-block:: console
+
+  gcc inotify-tools-devel XXX
+
+
+
+
 
