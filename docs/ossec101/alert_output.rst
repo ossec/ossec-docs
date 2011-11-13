@@ -4,6 +4,12 @@
 OSSEC 101: Alert Output:
 ------------------------
 
+OSSEC has a number of output options for alerts.
+
+
+Logfile:
+^^^^^^^^
+
 
 Email:
 ^^^^^^
