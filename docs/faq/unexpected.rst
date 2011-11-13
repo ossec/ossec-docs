@@ -279,7 +279,7 @@ Fixing Duplicate Errors
 Ossec agents and server keep a counter of each message sent and received in files in .../ossec/queue/rids.
 This is a technique to prevent replay attacks. If the counters between agent and server don't match you'll see errors like this in the agents ossec.log file:
 
-.. code-block:: console:
+.. code-block:: console
 
     2007/10/24 11:19:21 ossec-agentd: Duplicate error:  global: 12, local: 3456, saved global: 78, saved local: 91011
     2007/10/24 11:19:21 ossec-agentd(<pid>): Duplicated counter for '<host name>'.
