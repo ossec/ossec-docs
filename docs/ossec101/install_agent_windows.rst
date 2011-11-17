@@ -11,6 +11,10 @@ Installation:
 ^^^^^^^^^^^^^
 
 
+Silent Installation:
+^^^^^^^^^^^^^^^^^^^^
+
+
 Importing the agent key:
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
