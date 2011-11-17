@@ -279,7 +279,7 @@ Fixing Duplicate Errors
 Ossec agents and server keep a counter of each message sent and received in files in .../ossec/queue/rids.
 This is a technique to prevent replay attacks. If the counters between agent and server don't match you'll see errors like this in the agents ossec.log file:
 
-.. code-block:: console:
+.. code-block:: console
 
     2007/10/24 11:19:21 ossec-agentd: Duplicate error:  global: 12, local: 3456, saved global: 78, saved local: 91011
     2007/10/24 11:19:21 ossec-agentd(<pid>): Duplicated counter for '<host name>'.
@@ -314,7 +314,7 @@ Agent won't connect to the manager
 
 The following log messages may appear in the ``ossec.log`` file on an agent when it is having issues connecting to a manager:
 
-.. code-block:: console:
+.. code-block:: console
 
     2011/11/13 18:05:13 ossec-agent: WARN: Process locked. Waiting for permission...
     2011/11/13 18:05:24 ossec-agent(4101): WARN: Waiting for server reply (not started). Tried: '10.10.134.241'.
@@ -323,6 +323,6 @@ The following log messages may appear in the ``ossec.log`` file on an agent when
     2011/11/13 18:05:47 ossec-agent(4101): WARN: Waiting for server reply (not started). Tried: '10.10.134.241'.
 
 
-
+XXX
 
 
