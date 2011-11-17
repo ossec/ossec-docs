@@ -323,6 +323,13 @@ The following log messages may appear in the ``ossec.log`` file on an agent when
     2011/11/13 18:05:47 ossec-agent(4101): WARN: Waiting for server reply (not started). Tried: '10.10.134.241'.
 
 
-XXX
+If the agent's packets are making it to the manager, the manager will also include error messages in its ``ossec.log`` related to that agent. Some possible issues:
+
+* The agent may not be using the correct IP address. Some systems with multiple IP addresses may not choose the correct one to communicate with the OSSEC manager. Using ``any`` or a CIDR address (192.168.1.0/24) for the agent may be one solution, and adjusting the system's route settings is another.
+
+* Every agent must be using a unique key. If 2 agents look like they're coming from the same IP (possibly from a NAT gateway), then ``any`` or the CIDR address should be used to identify them on the manager.
+
+* There may be a firewall blocking the OSSEC traffic, udp 1514 should be allowed to and from the manager.
+
 
 

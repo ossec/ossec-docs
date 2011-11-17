@@ -101,5 +101,5 @@ Do the rules get pushed to the agents automatically?
 How can I get ossec.log to rotate daily?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Use logrotate.d or newsyslog. XXX
+  Currently OSSEC does not rotate the ``ossec.log``, use logrotate.d or newsyslog to rotate it for now.
 
