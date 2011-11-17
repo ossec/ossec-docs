@@ -94,6 +94,12 @@ I'm getting an error when starting OSSEC: "OSSEC analysisd: Testing rules failed
 Do the rules get pushed to the agents automatically?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    The rules only exist on the manager. All analysis is done on the manager.
-    Agents do not send alerts to the manager, they only send the raw logs.
+  The rules only exist on the manager. All analysis is done on the manager.
+  Agents do not send alerts to the manager, they only send the raw logs.
+
+
+How can I get ossec.log to rotate daily?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  Use logrotate.d or newsyslog. XXX
 
