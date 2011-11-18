@@ -10,13 +10,8 @@ OSSEC's Windows agent is compiled using `MinGW <http://www.mingw.org/>`_
 
 It has always been a pain to generate snapshots for Windows because it required me to open up my Windows VM (slow), push the code there, compile, etc. Well, until this week when I started to play with MinGW cross-compilation feature to completely build an Windows agent from Linux.
 
-How it works? First, you need to install MinGW and `nsis <http://nsis.sourceforge.net/Main_Page>`_ (to build the installer). On Ubuntu, it is just:
+How it works? First, you need to install MinGW and `nsis <http://nsis.sourceforge.net/Main_Page>`_ (to build the installer). For OpenSSL support, an OpenSSL MinGW package will also be necessary.
 
-
-.. code-block:: console
-
-    # apt-get install mingw32 mingw32-binutils mingw32-runtime
-    # apt-get install nsis
 
 After that, download the source and generate the Windows package directory (replace 2.6 with the latest version or download the latest source `here <https://bitbucket.org/dcid/ossec-hids/get/tip.tar.gz>`_):
 
