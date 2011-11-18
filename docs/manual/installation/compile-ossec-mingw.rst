@@ -34,6 +34,12 @@ Now, you will have the win-pkg directory under src. Just go there and run make.s
 .. code-block:: console
 
     # cd ../win-pkg
+
+
+The following script may need to be modified depending on which Linux distribution is being used.
+
+.. code-block:: console
+
     # sh ./make.sh
 
 You will see the following in the screen:

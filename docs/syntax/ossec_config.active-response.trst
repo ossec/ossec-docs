@@ -35,7 +35,7 @@ Active-response Options
 
 .. xml:element:: disabled 
 
-    Disables active response if set to yes.
+    Disables active response if set to yes. If this is not defined active response is enabled.
 
 .. xml:element:: command 
 
