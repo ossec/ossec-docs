@@ -29,7 +29,7 @@ What are the installation pre-requisites?
     install_agent_windows
     install_local
     binary_install
-
+    oneway_install
 
 
 
