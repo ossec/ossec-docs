@@ -9,11 +9,28 @@ The OpenSSL development libraries are required for ossec-authd support.
 
 Agent installs require the OpenSSL development libraries for agent-auth support.
 
+Prelude output will require the prelude development libraries.
 
 Debian packages:
 ^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
-  build-essential make [libssl-dev] [libmysqlclient-dev] [libpq-dev] 
+  build-essential make [libssl-dev] [libmysqlclient-dev] [libpq-dev] [XXX prelude libs] [XXX inotify stuff]
+
+
+Redhat Enterprise Linux/CentOS packages:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  gcc inotify-tools-devel XXX
+
+
+Mac OS X Lion issues:
+^^^^^^^^^^^^^^^^^^^^^
+
+XXX OS X Lion primarily uses llvm for compilation, but there appears to be an issue with the inline assembly support.
+
+
 

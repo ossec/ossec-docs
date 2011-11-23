@@ -4,8 +4,10 @@
 OSSEC 101: Alert Output:
 ------------------------
 
+OSSEC has a number of output options for alerts.
 
-Options:
+
+Logfile:
 ^^^^^^^^
 
 
@@ -15,6 +17,15 @@ Email:
 
 Syslog:
 ^^^^^^^
+
+
+Database:
+^^^^^^^^^
+
+  * MySQL
+
+
+  * PostgreSQL
 
 
 Prelude:
