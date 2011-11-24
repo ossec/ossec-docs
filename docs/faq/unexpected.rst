@@ -172,7 +172,7 @@ What does "1403 - Incorrectly formated message" means?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It means that the server (or agent) wasn't able to decrypt the message from the 
-other side of the connection.  See `The communication between my agent and the server is not working. What to do?`
+other side of the connection.  See `The communication between my agent and the server is not working. What to do?`_
 
 The main reasons for this to happen are:
 
