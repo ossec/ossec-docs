@@ -1,44 +1,59 @@
-== Nmap correlation ==
+.. _nmap_correlation:
 
-Ossec can read nmap grepable output files to use as a correlation tool and also to alert based on host information changes. Follow the step by step below on how to configure ossec:
+Nmap correlation
+================
 
-{|
-|-
-| align="left" | 1. || Add the nmap output file on ossec.conf (generally at /var/ossec/etc/ossec.conf):
-|}
- <ossec_config>
-  <localfile>
-     <log_format>nmapg</log_format>
-     <location>/var/log/nmap-out.log</location>
-   </localfile>
- </ossec_config>
-{|
-|-
-| align="left" | 2. || If the file does not exist, touch it:
-|}
- ossec-test# touch /var/log/nmap-out.log
-{|
-|-
-| align="left" | 3. || Restart ossec:
-|}
- ossec-test# /var/ossec/bin/ossec-control restart
-{| 
-|-
-| align="left" | 4. || Run your nmap scans (example scanning 192.168.2.0/24 network):
-|}
- ossec-test# nmap --append_output -sU -sT -oG /var/log/nmap-out.log 192.168.2.0-255
+Ossec can read `nmap's <http://nmap.org>`_ `grepable output <http://nmap.org/book/output-formats-grepable-output.html>`_ files to use as a correlation tool, and to alert based on host information changes.
+
+Configuring OSSEC:
+------------------
+
+1. Add the nmap output file on ``/var/ossec/etc/ossec.conf``:
+
+
+.. code-block:: console
+
+  <ossec_config>
+   <localfile>
+      <log_format>nmapg</log_format>
+      <location>/var/log/nmap-out.log</location>
+    </localfile>
+  </ossec_config>
+
+
+2. If the file does not exist, touch it:
+
+.. code-block:: console
+
+  ossec-test# touch /var/log/nmap-out.log
+
+3. Restart ossec:
+
+.. code-block:: console
+
+  ossec-test# /var/ossec/bin/ossec-control restart
+
+4. Run your nmap scans (example scanning 192.168.2.0/24 network):
+
+.. code-block:: console
+
+  ossec-test# nmap --append_output -sU -sT -oG /var/log/nmap-out.log 192.168.2.0-255
+
  
- '''NOTE:  I've found that this is handiest when paired with a routine nmap scan.'''
-{|
-|-
-| align="left" | 5. || So add the above line to your crontab.
-|}
- ossec-test#crontab -e
- 15 * * * * nmap --append_output -sU -sT -oG /var/log/nmap-out.log 192.168.2.0-255
+I've found that this is handiest when paired with a routine nmap scan.
 
-----
+5. So add the above line to your crontab.
 
-=== Example of alert when a new host is found: ===
+.. code-block:: console
+
+  ossec-test#crontab -e
+  15 * * * * nmap --append_output -sU -sT -oG /var/log/nmap-out.log 192.168.2.0-255
+
+
+Example of alert when a new host is found:
+------------------------------------------
+
+.. code-block:: console
 
  ** Alert 1152058913.238: mail
  2006 Jul 04 20:21:53 /var/log/nmap-out.log
@@ -48,7 +63,10 @@ Ossec can read nmap grepable output files to use as a correlation tool and also 
  Host: 192.168.2.10, open ports: 21(tcp) 22(tcp) 80(tcp) 113(tcp) 514(udp) 1514(udp) 4500(udp)
 
 
-=== Example of alert when a new a host information is changed: ===
+Example of alert when a new a host information is changed:
+----------------------------------------------------------
+
+.. code-block:: console
 
  ** Alert 1152058983.487: mail
  2006 Jul 04 20:23:03 /var/log/nmap-out.log
@@ -59,6 +77,3 @@ Ossec can read nmap grepable output files to use as a correlation tool and also 
  Previously open ports: 53(udp) 80(tcp) 161(udp) 520(udp) 1025(udp) 1900(udp)
 
 
-[[Category:know how]]
-[[Category:ossec.conf]]
-[[Category:localfile]]
