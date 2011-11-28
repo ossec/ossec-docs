@@ -17,7 +17,7 @@ OSSEC 101:
     alert_output
     active-response
     front_ends
- 
+    troubleshooting/troubleshooting 
 
 
 
