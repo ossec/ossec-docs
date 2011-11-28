@@ -85,6 +85,8 @@
 
               192.168.1.100 - - [21/Jan/2010:08:31:09 -0500] "GET / HTTP/1.0" 200 2212
 
+      .. _logformat_command:
+
       - command 
           This format will be the output from the command defined by command_. Each line of output will be treated as a separate log.
 
@@ -136,6 +138,27 @@
     The command to be run. All output from this command will be read as one or more log messages depending on whether command or full_command_ is used.
 
     **Allowed:** Any commandline and arguments. 
+
+
+.. _command_alias:
+
+.. xml:element:: alias
+
+    An alias to identify the command. This will replace the command in the log message.
+
+    For example ``<alias>usb-check</alias>`` would replace:
+
+    .. code-block:: console
+
+       ossec: output: 'reg QUERY HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR':
+
+    with:
+
+    .. code-block:: console
+
+       ossec: output: 'usb-check':
+
+    **Allowed:** Any string.
 
 .. _command_frequency:
 .. xml:element:: frequency
