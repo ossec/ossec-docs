@@ -53,12 +53,12 @@ Invalid user login attempt:
   May 21 20:21:21 slacker proftpd[31806] proftpd.lab.ossec.net (190.48.150.156[190.48.150.156]): USER abad: no such user found from 190.48.150.156 [190.48.150.156] to proftpd.lab.ossec.net:21
 
 
-Full samples
-------------
+Full samples:
+^^^^^^^^^^^^^
 
 .. code-block:: console
 
-  14 04:44:46 opala proftpd[30812] opala.xxxxxx.edu.br (sieapp.ufpel.edu.br[200.17.161.73]): mod_delay/0.5: delaying for 14871 usecs
+  Jul 14 04:44:46 opala proftpd[30812] opala.xxxxxx.edu.br (sieapp.ufpel.edu.br[200.17.161.73]): mod_delay/0.5: delaying for 14871 usecs
   Jul 14 04:44:46 opala proftpd[30813] opala.xxxxxx.edu.br (sieapp.ufpel.edu.br[200.17.161.73]): no such user 'guest' 
   Jul 14 04:44:46 opala proftpd[30813] opala.xxxxxx.edu.br (sieapp.ufpel.edu.br[200.17.161.73]): USER guest: no such user found from sieapp.ufpel.edu.br [200.17.161.73] to 192.168.2.5:21
   Jul 14 04:44:46 opala proftpd[30813] opala.xxxxxx.edu.br (sieapp.ufpel.edu.br[200.17.161.73]): mod_delay/0.5: delaying for 86 usecs

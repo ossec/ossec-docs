@@ -16,8 +16,15 @@ Stuff
    :glob:
 
    apache/*
-
+   auth/*
+   linux/*
+   bsd/*
    osx/*
+   ftp/*
+   nessus/*
+   misc/*
+   checkpoint/*
+
 
 
 
