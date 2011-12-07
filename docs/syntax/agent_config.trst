@@ -1,0 +1,33 @@
+.. xml:element:: agent_config_options
+
+
+.. xml:element:: agent_config
+
+    Defines the beginning or end of an agent configuration block.
+
+
+
+    .. xml:element:: name
+
+    This option to ``agent_config`` allows you to assign the block the one particular agent by using the agent's name.
+
+    **Example:** <agent_config name="agent007">
+
+    .. xml:element:: os
+
+    This option to ``agent_config`` allows you to assign the block to an operating system.
+
+    **Example:** <agent_config os="Windows">
+
+    **Allowed:** Any OS family (Windows, Linux, OpenBSD, etc.)
+
+    .. xml:element:: profile
+
+    This option to ``agent_config`` allows you to assign a profile name to the the block. Any agent may use this block if it is configured to use the defined profile.
+
+    **Example:** <agent_config profile="webservers">
+
+ 
+
+
+
