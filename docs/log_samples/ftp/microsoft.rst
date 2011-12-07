@@ -1,0 +1,141 @@
+Microsoft FTPD examples
+-----------------------
+
+Sample 1:
+^^^^^^^^^
+
+.. code-block:: console
+
+  14:03:19 192.168.2.187 [62]USER Administrator 331 0
+  14:03:19 192.168.2.187 [62]PASS - 530 1326
+  14:03:19 192.168.2.187 [62]USER Administrator 331 0
+  14:03:19 192.168.2.187 [62]PASS - 530 1326
+  14:03:19 192.168.2.187 [62]USER Administrator 331 0
+  14:03:20 192.168.2.187 [62]PASS - 530 1326
+  14:03:20 192.168.2.187 [62]USER Administrator 331 0
+  14:03:20 192.168.2.187 [62]PASS - 530 1326
+  14:03:20 192.168.2.187 [62]USER Administrator 331 0
+  14:03:20 192.168.2.187 [62]PASS - 530 1326
+  14:03:21 192.168.2.187 [62]USER Administrator 331 0
+  14:03:21 192.168.2.187 [62]PASS - 530 1326
+  14:37:52 10.1.2.35 [63]USER username 331 0
+  14:37:52 10.1.2.35 [63]PASS - 230 0
+  14:37:52 10.1.2.35 [63]CWD /dir 250 0
+  14:37:52 10.1.2.35 [63]CWD /dir/_mm 550 2
+  14:37:52 10.1.2.35 [63]CWD /dir/_notes 250 0
+  14:37:54 10.1.2.35 [63]CWD / 250 0
+  14:37:54 10.1.2.35 [63]MKD /dir/XYIZNWSK 257 0
+  14:37:54 10.1.2.35 [63]CWD /dir 250 0
+  14:37:54 10.1.2.35 [63]CWD / 250 0
+  14:37:54 10.1.2.35 [63]RMD /dir/XYIZNWSK 250 0
+
+
+
+Sample 2:
+^^^^^^^^^
+
+.. code-block:: console
+
+  12:48:44 x.x.180.116 [11]USER anonymous 331 0
+  12:48:44 x.x.180.116 [11]PASS IEUser@ 530 1326
+  12:48:44 x.x.180.116 [12]USER administrator 331 0
+  12:48:44 x.x.180.116 [12]PASS - 530 1326
+
+
+
+Sample 3:
+^^^^^^^^^
+
+.. code-block:: console
+
+  #Software: Microsoft Internet Information Services 5.0
+  #Version: 1.0
+  #Date: 2006-09-23 17:49:32
+  #Fields: time c-ip cs-username s-sitename s-computername s-ip s-port cs-method cs-uri-stem cs-uri-query sc-status sc-win32-status sc-bytes cs-bytes time-taken cs-version cs-host cs(User-Agent) cs(Cookie) cs(Referer)
+  17:57:59 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]USER Administrator - 331 0 0 0 0 FTP - - - -
+  17:57:59 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]PASS - - 230 0 0 0 16 FTP - - - -
+  17:58:11 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]sent /wwwroot/winkel/weekrapport.asp - 226 0 0 0 0 FTP - - - -
+  17:58:11 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]sent /wwwroot/winkel/weekrapport.asp - 226 0 0 0 0 FTP - - - -
+  17:58:11 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]sent /wwwroot/winkel/weekrapport.asp - 226 0 14903 0 250 FTP - - - -
+  17:58:32 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]created weekrapport.asp - 226 0 0 14874 610 FTP - - - -
+  17:58:42 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]sent /wwwroot/develop/weekrapport.asp - 226 0 0 0 0 FTP - - - -
+  17:58:42 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]sent /wwwroot/develop/weekrapport.asp - 226 0 0 0 0 FTP - - - -
+  17:58:42 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]sent /wwwroot/develop/weekrapport.asp - 226 0 14903 0 547 FTP - - - -
+  17:58:49 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]created weekrapport.asp - 226 0 0 14874 594 FTP - - - -
+  17:58:57 192.168.3.64 Administrator MSFTPSVC1 HAIJO2 192.168.1.12 21 [144]QUIT - - 250 0 0 0 0 FTP - - - - 
+
+
+
+Sample 4:
+^^^^^^^^^
+
+.. code-block:: console
+
+  2004-12-30 11:24:41 203.115.228.178 ftp MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [12]USER ftp - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:41 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [12]PASS ftp@ftp.net - 530 1326 FTP - - 
+
+  2004-12-30 11:24:43 203.115.228.178 anyone MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [13]USER anyone - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:43 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [13]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 root MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [14]USER root - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 admin MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [15]USER admin - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [14]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 webmaster MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [16]USER webmaster - 331 0 FTP
+
+  2004-12-30 11:24:44 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [15]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 user MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [17]USER user - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [16]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 test MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [18]USER test - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:44 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [17]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 web MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [19]USER web - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [18]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 www MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [20]USER www - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [19]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 administrator MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [22]USER administrator - 331 
+
+  2004-12-30 11:24:45 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [21]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 sybase MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [25]USER sybase - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [23]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 - MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [24]PASS - - 530 1326 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 user MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [27]USER user - 331 0 FTP - - - - 
+
+  2004-12-30 11:24:45 203.115.228.178 webmaster MSFTPSVC1 MULTIMEDIA 192.168.0.203 21 [26]USER webmaster - 331 0 FTP - 
+
+
+
+
+
+Sample 5:
+^^^^^^^^^
+
+.. code-block:: console
+
+  13:15:45 172.28.129.116 [51]USER xxxxx 331 0
+  13:15:46 172.28.129.116 [51]PASS - 230 0
+  13:15:56 172.28.129.116 [51]MKD 20051103 257 0
+  13:15:57 172.28.129.116 [51]CWD 20051103 250 0
+  13:17:19 172.28.129.116 [51]created /filename 226 0
+  13:18:44 172.28.129.116 [51]QUIT - 226 0
+  13:39:13 160.164.22.7 [52]USER anonymous 331 0
+  13:39:13 160.164.22.7 [52]PASS opss 530 1326
+  13:39:13 160.164.22.7 [52]QUIT - 530 0
+
+
