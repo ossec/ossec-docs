@@ -1,35 +1,43 @@
-==Log Samples from Pure-FTPD==
+Log Samples from Pure-FTPD
+--------------------------
 
 
-*<b>Connection attempt</b>:
-pure-ftpd-wrapper[926]: connect from  192.168.20.10 (192.168.20.10)
+Connection attempt:
+^^^^^^^^^^^^^^^^^^^
 
-pure-ftpd: (?@192.168.20.10) [INFO] New connection from 192.168.20.10
+.. code-block:: console
 
-
-*<b>Connection closed</b>:
-pure-ftpd: (abcde@192.168.20.10) [INFO] Logout.
-
-
-*<b>Login failed</b>:
-pure-ftpd: (?@192.168.20.10) [WARNING] Authentication failed for user [inv-user]
-
-==Full samples==
+  pure-ftpd-wrapper[926]: connect from  192.168.20.10 (192.168.20.10)
+  pure-ftpd: (?@192.168.20.10) [INFO] New connection from 192.168.20.10
 
 
-Sample 1:
+Connection closed:
+^^^^^^^^^^^^^^^^^^
 
-<pre>
-pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
-pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
-pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
-pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
-pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
-pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
-pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
-</pre>
+.. code-block:: console
 
-[[Category:log::samples]]
-[[Category:log::samples::linux]]
-[[Category:log::samples::linux::ftp]]
+  pure-ftpd: (abcde@192.168.20.10) [INFO] Logout.
+
+
+Login failed:
+^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  pure-ftpd: (?@192.168.20.10) [WARNING] Authentication failed for user [inv-user]
+
+
+Full Sample:
+^^^^^^^^^^^^
+
+.. code-block:: console
+
+  pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
+  pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
+  pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
+  pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
+  pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
+  pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
+  pure-ftpd: (?@24.79.92.194) [WARNING] Authentication failed for user [Administrator]
+
 
