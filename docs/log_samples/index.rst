@@ -15,15 +15,15 @@ Stuff
    :maxdepth: 2
    :glob:
 
-   apache/*
+   apache/index
    auth/*
    linux/index
-   windows/*
+   windows/index
    bsd/*
    osx/*
-   ftp/*
+   ftp/index
    nessus/*
-   misc/*
+   misc/index
    cisco/index
    checkpoint/*
 
