@@ -23,11 +23,8 @@ Here is a sample of the log file tracking failed login attempts : filename = Fai
   05/18/2004,02:15:15,Authen failed,bscorpio,punks,122.55.32.13,External DB user invalid or bad password,,,24,10.27.3.1
   05/18/2004,08:14:32,Authen failed,bscorpio,punks,122.55.32.35,External DB user invalid or bad password,,,25,10.27.3.1
 
-
 Here is a sample of the log file tracking successful logins : filename = Passed Authentications 2004-07-08.csv
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: console
 
   Date,Time,Message-Type,User-Name,Group-Name,Caller-ID,NAS-Port,NAS-IP-Address
   07/08/2004,08:13:54,Authen OK,bplack,punks,198.47.27.99,106,10.27.3.1
@@ -44,7 +41,6 @@ Here is a sample of the log file tracking successful logins : filename = Passed 
   07/08/2004,14:29:25,Authen OK,bplack,punks,198.47.27.99,118,10.27.3.1
   07/08/2004,14:47:56,Authen OK,bplack,punks,198.47.27.99,119,10.27.3.1
   07/08/2004,14:54:39,Authen OK,bretuwu,punks,198.47.27.99,120,10.27.3.1
-
 
 
 The log files are stored in CSV (comma delimited). 
