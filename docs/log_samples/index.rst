@@ -17,14 +17,14 @@ Stuff
 
    apache/*
    auth/*
-   linux/*
+   linux/index
    windows/*
    bsd/*
    osx/*
    ftp/*
    nessus/*
    misc/*
-   cisco/*
+   cisco/index
    checkpoint/*
 
 
