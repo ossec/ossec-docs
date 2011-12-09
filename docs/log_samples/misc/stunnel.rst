@@ -1,4 +1,4 @@
-Here is a log sample from [http://www.stunnel.org/ Stunnel for Windows].
+Here is a log sample from `Stunnel for Windows <http://www.stunnel.org/>`_
 
 Filename = C:\Program Files\Stunnel\stunnel.log
 

@@ -34,8 +34,10 @@ OSSEC Processes and Data
 *  ossec-remoted receives data, uncompress and unencrypt it and sends to analysysd.
 *  ossec-analysisd detects an actionable issue.
 *  ossec-analysisd actions:
+
   *  ossec-analysisd sends information to ossec-execd (if response is configured to run in the server side).
   *  ossec-analysisd sends information to ossec-remoted (if response is configured to run in the agent). 
+
 *  ossec-maild monitors analysisd and generate e-mail alert.
 *  If active response is enabled on the agent, ossec-remoted on the manager sends the active response to ossec-agent on the agent and ossec-agent sends it to ossec-execed.
 *  ossec-execd calls an active response script 
