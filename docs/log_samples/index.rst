@@ -18,11 +18,13 @@ Stuff
    apache/*
    auth/*
    linux/*
+   windows/*
    bsd/*
    osx/*
    ftp/*
    nessus/*
    misc/*
+   cisco/*
    checkpoint/*
 
 
