@@ -309,8 +309,8 @@ To avoid this problem from ever happening again, make sure to:
     * Do not re-use the same agent key between multiple agents or the same agent key after you remove/re-install an agent. If you use the "update" options everything should just work.
 
 
-Agent won't connect to the manager
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Agent won't connect to the manager or the agent always shows never connected
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following log messages may appear in the ``ossec.log`` file on an agent when it is having issues connecting to a manager:
 
@@ -321,7 +321,6 @@ The following log messages may appear in the ``ossec.log`` file on an agent when
     2011/11/13 18:05:26 ossec-agent: INFO: Trying to connect to server (10.10.134.241:1514).
     2011/11/13 18:05:26 ossec-agent: INFO: Using IPv4 for: 10.10.134.241 .
     2011/11/13 18:05:47 ossec-agent(4101): WARN: Waiting for server reply (not started). Tried: '10.10.134.241'.
-
 
 If the agent's packets are making it to the manager, the manager will also include error messages in its ``ossec.log`` related to that agent. Some possible issues:
 
