@@ -26,7 +26,7 @@ Stuff
    misc/index
    cisco/index
    checkpoint/*
-
+   databases/*
 
 
 
