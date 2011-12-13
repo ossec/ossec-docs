@@ -1,9 +1,6 @@
 Log samples for Checkpoint
 --------------------------
 
-.. Explanations on how to Configure Checkpoint [[Checkpoint_Config_Example|here]].
-
-
 Sample 1:
 ^^^^^^^^^
 
