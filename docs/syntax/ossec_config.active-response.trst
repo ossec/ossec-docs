@@ -69,3 +69,11 @@ Active-response Options
 
    A comma separated list of increasing timeouts in minutes for repeat offenders. There can be a maximum of 5 entries.
 
+   **Example:**
+
+   .. code-block:: console
+
+     <active-response>
+       <repeated_offenders>30,60,120</repeated_offenders>
+     </active-response>
+

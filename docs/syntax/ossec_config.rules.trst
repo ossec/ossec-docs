@@ -1,12 +1,12 @@
 
-.. object:: include 
+.. xml:element:: include 
 
     Load a single rule file.  
 
     **Allowed:** Path and file name of rule to load example: rules/config.xml 
 
         
-.. object:: rule 
+.. xml:element:: rule 
 
     
     Load a single rule file.  
@@ -18,7 +18,7 @@
         This is the same as include, but created to keep the syntax constant with 
         other sections of the rules config. 
 
-.. object:: rule_dir 
+.. xml:element:: rule_dir 
 
     Load a directory of rules.  The order of loaded files will be in alphebical order 
     and will not load any files that have been loaded before. 
@@ -54,7 +54,7 @@
                 </rules>
             </ossec_config>
 
-.. object:: decoder 
+.. xml:element:: decoder 
 
     Load a single decoder file. The path should be relative to the install directory, typically ``/var/ossec``.
     
@@ -70,7 +70,7 @@
     **Allowed:** Path and file name of decoder to load example: rules/decoder/decoder.xml 
 
 
-.. object:: decoder_dir 
+.. xml:element:: decoder_dir 
 
     Load a directory of decoders.  The order of loaded files will be in alphebics order 
     and will not load any files that have been loaded before.
@@ -112,7 +112,7 @@
   
         If ``<decoder>`` or ``<decoder_dir>`` are used, the default decoder.xml will not be used. It must be specified explicitly.
 
-.. object:: list  
+.. xml:element:: list  
 
     Load a single cdb references for inclusion by other rules.  
 
