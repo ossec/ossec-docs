@@ -56,12 +56,16 @@
 
 .. object:: decoder 
 
-    Load a single decoder file.  
+    Load a single decoder file. The path should be relative to the install directory, typically ``/var/ossec``.
     
     .. note:: 
 
-        If no decoders are specified in ossec.conf the legacy etc/decoder.xml and 
-        etc/local_decoder.xml are loaded
+        If no decoders are specified in ossec.conf the legacy ``etc/decoder.xml`` and 
+        ``etc/local_decoder.xml`` are loaded
+
+    .. warning::
+  
+        If ``<decoder>`` or ``<decoder_dir>`` are used, the default decoder.xml will not be used. It must be specified explicitly.
 
     **Allowed:** Path and file name of decoder to load example: rules/decoder/decoder.xml 
 
@@ -69,7 +73,8 @@
 .. object:: decoder_dir 
 
     Load a directory of decoders.  The order of loaded files will be in alphebics order 
-    and will not load any files that have been loaded before. 
+    and will not load any files that have been loaded before.
+    The path should be relative to the install directory, typically ``/var/ossec``.
 
     **Attributes:** 
     
@@ -102,6 +107,10 @@
                     <decoder_dir pattern=".xml$">rules/plugins/decoders</decoder_dir>
                 </rules>
             </ossec_config>
+
+    .. warning::
+  
+        If ``<decoder>`` or ``<decoder_dir>`` are used, the default decoder.xml will not be used. It must be specified explicitly.
 
 .. object:: list  
 
