@@ -19,6 +19,6 @@
 
 .. xml:element:: timeout_allowed
 
-    Specifies if this command supports timeout
+    Specifies if this command supports a timeout.
 
 

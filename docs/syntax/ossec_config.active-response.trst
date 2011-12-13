@@ -22,7 +22,7 @@ Command Options
 
 .. xml:element:: timeout_allowed
 
-    Specifies if this command supports timeout
+    Specifies if this command supports a timeout.
 
 Active-response Options
 -----------------------
@@ -63,7 +63,7 @@ Active-response Options
 
 .. xml:element:: timeout 
 
-    How long until the reverse command is executed (IP unblocked, for example). 
+    How long in seconds until the reverse command is executed (IP unblocked, for example). 
 
 .. xml:element:: repeated_offenders
 
