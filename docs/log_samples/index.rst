@@ -27,6 +27,7 @@ Stuff
    cisco/index
    checkpoint/*
    databases/*
+   web/*
 
 
 
