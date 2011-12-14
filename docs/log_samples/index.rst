@@ -28,6 +28,13 @@ Stuff
    checkpoint/*
    databases/*
    web/*
+   dns/*
+   firewalls/*
+   email/*
+   vmware/*
+   
+   ossec/*
+  
 
 
 
