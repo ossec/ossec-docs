@@ -331,4 +331,27 @@ If the agent's packets are making it to the manager, the manager will also inclu
 * There may be a firewall blocking the OSSEC traffic, udp 1514 should be allowed to and from the manager.
 
 
+I am seeing high CPU utilization on a Windows agent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Some OSSEC HIDS users who have deployed the Windows agent have experienced situations where the windows OSSEC agent causes high CPU utilization. In some cases, this may be due to syscheck having to do integrity checking on a large number of files and the frequency with which this is done. The high CPU utilization could also take place when the OSSEC agent has to analyze Windows Event logs with very large numbers of generated events.
+
+A clue to what may be happening are alerts like these:
+
+.. code-block:: console
+  OSSEC HIDS Notification.
+  2006 Oct 24 03:18:07
+
+  Received From: (ACME-5) 10.23.54.40->WinEvtLog
+  Rule: 11 fired (level 8) -> "Excessive number of events (above normal)."
+  Portion of the log(s):
+
+  The average number of logs between 3:00 and 4:00 is 268689. We reached 270690.
+
+
+
+  --END OF NOTIFICATION
+
+The above alert indicates the condition where a large number of events are being generated in the Windows event logs. In Windows, setting the Windows audit policy to `Audit Object Access <http://technet2.microsoft.com/WindowsServer/en/library/50fdb7bc-7dae-4dcd-8591-382aeff2ea791033.mspx?mfr=true>`_ or `Audit Process Tracking <http://technet2.microsoft.com/WindowsServer/en/library/50fdb7bc-7dae-4dcd-8591-382aeff2ea791033.mspx?mfr=true>`_ can cause the generation of many event log entries. This gives the OSSEC agent much more work to do in log analysis, and thus causes the consumption of much more CPU cycles. To reduce the CPU utilization in this case, the solution is to disable auditing of object access and/or process tracking. Typically, these audit settings aren't required except for debugging purposes, or situations in which you absolutely have to track everything.
+
 
