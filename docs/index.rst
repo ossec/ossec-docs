@@ -34,6 +34,7 @@ Reference
     :maxdepth: 2
 
     syntax/index
+    ossec101/index
     programs/index
     whatsnew/index
     rules/index
