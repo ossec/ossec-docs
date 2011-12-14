@@ -38,6 +38,7 @@ Reference
     whatsnew/index
     rules/index
     rootcheck/index
+    log_samples/index
     glossary
 
 
