@@ -1,7 +1,7 @@
 How do the log checksums work?
 
-*by `Daniel B. Cid <http://www.ossec.net/dcid Daniel B. Cid>`_*
-*Taken from `OSSEC blog <http://www.ossec.net/dcid/?p=74>`_*
+*by `Daniel B. Cid <http://www.dcid.me>`_*
+*Taken from `OSSEC blog <http://dcid.me/2007/05/dailychained-checksum-of-ossec-alerts/>`_*
 
 
 Starting with version 1.2, OSSEC will come with support for daily/chained checksums enabled by default. 

@@ -11,7 +11,7 @@ Compiling the OSSEC Windows Agent on Windows
 
 Most people that use the OSSEC Windows agent `download a pre-compiled <http://www.ossec.net/main/downloads/>`_ copy from the OSSEC site. While that is a good option for many individual users, it may not suit those with more specific needs and/or those in enterprise environments. Users who fall into those categories could benefit from customizing the agent and maintaining internal builds in order to suit their individual needs.
 
-There are already instructions on `how to compile the Windows agent on Linux <http://www.ossec.net/dcid/?p=174>`_, but ironically the process doesn.t work so well on Windows. I had a need to make this work on Windows, so I thought I would share the process with you.
+There are already instructions on `how to compile the Windows agent on Linux <http://dcid.me/2009/06/compiling-the-windows-agent-from-a-linux-system/>`_, but ironically the process doesn't work so well on Windows. I had a need to make this work on Windows, so I thought I would share the process with you.
 
 First, there are some prerequisites.  You.ll need:
 

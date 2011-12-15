@@ -2,7 +2,7 @@ How do I use or create my own compiled rules?
 ---------------------------------------------
 
 
-*By `Daniel Cid <http://www.ossec.net/dcid/>`_*
+*By `Daniel Cid <http://www.dcid.me/>`_*
 
 
 

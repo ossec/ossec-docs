@@ -1,7 +1,7 @@
 Why am I getting multiple 675 events from AD + Samba?
 -----------------------------------------------------
 
-*by `Daniel B. Cid <http://www.ossec.net/dcid>`_
+*by `Daniel B. Cid <http://www.dcid.me>`_*
 
 
 If you have Windows AD and Linux with Samba in the same network, you may be  getting multiple 675 logon failures every time a Linux user tries to access the AD. 

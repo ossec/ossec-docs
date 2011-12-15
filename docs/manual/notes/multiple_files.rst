@@ -1,7 +1,7 @@
 How to add multiple log files to be monitored?
 ----------------------------------------------
 
-By `Daniel B. Cid <http://www.ossec.net/dcid>`_
+By `Daniel B. Cid <http://www.dcid.me>`_
 
 For Unix Agents
 ^^^^^^^^^^^^^^^

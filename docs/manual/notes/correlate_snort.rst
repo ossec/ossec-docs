@@ -1,7 +1,7 @@
 Correlating multiple snort IDS with ossec
 -----------------------------------------
 
-* Taken from `OSSEC blog <http://www.ossec.net/dcid/?p=23>`_ by `Daniel Cid <http://www.ossec.net/dcid/>`_
+* Taken from `OSSEC blog <http://dcid.me/2006/12/correlating-multiple-snort-ids-with-ossec/>`_ by `Daniel Cid <http://www.dcid.me/>`_
 
 
 I was asked recently what is the best way to correlate multiple `snort <http://www.snort.org>`_ events with OSSEC. 

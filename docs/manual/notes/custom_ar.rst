@@ -1,7 +1,7 @@
 Creating Customized Active Responses
 ------------------------------------
 
-*by `Daniel Cid <http://www.ossec.net/dcid/>`_*
+*by `Daniel Cid <http://www.dcid.me/>`_*
 
 
 OSSEC by default comes with a few active response scripts, but if you ever need to expand them, this 
