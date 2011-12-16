@@ -4,7 +4,7 @@
 Sending alerts via syslog
 =========================
 
-Syslog output allows you to send the OSSEC alerts to one or more syslog servers.
+Syslog output allows an OSSEC manager to send the OSSEC alerts to one or more syslog servers.
 
 Configuration options
 ---------------------
