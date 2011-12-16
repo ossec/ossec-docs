@@ -74,6 +74,11 @@ Active-response Options
    .. code-block:: console
 
      <active-response>
+       <command>firewall-block</command>
+       <location>defined-agent</location>
+       <agent_id>001</agent_id>
+       <rules_group>authentication_failed,authentication_failures</rules_group>
+       <timeout>600</timeout>
        <repeated_offenders>30,60,120</repeated_offenders>
      </active-response>
 
