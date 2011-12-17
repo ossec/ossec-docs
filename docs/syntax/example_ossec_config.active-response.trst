@@ -1,0 +1,167 @@
+
+
+Example active response configurations:
+---------------------------------------
+
+
+Command: Restart OSSEC on *nix systems:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This command can be used to restart the OSSEC processes. It's commonly used to automatically restart agent processes when an ``agent.conf`` is modified.
+Since no parameters are necessary the ``<expect>`` is empty.
+
+.. code-block:: console
+
+  <command>
+    <name>restart-ossec</name>
+    <executable>restart-ossec.sh</executable>
+    <expect></expect>
+  </command>
+
+
+Active-Response:  Restart the OSSEC processes:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This active response will restart the OSSEC processes using the ``restart-ossec`` command above. It is runs when rule ``510010`` is triggered, and it runs on the system where the rule was triggered.
+
+.. code-block:: console
+
+  <active-response>
+    <command>restart-ossec</command>
+    <location>local</location>
+    <rules_id>510010</rules_id>
+  </active-response>
+
+
+Here is an example rule checking for changes to the ``agent.conf``.
+
+.. code-block:: console
+
+  <rule id="510011" level="10">
+    <if_sid>550</if_sid>
+    <match>/var/ossec/etc/shared/agent.conf</match>
+    <description>agent.conf has been modified</description>
+  </rule>
+
+
+
+Command: Block an IP with pf.sh:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+``pf.sh`` adds an ip (``srcip``) to an ``ossec_fwtable`` packet filter table. 
+Information on pf tables can be found `here <http://cvs.openbsd.org/faq/pf/tables.html>`_.
+
+.. code-block:: console
+
+  <command>
+    <name>pf-block</name>
+    <executable>pf.sh</executable>
+    <expect>srcip</expect>
+  </command>
+
+This is the minimum configuration necessary to utilize ``pf.sh``:
+
+.. code-block:: console
+
+  table <ossec_fwtable> persist #ossec_fwtable
+  block in log quick from <ossec_fwtable>
+
+Active-Response: Block an IP with pf:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This active-response blocks an IP triggering an ``authentication_failed`` or ``authentication_failures`` alert.
+This active-response will run on agent ``001`` only.
+
+
+.. code-block:: console
+
+  <active-response>
+    <command>pf-block</command>
+    <location>defined-agent</location>
+    <agent_id>001</agent_id>
+    <rules_group>authentication_failed,authentication_failures</rules_group>
+  </active-response>
+
+.. warning:
+
+    This may trigger on a single authentication failure.
+
+
+Command: Run the makelists.sh script:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``makelists.sh`` script runs ``/var/ossec/bin/ossec-makelists`` to update cdb lists.
+This command can be triggered by changes in configured cdb lists.
+
+.. code-block:: console
+
+  <command>
+    <name>makelists</name>
+    <executable>makelists.sh</executable>
+    <expect>hostname</expect>
+  </command>
+
+
+Active-Response: Update cdb lists:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This active-response will run the ``makelists`` command to update the cdb lists.
+This active-response should run only on the OSSEC server since agents do not have cdb lists.
+
+.. code-block:: console
+
+  <active-response>
+    <command>makelists</command>
+    <location>server</location>
+    <rules_id>510011</rules_id>
+  </active-response>
+
+Rule 510011: This example rule looks for changes to ``/var/ossec/lists/blocked.txt`` based on syscheck alerts.
+
+.. code-block:: console
+
+  <rule id="510011" level="10">
+    <if_sid>550</if_sid>
+    <match>/var/ossec/lists/blocked.txt</match>
+    <description>blocked.txt has been modified</description>
+  </rule>
+
+
+Command: firewall-drop:
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a command to run the ``firewall-drop.sh`` script to block the ``srcip``.
+
+.. code-block:: console
+
+  <command>
+    <name>firewall-drop</command>
+    <executable>firewall-drop.sh</executable>
+    <expect>srcip</expect>
+  </command>
+
+
+Active-Response: Block a srcip:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This active-response will use the ``firewall-drop`` command to block an IP address that has triggered an ``authentication_failed`` or ``authentication_failures`` alert.
+It will run on all agents, and has a timeout of 600 seconds.
+It also uses the ``repeated_offenders`` option blocking an IP for 30 minutes on the second infraction, 60 minutes on the third, etc.
+
+.. code-block:: console
+
+   <active-response>
+     <command>firewall-block</command>
+     <location>all</location>
+     <rules_group>authentication_failed,authentication_failures</rules_group>
+     <timeout>600</timeout>
+     <repeated_offenders>30,60,120</repeated_offenders>
+   </active-response>
+
+
+.. warning:
+
+    This may trigger on a single authentication failure.
+
+
+
