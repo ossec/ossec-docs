@@ -27,6 +27,16 @@ Redhat Enterprise Linux/CentOS packages:
   gcc inotify-tools-devel XXX
 
 
+Solaris 8, 9, 10:
+^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  SUNWxcu4 SUNWsprot SUNWtoo SUNWbtool
+
+SUNWxcu4 will create ``/usr/xpg4/bin/``. Also make sure you have /usr/ccs/bin/make and /usr/ucb/bin/cc (compiler).
+
+
 Mac OS X Lion issues:
 ^^^^^^^^^^^^^^^^^^^^^
 
