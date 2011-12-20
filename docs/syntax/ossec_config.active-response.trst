@@ -68,7 +68,7 @@ Active-response Options
 .. xml:element:: repeated_offenders
 
    A comma separated list of increasing timeouts in minutes for repeat offenders. There can be a maximum of 5 entries.
-   This should be set on the agent in an agent/server setup, or in a local install's ``ossec.conf``.
+   This should be set in the ``ossec.conf`` of an agent in an agent/server setup.
 
 
    **Example:**
