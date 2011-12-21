@@ -18,7 +18,11 @@ Command Options
 
 .. xml:element:: expect
 
-    The arguments this command is expecting (options are srcip and username). ``expect`` is required.
+    The arguments this command is expecting (options are srcip and username). If a field is not within the ``expect`` option it will be passed as a dash (``-``) instead of the actual value. For instance, if ``srcip`` is required for an active-response script to work it **must** be inside of an ``expect`` option. ``expect`` is required.
+
+    .. note::
+
+       ``expect`` is required, but it is not reqiured to populate it. ``<expect></expect>`` is valid if no options need to be passed to the active-response script.
 
 .. xml:element:: timeout_allowed
 
@@ -68,6 +72,8 @@ Active-response Options
 .. xml:element:: repeated_offenders
 
    A comma separated list of increasing timeouts in minutes for repeat offenders. There can be a maximum of 5 entries.
+   This should be set in the ``ossec.conf`` of an agent in an agent/server setup.
+
 
    **Example:**
 
@@ -81,6 +87,12 @@ Active-response Options
        <timeout>600</timeout>
        <repeated_offenders>30,60,120</repeated_offenders>
      </active-response>
+
+   .. code-block:: console
+
+      <active-response>
+        <repeated_offenders>30,60,120</repeated_offenders>
+      </active-response>
 
 
 .. include:: example_ossec_config.active-response.trst
