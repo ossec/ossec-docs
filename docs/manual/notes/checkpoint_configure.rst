@@ -15,6 +15,7 @@ Explanation:
 ^^^^^^^^^^^^
 
 .. code-block:: console
+
   - fw log :
     -f select current log file
     -t tail file
@@ -26,6 +27,7 @@ Do not use the following options in fw log:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   -
   -l add date before timestamp
   -  Use of -l changes log format slightly
