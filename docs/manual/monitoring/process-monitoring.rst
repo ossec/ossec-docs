@@ -20,7 +20,7 @@ Disk space utilization (df -h) example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For example, if you wanted to monitor the disk space utilization, you would need
-to setup a cron job to dump the output of "df -h" to a log file (maybe
+to setup a cron job to dump the output of ``df -h`` to a log file (maybe
 /var/log/df.log) and configure OSSEC to look at it.
 
 As of OSSEC version 2.3 you can monitor commands directly in OSSEC 
@@ -42,7 +42,7 @@ the following when any partition reached 100%::
     Rule: 531 (level 7) -> "Partition usage reached 100% (disk space monitor)."
     Src IP: (none)
     User: (none)
-    ossec: output: "df -h": /dev/sdb1 24G 12G 11G 100% /var/backup
+    ossec: output: 'df -h': /dev/sdb1 24G 12G 11G 100% /var/backup
 
 Load average (uptime) Example 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -64,7 +64,7 @@ And in the rule:
 
     <rule id="100101" level="7" ignore="7200">
         <if_sid>530</if_sid>
-        <match>ossec: output: "uptime": </match>
+        <match>ossec: output: 'uptime': </match>
         <regex>load averages: 2.</regex>
         <description>Load average reached 2..</description>
     </rule>
