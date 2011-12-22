@@ -54,7 +54,7 @@
 
         - A string that will limit checks to files containing that string in the file name.
 
-        **Allowed:** Any directory or file name 
+        **Allowed:** Any directory or file name (but not a path)
 
 .. object:: ignore 
 
@@ -96,7 +96,7 @@
 
     Specifies if syscheck will ignore files that change too often (after the third change) 
 
-    **Default:** no
+    **Default:** yes
 
     **Allowed:** yes/no 
 
