@@ -36,12 +36,12 @@ What are the installation pre-requisites?
     :maxdepth: 3
     :glob:
 
-    install_server
-    install_agent_linux
-    install_agent_windows
-    install_local
-    binary_install
-    oneway_install
+    installation/install_server
+    installation/install_agent_linux
+    installation/install_agent_windows
+    installation/install_local
+    installation/binary_install
+    installation/oneway_install
 
 
 

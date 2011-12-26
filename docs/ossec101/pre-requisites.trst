@@ -43,4 +43,8 @@ Mac OS X Lion issues:
 XXX OS X Lion primarily uses llvm for compilation, but there appears to be an issue with the inline assembly support.
 
 
+OpenBSD:
+^^^^^^^^
+
+A default installation of OpenBSD should include everything necessary to perform an installation of OSSEC.
 
