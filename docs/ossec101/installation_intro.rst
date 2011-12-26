@@ -36,6 +36,7 @@ What are the installation pre-requisites?
     :maxdepth: 3
     :glob:
 
+    installation/pre-requisites
     installation/install_server
     installation/install_agent_linux
     installation/install_agent_windows

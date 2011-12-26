@@ -1,5 +1,7 @@
 .. _install_pre-requisites::
 
+Installation Pre-requisites
+---------------------------
 
 The installation pre-requisites are pretty simple and depend on the type of installation.
 All installation types require gcc and the basic development libraries.
