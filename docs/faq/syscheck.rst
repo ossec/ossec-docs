@@ -95,8 +95,8 @@ Why aren't new files creating an alert?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By deffault OSSEC does not alert on new files.
-To enable this functionlity, <alert_new_files> must be set to yes inside the <syscheck> section of the ossec.conf.
-Also, the rule to alert on new files (rule 554) is set to level 0. 
+To enable this functionlity, <alert_new_files> must be set to yes inside the <syscheck> section of the manager's ossec.conf.
+Also, the rule to alert on new files (rule 554) is set to level 0 by default. 
 The alert level will need to be raised in order to see the alert.
 
 Add the following to local_rules.xml:
@@ -109,5 +109,16 @@ Add the following to local_rules.xml:
     <description>File added to the system.</description>
     <group>syscheck,</group>
   </rule>
+
+The ``<alert_new_files>`` entry should look something like this:
+
+.. code-block:: xml
+  <syscheck>
+    <frequency>7200</frequency>
+    <alert_new_files>yes</alert_new_files>
+    <directories check_all="yes">/etc,/bin,/sbin</directories>
+    ...
+  </syscheck>
+
 
 
