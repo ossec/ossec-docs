@@ -28,7 +28,7 @@ d file.
 
 * Unpack the tarball and change into the new directory with ``tar -zxf ossec-hids-2.6.tar.gz``. Run the install.sh script to perform the installation ``./install.sh``:
 
-.. image:: images/install/agent_install/install_sh.png
+.. image:: images/install/agent_install/agent_install_sh.png
    :align: center
    :alt: cd ossec-hids-2.6 && ./install.sh
 
