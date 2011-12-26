@@ -28,7 +28,7 @@ Installation process:
    :align: center
    :alt: OSSEC download
 
-* Use GnuPG or PGP to verify the download. Use ``gpg --import OSSEC-GPG-Key.asc`` to import the OSSEC gpg key, then ``gpg --verify ossec-hids-2.6.tar.gz.sid ossec-hids-2.6.tar.gz`` to verify the signature and file.
+* Use GnuPG or PGP to verify the download. Use ``gpg --import OSSEC-GPG-Key.asc`` to import the OSSEC gpg key, then ``gpg --verify ossec-hids-2.6.tar.gz.sig ossec-hids-2.6.tar.gz`` to verify the signature and file.
 
 .. image:: images/install/gpg-verify.png
    :align: center
