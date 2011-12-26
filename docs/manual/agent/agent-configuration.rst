@@ -29,8 +29,8 @@ ossec.conf
     </agent_config>
 
 
-But you have a few more options. You can restrict the config by agent name or by
-operating system:
+But you have a few more options. You can restrict the config by agent name, 
+operating system, or profile:
 
 .. code-block:: xml 
 
