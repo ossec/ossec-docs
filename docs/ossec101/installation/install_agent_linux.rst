@@ -13,7 +13,10 @@ Just like the server installation most of the agent OSSEC processes chroot thems
 Installation process:
 ^^^^^^^^^^^^^^^^^^^^^
 
-* Download the OSSEC tarball and pgp/gnupg signature from `ossec.net <http://www.ossec.net/main/downloads>`_.
+In the following steps actions performed on the agent will be in the red putty windows, and actions on the server will be in the black backgrounded windows.
+
+
+* Download the OSSEC tarball and pgp/gnupg signature from `ossec.net <http://www.ossec.net/main/downloads>`_ to the agent.
 
 .. image:: images/install/agent_install/agent_download.png
    :align: center
