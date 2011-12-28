@@ -11,8 +11,8 @@ What is OSSEC 101?
   The guide will be a walk-through from installation, to active response, and (most) everything in between.
 
 
-Who is this aimed at?
-^^^^^^^^^^^^^^^^^^^^^
+Who is the target audience?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   Anyone interested in using OSSEC. We hope to include information for installations of all sizes.
   A level of technical knowledge including (but not limited to) basic Linux administration is assumed.

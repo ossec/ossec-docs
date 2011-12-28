@@ -40,11 +40,13 @@ Installation process:
    :align: center
    :alt: cd ossec-hids-2.6 && ./install.sh
 
+.. XXX IMAGE IS MISSING
+
 * If you wish to output alert information to a database (MySQL or PostgreSQL) or to Prelude, run the appropriate ``make`` command in the ``src`` directory. For database output run ``make setdb`` and for Prelude use ``make setprelude``:
 
 .. image:: images/install/install_set.png
    :alias: center
-   :alt: cd ossec-hids-2.6/src && make setdb ; make setprelude
+   :alt: cd ossec-hids-2.6/src && make setdb ; make setprelude 
 
 * Verify the information and press ``ENTER``. ``System`` should detail the operating system and platform, ``User`` should be the current user, and ``Host`` should display the hostname.
 
