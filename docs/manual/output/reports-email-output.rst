@@ -11,7 +11,7 @@ Configuration options
 
 All of these configuration options should be specified in the /var/ossec/etc/ossec.conf. 
 
-.. include:: ../../syntax/ossec_config.reports.rst 
+.. include:: ../../syntax/ossec_config.reports.trst 
 
 Examples
 --------

@@ -12,4 +12,4 @@ Contents:
     email-output 
     database-output 
     prelude-output
-    picviz-output
+    picvis-output 

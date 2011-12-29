@@ -10,6 +10,5 @@ IIS Logs
 
 
 
-  index
   psoft_hsphere
   w3c_extended
