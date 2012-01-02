@@ -330,6 +330,7 @@ If the agent's packets are making it to the manager, the manager will also inclu
 
 * There may be a firewall blocking the OSSEC traffic, udp 1514 should be allowed to and from the manager.
 
+* UAC may be blocking the OSSEC service from communicating with the manager on Windows 7.
 
 I am seeing high CPU utilization on a Windows agent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
