@@ -17,7 +17,6 @@ Misc. Notes
    decoder_rule_relation
    disconnected_agent_alert
    extra_rules
-   index
    iptables_configuration
    log_checksums
    manager_backup
