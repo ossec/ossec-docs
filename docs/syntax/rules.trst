@@ -341,10 +341,18 @@
 
     - *alert_by_email*
 	- Always alert by email.
+
+        - *Example:* <options>alert_by_email</options>
+
     - *no_email_alert* 
 	- Never alert by email.
+
+        - *Example:* <options>no_email_alert</options>
+
     - no_log
 	- Do not log this alert.
+
+        - *Example:* <options>no_log</options>
 
 .. xml:element:: check_diff 
 
