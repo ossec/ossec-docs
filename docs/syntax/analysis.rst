@@ -1,7 +1,7 @@
 
-###################
-Log Analysis Syntax
-###################
+#######################################
+Log Analysis Syntax: Rules and Decoders
+#######################################
 
 .. toctree::
     :maxdepth: 2
