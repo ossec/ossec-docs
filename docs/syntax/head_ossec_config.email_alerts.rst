@@ -14,6 +14,12 @@ Global options are available in the the following installation types:
 * server
 * local 
 
+Notes
+^^^^^
+
+`Global email configuration <./head_ossec_config.global.html>`_ is necessary to use the granular email options.
+
+
 Location 
 ^^^^^^^^
 

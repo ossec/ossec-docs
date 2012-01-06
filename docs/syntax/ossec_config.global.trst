@@ -16,6 +16,9 @@
 
     **Allowed:** Any valid e-mail address
 
+    .. note::
+        To use granular email configurations, a base configuration is necessary in the ``<global>`` section.
+
 .. xml:element:: email_from
 
     E-mail "source" of the alerts.
@@ -79,7 +82,6 @@
     **Default:** 8
 
     **Allowed:** Any level from 0 to 16 
-
 
 .. xml:element:: prelude_output 
 
