@@ -1,0 +1,69 @@
+.. _example_email_configuration:
+
+Example email alerts configurations:
+---------------------------------------
+
+
+Global Configuration:
+^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  <global>
+    <email_notification>yes</email_notification>
+    <email_to>admin@example.com</email_to>
+    <smtp_server>127.0.0.1</smtp_server>
+    <email_from>ossecm@example.com</email_from>
+  </global>
+
+
+Global Configuration with a larger maximum emails per hour:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  <global>
+    <email_notification>yes</email_notification>
+    <email_to>admin@example.com</email_to>
+    <smtp_server>127.0.0.1</smtp_server>
+    <email_from>ossecm@example.com</email_from>
+    <email_maxperhour>100</email_maxperhour>
+  </global>
+
+
+Granular Email alert: Level 12 and above:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  <email_alerts>
+    <email_to>other_admin@example.com</email_to>
+    <level>12</level>
+  </email_alerts>
+
+
+Syscheck alerts to syscheck admin address:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  <email_alerts>
+    <email_to>syscheck-admin@example.com</email_to>
+    <group>syscheck</group>
+  </email_alerts>
+
+
+Level 15 alerts from agent007 without delay or grouping:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  <email_alerts>
+    <email_to>bond@example.com</email_to>
+    <event_location>agent007</event_location>
+    <level>15</level>
+    <do_not_delay />
+    <do_not_group />
+  </email_alerts>
+
+

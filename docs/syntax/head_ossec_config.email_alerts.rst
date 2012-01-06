@@ -43,3 +43,9 @@ Options
 -------
 
 .. include:: ossec_config.email_alerts.trst
+
+
+Examples
+--------
+
+.. include:: example_ossec_config.email_alerts.trst
