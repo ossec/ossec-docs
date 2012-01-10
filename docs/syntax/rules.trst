@@ -365,3 +365,5 @@
 .. xml:element:: group 
 
    - Add additional groups to the alert. 
+
+    *Example:* <group>group1, group2</group>
