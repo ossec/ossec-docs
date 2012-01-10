@@ -1,0 +1,52 @@
+.. _install_pre-requisites::
+
+Installation Pre-requisites
+---------------------------
+
+The installation pre-requisites are pretty simple and depend on the type of installation.
+All installation types require gcc and the basic development libraries.
+
+Server and local installs may require either MySQL or PostgreSQL client libraries if you plan on logging to a database.
+The OpenSSL development libraries are required for ossec-authd support.
+
+Agent installs require the OpenSSL development libraries for agent-auth support.
+
+Prelude output will require the prelude development libraries.
+
+Debian packages:
+^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  build-essential make [libssl-dev] [libmysqlclient-dev] [libpq-dev] [XXX prelude libs] [XXX inotify stuff]
+
+
+Redhat Enterprise Linux/CentOS packages:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  gcc inotify-tools-devel XXX
+
+
+Solaris 8, 9, 10:
+^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  SUNWxcu4 SUNWsprot SUNWtoo SUNWbtool
+
+SUNWxcu4 will create ``/usr/xpg4/bin/``. Also make sure you have /usr/ccs/bin/make and /usr/ucb/bin/cc (compiler).
+
+
+Mac OS X Lion issues:
+^^^^^^^^^^^^^^^^^^^^^
+
+XXX OS X Lion primarily uses llvm for compilation, but there appears to be an issue with the inline assembly support.
+
+
+OpenBSD:
+^^^^^^^^
+
+A default installation of OpenBSD should include everything necessary to perform an installation of OSSEC.
+
