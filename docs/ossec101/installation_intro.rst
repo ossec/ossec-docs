@@ -26,8 +26,8 @@ What type of installation should I perform ...
 
 
 
-What are the installation pre-requisites?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. What are the installation pre-requisites?
+.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: pre-requisites.trst
 
