@@ -6,17 +6,14 @@ OSSEC 101: Managing Agents
 --------------------------
 
 
+.. toctree::
+    :maxdepth: 2
+
+    managing_agents/localfile
+    managing_agents/command
+
 ossec.conf and agent.conf:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-Add a localfile:
-^^^^^^^^^^^^^^^^
-
-
-Add a command:
-^^^^^^^^^^^^^^
-
 
 manage_agents:
 ^^^^^^^^^^^^^^

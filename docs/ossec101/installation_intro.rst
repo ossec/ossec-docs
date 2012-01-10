@@ -26,17 +26,19 @@ What type of installation should I perform ...
 
 
 
-.. What are the installation pre-requisites?
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+What are the installation pre-requisites?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: pre-requisites.trst
+.. include:: ./installation/pre-requisites.trst
 
+
+Installation Walk Throughs:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
     :maxdepth: 3
     :glob:
 
-    installation/pre-requisites
     installation/install_server
     installation/install_agent_linux
     installation/install_agent_windows
