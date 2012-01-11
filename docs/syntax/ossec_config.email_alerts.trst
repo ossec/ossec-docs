@@ -43,6 +43,14 @@
 
     Option to send granular emails based on rule id.
 
+    *Allowed:**  One or more rule IDs can be used here, separated by a comma and space (``, ``).
+
+    **Example:**
+
+    .. code-block:: console
+
+      <rule_id>5701, 5702</rule_id>
+
 .. xml:element:: do_not_delay 
 
     Option to send the e-mail right away (no delay). 
