@@ -3,9 +3,9 @@
 
 .. xml:element:: email_to 
 
-    E-Mail recipients of alerts 
+    E-Mail recipients of alerts
 
-    **Allowed:** Any valid e-mail address 
+    **Allowed:** Any valid e-mail address
 
 .. xml:element:: level  
 
@@ -20,11 +20,11 @@
 
     The alert that must match this group to be forwarded.
 
-    **Allowed:** Any group/category 
+    **Allowed:** One group or category 
 
 .. xml:element:: event_location 
 
-    The alert must match this event location to be forwarded.
+    The alert must match this event location to be forwarded. If multiple ``<event_location>`` options are specified, the last will be used.
 
     **Allowed:** Any single agent name, hostname, ip address, or log file 
 
