@@ -26,7 +26,7 @@
 
     The alert must match this event location to be forwarded.
 
-    **Allowed:** Any agent name, ip address or log file 
+    **Allowed:** Any single agent name, hostname, ip address, or log file 
 
 .. xml:element:: format 
 
