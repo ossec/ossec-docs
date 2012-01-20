@@ -48,12 +48,14 @@ strftime variables, so, for example, if your log file is
 Create a custom decoder
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-
 OSSEC uses decoders to parse log files. After it finds the proper decoder for a log, it 
 will parse out fields defined in ``/var/ossec/etc/decoders.xml``, then compare these values 
 to values in rule files - and will trigger an alert when values in the deciphered log 
 file match values specified in rule files. These values can also be passed to 
 active-response commands, if you've got them enabled.
+
+.. note::
+    Decoders exist on the servers, not the agents. Custom decoder should be added to ``/var/ossec/etc/local_decoders.xml`` on the server.
 
 The log line I want to trigger an alert for looks something like this: ::
 
