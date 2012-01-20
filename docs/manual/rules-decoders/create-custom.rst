@@ -177,9 +177,12 @@ we're ready to write local rules.
 Write custom rules
 ~~~~~~~~~~~~~~~~~~
 
-Open ``/var/ossec/local_rules.xml`` and add rules. First, we create a group, and a 
+Open ``/var/ossec/rules/local_rules.xml`` and add rules. First, we create a group, and a 
 "catch-all" rule to run against any log that is decoded by our forcefield decoder. We set 
 this as level 0 because we don't want it to trigger an alert:
+
+.. note::
+    In an agent/server configuration all rules live on the server. Custom rules should be added to the server's ``/var/ossec/rules/local_rules.xml``.
 
 .. code-block:: xml
 
