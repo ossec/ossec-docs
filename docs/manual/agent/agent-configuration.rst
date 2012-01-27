@@ -71,7 +71,7 @@ see if the agent received the config and restart the agent remotely.
 
 .. code-block:: console 
 
-    # md5 /var/ossec/etc/shared/agent.conf
+    # md5sum /var/ossec/etc/shared/agent.conf
     MD5 (/var/ossec/etc/shared/agent.conf) = ee1882236893df851bd9e4842007e7e7
     # /var/ossec/bin/agent_control -i 200
 
@@ -90,6 +90,9 @@ see if the agent received the config and restart the agent remotely.
 
 When the agent received the configuration, the “Client Version” field will have
 the md5sum of the agent.conf file.
+
+.. note::
+   Linux systems generally use ``md5sum``, but other systems may use ``md5`` as the name of the application to check the hash of the file.
 
 To restart the agent:
 
