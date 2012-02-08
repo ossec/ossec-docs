@@ -30,8 +30,8 @@ Additional files to monitor:
   - ``/var/log/yum.log``
 
 
-Basic example:
-^^^^^^^^^^^^^^
+Monitoring /var/log/messages:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -46,6 +46,38 @@ Basic example:
 
 
 
+Monitoring /var/log/apache/access_log:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  <ossec_config>
+    <localfile>
+      <log_format>apache</log_format>
+      <location>/var/log/apache/access_log</location>
+    </localfile>
+  </ossec_config>
+
+
+Windows localfiles:
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+ <localfile>
+    <location>Application</location>
+    <log_format>eventlog</log_format>
+  </localfile>
+
+  <localfile>
+    <location>Security</location>
+    <log_format>eventlog</log_format>
+  </localfile>
+
+  <localfile>
+    <location>System</location>
+    <log_format>eventlog</log_format>
+  </localfile>
 
 
 
