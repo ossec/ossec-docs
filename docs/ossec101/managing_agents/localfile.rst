@@ -13,6 +13,15 @@ What log files does OSSEC monitor by default:
 
 * ``/var/log/messages``
 * ``/var/log/secure``
+* ``/var/log/authlog``
+* ``/var/log/xferlog``
+* ``/var/log/maillog``
+* ``/var/www/logs/access_log``
+* ``/var/www/logs/error_log``
+
+
+Additional files to monitor:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * On Debian based systems:
   - ``/var/log/dpkg.log``
