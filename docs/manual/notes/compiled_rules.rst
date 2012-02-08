@@ -102,7 +102,7 @@ You can also save it (if you have ossec installed) so that during the next upgra
 Available fields in the Event structure:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: consol
+.. code-block:: console
 
   typedef struct _Eventinfo
   {
