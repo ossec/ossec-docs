@@ -55,8 +55,20 @@
 
     Option to send the e-mail right away (no delay). 
 
+    **Example:**
+
+    .. code-block:: console
+
+      <do_not_delay />
+
 .. xml:element:: do_not_group
 
-    Option to do not group this e-mail (send by itself). 
+    Option to do not group alerts for this e-mail. 
+
+    **Example:**
+
+    .. code-block:: console
+
+      <do_not_group />
 
 
