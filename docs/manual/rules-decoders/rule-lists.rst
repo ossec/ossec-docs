@@ -104,7 +104,7 @@ Using the following syntax:
 
     <ossec_config>
         <rules>
-            <list>list/cdb_record_file</list>
+            <list>rules/records</list>
 
 Commands
 ~~~~~~~~
