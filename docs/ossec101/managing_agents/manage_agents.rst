@@ -47,8 +47,30 @@ Type '``R``' at the prompt to remove an agent. manage_agents prompts for the age
    :align: center
    :alt: manage_agents: remove an agent
 
+manage_agents on an agent:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The only real option when using manage_agents on an agent is to import the authentication key.
 
+.. image:: images/5_manage_agents_agent.png
+   :align: center
+   :alt: manage_agents: agent options
+
+Using manage_agents at the command line:
+^^^^^^^^^^^^^^^^^^^^^^^
+
+``manage_agents`` has a number of command line options. The most important ones are ``-h``, ``-l``, ``-e``, and ``-i``. 
+
+  * ``-h`` prints the help message.
+  * ``-l`` lists the available agents.
+  * ``-e <id>`` extracts the authentication key for the agent id.
+  * ``-i <id>`` imports the authentication key on an agent.
+
+``manage_agents`` help message:
+
+.. image:: images/4_manage_agents_cli.png
+   :align: center
+   :alt: manage_agents: cli
 
 
 
