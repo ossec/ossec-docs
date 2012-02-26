@@ -12,10 +12,7 @@ OSSEC 101: Managing Agents
     managing_agents/ossec_and_agent
     managing_agents/localfile
     managing_agents/command
-
-manage_agents:
-^^^^^^^^^^^^^^
-
+    managing_agents/manage_agents
 
 list_agents:
 ^^^^^^^^^^^^
