@@ -23,6 +23,27 @@ ossec-authd argument options
    Listen on port.
    **Default** 1515
 
+Creating SSL keys
+~~~~~~~~~~~~~~~~~
+
+``ossec-authd`` requires SSL keys to run. This process will create the necessary keys in ``/var/ossec/etc`` and allow ``ossec-authd`` to start:
+
+.. code-block:: console
+
+  # openssl genrsa -out /var/ossec/etc/sslmanager.key 2048
+  # openssl req -new -x509 -key /var/ossec/etc/sslmanager.key -out /var/ossec/etc/sslmanager.cert -days 365
+
+
+Without the key ``ossec-authd`` will give the following error:
+
+.. code-block:: console
+
+  [user@ossec-manager] :; sudo /var/ossec/bin/ossec-authd  
+  2012/04/18 11:05:01 ossec-authd: INFO: Started (pid: 20669).
+  2012/04/18 11:05:01 ossec-authd: ERROR: Unable to read certificate file (not found): /var/ossec/etc/sslmanager.cert
+  2012/04/18 11:05:01 ossec-authd: ERROR: SSL error. Exiting.
+
+
 
 ossec-authd example usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
