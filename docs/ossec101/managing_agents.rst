@@ -17,6 +17,10 @@ OSSEC 101: Managing Agents
 list_agents:
 ^^^^^^^^^^^^
 
+.. toctree::
+    :maxdepth: 2
+
+    managing_agents/list_agents
 
 Dealing with rids:
 ^^^^^^^^^^^^^^^^^^

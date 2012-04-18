@@ -57,7 +57,7 @@ The only option available when using manage_agents on an agent is to import the 
    :alt: manage_agents: agent options
 
 Using manage_agents at the command line:
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``manage_agents`` has a number of command line options. The most important ones are ``-h``, ``-l``, ``-e``, and ``-i``. 
 
