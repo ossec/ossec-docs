@@ -50,7 +50,7 @@ Type '``R``' at the prompt to remove an agent. manage_agents prompts for the age
 manage_agents on an agent:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The only real option when using manage_agents on an agent is to import the authentication key.
+The only option available when using manage_agents on an agent is to import the authentication key.
 
 .. image:: images/5_manage_agents_agent.png
    :align: center
