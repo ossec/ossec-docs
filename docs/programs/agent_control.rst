@@ -7,7 +7,7 @@ agent_control
 The agent_control tool allows you to query and get information from any agent you have configured 
 on your server and it also allows you to restart (run now) the syscheck/rootcheck scan on any agent.
 
-Enabling active response will be necessary to start scans remotely and possibly other functions.
+Enabling `active response <../manual/ar/index.html>`_ will be necessary to start scans remotely and possibly other functions.
 
 agent_control argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -35,13 +35,16 @@ agent_control argument options
     Run the integrity/rootcheck checking on agents.  Must be utilized 
     with :option:`agent_control -a` or :option:`agent_control -u`
 
+    .. note::
+       Requires active response to be enabled.
+
 .. option:: -a
 
     Utilizes all agents.
 
 .. option:: -u <agent_id>
 
-    <agent_id> that will preform the request action. 
+    <agent_id> that will perform the requested action. 
 
 
 agent_control example usage
