@@ -5,7 +5,8 @@ ossec-authd
 =============
 
 The ossec-authd daemon will automatically add an agent to an OSSEC manager and provide the key to the agent.
-The :ref:`agent-auth` application is the client application used with ossec-authd.
+The :ref:`agent-auth` application is the client application used with ossec-authd. 
+`ossec-authd` will create an agent with an ip address of `any` instead of using its actual IP.
 
 There is no authentication involved in this transaction, so it is recommended that this daemon only be run when a new agent is being added.
 
