@@ -7,6 +7,8 @@ agent_control
 The agent_control tool allows you to query and get information from any agent you have configured 
 on your server and it also allows you to restart (run now) the syscheck/rootcheck scan on any agent.
 
+Enabling active response will be necessary to start scans remotely and possibly other functions.
+
 agent_control argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
