@@ -30,6 +30,10 @@ agent_control argument options
 
     Extracts information from an agent 
 
+.. option:: -R <agent_id>
+
+    Restarts the OSSEC processes on the agent
+
 .. option:: -r 
 
     Run the integrity/rootcheck checking on agents.  Must be utilized 
