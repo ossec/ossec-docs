@@ -34,6 +34,9 @@ agent_control argument options
 
     Restarts the OSSEC processes on the agent
 
+    .. note::
+       Requires active response to be enabled.
+
 .. option:: -r 
 
     Run the integrity/rootcheck checking on agents.  Must be utilized 
