@@ -7,3 +7,18 @@
 .. OS:intopt:: logcollector.open_attempts
 
     **Default:** 8
+
+.. OS:intopt:: logcollector.remote_commands=0
+
+    Allow the agents to run commands defined in ``agent.conf``.
+
+    **Allowed:** 0,1
+
+    **Default:** 0
+
+    .. note::
+
+        This option first appeared in OSSEC 2.7.
+
+
+
