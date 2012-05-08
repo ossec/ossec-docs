@@ -92,6 +92,7 @@
 
     **Allowed:** Day of the week
 
+.. _auto_ignore:
 .. object:: auto_ignore 
 
     Specifies if syscheck will ignore files that change too often (after the third change) 
@@ -99,6 +100,8 @@
     **Default:** yes
 
     **Allowed:** yes/no 
+
+    **Valid:** server, local
 
 .. _alert_new_files:
 .. object:: alert_new_files 
@@ -108,6 +111,8 @@
     **Default:** no 
 
     **Allowed:** yes/no 
+
+    **Valid:** server, local
 
 .. object:: scan_on_start 
 
