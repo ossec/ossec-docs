@@ -68,6 +68,12 @@ How do I ignore rule 1002?
     Unless the application creating the log is an internal application, someone else may find the rule useful.
 
 
+I set the <email_alert_level> to 10, why do I keep seeing rules with lower levels?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    Some rules have an option set to force OSSEC into sending an alert email. This option is ``<options>alert_by_email</options>``. 
+   One of these rules is 1002. To ignore these rules you will have to create a rule to specifically ignore it,
+   or overwrite the rule without the ``alert_by_email`` option. 
 
 
 
