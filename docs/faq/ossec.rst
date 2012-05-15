@@ -91,6 +91,12 @@ I'm getting an error when starting OSSEC: "OSSEC analysisd: Testing rules failed
       echo | ${DIR}/bin/ossec-logtest > /dev/null 2>&1;
 
 
+The rules aren't on my agents, they're only on the server!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  That's not a question. Also, that's the way it is. Only the server has the rules. Agents do not get a copy of the rules.
+
+
 Do the rules get pushed to the agents automatically?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
