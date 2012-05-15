@@ -53,6 +53,11 @@ Quick facts
   
   - Files can be ignored manually in the configuration or using rules. By default when a file has changed 3 times further changes are automatically ignored.
 
+Realtime options
+----------------
+
+``ossec-syscheckd`` is able to check file integrity in near realtime on Windows and modern Linux distros. Windows comes with support out of the box, but on Linux systems inotify packages may need to be installed. Check for inotify dev packages, and possibly an inotify-tools package.
+
 Configuration options
 ---------------------
 
