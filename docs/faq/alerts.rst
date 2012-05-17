@@ -59,6 +59,15 @@ Why do I see alerts for agent2 in an email about agent1?
         <global>
           <email_maxperhour>100</email_maxperhour>
 
+.. _herp_derp_grouping:
+
+Alerts for different sensors are appearing in the same email, how do I stop this from happening?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    Read the previous FAQ entry.
+
+
+
 .. _ignore_1002:
 
 How do I ignore rule 1002?
