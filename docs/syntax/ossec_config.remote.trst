@@ -46,3 +46,15 @@
     **Default:** all interfaces
 
     **Allowed:** Any internal ip address
+
+.. xml:element:: ipv6
+
+    Local ipv6 address to listen for connections.
+
+    **Default:** None
+
+    **Allowed:** Any IPv6 address.
+
+    .. note::
+
+       This is not well tested. For the time being I recommend using the full IPv6 address instead of one of the many shortcuts.
