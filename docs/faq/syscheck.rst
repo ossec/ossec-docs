@@ -46,7 +46,7 @@ How to ignore a file that changes too often?
 Why does OSSEC still scan a file even though it's been ignored?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    No idea.
+    No idea. So if there are some directories you do not want scanned at all, make sure they are not included in a ``<directories>`` configuration.
 
 How to know when the syscheck scan ran?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
