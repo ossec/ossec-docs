@@ -58,7 +58,7 @@
 
 .. object:: ignore 
 
-    List of files or directories to be ignored (one entry per element).
+    List of files or directories to be ignored (one entry per element). The files and directories are still checked, but the results are ignored.
 
     **Default:** /etc/mtab
     

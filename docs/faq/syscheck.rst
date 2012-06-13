@@ -25,7 +25,9 @@ How to tell syscheck not to scan the system when OSSEC starts?
 
     Set the option <scan_on_start> to “no” on ossec.conf 
 
-#. How to ignore a file that changes too often?
+
+How to ignore a file that changes too often?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     Set the file/directory name in the <ignore> option or create a simple local rule. 
     
@@ -40,6 +42,11 @@ How to tell syscheck not to scan the system when OSSEC starts?
             <match>/etc/a|/etc/b|/etc/dir</match>
             <hostname>mswin1|ubuntu-dns</hostname>
         </rule>
+
+Why does OSSEC still scan a file even though it's been ignored?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    No idea.
 
 How to know when the syscheck scan ran?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
