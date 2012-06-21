@@ -95,6 +95,9 @@
       - full_command
           This format will be the output from the command defined by command_. The entire output will be treated as a single log.
 
+      .. warning::
+          ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
+
       .. _logformat_djb:
 
       - djb-multilog
@@ -128,9 +131,6 @@
               .. code-block:: console
 
                   Aug  9 14:22:47 hostname log line one Aug  9 14:22:47 hostname log line two Aug  9 14:22:47 hostname log line three Aug  9 14:22:47 hostname log line four Aug  9 14:22:47 hostname log line five
-
-      .. warning::
-          ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
 
 .. _command:
 .. xml:element:: command 
