@@ -26,5 +26,9 @@ Considerations:
 .. include:: authd/authd_considerations.trst         
 
 
+Scenario:
+^^^^^^^^^
+
+.. include:: authd/authd_scenario.trst
 
 
