@@ -15,15 +15,19 @@ What are the different types of installations?
 
 * agentless - This isn't really a type os OSSEC installation, but an option for monitoring embedded systems, or other systems a full OSSEC installation doesn't make sense. 
 
-What type of installation should I perform on my single webserver?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you are installing OSSEC on only one system you should use the local installation. You will not need to add an agent or perform any other installations.
-
 
 What type of installation should I perform ...
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+This depends on what your requirements are. 
+  * Is this a standalone system? **local**
+  * Do you want to monitor a large number of systems from a central location? Install a central **server** and perform **agent** installations on the clients.
+  * Windows system? **agent**
+
+What type of installation should I perform on my single webserver?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you are installing OSSEC on only one system you should use the local installation. You will not need to add an agent or perform any other installations.
 
 
 What are the installation pre-requisites?

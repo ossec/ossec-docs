@@ -32,7 +32,7 @@ In the following example we're ignoring ``/var/lib/ntp/drift`` which is a file t
 
 One of my systems has a backup directory in ``/var/backups``. 
 The contents of this directory can change frequently, so I would like to ignore these alerts.
-I can use the following ``sregex`` to ignore all changes in that directory:
+I can use the following `sregex <../syntax/regex.html#os-match-sregex-syntax>`_ to ignore all changes in that directory:
 
 .. code-block:: console
 
