@@ -22,8 +22,5 @@ list_agents:
 
     managing_agents/list_agents
 
-Dealing with rids:
-^^^^^^^^^^^^^^^^^^
-
 
 
