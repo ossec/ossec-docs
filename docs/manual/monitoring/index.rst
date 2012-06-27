@@ -55,8 +55,9 @@ Quick Facts
 Configuration Options 
 ---------------------
 
-These options should be specified locally in each agent ossec.conf file. Inside 
-the “localfile” element, you can have the following options. 
+These options should be specified locally in each agent's ossec.conf file or the 
+share agent.conf. Inside the ``<localfile>`` element, you can have the following 
+options. 
 
 .. include:: ../../syntax/ossec_config.localfile.trst 
 

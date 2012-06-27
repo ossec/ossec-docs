@@ -117,7 +117,7 @@ Real time Monitoring
 
 OSSEC supports realtime (continuous) file integrity monitoring on Linux (support was added kernel version 2.6.13) and Windows systems.
 
-The configuration is very simple. In the ``<directories>`` option where you specify what files or directories to monitor, adding ``realtime="yes"`` will enable it.
+The configuration is very simple. In the ``<directories>`` option where you specify what directories to monitor, adding ``realtime="yes"`` will enable it.
 For example:
 
 .. code-block:: xml 
