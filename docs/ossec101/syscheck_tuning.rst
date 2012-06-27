@@ -23,4 +23,8 @@ Configure realtime syscheck:
 .. include:: ./syscheck/syscheck_realtime.trst
 
 
+Scenarios:
+^^^^^^^^^^
+
+.. include:: ./syscheck/syscheck_scenario.trst
 
