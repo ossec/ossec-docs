@@ -42,7 +42,8 @@ SUNWxcu4 will create ``/usr/xpg4/bin/``. Also make sure you have /usr/ccs/bin/ma
 Mac OS X Lion issues:
 ^^^^^^^^^^^^^^^^^^^^^
 
-XXX OS X Lion primarily uses llvm for compilation, but there appears to be an issue with the inline assembly support.
+OS X Lion primarily uses llvm for compilation, but there appears to be an issue with the inline assembly support.
+Use ``gcc`` to compile OSSEC.
 
 
 OpenBSD:
