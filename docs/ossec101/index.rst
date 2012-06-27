@@ -14,6 +14,7 @@ OSSEC 101:
     agentless    
     syscheck_tuning
     rule_tuning
+    decoder_tuning
     alert_output
     active-response
     front_ends
