@@ -11,6 +11,8 @@ The OpenSSL development libraries are required for ossec-authd support.
 
 Agent installs require the OpenSSL development libraries for agent-auth support.
 
+Hybrid installs require everything the server and agent installs require.
+
 Prelude output will require the prelude development libraries.
 
 Debian packages:
