@@ -18,9 +18,27 @@
 
 .. xml:element:: level
 
-    - Alert level of the alerts to forward
+    - Alert level of the alerts to forward.
 
     - **Allowed:** 1 - 16 
+
+.. xml:element:: group
+
+    - Alerts belonging to this group will be forwarded.
+
+    - **Allowed:** Any valid group
+
+.. xml:element:: rule_id
+
+    - Alerts matching this rule_id will be forwarded.
+
+    - **Allowed:** Any valid rule_id
+
+.. xml:element:: location
+
+    - Alerts from this location will be forwarded.
+
+    - **Allowed:** Any valid logfile location
 
 .. xml:element:: format
 
