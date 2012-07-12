@@ -15,6 +15,7 @@ What are the different types of installations?
 
 * agentless - This isn't really a type os OSSEC installation, but an option for monitoring embedded systems, or other systems a full OSSEC installation doesn't make sense. 
 
+* hybrid - A hybrid installation is both a server and an agent. This allows for a tiered architecture of agents pushing to servers which forward alerts on to other servers for consolidation.
 
 What type of installation should I perform ...
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
