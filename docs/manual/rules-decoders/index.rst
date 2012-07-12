@@ -11,3 +11,4 @@ Rules and Decoders
     rule-lists
     create-custom
     rule_decoder_dir
+    rule-levels
