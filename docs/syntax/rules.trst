@@ -259,6 +259,10 @@
 
             - Key and Value Match: field is searched for in the cdb and if found the value will be compared with regex from attribute check_value.
 
+            .. note::
+
+               This feature is not yet complete.
+
         - Value: address_match_key 
 
             - Positive key match: field is an IP address and the key to search within the cdb and will match if they key is present.
@@ -270,6 +274,10 @@
         - Value: address_match_key_value
 
             - Key and Value Match: field is an IP address searched for in the cdb and if found the value will be compared with regex from attribute check_value.
+
+            .. note::
+
+               This feature is not yet complete.
 
     .. _list-check_value:
     - *check_value* 
