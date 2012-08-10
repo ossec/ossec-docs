@@ -79,6 +79,13 @@ How to debug ossec?
         # Unix agentd
         agent.debug=0
 
+    If this is on an OSSEC server you can enable debug by running:
+
+    .. code-block:: console
+
+       # /var/ossec/bin/ossec-control enable debug
+
+    Enable debug mode and restart the OSSEC processes to view more verbose logs.
 
     **Getting more log data** 
 
