@@ -298,7 +298,7 @@ The fix for this problem is:
 
   #. Stop ossec
 
-  #. Remove the every file under rids too.
+  #. Remove the rids file with the same name as the agent id that is reporting errors.
  
 3. Restart the server
 
