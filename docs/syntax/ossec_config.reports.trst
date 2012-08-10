@@ -66,8 +66,8 @@
 
 .. xml:element:: showlogs
 
-    If set to ``yes`` the relevant logs are included in the report.
+    Include logs when creating the report
 
-    **Allowed:** ``yes`` or ``no``
+    **Allowed:** yes/no
 
-    **Default:** ``no``
+    **Default:** no

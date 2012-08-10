@@ -13,3 +13,4 @@ docs/rules/
 *.pyc
 nosetests.xml
 *.bak
+Makefile
