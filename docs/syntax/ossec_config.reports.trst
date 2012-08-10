@@ -64,3 +64,10 @@
 
     **Allowed:** Any email address
 
+.. xml:element:: showlogs
+
+    If set to ``yes`` the relevant logs are included in the report.
+
+    **Allowed:** ``yes`` or ``no``
+
+    **Default:** ``no``
