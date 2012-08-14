@@ -122,6 +122,8 @@
 
     - **Allowed:** Any time range (hh:mm-hh:mm) 
 
+    - **Example:** ``<time>6 am - 6 pm</time>``
+
 .. xml:element:: weekday 
 
     - Week day that the event was generated. 
