@@ -292,7 +292,7 @@ This is a technique to prevent replay attacks. If the counters between agent and
     2007/10/24 11:19:21 ossec-agentd(<pid>): Duplicated counter for '<host name>'.
     2007/10/24 11:19:21 ossec-agentd(<pid>): Problem receiving message from www.xxx.yyy.zzz.
 
-This normally happens when you restore the ossec files from a backup or you reinstall server or agents without performing an upgrade.
+This normally happens when you restore the ossec files from a backup or you reinstall server or agents without performing an upgrade, this can also be caused by duplicate agent ID's.
 The fix for this problem is:
 
 1. On every agent:
@@ -305,7 +305,7 @@ The fix for this problem is:
 
   #. Stop ossec
 
-  #. Remove the every file under rids too.
+  #. Remove the rids file with the same name as the agent id that is reporting errors.
  
 3. Restart the server
 
