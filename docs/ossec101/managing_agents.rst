@@ -14,13 +14,6 @@ OSSEC 101: Managing Agents
     managing_agents/command
     managing_agents/manage_agents
 
-list_agents:
-^^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 2
-
-    .. managing_agents/list_agents
 
 
 
