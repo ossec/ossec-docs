@@ -20,7 +20,7 @@ list_agents:
 .. toctree::
     :maxdepth: 2
 
-    managing_agents/list_agents
+    .. managing_agents/list_agents
 
 
 
