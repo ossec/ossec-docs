@@ -5,11 +5,9 @@
 Installation 
 ============
 
-The best installation tutorial is available in the `OSSEC book`_ and the installation 
-chapter is available for FREE in PDF at: `OSSEC Book - Chapter 2.pdf <http://ossec.net/ossec-docs/OSSEC-book-Ch02_SA240.pdf>`__ 
+The best installation tutorial is available in the `OSSEC book`_. 
 
 .. _OSSEC book: http://www.amazon.com/OSSEC-Host-Based-Intrusion-Detection-Guide/dp/159749240X
-.. _OSSEC Book install: http://ossec.net/ossec-docs/OSSEC-book-Ch02_SA240.pdf
 
 __ OSSEC Book install_
 
