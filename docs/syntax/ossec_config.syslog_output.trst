@@ -26,7 +26,15 @@
 
     - Alerts belonging to this group will be forwarded.
 
-    - **Allowed:** Any valid group
+    - **Allowed:** Any valid group. Separate multiple groups with the pipe (``|``) character.
+
+    - **Examples:**
+
+    .. code-block:: console
+
+       <group>syscheck</group>
+       <group>authentication_failure|authentication_success</group>
+
 
 .. xml:element:: rule_id
 

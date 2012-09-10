@@ -4,8 +4,8 @@
 Agentless Monitoring
 ====================
 
-**Agentless monitoring** allows you to run integrity checking (and in the future 
-log monitoring) on systems without an agent installed (including routers, firewalls, 
+**Agentless monitoring** allows you to run integrity checking 
+on systems without an agent installed (including routers, firewalls, 
 switches and even Linux/BSD systems). It can be executed just like our normal file 
 integrity checking (alerting of checksum changes) or doing diffs and showing 
 exactly what has changed.
