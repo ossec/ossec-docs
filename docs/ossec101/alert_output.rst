@@ -14,6 +14,7 @@ Logfile:
 Email:
 ^^^^^^
 
+  * GeoIP
 
 Syslog:
 ^^^^^^^
