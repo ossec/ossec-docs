@@ -26,4 +26,11 @@
 
     **Allowed:** Any level from 1 to 16 
 
+.. xml:element:: use_geoip
+
+    Enable or disable GeoIP lookups.
+
+    **Default:** Disabled
+
+    **Allowed:** yes/no
 

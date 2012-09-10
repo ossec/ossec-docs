@@ -22,3 +22,11 @@
     **Default:** 0
 
     **Allowed:** 0 or 1
+
+.. OS:intopt:: maild.geoip
+
+    If set to ``1`` mails will display GeoIP data in alert emails.
+
+    **Default:** 1
+
+    **Allowed:** 0 or 1

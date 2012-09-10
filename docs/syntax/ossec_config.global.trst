@@ -99,7 +99,6 @@
         
         PicViz is experimental. 
 
-
     **Allowed:** yes 
 
 .. xml:element:: picviz_socket
@@ -108,6 +107,27 @@
     then be read by picviz for processing.  
 
     **Allowed:** File and path that ossec will create and feed events to. 
+
+.. xml:element:: geoip_db_path
+
+    The full path to the GeoIP IPv4 database file location.
+
+    **Example:**
+
+    .. code-block:: console
+
+       <geoip_db_path>/etc/GeoLiteCity.dat</geoip_db_path>
+
+.. xml:element geoip6_db_path
+
+    The full path to the GeoIP IPv6 database file location.
+
+
+    **Example:**
+
+    .. code-block:: console
+
+       <geoip6_db_path>/etc/GeoLiteCity.dat</geoip6_db_path>
 
 
 
