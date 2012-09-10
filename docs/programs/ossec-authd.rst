@@ -19,10 +19,16 @@ ossec-authd argument options
 
     Run in debug mode.
 
+.. option:: -i
+
+    Add agents with a specific IP address instead of using ``any``.
+
 .. option:: -p <port>
 
    Listen on port.
+
    **Default** 1515
+
 
 Creating SSL keys
 ~~~~~~~~~~~~~~~~~
