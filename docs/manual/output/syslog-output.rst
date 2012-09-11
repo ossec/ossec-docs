@@ -5,6 +5,7 @@ Sending alerts via syslog
 =========================
 
 Syslog output allows an OSSEC manager to send the OSSEC alerts to one or more syslog servers.
+OSSEC also supports sending alerts via cef, json, and to Splunk.
 
 Configuration options
 ---------------------

@@ -52,7 +52,13 @@
 
     - Format of alert output. The default format is "default", or full syslog output.
 
-    - **Allowed** default, cef
+    - CEF is the ArcSight Common Event Format.
+
+    - json can be used with a variety of tools.
+
+    - The splunk option is for sending data to a Splunk server.
+
+    - **Allowed** default, cef, splunk, json
 
     .. code-block:: xml
 
