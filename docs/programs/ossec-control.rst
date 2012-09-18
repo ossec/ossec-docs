@@ -23,6 +23,15 @@ ossec-control argument options
     **restart**
       Restart the OSSEC processes.
 
+    .. _ossec-control-reload::
+
+    **reload**
+      Restart all OSSEC processes except ``ossec-execd``. This allows an agent to reload without losing active response status.
+
+      .. note::
+
+         This is only available on an OSSEC agent.
+
     .. _ossec-control-status::
     **status**
       Determine which OSSEC processes are running.

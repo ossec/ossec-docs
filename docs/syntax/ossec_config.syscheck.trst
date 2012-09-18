@@ -139,3 +139,13 @@
     **Allowed:** Any registry entry (one per element) 
 
 
+.. object:: refilter_cmd
+
+    Command to run to prevent prelinking from creating false positives.
+
+    **Example:**
+
+    .. code-block:: xml
+
+       <prefilter_cmd>/usr/sbin/prelink -y</prefilter_cmd>
+
