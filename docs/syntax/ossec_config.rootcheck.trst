@@ -64,90 +64,81 @@
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
+     **Allowed:** yes or no
 
 .. xml:element:: check_files
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_if
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_pids
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_policy
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_ports
 
      Enable or disable the checking of network ports.
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_sys
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_trojans
 
      Enable or disable the checking of trojans.
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_unixaudit
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_winapps
 
      **Enable or disable the checking of something**
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
-
+     **Allowed:** yes or no
 
 .. xml:element:: check_winaudit
 
@@ -157,13 +148,12 @@
 
      **Allowed:** 1 or 0
 
-
 .. xml:element:: check_winmalware
 
      Enable or disable the checking of Windows malware.
 
-     **Default:** 1
+     **Default:** yes
 
-     **Allowed:** 1 or 0
+     **Allowed:** yes or no
 
 
