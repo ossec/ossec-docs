@@ -149,3 +149,7 @@
 
        <prefilter_cmd>/usr/sbin/prelink -y</prefilter_cmd>
 
+    .. note::
+
+       This option can potentially impact performance negatively. The configured command will be run for each and every file checked.
+
