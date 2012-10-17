@@ -139,6 +139,11 @@ In this case, the directories /etc, /usr/bin and /usr/sbin will be monitored in 
     Real time only works with directories, not individual files. So you can monitor the /etc 
     or C:\\program files directory, but not an individual file like /etc/file.txt.
 
+.. note:: 
+
+    Both rootcheck and syscheck runs on the same thread, so when rootcheck is running, the inotify events would get queued until it finishes.
+
+
 Report Changes
 --------------
 
