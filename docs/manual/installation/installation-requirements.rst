@@ -40,3 +40,24 @@ the package mysql-devel and/or postgresql-devel will need to be installed.
     # yum install mysql-devel postgresql-devel 
 
 
+Debian
+------
+
+Debian has replaced bash with dash, and this may cause issues during installation.
+Dash does not appear to support a full range of shell functions, and may display
+ an error when trying to set the server's IP address on an agent system.
+The best solution may be to ignore the error, and configure the system manually.
+
+Do this by making sure something like the following information is in the agent's ossec.conf:
+
+.. code-block:: console
+
+   <ossec_config>
+     <client>
+       <server-ip>SERVER'S IP</server-ip>
+     </client>
+
+
+
+
+
