@@ -53,10 +53,11 @@ database.
 Complete MySQL Output 
 ^^^^^^^^^^^^^^^^^^^^^ 
 
-All that is left is to restart ossec for the changes to take effect. 
+All that is left is to enable the database daemon and restart ossec for the changes to take effect. 
 
 .. code-block:: console 
 
+    # /var/ossec/bin/ossec-control enable database
     # /var/ossec/bin/ossec-control restart 
 
 
