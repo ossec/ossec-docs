@@ -67,31 +67,7 @@ d file.
 
 * Now that the installation is complete the encryption key needs to be installed. This key will be created on the manager and copied to the agent. The simplest way to do this is using the ``manage_agents`` utility, although creating keys one by one may be time consuming if there are a lot of agents. Othe methods will be covered later.
 
-
-Creating the key on the manager:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* On the manager run ``/var/ossec/bin/manage_agents``. Notice the options provided by this application. We will be choosing ``A`` to add an agent. Either ``A`` or ``a`` can be used:
-
-.. image:: images/install/agent_install/0_server_manage_agents.png
-   :align: center
-   :alt: manage agents
-
-* After selecting ``a`` we have to enter information about the agent. All of these items must be unique. Multiple agents using a single ID, IP, or hostname can cause issues.
-
-  * The agent name does not have to be the hostname, but using the hostname may help with managing the agents.
-  * The IP address can be the actual IP address, a CIDR address (192.168.1.0/24), or ``any``. It is best to be as specific as possible, but monitoring VPN or DHCP users is sometimes necessary. CIDR addresses and ``any`` do not have to be unique.
-  * The ID will be used for a number of OSSEC functions. Finding the ID is easy, so I typically choose the default.
-
-.. image:: images/install/agent_install/1_server_manage_agents.png
-   :align: center
-   :alt: enter information about the agent
-
-* After confirming that the agent should be created and the information is correct, you will be presented with the original menu again. This time use ``L`` to list the agents. Notice there is only 1 agent on this system. The list can get much larger, some people reportedly having over 1,000 agents on a single server.
-
-.. image:: images/install/agent_install/2_server_manage_agents.png
-   :align: center
-   :alt: agent list
+Refer to `managing_agents <../managing_agents/manage_agents.html#adding-an-agent>`_ for instructions on adding an agent to an OSSEC server.
 
 Exporting the agent key:
 ^^^^^^^^^^^^^^^^^^^^^^^^
