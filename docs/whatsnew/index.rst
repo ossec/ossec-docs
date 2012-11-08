@@ -22,13 +22,13 @@ What's new for 2.7
 
 * OSSEC server can be specified by hostname in the agent's ossec.conf `server-hostname <../syntax/head_ossec_config.client.html#element-server-hostname>`_
 
-* ossec-authd can now add IP addresses to the client.keys file instead of using ``any`` with the `-i <../programs/ossec-authd.html#cmdoption-ossec-authd-i>` from Jason Stelzer_
+* ossec-authd can now add IP addresses to the client.keys file instead of using ``any`` with `the -i flag <../programs/ossec-authd.html#cmdoption-ossec-authd-i>`_ from Jason Stelzer
 
-* support for prelink to reduce false positives `refilter_cmd <../syntax/head_ossec_config.syscheck.html>`
+* support for prelink to reduce false positives `refilter_cmd <../syntax/head_ossec_config.syscheck.html>`_
 
-* Added knowbs to turn on or off rootcheck features `check_* <../syntax/head_ossec_config.syscheck.html>`
+* Added knowbs to turn on or off rootcheck features `check_* <../syntax/head_ossec_config.syscheck.html>`_
 
-* Added support for json and splunk output (along with syslog and cef) `format <../syntax/head_ossec_config.syslog_output.html>`
+* Added support for json and splunk output (along with syslog and cef) `format <../syntax/head_ossec_config.syslog_output.html>`_
 
 * Changed ``-f`` to ``-v`` in ossec-logtest
 
