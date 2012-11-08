@@ -18,7 +18,7 @@ What's new for 2.7
 
 * contrib/ossec2rss.php: ossec alerts in an rss format
 
-* GeoIP data in `alerts <../syntax/head_ossec_config.global.rst#geoip_db_path>`_
+* GeoIP data in `alerts <../syntax/head_ossec_config.global.html#geoip_db_path>`_
 
 * OSSEC server can be specified by hostname in the agent's ossec.conf `server-hostname <../syntax/head_ossec_config.client.html#element-server-hostname>`_
 
