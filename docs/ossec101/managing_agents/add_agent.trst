@@ -5,8 +5,7 @@
 Creating the key on the server:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* On the server run ``/var/ossec/bin/manage_agents``. Notice the options provided by this application. We will be choosing ``A`` to add an agent. Either ``A`` or ``a`
-` can be used:
+* On the server run ``/var/ossec/bin/manage_agents``. Notice the options provided by this application. We will be choosing ``a`` to add an agent.
 
 .. image:: images/0_server_manage_agents.png
    :align: center
