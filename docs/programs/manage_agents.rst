@@ -38,6 +38,17 @@ manage_agents argument options
 
     Import authentication key (Agent only). 
 
+.. option:: -f  <file>
+
+    Generate clients in bulk from <file> (Manager only).
+
+    .. note::
+
+       The format for the file could be ``ip name``
+
+
+
+
 Usage 
 -----
 

@@ -36,7 +36,7 @@ osssec-logtest argument options
     Test configuration.  This will print file details on the ossec-anaylistd rules, 
     decoders, and lists as they are loaded and the order they were processed.  
 
-.. option:: -f 
+.. option:: -v 
 
     Full output of all details and matches.  
 
