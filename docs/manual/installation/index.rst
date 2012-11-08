@@ -18,7 +18,7 @@ OSSEC HIDS Manager/Agent Installation
 
 Installation of the OSSEC HIDS is very simple. Just follow these few steps to have 
 it working.  Please make sure that you understand the type of installation you are choosing 
-(manager, agent, local, etc) and are also aware of the order (always install the manager 
+(manager, agent, local, or hybrid) and are also aware of the order (always install the manager 
 first). If you don’t know what I’m talking about, it’s a good idea to visit the `install types
 page`.
 

@@ -32,10 +32,6 @@ ossec-remoted argument options
 
     Test configuration.
 
-.. option:: -f
-
-    Run ``ossec-remoted`` in the foreground.
-
 .. option:: -u <user>
 
     Run ``ossec-remoted`` as <user>.
