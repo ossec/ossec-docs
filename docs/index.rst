@@ -26,14 +26,6 @@ Manual & FAQ
    faq/index
 
 
-OSSEC 101
-=========
-
-.. toctree::
-    :maxdepth: 2
-
-    ossec101/index
-
 Reference 
 =========
 
