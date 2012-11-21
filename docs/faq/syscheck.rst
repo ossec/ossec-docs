@@ -128,4 +128,11 @@ The ``<alert_new_files>`` entry should look something like this:
   </syscheck>
 
 
+Can OSSEC include information on who changed a file in the alert?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In short, no. OSSEC does not track this information. 
+You could use your OS's auditing facilities to track this information, 
+and create a rule to alert when an appropriate log is created.
+
 
