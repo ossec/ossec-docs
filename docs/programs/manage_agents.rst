@@ -40,11 +40,33 @@ manage_agents argument options
 
 .. option:: -f  <file>
 
-    Generate clients in bulk from <file> (Manager only).
+    Generate clients in bulk from <file> (Manager only). The file is a comma delimited file containing the IP addresses and agent names to be added.
+    This file should be located within ``/var/ossec``, and referenced by its path relative to ``/var/ossec``.
 
-    .. note::
+**Example:**
 
-       The format for the file could be ``ip name``
+.. code-block:: console
+
+   # cat /var/ossec/k
+   192.168.1.2,host02
+   192.168.1.3,host03
+
+   # /var/ossec/bin/manage_agents -f /k         
+   Bulk load file: /k
+   Opening: [/k]
+   Agent information:
+      ID:002
+      Name:host02
+      IP Address:192.168.1.2
+
+   Agent added.
+   Agent information:
+      ID:003
+      Name:host03
+      IP Address:192.168.1.3
+
+   Agent added.
+
 
 
 
