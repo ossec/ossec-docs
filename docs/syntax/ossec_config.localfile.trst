@@ -102,29 +102,6 @@
 
       - djb-multilog
 
-      .. _logformat_syslog-pipe:
-
-      - syslog-pipe
-
-      .. _logformat_regex:
-
-      - regex
-
-          ... XXX ...
-
-      .. _logformat_auditd:
-
-
-      - auditd
-
-          This option will allow OSSEC to monitor auditd logs, and track interactions over multiple auditd log lines.
-
-      .. _logformat_modsec:
-
-      - modsec
-
-          This option will allow OSSEC to monitor modsecurity log files.
-
       .. _logformat_multi-line:
 
       - multi-line
