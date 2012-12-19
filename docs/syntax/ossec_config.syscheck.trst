@@ -15,6 +15,10 @@
 
         - Report diffs of file changes.  This is limited to text files at this time.
 
+        .. note::
+
+           This option is only available on Unix-like systems.
+
     - **check_all**: Value=yes 
 
         - All the following check_* options are used together.  
