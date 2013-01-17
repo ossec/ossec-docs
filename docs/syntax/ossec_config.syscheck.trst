@@ -118,6 +118,10 @@
 
     **Valid:** server, local
 
+    .. note::
+
+       New files will only be detected on a full scan, this option does not work in realtime.
+
 .. object:: scan_on_start 
 
     Specifies if syscheck should do the first scan as soon as it is started.
