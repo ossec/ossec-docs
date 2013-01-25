@@ -137,6 +137,10 @@
     **Default:** HKEY_LOCAL_MACHINE\Software 
 
     **Allowed:** Any registry entry (one per element)
+
+    .. note::
+
+       New entries will not trigger alerts, only changes to existing entries.
     
 .. object:: registry_ignore 
 
