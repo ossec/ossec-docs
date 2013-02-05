@@ -6,6 +6,13 @@ OSSEC-WUI: FAQ
 .. contents:: 
     :local:
 
+
+Why does the OSSE-WUI appear to be dead?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Because it is. No one has worked on it for quite a while. There may be some ongoing work with it, but as of this writing it is considered a dead project.
+
+
 Why does the src ip field contain strange information instead of an IP?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
