@@ -32,6 +32,6 @@ Why does the src ip field contain strange information instead of an IP?
     
    The alert format changed in 2.6, and since OSSEC-WUI is essentially abandonware it was not updated to handle the changes. 
    A number of users have provided patches to correct the issues, and the OSSEC team is planning on releasing an updated WUI containing these patches.
-   You can find a patched version of the OSSEC-WUI at a `bitbucket repository <https://bitbucket.org/ddpbsd/ossec-wui>_`.
+   You can find a patched version of the OSSEC-WUI at a `bitbucket repository <https://bitbucket.org/jbcheng/ossec-wui>_`.
  
 
