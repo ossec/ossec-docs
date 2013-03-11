@@ -1,4 +1,5 @@
-<!-- @(#) $Id: php_rules.xml,v 1.2 2010/03/04 20:12:33 dcid Exp $
+<!-- @(#) $Id: ./etc/rules/php_rules.xml, 2012/05/09 dcid Exp $
+
   -  Official PHP rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.

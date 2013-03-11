@@ -28,4 +28,4 @@
   <parent>pure-ftpd</parent>
   <regex>^\((\S+)@(\S+)\) [</regex>
   <order>user,srcip</order>
-</decoder>  
+</decoder>

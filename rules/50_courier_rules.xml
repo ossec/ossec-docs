@@ -1,4 +1,5 @@
-<!-- @(#) $Id: courier_rules.xml,v 1.7 2010/04/19 15:47:03 dcid Exp $
+<!-- @(#) $Id: ./etc/rules/courier_rules.xml, 2011/09/08 dcid Exp $
+
   -  Official Courier rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.

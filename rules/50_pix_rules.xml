@@ -1,4 +1,5 @@
-<!-- @(#) $Id: pix_rules.xml,v 1.23 2010/03/04 20:12:33 dcid Exp $
+<!-- @(#) $Id: ./etc/rules/pix_rules.xml, 2011/11/01 dcid Exp $
+
   -  Official PIX rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.

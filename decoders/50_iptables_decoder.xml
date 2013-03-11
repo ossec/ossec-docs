@@ -71,3 +71,12 @@
    <order>srcport,dstport</order>
 </decoder>   
 
+<decoder name="iptables-shorewall2">
+  <parent>iptables</parent>
+  <type>firewall</type>
+  <prematch>^\p\S+\p Shorewall:\S+:</prematch>
+  <regex offset="after_prematch">^(\S+):\.+ SRC=(\S+) DST=(\S+) \.+ </regex>
+  <regex>PROTO=(\w+) </regex>
+  <order>action,srcip,dstip,protocol</order>
+</decoder>
+

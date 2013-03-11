@@ -1,4 +1,5 @@
-<!-- @(#) $Id: racoon_rules.xml,v 1.4 2007/01/07 23:52:10 dcid Exp $
+<!-- @(#) $Id: ./etc/rules/racoon_rules.xml, 2011/09/08 dcid Exp $
+
   -  Racoon VPN rules for OSSEC HIDS.
   -  Author: Daniel B. Cid
   -  License: http://www.ossec.net/en/licensing.html

@@ -28,3 +28,21 @@
   <order>srcip</order>
 </decoder>
 
+<decoder name="smbd-from">
+  <parent>smbd</parent>
+  <prematch> from (\S+)$</prematch>
+  <regex> from (\S+)$</regex>
+  <order>srcip</order>
+</decoder>
+
+<decoder name="smbd-client">
+  <parent>smbd</parent>
+  <prematch>to client \S+.</prematch>
+  <regex>to client (\S+). </regex>
+  <order>srcip</order>
+</decoder>
+
+<decoder name="nmbd">
+  <program_name>^nmbd</program_name>
+</decoder>
+

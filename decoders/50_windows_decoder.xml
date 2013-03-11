@@ -1,4 +1,3 @@
-
 <!-- Windows date format.
   -  Pre match for windows date format. Used on Windows firewall,
   -  IIS, etc.
@@ -95,4 +94,4 @@
   <regex offset="after_parent">^(\d+.\d+.\d+.\d+) \S+ \S+ \S+ \S+ </regex>
   <regex>\d+ (\S+) \S+ \S+ (\d+) </regex>
   <order>srcip, action, id</order>
-</decoder>
+</decoder>
