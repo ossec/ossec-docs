@@ -1,5 +1,6 @@
 from paver.easy import *
 import paver.doctools
+import os
 
 
 import sys
@@ -80,13 +81,20 @@ def docs():
 @needs('clean_docs', 'rules2rst', 'paver.doctools.html')
 def html():
     """Generate Publishable HTML docs using sphinx"""
+    try:
+        if not os.path.exists("./docs/docs"):
+            print "mkdir"
+            os.mkdir(path("docs") / "docs")
+    except:
+        print "WTF"
     builtdocs = path("docs") / options.sphinx.builddir / "html"
     builtdocs.move(options.sphinx.destdir) 
 
 @task 
 def clean_docs():
     """Clean up and remove all gerenated files"""
-    options.sphinx.destdir.rmtree()
+    if os.path.exists(path("docs") / "docs"):
+        options.sphinx.destdir.rmtree()
 
 
 @task
