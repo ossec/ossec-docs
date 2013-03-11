@@ -1,0 +1,14 @@
+<!-- OpenBSD mountd decoder
+- Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659
+-->
+
+<decoder name="mountd">
+  <program_name>^mountd</program_name>
+</decoder>
+
+<decoder name="mountd-host">
+  <parent>mountd</parent>
+  <prematch>from host </prematch>
+  <regex offset="after_prematch">(\S+) port \d+$</regex>
+  <order>srcip</order>
+</decoder>

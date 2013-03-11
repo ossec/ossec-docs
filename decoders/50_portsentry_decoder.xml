@@ -1,0 +1,18 @@
+<!-- Portsentry -->
+<decoder name="portsentry">
+  <program_name>^portsentry</program_name>
+</decoder>
+
+<decoder name="portsentry-attackalert">
+  <parent>portsentry</parent>
+  <prematch>attackalert: Connect from host: </prematch>
+  <regex offset="after_prematch">(\S+)/\S+ to (\S+) port: (\d+)$</regex>
+  <order>srcip,protocol,dstport</order>
+</decoder>
+
+<decoder name="portsentry-blocked">
+  <parent>portsentry</parent>
+  <prematch>is already blocked. Ignoring$</prematch>
+  <regex>Host: (\S+) is</regex>
+  <order>srcip</order>
+</decoder>
