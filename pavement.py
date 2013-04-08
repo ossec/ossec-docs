@@ -24,7 +24,7 @@ options(
     ),
     ossec=Bunch(
         base="/var/ossec",
-        version="2.4.1",
+        version="2.7.1",
     )
 )
 
