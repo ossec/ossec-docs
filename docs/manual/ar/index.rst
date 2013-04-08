@@ -16,7 +16,7 @@ The active response framework is also what allows an OSSEC administrator to star
 
     *
 
-
+    systems/*
 
     
    
