@@ -10,10 +10,10 @@ Manual
     ossec-architecture
     supported-systems
     installation/index
-    syscheck/index
-    rootcheck/index
     agent/index
     monitoring/index
+    syscheck/index
+    rootcheck/index
     rules-decoders/index
     output/index 
     ar/index

@@ -16,8 +16,8 @@ To add an agent to an OSSEC manager with :ref:`manage_agents` you need to follow
 8. Start the agent.
 
 
-manage_agents on OSSEC servers
-------------------------------
+manage_agents on the OSSEC server
+---------------------------------
 
 The server version provides an interface to
 
