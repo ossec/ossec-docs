@@ -78,6 +78,27 @@ osssec-logtest argument options
     Analyze of input lines as if they are live events.  
 
 
+Caveats
+~~~~~~~
+
+Some log formats will be processed differently than they appear in the log file. MySQL log files for instance will have ``MySQL log: `` prepended to the log message before analysis. If using ossec-logtest to test MySQL logs, please add this string to the beginning.
+
+Example:
+
+Given the following MySQL log message:
+
+.. code-block:: console
+
+   130218 12:07:52 [Warning] Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses a LIMIT clause. This is unsafe because the set of rows included cannot be predicted. Statement: DELETE FROM `emailQueue` WHERE `emailQueueID` = '12207' LIMIT 1
+
+
+The message that should be pasted into ossec-logtest is:
+
+.. code-block:: console
+
+   MySQL log: 130218 12:07:52 [Warning] Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses a LIMIT clause. This is unsafe because the set of rows included cannot be predicted. Statement: DELETE FROM `emailQueue` WHERE `emailQueueID` = '12207' LIMIT 1
+
+
 ossec-logtest example usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
