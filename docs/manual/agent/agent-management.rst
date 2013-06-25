@@ -1,8 +1,8 @@
 
 .. _manual_agent_manage:
 
-Working with Agents 
-===================
+Managing Agents 
+===============
 
 To add an agent to an OSSEC manager with :ref:`manage_agents` you need to follow the steps below.
 
@@ -19,24 +19,27 @@ To add an agent to an OSSEC manager with :ref:`manage_agents` you need to follow
 manage_agents on the OSSEC server
 ---------------------------------
 
-The server version provides an interface to
+The server version of manage_agents provides an interface to:
 
 - add an OSSEC agent to the OSSEC server
 - extract the key for an agent already added to the OSSEC server
 - remove an agent from the OSSEC server
 - list all agents already added to the OSSEC server.
 
+
 Running manage_agents and start screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To run manage_agents, you have to execute the following command on the OSSEC server as a 
-user with appropriate privileges (e.g. root):
+``manage_agents`` should be run as a user with 
+the appropriate privileges (e.g. root).
+
+Run ``manage_agents``:
 
 .. code-block:: console
 
     # /var/ossec/bin/manage_agents
 
-After that, you see the start screen:
+The manage_agents menu:
 
 .. code-block:: console
 
@@ -51,19 +54,20 @@ After that, you see the start screen:
        (Q)uit.
     Choose your action: A,E,L,R or Q:
 
-You can now choose one of the actions.
+Typing the appropriate letter and hitting enter will initiate that function.
 
 Adding an agent
 ^^^^^^^^^^^^^^^
 
-To add an agent type A in the start screen:
+To add an agent type ``a`` in the start screen:
 
 .. code-block:: console
 
     Choose your action: A,E,L,R or Q: a
 
-You are then asked to provide a name for the agent to be added.
-This can for example be the hostname. In this example the agent name will be agent1.
+You are then prompted to provide a name for the new agent.
+This can be the hostname or another string to identify the system. 
+In this example the agent name will be agent1.
 
 .. code-block:: console
 
@@ -73,15 +77,21 @@ This can for example be the hostname. In this example the agent name will be age
 
 After that you have to specify the IP address for the agent. This can either be a single 
 IP address (e.g. 192.168.1.25), a range of IPs (e.g. 192.168.2.0/24), or ``any``. Using a 
-network range or ``any`` is preferable when the IP of the agent may change frequently by 
-DHCP or other service.
+network range or ``any`` is preferable when the IP of the agent may change frequently  
+(DHCP), or multiple systems will appear to come from the same IP address (NAT).
 
 .. code-block:: console
 
        * The IP Address of the new agent: 192.168.2.0/24
 
+.. warning::
+
+   If you use a specific IP address it **must** be unique. Duplicate IP addresses will cause issues.
+   Multiple systems can use the same IP range or ``any``.
+
+
 The last information you will be asked for is the ID you want to assign to the agent. 
-:ref:`manage_agents` will suggest a value for the ID to you. This value is the lowest positive 
+:ref:`manage_agents` will suggest a value for the ID. This value should be the lowest positive 
 number that is not already assigned to another agent. The ID 000 is assigned to the 
 OSSEC server. To accept the suggestion, simply press ENTER. To choose another value, 
 type it in and press ENTER.
@@ -90,7 +100,7 @@ type it in and press ENTER.
 
        * An ID for the new agent[001]:
 
-Now you have to confirm adding the agent and you are done with this step.
+As the final step in creating an agent, you have to confirm adding the agent:
 
 .. code-block:: console
     Agent information:
@@ -104,14 +114,18 @@ Now you have to confirm adding the agent and you are done with this step.
 After that :ref:`manage_agents` appends the agent information to /var/ossec/etc/client.keys 
 and goes back to the start screen.
 
+.. warning::
+
+   If this is the first agent added to this server, the server's OSSEC processes should be restarted using ``/var/ossec/bin/ossec-control restart``.
+
 
 Extracting the key for an agent
 -------------------------------
 
-After adding an agent, a key for the agent is created that has to be copied to the 
-agent. To get the key, use the E option in the manage_agents start screen. You will be 
-given a list of all agents already added to the server. To extract the key for an agent, 
-simply type in the ID of the respective agent. It is important to note that you have 
+After adding an agent, a key is created. This key must be copied to the agent. 
+To extract the key, use the ``e`` option in the manage_agents start screen. You will be 
+given a list of all agents on the server. To extract the key for an agent, 
+simply type in the agent ID. It is important to note that you have 
 to enter all digits of the ID.
 
 .. code-block:: console
@@ -127,8 +141,10 @@ to enter all digits of the ID.
 
     ** Press ENTER to return to the main menu.
 
-You can now copy that key to the agent1 and import it there via the agent version of 
-manage_agents.
+The key is encoded in the string 
+``MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5MmQ4NDE4MjYwMjJkN2ZkMzNkYzZiOWE5NWY4MzU5YWRlY2JkY2Rm`` 
+and includes information about the agent. This string can be added to the agent through the agent version of 
+``manage_agents``.
 
 Removing an agent
 -----------------
