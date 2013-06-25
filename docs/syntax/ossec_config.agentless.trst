@@ -1,11 +1,35 @@
 .. xml:element:: agentless 
 
+   This is the section that will contain the agentless configuration.
+
 .. xml:elemnet:: type 
+
+    The type of check to be run on the agentless system.
+
+    **Options:** ``ssh_integrity_check_bsd``, ``ssh_integrity_check_linux``, ``ssh_generic_diff``, ``ssh_pixconfig_diff``
 
 .. xml:element:: frequency 
 
+   This controls the number of seconds between each run.
+
 .. xml:element:: host 
+
+   This defines the username and agentless host.
+
+   **Example:**
+
+   .. code-block:: console
+
+      <host>root@linux.server.example.com</host>
 
 .. xml:element:: state 
 
+   This determines whether the checks are periodic or periodic_diff.
+
+   * periodic: The output from the scripts is processed by the OSSEC processes.
+
+   * periodic_diff: The output from the scripts is compared to the output of previous runs.
+
 .. xml:element:: arguments 
+
+   This defines the arguments passed to the script.
