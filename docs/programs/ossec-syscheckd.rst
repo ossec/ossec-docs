@@ -35,16 +35,6 @@ ossec-syscheckd argument options
 
     Run ``ossec-syscheckd`` in the foreground.
 
-.. option:: -u <user>
-
-    Run ``ossec-syscheckd`` as <user>.
-
-    **Default:** ossecm
-
-.. option:: -g <group>
-
-    Run ``ossec-syscheckd`` as <group>.
-
 .. option:: -c <config>
 
     Run ``ossec-syscheckd`` using <config> as the configuration file.

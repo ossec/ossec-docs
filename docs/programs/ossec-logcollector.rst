@@ -33,16 +33,6 @@ ossec-logcollector argument options
 
     Run ``ossec-logcollector`` in the foreground.
 
-.. option:: -u <user>
-
-    Run ``ossec-logcollector`` as <user>.
-
-    **Default:** ossecm
-
-.. option:: -g <group>
-
-    Run ``ossec-logcollector`` as <group>.
-
 .. option:: -c <config>
 
     Run ``ossec-logcollector`` using <config> as the configuration file.
