@@ -137,21 +137,21 @@ to enter all digits of the ID.
     Provide the ID of the agent to extract the key (or '\q' to quit): 001
 
     Agent key information for '001' is: 
-    MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5MmQ4NDE4MjYwMjJkN2ZkMzNkYzZiOWE5NWY4MzU5YWRlY2JkY2Rm
+    MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5m
 
     ** Press ENTER to return to the main menu.
 
-The key is encoded in the string 
-``MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5MmQ4NDE4MjYwMjJkN2ZkMzNkYzZiOWE5NWY4MzU5YWRlY2JkY2Rm`` 
+The key is encoded in the string (shortened for this example)
+``MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5Mm`` 
 and includes information about the agent. This string can be added to the agent through the agent version of 
 ``manage_agents``.
 
 Removing an agent
 -----------------
 
-If you want to detach an OSSEC agent from the server, use the R option in the :ref:`manage_agents`
+If you want to remove an OSSEC agent from the server, use the ``r`` option in the :ref:`manage_agents`
 start screen. You will be given a list of all agents already added to the server. To remove 
-an agent, simply type in the ID of the respective agent, press enter and confirm the deletion. 
+an agent, simply type in the ID of the agent, press enter, and finally confirm the deletion. 
 It is important to note that you have to enter all digits of the ID.
 
 .. code-block:: console
@@ -164,9 +164,9 @@ It is important to note that you have to enter all digits of the ID.
     Confirm deleting it?(y/n): y
     Agent '001' removed.
 
-Afterwards the agent information :ref:`manage_agents` invalidates the agent information in 
-/var/ossec/etc/client.keys. Only the values for ID and the key are still being stored to 
-avoid conflicts when adding other agents later. The deleted agent can no longer 
+``manage_agents`` then invalidates the agent information in 
+``/var/ossec/etc/client.keys``. Only the values for ID and the key are kept to 
+avoid conflicts when adding agents. The deleted agent can no longer 
 communicate with the OSSEC server.
 
 
@@ -201,7 +201,7 @@ The agent version provides an interface for importing authentication keys.
     ** Press ENTER to return to the main menu.
 
 
-After that you can quit :ref:`manage_agents`. For the changes to be in effect you have to 
+For the changes to be in effect you have to 
 restart the server and start the agent.
 
 
