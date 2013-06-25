@@ -26,3 +26,11 @@
 
         This first appeared in OSSEC 2.7.
 
+.. xml:element:: notify_time
+
+    Specifies the time in seconds between information messages sent by the agents to the server.
+
+.. xml: element:: time-reconnect
+
+    Time in seconds until a reconnection attempt. This should be set to a higher number than notify_time.
+

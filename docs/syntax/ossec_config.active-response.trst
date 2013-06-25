@@ -65,6 +65,14 @@ Active-response Options
     
     The response will be executed on any event with this level or higher. 
 
+.. xml:element:: rules_group
+
+    The response will be executed on any event in the defined group. Multiple groups can be defined if separated by a comma.
+
+.. xml:element:: rules_id
+
+    The response will be executes on any event with the defined ID. Multiple IDs can be specified if separated by a comma.
+
 .. xml:element:: timeout 
 
     How long in seconds until the reverse command is executed (IP unblocked, for example). 
