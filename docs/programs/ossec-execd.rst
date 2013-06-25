@@ -32,16 +32,6 @@ ossec-execd argument options
 
     Run ``ossec-execd`` in the foreground.
 
-.. option:: -u <user>
-
-    Run ``ossec-execd`` as <user>.
-
-    **Default:** ossecm
-
-.. option:: -g <group>
-
-    Run ``ossec-execd`` as <group>.
-
 .. option:: -c <config>
 
     Run ``ossec-execd`` using <config> as the configuration file.
