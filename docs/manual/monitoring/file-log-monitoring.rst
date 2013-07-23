@@ -69,6 +69,10 @@ day (and it is rolled over every day), do:
         <log_format>syslog</log_format>
     </localfile>
 
+.. warning::
+
+   Wildcards cannot be combined with the date based format.
+
 IIS Logs Example 
 ^^^^^^^^^^^^^^^^
 
