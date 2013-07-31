@@ -30,9 +30,13 @@
 
     - *frequency*
 
-          - Specifies the number of times the rule must have matched before firing.
+          - Specifies the number of times the rule must have matched before firing. The number that triggers the rule is actually 2 more than this setting.
           - **Allowed:** Any number from 1 to 999
-	  - **Example:** frequency="2" would mean the rule must be matched 2 times
+	  - **Example:** frequency="2" would mean the rule must be matched 4 times
+
+          .. note::
+             More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
+
 
 
     .. _timeframe:
