@@ -371,6 +371,6 @@
 
 .. xml:element:: group 
 
-   - Add additional groups to the alert. 
+   - Add additional groups to the alert. Groups are optional tags added to alerts. They can be used by other rules by using ``if_group`` or ``if_matched_group``, or by alert parsing tools to categorize alerts.
 
     *Example:* <group>group1, group2</group>
