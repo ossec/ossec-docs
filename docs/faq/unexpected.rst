@@ -194,6 +194,8 @@ How to fix it:
   and re-import the keys into the agent. Make sure to restart the server (first) 
   and then the agent after that.
 
+.. 1202
+
 What does "1210 - Queue not accessible?" mean?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -231,6 +233,7 @@ Stop OSSEC and start it back again:
 
 If there is any configuration error, fix it. 
 
+
 Check queue/alerts/ar 
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -249,6 +252,20 @@ server installation. The deamon that should be listening on this socket is
 Add an OSSEC client (agent) with the :ref:`manage_agents` utility on both agent 
 and server. Then restart OSSEC. :ref:`ossec-remoted` should now be listening on 
 the socket.
+
+
+Remote commands are not accepted from the manager. Ignoring it on the agent.conf
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This error message is caused by ``command`` or ``full_command`` log types in the agent.conf.
+Originally OSSEC supported running commands from the agent.conf by default. Thie was later changed as a security 
+precaution due to the commands being run as root. When a command is encountered on an agent in the agent.conf 
+this error will be produced and the agent may not fully start. This error may also accompany the above error 
+message:
+
+.. code-block:: console
+
+    ERROR: Configuration error at '/var/ossec-agent/etc/shared/agent.conf'. Exiting.
 
 Errors when dealing with multiple agents 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
