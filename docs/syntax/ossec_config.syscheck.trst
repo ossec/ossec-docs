@@ -1,7 +1,8 @@
 .. object:: directories
 
     Use this option to add or remove directories to be monitored (they must be comma separated). All files and subdirectories will also be monitored.
-    Drive letters without directories are not valid. At a minimum the '.' should be included (``D:\.``).
+    Drive letters without directories are not valid. At a minimum the '.' should be included (``D:\.``). This should be set on the system you wish to 
+    monitor (or in the agent.conf if appropriate).
 
     **Default:** /etc,/usr/bin,/usr/sbin,/bin,/sbin 
 
