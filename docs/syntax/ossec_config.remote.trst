@@ -33,6 +33,10 @@
 
     **Allowed:** Any IP address or network 
 
+    .. note::
+
+       It is necessary to allow at least one IP address when using the syslog connection type.
+
 .. xml:element:: deny-ips 
 
     List of IP addresses that are not allowed to send syslog messages to the server(one per element).
