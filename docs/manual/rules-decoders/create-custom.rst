@@ -1,274 +1,247 @@
 .. _manual_rules_decoder_custom:
 
-.. note:: 
-    
-    This page orginally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
+
+.. note::
+
+    Previous versions of this page page orginally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
+    Some content may be the same, but examples have been updated.
+
+.. note::
+
+    In the xml based examples, any text between ``<!--`` and ``-->`` are comments.
+    In the console based examples, anything after ``#`` may be an example.
+    For more information on OSSEC's non-standard regular expression (regex) syntax, refer to the `regex page <../syntax/regex.html>`_.
 
 
-Create Custom decoder and rules 
+Create Custom decoder and rules
 ===============================
 
-OSSEC monitors system logs, checks for rootkits and system configuration changes, 
-and does a pretty good job of letting us know what's happening on our systems. 
-OSSEC provides a slew of helpful components and rules for commonly-used services, 
-but of course, it can't parse our custom log files out-of-the-box. While 
-setting our custom rules up, I thought I'd go ahead and document the process, 
-as I was having trouble finding a comprehensive beginning-to-end tutorial (this 
-will also help me when I forget it later, of course).
+One of the main features of OSSEC is monitoring system and application logs. Many popular services have logs and decoders, but there are hundreds that are not covered.
+Custom applications and services will also not be covered. Adding decoders and rules for services is generally very easy.
 
-Add the log files you want to monitor to ossec.conf
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adding a File to be Monitored
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Adding a log file to the configuration for monitoring is simple. In the system's ossec.conf add an entry like this:
 
-Open up ``/var/ossec/etc/ossec.conf`` and, near the end of the file (before 
-``</ossec_config>``), add the following:
+.. code-block:: xml
 
-.. code-block:: xml 
+   <localfile>
+     <log_format>syslog</log_format>
+     <location>/path/to/log/file</location>
+   </localfile>
 
-    <localfile>
-      <log_format>syslog</log_format>
-      <location>/var/log/my_app_log.log</location>
-    </localfile>
-
-I used syslog here as it's recommended for log files that have one entry per line. 
-Available values for log_format are syslog, snort-full, snort-fast, squid, iis, 
-eventlog (for Windows event logs), mysql_log, postgresql_log, nmapg or apache.
-
-If you're monitoring log files that contain changeable dates, OSSEC understands 
-strftime variables, so, for example, if your log file is 
-``/var/log/apache2/access.log.2010-09-25``, you can set location to 
-``<location>/var/log/apache2/access.log.%Y-%m-%d.``
-
-.. note:: 
-    You can render a strftime variable at the command line to verify it quickly. Just 
-    type ``date +%X`` at the command line, where X is the stftime variable. ``date +%Y-%m-%d``
-    gives us the string we need for our access logs, ``date +%s`` gives us Epoch time UTC.
+``syslog`` is a generic format, consisting of a singular line of text appended to the log file. There are other formats available, they are detailed on the localfile syntax page.
 
 
-Create a custom decoder
+.. note::
+
+    Additional examples can be found `here. <../monitoring/file-log-monitoring.html>`_
+    More detailed syntax can be found `here. <../../syntax/head_ossec_config.localfile.html>`_
+
+
+After adding a localfile entry, the OSSEC processes must be restarted.
+
+
+Create a Custom Decoder
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-OSSEC uses decoders to parse log files. After it finds the proper decoder for a log, it 
-will parse out fields defined in ``/var/ossec/etc/decoders.xml``, then compare these values 
-to values in rule files - and will trigger an alert when values in the deciphered log 
-file match values specified in rule files. These values can also be passed to 
-active-response commands, if you've got them enabled.
+The following log messages will be used for most of the examples in this section:
 
-.. note::
-    Decoders exist on the servers, not the agents. Custom decoder should be added to ``/var/ossec/etc/local_decoders.xml`` on the server.
+.. code-block:: console
 
-The log line I want to trigger an alert for looks something like this: ::
+   2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1
+   2013-11-01T10:01:05.600494-04:00 arrakis ossec-exampled[9123]: successful authentication for user test-user from 192.168.1.1 via test-protocol1
 
-    2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!
+The first log message is broken down as follows:
+
+* 2013-11-01T10:01:04.600374-04:00 - timestamp from `rsyslog <http://www.rsyslog.com>`_
+* arrakis - hostname of the system
+* ossec-exampled - daemon creating the log
+* [9123] - process ID of the ossec-exampled instance
+* test connection from 192.168.1.1 via test-protocol1 - log message
+
+`ossec-logtest <../programs/ossec-logtest.html>`_ will be used to test the custom decoder and any custom rules.
+
+Custom decoders are added to the ``local_decoder.xml`` file, typically found in ``/var/ossec/etc`` on a standard installation. The basic syntax is listed `here <../syntax/head_decoders.html>`_, but this page is not well documented at the moment.
 
 
-Open up ``/var/ossec/etc/local_decoder.xml`` (you can also use ``decoder.xml``, which 
-already exists, but using ``local_decoder.xml`` will assure that you don't overwrite 
-it on upgrade). First, we want to create a decoder that will match the first part of 
-the log entry. We'll use the date and first few characters to grab it using a regular 
-expression. 
+Using ossec-logtest on this sample rule results in the following output:
 
-.. note::
+.. code-block:: console
 
-    Note that OSSEC has its own sort of interpretation of regex, so don't try to get fancy. 
-    I spent a lot of time pulling my hair out after using \d{4} type regex syntax - think 
-    simpler and you'll have more success: you have to use \d\d\d\d instead.
+   # /var/ossec/bin/ossec-logtest                                                                                                                                        
+   2013/11/01 10:39:07 ossec-testrule: INFO: Reading local decoder file.
+   2013/11/01 10:39:07 ossec-testrule: INFO: Started (pid: 32109).
+   ossec-testrule: Type one log per line.
 
-In the following decoder, we start at the beginning of the line (^), then match the digits 
-in YYYY-MM-DD HH:MM:SS. After the date and time, I may have a few different log levels 
-listed, INFO, WARN, DEBUG, etc., so I'll just match any number of characters greater 
-than 0 (\w+). We also want to end on something relatively unique since the log level 
-regex I used is so loosy-goosy, and I know this is a ForceField alert and all ForceField 
-alerts will contain ForceField, so I'll use the following.
+   2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1
 
-.. code-block:: xml
 
-    <decoder name="forcefield">
-      <prematch>^\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d \w+ ForceField</prematch>
-    </decoder>
+   **Phase 1: Completed pre-decoding.
+          full event: '2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1'
+          hostname: 'arrakis'
+          program_name: 'ossec-exampled'
+          log: 'test connection from 192.168.1.1 via test-protocol1'
 
-Let's take a break here, and see if this triggers our alert. Save and exit ``local_decoder.xml``, 
-then run ``/var/ossec/bin/ossec-logtest``.
+   **Phase 2: Completed decoding.
+          No decoder matched.
 
-When it comes up, paste your log line: ::
 
-    2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield
 
-    **Phase 1: Completed pre-decoding.
-    full event: '2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!'
-    hostname: 'my_system'
-    program_name: '(null)'
-    log: '2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!'
-    **Phase 2: Completed decoding.
-    decoder: 'forcefield'
+There is not a lot of output here because OSSEC does not understand this log. Creating a decoder for this log message will provide OSSEC much more information.
 
-You should see forcefield show up as the decoder. Great! Now, let's parse out the values 
-we care about.
+Phase 1 "pre-decodes" some information. The hostname is the system that generated the log message, program_name is the name of the application that created the log, and log is the rest of the log message.
 
-Re-open ``local_decoder.xml`` and, beneath your forcefield decoder, create a new decoder:
 
-.. code-block:: xml 
-
-    <decoder name="forcefield-alert">
-      <parent>forcefield</parent>
-      <regex offset="after_parent">IP:(\d+.\d+.\d+.\d+)@(\w+): (forcefield \w+); (\.*)</regex>
-      <order>srcip,url,action,extra_data</order>
-    </decoder>
-
-So, what'd we do here?
-
-The obvious stuff first: We gave it a name, and designated forcefield-alert as a child of 
-forcefield. Whenever a log matches the forcefield decoder, it'll then be decoded using 
-forcefield-alert to extract the data fields to match on.
-
-Now for the fun stuff...First, we set the offset to "``after_parent``" - this means that 
-OSSEC starts looking for matches after the 'prematch' stuff (date, time, & ForceField) 
-we specified inside the parent forcefield.
-
-So our log line actually looks like this: ::
-
-    2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!
-
-But after extracting the pre-match data, our log line, in OSSEC's brain, looks like this: ::
-
-    IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!
-
-So what do we care about? What fields do we want to test again? A good rule is to decode 
-any data that you want to match inside a rule as well as any data you might need to 
-initiate an active response. I set these items to bold below: ::
-
-    IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!
-
-OSSEC only allows specific field definitions. These can be found at the top of the 
-``local_decoder.xml`` file. For the purposes of our log file, we'll want the IP, 
-the script, the action taken by the system, and the additional data. 
-
-When creating the regex for OSSEC, we extract all data inside parenthesis, so we 
-build our regex like this: ::
-
-    IP:(\d+.\d+.\d+.\d+)@(\w+): (forcefield \w+); (\.*)
-
-Then, to specify which parenthetical regex is which field, you add the ``<order>`` line, 
-using available fields in decoders.xml:
-
-.. code-block:: xml 
-
-    <order>srcip,url,action,extra_data</order>
-
-Save your local_decoder.xml and let's run the log file through ossec-logtest again.
-
-.. code-block:: sh 
-
-    ossec-testrule: Type one log per line.
-    2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!
-    **Phase 1: Completed pre-decoding.
-    full event: '2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!'
-    hostname: 'my_system'
-    program_name: '(null)'
-    log: '2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!'
-    **Phase 2: Completed decoding.
-    decoder: 'forcefield'
-    srcip: '127.0.0.1'
-    url: 'script_x'
-    action: 'forcefield on'
-    extra_data: 'enabled forcefield arbitrarily!'
-
-Looks good! It found our decoder and extracted the fields the way we want 'em. Now, 
-we're ready to write local rules.
-
-Write custom rules
-~~~~~~~~~~~~~~~~~~
-
-Open ``/var/ossec/rules/local_rules.xml`` and add rules. First, we create a group, and a 
-"catch-all" rule to run against any log that is decoded by our forcefield decoder. We set 
-this as level 0 because we don't want it to trigger an alert:
-
-.. note::
-    In an agent/server configuration all rules live on the server. Custom rules should be added to the server's ``/var/ossec/rules/local_rules.xml``.
+The following is a very basic decoder for ``ossec-exampled``:
 
 .. code-block:: xml
 
-    <group name="forcefield">
-        <rule id="700005" level="0">
-            <decoded_as>forcefield</decoded_as>
-            <description>Custom Forcefield Alert</description>
-        </rule>
-    </group>
+   <decoder name="ossec-exampled">
+     <program_name>ossec-exampled</program_name>
+   </decoder>
 
-Next, we add dependent rules that trigger if the action matches what's specified in the rule. 
-<if_sid> specifies the dependency:
+This decoder simply looks for any log messages generated by ``ossec-exampled``. Using a very generic decoder like this can allow an OSSEC user to create more specific child decoders for services with less consistant log messages. 
 
-.. code-block:: xml 
+Here is the ossec-logtest output after adding this decoder:
 
-    <group name="forcefield">
-        <rule id="700005" level="0">
-            <decoded_as>forcefield</decoded_as>
-            <description>Custom Forcefield Alert</description>
-        </rule>
-        <!-- Alert if forcefield enabled -->
-        <rule id="700006" level="12">
-            <if_sid>700005</if_sid>
-            <action>forcefield on</action>
-            <description>Forcefield enabled!</description>
-        </rule>
-        <!-- Alert if forcefield disabled -->
-            <rule id="700007" level="7">
-            <if_sid>700005</if_sid>
-            <action>forcefield off</action>
-            <description>Forcefield off!</description>
-        </rule>
-        <rule id="700008" level="14">
-            <if_sid>700005</if_sid>
-            <action>forcefield hyperdrive</action>
-            <description>Forcefield in hyperdrive, watch out!</description>
-        </rule>
-    </group>
+.. code-block:: console
 
-Save your local_rules.xml file, and let's test it again:
+   # /var/ossec/bin/ossec-logtest         
+   2013/11/01 10:52:09 ossec-testrule: INFO: Reading local decoder file.
+   2013/11/01 10:52:09 ossec-testrule: INFO: Started (pid: 25151).
+   ossec-testrule: Type one log per line.
 
-.. code-block:: sh 
+   2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1
 
-    ossec-testrule: Type one log per line.
-    2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!
-    **Phase 1: Completed pre-decoding.
-    full event: '2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!'
-    hostname: 'my_system'
-    program_name: '(null)'
-    log: '2010-09-25 15:28:42 WARN ForceField IP:127.0.0.1@script_x: forcefield on; enabled forcefield arbitrarily!'
-    **Phase 2: Completed decoding.
-    decoder: 'forcefield'
-    srcip: '127.0.0.1'
-    url: 'script_x'
-    action: 'forcefield on'
-    extra_data: 'enabled forcefield arbitrarily!'
-    **Phase 3: Completed filtering (rules).
-    Rule id: '700006'
-    Level: '12'
-    Description: 'Forcefield enabled!'
-    **Alert to be generated.
 
-Cool - now we're ready to restart OSSEC and check alerts. When restarting OSSEC, you 
-may find that the new log file that you're using should exist before you restart 
-OSSEC--if it doesn't find it, it ignores it. Also, when writing your own rules, 
-set levels specific to your OSSEC deployment - for example, if you've enabled active 
-response and want to trigger it, make sure you extract the srcip using your decoder 
-and set the level in the rule to match the level specific to your active response 
-command in ossec.conf.
+   **Phase 1: Completed pre-decoding.
+          full event: '2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1'
+          hostname: 'arrakis'
+          program_name: 'ossec-exampled'
+          log: 'test connection from 192.168.1.1 via test-protocol1'
 
-You'll probably find that you need to do some tuning, and that some of the alerts you 
-receive will trigger unwanted alerts if they fall through the decoder sieve. I haven't 
-figured out a way to exclude the file from inspection if it fails to match any decoder 
-(if you know of one, let me know!), but the solution I've used is to create a new local 
-rule that matches based on the syslog sid and match, like so:
+   **Phase 2: Completed decoding.
+          decoder: 'ossec-exampled'
 
-.. code-block:: xml 
+Phase 2 now correctly identifies this log message as coming from ossec-exampled. There is still some very important information in the log message that should be decoded, namely the source IP and ``test-protocol1``. To decode these a child decoder will be added. It will set the ``ossec-exampled`` decoder as a parent, and use ``prematch`` to limit its use to the correct log message.
 
-    <rule id="100009" level="0">
-        <if_sid>1002</if_sid>
-        <match>Some string in the log I don't want to see</match>
-        <description>Don't syslog alert on this one</description>
-    </rule>
+.. code-block:: xml
 
-Repeat for each false positive. It'd be really useful to only allow a single decoder to 
-work on a log file - if anyone knows how to do that, let me know!
+   <decoder name="ossec-exampled-test-connection">
+     <parent>ossec-exampled</parent>
+     <prematch offset="after_parent">^test connection </prematch> <!-- offset="after_parent" makes OSSEC ignore anything matched by the parent decoder and before -->
+     <regex offset="after_prematch">^from (\S+) via (\S+)$</regex> <!-- offset="after_prematch" makes OSSEC ignore anything matched by the prematch and earlier-->
+     <order>srcip, protocol</order>
+   </decoder>
+
+
+Breaking this down piece by piece:
+
+* ``<decoder name="ossec-exampled-test-connection">`` - Declaring this to be a decoder and giving it a name.
+* ``<parent>ossec-exampled</parent>`` - This decoder will only be checked if ``ossec-exampled`` also matched.
+* ``<prematch offset="after_parent">^test connection </prematch>`` - If a log message does not contain the data in the prematch, it will not use that decoder. Setting the offset tells OSSEC to only look at data after the parent (ossec-exampled[9123]: in this case), in an effort to speed up matches.
+* ``<regex offset="after_prematch">^from (\S+) via (\S+)$</regex>`` - The regex line can be used to pull data out of the log message for use in rules. In this instance the first ``\S+`` matches the IP address, and the second matches the protocol. Anything between the parenthesis will be able to be used in rules.
+* ``<order>srcip, protocol</order>`` - Defines what the entries in the regex line are labeled as. The IP address will be labeled as srcip, and the protocol by proto.
+
+
+ossec-logtest output after adding this decoder:
+
+.. code-block:: console
+
+   # /var/ossec/bin/ossec-logtest         
+   2013/11/01 11:03:25 ossec-testrule: INFO: Reading local decoder file.
+   2013/11/01 11:03:25 ossec-testrule: INFO: Started (pid: 6290).
+   ossec-testrule: Type one log per line.
+
+   2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1
+
+
+   **Phase 1: Completed pre-decoding.
+          full event: '2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1'
+          hostname: 'arrakis'
+          program_name: 'ossec-exampled'
+          log: 'test connection from 192.168.1.1 via test-protocol1'
+
+   **Phase 2: Completed decoding.
+          decoder: 'ossec-exampled'
+          srcip: '192.168.1.1'
+          proto: 'test-protocol1'
+
+
+.. note::
+
+   The ``decoder`` will be labeled as the parent decoder, not the child. It's common to think a child decoder doesn't work because the parent decoder's name is listed, but that may not be a problem.
+
+
+Now that the first sample log message is decoded, how does the second message fare? ``ossec-logtest`` output:
+
+.. code-block:: console
+
+   2013-11-01T10:01:05.600494-04:00 arrakis ossec-exampled[9123]: successful authentication for user test-user from 192.168.1.1 via test-protocol1
+
+
+   **Phase 1: Completed pre-decoding.
+          full event: '2013-11-01T10:01:05.600494-04:00 arrakis ossec-exampled[9123]: successful authentication for user test-user from 192.168.1.1 via test-protocol1'
+          hostname: 'arrakis'
+          program_name: 'ossec-exampled'
+          log: 'successful authentication for user test-user from 192.168.1.1 via test-protocol1'
+
+   **Phase 2: Completed decoding.
+          decoder: 'ossec-exampled'
+
+
+The decoded fields added in ``ossec-exampled-test-connection`` do not get decoded in this log message. This is expected because the ``prematch`` does not match. In this log message there are 4 fields that would be useful: status (successful), srcuser, srcip, and protocol. Adding a decoder for this should also be simple:
+
+.. code-block:: xml
+
+   <decoder name="ossec-exampled-auth">
+     <parent>ossec-exampled</parent>
+     <prematch offset="after_parent"> authentication </prematch>
+     <regex offset="after_parent">^(\S+) authentication for user (\S+) from (\S+) via (\S+)$</regex> <!-- Using after_parent here because after_prematch would eliminate the possibility of matching the status (successful) -->
+     <order>status, srcuser, srcip, protocol</order>
+   </decoder>
+ 
+``ossec-logtest`` output:
+
+.. code-block:: console
+
+   2013-11-01T10:01:05.600494-04:00 arrakis ossec-exampled[9123]: successful authentication for user test-user from 192.168.1.1 via test-protocol1
+
+
+   **Phase 1: Completed pre-decoding.
+          full event: '2013-11-01T10:01:05.600494-04:00 arrakis ossec-exampled[9123]: successful authentication for user test-user from 192.168.1.1 via test-protocol1'
+          hostname: 'arrakis'
+          program_name: 'ossec-exampled'
+          log: 'successful authentication for user test-user from 192.168.1.1 via test-protocol1'
+
+   **Phase 2: Completed decoding.
+          decoder: 'ossec-exampled'
+          status: 'successful'
+          srcuser: 'test-user'
+          srcip: '192.168.1.1'
+          proto: 'test-protocol1'
+
+
+Now the useful fields have been extracted for this log message as well. Double checking the original log message, to make sure there were no regressions:
+
+.. code-block:: console
+
+
+   2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1
+
+
+   **Phase 1: Completed pre-decoding.
+          full event: '2013-11-01T10:01:04.600374-04:00 arrakis ossec-exampled[9123]: test connection from 192.168.1.1 via test-protocol1'
+          hostname: 'arrakis'
+          program_name: 'ossec-exampled'
+          log: 'test connection from 192.168.1.1 via test-protocol1'
+
+   **Phase 2: Completed decoding.
+          decoder: 'ossec-exampled'
+          srcip: '192.168.1.1'
+          proto: 'test-protocol1'
+
+
 
