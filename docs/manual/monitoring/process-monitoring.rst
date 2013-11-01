@@ -10,8 +10,7 @@ Overview
 We love logs. Inside OSSEC we treat everything as if it is a log and parse it
 appropriately with our rules. However, some information is not available in log
 files but we still want to monitor it. To solve that gap, we added the ability
-to monitor the output of commands via OSSEC, and treat the output of those commands
- just like they were log files.
+to monitor the output of commands via OSSEC, and treat the output of those commands just like they were log files.
 
 Configuration examples
 ---------------------- 
