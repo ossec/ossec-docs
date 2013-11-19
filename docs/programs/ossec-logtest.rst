@@ -84,13 +84,13 @@ osssec-logtest argument options
 
     .. note::
 
-      Only this only works for the last line so passing many lines into ossec-logtest with 
-      this argument does not make sense. 
+      This only works for the last, line so passing many lines into ossec-logtest with 
+      this argument may not provide the desired results.
 
     .. note::
 
-      This code as all ossec-logtest code requires access to all ossec configuation files.  
-      This is a bug and will be corrected.  https://bitbucket.org/jbcheng/ossec-hids/issue/61/ossec-logtest-must-be-used-with-a-full
+      This ossec-logtest code requires access to all ossec configuation files.  
+      This is a bug and will be corrected. It is documented in issue #`61 <https://bitbucket.org/jbcheng/ossec-hids/issue/61/ossec-logtest-must-be-used-with-a-full>`_
 
     .. code-block:: console
 
