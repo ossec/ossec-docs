@@ -77,6 +77,34 @@ osssec-logtest argument options
 
     Analyze of input lines as if they are live events.  
 
+.. option:: -U <rule-id:alert-level:decoder-name> 
+
+    This option will cause ossec-logtest to return with an exit status other then zero unless 
+    the last line tested matches the arguments passed.  
+
+    .. note::
+
+      Only this only works for the last line so passing many lines into ossec-logtest with 
+      this argument does not make sense. 
+
+    .. note::
+
+      This code as all ossec-logtest code requires access to all ossec configuation files.  
+      This is a bug and will be corrected.  https://bitbucket.org/jbcheng/ossec-hids/issue/61/ossec-logtest-must-be-used-with-a-full
+
+    .. code-block:: console
+
+      % echo "Aug 29 15:33:13 ns3 named[464]: client 217.148.39.3#1036: query (cache) denied" | sudo /va/ossec/bin/ossec-logtest -U 12108:0:named 2&>1 > /dev/null
+      % echo $?
+      0
+      % echo "Aug 29 15:33:13 ns3 XXXXXX[464]: client 217.148.39.3#1036: query (cache) denied" | sudo /var/ossec/bin/ossec-logtest -U 12108:0:named 2&>1 > /dev/null
+      % echo $? 
+      3
+
+
+
+    
+
 
 Caveats
 ~~~~~~~
