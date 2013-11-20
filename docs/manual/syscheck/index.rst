@@ -132,7 +132,7 @@ In this case, the directories /etc, /usr/bin and /usr/sbin will be monitored in 
 .. warning:: 
 
     The real time monitoring will not start immediately. First ossec-syscheckd needs to scan the file system and add each sub-directory to the realtime queue.
-    It can take up to 30 minutes for this to finish (wait for the log "ossec-syscheckd: INFO: Starting real time file monitoring" ).
+    It can take a while for this to finish (wait for the log "ossec-syscheckd: INFO: Starting real time file monitoring" ).
 
 .. note:: 
 
