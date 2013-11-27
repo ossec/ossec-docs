@@ -41,8 +41,9 @@ to monitor firewalls, routers, and even Unix systems.
 Virtualization/VMware
 ~~~~~~~~~~~~~~~~~~~~~
 
-OSSEC allows you to install the agent on the guest operating systems or inside 
-the host (VMware ESX). With the agent installed inside VMware ESX you can get 
+OSSEC allows you to install the agent on the guest operating systems. 
+It may also be installed inside some versions of VMWare ESX, but this 
+may cause support issues. With the agent installed inside VMware ESX you can get 
 alerts about when a VM guest is being installed, removed, started, etc. It 
 also monitors logins, logouts and errors inside the ESX server. In addition to 
 that, OSSEC performs the Center for Internet Security (CIS) checks for VMware, 
