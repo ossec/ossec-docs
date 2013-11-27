@@ -5,8 +5,8 @@
 OSSEC Architecture
 ==================
 
-OSSEC is composed of multiple pieces. It has a central manager monitoring 
-everything and receiving information from agents, syslog, databases and from 
+OSSEC is composed of multiple pieces. It has a central manager for monitoring 
+and receiving information from agents, syslog, databases, and from 
 agentless devices.
 
 
@@ -14,30 +14,29 @@ Manager
 ~~~~~~~
 
 The manager is the central piece of the OSSEC deployment. It stores the file 
-integrity checking databases, the logs, events and system auditing entries. 
-All the rules, decoders and major configuration options are stored centrally in 
-the manager, making it easy to administer even a large number of agents.
+integrity checking databases, the logs, events, and system auditing entries. 
+All the rules, decoders, and major configuration options are stored centrally in 
+the manager; making it easy to administer even a large number of agents.
 
 Agents
 ~~~~~~
 
-The agent is a small program or collection of programs installed on the systems 
-you desire to monitor. The agent will collect information in real time and forward 
-it to the manager for analysis and correlation. It has a very small memory and CPU 
-footprint by default, not affecting system?\x80\x99s usage.
+The agent is a small program, or collection of programs, installed on the systems 
+to be monitored. The agent will collect information and forward 
+it to the manager for analysis and correlation. Some information is collected in 
+real time, others periodically. It has a very small memory and CPU 
+footprint by default, not affecting the system?\x80\x99s usage.
 
-*Agent security*: It runs with a low privilege user (created during the 
+*Agent security*: It runs with a low privilege user (generally created during the 
 installation) and inside a chroot jail isolated from the system. Most of the 
-agent configuration is pushed from the manager, with just some of configuration 
-stored locally on each agent. In case these local options are changed, the manager 
-will receive the information and will generate an alert.
+agent configuration can be pushed from the manager. 
 
 Agentless
 ~~~~~~~~~
-For systems that you can’t install an agent, OSSEC allows you to perform file 
-integrity monitoring on them without the agent installed. It can be very useful 
-to monitor firewalls, routers and even Unix systems where you are not allowed 
-to install the agent.
+For systems that an agent cannot be installed on, the agentless support may allow 
+integrity checks to be performed. Agentless scans can be used 
+to monitor firewalls, routers, and even Unix systems. 
+
 
 Virtualization/VMware
 ~~~~~~~~~~~~~~~~~~~~~
