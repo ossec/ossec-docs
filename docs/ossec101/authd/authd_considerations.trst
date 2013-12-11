@@ -1,7 +1,0 @@
-.. _ossec_101_authd_considerations:
-
-
-Currently ``ossec-authd`` and ``agent-auth`` do not authenticate the other side. 
-The communication is encrypted, but there is nothing stopping an attacker with access to the ossec-authd port from registering fake agents.
-
-
