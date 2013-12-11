@@ -7,8 +7,14 @@ File Monitoring
 Overview 
 --------
 
-OSSEC has a process named ossec-logcollector that monitors log files for new events, and forwards them to other processes for analysis. The configuration of ossec-logcollector is done in ``/var/ossec/etc/ossec.conf``.
+OSSEC has a process named ``ossec-logcollector`` that monitors the configured log files for new events. 
+When new log messages arrive, it forwards them to other processes for analysis or transport to an OSSEC server. 
 
+Configuration
+-------------
+
+The configuration for ossec-logcollector exists in ``/var/ossec/etc/ossec.conf`` in the ``<ossec_config>`` section.
+The syntax can be found in the `localfile syntax page <../../syntax/head_ossec_config.localfile.html>`_
 
 Configuration examples
 ---------------------- 
