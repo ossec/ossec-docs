@@ -6,7 +6,7 @@ Sending alerts to picviz
 
 .. warning:: 
 
-    PicViz support is experimental, and not fully supported.  Bug reports and 
+    PicViz support is very experimental, and not fully supported.  Bug reports and 
     improvements are needed. 
 
 Installation of PicViz
