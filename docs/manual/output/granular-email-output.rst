@@ -10,7 +10,7 @@ OSSEC allows very granular options for the e-mail alerting and its format (full 
     section of the configuration or no emails will be sent at all.
 
 
-.. include ../../granular_email_examples.trst
+.. include ../../examples/output/granular_email_examples.trst
 
 
 

@@ -13,35 +13,4 @@ All of these configuration options should be specified in the /var/ossec/etc/oss
 
 .. include:: ../../syntax/ossec_config.reports.trst 
 
-Examples
---------
-
-Receive a summary of all authentication success alerts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The following example will send a daily report  of all
-authentication_success alerts, sorted by the related field srcip.
-
-.. code-block:: xml 
-    
-    <ossec_config>
-        <reports>
-            <category>authentication_success</category>
-            <user type="relation">srcip</user>
-            <title>Daily report: Successful logins</title>
-            <email_to>me@example.com</email_to>
-            
-
-Receive summary of all File integrity monitoring alerts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The following example will send a report
-of all events related to syscheck.  
-
-.. code-block:: xml 
-
-    <ossec_config>
-        <reports>
-            <category>syscheck</category>
-            <title>Daily report: File changes</title>
-            <email_to>me@example.com</email_to>
+.. include: ../../examples/output/report_output_examples.trst
