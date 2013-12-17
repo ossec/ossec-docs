@@ -79,3 +79,4 @@ rule, location and the actual event that generated it):
     srcip: 192.168.2.190; user: root; Jul 25 13:26:24 slacker sshd[20440]: Accepted password for root from 192.168.2.190 port 49737 ssh2
 
 
+.. include:: syslog_output_examples.trst

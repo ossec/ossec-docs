@@ -18,7 +18,7 @@
 
 .. xml:element:: level
 
-    - Alert level of the alerts to forward.
+    - Minimum alert level of the alerts to be forwarded.
 
     - **Allowed:** 1 - 16 
 

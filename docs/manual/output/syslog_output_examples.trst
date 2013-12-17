@@ -1,0 +1,33 @@
+Examples:
+---------
+
+Send all alerts to 10.10.10.125:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: xml
+
+   <syslog_output>
+     <server>10.10.10.125</server>
+   </syslog_output>
+
+Send all alerts to 10.10.10.126 in CEF:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: xml
+
+   <syslog_output>
+     <server>10.10.10.126</server>
+     <format>cef</format>
+   </syslog_output>
+
+
+Send all alerts level 6 and above to 10.10.10.127 on port 515:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: xml
+
+   <syslog_output>
+     <server>10.10.10.127</server>
+     <port>515</port>
+     <level>6</level>
+   </syslog_output>
