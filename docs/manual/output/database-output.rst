@@ -2,13 +2,13 @@
 .. _manual-out-prelude:
 
 Sending output to a Database
-============================
+----------------------------
 
 OSSEC supports MySQL and PostgreSQL database outputs.
 
 
 Configuration options
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 These configurations options can be specified in the server or local install ossec.conf file.
 
@@ -17,7 +17,7 @@ These configurations options can be specified in the server or local install oss
 
 
 Enabling Database Support
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
 
@@ -33,7 +33,7 @@ database support.
     # ./install.sh 
 
 Enable Database output in the configuration
-------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 After installation is complete database support needs to be enabled. 
 The following command will enable the database daemon on the next restart. 
@@ -44,7 +44,7 @@ The following command will enable the database daemon on the next restart.
 
 
 Database Specific Setup
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
     
