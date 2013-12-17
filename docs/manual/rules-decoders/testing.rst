@@ -7,7 +7,7 @@ Testing OSSEC rules/decoders
 The first problem most people have when troubleshooting OSSEC or trying to write new 
 rules and decoders is how to test them. In the past, this would require
 manually restarting OSSEC or creating a testing installation. As of 
-version 1.6, there is a tool to simplify this task (ossec-testrule).
+version 1.6, there is a tool to simplify this task (ossec-logtest).
 
 Testing using ossec-logtest
 ---------------------------
