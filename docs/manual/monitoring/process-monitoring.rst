@@ -101,7 +101,7 @@ After that, I add a rule to alert when its output changes:
         <match>ossec: output: 'netstat -tan |grep LISTEN</match>
         <check_diff />
         <description>Listened ports have changed.</description>
-    </rule>'
+    </rule>
 
 Note that we use the ``<check_diff />`` option. The first time it receives the 
 event, it will store in an internal database. Every time it receives the same 
