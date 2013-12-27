@@ -44,6 +44,10 @@ parameter. In this example, I am adding a Linux box (example.net) and a PIX fire
     pix@pix.fw.local
     root@example.net
 
+.. note::
+
+   ``register_host.sh`` is a shell script, special characters may need to be escaped to not be interpreted by the shell.
+
 If you want to use public key authentication instead of
 passwords, you need to provide NOPASS as the password and
 create the public key:
