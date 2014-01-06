@@ -23,7 +23,7 @@ to setup a cron job to dump the output of ``df -h`` to a log file (maybe
 /var/log/df.log) and configure OSSEC to look at it.
 
 As of OSSEC version 2.3 you can monitor commands directly in OSSEC 
-following configuration:
+following configuration (in /var/ossec/etc/ossec.conf):
 
 .. code-block:: xml 
 
@@ -57,7 +57,7 @@ example:
         <command>uptime</command>
     </localfile>
 
-And in the rule:
+And in the rule (in /var/ossec/rules/local_rules.xml):
 
 .. code-block:: xml 
 
