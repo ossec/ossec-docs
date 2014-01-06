@@ -213,6 +213,13 @@
 
     - **Example:** <same_location />
 
+.. xml:element:: same_user
+
+    - Specifies that the user must be the same.
+    - This option is used in conjunction with frequency_ an timeframe_.
+
+    - **Example:** <same_user />
+
 .. xml:element:: description 
 
     - Rule description. 
