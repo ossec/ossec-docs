@@ -4,8 +4,9 @@ Binary Installation
 ===================
 
 On some systems a compatible compiler is not available, this leads to problems for the
-standard OSSEC install method. To work around this OSSEC supports being built on one
-system and installed on another.
+standard OSSEC install method. To work around this OSSEC supports multiple methods of binary installation.
+One is building OSSEC on one system and installing it on another. A second method is installation via RPM.
+Debian packages are also planned.
 
 .. note:: 
 
