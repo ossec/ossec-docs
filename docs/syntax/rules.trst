@@ -185,23 +185,30 @@
 
     - **Allowed:** Any level from 1 to 16 
 
-.. xml:element:: same_source_ip 
+.. xml:element:: same_id
 
-    - Specifies that the source ip must be the same. 
+    - Specifies that the decoded id must be the same.
     - This option is used in conjunction with frequency_ and timeframe_.
 
-    **Example:** <same_source_ip />
+    - **Example:** <same_id />
+
+.. xml:element:: same_source_ip 
+
+    - Specifies that the decoded source ip must be the same. 
+    - This option is used in conjunction with frequency_ and timeframe_.
+
+    - **Example:** <same_source_ip />
 
 .. xml:element:: same_source_port 
 
-    - Specifies that the source port must be the same. 
+    - Specifies that the decoded source port must be the same. 
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_source_port />
 
 .. xml:element:: same_dst_port
 
-    - Specifies that the destination port must be the same.
+    - Specifies that the decoded destination port must be the same.
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_source_port />
@@ -215,7 +222,7 @@
 
 .. xml:element:: same_user
 
-    - Specifies that the user must be the same.
+    - Specifies that the decoded user must be the same.
     - This option is used in conjunction with frequency_ an timeframe_.
 
     - **Example:** <same_user />
