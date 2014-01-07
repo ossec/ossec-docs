@@ -19,10 +19,10 @@ __ OSSEC Book install_
     installation-windows
     installation-binary.rst
     install-virtual-server.rst
-    compile-ossec-mingw
     compile-ossec-on-windows
+    compile-ossec-mingw
     deployment_with_cfengine
-
+    updates
 
 
 

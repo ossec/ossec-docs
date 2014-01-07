@@ -1,19 +1,19 @@
 
 .. _compile-ossec-on-windows: 
 
-Compiling OSSEC on Windows:
-===========================
-
-Originally posted `Compiling the OSSEC Windows Agent on Windows <http://www.immutablesecurity.com/index.php/2010/07/06/compiling-the-ossec-agent-on-windows/>`_ by `mstarks <http://www.immutablesecurity.com/index.php/author/mstarks/>`_, duplicated here with permission. 
-
 Compiling the OSSEC Windows Agent on Windows
 ============================================
+
+.. note::
+
+   Originally posted `Compiling the OSSEC Windows Agent on Windows <http://www.immutablesecurity.com/index.php/2010/07/06/compiling-the-ossec-agent-on-windows/>`_ by `mstarks <http://www.immutablesecurity.com/index.php/author/mstarks/>`_, duplicated here with permission. 
 
 Most people that use the OSSEC Windows agent `download a pre-compiled <http://www.ossec.net/main/downloads/>`_ copy from the OSSEC site. While that is a good option for many individual users, it may not suit those with more specific needs and/or those in enterprise environments. Users who fall into those categories could benefit from customizing the agent and maintaining internal builds in order to suit their individual needs.
 
 There are already instructions on `how to compile the Windows agent on Linux <http://dcid.me/2009/06/compiling-the-windows-agent-from-a-linux-system/>`_, but ironically the process doesn't work so well on Windows. I had a need to make this work on Windows, so I thought I would share the process with you.
 
-First, there are some prerequisites.  You.ll need:
+Requirements:
+-------------
 
 * The `Nullsoft Scriptable Install System <http://nsis.sourceforge.net/Download>`_ (NSIS)
 * The `Minimalist GNU for Windows (MinGW) compiler http://sourceforge.net/downloads/mingw/>`_
@@ -23,7 +23,7 @@ First, there are some prerequisites.  You.ll need:
 * The latest OSSEC for Unix/Linux <http://www.ossec.net/main/downloads/>`_ (this contains the Windows source code)
 
 Here are the steps:
-===================
+-------------------
 
 #. Download and install the required programs. Be sure to pay special attention to the `steps for properly installing and configuring MinGW <http://www.mingw.org/wiki/Getting_Started>`_, particularly the part about modifying the PATH environment variable.
 #. Next, we.re going to extract OSSEC using 7-Zip. To do so, simply right-click on the file and select 7-Zip, extract to "folder name.tar," where folder name is the name of the package. This decompresses the archive. Navigate within that folder and repeat this step to untar the archive. At this point, you should see all of the files in the package.
