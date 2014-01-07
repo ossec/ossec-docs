@@ -4,11 +4,8 @@
 Installations requirements
 ==========================
 
-UNIX
-==== 
-
-For UNIX systems, OSSEC just requires gcc and libc. However, 
-you always have the option to pre-compile it on one system and 
+For UNIX systems, OSSEC only requires gcc, libc, and preferably OpenSSL. 
+However, you always have the option to pre-compile it on one system and 
 move the binaries to the final box. 
 
 Ubuntu
