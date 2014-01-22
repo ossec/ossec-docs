@@ -12,6 +12,9 @@ OVF is supported by a number of platforms including VMWare and VirtualBox.
 .. note::
 
    The password for all accounts on this system including root, user, OSSEC Web UI, and PHPMyAdmin is "``_0SSEC_``" (that is a zero, not a capital "oh").
+
+.. note::
+
    The username for the OSSEC Web UI is just "``user``," and for phpMyAdmin is "``root``".
 
 
