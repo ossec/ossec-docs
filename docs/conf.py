@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-sys.path.append("docs")
+sys.path.append(".")
 extensions = [
         'sphinx.ext.autodoc', 
         'sphinx.ext.intersphinx', 
@@ -153,6 +153,7 @@ html_static_path = ['_static']
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
     '**': ['localtoc.html', 'ossec_links.html','searchbox.html'],
+    #'**': ['localtoc.html', 'searchbox.html'],
 }
 
 # Additional templates that should be rendered to pages, maps page names to
