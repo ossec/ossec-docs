@@ -34,16 +34,14 @@ page`.
         # cat ossec-hids-2.7.1_checksum.txt
         MD5 (ossec-hids-2.7.1.tar.gz) = f4140ecf25724b8e6bdcaceaf735138a
         SHA1 (ossec-hids-2.7.1.tar.gz) = 258b9a24936e6b61e0478b638e8a3bfd3882d91e
-        MD5 (ossec-agent-win32-2.7.1.exe) = 7d2392459aeab7490f28a10bba07d8b5
-        SHA1 (ossec-agent-win32-2.7.1.exe) = fdb5225ac0ef631d10e5110c1c1a8aa473e62ab4
         # md5sum ossec-hids-2.7.1.tar.gz 
         MD5 (ossec-hids-2.7.1.tar.gz) = f4140ecf25724b8e6bdcaceaf735138a
         # sha1sum ossec-hids-2.7.1.tar.gz
         SHA1 (ossec-hids-2.7.1.tar.gz) = 258b9a24936e6b61e0478b638e8a3bfd3882d91e
 
 
-#. Extract the compressed package and run the “./install.sh” script (It will guide you 
-   through the installation).
+#. Extract the compressed package and run the ``install.sh`` script. It will guide you 
+   through the installation.
 
     .. code-block:: console 
 
