@@ -62,8 +62,8 @@ page`.
         # /var/ossec/bin/ossec-control start  
 
 
-install.sh walkthrough
-~~~~~~~~~~~~~~~~~~~~~~
+install.sh walkthrough for a server installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: console
    
