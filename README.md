@@ -1,4 +1,0 @@
-ossec-docs
-==========
-
-OSSEC Documentation 
