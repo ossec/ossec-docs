@@ -7,6 +7,7 @@ Fields:
 ^^^^^^^
 
 .. code-block:: console
+
   #Fields: date time action protocol src-ip dst-ip src-port dst-port size tcpflags tcpsyn tcpack tcpwin icmptype icmpcode info path
 
 
@@ -32,6 +33,7 @@ Large sample:
 ^^^^^^^^^^^^^
 
 .. code-block:: console
+
   2006-09-19 03:26:26 DROP UDP 172.20.73.241 239.255.255.250 2250 1900 315 - - - - - - - RECEIVE
   2006-09-19 03:26:26 DROP UDP 172.20.73.241 239.255.255.250 2250 1900 305 - - - - - - - RECEIVE
   2006-09-19 03:27:05 CLOSE UDP 192.168.72.12 10.20.72.186 3682 88 - - - - - - - - -
@@ -236,6 +238,7 @@ Sample 2:
 ^^^^^^^^^
 
 .. code-block:: console
+
   2006-09-20 02:59:03 OPEN TCP x.x.x.79 69.16.211.107 4328 110 - - - - - - - - -
   2006-09-20 02:59:03 OPEN TCP x.x.x.79 69.16.211.107 4329 110 - - - - - - - - -
   2006-09-20 02:59:03 OPEN TCP x.x.x.79 207.97.245.100 4336 110 - - - - - - - - -

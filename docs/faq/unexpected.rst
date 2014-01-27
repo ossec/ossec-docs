@@ -364,6 +364,7 @@ Some OSSEC HIDS users who have deployed the Windows agent have experienced situa
 A clue to what may be happening are alerts like these:
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2006 Oct 24 03:18:07
 

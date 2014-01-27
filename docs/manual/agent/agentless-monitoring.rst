@@ -127,7 +127,7 @@ something like “Started ossec-agentlessd” in the output. Before each agentle
 connection is started, OSSEC will do a configuration check to make sure
 everything is fine. Look at /var/ossec/logs/ossec.log for any error. If you see:
 
-.. code-block:: 
+.. code-block:: console
 
     2008/12/12 15:20:06 ossec-agentlessd: ERROR: Expect command not found (or bad arguments) for 'ssh_integrity_check_bsd'.
     2008/12/12 15:20:06 ossec-agentlessd: ERROR: Test failed for 'ssh_integrity_check_bsd' (127). Ignoring.'
@@ -142,13 +142,13 @@ Ubuntu you can do the following to install:
 
 After installing expect, you can restart OSSEC and you should see: 
 
-.. code-block:: 
+.. code-block:: console
 
     2008/12/12 15:24:12 ossec-agentlessd: INFO: Test passed for 'ssh_integrity_check_bsd'.'
 
 When it connects to the remote system, you will also see:
 
-.. code-block:: 
+.. code-block:: console
 
     2008/12/12 15:25:19 ossec-agentlessd: INFO: ssh_integrity_check_bsd: root@example.net: Starting.
     2008/12/12 15:25:46 ossec-agentlessd: INFO: ssh_integrity_check_bsd: root@example.net: Finished.

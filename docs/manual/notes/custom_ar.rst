@@ -15,6 +15,7 @@ Creating the command:
 ^^^^^^^^^^^^^^^^^^^^^
 
 The first thing we need to do is to create a new "command" entry in the ossec config.
+
 .. code-block:: console
 
   <command>
@@ -104,6 +105,7 @@ After the configuration is done, you can restart OSSEC and test the configuratio
 I can run the logger command to simular a segmentation fault message.
 
 .. code-block:: console
+
   # /var/ossec/bin/ossec-control restart
   # logger "Segmentation Fault"
 
@@ -111,6 +113,7 @@ I can run the logger command to simular a segmentation fault message.
 You should get in the /var/ossec/logs/active-response.log, the following:
 
 .. code-block:: console
+
   Fri Jul 27 23:48:31 BRT 2007 /var/ossec/active-response/bin/mail-test.sh add - - 1185590911.25916 1002 /var/log/messages
 
 

@@ -15,6 +15,7 @@ Informational:
 ^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   [09/Dec/2006:05:04:15 +0000] INFO:https://1.2.3.4:9091
   [09/Dec/2006:05:04:15 +0000] INFO:Child started - pid 5800
   [09/Dec/2006:05:04:15 +0000] INFO:Zeus Admin Server running
@@ -28,6 +29,7 @@ Fatal:
 ^^^^^^
 
 .. code-block:: console
+
   [11/Mar/2007:00:26:18 +0000] FATAL:Zeus Admin Server already running (PID: 13709)
   [11/Mar/2007:00:26:52 +0000] FATAL:Zeus Admin Server already running (PID: 26890)
   [14/Mar/2007:14:10:01 +0000] SERIOUS:Node 1.2.3.3 (1.2.3.3:80) has failed - A monitor has detected a failure

@@ -5,6 +5,7 @@ Example of web scan detected by ossec (looking for Wordpress, xmlrpc and awstats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Mar 23 19:57:38
 
@@ -82,6 +83,7 @@ Web scan sample 4:
 ^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Aug 15 15:50:43
 
@@ -132,6 +134,7 @@ SSHD brute force:
 Example of a SSHD brute force attack.
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Jun 26 17:40:29
 
@@ -172,6 +175,7 @@ FTP Scan:
 Example of FTP scan detected by monitoring MS FTP logs.
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2006 Oct 19 04:57:59
 
@@ -238,6 +242,7 @@ Multiple firewall denies on the Windows firewall:
 
 Example of multiple firewall denies detected.
 .. code-block:: console
+
   Received From: (ossec64) 192.168.2.25->\Windows\pfirewall.log
   Rule: 4151 fired (level 10) -> "Multiple Firewall drop events from same source."
   Portion of the log(s):
@@ -262,6 +267,7 @@ Multiple spam attempts:
 Example of spam attempts detected (postix log analysis)
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2006 Oct 24 18:46:29
 
@@ -284,6 +290,7 @@ SQL Injection attempt detected:
 Example of an SQL injection detected by ossec:
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2006 Sep 12 09:45:56
 
@@ -305,6 +312,7 @@ Internal system possibly compromised with IrnBot:
 http://www.offensivecomputing.net/?q=node/378
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Jan 30 04:38:37
 
@@ -330,6 +338,7 @@ http://www.offensivecomputing.net/?q=node/378
 Attempts to submit spammer comments to the ossec blog:
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Jun 22 09:02:41
 
@@ -355,6 +364,7 @@ E-mail scan (vpopmail):
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Aug 15 21:22:53
 
@@ -382,6 +392,7 @@ Not really an attack, but a serious issue if your web server is out of space.
 
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Aug 16 22:49:38
 
@@ -406,6 +417,7 @@ Someone trying our web application to display the latest rules. Of course, it di
 (but we return code 200 on all cases).
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2007 Aug 27 21:43:48
 
@@ -429,6 +441,7 @@ An alert when an application is installed on Windows. Not always an attack, but 
 a computer misuse.
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2008 Aug 27 14:37:36
 
@@ -446,6 +459,7 @@ Virtual machine being shut down:
 By monitoring VMware ESX logs, you can get alerts when a virtual machine is stopped:
 
 .. code-block:: console
+
   OSSEC HIDS Notification.
   2008 Aug 28 15:53:11
 
