@@ -10,6 +10,7 @@ Configuring the Syslog servers
 In this example here, I am sending everything to server 192.168.4.1 and only the alerts above level 10 to 10.1.1.1:
 
 .. code-block:: console
+
     <syslog_output>
     <server>192.168.4.1</server>
     </syslog_output>

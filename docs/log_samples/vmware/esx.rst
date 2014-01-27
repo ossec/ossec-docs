@@ -5,6 +5,7 @@ From /var/log/vmware/hostd.log:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   [2008-07-17 23:57:30.128 'FirewallSystem' 3076445088 error] Failed to update service ntpd: vim.fault.PlatformConfigFault
   [2008-07-26 10:09:56.601 'vm:/vmfs/volumes/485a72e0-dd49e4f1-796c-001517761286/Nostalgia/Nostalgia.vmx' 123898800 info] State Transition (VM_STATE_RECONFIGURING -> VM_STATE_OFF)
   [2008-07-26 10:09:59.506 'vm:/vmfs/volumes/485a72e0-dd49e4f1-796c-001517761286/Nostalgia/Nostalgia.vmx' 68991920 info] State Transition (VM_STATE_OFF -> VM_STATE_POWERING_ON)
@@ -22,6 +23,7 @@ From /var/log/secure (user logins, etc):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Aug 25 06:01:10 hostname vmware-hostd[1863]: Accepted password for user root from 127.0.0.1
   Aug  7 11:05:34 localhost vmware-authd[9709]: login from 172.16.129.78 as 523b717c-4542-f5fc-c006-1644eb8f4330
   Aug 26 11:42:29 localhost vmware-hostd[1863]: Rejected password for user blablabla from 127.0.0.1

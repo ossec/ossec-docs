@@ -64,6 +64,6 @@ And looking at the agent you should see the new entry in the route table:
 If you run into any issues, look at the ossec.log file (on the agent) for any
 entry for ossec-execd. If you enabled it correctly, you will see:
 
-.. code-block:: 
+.. code-block:: console
 
     2008/08/20 11:53:49 ossec-execd: INFO: Started (pid: 3896).

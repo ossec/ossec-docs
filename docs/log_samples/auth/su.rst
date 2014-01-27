@@ -43,6 +43,7 @@ Ubuntu:
 ^^^^^^^
 
 .. code-block:: console
+
   Feb 12 15:47:40 localhost su[29149]: - pts/5 dcid:root
   Feb 12 15:47:45 localhost su[29150]: + pts/5 dcid:root
   Feb 12 15:11:41 enigma su[2936]: failed: ttyq4 changing from xx to root
