@@ -13,7 +13,7 @@ projects. This is revision 1 of the C4 specification.
 +-----------+-----------------------------------------------+
 | Editor    | Jeremy Rossi <jeremy at jeremyrossi dot com>  | 
 +-----------+-----------------------------------------------+
-| State     | Pending                                       | 
+| State     | Accepted                                      | 
 +-----------+-----------------------------------------------+
 | Origin    | http://rfc.zeromq.org/spec:22                 |
 +-----------+-----------------------------------------------+
