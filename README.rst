@@ -7,3 +7,4 @@ OSSEC Documentation
   :target: https://travis-ci.org/ossec/ossec-docs
 
 
+.. test
