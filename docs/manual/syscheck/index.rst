@@ -4,8 +4,8 @@
 Syscheck
 ========
 
-**Syscheck** is the name of the integrity checking process inside OSSEC. 
-It runs periodically to check if any configured file (or registry entry on Windows) has changed.
+**Syscheck** is the name of the integrity checking process inside OSSEC. It runs periodically 
+to check if any configured file (or registry entry on Windows) has changed.
 
 Why Integrity checking?
 -----------------------
@@ -35,7 +35,7 @@ Quick facts
 
 * How often does it run? 
   
-  - By default every 2 hours on agents and every 20 hours on servers, but the frequency or time/day are configurable.
+  - By default every 6 hours, but the frequency or time/day are configurable.
 
 * Where is the database stored? 
   
@@ -56,16 +56,14 @@ Quick facts
 Realtime options
 ----------------
 
-``ossec-syscheckd`` is able to check file integrity in near realtime on Windows and modern Linux distros. 
-Windows comes with support out of the box, but on Linux systems inotify packages may need to be installed. 
-Check for inotify dev packages, and possibly an inotify-tools package.
+``ossec-syscheckd`` is able to check file integrity in near realtime on Windows and modern Linux distros. Windows comes with support out of the box, but on Linux systems inotify packages may need to be installed. Check for inotify dev packages, and possibly an inotify-tools package.
 
 Configuration options
 ---------------------
 
-The configuration options can be specified in each agent's ossec.conf file, except 
-for the ``auto_ignore`` and ``alert_new_file`` which only apply to manager and local installs. 
-The ``ignore`` option applies to all agents if specified on the manager.
+These configuration options can be specified in each agent's ossec.conf file, except 
+for the ``auto_ignore`` and ``alert_new_file`` which apply to manager and local installs. The 
+``ignore`` option applies to all agents if specified on the manager.
 
 
 .. include:: ../../syntax/ossec_config.syscheck.trst 
