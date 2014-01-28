@@ -25,14 +25,6 @@ Manual & FAQ
 
    faq/index
 
-Development
-===========
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   oRFC/index
 
 Reference 
 =========
