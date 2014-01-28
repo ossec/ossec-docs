@@ -5,6 +5,7 @@ Log entries for Amavis from /var/log/maillog:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Jan 18 02:50:46 HOSTNAME amavis[22838]: (22838-08) ESMTP::10024 /var/amavis/tmp/amavis-20070117T174216-22838: <removes@espci.fr> -> <USERNAME@FQHOSTNAME.org> SIZE=11893 Received: from EMAILHOSTNAME ([127.0.0.1]) by localhost (EMAILHOSTNAME [127.0.0.1]) (amavisd-new, port 10024) with ESMTP for <USERNAME@FQHOSTNAME.org>; Thu, 18 Jan 2007 02:50:46 -0700 (MST)
   Jan 18 02:50:46 HOSTNAME amavis[22838]: (22838-08) Checking: yT709FGcUKJa [87.28.227.29] <removes@espci.fr> -> <USERNAME@FQHOSTNAME.org>
   Jan 18 02:50:46 HOSTNAME amavis[22838]: (22838-08) p004 1 Content-Type: multipart/related

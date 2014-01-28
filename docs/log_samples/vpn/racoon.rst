@@ -88,6 +88,7 @@ Now here are some samples of FAILLED logins from hackers trying to get in:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   2006-08-08 01:42:08: INFO: respond new phase 1 negotiation: 111.111.111.194[500]<=>222.155.15.88[500]
   2006-08-08 01:42:08: INFO: begin Identity Protection mode.
   2006-08-08 01:42:08: INFO: received Vendor ID: MS NT5 ISAKMPOAKLEY
@@ -99,6 +100,7 @@ Now here are some samples of FAILLED logins from hackers trying to get in:
 The interesting line is:
 
 .. code-block:: console
+
   2006-08-08 01:42:09: ERROR: couldn't find the pskey for 222.155.15.88. 
 
 Also, there is no INFO: ISAKMP-SA established... line because phase 1
@@ -112,6 +114,7 @@ options that need to be set the same way on both sides to establish a
 VPN
 
 .. code-block:: console
+
   2006-07-22 08:19:43: INFO: respond new phase 1 negotiation: 
   2006-07-22 08:19:43: INFO: begin Identity Protection mode.
   2006-07-22 08:19:43: INFO: received Vendor ID: MS NT5 ISAKMPOAKLEY

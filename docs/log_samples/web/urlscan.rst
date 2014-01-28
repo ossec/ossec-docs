@@ -2,6 +2,7 @@ Urlscan Log samples
 -------------------
 
 .. code-block:: console
+
   [11-28-2002 - 08:31:41] ---------------- Initializing UrlScan.log ----------------
   [11-28-2002 - 08:31:41] -- Filter initialization time: [11-28-2002 - 08:31:41] --
   [11-28-2002 - 08:31:41] ---------------- UrlScan.dll Initializing ----------------

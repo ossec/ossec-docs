@@ -25,6 +25,7 @@ Full samples:
 ^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Jun 9 08:56:03 www vpopmail[65826]: vchkpw-pop3: vpopmail user not found postmaster@:208.210.222.68
   Jun 9 08:56:30 www vpopmail[65827]: vchkpw-smtp: password fail (pass: '<65825.1118321790@mail.xxx.com>') myuserid@xxx.com:208.210.222.68
   Jun 9 09:04:16 www vpopmail[65851]: vchkpw-pop3: vpopmail user not found myuserid@:208.210.222.68
@@ -51,6 +52,7 @@ Brute Force Attack:
 ^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Aug 12 11:52:52 mail vpopmail[4162]: vchkpw-pop3: vpopmail user not found support@:69.3.64.3
   Aug 12 11:52:52 mail vpopmail[4171]: vchkpw-pop3: vpopmail user not found info@:69.3.64.3
   Aug 12 11:52:53 mail vpopmail[4187]: vchkpw-pop3: vpopmail user not found help@:69.3.64.3
@@ -82,6 +84,7 @@ Succesfull login:
 ^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Jul  7 11:23:52 srv vpopmail[20057]: vchkpw-pop3: (PLAIN) login success user@my_domain:1.2.3.4
   Jul  7 12:57:06 srv vpopmail[21466]: vchkpw-pop3s: (PLAIN) login success user@my_domain:1.2.3.4
   Jul  5 07:45:29 srv vpopmail[31411]: vchkpw-imaps: (PLAIN) login success user@my_domain:1.2.3.4
@@ -95,6 +98,7 @@ Bad password:
 ^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Jul  7 07:10:18 srv vpopmail[4800]: vchkpw-pop3: password fail (pass: 'test') user@my_domain:1.2.3.4
   Jul  7 12:37:11 srv vpopmail[21183]: vchkpw-pop3s: password fail (pass: 'test1') user1@my_domain:1.2.3.4
   Jul  6 10:22:55 srv vpopmail[18934]: vchkpw-imap: password fail (pass: 'aaaa') user@my_domain:192.168.1.19
@@ -105,6 +109,7 @@ or if no password given:
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Jul  5 16:02:13 srv vpopmail[4160]: vchkpw-pop3: null password given oneone1:121.243.18.134
   Jul  9 10:19:58 srv vpopmail[5676]: vchkpw-webmail: null password given user@my_domain:127.0.0.1
 
@@ -114,6 +119,7 @@ Invalid user:
 ^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Jun 22 16:30:50 srv vpopmail[8581]: vchkpw-smtp: vpopmail user not found webmaster@:58.62.86.10
   Jul  5 15:59:00 srv vpopmail[3840]: vchkpw-pop3: vpopmail user not found done@:121.243.18.134
   Jul 12 16:19:31 srv vpopmail[25240]: vchkpw-webmail: vpopmail user not found a@:127.0.0.1

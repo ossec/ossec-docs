@@ -103,6 +103,7 @@ type it in and press ENTER.
 As the final step in creating an agent, you have to confirm adding the agent:
 
 .. code-block:: console
+
     Agent information:
        ID:002
        Name:agent1

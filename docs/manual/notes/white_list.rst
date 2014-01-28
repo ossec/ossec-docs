@@ -11,7 +11,8 @@ White list an IP and a network
 
 In this example, the 10.1.0.0/16 network and IP 1.2.3.4 will not be blocked:
 
-.. code-block:: console
+.. code-block:: xml
+
   <global>
     <white_list>127.0.0.1</white_list>
     <white_list>10.1.0.0/16</white_list>
@@ -23,7 +24,8 @@ In this example, the 10.1.0.0/16 network and IP 1.2.3.4 will not be blocked:
 CIDR addresses can also be used to white list whole networks:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: console
+.. code-block:: xml
+
   <global>
     <white_list>192.168.2.0/24</white_list>
     <white_list>10.0.0.0/8</white_list>
@@ -36,7 +38,8 @@ For DNS servers
 
 For some DNS servers it might be a good idea to ignore all the DNS root servers, so they are never blocked:
 
-.. code-block:: console
+.. code-block:: xml
+
   <white_list>198.41.0.4</white_list>
   <white_list>192.228.79.201</white_list>
   <white_list>192.33.4.12</white_list>

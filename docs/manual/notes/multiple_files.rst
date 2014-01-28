@@ -20,21 +20,26 @@ For example, if you have a directory structure like this:
   /var/log/hostn/bb.log, xyz.log
 
 You can just add one entry in the localfile to monitor all these logs:
+
 .. code-block:: console
 
-  <localfile>
-   <log_format>syslog</log_format>
-   <location>/var/log/host*/*.log</location>
-  </localfile>
+    <localfile>
+      <log_format>syslog</log_format>
+      <location>/var/log/host*/*.log</location>
+    </localfile>
 
 This tip can make large configurations much simpler.
 
 For Windows Agents
 ^^^^^^^^^^^^^^^^^^
 
-For the Windows agent, the built-in globing doesn't work. At time of writing (OSSEC version 1.5) you have to use a script to auto-generate ``ossec.conf`` if you want to monitor many log files without having to manually enter them. Here's an example batch file to get you started:
+For the Windows agent, the built-in globing doesn't work. At time of writing (OSSEC 
+version 1.5) you have to use a script to auto-generate ``ossec.conf`` if you want to 
+monitor many log files without having to manually enter them. Here's an example 
+batch file to get you started:
 
 .. code-block:: console
+
   @echo off
 
   set targetfile="C:\Program Files\ossec-agent\ossec.conf"
@@ -48,7 +53,12 @@ For the Windows agent, the built-in globing doesn't work. At time of writing (OS
   net stop "OSSEC Hids"
   net start "OSSEC Hids"
 
-Adjust the "for..in" globbing line as needed. In this example, I'm monitoring logs for multiple IIS sites which are all in D:\Logs. Save it into a file with a .bat extension and put it somewhere on your hard drive. Create a file named ``ossec_template.conf`` in the **`same directory** as the batch file. You can probably just copy your current ``ossec.conf`` for this file, as this script will only append to it. You can then set up a scheduled task to run the batch file to automatically keep your ossec.conf up to date. 
+Adjust the "for..in" globbing line as needed. In this example, I'm monitoring logs for multiple 
+IIS sites which are all in D:\Logs. Save it into a file with a .bat extension and put it 
+somewhere on your hard drive. Create a file named ``ossec_template.conf`` in 
+the **`same directory** as the batch file. You can probably just copy your current 
+``ossec.conf`` for this file, as this script will only append to it. You can then set 
+up a scheduled task to run the batch file to automatically keep your ossec.conf up to date. 
 
 .. note:
 

@@ -2,6 +2,7 @@ Log Samples for VM-POP3d
 ------------------------
 
 .. code-block:: console
+
   May 15 06:54:43 servername vm-pop3d[24029]: Session ended for no user from 70.89.46.205
   May 15 06:54:43 servername vm-pop3d[24110]: User 'jobs' - failed auth, from=70.89.46.205
   May 15 06:54:44 servername vm-pop3d[24109]: Session ended for no user from 70.89.46.205

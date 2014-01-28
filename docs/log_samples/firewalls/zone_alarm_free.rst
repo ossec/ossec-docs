@@ -11,6 +11,7 @@ Filename = ZALog.txt:
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   ZoneAlarm Logging Client v6.5.737.000
   Windows XP-5.1.2600-Service Pack 2-SMP
   type,date,time,source,destination,transport (Security)
@@ -79,6 +80,7 @@ More log samples showing different kinds of entries:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   PE,2006/09/09,22:15:42 -5:00 GMT,Cisco Systems VPN Client,C:\Program Files\Cisco Systems\VPN Client\cvpnd.exe,127.0.0.1:62516,N/A
   PE,2006/09/09,22:15:46 -5:00 GMT,tcsd_win32.exe,C:\Program Files\NTRU Cryptosystems\NTRU Hybrid TSS v2.0.7\bin\tcsd_win32.exe,0.0.0.0:10001,N/A
   PE,2006/09/09,22:15:58 -5:00 GMT,Symantec AntiVirus,C:\Program Files\Symantec_Client_Security\Symantec AntiVirus\Rtvscan.exe,172.16.100.237:2967,N/A
@@ -100,11 +102,13 @@ More log samples showing different kinds of entries:
 
 
 .. code-block:: console
+
   ACCESS,2006/09/26,13:14:36 -5:00 GMT,RogueScannerWin32 was unable to obtain permission for connecting to the Internet (169.254.207.118:Port 7000); access was denied.,N/A,N/A
   PE,2006/09/26,13:14:36 -5:00 GMT,RogueScannerWin32,C:\Program Files\Network Chemistry\RogueScanner GUI\RogueScannerGUI.exe,169.254.207.118:7001,N/A
 
 
 .. code-block:: console
+
   FWOUT_OK,2006/09/26,21:05:06 -5:00 GMT,10.57.0.2:68,10.57.0.138:67,UDP
   FWIN_OK,2006/09/27,08:32:14 -5:00 GMT,0.0.0.0:68,255.255.255.255:67,UDP
   FWIN_OK,2006/09/27,09:05:58 -5:00 GMT,172.16.1.64:68,255.255.255.255:67,UDP

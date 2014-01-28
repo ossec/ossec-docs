@@ -32,6 +32,7 @@ Insufficient storage:
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Sep  4 01:14:35 vector postfix/smtpd[15337]: NOQUEUE: reject: MAIL from 89.pool85-60-78.dynamic.orange.es[85.60.78.89]: 452 4.3.1 Insufficient system storage; proto=ESMTP helo=<89.pool85-60-78.dynamic.orange.es>
   Sep  4 02:24:39 vector postfix/smtpd[16863]: NOQUEUE: reject: MAIL from 217-133-56-239.b2b.tiscali.it[217.133.56.239]: 452 4.3.1 Insufficient system storage; proto=ESMTP
 helo=<217-133-56-239.b2b.tiscali.it>
@@ -43,6 +44,7 @@ Some postfix errors:
 ^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Mar 15 06:25:12 mframe1 postfix/postfix-script[23423]: fatal: the Postfix mail system is already running
   Jan 24 06:32:47 mframe1 postfix/smtp[8377]: fatal: unknown service: smtp/tcp
   Jan 14 16:30:24 mframe1 postfix[662]: fatal: usage: postfix [-c config_dir] [-Dv] command

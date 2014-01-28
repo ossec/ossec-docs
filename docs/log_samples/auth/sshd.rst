@@ -49,6 +49,7 @@ Rule to help OSSEC recognise this error as nothing serious:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   <rule id="100032" level="0">
     <if_sid>5700</if_sid>
     <match>Software caused connection abort</match>
