@@ -1,4 +1,3 @@
-
 .. _manual-syscheck:
 
 Syscheck
@@ -149,7 +148,7 @@ Report Changes
 
 OSSEC supports sending diffs when changes are made to text files on Linux and unix systems.
 
-Configuring syscheck to show diffs is simple, add ``report_changes="yes"`` to the ``<directories`` option.
+Configuring syscheck to show diffs is simple, add ``report_changes="yes"`` to the ``<directories`` option. 
 
 For example:
 
@@ -162,7 +161,11 @@ For example:
 
 .. notes::
 
-    Report Changes will only work with text files, and the changes are stored on the agent 
-    inside ``/var/ossec/queue/diff/local/dir/file``.
+    Report Changes can only work with text files, and the changes are stored on the agent 
+    inside ``/var/ossec/queue/diff/local/dir/file``. 
+    
+    If OSSEC has not been compiled with libmagic support, report_changes will copy any file 
+    designated, e.g. mp3, iso, executable, /chroot/dev/urandom (which would fill your hard drive). 
+    So unless libmagic is used, be very carefull on which directory you enable report_changes.
 
 .. include:: ../../faq/syscheck.rst
