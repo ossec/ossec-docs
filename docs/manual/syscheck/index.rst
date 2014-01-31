@@ -149,17 +149,16 @@ Report Changes
 OSSEC supports sending diffs when changes are made to text files on Linux and unix systems.
 
 Configuring syscheck to show diffs is simple, add ``report_changes="yes"`` to the ``<directories`` option. 
-
 For example:
 
-.. code-block:: xml
+.. code-block:: xml 
 
     <syscheck>
         <directories report_changes="yes" check_all="yes">/etc</directories>
         <directories check_all="yes">/bin,/sbin</directories>
     </syscheck>
 
-.. notes::
+.. note:: 
 
     Report Changes can only work with text files, and the changes are stored on the agent 
     inside ``/var/ossec/queue/diff/local/dir/file``. 
