@@ -45,6 +45,17 @@ and the location is the name of the event log. Example:
         <log_format>eventlog</log_format>
     </localfile>
 
+Windows EventChannel Example 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To monitor a Windows event log on Windows Vista or greater, you have the possibility to use the "eventchannel" log format and the location is the name of the event log. This is the only way to monitor Applications and Services logs. If the file name contains a "%4", replace it with "/". Example:
+
+.. code-block:: xml 
+
+    <localfile>
+        <location>Microsoft-Windows-PrintService/Operational</location>
+        <log_format>eventchannel</log_format>
+    </localfile>
 
 Multiple Files Example 
 ^^^^^^^^^^^^^^^^^^^^^^
