@@ -83,7 +83,7 @@ Example:
 
 Files and directories can be ignored using the ``ignore`` option (or ``registry_ignore`` for Windows registry entries):
 
-.. code-block:: xml 
+.. code-block:: xml
 
     <syscheck>
         <ignore>/etc/random-seed</ignore>
@@ -101,7 +101,7 @@ The ``type`` attribute can be set to sregex to specify a :ref:`regex` in the ign
 
 A local rule can be used to modify the severity for changes to specific files or directories:
 
-.. code-block:: xml 
+.. code-block:: xml
 
     <rule id="100345" level="12">
         <if_matched_group>syscheck</if_matched_group>
@@ -119,7 +119,7 @@ OSSEC supports realtime (continuous) file integrity monitoring on Linux (support
 The configuration is very simple. In the ``<directories>`` option where you specify what directories to monitor, adding ``realtime="yes"`` will enable it.
 For example:
 
-.. code-block:: xml 
+.. code-block:: xml
 
     <syscheck>
         <directories realtime="yes" check_all="yes">/etc,/usr/bin,/usr/sbin</directories>
@@ -151,7 +151,7 @@ OSSEC supports sending diffs when changes are made to text files on Linux and un
 Configuring syscheck to show diffs is simple, add ``report_changes="yes"`` to the ``<directories`` option. 
 For example:
 
-.. code-block:: xml 
+.. code-block:: xml
 
     <syscheck>
         <directories report_changes="yes" check_all="yes">/etc</directories>
