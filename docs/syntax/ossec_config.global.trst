@@ -152,19 +152,19 @@
       
         <zeromq_uri>tcp://localhost:11111/</zeromq_uri> 
 
-    This will listen for zeromq subscribers on port ip address 127.0.0.1 port 11111 
+    This will listen for zeromq subscribers on ip address 127.0.0.1 port 11111 
 
     .. code-block:: xml
 
         <zeromq_uri>tcp://eth0:21212/</zeromq_uri> 
 
-    This will listen for zeromq subscribers on port ip address assiged to eth0 port 21212 
+    This will listen for zeromq subscribers on the ip address assiged to eth0 port 21212 
 
     .. code-block:: xml 
 
         <zeromq_uri>ipc:///alerts-zmq</zeromq_uri> 
 
-    This will listen for zeromq on the systems on Unix Domain socket /alerts-zmq. 
+    This will listen for zeromq on the Unix Domain socket /alerts-zmq. 
 
 
 .. xml:element:: geoip_db_path
