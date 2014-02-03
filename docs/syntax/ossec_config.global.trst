@@ -142,7 +142,7 @@
 
 .. xml:element:: zeromq_uri 
 
-    This is zeromq URL that the publisher socket will bind to.  
+    This is zeromq URI that the publisher socket will bind to.  
 
     .. warning::
 
