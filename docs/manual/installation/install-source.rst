@@ -19,7 +19,7 @@ More information on thse can be found on the `OSSEC Architecture page <../ossec-
 
     .. note:: 
 
-        On some systems, the command md5, sha1 or wget may not exist, so try md5sum, sha1sum 
+        On some systems, the command md5, sha1, or wget may not exist. Try md5sum, sha1sum 
         or lynx respectively instead.
 
     .. code-block:: console
@@ -37,8 +37,8 @@ More information on thse can be found on the `OSSEC Architecture page <../ossec-
         SHA1 (ossec-hids-2.7.1.tar.gz) = 258b9a24936e6b61e0478b638e8a3bfd3882d91e
 
 
-#. Extract the compressed package and run the “./install.sh” script (It will guide you 
-   through the installation).
+#. Extract the compressed package and run the ``install.sh`` script. It will guide you 
+   through the installation.
 
     .. code-block:: console 
 
@@ -46,13 +46,13 @@ More information on thse can be found on the `OSSEC Architecture page <../ossec-
         # cd ossec-hids-* 
         # ./install.sh
 
-#. Remember to open port 1514 (UDP) if there is a firewall between the server and 
-   the agents (not applicable to the local installation type).
+#. The OSSEC manager listens on UDP port 1514. Any firewall sbetween the agents and 
+   the manager will need to allow this traffic.
 
-#. If you are installing the server or the agent, remember to follow the `Managing 
-   the agents section`.
+#. The server, agent, and hybrid installations will require additional configuration. 
+   More information can be found on the `Managing the agents page <../agent/agent-management.html>`_.
 
-#. Start OSSEC HIDS 
+#. Start OSSEC HIDS by running the following command:
 
     .. code-block:: console 
 
