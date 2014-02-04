@@ -4,21 +4,16 @@ Manager/Agent Installation
 ==========================
 
 
-Installation of OSSEC HIDS is very simple. Just follow these few steps to have 
-it working.  
- 
+Installation of OSSEC HIDS is very simple, the ``install.sh`` shell script automating most of it.
+There are a few questions to be answered before the installation will occur, one of the most 
+important being which type of installation is desired.
 It is important to choose the correct installation type: server, agent, local, or hybrid.
 More information on thse can be found on the `OSSEC Architecture page <../ossec-architecture.html>`_.
 
-.. warning::
-
-    Remember that when following this installation the commands only start after the # Everything 
-    before that is just the information about the prompt
-
 .. note::
-   
-    If you have experience with Unix, just download the latest version, uncompress it and run the 
-    "./install.sh" script.
+
+    In the following installation the commands follow the ``#``. 
+    Everything else is either comments out output. 
 
 #. Download the latest version and verify its checksum.
 
