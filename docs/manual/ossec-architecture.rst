@@ -10,13 +10,17 @@ and receiving information from agents, syslog, databases, and from
 agentless devices.
 
 
-Manager
-~~~~~~~
+Manager (or Server)
+~~~~~~~~~~~~~~~~~~~
 
 The manager is the central piece of the OSSEC deployment. It stores the file 
 integrity checking databases, the logs, events, and system auditing entries. 
 All the rules, decoders, and major configuration options are stored centrally in 
 the manager; making it easy to administer even a large number of agents.
+
+.. note::
+
+   The manager may be called the OSSEC server, or even just server in this documentation.
 
 Agents
 ~~~~~~
