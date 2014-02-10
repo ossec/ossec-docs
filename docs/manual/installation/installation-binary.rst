@@ -10,8 +10,8 @@ Debian packages are also planned.
 
 .. note:: 
 
-    Due to the way OSSEC is built the system compiling OSSEC must be the same OS and
-    CPU platform for this to work correctly.
+    OSSEC has very limited cross compiling facilities. Windows binaries can be built on Linux systems, 
+    but binaries for other systems should be built on a system of the same CPU platform.
 
 .. _manual-install-binary-build: 
 
