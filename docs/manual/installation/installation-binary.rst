@@ -11,7 +11,7 @@ Debian packages are also planned.
 .. note:: 
 
     Due to the way OSSEC is built the system compiling OSSEC must be the same OS and
-    CPU platform for this work correctly. 
+    CPU platform for this to work correctly.
 
 .. _manual-install-binary-build: 
 
