@@ -70,3 +70,8 @@ After following the installation prompts the install will be complete.
 
 
 
+.. Installing the OSSEC RPM
+.. ------------------------
+
+.. Installing the OSSEC deb
+.. ------------------------
