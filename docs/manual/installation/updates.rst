@@ -8,9 +8,15 @@ installed and ask:
 .. code-block:: console
 
     - You already have OSSEC installed. Do you want to update it? (y/n): y
-    - Do you want to update the rules? (y/n): y
 
-Just say \xe2\x80\x9cyes\xe2\x80\x9d to these questions and it will update everything properly. Your local rules
-and configuration options will not be modified. The same applies to the Unix or Windows
-agent updates.
 
+Just answer ``yes`` to this question and the script will update the OSSEC binaries. 
+``local_rules.xml`` and ``local_decoder.xml`` will not be modified during this upgrade.
+
+The script will also prompt for an answer to the following question:
+
+.. code-block:: console
+
+   - Do you want to update the rules? (y/n): y
+
+Answering ``yes`` to this question updates the ``<rules>`` section of the system's ossec.conf.
