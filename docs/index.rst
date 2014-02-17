@@ -43,9 +43,9 @@ Reference
     syntax/index
     programs/index
     whatsnew/index
-    rules/index
+    .. rules/index
     rootcheck/index
-    log_samples/index
+    .. log_samples/index
     glossary
 
 
