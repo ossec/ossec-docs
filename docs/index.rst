@@ -25,6 +25,8 @@ Manual & FAQ
 
    faq/index
 
+   cookbooks/index
+
 Development
 ===========
 
