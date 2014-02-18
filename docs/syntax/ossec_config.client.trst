@@ -30,7 +30,7 @@
 
     Specifies the time in seconds between information messages sent by the agents to the server.
 
-.. xml: element:: time-reconnect
+.. xml:element:: time-reconnect
 
     Time in seconds until a reconnection attempt. This should be set to a higher number than notify_time.
 

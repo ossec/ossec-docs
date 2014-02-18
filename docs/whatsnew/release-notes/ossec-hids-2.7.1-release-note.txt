@@ -1,0 +1,79 @@
+Trend Micro, Inc.                                         November 21, 2013
+--------------------------------------------------------------------------------
+                       OSSEC "v2.7.1" Release Note
+--------------------------------------------------------------------------------
+
+Summary of changes in v2.7.1
+
+=== Installation
+    == Server
+	- Fixed Solaris update install (ddpbsd)
+
+    == Agent
+	- Fixed InstallAgent.sh script for Mac OSX addusers
+		- Distinguishing OSX 10.5 from previous versions
+	- Allow os_auth to resolve manager hostname to IP address
+	- Fixed Windows Agent
+
+=== Syscheck
+    == Extended filesize from an integer to a long integer
+
+=== Rootcheck
+    == No Change
+
+
+=== Agents
+    == Make Heartbeat interval configuable (Christobel Rosa)
+	- Was fixed at 10 minutes interval, now configurable
+	- Use ossec.conf "notify_time", "time-reconnect"
+	- For both *nix and Windows agents
+	- More details TBD (To Be Documented)
+
+
+=== Log monitoring/analysis
+    == Added new feature "custom_alert_output" (Christobel Rosa)
+	- More details TBD (To Be Documented)
+    == Added checking for duplicate rule ID's (cgzones)
+
+
+=== Rules and Decoders
+    == etc/decoder.xml updated
+	- Fixed ar_log decoder (dcid)
+	- Updated <auditd-...> decoders (jp.zurbrugg)
+	- Added Pure-FTPd transfer log decoder (ddpbsd)
+	- Added mptscsih \ mptbase SCSI controller log decoders
+
+
+    == etc/rules/ updated
+	nginx_rules.xml - Added <rule id="31317" level="0"> to reduce noise
+	pure-ftpd_rules.xml - Added rules 11310, 11311, 11312
+        syslog_rules.xml - Added rules 2935-2939 for SCSI controller
+        web_appsec_rules.xml - Updated PHPMyAdmin rules
+		- Added rule 31515,31516, 31530-31533, 31550
+        web_rules.xml - Updated,
+		- Added rule 31164,31165 for SQL injection attempt
+
+=== Output and Alert options
+    == csyslogd
+	- Fixed crash issue in non-debug mode due to memory corruption
+    == ossec-dbd
+	- Fixed database log entries truncation issue
+
+
+=== Active Response
+    == Fixed firewall-drop.sh script to prevent a resource loop (dcid)
+    == Added ip-customblock.sh script (dcid)
+    == Fixed ar.conf ownership issue (ddpbsd)
+
+=== Scripts fixes
+    == Add a log message when something "did not start correctly" (ddpbsd)
+
+
+=== Contributions
+    = Added contrib/ossec2snorby/ scripts, see README for details
+
+
+
+                               === END ===
+
+

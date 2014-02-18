@@ -87,7 +87,7 @@ different. If you need enterprise-class commercial support for OSSEC, Trend
 Micro, the company behind this great open source project, offers this option 
 to our users. For more information, visit the `OSSEC commercial support page <http://www.ossec.net/main/get-commercial-support>`_.
  
-.. image:: logo_tagline_09.gif
+.. image:: logo_tagline_09.png
    :align: center 
    :target: http://www.ossec.net/main/get-commercial-support
 
