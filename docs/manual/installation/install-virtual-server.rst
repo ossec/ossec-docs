@@ -35,6 +35,8 @@ Importing the image on OpenStack:
 ---------------------------------
 
 .. image:: ./img/openstack/small_openstack_import_virtual_server.png
+`Larger version <./img/openstack/openstack_import_virtual_server.png>`_
+
 
 .. Importing the image on XXX:
 .. ---------------------------
