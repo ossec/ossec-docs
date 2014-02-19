@@ -31,6 +31,11 @@ Importing the image on QEMU:
 Importing the image on VirtualBox:
 ----------------------------------
 
+Importing the image on OpenStack:
+---------------------------------
+
+.. image:: ./img/openstack/small_openstack_import_virtual_server.png
+
 .. Importing the image on XXX:
 .. ---------------------------
 
