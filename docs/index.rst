@@ -43,6 +43,7 @@ Reference
     :maxdepth: 2
 
     syntax/index
+    formats/index
     programs/index
     whatsnew/index
     .. rules/index
