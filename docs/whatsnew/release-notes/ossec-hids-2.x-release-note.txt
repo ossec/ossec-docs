@@ -1,0 +1,10 @@
+Trend Micro, Inc.                                         $DATE
+--------------------------------------------------------------------------------
+                       OSSEC "v2.x" Release Note
+--------------------------------------------------------------------------------
+
+Summary of changes in v2.x
+
+=== Decoders and Rules
+    == Bro-IDS decoders and rules removed (ddpbsd)
+

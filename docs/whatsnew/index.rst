@@ -4,6 +4,13 @@ What's new
 ##########
 
 
+2.x
+---
+
+* 2/28/2014: Removed the Bro-IDS decoders and rules. These were never finished, and are very outdated. New dcoders and rules for current versions of Bro-IDS would be appreciated.
+
+
+
 2.7.1
 -----
 
