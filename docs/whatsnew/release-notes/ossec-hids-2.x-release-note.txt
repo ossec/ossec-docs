@@ -21,11 +21,15 @@ Summary of changes in v2.x
 
 === Output
     == ossec-csyslog json output changed to use cJSON (http://cjson.sourceforge.net/) (reyjrar)
+    == ZeroMQ jSON output (jrossi)
+
 
 === Win32
     == Support for eventchannel logs added (gaelmuller)
     == Agent config profiles enabled on windows (gaelmuller)
 
+=== Installation
+    == Hybrid installs fixed 
 
 
 
