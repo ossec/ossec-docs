@@ -5,6 +5,27 @@ Trend Micro, Inc.                                         $DATE
 
 Summary of changes in v2.x
 
+=== Source code
+    == Moved responsitories to github (https://github.com/ossec)
+    == Lots of general cleanups
+    == Automatic build testing (jrossi)
+
 === Decoders and Rules
     == Bro-IDS decoders and rules removed (ddpbsd)
+    == deluser rule added for OpenBSD
+
+=== Policy
+    == OSSEC Request For Comment (oRFC) policy initiated (http://ossec-docs.readthedocs.org/en/latest/oRFC/orfc-1.html)
+    == oRFC-2: Coding Style Guide started (http://ossec-docs.readthedocs.org/en/latest/oRFC/orfc-2.html)
+
+
+=== Output
+    == ossec-csyslog json output changed to use cJSON (http://cjson.sourceforge.net/) (reyjrar)
+
+=== Win32
+    == Support for eventchannel logs added (gaelmuller)
+    == Agent config profiles enabled on windows (gaelmuller)
+
+
+
 
