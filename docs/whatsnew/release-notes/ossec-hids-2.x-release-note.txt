@@ -20,8 +20,8 @@ Summary of changes in v2.x
 
 
 === Output
-    == ossec-csyslog json output changed to use cJSON (http://cjson.sourceforge.net/) (reyjrar)
-    == ZeroMQ jSON output (jrossi)
+    == ossec-csyslog JSON output changed to use cJSON (http://cjson.sourceforge.net/) (reyjrar)
+    == ZeroMQ JSON output (jrossi)
 
 
 === Win32
