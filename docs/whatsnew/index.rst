@@ -14,6 +14,8 @@ What's new
 
 * ZeroMQ JSON output
 * `cJSON <http://cjson.sourceforge.net>`_ used for JSON output
+* lua added to the build for use by various OSSEC daemons
+
 
 
 
