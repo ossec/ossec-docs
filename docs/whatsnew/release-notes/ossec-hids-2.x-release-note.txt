@@ -9,6 +9,7 @@ Summary of changes in v2.x
     == Moved responsitories to github (https://github.com/ossec)
     == Lots of general cleanups
     == Automatic build testing (jrossi)
+    == lua added to the build process for use by various daemons (jrossi)
 
 === Decoders and Rules
     == Bro-IDS decoders and rules removed (ddpbsd)
