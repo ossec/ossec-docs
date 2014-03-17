@@ -11,13 +11,13 @@ move the binaries to the final box.
 Ubuntu
 ------
 
-On Ubuntu you will need the *build-essential* package in order to compile and install OSSEC. 
+On Ubuntu you will need the *build-essential* and libreadlne-dev packages in order to compile and install OSSEC. 
 
 To install the package run the following command.  
 
 .. code-block:: console
 
-    # apt-get install build-essential 
+    # apt-get install build-essential libreadline-dev
 
 If database support is needed *mysql-dev* or *postgresql-dev* should be installed. 
 Run the following command to install these packages. 
