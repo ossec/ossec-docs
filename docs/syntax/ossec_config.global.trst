@@ -43,6 +43,12 @@
         At the end of the hour any queued emails will be sent together in one email.
         This is true whether the mail grouping is enabled or disabled.
 
+.. xml:element:: email_idsname
+
+    If set, "X-IDS-OSSEC: " will be added to the email headers with the specified value.
+
+    **Allowed:** Any name
+
 .. xml:element:: custom_alert_output
 
     Specifies the format of alerts written to the logfile.
