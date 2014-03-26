@@ -21,9 +21,20 @@ Run ossec-authd, listening on port 1515:
 
 .. code-block:: console
 
-   /var/ossec/bin/ossec-authd -p 1515 > /dev/null 2>&1&
+   /var/ossec/bin/ossec-authd -p 1515
 
 
 
 agent-auth
+^^^^^^^^^^
+
+``agent-auth`` will connect to an ossec-authd instance to receive, and install an agent key.
+
+Run agent-auth connecting to the manager on IP 192.168.1.12 port 1515:
+
+.. code-block:: console
+
+   /var/ossec/bin/agent-auth -m 192.168.1.12 -p 1515
+
+
 
