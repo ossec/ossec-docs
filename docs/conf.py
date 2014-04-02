@@ -235,9 +235,22 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'ossecrules', u'OSSEC Documentation',
-     [u'Jeremy Rossi'], 1)
+    #('index/index', 'ossecrules', u'OSSEC Documentation', [u'Jeremy Rossi'], 1)
 ]
+import os 
+for dirpath, dirnames, filenames in os.walk("programs"):
+  for f in filenames:
+    if f.endswith(".rst") and f != 'index.rst':
+      srcfile = os.path.normpath(os.path.join(dirpath, f[:-4]))
+      dstfile = f[:-4] 
+      man_pages.append((
+          srcfile,
+          dstfile,
+          "Description of {}".format(srcfile),
+          [u"Jeremy Rossi"], 
+          1,
+        )
+      )
 
 
 # -- Options for Epub output ---------------------------------------------------
