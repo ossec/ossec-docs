@@ -6,7 +6,7 @@ agent-auth
 
 The agent-auth program is the client application used with :ref:`ossec-authd` to automatically add agents to an OSSEC manager.
 
-.. warning:
+.. warning::
 
     There is no authentication or authorization involved in this transaction, so it is recommended that 
     this daemon only be run when a new agent is being added.
