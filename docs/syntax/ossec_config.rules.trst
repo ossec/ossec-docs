@@ -124,4 +124,11 @@
 
     **Allowed:** Path to a list file to be loaded and compiled. 
 
+    .. code-block:: xml
+
+       <rules>
+          <list>rules/lists/blocked_hosts</list>
+       </rules>
+
+
 
