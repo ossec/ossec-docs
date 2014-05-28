@@ -12,6 +12,22 @@
 
 .. xml:element:: decoder.parent 
 
+.. xml:element:: decoder.accumulate
+
+   Allow OSSEC to track events over multiple log messages based on a decoded id.
+
+   .. code-block:: xml
+
+      <decoder name="example">
+        ...
+        <order>id</order>
+        <accumulate/>
+      </decoder>
+
+   .. note::
+
+      Requires a regex populating the ``id`` field.
+
 .. xml:element:: decoder.program_name 
 
     **Allowed:** Any :ref:`os_match`
