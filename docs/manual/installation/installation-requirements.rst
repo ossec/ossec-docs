@@ -19,9 +19,6 @@ To install the package run the following command.
 
     # apt-get install build-essential
 
-.. note::
-
-   On OSSEC 2.8 the libreadline-dev package is also required for the lua installation.
 
 If database support is needed *mysql-dev* or *postgresql-dev* should be installed. 
 Run the following command to install these packages. 
