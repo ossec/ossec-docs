@@ -50,7 +50,6 @@ ossec-authd argument options
 
 .. option:: -v </path/to/CA_certificate>
 
-   **This option is only requred if client authentication is desired**
    Load the PEM encoded CA Certificate that will be used to authenticate clients if desired. If this option is
    used then :ref:`agent-auth` must present a valid certificate signed by this CA in order to be provided with
    a key.
@@ -87,8 +86,8 @@ Optional Client Authentication
 ``ossec-authd`` can verify that connecting agents present a valid X.509 certificate when requesting a key. This is optional
 and is only useful if hosts in your environment are assigned certificates when they're provisioned (or at some point before
 being added to OSSEC). If agent certificate verification is desired then the relevant CA certificate must be loaded with the
--v option. This will cause ``ossec-authd`` to verify that agents present a valid certificate signed by this CA when requesting
-a key. If an agent does not present a certificate or presents an invalid certificate then the agent will not be allocated a key.
+-v option. This will cause ``ossec-authd`` to verify that agents present a valid certificate when requesting a key. If an
+agent does not present a certificate or presents an invalid certificate then the agent will not be allocated a key.
 
 A certificate presented by an agent may be found to be invalid for the following reasons:
 

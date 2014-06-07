@@ -67,11 +67,10 @@ Optional Server Authentication
 ~~~~~~~~~~~~~~~~~
 
 ``agent-auth`` can verify that the server it's connecting to presents a valid X.509 certificate when requesting
-a key. This is optional and is only useful if hosts in your environment have access to the CA certificate that
-was used to sign the certificate presented by :ref:`ossec-authd`. If server certificate verification is desired then
-the relevant CA certificate must be loaded with the -v option. This will cause ``agent-auth`` to verify that the
-server presents a valid certificate signed by this CA when requesting a key. If the server does not present a valid
-certificate then the agent will not be allocated a key.
+a key. This is optional and is only useful if hosts in your environment have access to the root certificate of
+the CA that signed the certificate presented by :ref:`ossec-authd`. If server certificate verification is desired
+then the relevant CA certificate must be loaded with the -v option, then if the server does not present a valid
+certificate the agent will not be allocated a key.
 
 A certificate presented by the server may be found to be invalid for the following reasons:
 
