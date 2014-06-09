@@ -25,7 +25,7 @@ More information on thse can be found on the `OSSEC Architecture page <../ossec-
     .. code-block:: console
 
         # wget http://www.ossec.net/files/ossec-hids-2.7.1.tar.gz
-        # wget http://www.ossec.net/files/ossec-hids-2.7.1_checksum.txt
+        # wget http://www.ossec.net/files/ossec-hids-2.7.1-checksum.txt
         # cat ossec-hids-2.7.1_checksum.txt
         MD5 (ossec-hids-2.7.1.tar.gz) = f4140ecf25724b8e6bdcaceaf735138a
         SHA1 (ossec-hids-2.7.1.tar.gz) = 258b9a24936e6b61e0478b638e8a3bfd3882d91e
