@@ -49,6 +49,11 @@
 
     **Allowed:** Any name
 
+    .. note::
+
+        This was added in OSSEC 2.8.
+
+
 .. xml:element:: custom_alert_output
 
     Specifies the format of alerts written to the logfile.

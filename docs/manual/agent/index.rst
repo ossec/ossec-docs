@@ -18,6 +18,7 @@ any RPC method (e.g. ssh, snmp rdp, wmi).
 
     agent-management
     agent-dhcp-nat
+    agent-auth
     agent-configuration
 
 **Agentless** 

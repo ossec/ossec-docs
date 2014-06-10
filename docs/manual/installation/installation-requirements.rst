@@ -17,7 +17,8 @@ To install the package run the following command.
 
 .. code-block:: console
 
-    # apt-get install build-essential 
+    # apt-get install build-essential
+
 
 If database support is needed *mysql-dev* or *postgresql-dev* should be installed. 
 Run the following command to install these packages. 
