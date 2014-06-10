@@ -28,6 +28,10 @@
 
       Requires a regex populating the ``id`` field.
 
+   .. warning::
+
+      accumulate first appeared in OSSEC 2.9.
+
 .. xml:element:: decoder.program_name 
 
     **Allowed:** Any :ref:`os_match`
