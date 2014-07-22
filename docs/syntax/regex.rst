@@ -5,37 +5,37 @@ Regular Expression Syntax
 
 Currently OSSEC supports to regex syntax:
 
-* OS_Regex or regex 
-* OS_Match or sregex 
+* OS_Regex or regex
+* OS_Match or sregex
 
 
 
-.. _os_regex: 
+.. _os_regex:
 
-OR_Regex/regex Syntax 
---------------------- 
+OR_Regex/regex Syntax
+---------------------
 
-Fast and simple library for regular expressions in C. 
+Fast and simple library for regular expressions in C.
 
-This library is designed to be simple, but support the most common regular 
-expressions. It was designed with intrusion detection systems in mind, where 
+This library is designed to be simple, but support the most common regular
+expressions. It was designed with intrusion detection systems in mind, where
 having all options is not crucial, but speed is.
 
 .. _os_regex_exp:
 
 **Supported expressions**::
 
-    \w  ->  A-Z, a-z, 0-9 characters
+    \w  ->  A-Z, a-z, 0-9, '-', '@' characters
     \d  ->  0-9 characters
     \s  ->  For spaces " "
     \t  ->  For tabs.
-    \p  ->  ()*+,-.:;<=>?[] (punctuation characters)
+    \p  ->  ()*+,-.:;<=>?[]!"'#$%&|{} (punctuation characters)
     \W  ->  For anything not \w
     \D  ->  For anything not \d
     \S  ->  For anything not \s
     \.  ->  For anything
 
-.. _os_regex_mod: 
+.. _os_regex_mod:
 
 **Modifiers**::
 
@@ -50,7 +50,7 @@ having all options is not crucial, but speed is.
     $ -> To specify the end of the text.
     | -> To create an "OR" between multiple patterns.
 
-.. _os_regex_escape: 
+.. _os_regex_escape:
 
 **Characters Escaping**
 
@@ -65,13 +65,13 @@ To utilize the following characters they must be escaped::
 
 .. _os_match:
 
-OS_Match/sregex Syntax 
----------------------- 
+OS_Match/sregex Syntax
+----------------------
 
-Faster than the OS_Regex/regex, but only supports simple string matching and the 
+Faster than the OS_Regex/regex, but only supports simple string matching and the
 following special characters.
 
-.. _os_match_schar:: 
+.. _os_match_schar::
 
 **Special Characters**::
 
