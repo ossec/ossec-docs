@@ -56,4 +56,4 @@ Which means that your agent executable ossec-win32-agent.exe has been created pr
 
 
 
-This document is a copy of Daniel Cid's blogpost `Compiling the Windows Agent from a Linux system <http://dcid.me/2009/06/compiling-the-windows-agent-from-a-linux-system/>`_
+.. This document is a copy of Daniel Cid's blogpost `Compiling the Windows Agent from a Linux system <http://dcid.me/2009/06/compiling-the-windows-agent-from-a-linux-system/>`_
