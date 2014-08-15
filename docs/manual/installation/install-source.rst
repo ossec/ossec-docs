@@ -22,19 +22,21 @@ More information on thse can be found on the `OSSEC Architecture page <../ossec-
         On some systems, the command md5, sha1, or wget may not exist. Try md5sum, sha1sum 
         or lynx respectively instead.
 
+    .. warning::
+
+        wget cannot pull files from the OSSEC site. Obtain the checksum file by some other manner.
+
     .. code-block:: console
 
-        # wget http://www.ossec.net/files/ossec-hids-2.7.1.tar.gz
-        # wget http://www.ossec.net/files/ossec-hids-2.7.1-checksum.txt
-        # cat ossec-hids-2.7.1_checksum.txt
-        MD5 (ossec-hids-2.7.1.tar.gz) = f4140ecf25724b8e6bdcaceaf735138a
-        SHA1 (ossec-hids-2.7.1.tar.gz) = 258b9a24936e6b61e0478b638e8a3bfd3882d91e
-        MD5 (ossec-agent-win32-2.7.1.exe) = 7d2392459aeab7490f28a10bba07d8b5
-        SHA1 (ossec-agent-win32-2.7.1.exe) = fdb5225ac0ef631d10e5110c1c1a8aa473e62ab4
-        # md5sum ossec-hids-2.7.1.tar.gz 
-        MD5 (ossec-hids-2.7.1.tar.gz) = f4140ecf25724b8e6bdcaceaf735138a
-        # sha1sum ossec-hids-2.7.1.tar.gz
-        SHA1 (ossec-hids-2.7.1.tar.gz) = 258b9a24936e6b61e0478b638e8a3bfd3882d91e
+        # wget https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-hids-2.8.tar.gz
+        # ftp http://www.ossec.net/files/ossec-hids-2.8-checksum.txt
+        # cat ossec-hids-2.8-checksum.txt
+        MD5(ossec-hids-2.8.tar.gz)= 90f3c54f22abe9c07661fb51ddaa8474
+        SHA1(ossec-hids-2.8.tar.gz)= 1d72a8cd347379ef7a533ba9633231c5bfedfa1a
+        # md5sum ossec-hids-2.8.tar.gz 
+        MD5 (ossec-hids-2.8.tar.gz) = 90f3c54f22abe9c07661fb51ddaa8474
+        # sha1sum ossec-hids-2.8.tar.gz
+        SHA1 (ossec-hids-2.8.tar.gz) = 1d72a8cd347379ef7a533ba9633231c5bfedfa1a
 
 
 #. Extract the compressed package and run the ``install.sh`` script. It will guide you 
