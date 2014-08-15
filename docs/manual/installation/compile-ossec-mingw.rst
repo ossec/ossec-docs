@@ -18,8 +18,8 @@ After that, download the source and generate the Windows package directory (repl
 
 .. code-block:: console
 
-    # wget http://www.ossec.net/files/ossec-hids-2.6.tar.gz
-    # tar -zxvf ossec-hids-2.6.tar.gz
+    # wget https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-hids-2.8.tar.gz
+    # tar -zxvf ossec-hids-2.8.tar.gz
     # cd ossec-hids-2.6/src/win32
     # ./gen-win.sh
 
