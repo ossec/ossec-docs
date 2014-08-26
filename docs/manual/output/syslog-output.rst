@@ -24,6 +24,7 @@ In this example all alerts are sent to 192.168.4.1, and alerts of level 10 and
 above are also sent to 10.1.1.1:
 
 .. code-block:: xml
+
     <ossec_config>
       ...
 

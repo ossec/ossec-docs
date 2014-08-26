@@ -35,7 +35,7 @@ file to be monitored and the format:
 Windows EventLog Example 
 ^^^^^^^^^^^^^^^^^^^^^^^^ 
 
-To monitor a Windows event log, you need to provide the format as “eventlog” 
+To monitor a Windows event log, you need to provide the format as "eventlog" 
 and the location is the name of the event log. Example:
 
 .. code-block:: xml 
@@ -45,6 +45,19 @@ and the location is the name of the event log. Example:
         <log_format>eventlog</log_format>
     </localfile>
 
+Windows EventChannel Example 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To monitor a Windows event log on Windows Vista or later, you have the possibility to use the "eventchannel" log format.
+The location is the name of the event log. This is the only way to monitor Applications and Services logs. 
+If the file name contains a "%4", replace it with "/". Example:
+
+.. code-block:: xml 
+
+    <localfile>
+        <location>Microsoft-Windows-PrintService/Operational</location>
+        <log_format>eventchannel</log_format>
+    </localfile>
 
 Multiple Files Example 
 ^^^^^^^^^^^^^^^^^^^^^^

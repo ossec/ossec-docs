@@ -17,7 +17,8 @@ To install the package run the following command.
 
 .. code-block:: console
 
-    # apt-get install build-essential 
+    # apt-get install build-essential
+
 
 If database support is needed *mysql-dev* or *postgresql-dev* should be installed. 
 Run the following command to install these packages. 
@@ -41,9 +42,9 @@ Debian
 ------
 
 Debian has replaced bash with dash, and this may cause issues during installation.
-Dash does not appear to support a full range of shell functions, and may display
- an error when trying to set the server's IP address on an agent system.
-The best solution may be to ignore the error, and configure the system manually.
+Dash does not appear to support all of the features available in other shells, and 
+may display an error when trying to set the server's IP address on an agent system.
+The error can be ignored, but the server ip address will need to be set.
 
 Do this by making sure something like the following information is in the agent's ossec.conf:
 
@@ -54,7 +55,11 @@ Do this by making sure something like the following information is in the agent'
        <server-ip>SERVER'S IP</server-ip>
      </client>
 
+This can also be avoided by using bash to run ``install.sh``:
 
+.. code-block:: console
+
+   # bash ./install.sh
 
 
 

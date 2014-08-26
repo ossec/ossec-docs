@@ -10,13 +10,17 @@ and receiving information from agents, syslog, databases, and from
 agentless devices.
 
 
-Manager
-~~~~~~~
+Manager (or Server)
+~~~~~~~~~~~~~~~~~~~
 
 The manager is the central piece of the OSSEC deployment. It stores the file 
 integrity checking databases, the logs, events, and system auditing entries. 
 All the rules, decoders, and major configuration options are stored centrally in 
 the manager; making it easy to administer even a large number of agents.
+
+.. note::
+
+   The manager may be called the OSSEC server, or even just server in this documentation.
 
 Agents
 ~~~~~~
@@ -87,7 +91,7 @@ different. If you need enterprise-class commercial support for OSSEC, Trend
 Micro, the company behind this great open source project, offers this option 
 to our users. For more information, visit the `OSSEC commercial support page <http://www.ossec.net/main/get-commercial-support>`_.
  
-.. image:: logo_tagline_09.gif
+.. image:: logo_tagline_09.png
    :align: center 
    :target: http://www.ossec.net/main/get-commercial-support
 

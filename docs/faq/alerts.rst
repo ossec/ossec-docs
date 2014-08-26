@@ -56,6 +56,7 @@ Why do I see alerts for agent2 in an email about agent1?
 
 
     .. code-block:: xml
+
         <global>
           <email_maxperhour>100</email_maxperhour>
 

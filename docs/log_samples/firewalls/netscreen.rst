@@ -27,6 +27,7 @@ Critical messages:
 ^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   Jun  2 11:24:16 fire00 sav00: NetScreen device_id=sav00  [Root]system-critical-00436: Large ICMP packet! From 1.2.3.4 to 2.3.4.5, proto 1 (zone Untrust, int ethernet1/2). Occurred 1 times. (2006-06-02 11:24:16)
   [00001] 2007-04-01 15:32:00 [Root]system-critical-00031: arp req detected an IP conflict (IP 10.1.1.1, MAC 0027f2424c8c) on interface ethernet1
   [00001] 2007-03-12 12:47:36 [Root]system-critical-00001(second traffic alarm):  Policy ID=14 Rate=180 bytes/sec exceeds threshold

@@ -6,6 +6,7 @@ Log Samples from Squid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   644 1.2.3.4 TCP_CLIENT_REFRESH_MISS/404 4456 GET http://www.ossec.net/x1 - DIRECT/2.3.4.5 text/html
   1292 1.2.3.4 TCP_CLIENT_REFRESH_MISS/404 4456 GET http://www.ossec.net/x2 - DIRECT/2.3.4.5 text/html
 
@@ -13,6 +14,7 @@ Log Samples from Squid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   5 59.59.106.40 TCP_DENIED/403 1382 CONNECT 202.43.200.11:25 - NONE/- text/html
   15 59.59.106.40 TCP_DENIED/403 1382 CONNECT 202.43.200.11:25 - NONE/- text/html
   0 59.59.106.40 TCP_DENIED/403 1380 CONNECT 203.84.195.1:25 - NONE/- text/html

@@ -2,6 +2,7 @@ Log Samples for Lotus Domino HTTP
 ---------------------------------
 
 .. note:
+
   The logs for Lotus Domino are in the NCSA format (same as Apache) and also supported by IIS.
 
 
@@ -9,6 +10,7 @@ Log Samples for Lotus Domino HTTP
 ^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   133.149.133.102 www.acmeco.com - [05/Nov/2006:00:28:27 -0500] "GET /webdb.nsf/4b0a23f8cfa6991205256e6d005d420d/tetheraccess.htm HTTP/1.1" 404 38692
   133.149.133.102 www.acmeco.com - [05/Nov/2006:00:33:29 -0500] "GET /webdb.nsf/4b0a23f8cfa6991205256e6d005d420d/ghafeed.htm HTTP/1.1" 404 38690
   133.149.133.102 www.acmeco.com - [05/Nov/2006:00:42:51 -0500] "GET /webdb.nsf/4b0a23f8cfa6991205256e6d005d420d/zetatesting.htm HTTP/1.1" 404 38695
@@ -22,6 +24,7 @@ Full sample:
 ^^^^^^^^^^^^
 
 .. code-block:: console
+
   193.6.69.100 www.acmeco.com - [05/Nov/2006:00:00:13 -0500] "GET /webdb.nsf/MafzieandDmprneonjogr.pdf HTTP/1.0" 200 65111
   123.17.114.142 msg.acmeco.com - [05/Nov/2006:00:00:45 -0500] "GET /mail/defjam.nsf/iNotes/Proxy/?OpenDocument&Form=s_PollXML&PresetFields=s_UsingHttps;1&NKA HTTP/1.1" 200 4601
   231.87.105.8 www.acmeco.com - [05/Nov/2006:00:01:25 -0500] "GET /webdb.nsf/we_slagan.gif?OpenImageResource HTTP/1.1" 304 0

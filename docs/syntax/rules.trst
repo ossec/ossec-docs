@@ -178,13 +178,6 @@
 
     - **Allowed:** Any group 
 
-.. xml:element:: if_matched_level 
-
-    - Matches if an alert of the defined level has been triggered in a set number of seconds.
-    - This option is used in conjunction with frequency_ and timeframe_.
-
-    - **Allowed:** Any level from 1 to 16 
-
 .. xml:element:: same_id
 
     - Specifies that the decoded id must be the same.

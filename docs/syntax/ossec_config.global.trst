@@ -43,6 +43,17 @@
         At the end of the hour any queued emails will be sent together in one email.
         This is true whether the mail grouping is enabled or disabled.
 
+.. xml:element:: email_idsname
+
+    If set, "X-IDS-OSSEC: " will be added to the email headers with the specified value.
+
+    **Allowed:** Any name
+
+    .. note::
+
+        This was added in OSSEC 2.8.
+
+
 .. xml:element:: custom_alert_output
 
     Specifies the format of alerts written to the logfile.
@@ -128,6 +139,44 @@
     then be read by picviz for processing.  
 
     **Allowed:** File and path that ossec will create and feed events to. 
+
+.. xml:element:: zeromq_output
+
+    Enable ZeroMQ Output 
+
+    .. warning::
+      
+        ZeroMQ is experimental and will likely change drasticly from vesion to 
+        version.  
+
+    **Allowed:** yes/no
+
+.. xml:element:: zeromq_uri 
+
+    This is zeromq URI that the publisher socket will bind to.  
+
+    .. warning::
+
+        This URI format is defined by the ZeroMQ project.  
+
+    .. code-block:: xml
+      
+        <zeromq_uri>tcp://localhost:11111/</zeromq_uri> 
+
+    This will listen for zeromq subscribers on ip address 127.0.0.1 port 11111 
+
+    .. code-block:: xml
+
+        <zeromq_uri>tcp://eth0:21212/</zeromq_uri> 
+
+    This will listen for zeromq subscribers on the ip address assiged to eth0 port 21212 
+
+    .. code-block:: xml 
+
+        <zeromq_uri>ipc:///alerts-zmq</zeromq_uri> 
+
+    This will listen for zeromq on the Unix Domain socket /alerts-zmq. 
+
 
 .. xml:element:: geoip_db_path
 

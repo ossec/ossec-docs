@@ -17,8 +17,9 @@ __ OSSEC Book install_
     installation-requirements
     install-source
     installation-windows
-    installation-binary.rst
-    install-virtual-server.rst
+    installation-binary
+    install-virtual-server
+    install-source-unattended
     compile-ossec-on-windows
     compile-ossec-mingw
     deployment_with_cfengine

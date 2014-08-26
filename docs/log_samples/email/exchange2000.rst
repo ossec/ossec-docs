@@ -7,6 +7,7 @@ W3C Extended format:
 ^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
+
   #Software: Microsoft Internet Information Services 5.0
   #Version: 1.0
   #Date: 2006-10-09 05:00:15

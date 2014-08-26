@@ -1,25 +1,39 @@
 .. _manual-vm-install:
 
 
-OSSEC Server Virtual Appliance Installation 
-===========================================
+Server Virtual Appliance Installation 
+=====================================
 
-The OSSEC virtual appliance is a ready to deploy system running OSSEC 2.7.1 and the OSSEC WUI (0.8 Beta).
-It is packages in the Open Virtualization Format (`OVF <http://wikipedia.org/wiki/Open_Virtualization_Format>`_). 
-OVF is supported by a number of platforms including VMWare and VirtualBox.
+Overview:
+---------
 
-
-.. note::
-
-   The password for all accounts on this system including root, user, OSSEC Web UI, and PHPMyAdmin is "``_0SSEC_``" (that is a zero, not a capital "oh").
-
-.. note::
-
-   The username for the OSSEC Web UI is just "``user``," and for phpMyAdmin is "``root``".
+The OSSEC virtual appliance is a virtual system in the  Open Virtualized Format (OVF). 
+It contains an OSSEC 2.7 server installation and the WebUI (0.8 Beta). 
 
 
-.. XXX Instructions for loading the appliance in VirtualBox/VMWare go here
+Accounts and passwords:
+-----------------------
 
+The default password for all accounts on the system is ``_0ssec_``. 
+The username from the WebUI is ``user``, and for phpMyAdmin it is ``root``.
+
+
+Convert OVF to a VMWare image:
+------------------------------
+
+Some VMWare desktop environments may not support the OVF images natively, 
+for those systems VMWare created the ovftool. 
+Download the ovftool from `VMWare's site 
+<https://my.vmware.com/group/vmware/get-download?downloadGroup=CVF-TOOL-3-0-1>`_ 
+(registration required).
+
+Convert the file using the following procedure:
+
+.. code-block:: console
+
+   # tar zxvf ossec_virtual_apliance.tar.gz
+   # cd ossec_virtual_appliance
+   # ovftool ossec.ovf ossec.vmx
 
 
 

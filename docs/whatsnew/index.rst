@@ -1,8 +1,28 @@
 
-##################
-What's new for 2.7
-##################
+##########
+What's new
+##########
 
+
+2.7.1
+-----
+
+* Bug fixes
+* Extended filesize from an integer to a long integer in syscheck
+* Heartbeat interval is now configurable:
+
+  * `notify_time <../syntax/head_ossec_config.client.html#element-notify_time>`_ 
+
+  * `time-reconnect <../syntax/head_ossec_config.client.html#element-time-reconnect>`_
+
+* `custom_alert_output <../syntax/head_ossec_config.global.html#element-custom_alert_output>`_ added
+* ``ip-customblock.sh`` active-response script added
+* ossec2snorby scripts added to contrib
+
+
+
+2.7
+---
 
 * agent profiles
 

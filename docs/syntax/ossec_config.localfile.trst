@@ -53,6 +53,14 @@
       - eventlog 
           This is used for Microsoft Windows eventlog format.
 
+      .. _logformat_eventchannel:
+
+      - eventchannel
+          This is used for Microsoft Windows eventlogs, using the new EventApi. This allows OSSEC to monitor both standard "Windows" eventlogs and more recent "Application and Services" logs. This support was added in 2.8.
+
+      .. warning::
+          ``eventchannel`` cannot be used on Windows systems older than Vista.
+
       .. _logformat_mysql:
 
       - mysql_log 
@@ -169,5 +177,31 @@
 
     The output from an event will be stored in an internal database. Every time the same event is received, the output is compared to the previous output. If the output has changed an alert will be generated.
 
+.. _only-future-events:
+.. xml:element:: only-future-events
 
+    Only used with the ``eventchannel`` log format. By default, when OSSEC starts the eventchannel log format will read all events that ossec-logcollector missed since it was last stopped. 
+    It is possible to set ``only-future-events`` to ``yes`` in order to prevent this behaviour. When set to ``yes``, OSSEC will only receive events that occured after the start of logcollector.
 
+    .. code-block:: console
+
+       <localfile>
+         <loation>System</location>
+         <log_format>eventchannel</log_format>
+         <only-future-events>yes</only-future-events>
+       </localfile>
+
+.. _query:
+.. xml:element:: query
+
+    Only used with the ``eventchannel`` log format. It is possible to specify an XPATH query following the event schema (see `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_) in order to filter the events that OSSEC will process.
+
+    For example, the following configuration will only process events with an ID of 7040:
+
+    .. code-block:: console
+
+      <localfile>
+        <location>System</location>
+        <log_format>eventchannel</log_format>
+        <query>Event/System[EventID=7040]</query>
+      </localfile>

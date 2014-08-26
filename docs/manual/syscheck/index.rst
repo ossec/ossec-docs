@@ -1,11 +1,10 @@
-
 .. _manual-syscheck:
 
 Syscheck
 ========
 
-**Syscheck** is the name of the integrity checking process inside OSSEC. 
-It runs periodically to check if any configured file (or registry entry on Windows) has changed.
+**Syscheck** is the name of the integrity checking process inside OSSEC. It runs periodically 
+to check if any configured file (or registry entry on Windows) has changed.
 
 Why Integrity checking?
 -----------------------
@@ -35,7 +34,7 @@ Quick facts
 
 * How often does it run? 
   
-  - By default every 2 hours on agents and every 20 hours on servers, but the frequency or time/day are configurable.
+  - By default every 6 hours, but the frequency or time/day are configurable.
 
 * Where is the database stored? 
   
@@ -56,16 +55,14 @@ Quick facts
 Realtime options
 ----------------
 
-``ossec-syscheckd`` is able to check file integrity in near realtime on Windows and modern Linux distros. 
-Windows comes with support out of the box, but on Linux systems inotify packages may need to be installed. 
-Check for inotify dev packages, and possibly an inotify-tools package.
+``ossec-syscheckd`` is able to check file integrity in near realtime on Windows and modern Linux distros. Windows comes with support out of the box, but on Linux systems inotify packages may need to be installed. Check for inotify dev packages, and possibly an inotify-tools package.
 
 Configuration options
 ---------------------
 
-The configuration options can be specified in each agent's ossec.conf file, except 
-for the ``auto_ignore`` and ``alert_new_file`` which only apply to manager and local installs. 
-The ``ignore`` option applies to all agents if specified on the manager.
+These configuration options can be specified in each agent's ossec.conf file, except 
+for the ``auto_ignore`` and ``alert_new_file`` which apply to manager and local installs. The 
+``ignore`` option applies to all agents if specified on the manager.
 
 
 .. include:: ../../syntax/ossec_config.syscheck.trst 
@@ -86,7 +83,7 @@ Example:
 
 Files and directories can be ignored using the ``ignore`` option (or ``registry_ignore`` for Windows registry entries):
 
-.. code-block:: xml 
+.. code-block:: xml
 
     <syscheck>
         <ignore>/etc/random-seed</ignore>
@@ -104,7 +101,7 @@ The ``type`` attribute can be set to sregex to specify a :ref:`regex` in the ign
 
 A local rule can be used to modify the severity for changes to specific files or directories:
 
-.. code-block:: xml 
+.. code-block:: xml
 
     <rule id="100345" level="12">
         <if_matched_group>syscheck</if_matched_group>
@@ -122,7 +119,7 @@ OSSEC supports realtime (continuous) file integrity monitoring on Linux (support
 The configuration is very simple. In the ``<directories>`` option where you specify what directories to monitor, adding ``realtime="yes"`` will enable it.
 For example:
 
-.. code-block:: xml 
+.. code-block:: xml
 
     <syscheck>
         <directories realtime="yes" check_all="yes">/etc,/usr/bin,/usr/sbin</directories>
@@ -151,8 +148,7 @@ Report Changes
 
 OSSEC supports sending diffs when changes are made to text files on Linux and unix systems.
 
-Configuring syscheck to show diffs is simple, add ``report_changes="yes"`` to the ``<directories`` option.
-
+Configuring syscheck to show diffs is simple, add ``report_changes="yes"`` to the ``<directories`` option. 
 For example:
 
 .. code-block:: xml
@@ -162,9 +158,13 @@ For example:
         <directories check_all="yes">/bin,/sbin</directories>
     </syscheck>
 
-.. notes::
+.. note:: 
 
-    Report Changes will only work with text files, and the changes are stored on the agent 
-    inside ``/var/ossec/queue/diff/local/dir/file``.
+    Report Changes can only work with text files, and the changes are stored on the agent 
+    inside ``/var/ossec/queue/diff/local/dir/file``. 
+    
+    If OSSEC has not been compiled with libmagic support, report_changes will copy any file 
+    designated, e.g. mp3, iso, executable, /chroot/dev/urandom (which would fill your hard drive). 
+    So unless libmagic is used, be very carefull on which directory you enable report_changes.
 
 .. include:: ../../faq/syscheck.rst

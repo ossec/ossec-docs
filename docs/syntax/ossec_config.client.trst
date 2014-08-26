@@ -18,7 +18,7 @@
 
     **Allowed:** Any port number from 1 to 65535
 
-.. xml:element:: server-ip
+.. xml:element:: config-profile
 
     Specifies the ``agent.conf`` profiles to be used by the agent.
 
@@ -30,7 +30,7 @@
 
     Specifies the time in seconds between information messages sent by the agents to the server.
 
-.. xml: element:: time-reconnect
+.. xml:element:: time-reconnect
 
     Time in seconds until a reconnection attempt. This should be set to a higher number than notify_time.
 

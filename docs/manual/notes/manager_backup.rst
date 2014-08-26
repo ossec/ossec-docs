@@ -13,6 +13,7 @@ These are the two locations where the keys are saved for all the agents.
 These are the configuration files you may want to keep 
 
 .. code-block:: console
+
   /var/ossec/etc/*.conf
   /var/ossec/rules
   /var/ossec/etc/*.xml

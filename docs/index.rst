@@ -25,6 +25,8 @@ Manual & FAQ
 
    faq/index
 
+   cookbooks/index
+
 Development
 ===========
 
@@ -32,7 +34,7 @@ Development
    :maxdepth: 1
    :glob:
 
-   oRFC/index
+   oRFC/*
 
 Reference 
 =========
@@ -41,11 +43,12 @@ Reference
     :maxdepth: 2
 
     syntax/index
+    formats/index
     programs/index
     whatsnew/index
-    rules/index
+    .. rules/index
     rootcheck/index
-    log_samples/index
+    .. log_samples/index
     glossary
 
 

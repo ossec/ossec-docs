@@ -1,5 +1,6 @@
-or_utils/__init__.pyc
-or_utils/rules2rst.pyc
+*.pyc
+*~
+docs/_build/
 docs/rules/rules/00_rules_config.xml.rst
 docs/rules/rules/50_apache_rules.xml.rst
 docs/rules/rules/50_arpwatch_rules.xml.rst
