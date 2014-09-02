@@ -15,26 +15,23 @@ How it works? First, you need to install MinGW and `nsis <http://nsis.sourceforg
 
 After that, download the source and generate the Windows package directory (replace 2.6 with the latest version or download the latest source `here <https://bitbucket.org/dcid/ossec-hids/get/tip.tar.gz>`_):
 
+.. include:: getossec.trst
+
+
+And generate the Windows package directory:
 
 .. code-block:: console
 
-    # wget https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-hids-2.8.tar.gz
-    # tar -zxvf ossec-hids-2.8.tar.gz
-    # cd ossec-hids-2.6/src/win32
+    # cd ossec-hids-2.8/src/win32
     # ./gen-win.sh
 
 Now, you will have the win-pkg directory under src. Just go there and run make.sh. Your Windows agent package should be created in a few minutes:
 
+.. note:: The ``make.sh`` script may require modification depending on the Linux distribution used.
 
 .. code-block:: console
 
     # cd ../win-pkg
-
-
-The following script may need to be modified depending on which Linux distribution is being used.
-
-.. code-block:: console
-
     # sh ./make.sh
 
 You will see the following in the screen:
@@ -59,4 +56,4 @@ Which means that your agent executable ossec-win32-agent.exe has been created pr
 
 
 
-This document is a copy of Daniel Cid's blogpost `Compiling the Windows Agent from a Linux system <http://dcid.me/2009/06/compiling-the-windows-agent-from-a-linux-system/>`_
+.. This document is a copy of Daniel Cid's blogpost `Compiling the Windows Agent from a Linux system <http://dcid.me/2009/06/compiling-the-windows-agent-from-a-linux-system/>`_
