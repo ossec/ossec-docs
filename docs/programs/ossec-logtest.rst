@@ -19,50 +19,9 @@ osssec-logtest argument options
 
 .. program:: ossec-logtest 
 
-.. option:: -d 
+.. option:: -a 
 
-   Print debug output to the terminal.   
-
-.. option:: -V
- 
-   Print the Version and license message for OSSEC and ossec-logtest. 
-
-.. option:: -h 
-   
-   Print the help message to the console.  
-
-.. option:: -t 
-
-    Test configuration.  This will print file details on the ossec-anaylistd rules, 
-    decoders, and lists as they are loaded and the order they were processed.  
-
-.. option:: -v 
-
-    Full output of all details and matches.  
-
-    .. note:: 
-
-        This the key argument to troubleshoot a rule, decoder problem.  
-
-    .. note:: 
-
-        This is argument was incorrectly displayed as running in the foreground 
-        in all version before version 2.5 
-
-
-.. option:: -u <user> 
-
-    Run as <user>: ossec-logtest will change uid to the user specified as part of this 
-    argument. 
-
-    Often used with `ossec-logtest -g`
-
-.. option:: -g <group>
-
-    Run as <group>: ossec-logtest will change gid to the group specified as part of this 
-    argument. 
-
-    Often used with `ossec-logtest -u`
+    Analyze of input lines as if they are live events.  
 
 .. option:: -c <config> 
 
@@ -73,9 +32,18 @@ osssec-logtest argument options
     This is the path that ossec-logtest will chroot to before it completes loading all rules, 
     decoders, and lists and processing standard input.  
 
-.. option:: -a 
+.. option:: -d 
 
-    Analyze of input lines as if they are live events.  
+   Print debug output to the terminal. This option can be used multiple times to increase the verbosity of the debug messages.
+
+.. option:: -h 
+      
+   Print the help message to the console.  
+
+.. option:: -t 
+
+    Test configuration.  This will print file details on the ossec-anaylistd rules, 
+    decoders, and lists as they are loaded and the order they were processed.  
 
 .. option:: -U <rule-id:alert-level:decoder-name> 
 
@@ -101,9 +69,24 @@ osssec-logtest argument options
       % echo $? 
       3
 
+.. option:: -V
+ 
+   Print the Version and license message for OSSEC and ossec-logtest. 
+
+.. option:: -v 
+
+    Full output of all details and matches.  
+
+    .. note:: 
+
+        This the key argument to troubleshoot a rule, decoder problem.  
+
+    .. note:: 
+
+        This is argument was incorrectly displayed as running in the foreground 
+        in all version before version 2.5 
 
 
-    
 
 
 Caveats
