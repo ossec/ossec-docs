@@ -16,9 +16,31 @@ agent-auth argument options
 
 .. program:: agent-auth
 
+.. option:: -A <agent_name>
+
+    Agent name to be used.
+    **Default** hostname
+
+.. option:: -D
+
+    Directory where OSSEC is installed.
+    **Default** /var/ossec
+
+.. option:: -d
+      
+    Execute agent-auth in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
+
+.. option:: -g <group>
+
+    Run as ``group``.
+
 .. option:: -h
 
     Display the help message 
+
+.. option:: -k <path>
+
+    Full path to the agent key.
 
 .. option:: -m <manager_ip>
 
@@ -29,15 +51,18 @@ agent-auth argument options
     Port ossec-authd is running on.
     **Default** 1515
 
-.. option:: -A <agent_name>
+.. option:: -V 
 
-    Agent name to be used.
-    **Default** hostname
+    Display OSSEC Version and license information.
 
-.. option:: -D
+.. option:: -v <path>
 
-    Directory where OSSEC is installed.
-    **Default** /var/ossec
+    Full path to the CA certificate used to verify the server.
+
+.. option:: -x <path>
+
+    Full path to the agent certificate.
+
 
 
 agent-auth example usage

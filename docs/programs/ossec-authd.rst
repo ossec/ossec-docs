@@ -18,19 +18,51 @@ ossec-authd argument options
 
 .. program:: ossec-authd
 
+.. option:: -D <dir>
+
+    chroot to ``<dir>``.
+
 .. option:: -d
 
-    Run in debug mode.
+    Execute ossec-authd in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
+
+.. option:: -g <group>
+
+    Run as ``group``.
+
+.. option:: -h
+
+    Display a help message.
 
 .. option:: -i
 
     Add agents with a specific IP address instead of using ``any``.
+
+.. option:: -k <path>
+
+    Full path to the server key.
 
 .. option:: -p <port>
 
    Listen on port.
 
    **Default** 1515
+
+.. option:: -t
+
+    Test the configuration.
+
+.. option:: -V 
+
+    Display OSSEC Version and license information.
+
+.. option:: -v <path>
+
+    Full path to the CA certificate used to verify the clients.
+
+.. option:: -x <path>
+
+    Full path to the server certificate.
 
 
 Creating SSL keys
