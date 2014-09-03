@@ -11,8 +11,8 @@
 
     .. code-block:: console
 
-        # wget https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-hids-2.8.tar.gz
-        # ftp http://www.ossec.net/files/ossec-hids-2.8-checksum.txt
+        # wget -U ossec https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-hids-2.8.tar.gz
+        # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8-checksum.txt
         # cat ossec-hids-2.8-checksum.txt
         MD5(ossec-hids-2.8.tar.gz)= 90f3c54f22abe9c07661fb51ddaa8474
         SHA1(ossec-hids-2.8.tar.gz)= 1d72a8cd347379ef7a533ba9633231c5bfedfa1a
