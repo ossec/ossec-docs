@@ -11,14 +11,14 @@
 
     .. code-block:: console
 
-        # wget -U ossec https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-hids-2.8.tar.gz
-        # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8-checksum.txt
-        # cat ossec-hids-2.8-checksum.txt
-        MD5(ossec-hids-2.8.tar.gz)= 90f3c54f22abe9c07661fb51ddaa8474
-        SHA1(ossec-hids-2.8.tar.gz)= 1d72a8cd347379ef7a533ba9633231c5bfedfa1a
-        # md5sum ossec-hids-2.8.tar.gz
-        MD5 (ossec-hids-2.8.tar.gz) = 90f3c54f22abe9c07661fb51ddaa8474
-        # sha1sum ossec-hids-2.8.tar.gz
-        SHA1 (ossec-hids-2.8.tar.gz) = 1d72a8cd347379ef7a533ba9633231c5bfedfa1a
+        # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8.1.tar.gz
+        # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8.1-checksum.txt
+        # cat ossec-hids-2.8.1-checksum.txt
+        MD5(ossec-hids-2.8.1.tar.gz)= c2ffd25180f760e366ab16eeb82ae382
+        SHA1(ossec-hids-2.8.1.tar.gz)= 0ecf1df09558dc8bb4b6f65e1fb2ca7a7df9817c
+        # md5sum ossec-hids-2.8.1.tar.gz
+        MD5(ossec-hids-2.8.1.tar.gz)= c2ffd25180f760e366ab16eeb82ae382
+        # sha1sum ossec-hids-2.8.1.tar.gz
+        SHA1(ossec-hids-2.8.1.tar.gz)= 0ecf1df09558dc8bb4b6f65e1fb2ca7a7df9817c
 
 

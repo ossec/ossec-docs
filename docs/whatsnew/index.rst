@@ -3,6 +3,19 @@
 What's new
 ##########
 
+2.8.1
+-----
+
+Released Sept 9, 2014:
+
+.. note::
+
+   This is a bug fix release.
+
+* SECURITY fix for CVE-2014-5284 found by Jeff Petersen of Roka Security LLC.
+* Bug fixes
+
+
 2.8
 ---
 
