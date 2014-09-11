@@ -18,7 +18,7 @@
         SHA1(ossec-hids-2.8.1.tar.gz)= 0ecf1df09558dc8bb4b6f65e1fb2ca7a7df9817c
         # md5sum ossec-hids-2.8.1.tar.gz
         MD5(ossec-hids-2.8.1.tar.gz)= c2ffd25180f760e366ab16eeb82ae382
-        # sha1sum ossec-hids-2.8.tar.gz
+        # sha1sum ossec-hids-2.8.1.tar.gz
         SHA1(ossec-hids-2.8.1.tar.gz)= 0ecf1df09558dc8bb4b6f65e1fb2ca7a7df9817c
 
 
