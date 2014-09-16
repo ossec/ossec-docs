@@ -18,13 +18,29 @@ ossec-authd argument options
 
 .. program:: ossec-authd
 
+.. option:: -D <dir>
+
+    chroot to ``<dir>``.
+
 .. option:: -d
 
-    Run in debug mode.
+    Execute ossec-authd in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
+
+.. option:: -g <group>
+
+    Run as ``group``.
+
+.. option:: -h
+
+    Display a help message.
 
 .. option:: -i
 
     Add agents with a specific IP address instead of using ``any``.
+
+.. option:: -k <path>
+
+    Full path to the server key.
 
 .. option:: -p <port>
 
@@ -32,27 +48,21 @@ ossec-authd argument options
 
    **Default** 1515
 
-.. option:: -x </path/to/certificate>
+.. option:: -t
 
-   Load the PEM encoded certificate that will be presented to clients during establishment of the SSL connection.
+    Test the configuration.
 
-   **Default** /var/ossec/etc/sslmanager.cert
+.. option:: -V 
 
-.. option:: -k </path/to/private_key>
+    Display OSSEC Version and license information.
 
-   Load the certificate's corresponding PEM encoded private key.
+.. option:: -v <path>
 
-   **Default** /var/ossec/etc/sslmanager.key
+    Full path to the CA certificate used to verify the clients.
 
-.. note::
+.. option:: -x <path>
 
-   The following option is only necessary if verification of client certificates is desired. See :ref:`optional-client-authentication` below.
-
-.. option:: -v </path/to/CA_certificate>
-
-   Load the PEM encoded CA Certificate that will be used to authenticate clients if desired. If this option is
-   used then :ref:`agent-auth` must present a valid certificate signed by this CA in order to be provided with
-   a key.
+    Full path to the server certificate.
 
 
 Creating SSL keys

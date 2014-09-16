@@ -16,13 +16,29 @@ ossec-remoted argument options
 
 .. program:: ossec-remoted
 
+.. option:: -c <config>
+
+    Run ``ossec-remoted`` using <config> as the configuration file.
+
+    **Default:** /var/ossec/etc/ossec.conf
+
+.. option:: -D <dir>
+
+    Chroot to <dir>.
+
+    **Default:** /var/ossec
+
 .. option:: -d
 
-    Run in debug mode.
+    Execute ossec-remoted in debug mode. This can be used more than once to increase the verbosity of the debug messages.
 
-.. option:: -V
+.. option:: -f
 
-    Version and license information.
+    Run ossec-agentlessd in the foreground.
+
+.. option:: -g <group>
+
+    Run ``ossec-remoted`` as <group>.
 
 .. option:: -h
 
@@ -38,20 +54,8 @@ ossec-remoted argument options
 
     **Default:** ossecm
 
-.. option:: -g <group>
+.. option:: -V
 
-    Run ``ossec-remoted`` as <group>.
-
-.. option:: -c <config>
-
-    Run ``ossec-remoted`` using <config> as the configuration file.
-
-    **Default:** /var/ossec/etc/ossec.conf
-
-.. option:: -D <dir>
-
-    Chroot to <dir>.
-
-    **Default:** /var/ossec
+    Version and license information.
 
 

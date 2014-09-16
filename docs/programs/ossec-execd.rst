@@ -11,14 +11,24 @@ ossec-execd argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-execd
+i
+.. option:: -c <config>
+
+    Run ``ossec-execd`` using <config> as the configuration file.
+
+    **Default:** /var/ossec/etc/ossec.conf
 
 .. option:: -d
 
-    Run in debug mode.
+    Execute ossec-execd in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
 
-.. option:: -V
+.. option:: -f
 
-    Version and license information.
+    Run ``ossec-execd`` in the foreground.
+
+.. option:: -g
+
+    Run as ``group``.
 
 .. option:: -h
 
@@ -28,20 +38,9 @@ ossec-execd argument options
 
     Test configuration.
 
-.. option:: -f
+.. option:: -V
 
-    Run ``ossec-execd`` in the foreground.
+    Version and license information.
 
-.. option:: -c <config>
-
-    Run ``ossec-execd`` using <config> as the configuration file.
-
-    **Default:** /var/ossec/etc/ossec.conf
-
-.. option:: -D <dir>
-
-    Chroot to <dir>.
-
-    **Default:** /var/ossec
 
 

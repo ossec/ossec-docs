@@ -15,13 +15,19 @@ ossec-syscheckd argument options
 
 .. program:: ossec-syscheckd
 
+.. option:: -c <config>
+
+    Run ``ossec-syscheckd`` using <config> as the configuration file.
+
+    **Default:** /var/ossec/etc/ossec.conf
+
 .. option:: -d
 
-    Run in debug mode.
+    Execute ossec-syscheckd in debug mode. This can be used more than once to increase the verbosity of the debug messages.
 
-.. option:: -V
+.. option:: -f
 
-    Version and license information.
+    Run ``ossec-syscheckd`` in the foreground.
 
 .. option:: -h
 
@@ -31,20 +37,8 @@ ossec-syscheckd argument options
 
     Test configuration.
 
-.. option:: -f
+.. option:: -V
 
-    Run ``ossec-syscheckd`` in the foreground.
-
-.. option:: -c <config>
-
-    Run ``ossec-syscheckd`` using <config> as the configuration file.
-
-    **Default:** /var/ossec/etc/ossec.conf
-
-.. option:: -D <dir>
-
-    Chroot to <dir>.
-
-    **Default:** /var/ossec
+    Version and license information.
 
 

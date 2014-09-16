@@ -13,13 +13,19 @@ ossec-logcollector argument options
 
 .. program:: ossec-logcollector
 
+.. option:: -c <config>
+
+    Run ``ossec-logcollector`` using <config> as the configuration file.
+
+    **Default:** /var/ossec/etc/ossec.conf
+
 .. option:: -d
 
-    Run in debug mode.
+    Execute ossec-logcollector in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
 
-.. option:: -V
+.. option:: -f
 
-    Version and license information.
+    Run ``ossec-logcollector`` in the foreground.
 
 .. option:: -h
 
@@ -29,20 +35,8 @@ ossec-logcollector argument options
 
     Test configuration.
 
-.. option:: -f
+.. option:: -V
 
-    Run ``ossec-logcollector`` in the foreground.
-
-.. option:: -c <config>
-
-    Run ``ossec-logcollector`` using <config> as the configuration file.
-
-    **Default:** /var/ossec/etc/ossec.conf
-
-.. option:: -D <dir>
-
-    Chroot to <dir>.
-
-    **Default:** /var/ossec
+    Version and license information.
 
 
