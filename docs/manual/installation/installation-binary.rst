@@ -24,7 +24,7 @@ install and unpack it (on the system with a compiler).
 
 .. code-block:: console 
 
-    # wget  https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-hids-2.8.tar.gz 
+    # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8.1.tar.gz
     # tar -zxvf ossec-hids-latest.tar.gz 
 
     
