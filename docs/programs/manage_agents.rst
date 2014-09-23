@@ -9,34 +9,38 @@ manage_agents is available in two versions:
 - a version for OSSEC server installations
 - a version for OSSEC agent installations
 
-The purpose of manage_agents is to provide an easy-to-use interface to handle authentication 
-keys for OSSEC agents. These authentication keys are required for secure (encrypted and 
+The purpose of manage_agents is to provide an easy-to-use interface to handle authentication
+keys for OSSEC agents. These authentication keys are required for secure (encrypted and
 authenticated) communication between the OSSEC server and its affiliated agent instances.
 
 manage_agents argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. program:: manage_agents 
+.. program:: manage_agents
+
+.. option:: -V
+
+    Display OSSEC Version.
 
 .. option:: -h
 
-    Display the help message. 
+    Display the help message.
 
-.. option:: -V 
+.. option:: -l
 
-    Display OSSEC Version. 
+    List available agents.
 
-.. option:: -l 
-
-    List available agents. 
-
-.. option:: -e <agent_id> 
+.. option:: -e <agent_id>
 
     Extracts key for an agent (Manager only).
 
-.. option:: -i <key> 
+.. option:: -r <agent_id>
 
-    Import authentication key (Agent only). 
+    Remove an agent (Manager only).
+
+.. option:: -i <key>
+
+    Import authentication key (Agent only).
 
 .. option:: -f  <file>
 
@@ -51,7 +55,7 @@ manage_agents argument options
    192.168.1.2,host02
    192.168.1.3,host03
 
-   # /var/ossec/bin/manage_agents -f /k         
+   # /var/ossec/bin/manage_agents -f /k
    Bulk load file: /k
    Opening: [/k]
    Agent information:
@@ -68,11 +72,7 @@ manage_agents argument options
    Agent added.
 
 
-
-
-
-Usage 
+Usage
 -----
 
 The OSSEC manual goes into details on usage of this command at :ref:`manual_agent_manage`
-
