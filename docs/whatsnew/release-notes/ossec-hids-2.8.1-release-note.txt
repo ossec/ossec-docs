@@ -7,81 +7,10 @@ Summary of changes in v2.8.1
 
 === NOTE: In terms of features this release is the same as OSSEC 2.8, *EXCEPT*
           it includes a fix for CVE-2014-5284 vulnerability discovered by Jeff
-          Petersen of Roka Security LLC. 
+          Petersen of Roka Security LLC.
 
           Go to https://github.com/ossec/ossec-hids/releases/tag/2.8.1 for more
-          information regarding this issue. 
-
-=== Installation
-    == Server 
-	 - Avoided a crash of agentd on Solaris (danpop60)
-	 
-    == Agent 
-	 - Fixed manage_agents -f potential infinite loop (awiddersheim)
-	 - Added manage_agents -r <id> to remove an agent (awiddersheim)
-	 - Allow NIX agents to use "-f" option and run in forground (awiddersheim)
-	 
-     - Windows agent install/uninstall GUI enhancements (awiddersheim)
-	 - Windows agent_config profile fixed (gaelmuller)
-	 - Added eventchannel support for Windows agent on Vista or later (gaelmuller)
-	 - Many Windows agent bug fixes (awiddersheim)
-
-=== Syscheck
-    == Extended filesize from an integer to a long integer 
-	== Make syscheck/analysisd/remoted.debug in internal_options.conf work (awiddersheim)
-
-=== ActiveResponse 
-    == Fix active-response on MAC OS Firewall (jknockaert)
-
-=== Log monitoring/analysis
-	== Add option to allow the outputing of all alerts to a zeromq PUB socket 
-		in JSON format, using cJSON library (jrossi, justintime32). New Config:
-		<ossec>
-			<global>
-				<zeromq_output>yes|no</zeromq_output>
-				<zeromq_uri>tcp://localhost:11111</zeromq_uri>
-    == Add TimeGenerated to the output of Windows Event logs (awiddersheim)
-	== os_net fixes, and code clean up in general (cgzones)
-	== os_regex unit test cases added (cgzones)
-	== os_xml review and fixes  (cgzones)
-
-=== Rules and Decoders
-    == Added some additional sshd rules in sshd_rules.xml (joshgarnett)
-	== Removed bro-ids rules (ddpbsd)
-    == Removed event ID 676, 672 in msauth_rules.xml (mstarks01)
-
-=== Contributions 
-    == zeromq_pubsub.py (jrossi)
-	== ossec-eps.sh, a script to calculate events-per-second (mstarks01)
-
-
-OSSEC 2.8 CONTRIBUTORS (GitHub usernames in alphabetical order): 
-awiddersheim 
-Brad Lhotsky
-cgzones
-ChristianBeer
-danpop60 (Solaris fix)
-ddpbsd
-denied39
-dopefish
-gaelmuller 
-harshilmathur
-jbcheng
-jknockaert
-justintime32 
-Joshua Garnett
-harshilmathur
-hexinglun
-jrossi 
-labrown
-Micha Nasriachi
-mstarks01
-northox
-pdrakeweb
-reyjrar
-Santiago Bassett
+          information regarding this issue.
 
 
                                === END ===
-
- 
