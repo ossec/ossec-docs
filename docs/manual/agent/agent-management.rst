@@ -1,7 +1,7 @@
 
 .. _manual_agent_manage:
 
-Managing Agents 
+Managing Agents
 ===============
 
 To add an agent to an OSSEC manager with :ref:`manage_agents` you need to follow the steps below.
@@ -30,7 +30,7 @@ The server version of manage_agents provides an interface to:
 Running manage_agents and start screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``manage_agents`` should be run as a user with 
+``manage_agents`` should be run as a user with
 the appropriate privileges (e.g. root).
 
 Run ``manage_agents``:
@@ -66,7 +66,7 @@ To add an agent type ``a`` in the start screen:
     Choose your action: A,E,L,R or Q: a
 
 You are then prompted to provide a name for the new agent.
-This can be the hostname or another string to identify the system. 
+This can be the hostname or another string to identify the system.
 In this example the agent name will be agent1.
 
 .. code-block:: console
@@ -75,9 +75,9 @@ In this example the agent name will be agent1.
       Please provide the following:
        * A name for the new agent: agent1
 
-After that you have to specify the IP address for the agent. This can either be a single 
-IP address (e.g. 192.168.1.25), a range of IPs (e.g. 192.168.2.0/24), or ``any``. Using a 
-network range or ``any`` is preferable when the IP of the agent may change frequently  
+After that you have to specify the IP address for the agent. This can either be a single
+IP address (e.g. 192.168.1.25), a range of IPs (e.g. 192.168.2.0/24), or ``any``. Using a
+network range or ``any`` is preferable when the IP of the agent may change frequently
 (DHCP), or multiple systems will appear to come from the same IP address (NAT).
 
 .. code-block:: console
@@ -90,10 +90,10 @@ network range or ``any`` is preferable when the IP of the agent may change frequ
    Multiple systems can use the same IP range or ``any``.
 
 
-The last information you will be asked for is the ID you want to assign to the agent. 
-:ref:`manage_agents` will suggest a value for the ID. This value should be the lowest positive 
-number that is not already assigned to another agent. The ID 000 is assigned to the 
-OSSEC server. To accept the suggestion, simply press ENTER. To choose another value, 
+The last information you will be asked for is the ID you want to assign to the agent.
+:ref:`manage_agents` will suggest a value for the ID. This value should be the lowest positive
+number that is not already assigned to another agent. The ID 000 is assigned to the
+OSSEC server. To accept the suggestion, simply press ENTER. To choose another value,
 type it in and press ENTER.
 
 .. code-block:: console
@@ -112,7 +112,7 @@ As the final step in creating an agent, you have to confirm adding the agent:
     Confirm adding it?(y/n): y
     Agent added.
 
-After that :ref:`manage_agents` appends the agent information to /var/ossec/etc/client.keys 
+After that :ref:`manage_agents` appends the agent information to /var/ossec/etc/client.keys
 and goes back to the start screen.
 
 .. warning::
@@ -123,51 +123,51 @@ and goes back to the start screen.
 Extracting the key for an agent
 -------------------------------
 
-After adding an agent, a key is created. This key must be copied to the agent. 
-To extract the key, use the ``e`` option in the manage_agents start screen. You will be 
-given a list of all agents on the server. To extract the key for an agent, 
-simply type in the agent ID. It is important to note that you have 
+After adding an agent, a key is created. This key must be copied to the agent.
+To extract the key, use the ``e`` option in the manage_agents start screen. You will be
+given a list of all agents on the server. To extract the key for an agent,
+simply type in the agent ID. It is important to note that you have
 to enter all digits of the ID.
 
 .. code-block:: console
 
     Choose your action: A,E,L,R or Q: e
 
-    Available agents: 
+    Available agents:
        ID: 001, Name: agent1, IP: 192.168.2.0/24
     Provide the ID of the agent to extract the key (or '\q' to quit): 001
 
-    Agent key information for '001' is: 
+    Agent key information for '001' is:
     MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5m
 
     ** Press ENTER to return to the main menu.
 
 The key is encoded in the string (shortened for this example)
-``MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5Mm`` 
-and includes information about the agent. This string can be added to the agent through the agent version of 
+``MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5Mm``
+and includes information about the agent. This string can be added to the agent through the agent version of
 ``manage_agents``.
 
 Removing an agent
 -----------------
 
 If you want to remove an OSSEC agent from the server, use the ``r`` option in the :ref:`manage_agents`
-start screen. You will be given a list of all agents already added to the server. To remove 
-an agent, simply type in the ID of the agent, press enter, and finally confirm the deletion. 
+start screen. You will be given a list of all agents already added to the server. To remove
+an agent, simply type in the ID of the agent, press enter, and finally confirm the deletion.
 It is important to note that you have to enter all digits of the ID.
 
 .. code-block:: console
 
-    Choose your action: A,E,L,R or Q: e
+    Choose your action: A,E,L,R or Q: r
 
-    Available agents: 
+    Available agents:
        ID: 001, Name: agent1, IP: 192.168.2.0/24
-    Provide the ID of the agent to extract the key (or '\q' to quit): 001
+    Provide the ID of the agent to be removed (or '\q' to quit): 001
     Confirm deleting it?(y/n): y
     Agent '001' removed.
 
-``manage_agents`` then invalidates the agent information in 
-``/var/ossec/etc/client.keys``. Only the values for ID and the key are kept to 
-avoid conflicts when adding agents. The deleted agent can no longer 
+``manage_agents`` then invalidates the agent information in
+``/var/ossec/etc/client.keys``. Only the values for ID and the key are kept to
+avoid conflicts when adding agents. The deleted agent can no longer
 communicate with the OSSEC server.
 
 
@@ -202,10 +202,5 @@ The agent version provides an interface for importing authentication keys.
     ** Press ENTER to return to the main menu.
 
 
-For the changes to be in effect you have to 
+For the changes to be in effect you have to
 restart the server and start the agent.
-
-
-
-
-
