@@ -92,5 +92,26 @@ I set the <email_alert_level> to 10, why do I keep seeing rules with lower level
    or overwrite the rule without the ``alert_by_email`` option. 
 
 
+.. _MARK:
+
+I keep getting log messages that start with ``--MARK``, what do I do?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   **Example:**
+
+   .. code-block:: console
+
+      OSSEC HIDS Notification.
+      2014 Sep 21 08:36:11
+
+      Received From: (services01.qrios.com) 10.10.0.01->ossec-keepalive
+      Rule: 1002 fired (level 2) -> "Unknown problem somewhere in the system."
+      Portion of the log(s):
+
+      --MARK--: cB82L!#'zr%lQfGUE))-7Q#Tj4fp+KG=@Wbq^wXiN)7L;ha!JB0kA_mJT5g-j[v_R@TAbk-,/fHEnHjerroRgAIh?OLWJ6LIL/q[Wg-cl#H#n/&(3NDr$@#v8r*l;!b*qru$@YxEE4Zak=(wEqN0JuDlLo!*HtlXKF(3.kQ&wj&+aklF%YNsA&*#Mef)xq'qd@)P+Dz0[jP]70%Q6vqbfbv?fA)D?#bc?_R+6y.i+MdXUzhucx9V#MV($-3uk4!ja!MocJx;D%P=We0Y^DoV&r+fha$rmRA1v$^y4U4cD1'H5T?OF1R3(Hq'H.YcO'3soM/(P2_A@w7K^6G2C=z2#.W2[24=VBXrvVe!5;eKotCM[8W!hE_CB;/!Vk1k'sCov_H[u'(=no*VEH$'@1vVU7zj*I7s0RHD)w@ipX?&@y)X50Q'w#OyN$+$pW?xW_0JYFRwK/g3wIuKc!D#Q*eMg'79/oaURi.j].))JIQ6&!k(O]ZN#lHATidRwRTvhQFQ]6DFiBT;fltbg(OALDi/LlPqkcL5bypK?axVByOGJp+.P(@[p)'j 
+      
+
+   This is a keep alive message, sent from an OSSEC agent to the manager. Thie prevents the manager from marking the agent as disconnected. These log messages should be filtered out, but sometimes one slips through (this one has the string ``erroR`` which may be the cause). These should be safe to ignore.
+
 
 
