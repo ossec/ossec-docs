@@ -3,13 +3,18 @@
 Makefile
 ========
 
+The make systems requires GNU Make and attempts to preform everything
+needed in a single run. Their is no state stored from run to run of make
+so this means that the type of installation being built is stated each
+time via TARGET environment variable.
+
 Settings
 --------
 
 All changes to the makefile that take external input should be reported
 via the settings build step. This allows troubleshooting and review of
-the evnironment, and the hope is that some new features will become
-discovable for other developers.
+the environment, and the hope is that some new features will become
+discoverable for other developers.
 
 .. code-block:: console 
 
@@ -55,9 +60,10 @@ Options / Varaiables
 
 .. envvar:: TARGET 
 
-    Defines the type of installation to build. 
+    Defines the type of installation to build.
 
-    **Default:** server 
+
+    **Default:** 
 
     **Allowed:** server/agent/hybrid/local 
 
