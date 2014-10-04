@@ -31,10 +31,12 @@ Development
 ===========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
-   oRFC/*
+   development/build/index 
+
+   development/oRFC/index 
 
 Reference 
 =========
