@@ -68,7 +68,6 @@ Options / Varaiables
 
     **Allowed:** server/agent/hybrid/local 
 
-
 .. envvar:: V
 
     V is for verbose, and will instructure make to display full output without color. 
@@ -83,15 +82,14 @@ Options / Varaiables
 
     PREFIX is to be set with the installation base path.  
 
-    Please note that paths with SPACES and tabs in them are not supported and with 
-    causing a large amount of issues. 
+    Please note that paths with SPACES and tabs in them are not supported and will
+    cause a large amount of issues. 
 
     **Applies to Target:** all
 
     **Default:** /var/ossec 
 
     **Allowed:** All valid paths 
-
 
 .. envvar:: MAXAGENTS 
 
@@ -113,7 +111,6 @@ Options / Varaiables
     **Default:** 0
 
     **Allowed:** 0/1
-
 
 .. envvar:: DEBUGAD 
 
