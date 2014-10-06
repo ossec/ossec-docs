@@ -96,7 +96,7 @@ Options / Varaiables
 
 .. envvar:: MAXAGENTS 
 
-    OSSEC is compiled with a max number of agents on the server/hybrid TARGETS.
+    OSSEC is compiled with a maximum number of agents on the server/hybrid TARGETS.
     ``MAXAGENTS`` allows users to select values expected for their environment.
 
     **Applies to Target:** server/hybrid
