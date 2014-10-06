@@ -16,25 +16,41 @@ ossec-reportd argument options
 
 .. program:: ossec-reportd
 
-.. option:: -h
+.. option:: -D <dir>
 
-    Display the help message
+    chroot to ``<dir>``.
+
+.. option:: -d
+      
+    Execute ossec-reportd in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
 
 .. option:: -f <filter> <value>
 
     Filter the results.
 
-.. option:: -r <filter> <value>
+    .. note::
 
-    Show related entries.
+       Allowed filters: group, rule, level, location, user, srcip, and filename.
+
+.. option:: -h
+
+    Display the help message
 
 .. option:: -n <string>
 
     Create a description for the report.
 
+.. option:: -r <filter> <value>
+
+    Show related entries.
+
 .. option:: -s
 
     Show the alerts related to the summary.
+
+.. option:: -V
+
+    Display OSSEC Version and license information.
 
 
 ossec-reportd example usage

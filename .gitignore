@@ -1,3 +1,11 @@
+# temporary vim files
+*.swp
+*.swo
+
+# patch files
+*.rej
+*.orig
+
 *.pyc
 *~
 docs/_build/
@@ -77,3 +85,8 @@ docs/rules/rules/pure-ftpd_rules_ro.xml.rst
 docs/rules/rules/pure-ftpd_rules_sk.xml.rst
 docs/rules/rules/pure-ftpd_rules_sv.xml.rst
 docs/rules/rules/pure-ftpd_rules_tr.xml.rst
+docs/_build/
+docs/_ext/__init__.pyc
+docs/_ext/xml_domain.pyc
+docs/docs/
+*~

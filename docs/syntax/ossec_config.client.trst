@@ -20,7 +20,15 @@
 
 .. xml:element:: config-profile
 
-    Specifies the ``agent.conf`` profiles to be used by the agent.
+    Specifies the ``agent.conf`` profiles to be used by the agent. Multiple profiles can be included, separated by a comma and a space.
+
+    **Example:**
+
+    .. code-block:: console
+
+       <client>
+         <config-profile>webserver, lowmemory</config-profile>
+       </client>
 
     .. note:
 

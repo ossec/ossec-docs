@@ -13,36 +13,6 @@ ossec-dbd argument options
 
 .. program:: ossec-dbd
 
-.. option:: -d
-
-    Run in debug mode.
-
-.. option:: -V
-
-    Version and license information.
-
-.. option:: -h
-
-    Display the help message.
-
-.. option:: -t
-
-    Test configuration.
-
-.. option:: -f
-
-    Run ``ossec-dbd`` in the foreground.
-
-.. option:: -u <user>
-
-    Run ``ossec-dbd`` as <user>.
-
-    **Default:** ossecm
-
-.. option:: -g <group>
-
-    Run ``ossec-dbd`` as <group>.
-
 .. option:: -c <config>
 
     Run ``ossec-dbd`` using <config> as the configuration file.
@@ -54,5 +24,35 @@ ossec-dbd argument options
     Chroot to <dir>.
 
     **Default:** /var/ossec
+
+.. option:: -d
+
+    Execute ossec-dbd in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
+
+.. option:: -f
+
+    Run ``ossec-dbd`` in the foreground.
+
+.. option:: -g <group>
+
+    Run ``ossec-dbd`` as <group>.
+
+.. option:: -h
+
+    Display the help message.
+
+.. option:: -t
+
+    Test configuration.
+
+.. option:: -u <user>
+
+    Run ``ossec-dbd`` as <user>.
+
+    **Default:** ossecm
+
+.. option:: -V
+
+    Version and license information.
 
 

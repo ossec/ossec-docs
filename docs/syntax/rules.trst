@@ -99,6 +99,12 @@
 
     - **Allowed:** Any dstip 
 
+.. xml:element:: extra_data
+
+    - Any string that is decoded into the ``extra_data`` field.
+
+    - **Allowed:** Any string.
+
 .. xml:element:: user 
 
     - Any username (decoded as the username).
@@ -178,13 +184,6 @@
 
     - **Allowed:** Any group 
 
-.. xml:element:: if_matched_level 
-
-    - Matches if an alert of the defined level has been triggered in a set number of seconds.
-    - This option is used in conjunction with frequency_ and timeframe_.
-
-    - **Allowed:** Any level from 1 to 16 
-
 .. xml:element:: same_id
 
     - Specifies that the decoded id must be the same.
@@ -249,6 +248,7 @@
         - Value: srcport 
         - Value: dstip 
         - Value: dstport 
+        - Value: extra_data
         - Value: user 
         - Value: url 
         - Value: id

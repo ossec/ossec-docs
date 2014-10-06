@@ -14,41 +14,39 @@ ossec-makelists argument options
 
 .. program:: ossec-makelists 
 
-.. option:: -h
-
-    Display the help message. 
-
-.. option:: -V
-
-    Diplay the version and license information.
-
-.. option:: -d
-
-    Execute in debug mode.
-
-.. option:: -f
-
-    Force rebuild of all databases.
-
-.. option:: -u <user>
-
-    Run as <user>.
-
-.. option:: -g <group>
-
-    Run as <group>.
-
 .. option:: -c <config>
 
     Run with configuration file of <config>.
 
     **Default** /var/ossec/etc/ossec.conf
 
-.. option:: -D <dir>
+.. option:: -d
 
-    Chroot to <dir>.
+    Execute ossec-makelists in debug mode. This option can be used multiple times to increase the verbosity of the debug messages.
 
-    **Default** /var/ossec
+.. option:: -F
+
+    Force the rebuild of all configured databases.
+
+.. option:: -g <group>
+
+    Run as <group>.
+
+.. option:: -h
+
+    Display the help message. 
+
+.. option:: -t
+
+    Test the configuration.
+
+.. option:: -u <user>
+
+    Run as <user>.
+
+.. option:: -V
+
+    Diplay the version and license information.
 
 
 
