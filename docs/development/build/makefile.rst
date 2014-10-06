@@ -189,7 +189,7 @@ Options / Varaiables
 
     **Applies to Target:** server/hybrid/local
 
-    **Allowed:** mysql|pgsql
+    **Allowed:** mysql/pgsql
 
 
 
