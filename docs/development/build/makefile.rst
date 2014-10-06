@@ -152,7 +152,8 @@ Options / Varaiables
 .. envvar:: USE_GEOIP
 
     ``USE_GEOIP`` enables support for `MAX Mind GeoIP
-    <https://www.maxmind.com/en/geoip2-services-and-databases>`_ looks on output.
+    <https://www.maxmind.com/en/geoip2-services-and-databases>`_
+    looks on output.
 
     **Applies to Target:** server/hybrid/local
 
@@ -162,7 +163,8 @@ Options / Varaiables
 
 .. envvar:: USE_PRELUDE
 
-    ``USE_PRELUDE`` enables support for prelude output
+    ``USE_PRELUDE`` enables support for
+    `Prelude-IDS <https://www.prelude-ids.org>`_ alert output.
 
     **Applies to Target:** server/hybrid/local
 
@@ -172,7 +174,7 @@ Options / Varaiables
     
 .. envvar:: USE_ZEROMQ
 
-    ``USE_ZEROMQ`` enables support for zeromq output
+    ``USE_ZEROMQ`` enables support for zeromq output.
 
     **Applies to Target:** server/hybrid/local
 
