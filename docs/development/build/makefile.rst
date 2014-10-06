@@ -82,8 +82,10 @@ Options / Varaiables
 
     PREFIX is to be set with the installation base path.  
 
-    Please note that paths with SPACES and tabs in them are not supported and will
-    cause a large amount of issues. 
+    .. warning::
+
+       Please note that paths with SPACES and tabs in them are not supported and
+       may cause compilation or runtime issues. 
 
     **Applies to Target:** all
 
