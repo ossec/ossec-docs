@@ -81,7 +81,7 @@ Options / Varaiables
 
 .. envvar:: PREFIX 
 
-    ``PREFIX`` is to be set with the installation base path.  
+    ``PREFIX`` is the absolute path OSSEC will be installed to.
 
     .. warning::
 
