@@ -3,10 +3,14 @@
 Makefile
 ========
 
-The make systems requires GNU Make and attempts to preform everything
-needed in a single run. Their is no state stored from run to run of make
-so this means that the type of installation being built is stated each
-time via TARGET environment variable.
+OSSEC is using (starting with 2.9) a single Makefile to build the binaries
+for each installation type.
+The Makefile uses features of `GNU make <http://www.gnu.org/software/make/>`_,
+and it is a requirement of the build process.
+The make system attempts to perform all necessary tasks in a single run.
+The type of installation must be specified when executed because there
+is no state stored between executions.
+
 
 Settings
 --------
@@ -61,9 +65,6 @@ Options / Varaiables
 .. envvar:: TARGET 
 
     Defines the type of installation to build.
-
-
-    **Default:** 
 
     **Allowed:** server/agent/hybrid/local 
 
