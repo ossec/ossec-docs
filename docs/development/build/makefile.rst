@@ -107,7 +107,7 @@ Options / Varaiables
 
 .. envvar:: DEBUG
 
-    ``DEBUG`` enables debug symbols in all compiled programs.
+    ``DEBUG`` enables debugging symbols in all compiled programs.
 
     **Applies to Target:** all
 
@@ -117,7 +117,7 @@ Options / Varaiables
 
 .. envvar:: DEBUGAD
 
-    ``DEBUGAD`` enables extra debuging logging in ossec-analysisd.
+    ``DEBUGAD`` enables extra debugging logging in ossec-analysisd.
 
     **Applies to Target:** server/hybrid
 
