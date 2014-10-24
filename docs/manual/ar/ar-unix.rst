@@ -12,7 +12,7 @@ Commands Configuration
 
 In the commands configuration you create new “commands” to be used as responses.
 You can have as many commands as you want. Each one should be inside their own
-“command” element. For further information please see the `examples example_ar_configuration`_.
+“command” element. For further information please see the `examples <../syntax/head_ossec_config.active-response.html#example-active-response-configurations>`_.
 
 .. code-block:: xml 
 
@@ -38,7 +38,8 @@ Responses Configuration
 
 In the active-response configuration, you bind the commands (created) to events.
 You can have as many responses as you want. Each one should be inside their own
-“active-response” element. For further information please see the `examples example_ar_configuration`_.
+“active-response” element. For further information please see the ` <../syntax/head_ossec_config.active-response.html#example-active-response-con
+figurations>`_.
 
 .. code-block:: xml 
 
