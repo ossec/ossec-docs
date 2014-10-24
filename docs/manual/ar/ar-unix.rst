@@ -12,7 +12,7 @@ Commands Configuration
 
 In the commands configuration you create new “commands” to be used as responses.
 You can have as many commands as you want. Each one should be inside their own
-“command” element. For further information please see `example ar configurations`_.
+“command” element. For further information please see the `examples example_ar_configurations`_.
 
 .. code-block:: xml 
 
@@ -38,8 +38,7 @@ Responses Configuration
 
 In the active-response configuration, you bind the commands (created) to events.
 You can have as many responses as you want. Each one should be inside their own
-“active-response” element. For further information please see 
-`example ar configurations`_.
+“active-response” element. For further information please see the `examples example_ar_configurations`_.
 
 .. code-block:: xml 
 
