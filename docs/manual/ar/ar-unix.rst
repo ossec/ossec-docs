@@ -12,8 +12,7 @@ Commands Configuration
 
 In the commands configuration you create new “commands” to be used as responses.
 You can have as many commands as you want. Each one should be inside their own
-“command” element. You can see an example here (for the host-deny.sh) and one
-here (for disable-account.sh).
+“command” element. For further information please see the `examples example_ar_configuration`_.
 
 .. code-block:: xml 
 
@@ -39,13 +38,7 @@ Responses Configuration
 
 In the active-response configuration, you bind the commands (created) to events.
 You can have as many responses as you want. Each one should be inside their own
-“active-response” element. Examples are here (for blocking based on the
-severity) and here (for blocking on specific rules).
-
-In the active-response configuration, you bind the commands (created) to events.
-You can have as many responses as you want. Each one should be inside their own
-“active-response” element. Examples are here (for blocking based on the
-severity) and here (for blocking on specific rules).
+“active-response” element. For further information please see the `examples example_ar_configuration`_.
 
 .. code-block:: xml 
 
@@ -106,3 +99,10 @@ active-response tools:
 
         block in quick from <ossec_fwtable> to any
         block out quick from any to <ossec_fwtable>
+- **firewalld-drop.sh** (firewalld): Adds a rich-rule to block an IP to firewalld (Linux with firewalld enabled).
+
+    .. note::
+
+        You must manually enable this script in ossec.conf if you have firewalld 
+        enabled. The script will add (and remove) a rich-rule that drops all
+        incoming communication from the supplied srcip.
