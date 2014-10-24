@@ -106,3 +106,10 @@ active-response tools:
 
         block in quick from <ossec_fwtable> to any
         block out quick from any to <ossec_fwtable>
+- **firewalld-drop.sh** (firewalld): Adds a rich-rule to block an IP to firewalld (Linux with firewalld enabled).
+
+    .. note::
+
+        You must manually enable this script in ossec.conf if you have firewalld 
+        enabled. The script will add (and remove) a rich-rule that drops all
+        incoming communication from the supplied srcip.
