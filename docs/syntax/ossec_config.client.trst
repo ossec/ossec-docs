@@ -20,7 +20,7 @@
 
 .. xml:element:: config-profile
 
-    Specifies the ``agent.conf`` profiles to be used by the agent. Multiple profiles can be included, separated by a comma.
+    Specifies the ``agent.conf`` profiles to be used by the agent. Multiple profiles can be included, separated by a comma and a space.
 
     **Example:**
 

@@ -62,10 +62,10 @@ osssec-logtest argument options
 
     .. code-block:: console
 
-      % echo "Aug 29 15:33:13 ns3 named[464]: client 217.148.39.3#1036: query (cache) denied" | sudo /va/ossec/bin/ossec-logtest -U 12108:0:named 2&>1 > /dev/null
+      % echo "Aug 29 15:33:13 ns3 named[464]: client 217.148.39.3#1036: query (cache) denied" | sudo /var/ossec/bin/ossec-logtest -U 12108:0:named 2>&1 > /dev/null
       % echo $?
       0
-      % echo "Aug 29 15:33:13 ns3 XXXXXX[464]: client 217.148.39.3#1036: query (cache) denied" | sudo /var/ossec/bin/ossec-logtest -U 12108:0:named 2&>1 > /dev/null
+      % echo "Aug 29 15:33:13 ns3 XXXXXX[464]: client 217.148.39.3#1036: query (cache) denied" | sudo /var/ossec/bin/ossec-logtest -U 12108:0:named 2>&1 > /dev/null
       % echo $? 
       3
 

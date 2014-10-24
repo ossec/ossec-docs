@@ -1,3 +1,11 @@
+# temporary vim files
+*.swp
+*.swo
+
+# patch files
+*.rej
+*.orig
+
 *.pyc
 *~
 docs/_build/
