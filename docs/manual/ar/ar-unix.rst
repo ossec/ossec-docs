@@ -12,8 +12,7 @@ Commands Configuration
 
 In the commands configuration you create new “commands” to be used as responses.
 You can have as many commands as you want. Each one should be inside their own
-“command” element. You can see an example here (for the host-deny.sh) and one
-here (for disable-account.sh).
+“command” element. For further information please see `example ar configurations`_.
 
 .. code-block:: xml 
 
@@ -39,13 +38,8 @@ Responses Configuration
 
 In the active-response configuration, you bind the commands (created) to events.
 You can have as many responses as you want. Each one should be inside their own
-“active-response” element. Examples are here (for blocking based on the
-severity) and here (for blocking on specific rules).
-
-In the active-response configuration, you bind the commands (created) to events.
-You can have as many responses as you want. Each one should be inside their own
-“active-response” element. Examples are here (for blocking based on the
-severity) and here (for blocking on specific rules).
+“active-response” element. For further information please see 
+`example ar configurations`_.
 
 .. code-block:: xml 
 
