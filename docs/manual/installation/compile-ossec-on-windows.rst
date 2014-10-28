@@ -30,10 +30,10 @@ Here are the steps:
 
 #. Download and install the required programs. Be sure to pay special attention to the `steps for properly installing and configuring MinGW <http://www.mingw.org/wiki/Getting_Started>`_, particularly the part about modifying the PATH environment variable.
 #. Next, we.re going to extract OSSEC using 7-Zip. To do so, simply right-click on the file and select 7-Zip, extract to "folder name.tar," where folder name is the name of the package. This decompresses the archive. Navigate within that folder and repeat this step to untar the archive. At this point, you should see all of the files in the package.
-#. Place gen_win.txt in the src\win32 folder and rename the extension to .cmd.
-#. Download Unix2DOS and place it in the src\win32 folder
-#. Open a command prompt. Navigate to src\win32, make any desired customizations, and execute gen_win.cmd. This should gather all of the required files and place them in src\win-pkg.
-#. Next, we compile the Windows agent by navigating to src\win-pkg and executing make.bat (I assume you have the chops to know how to change directories :) ).
+#. Place gen_win.txt in the ``src\win32`` folder and rename the extension to .cmd.
+#. Download Unix2DOS and place it in the ``src\win32`` folder
+#. Open a command prompt. Navigate to ``src\win32``, make any desired customizations, and execute gen_win.cmd. This should gather all of the required files and place them in ``src\win-pkg``.
+#. Next, we compile the Windows agent by navigating to ``src\win-pkg`` and executing make.bat (I assume you have the chops to know how to change directories :) ).
 #. Now we have all of the files we need but no way to effectively install it. To generate the installer, simply execute the NSIS compiler like so: ``"c:\Program Files\NSIS\makensis.exe" ossec-installer.nsi``
 
 If you see no errors and a binary named ossec-win32-agent.exe, everything was successful. Congratulations, you now have a custom-made version of OSSEC!
