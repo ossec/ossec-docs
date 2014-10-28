@@ -60,9 +60,18 @@ ossec-authd argument options
 
     Full path to the CA certificate used to verify the clients.
 
+    .. note::
+
+       This option was added after 2.8.1.
+
 .. option:: -x <path>
 
     Full path to the server certificate.
+
+    .. note::
+
+       This option was added after 2.8.1.
+
 
 
 Creating SSL keys

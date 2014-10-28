@@ -6,7 +6,10 @@ Compiling the OSSEC Windows Agent on Windows
 
 .. note::
 
-   Originally posted `Compiling the OSSEC Windows Agent on Windows <http://www.immutablesecurity.com/index.php/2010/07/06/compiling-the-ossec-agent-on-windows/>`_ by `mstarks <http://www.immutablesecurity.com/index.php/author/mstarks/>`_, duplicated here with permission. 
+   Originally posted `Compiling the OSSEC Windows Agent on Windows
+   <http://www.immutablesecurity.com/index.php/2010/07/06/compiling-the-ossec-agent-on-windows/>`_
+   by `mstarks <http://www.immutablesecurity.com/index.php/author/mstarks/>`_,
+   duplicated here with permission. 
 
 Most people that use the OSSEC Windows agent `download a pre-compiled <http://www.ossec.net/main/downloads/>`_ copy from the OSSEC site. While that is a good option for many individual users, it may not suit those with more specific needs and/or those in enterprise environments. Users who fall into those categories could benefit from customizing the agent and maintaining internal builds in order to suit their individual needs.
 
@@ -16,11 +19,11 @@ Requirements:
 -------------
 
 * The `Nullsoft Scriptable Install System <http://nsis.sourceforge.net/Download>`_ (NSIS)
-* The `Minimalist GNU for Windows (MinGW) compiler http://sourceforge.net/downloads/mingw/>`_
+* The `Minimalist GNU for Windows (MinGW) compiler <http://sourceforge.net/downloads/mingw/>`_
 * My `batch file. <http://www.immutablesecurity.com/wp-content/wp_uploads/gen_win.txt>`_  Simply rename from gen_win.txt to gen_win.cmd.
 * `7-Zip for Windows <http://www.7-zip.org/download.html>`_
 * The public domain `Unix2DOS utility <http://www.efgh.com/software/unix2dos.htm>`_
-* The latest OSSEC for Unix/Linux <http://www.ossec.net/main/downloads/>`_ (this contains the Windows source code)
+* The latest OSSEC for `Unix/Linux <http://www.ossec.net/main/downloads/>`_ (this contains the Windows source code)
 
 Here are the steps:
 -------------------

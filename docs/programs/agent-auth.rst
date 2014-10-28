@@ -60,6 +60,10 @@ agent-auth argument options
 
     Full path to the CA certificate used to verify the server.
 
+   .. note::
+
+      This option was added after 2.8.1.
+
 .. option:: -x <path>
 
     Full path to the agent certificate.
@@ -69,18 +73,34 @@ agent-auth argument options
    The following options are only necessary if verification of server or client certificates is desired. See :ref:`optional-server-authentication` and
    :ref:`optional-client-authentication` below.
 
+   .. note::
+
+      This option was added after 2.8.1.
+
 .. option:: -x </path/to/certificate>
 
    Load the PEM encoded certificate that will be presented to :ref:`ossec-authd` during establishment of the SSL connection.
+
+   .. note::
+
+      This option was added after 2.8.1.
 
 .. option:: -k </path/to/private_key>
 
    Load the certificate's corresponding PEM encoded private key.
 
+   .. note::
+
+      This option was added after 2.8.1.
+
 .. option:: -v </path/to/CA_certificate>
 
    Load the PEM encoded CA Certificate that will be used to verify :ref:`ossec-authd` if desired. If this option is used then
    :ref:`ossec-authd` must present a valid certificate signed by this CA.
+
+   .. note::
+
+      This option was added after 2.8.1.
 
 
 .. _optional-server-authentication:
