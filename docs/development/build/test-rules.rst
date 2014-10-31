@@ -102,12 +102,17 @@ Example:
 
 Each entry has a number of configuration elements:
 
-``[su: - bad pass]`` - This is a heading, it usually contains the rule description.
-`` log 1 pass =`` - This is the first log, and the ``ossec-logtest`` should pass. Noting failures is also possible by using ``fail`` instead of ``pass``.
-`` Apr 27 15:22:23 niban su[234]: BAD SU ger to fwmaster on /dev/ttyp0`` - This is the log message to be checked.
-``rule = 5301`` - This is the expected rule, if the log message triggers a different rule the test will return a failure.
-``alert = 5`` - This is the expected rule level. A failure to match this level will result in a failure.
-``decoder = su`` - This is the expected decoder. A failure to match this decoder will result in a failure.
+  * ``[su: - bad pass]`` - This is a heading, it usually contains the rule description.
+
+  * ``log 1 pass =`` - This is the first log, and the ``ossec-logtest`` should pass. Noting failures is also possible by using ``fail`` instead of ``pass``.
+
+  * ``Apr 27 15:22:23 niban su[234]: BAD SU ger to fwmaster on /dev/ttyp0`` - This is the log message to be checked.
+
+  * ``rule = 5301`` - This is the expected rule, if the log message triggers a different rule the test will return a failure.
+
+  * ``alert = 5`` - This is the expected rule level. A failure to match this level will result in a failure.
+
+  * ``decoder = su`` - This is the expected decoder. A failure to match this decoder will result in a failure.
 
 The above entry can be verified by running the log message through ossec-logtest:
 
