@@ -91,6 +91,15 @@ I set the <email_alert_level> to 10, why do I keep seeing rules with lower level
    One of these rules is 1002. To ignore these rules you will have to create a rule to specifically ignore it,
    or overwrite the rule without the ``alert_by_email`` option. 
 
+.. _too_much_1002:
+
+Why are all of my Windows alerts showing up as rule 1002?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   This is a known issue when using an older version on the OSSEC manager and newer versions on the agents.
+   The manager should never be an older version than the agents. Using the same version is ideal, but when 
+   that is not possible, the manager should be the newest version.
+
 
 .. _MARK:
 

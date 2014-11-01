@@ -137,3 +137,14 @@ You could use your OS's auditing facilities to track this information,
 and create a rule to alert when an appropriate log is created.
 
 
+How do I stop syscheck alerts during system updates?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There is no easy way to do this, but there are work-arounds.
+Stop the OSSEC processes on the manager, and run ``/var/ossec/bin/syscheck_control -u AGENT_ID``.
+This will clear the syscheck database for the agent,
+and the next time syscheck runs it will create a new baseline.
+Next, start the OSSEC processes on the manager.
+Once the system update is complete, run a syscheck scan on that agent.
+The database will be populated with new values, and should not trigger "file modified" alarms.
+ 
