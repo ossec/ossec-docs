@@ -101,7 +101,7 @@
       .. _full_command:
 
       - full_command
-          This format will be the output from the commandi (as run by root) defined by command_. The entire output will be treated as a single log.
+          This format will be the output from the command (as run by root) defined by command_. The entire output will be treated as a single log.
 
       .. warning::
           ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
