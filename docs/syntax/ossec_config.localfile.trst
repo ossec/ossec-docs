@@ -186,7 +186,7 @@
     .. code-block:: console
 
        <localfile>
-         <loation>System</location>
+         <location>System</location>
          <log_format>eventchannel</log_format>
          <only-future-events>yes</only-future-events>
        </localfile>
