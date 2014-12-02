@@ -90,7 +90,7 @@ To get a list of all auditing/policy monitoring events for a specific agent, you
     System Audit: System Audit: CIS - Debian Linux 2.3 - SSH Configuration - Root login allowed. File: /etc/ssh/sshd_config. Reference: http://www.ossec.net/wiki/index.php/CIS_DebianLinux .
 
 As you can see the detected events are shown in two categories, resolved events and outstanding event. To only show resolved events, run :option:`rootcheck_control -ri <agent_id>`.
-To only show outstanding events, run :option:`rootcheck_control -ri <agent_id>`.
+To only show outstanding events, run :option:`rootcheck_control -qi <agent_id>`.
 To only show the results of the last scan and time of that scan, run :option:`rootcheck_control -Li <agent_id>`.
 
 To gain that kind of information for the OSSEC server, run :option:`rootcheck_control -i 000`.
