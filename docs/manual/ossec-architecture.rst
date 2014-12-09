@@ -82,14 +82,6 @@ following documents:
 `OSSEC log analysis/inspection architecture <http://ossec.net/ossec-docs/auscert-2007-dcid.pdf>`_ (PDF) - by Daniel Cid
 
 
-Support
-~~~~~~~
-
-Everyone knows that support and technical expertise are critical in ensuring the 
-success of any product deployment. With an open source project this is not 
-different. If you need enterprise-class commercial support for OSSEC, Trend 
-Micro, the company behind this great open source project, offers this option 
-to our users. For more information, visit the `OSSEC commercial support page <http://www.ossec.net/main/get-commercial-support>`_.
  
 .. image:: logo_tagline_09.png
    :align: center 
