@@ -14,6 +14,10 @@ When looking at historical alerts you don't want to associate alerts from one sy
 
 
 
+ossec-logcollector(PID): ERROR: Unable to open file '/queue/ossec/.agent_info'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ensure there is a <server-ip> configured in the agent's /var/ossec/etc/ossec.conf, and that the IP is correct.
 
 
 
