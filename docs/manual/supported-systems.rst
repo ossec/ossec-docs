@@ -14,7 +14,7 @@ Operating Systems
 The following operating systems are supported by the OSSEC agent:
 
 * GNU/Linux (all distributions, including RHEL, Ubuntu, Slackware, Debian, etc)
-* Windows XP, 2003, Vista, 2008
+* Windows XP, 2003, Vista, 2008, 2012
 * VMWare ESX 3.0,3.5 (including CIS checks)
 * FreeBSD (all current versions)
 * OpenBSD (all current versions)
