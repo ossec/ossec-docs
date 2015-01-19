@@ -4,6 +4,11 @@
 Compiling the OSSEC Windows Agent on Windows
 ============================================
 
+.. warning::
+
+   As of 2.9 this is no longer supported. The Windows agent can be built on `Linux systems <../installation/compile-ossec-mingw.html>`_.
+   Patches to update the Windows compilation support are very welcome.
+
 .. note::
 
    Originally posted `Compiling the OSSEC Windows Agent on Windows
