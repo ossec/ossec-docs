@@ -60,6 +60,8 @@
 
     - **Allowed** default, cef, splunk, json
 
+    - **Example:**
+
     .. code-block:: xml
 
     	<syslog_output>
