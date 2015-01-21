@@ -48,6 +48,14 @@
 
     - **Allowed:** Any valid logfile location
 
+.. xml:element:: use_fqdn
+
+    - By default, ossec truncates the hostname at the first period ('.') when generating syslog messages. Setting this option to 'yes' will cause it to use the full hostname configured on the server.
+
+    - **Default** no
+
+    - **Allowed** yes, no
+
 .. xml:element:: format
 
     - Format of alert output. The default format is "default", or full syslog output.
