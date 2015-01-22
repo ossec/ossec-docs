@@ -18,9 +18,9 @@
 
 .. xml:element:: group 
 
-    The alert that must match this group to be forwarded.
+    The alert that must match this group to be forwarded. Multiple groups can be separated with a pipe character ("|").
 
-    **Allowed:** One group or category 
+    **Allowed:** One or more groups or categories.
 
 .. xml:element:: event_location 
 
