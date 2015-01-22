@@ -1,4 +1,4 @@
-.. _faq_agents:
+.. _faq_misc:
 
 Miscellaneous: FAQ
 ------------------
