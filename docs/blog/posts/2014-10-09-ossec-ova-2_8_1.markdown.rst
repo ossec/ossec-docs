@@ -1,0 +1,16 @@
+.. post:: Oct 09, 2014
+   :tags: ossec, ova, elasticsearch
+   :category: Intergrations, Anouncements
+   :author: Vic Hargrave
+
+=======================================
+OSSEC Virtual Appliance 2.8.1 Available
+=======================================
+
+I have updated the OSSEC Virtual Appliance to include OSSEC 2.8.1 and
+Elasticsearch-Logstash-Kibana (ELK) log management and the ElasticHQ
+system to handle ELK monitoring. It is a single gzipped OVA that can be
+easily imported into VirtualBox or any other virtualization system that
+supports OVA files.
+
+Look for it in the `Downloads section </download/>`__.

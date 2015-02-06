@@ -44,6 +44,7 @@ import ablog
 if os.environ.get('READTHEDOCS', None) == 'True':
     skip_pickling = True
 
+
 extlinks = {
     'ossec':('http://tools.logs.to/jira/browse/OSSEC-%s', 'OSSEC-'),
     'ord':('http://tools.logs.to/jira/browse/ORD-%s','ORD-'),
@@ -109,6 +110,11 @@ pygments_style = 'sphinx'
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
+# -- Blog options --------------------------------------------------------------
+
+blog_title = "OSSEC Blog"
+post_auto_excerpt = 1
+fontawesome_link_cdn = True
 
 # -- Options for HTML output ---------------------------------------------------
 
@@ -160,6 +166,7 @@ html_static_path = ['_static']
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
     '**': ['localtoc.html', 'ossec_links.html','searchbox.html'],
+    'blog/**': ['postcard.html', 'recentposts.html', 'tagcloud.html', 'categories.html', 'archives.html', 'ossec_links.html', 'searchbox.html'],
     #'**': ['localtoc.html', 'searchbox.html'],
 }
 
@@ -262,7 +269,7 @@ for dirpath, dirnames, filenames in os.walk("programs"):
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'OSSEC Rules'
+epub_title = u'OSSEC'
 epub_author = u'Jeremy Rossi'
 epub_publisher = u'Jeremy Rossi'
 epub_copyright = u'2010, Jeremy Rossi'
