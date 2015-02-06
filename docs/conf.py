@@ -236,7 +236,7 @@ html_sidebars = {
     #'**': ['localtoc.html', 'ossec_links.html','searchbox.html'],
     'blog/**': ['postcard.html', 'recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
     'blog.html': ['recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
-    '**': ['localtoc.html', 'searchbox.html'],
+    'docs/**': ['localtoc.html', 'searchbox.html'],
     'index.html': [],
     '': [],
 }

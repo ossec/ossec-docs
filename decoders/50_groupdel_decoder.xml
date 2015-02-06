@@ -1,7 +1,0 @@
-
-<!--May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus-->
-<decoder name="groupdel">
-  <program_name>groupdel</program_name>
-  <regex>^group deleted: name=(\S+)$</regex>
-  <order>extra_data</order>
-</decoder>
