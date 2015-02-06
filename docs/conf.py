@@ -36,7 +36,13 @@ extensions = [
         'sphinx.ext.viewcode',
         "sphinx.ext.graphviz", 
         "sphinx.ext.extlinks",
+        "ablog",
         "_ext.xml_domain"]
+
+import ablog
+
+if os.environ.get('READTHEDOCS', None) == 'True':
+    skip_pickling = True
 
 extlinks = {
     'ossec':('http://tools.logs.to/jira/browse/OSSEC-%s', 'OSSEC-'),
@@ -45,7 +51,7 @@ extlinks = {
 }
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['_templates', ablog.get_html_templates_path()]
 
 # The suffix of source filenames.
 source_suffix = '.rst'
