@@ -74,7 +74,7 @@ copyright = u'2010, Lots of people'
 # built documents.
 #
 # The short X.Y version.
-version = '2.8'
+version = ''
 # The full version, including alpha/beta/rc tags.
 release = '2.8.1'
 
@@ -116,7 +116,7 @@ pygments_style = 'sphinx'
 
 blog_title = "OSSEC Blog"
 post_auto_excerpt = 1
-#fontawesome_link_cdn = True
+fontawesome_link_cdn = True
 
 # -- Options for HTML output ---------------------------------------------------
 
@@ -150,8 +150,8 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
-        ("Blog", "blog"),
-        ("Documentaton", "docs"),
+        ('Blog <i class="fa fa-archive"></i>', "blog"),
+        ('Documentaton <i class="fa fa-book"></i>', "docs/", 1),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
@@ -237,6 +237,8 @@ html_sidebars = {
     'blog/**': ['postcard.html', 'recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
     'blog.html': ['recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
     '**': ['localtoc.html', 'searchbox.html'],
+    'index.html': [],
+    '': [],
 }
 
 

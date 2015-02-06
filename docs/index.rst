@@ -29,6 +29,4 @@ welcome your help. Find out more about getting involved
 PCI with OSSEC
 --------------
 
-XXXXX 
-
 
