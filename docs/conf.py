@@ -12,6 +12,8 @@
 # serve to show the default.
 
 import sys, os
+import sphinx_bootstrap_theme
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -114,22 +116,88 @@ pygments_style = 'sphinx'
 
 blog_title = "OSSEC Blog"
 post_auto_excerpt = 1
-fontawesome_link_cdn = True
+#fontawesome_link_cdn = True
 
 # -- Options for HTML output ---------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #sys.path.append(os.path.abspath('_themes'))
-html_theme_path = ['_themes']
+#html_theme_path = ['_themes']
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_theme_path.append("_themes")
 #html_theme = 'flask'
 #html_theme = 'haiku'
-html_theme = 'sphinxdoc'
+#html_theme = 'sphinxdoc'
+html_theme = 'bootstrap'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+html_theme_options = {
+    # Navigation bar title. (Default: ``project`` value)
+    'navbar_title': "OSSEC",
+
+    # Tab name for entire site. (Default: "Site")
+    'navbar_site_name': "Site",
+
+    # A list of tuples containing pages or urls to link to.
+    # Valid tuples should be in the following forms:
+    #    (name, page)                 # a link to a page
+    #    (name, "/aa/bb", 1)          # a link to an arbitrary relative url
+    #    (name, "http://example.com", True) # arbitrary absolute url
+    # Note the "1" or "True" value above as the third argument to indicate
+    # an arbitrary url.
+    'navbar_links': [
+        ("Blog", "blog"),
+        ("Documentaton", "docs"),
+    ],
+
+    # Render the next and previous page links in navbar. (Default: true)
+    'navbar_sidebarrel': True,
+
+    # Render the current pages TOC in the navbar. (Default: true)
+    'navbar_pagenav': True,
+
+    # Tab name for the current pages TOC. (Default: "Page")
+    'navbar_pagenav_name': "Page",
+
+    # Global TOC depth for "site" navbar tab. (Default: 1)
+    # Switching to -1 shows all levels.
+    'globaltoc_depth': 1,
+
+    # Include hidden TOCs in Site navbar?
+    #
+    # Note: If this is "false", you cannot have mixed ``:hidden:`` and
+    # non-hidden ``toctree`` directives in the same page, or else the build
+    # will break.
+    #
+    # Values: "true" (default) or "false"
+    'globaltoc_includehidden': "true",
+
+    # HTML navbar class (Default: "navbar") to attach to <div> element.
+    # For black navbar, do "navbar navbar-inverse"
+    'navbar_class': "navbar navbar-inverse",
+
+    # Fix navigation bar to top of page?
+    # Values: "true" (default) or "false"
+    'navbar_fixed_top': "true",
+
+    # Location of link to source.
+    # Options are "nav" (default), "footer" or anything else to exclude.
+    'source_link_position': "none",
+
+    # Bootswatch (http://bootswatch.com/) theme.
+    #
+    # Options are nothing (default) or the name of a valid theme
+    # such as "amelia" or "cosmo".
+    #'bootswatch_theme': "united",
+
+    # Choose Bootstrap version.
+    # Values: "3" (default) or "2" (in quotes)
+    'bootstrap_version': "3",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -143,7 +211,7 @@ html_theme = 'sphinxdoc'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'ossec_logo.png'
+html_logo = 'ossec_logo_bare_small.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -165,10 +233,12 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-    '**': ['localtoc.html', 'ossec_links.html','searchbox.html'],
-    'blog/**': ['postcard.html', 'recentposts.html', 'tagcloud.html', 'categories.html', 'archives.html', 'ossec_links.html', 'searchbox.html'],
-    #'**': ['localtoc.html', 'searchbox.html'],
+    #'**': ['localtoc.html', 'ossec_links.html','searchbox.html'],
+    'blog/**': ['postcard.html', 'recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
+    'blog.html': ['recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
+    '**': ['localtoc.html', 'searchbox.html'],
 }
+
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
