@@ -21,7 +21,7 @@ Location
 The ``agent.conf`` exists in ``/var/ossec/etc/shared``.
 It should be readable by the ossec user.
 
-.. codeblock:: console
+.. code-block:: console
 
     -r-xr-x---  1 root  ossec  10908 Aug 12 16:06 /var/ossec/etc/shared/agent.conf
 

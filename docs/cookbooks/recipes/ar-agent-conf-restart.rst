@@ -12,7 +12,7 @@ Requirements:
 ^^^^^^^^^^^^^
 
 * Active response must be enabled.
-* This only works for *nix based systems
+* This only works for \*nix based systems
 
 Details:
 ^^^^^^^^

@@ -3,30 +3,62 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==========
-OSSEC Home
-==========
+=================================
+Welcome to OSSEC's documentation!
+=================================
 
-OSSEC is an Open Source Host-based Intrusion Detection System that
-performs log analysis, file integrity checking, policy monitoring,
-rootkit detection, real-time alerting and active response.
+OSSEC is an Open Source Host-based Intrusion Detection System. It performs log analysis, 
+integrity checking, Windows registry monitoring, rootkit detection, real-time alerting 
+and active response. It runs on most operating systems, including Linux, OpenBSD, 
+FreeBSD, Mac OS X, Solaris and Windows. A list with all supported platforms is available
+at: :ref:`supported-systems`
 
-It runs on most operating systems, including Linux, MacOS, Solaris,
-HP-UX, AIX and Windows.
+Manual & FAQ 
+============
 
-Check out OSSEC features and how it works for more information about how
-OSSEC can help you solve your host-based security problems.
 
-Community Support
------------------
+.. toctree::
+   :maxdepth: 2
+   :glob:
 
-For the open source community we provide mailing lists for OSSEC users
-and OSSEC developers.
+   manual/index
 
-If you are new to OSSEC and would like to contribute to the project we
-welcome your help. Find out more about getting involved
+   faq/index
 
-PCI with OSSEC
---------------
+   cookbooks/index
 
+Development
+===========
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   development/build/index 
+
+   development/oRFC/index 
+
+Reference 
+=========
+
+.. toctree::
+    :maxdepth: 2
+
+    syntax/index
+    formats/index
+    programs/index
+    whatsnew/index
+    .. rules/index
+    rootcheck/index
+    .. log_samples/index
+    glossary
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 
