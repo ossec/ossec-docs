@@ -1,7 +1,7 @@
 .. _syntax_ossec_config:
 
 ossec.conf: syntax and options
-=============================
+==============================
 
 .. toctree::
     :maxdepth: 2
