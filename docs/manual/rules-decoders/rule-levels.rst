@@ -11,7 +11,7 @@ them or after them.
 
 **The rules will be read from the highest to the lowest level.**
 
-00 - Ignored - No action taken. Used to avoid false positives. These rulesare scanned before all the others. They include events with no security relevance.
+00 - Ignored - No action taken. Used to avoid false positives. These rules are scanned before all the others. They include events with no security relevance.
 
 01 - None -
 
