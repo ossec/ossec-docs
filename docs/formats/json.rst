@@ -4,6 +4,8 @@ JSON Format
 
 At this time we have one alert JSON formatted messages. 
 
+Also see manual/output/json-alert-log-output.
+
 .. code-block:: json
 
     {
