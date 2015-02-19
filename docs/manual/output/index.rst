@@ -9,6 +9,7 @@ Contents:
 .. toctree::
     :maxdepth: 2
 
+    json-alert-log-output
     syslog-output
     email-output 
     database-output 

@@ -1,5 +1,11 @@
 .. xml:element:: global 
 
+.. xml:element:: jsonout_output
+
+    Enable or disable writing of json-formated alerts at /var/ossec/logs/alerts/alerts.json
+
+    **Default:** no
+    **Allowed:** yes/no
 
 .. xml:element:: email_notification
 
