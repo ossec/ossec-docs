@@ -64,7 +64,8 @@ What are the arguments are passed to the script?
 #. src ip (or - if not set) 
 #. Alert id (uniq for every alert) 
 #. Rule id 
-#. Agent name/host/filename
+#. Agent name/host
+#. Filename
 
 .. code-block:: sh 
 
