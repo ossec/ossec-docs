@@ -5,7 +5,7 @@
     <ul>
     {% for coll in ablog.archive %}
       {% if coll %}
-      <li><a href="{{ pathto(coll.docname) }}">{{ coll }} ({{ coll|length }})</a></li>
+      <li><a href="{{ pathto(coll.docname) }}"><i class="fa fa-folder"></i> {{ coll }} ({{ coll|length }})</a></li>
       {% endif %}
     {% endfor %}
     </ul>

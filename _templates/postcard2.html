@@ -4,10 +4,10 @@
   {% endif %}
 
   {% if post.author %}
-  <li>{% if fa %}<i class="fa-fw fa fa-user"></i>{% else %}{{ gettext('Author') }}:{% endif %}
+  <li>
     {% for coll in post.author %}
       {% if coll|length %}
-      <a href="{{ pathto(coll.docname) }}">{{ coll }}</a>{% if loop.index < post.author|length %},{% endif %}
+      <a href="{{ pathto(coll.docname) }}"><i class="fa-fw fa fa-user"></i>{{ coll }}</a>{% if loop.index < post.author|length %},{% endif %}
       {% else %}{{ coll }}{% if loop.index < post.author|length %},{% endif %}{% endif %}
     {% endfor %}</li>
   {% endif %}
@@ -31,10 +31,10 @@
   {% endif %}
 
   {% if post.category %}
-  <li>{% if fa %}<i class="fa-fw fa fa-folder-open"></i>{% else %}{{ gettext('Category') }}:{% endif %}
+  <li>
     {% for coll in post.category %}
       {% if coll|length %}
-      <a href="{{ pathto(coll.docname) }}">{{ coll }}</a>{% if loop.index < post.category|length %},{% endif %}
+      <a href="{{ pathto(coll.docname) }}"><i class="fa-fw fa fa-folder-open"></i>{{ coll }}</a>{% if loop.index < post.category|length %},{% endif %}
       {% else %}{{ coll }}{% if loop.index < post.category|length %},{% endif %}{% endif %}
     {% endfor %}</li>
   {% endif %}
@@ -44,7 +44,7 @@
       {% else %}{% if fa %}<i class="fa-fw fa fa-tag"></i>{% else %}{{ gettext('Tag') }}:{% endif %}{% endif %}
     {% for coll in post.tags %}
       {% if coll|length %}
-      <a href="{{ pathto(coll.docname) }}">{{ coll }}</a>{% if loop.index < post.tags|length %},{% endif %}
+      <a href="{{ pathto(coll.docname) }}"><i class="fa-fw fa fa-tag"></i>{{ coll }}</a>{% if loop.index < post.tags|length %},{% endif %}
       {% else %}{{ coll }}{% if loop.index < post.tags|length %},{% endif %}{% endif %}
     {% endfor %}</li>
   {% endif %}
