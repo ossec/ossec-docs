@@ -240,7 +240,7 @@ html_sidebars = {
     'blog*': ['recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
     'docs/**': ['localtoc.html', 'searchbox.html'],
     'downloads*': ['localtoc.html'],
-    'index.html': [],
+    'index': ['recentposts.html'],
     '': [],
 }
 
