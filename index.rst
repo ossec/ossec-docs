@@ -3,30 +3,27 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==========
-OSSEC Home
-==========
+.. raw:: html
 
-OSSEC is an Open Source Host-based Intrusion Detection System that
-performs log analysis, file integrity checking, policy monitoring,
-rootkit detection, real-time alerting and active response.
-
-It runs on most operating systems, including Linux, MacOS, Solaris,
-HP-UX, AIX and Windows.
-
-Check out OSSEC features and how it works for more information about how
-OSSEC can help you solve your host-based security problems.
-
-Community Support
------------------
-
-For the open source community we provide mailing lists for OSSEC users
-and OSSEC developers.
-
-If you are new to OSSEC and would like to contribute to the project we
-welcome your help. Find out more about getting involved
-
-PCI with OSSEC
---------------
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message" style="padding-top: 50px; padding-bottom: 50px; text-align: center; color: #f8f8f8; background: url(_static/cam_background.jpg) no-repeat center center; background-image: url(_static/cam_background.jpg); background-position-x: 50%; background-position-y: 50%; background-size: cover; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: cover;">
+                    <h1>OSSEC Hids</h1>
+                    <h3>Open Source SECurity:  Host Intrusion Detection System</h3>
+                    <hr class="intro-divider">
+                    <ul class="list-inline intro-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/ossecproject" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ossec" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/groups/OSSEC-25424" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
