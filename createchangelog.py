@@ -15,5 +15,3 @@ for release in repo.iter_releases():
 allTags = []
 for tag in repo.iter_tags():
     allTags.append(tag)
-
-
