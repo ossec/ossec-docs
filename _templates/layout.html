@@ -14,7 +14,7 @@
   {% if theme_bootstrap_version == "3" %}
     {% set theme_css_files = theme_css_files + [
         '_static/bootswatch-' + bootstrap_version + '/' + theme_bootswatch_theme + '/bootstrap.min.css',
-        '_static/bootstrap-sphinx.css'
+        '_static/bootstrap-sphinx.css', '_static/parallax.css'
       ]
     %}
   {% else %}
@@ -29,7 +29,7 @@
   {% set theme_css_files = theme_css_files + [
       '_static/bootstrap-' + bootstrap_version + '/css/bootstrap.min.css',
       '_static/bootstrap-' + bootstrap_version + '/css/bootstrap-' + bootstrap_additional_css + '.min.css',
-      '_static/bootstrap-sphinx.css'
+      '_static/bootstrap-sphinx.css', '_static/parallax.css'
     ]
   %}
 {% endif %}

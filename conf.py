@@ -49,9 +49,8 @@ if os.environ.get('READTHEDOCS', None) == 'True':
 
 
 extlinks = {
-    'ossec':('http://tools.logs.to/jira/browse/OSSEC-%s', 'OSSEC-'),
-    'ord':('http://tools.logs.to/jira/browse/ORD-%s','ORD-'),
-    #'wiki':('http://www.ossec.net/wiki/%s', 'Wiki Page: %s'),
+        'issue':('https://https://github.com/ossec/ossec-hids/issues/%s', 'Issue '),
+        'pull':('https://github.com/ossec/ossec-hids/pull/%s', "Pull Request %s"),
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -68,7 +67,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OSSEC'
-copyright = u'2010, Lots of people'
+copyright = u'2010-2015, Lots of people'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -112,6 +111,7 @@ pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
+
 
 
 
@@ -201,6 +201,8 @@ html_theme_options = {
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
     'bootstrap_version': "3",
+
+    #'bootswatch_css_custom': ['parallax.css'], 
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -208,7 +210,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "OSSEC"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -242,7 +244,7 @@ html_sidebars = {
     'blog*': ['recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
     'docs/**': ['localtoc.html', 'searchbox.html'],
     'downloads*': ['localtoc.html'],
-    'index': ['recentposts.html'],
+    'index': [],
     '': [],
 }
 

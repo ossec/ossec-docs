@@ -5,25 +5,101 @@
 
 .. raw:: html
 
+    <!--parallax 1 -->
+    <section class="bg-1 text-center">
+      <h1>OSSEC</h1>
+      <p class="lead">Open Source SECurity</p>
+    </section>
+    <!--/parallax 1-->
+
+
+    <div class="container">
+      
+        <hr>
+      
+        <div class="row">
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3>Watching</h3></div>
+                <div class="panel-body">OSSEC Watches it all.  Actively monitoring network devices and logs. 
+                All aspects of Unix systems with FIM, log monitoring, rootcheck, and process monitoring.  
+                Windows servers and desktop also get the same treatment as Unix. 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-heading"><h3>Alerting</h3></div>
+                <div class="panel-body">When to wake up people up.  Alerting is central part of OSSEC and 
+                allow for ........................
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-heading"><h3>Stopping</h3></div>
+                <div class="panel-body">Your fast, but OSSEC is a computer process it can be faster and
+                does not sleep.  OSSEC respond to events on a single host, a group of hosts, or on all 
+                hosts.  
+                </div>
+              </div>
+            </div>
+        </div><!--/row-->
+      
+        <hr>
+      
+    </div><!--/container-->
+
+    <div class="divider"></div>
+      
+    <section class="bg-2">
+      <div class="col-sm-10 col-sm-offset-1 text-center">
+        <h1>Stands on THAT wall.</h1>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-message" style="padding-top: 50px; padding-bottom: 50px; text-align: center; color: #f8f8f8; background: url(_static/cam_background.jpg) no-repeat center center; background-image: url(_static/cam_background.jpg); background-position-x: 50%; background-position-y: 50%; background-size: cover; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: cover;">
-                    <h1>OSSEC Hids</h1>
-                    <h3>Open Source SECurity:  Host Intrusion Detection System</h3>
-                    <hr class="intro-divider">
-                    <ul class="list-inline intro-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/ossecproject" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ossec" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="http://www.linkedin.com/groups/OSSEC-25424" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3>Open Source</h3></div>
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                Aliquam in felis sit amet augue.
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3>PCI</h3></div>
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                Aliquam in felis sit amet augue.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3>Works</h3></div>
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                Aliquam in felis sit amet augue.
+                </div>
+              </div>
+            </div>
+        </div>  
+    </div><!--/container-->
+
+    <div class="divider"></div>
+
+    <!--parallax 2 
+    <section class="bg-3 text-center">
+      <h1>Bootstrap Parallax</h1>
+      <p class="lead"></p>
+    </section>-->
+    <!--/parallax 2-->

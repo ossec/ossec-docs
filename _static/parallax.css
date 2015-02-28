@@ -10,21 +10,27 @@ section {
 }
 
 .bg-1 {
-	background: url('/assets/example/bg_blueplane.jpg') no-repeat center center fixed;
-    color:#fff;
-    background-size:cover;
+	background: url('cam_background2.png') no-repeat center center fixed;
+  color:#fff;
+  background-size:cover;
+  margin-left: -80px;
+  margin-right: -80px;
 }
-  
+
 .bg-2 {
-	background: url('/assets/example/bg_suburb.jpg') no-repeat top center fixed;
-    color:#fff;
-    background-size:cover;
+	background: url('dnc.jpg') no-repeat top center fixed;
+  color:#fff;
+  background-size:cover;
+  margin-left: -80px;
+  margin-right: -80px;
 }
 
 .bg-3 {
-	background: url('/assets/example/bg_blueplane.jpg') no-repeat bottom center fixed;
-    color:#fff;
-    background-size:cover;
+	background: url('lock.jpg') no-repeat bottom center fixed;
+  color:#fff;
+  background-size:cover;
+  margin-left: -80px;
+  margin-right: -80px;
 }
 
 #footer {
