@@ -34,7 +34,7 @@ File: /var/ossec/logs/ossec.conf
 
     <ossec_config>
       <global>
-        <jsonout_output>yes</syslog_output>
+        <jsonout_output>yes</jsonout_output>
         ...
       </global>
       ...
