@@ -1,16 +1,5 @@
 .. xml:element:: global 
 
-.. xml:element:: jsonout_output
-
-    Enable or disable writing of json-formated alerts at /var/ossec/logs/alerts/alerts.json
-
-    **Default:** no
-    **Allowed:** yes/no
-
-.. note::
-
-   This feature first appeared in OSSEC 2.9.
-
 .. xml:element:: email_notification
 
     Enable or disable e-mail alerting.
@@ -18,7 +7,6 @@
     **Default:** no
 
     **Allowed:** yes/no
-
 
 .. xml:element:: email_to
 
@@ -124,6 +112,17 @@
     **Default:** 8
 
     **Allowed:** Any level from 0 to 16 
+
+.. xml:element:: jsonout_output
+
+    Enable or disable writing of json-formated alerts at /var/ossec/logs/alerts/alerts.json
+
+    **Default:** no
+    **Allowed:** yes/no
+
+.. note::
+
+   This feature first appeared in OSSEC 2.9.
 
 .. xml:element:: prelude_output 
 
