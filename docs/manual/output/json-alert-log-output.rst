@@ -3,6 +3,11 @@
 Storing alerts as JSON
 =========================
 
+.. note::
+
+   This feature first appeared in OSSEC 2.9.
+
+
 Sometimes you want to easily consume OSSEC alerts in other programs.
 With the json output, you can write alerts as a newline separated json file which other programs can easily consume.
 
@@ -47,3 +52,4 @@ You will still have the legacy alerts.log and any custom log formats you've crea
 The files are md5 and sha1 checksummed and compressed once daily (just like the legacy alerts.log).
 
 That's it. 
+

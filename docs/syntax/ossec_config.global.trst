@@ -7,6 +7,10 @@
     **Default:** no
     **Allowed:** yes/no
 
+.. note::
+
+   This feature first appeared in OSSEC 2.9.
+
 .. xml:element:: email_notification
 
     Enable or disable e-mail alerting.
