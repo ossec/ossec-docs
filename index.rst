@@ -97,9 +97,62 @@
 
     <div class="divider"></div>
 
-    <!--parallax 2 
+    <!--parallax 2 -->
     <section class="bg-3 text-center">
-      <h1>Bootstrap Parallax</h1>
+      <h1>Trusted</h1>
       <p class="lead"></p>
-    </section>-->
+    </section>
     <!--/parallax 2-->
+
+    <div class="divider"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3>Atomic Secure Linux</h3></div>
+                <div class="panel-body">Need some Copy about how Atomic useds ossec and trusts 
+                it to help users.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam.
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                Aliquam in felis sit amet augue.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3>AlienVault</h3></div>
+                <div class="panel-body">Need some Copy about how Alien Vault useds ossec and trusts 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                Aliquam in felis sit amet augue.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3> TrendMicro</h3></div>
+                <div class="panel-body"> Need some Copy about how TrendMicro (deep security) useds ossec and trusts•it
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                Aliquam in felis sit amet augue.
+                </div>
+              </div>
+            </div>
+        </div>  
+        <div class="row">
+          <div class="col-md-8">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h4>Is also used or avaiable from: </h4>
+                <ul>
+                  <li>Security Onion</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div><!--/container-->
