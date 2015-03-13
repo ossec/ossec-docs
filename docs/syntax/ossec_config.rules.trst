@@ -81,7 +81,7 @@
     - *pattern*: is a regex match string use to detemine if a file needs to be 
       loaded. 
         
-        - *Defaults*: regex "_decoder.xml$" is used unless another one is specified. 
+        - *Defaults*: regex ".xml$" is used unless another one is specified. 
       
     **Allowed:** Path to a directoy of decoder files 
 
