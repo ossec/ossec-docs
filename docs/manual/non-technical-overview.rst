@@ -7,7 +7,8 @@ Getting started with OSSEC
 
 OSSEC is a platform to monitor and control your systems. It mixes together 
 all the aspects of HIDS (host-based intrusion detection), log monitoring, and 
-SIM/SIEM together in a simple, powerful, and open source solution.
+Security Incident Management (SIM)/Security Information and Event Management 
+(SIEM) together in a simple, powerful, and open source solution.
 
 
 Key Benefits
@@ -33,12 +34,11 @@ platforms such as Linux, Solaris, Windows, and Mac OS X.
 Real-time and Configurable Alerts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OSSEC lets customers configure incidents they want to be alerted on which lets 
+OSSEC lets customers configure incidents they want to be alerted on, and lets 
 them focus on raising the priority of critical incidents over the regular noise 
-on any system. Integration with smtp, sms and syslog allows customers to be on 
-top of alerts by sending these on to e-mail and handheld devices such as cell 
-phones and pagers. Active response options to block an attack immediately is 
-also available.
+on any system. Integration with smtp, sms, and syslog allows customers to be on 
+top of alerts by sending them to e-mail enabled devices.
+Active response options to block an attack immediately are also available.
 
 Integration with current infrastructure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
