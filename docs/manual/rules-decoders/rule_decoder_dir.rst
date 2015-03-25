@@ -10,7 +10,7 @@ Use case
 --------
 
 Greatly simplifies working with decoders as there can be as many files as needed.
-Also will make packaging of rules and decoder_dirs a simple unzip/untar and restart
+Also will make packaging of rules and decoders a simple unzip/untar and restart
 operation. This will also greatly reduce the amount of code needed to manage
 the upgrade scripts of ossec.
 
