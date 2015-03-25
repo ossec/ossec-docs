@@ -5,9 +5,9 @@
 Getting started with OSSEC
 ==========================
 
-OSSEC is a full platform to monitor and control your systems. It mixes together 
-all the aspects of HIDS (host-based intrusion detection), log monitoring and 
-SIM/SIEM together in a simple, powerful and open source solution.
+OSSEC is a platform to monitor and control your systems. It mixes together 
+all the aspects of HIDS (host-based intrusion detection), log monitoring, and 
+SIM/SIEM together in a simple, powerful, and open source solution.
 
 
 Key Benefits
@@ -16,11 +16,11 @@ Key Benefits
 Compliance Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-OSSEC helps customers meet specific compliance requirements such as PCI, HIPAA 
-etc. It lets customers detect and alert on unauthorized file system modifications 
-and malicious behavior embedded in the log files of COTS products as well as 
+OSSEC helps customers meet specific compliance requirements such as PCI and HIPAA.
+It lets customers detect and alert on unauthorized file system modifications 
+and malicious behavior embedded in the log files of commercial products as well as 
 custom applications. For PCI, it covers the sections of file integrity monitoring 
-(PCI 11.5, 10.5), log inspection and monitoring (section 10) and policy 
+(PCI 11.5, 10.5), log inspection and monitoring (section 10), and policy 
 enforcement/checking.
 
 Multi platform
@@ -28,7 +28,7 @@ Multi platform
 
 OSSEC lets customers implement a comprehensive host based intrusion detection 
 system with fine grained application/server specific policies across multiple 
-platforms such as Linux, Solaris, AIX, BSD, Windows, Mac OS X and VMware ESX.
+platforms such as Linux, Solaris, Windows, and Mac OS X.
 
 Real-time and Configurable Alerts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
