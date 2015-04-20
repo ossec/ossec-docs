@@ -2,21 +2,21 @@
 
     The base directory that will be appended to the following options:
 
-    - rootkit_files 
-    - rootkit_trojans 
-    - windows_malware 
-    - windows_audit 
-    - windows_apps 
-    - systems_audit 
+    - rootkit_files
+    - rootkit_trojans
+    - windows_malware
+    - windows_audit
+    - windows_apps
+    - systems_audit
 
     **Allowed:** Path to a directory
-    **Default:** /var/ossec 
+    **Default:** /var/ossec
 
 .. xml:element:: rootkit_files
 
     This option can be used to change the location of the rootkit files database.
 
-    **Allowed:** A file with the rootkit files signatures 
+    **Allowed:** A file with the rootkit files signatures
 
     **Default:** /etc/shared/rootkit_files.txt
 
@@ -28,21 +28,21 @@
 
     **Allowed:** A file with the trojans signatures
 
-.. xml:element:: windows_audit 
+.. xml:element:: windows_audit
 
-.. xml:element:: system_audit 
+.. xml:element:: system_audit
 
 .. xml:element:: windows_apps
 
-.. xml:element:: windows_malware 
+.. xml:element:: windows_malware
 
-.. xml:element:: scanall 
-    
+.. xml:element:: scanall
+
     Tells rootcheck to scan the whole system (may lead to some false positives).
 
     **Default:** no
 
-    **Allowed:** yes/no 
+    **Allowed:** yes/no
 
 .. xml:element:: frequency
 
@@ -50,7 +50,7 @@
 
     **Defaults:** 36000 (10 hours)
 
-    **Allowed:** Time (in seconds) 
+    **Allowed:** Time (in seconds)
 
 .. xml:element:: disabled
 
@@ -58,7 +58,7 @@
 
     **Default:** no
 
-    **Allowed:** yes/no 
+    **Allowed:** yes/no
 
 .. xml:element:: check_dev
 
@@ -155,5 +155,13 @@
      **Default:** yes
 
      **Allowed:** yes or no
+
+.. xml:element:: skip_nfs
+
+    Specifies if rootcheck should scan network mounted filesystems.  Works on Linux and FreeBSD.  Currently skip_nfs will abort checks running against CIFS or NFS mounts.
+
+    **Default:** no
+
+    **Allowed:** yes/no
 
 
