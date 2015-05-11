@@ -380,4 +380,12 @@ A clue to what may be happening are alerts like these:
 
 The above alert indicates the condition where a large number of events are being generated in the Windows event logs. In Windows, setting the Windows audit policy to `Audit Object Access <http://technet2.microsoft.com/WindowsServer/en/library/50fdb7bc-7dae-4dcd-8591-382aeff2ea791033.mspx?mfr=true>`_ or `Audit Process Tracking <http://technet2.microsoft.com/WindowsServer/en/library/50fdb7bc-7dae-4dcd-8591-382aeff2ea791033.mspx?mfr=true>`_ can cause the generation of many event log entries. This gives the OSSEC agent much more work to do in log analysis, and thus causes the consumption of much more CPU cycles. To reduce the CPU utilization in this case, the solution is to disable auditing of object access and/or process tracking. Typically, these audit settings aren't required except for debugging purposes, or situations in which you absolutely have to track everything.
 
+My /etc/hosts.deny file is blank after install 2.8.1!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There was a bug introduced to the host-deny.sh script that would empty the file. It has been fixed for 2.9.
+Some variable declarations in the script have a space between the variable name, the ``=``, and the value.
+Removing these spaces allows the script to work as planned. 
+If you are using a system that is still using tcpwrappers, either use the current `host-deny.sh <https://raw.githubusercontent.com/ossec/ossec-hids/master/active-response/host-deny.sh>`_, or remove the spaces from the script before installation.
+
 
