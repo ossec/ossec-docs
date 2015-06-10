@@ -1,0 +1,15 @@
+Trend Micro, Inc.                                                  June 10, 2015
+--------------------------------------------------------------------------------
+                       OSSEC "v2.8.2" Release Note
+--------------------------------------------------------------------------------
+
+Summary of changes in v2.8.2
+
+=== NOTE: In terms of features this release is the same as OSSEC 2.8, *EXCEPT*
+          it includes a fix for CVE-2015-3222 vulnerability.
+
+          Go to https://github.com/ossec/ossec-hids/releases/tag/2.8.2 for more
+          information regarding this issue.
+
+
+                               === END ===
