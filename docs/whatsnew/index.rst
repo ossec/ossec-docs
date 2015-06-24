@@ -3,6 +3,17 @@
 What's new
 ##########
 
+2.8.2
+-----
+
+Released June 10, 2015:
+
+.. note::
+
+   This is a bug fix release.
+
+* SECURITY fix for CVE-2015-322
+
 2.8.1
 -----
 
