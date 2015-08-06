@@ -173,3 +173,8 @@
     **Default:** no
 
     **Allowed:** yes/no
+
+    .. note::
+
+       This option was added in OSSEC 2.9.
+
