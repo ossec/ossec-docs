@@ -1,18 +1,18 @@
 .. object:: directories
 
     Use this option to add or remove directories to be monitored (they must be comma separated). All files and subdirectories will also be monitored.
-    Drive letters without directories are not valid. At a minimum the '.' should be included (``D:\.``). This should be set on the system you wish to 
+    Drive letters without directories are not valid. At a minimum the '.' should be included (``D:\.``). This should be set on the system you wish to
     monitor (or in the agent.conf if appropriate).
 
-    **Default:** /etc,/usr/bin,/usr/sbin,/bin,/sbin 
+    **Default:** /etc,/usr/bin,/usr/sbin,/bin,/sbin
 
     **Attributes:**
 
-    - **realtime**: Value=yes 
+    - **realtime**: Value=yes
 
         - This will enable realtime/continuous monitoring on Linux (using the inotify system calls) and Windows systems.
 
-    - **report_changes**: Value=yes 
+    - **report_changes**: Value=yes
 
         - Report diffs of file changes.  This is limited to text files at this time.
 
@@ -20,27 +20,27 @@
 
            This option is only available on Unix-like systems.
 
-    - **check_all**: Value=yes 
+    - **check_all**: Value=yes
 
-        - All the following check_* options are used together.  
-        
+        - All the following check_* options are used together.
+
     - **check_sum**: Value=yes
 
-        - Check the md5 and sha1 hashes of the  of the files will be checked.  
+        - Check the md5 and sha1 hashes of the  of the files will be checked.
 
           This is the same as using both check_sha1sum="yes" and check_md5sum="yes"
-          
+
     - **check_sha1sum**: Value=yes
 
-        - When used only the sha1 hash of the files will be checked.  
+        - When used only the sha1 hash of the files will be checked.
 
     - **check_md5sum**: Value=yes
 
-        - The md5 hash of the files will be checked.  
+        - The md5 hash of the files will be checked.
 
     - **check_size**: Value=yes
 
-        - The size of the files will be checked.  
+        - The size of the files will be checked.
 
     - **check_owner**: Value=yes
 
@@ -51,9 +51,9 @@
         - Check the group owner of the files/directories selected.
 
     - **check_perm**: Value=yes
-       
+
         - Check the UNIX permission of the files/directories selected.
-          On windows this will only check the POSIX permissions. 
+          On windows this will only check the POSIX permissions.
 
     - **restrict**: Value=string
 
@@ -61,19 +61,19 @@
 
         **Allowed:** Any directory or file name (but not a path)
 
-.. object:: ignore 
+.. object:: ignore
 
     List of files or directories to be ignored (one entry per element). The files and directories are still checked, but the results are ignored.
 
     **Default:** /etc/mtab
-    
+
     **Attributes:**
 
-    - **type**: Value=sregex 
+    - **type**: Value=sregex
 
-        - This is a simple regex pattern to filter out files so alerts are not generated.  
+        - This is a simple regex pattern to filter out files so alerts are not generated.
 
-    **Allowed:** Any directory or file name 
+    **Allowed:** Any directory or file name
 
 .. object:: frequency
 
@@ -83,39 +83,39 @@
 
     **Default:** 21600
 
-    **Allowed:** Time in seconds 
+    **Allowed:** Time in seconds
 
-.. object:: scan_time 
+.. object:: scan_time
 
-    Time to run the scans (can be in the formats of 21pm, 8:30, 12am, etc) 
+    Time to run the scans (can be in the formats of 21pm, 8:30, 12am, etc)
 
     **Allowed:** Time to run scan
 
-.. object:: scan_day 
+.. object:: scan_day
 
     Day of the week to run the scans (can be in the format of sunday, saturday, monday, etc)
 
     **Allowed:** Day of the week
 
 .. _auto_ignore:
-.. object:: auto_ignore 
+.. object:: auto_ignore
 
-    Specifies if syscheck will ignore files that change too often (after the third change) 
+    Specifies if syscheck will ignore files that change too often (after the third change)
 
     **Default:** yes
 
-    **Allowed:** yes/no 
+    **Allowed:** yes/no
 
     **Valid:** server, local
 
 .. _alert_new_files:
-.. object:: alert_new_files 
+.. object:: alert_new_files
 
-    Specifies if syscheck should alert on new files created. 
+    Specifies if syscheck should alert on new files created.
 
-    **Default:** no 
+    **Default:** no
 
-    **Allowed:** yes/no 
+    **Allowed:** yes/no
 
     **Valid:** server, local
 
@@ -123,33 +123,33 @@
 
        New files will only be detected on a full scan, this option does not work in realtime.
 
-.. object:: scan_on_start 
+.. object:: scan_on_start
 
     Specifies if syscheck should do the first scan as soon as it is started.
 
-    **Default:** yes 
+    **Default:** yes
 
-    **Allowed:** yes/no 
+    **Allowed:** yes/no
 
 .. object:: windows_registry
 
-    Use this option to add Windows registry entries to be monitored (Windows-only). 
+    Use this option to add Windows registry entries to be monitored (Windows-only).
 
-    **Default:** HKEY_LOCAL_MACHINE\Software 
+    **Default:** HKEY_LOCAL_MACHINE\Software
 
     **Allowed:** Any registry entry (one per element)
 
     .. note::
 
        New entries will not trigger alerts, only changes to existing entries.
-    
-.. object:: registry_ignore 
+
+.. object:: registry_ignore
 
     List of registry entries to be ignored.
 
     **Default:** ..Cryptography\RNG
 
-    **Allowed:** Any registry entry (one per element) 
+    **Allowed:** Any registry entry (one per element)
 
 
 .. object:: refilter_cmd
@@ -165,4 +165,16 @@
     .. note::
 
        This option can potentially impact performance negatively. The configured command will be run for each and every file checked.
+
+.. object:: skip_nfs
+
+    Specifies if syscheck should scan network mounted filesystems.  Works on Linux and FreeBSD.  Currently skip_nfs will abort checks running against CIFS or NFS mounts.
+
+    **Default:** no
+
+    **Allowed:** yes/no
+
+    .. note::
+
+       This option was added in OSSEC 2.9.
 

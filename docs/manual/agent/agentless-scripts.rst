@@ -607,7 +607,7 @@ Before we add this new script to OSSEC configuration we need to test it.
 
 Due to not making use of the of the $arg variable in the way that ssh_integrity_check_linux 
 wants use too, this caused this the problem above. Solving this problem would require 
-making changes to files that will effect other built in scripts. So a quick solution is 
+making changes to files that will affect other built in scripts. So a quick solution is 
 to just pass anything as an argument to the script. This will have no effect on our 
 script as we do not make use of the $arg variable.
 

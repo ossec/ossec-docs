@@ -5,9 +5,10 @@
 Getting started with OSSEC
 ==========================
 
-OSSEC is a full platform to monitor and control your systems. It mixes together 
-all the aspects of HIDS (host-based intrusion detection), log monitoring and 
-SIM/SIEM together in a simple, powerful and open source solution.
+OSSEC is a platform to monitor and control your systems. It mixes together 
+all the aspects of HIDS (host-based intrusion detection), log monitoring, and 
+Security Incident Management (SIM)/Security Information and Event Management 
+(SIEM) together in a simple, powerful, and open source solution.
 
 
 Key Benefits
@@ -16,11 +17,11 @@ Key Benefits
 Compliance Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-OSSEC helps customers meet specific compliance requirements such as PCI, HIPAA 
-etc. It lets customers detect and alert on unauthorized file system modifications 
-and malicious behavior embedded in the log files of COTS products as well as 
+OSSEC helps customers meet specific compliance requirements such as PCI and HIPAA.
+It lets customers detect and alert on unauthorized file system modifications 
+and malicious behavior embedded in the log files of commercial products as well as 
 custom applications. For PCI, it covers the sections of file integrity monitoring 
-(PCI 11.5, 10.5), log inspection and monitoring (section 10) and policy 
+(PCI 11.5, 10.5), log inspection and monitoring (section 10), and policy 
 enforcement/checking.
 
 Multi platform
@@ -28,17 +29,16 @@ Multi platform
 
 OSSEC lets customers implement a comprehensive host based intrusion detection 
 system with fine grained application/server specific policies across multiple 
-platforms such as Linux, Solaris, AIX, BSD, Windows, Mac OS X and VMware ESX.
+platforms such as Linux, Solaris, Windows, and Mac OS X.
 
 Real-time and Configurable Alerts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OSSEC lets customers configure incidents they want to be alerted on which lets 
+OSSEC lets customers configure incidents they want to be alerted on, and lets 
 them focus on raising the priority of critical incidents over the regular noise 
-on any system. Integration with smtp, sms and syslog allows customers to be on 
-top of alerts by sending these on to e-mail and handheld devices such as cell 
-phones and pagers. Active response options to block an attack immediately is 
-also available.
+on any system. Integration with smtp, sms, and syslog allows customers to be on 
+top of alerts by sending them to e-mail enabled devices.
+Active response options to block an attack immediately are also available.
 
 Integration with current infrastructure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,9 +58,9 @@ Agent and agentless monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 OSSEC offers the flexibility of agent based and agentless monitoring of systems 
-and networking components such as routers and firewalls. It lets customers who 
-have restrictions on software being installed on systems (such as FDA approved 
-systems or appliances) meet security and compliance needs.
+and networking components such as routers and firewalls. Agentless monitoring 
+lets customers who have restrictions on software being installed on systems 
+(such as FDA approved systems or appliances) meet security and compliance needs.
 
 Key Features
 ------------
@@ -82,22 +82,23 @@ Log Monitoring
 Your operating system wants to speak to you, but do you know how to listen? Every 
 operating system, application, and device on your network generate logs (events) 
 to let you know what is happening. OSSEC collects, analyzes and correlates these 
-logs to let you know if something wrong is going on (attack, misuse, errors, etc). 
-Do you want to know when an application is installed on your client box? Or when 
-someone changes a rule in your firewall? By monitoring your logs, OSSEC will let 
-you know of that.
+logs to let you know if something suspicious is happening (attack, misuse, errors, 
+etc). Do you want to know when an application is installed on your client box? Or 
+when someone changes a rule in your firewall? By monitoring your logs, OSSEC will 
+notify you.
 
-Covers PCI DSS section 10 in a whole.
+This should cover PCI DSS section 10.
 
 Rootkit detection
 ~~~~~~~~~~~~~~~~~
 
-Criminals (also known as hackers) want to hide their actions, but using rootkit 
-detection you can be notified when they (or trojans, viruses, etc) change your 
-system in this way.
+Criminal hackers want to hide their actions, but using rootkit detection you can 
+be notified when the system is modified in a way common to rootkits.
 
 Active response
 ~~~~~~~~~~~~~~~
 
-Take immediate and automatic responses when something happens. Why wait for hours 
-when you can alert your admin and block an attack right way?
+Active response allows OSSEC to take immediate action when specified alerts are
+triggered. This may prevent an incident from spreading before an administrator 
+can take action.
+

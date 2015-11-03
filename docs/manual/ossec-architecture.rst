@@ -29,11 +29,16 @@ The agent is a small program, or collection of programs, installed on the system
 to be monitored. The agent will collect information and forward 
 it to the manager for analysis and correlation. Some information is collected in 
 real time, others periodically. It has a very small memory and CPU 
-footprint by default, not affecting the system?\x80\x99s usage.
+footprint by default, not affecting the system's usage.
 
 *Agent security*: It runs with a low privilege user (generally created during the 
 installation) and inside a chroot jail isolated from the system. Most of the 
 agent configuration can be pushed from the manager. 
+
+.. note::
+
+   OSSEC only supports agents on Microsoft Windows platforms. These systems will require
+   an OSSEC server, running on Linux or another unix-like system.
 
 Agentless
 ~~~~~~~~~

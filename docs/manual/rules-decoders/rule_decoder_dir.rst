@@ -9,9 +9,9 @@ by ossec-anaylistd.
 Use case
 --------
 
-Great simplifies working with decoders as their can be as many files as needed.
+Greatly simplifies working with decoders as there can be as many files as needed.
 Also will make packaging of rules and decoders a simple unzip/untar and restart
-operations. This will also greatly reduce the amount of code needed to manage
+operation. This will also greatly reduce the amount of code needed to manage
 the upgrade scripts of ossec.
 
 Details
@@ -21,7 +21,7 @@ Syntax for OSSEC
 ~~~~~~~~~~~~~~~~
 
 All Directory loading is done in alphabetical form. This is much like init.d
-where the use of numeric prefixes on file names can effect the order of
+where the use of numeric prefixes on file names can affect the order of
 loading. Example of file names and the order they would be loaded:
 
 #. 00_sshd_rules.xml
@@ -31,8 +31,8 @@ loading. Example of file names and the order they would be loaded:
 Directory loading 
 ^^^^^^^^^^^^^^^^^
 
-The basic for selection of rules file is as follows. This will load all files in
-the rules dir that match the regex ``_rules.xml$``
+The basic format for selection of rules file is as follows. This will load all
+files in the rules dir that match the regex ``_rules.xml$``.
 
 .. code-block:: xml
 

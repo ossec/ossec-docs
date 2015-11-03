@@ -550,13 +550,13 @@ More restrictions:
 
 iplog.conf:
 ^^^^^^^^^^^
-To Enable  or  disable  a mechanism that attempts to fool programs, such as nmap and queso, that perform remote OS detection, add the follow line to iplog.conf
+To Enable or disable a mechanism that attempts to fool programs, such as nmap and queso, that perform remote OS detection, add the follow line to iplog.conf
 
 .. code-block:: console
 
  set fool_nmap true
 
-As  a side effect, enabling this option will also cause most of nmap's stealth" scans to fail.
+As a side effect, enabling this option will also cause most of nmap's stealth" scans to fail.
 
 BSD's sysctl (some FreeBSD especific):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
