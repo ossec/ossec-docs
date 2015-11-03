@@ -1,6 +1,6 @@
 .. post:: May 12, 2014
    :tags: ossec, support
-   :category: Anouncements
+   :category: Announcements
    :author: Vic Hargrave
 
 ==================================
@@ -28,7 +28,7 @@ one of many open source tools found in the AlienVault Unified Security
 Management (USM) platform which provides OSSEC users with an interface
 to manage and configure large agents deployments, customize rules,
 generate reports or dashboards and correlate incoming agents data. To
-learn more visit: `http://www.alienvault.com/landing/ossec <>`__ or
+learn more visit: `<http://www.alienvault.com/landing/ossec>`_ or
 contact us at ossec@alienvault.com.
 
 OSSEC Training Resources from the AlienVault Community:

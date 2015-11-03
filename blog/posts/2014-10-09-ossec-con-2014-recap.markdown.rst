@@ -1,6 +1,6 @@
 .. post:: Oct 09, 2014
    :tags: ossec, osssecon, conf, aleinvault, atomicorp
-   :category: OSSECCon
+   :category: Announcements
    :author: Vic Hargrave
 
 ====================

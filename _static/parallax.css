@@ -10,27 +10,27 @@ section {
 }
 
 .bg-1 {
-	background: url('cam_background2.png') no-repeat center center fixed;
-  color:#fff;
-  background-size:cover;
-  margin-left: -80px;
-  margin-right: -80px;
+    background: url('laptop.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+    margin-left: -80px;
+    margin-right: -80px;
 }
 
 .bg-2 {
-	background: url('dnc.jpg') no-repeat top center fixed;
-  color:#fff;
-  background-size:cover;
-  margin-left: -80px;
-  margin-right: -80px;
+	background: url('server-rack.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+    margin-left: -80px;
+    margin-right: -80px;
 }
 
 .bg-3 {
-	background: url('lock.jpg') no-repeat bottom center fixed;
-  color:#fff;
-  background-size:cover;
-  margin-left: -80px;
-  margin-right: -80px;
+	background: url('hex.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+    margin-left: -80px;
+    margin-right: -80px;
 }
 
 #footer {

@@ -1,6 +1,6 @@
 .. post:: Apr 15, 2014
    :tags: minor
-   :category: release
+   :category: Releases
    :author: Vic Hargrave
 
 ====================
@@ -8,6 +8,6 @@ OSSEC 2.7.1 Released
 ====================
 
 OSSEC 2.7.1 has been released and posted on our `download
-page </download>`__. You can check the `release
-notes </release-notes/ossec-hids-2.7.1-release-note.txt>`__ to find out
+page <../../download>`_. You can check the `release
+notes </release-notes/ossec-hids-2.7.1-release-note.txt>`_ to find out
 what has been updated in this release.
