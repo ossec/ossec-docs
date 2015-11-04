@@ -4,7 +4,7 @@ sudo: false
 install: "pip install -r requirements.txt"
 
 script: 
-  - travis-sphinx --nowarn --source=. build
+  - python travis-sphinx.py --nowarn --source=. build
 
 after_success:
-    - travis-sphinx deploy
+    - python travis-sphinx.py  deploy
