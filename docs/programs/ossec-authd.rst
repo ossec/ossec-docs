@@ -62,7 +62,7 @@ ossec-authd argument options
 
     .. note::
 
-       This option was added after 2.8.1.
+       This option is available in OSSEC 2.9.
 
 .. option:: -x <path>
 
@@ -70,7 +70,7 @@ ossec-authd argument options
 
     .. note::
 
-       This option was added after 2.8.1.
+       This option is available in OSSEC 2.9.
 
 
 
