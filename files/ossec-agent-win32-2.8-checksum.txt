@@ -1,0 +1,2 @@
+MD5(ossec-agent-win32-2.8.exe)= a699117d0ed77f88b3a8661644ee3efd
+SHA1(ossec-agent-win32-2.8.exe)= 5b8759b555c56c3ed8f360f2abccd69e3c097c2f

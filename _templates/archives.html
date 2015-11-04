@@ -1,0 +1,14 @@
+{% if ablog.archive %}
+<ul class="nav nav-list">
+  <li>
+    <a href="{{ pathto(ablog.archive.docname) }}">{{ gettext('Archives') }}</a>
+    <ul>
+    {% for coll in ablog.archive %}
+      {% if coll %}
+      <li><a href="{{ pathto(coll.docname) }}"><i class="fa fa-folder"></i> {{ coll }} ({{ coll|length }})</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </li>
+</ul>
+{% endif %}

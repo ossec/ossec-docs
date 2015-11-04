@@ -1,0 +1,14 @@
+.. post:: Jun 04, 2014
+   :tags: ossec, support
+   :category: Releases
+   :author: Vic Hargrave
+
+==================
+OSSEC 2.8 Released
+==================
+
+| OSSEC 2.8 has been released and posted on our `download
+  page <../../downloads.html/>`_.
+| You can check the `release
+  notes <https://github.com/ossec/ossec-hids/releases/tag/v2.8.0>`_ to
+  find out what has been updated in this release.
