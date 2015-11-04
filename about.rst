@@ -74,13 +74,19 @@ To unsubscribe:
 Commercial Support
 ------------------
 
-WAZUH offers OSSEC support and maintenance to enterprise users, as well as tuning services
-to help them get in compliance with regulations like PCI DSS or HIPAA, or security benchmarks
-like CIS. They also currently build and maintain the Open Source installers for Linux Debian
-and Ubuntu distributions.
+**Atomicorp** is the producer of Atomic Secured Linux™ which features a secure Linux system that 
+includes OSSEC as one of its core technologies.  Atomicorp provides comprehensive support services 
+for all your security needs including deployment assistance and post-sale support for OSSEC. The 
+company has long been involved with the OSSEC Project and currently builds the OSSEC RPM packages 
+for each release. You can find out more about Atomicorp product and support offereings by contacting 
+their sales team at sales@atomicorp.com or visiting their products listing page at: 
+`<https://atomicorp.com/product-listing/>`_.
 
-You can find out more about these services reaching the sales team at contact@wazuh.com, or
-visiting their website at: `<http://www.wazuh.com/professional-services/#OSSEC HIDS Services>`_.
+**Wazuh** offers OSSEC support and maintenance to enterprise users, as well as tuning services to 
+help them get in compliance with regulations like PCI DSS or HIPAA, or security benchmarks like 
+CIS. Wazuh also currently build and maintain the OSSEC installers for Linux Debian and Ubuntu 
+distributions. You can find out more about these services reaching the sales team at contact@wazuh.com, 
+or visiting their website at: `<http://www.wazuh.com/professional-services/#OSSEC HIDS Services>`_.
 
 
 OSSEC Team
@@ -110,8 +116,9 @@ The OSSEC Team consists of the following team of developers and committers to th
 Former OSSEC Team Members
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Daniel B. Cid** \xe2\x80\x93 Founder of the OSSEC Project \xe2\x80\x93 dcid (at) dcid.me
-**Michael Starks \xe2\x80\x93 Community Support, rules
+**Daniel B. Cid** – Founder of the OSSEC Project – dcid (at) dcid.me
+
+**Michael Starks** – Community Support, rules
 
 
 |

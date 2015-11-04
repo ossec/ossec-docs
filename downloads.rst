@@ -5,58 +5,65 @@ Downloads
 Source Downloads
 ~~~~~~~~~~~~~~~~
 
-+--------------+-----------------------------------------------+-------+
-| latest development snapshots                                         |
-+==============+===============================================+=======+
-| server/agent | https://github.com/ossec/ossec-hids/releases          |
-+--------------+-----------------------------------------------+-------+
-| web ui       | https://github.com/ossec/ossec-wui/release            |
-+--------------+-----------------------------------------------+-------+
-| docs         | https://github.com/ossec/ossec-docs                   |
-+--------------+-----------------------------------------------+-------+
++--------------+-----------------------------------------------+-------------+
+| Latest development snapshots                                               |
++==============+===============================================+=============+
+| Server/Agent | https://github.com/ossec/ossec-hids/releases                |
++--------------+-----------------------------------------------+-------------+
+| Web UI       | https://github.com/ossec/ossec-wui/release                  |
++--------------+-----------------------------------------------+-------------+
+| Docs         | https://github.com/ossec/ossec-docs                         |
++--------------+-----------------------------------------------+-------------+
 
-+--------------+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| Latest Stable Release (2.8.2)                                                                                                                                               |
-+===================+================================================================================================+========================================================+
-| Server/Agent Unix | `2.8.2.tar.gz <https://github.com/ossec/ossec-hids/archive/2.8.2.tar.gz>`_                     | `Checksum <files/ossec-hids-2.8.2-checksum.txt>`_      |
-+-------------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| Agent Windows     | `ossec-agent-win32-2.8.exe`_                                                                   | `Checksum <files/ossec-agent-win32-2.8-checksum.txt>`_ |
-+-------------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| Virtual Appl      | `ossec-vm-2.8.2.ova <http://www.ossec.net/files/ossec-vm-2.8.2.ova>`_                          | `Checksum <files/ossec-vm-2.8.2-checksum.txt>`_        |
-+-------------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------+
++---------------------+-----------------------------------------------+--------------------------+------------+
+| Latest Stable Release (2.8.2)                                                                  |            |
++=====================+===============================================+==========================+============+
+| Server/Agent Unix   | `ossec-hids-2.8.2.tar.gz`_ – `Release Notes`_ | `Unix Checksum`_         |            |
++---------------------+-----------------------------------------------+--------------------------+------------+
+| Agent Windows       | `ossec-agent-win32-2.8.exe`_                  | `Win Checksum`_          |            |
++---------------------+-----------------------------------------------+--------------------------+------------+
+| Virtual Appliance   | `ossec-vm-2.8.2.ova`_ – `README`_             | `VA Checksum`_           |            |
++---------------------+-----------------------------------------------+--------------------------+------------+
 
+.. _ossec-hids-2.8.2.tar.gz: https://github.com/ossec/ossec-hids/archive/2.8.2.tar.gz
+.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.8.2
+.. _Unix Checksum: https://github.com/ossec/ossec-hids/releases/download/2.8.2/ossec-hids-2.8.2.tar.gz-checksum.txt
 .. _ossec-agent-win32-2.8.exe: https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-agent-win32-2.8.exe
+.. _Win Checksum: https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-agent-win32-2.8-checksum.txt
+.. _ossec-vm-2.8.2.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.2.ova
+.. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.2.README
+.. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.2-checksum.txt
 
 RPMs for RHEL, CentOS, Fedora and others
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Available in the `AtomiCorp repository <http://www5.atomicorp.com/channels/ossec/>`_.
+Available in the `Atomicorp repository <http://www5.atomicorp.com/channels/ossec/>`_.
 
-+-------------------------------------------------------------------------------------------+
-| CentOS                                                                                    |
-+==============+============================================================================+
-| el5          | `i386 <http://www5.atomicorp.com/channels/ossec/centos/5/i386/RPMS/>`_     |
-+--------------+----------------------------------------------------------------------------+
-| el5          | `x86_64 <http://www5.atomicorp.com/channels/ossec/centos/5/x86_64/RPMS/>`_ |
-+--------------+----------------------------------------------------------------------------+
-| el6          | `i386 <http://www5.atomicorp.com/channels/ossec/centos/5/i386/RPMS/>`_     |
-+--------------+----------------------------------------------------------------------------+
-| el6          | `x86_64 <http://www5.atomicorp.com/channels/ossec/centos/6/x86_64/RPMS/>`_ |
-+--------------+----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+| CentOS                                                                                         |
++==============+=================================================================================+
+| el5          | `i386 <http://www5.atomicorp.com/channels/ossec/centos/5/i386/RPMS/>`_          |
++--------------+---------------------------------------------------------------------------------+
+| el5          | `x86_64 <http://www5.atomicorp.com/channels/ossec/centos/5/x86_64/RPMS/>`_      |
++--------------+---------------------------------------------------------------------------------+
+| el6          | `i386 <http://www5.atomicorp.com/channels/ossec/centos/5/i386/RPMS/>`_          |
++--------------+---------------------------------------------------------------------------------+
+| el6          | `x86_64 <http://www5.atomicorp.com/channels/ossec/centos/6/x86_64/RPMS/>`_      |
++--------------+---------------------------------------------------------------------------------+
 
-+-------------------------------------------------------------------------------------------+
-| Fedora                                                                                    |
-+==============+============================================================================+
-| el5          | `i386 <http://www5.atomicorp.com/channels/ossec/fedora/20/i386/RPMS/>`_    |
-+--------------+----------------------------------------------------------------------------+
-| el5          | `x86_64 <http://www5.atomicorp.com/channels/ossec/fedora/5/x86_64/RPMS/>`_ |
-+--------------+----------------------------------------------------------------------------+
-| el6          | `i386 <http://www5.atomicorp.com/channels/ossec/fedora/5/i386/RPMS/>`_     |
-+--------------+----------------------------------------------------------------------------+
-| el6          | `x86_64 <http://www5.atomicorp.com/channels/ossec/fedora/6/x86_64/RPMS/>`_ |
-+--------------+----------------------------------------------------------------------------+
-| All          | `6 - 20 <http://www5.atomicorp.com/channels/ossec/fedora/>`_               |
-+--------------+----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+| Fedora                                                                                         |
++==============+=================================================================================+
+| el5          | `i386 <http://www5.atomicorp.com/channels/ossec/fedora/20/i386/RPMS/>`_         |
++--------------+---------------------------------------------------------------------------------+
+| el5          | `x86_64 <http://www5.atomicorp.com/channels/ossec/fedora/5/x86_64/RPMS/>`_      |
++--------------+---------------------------------------------------------------------------------+
+| el6          | `i386 <http://www5.atomicorp.com/channels/ossec/fedora/5/i386/RPMS/>`_          |
++--------------+---------------------------------------------------------------------------------+
+| el6          | `x86_64 <http://www5.atomicorp.com/channels/ossec/fedora/6/x86_64/RPMS/>`_      |
++--------------+---------------------------------------------------------------------------------+
+| All          | `6 - 20 <http://www5.atomicorp.com/channels/ossec/fedora/>`_                    |
++--------------+---------------------------------------------------------------------------------+
 
 RPM Installation
 ================
@@ -69,34 +76,62 @@ To install with yum do the following:
     # yum install ossec-hids ossec-hids-server (or ossec-hids-client for the agent)
 
 
-DEBs for Debian Wheezy, Jessie and Sid
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBs for Debian and Ubuntu
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Available in the `AlienVault repository <http://ossec.alienvault.com/repos/apt/debian/pool/main/o/>`_.
+Available in the `Wazuh repository <http://ossec.wazuh.com/repos/apt/>`_.
 
++------------------+-----------------------------------------------------------------------------+
+| Debian/Ubuntu                                                                                  |
++==================+=============================================================================+
+| OSSEC Server     | `Debian`_, `Ubuntu`_                                                        |
++------------------+-----------------------------------------------------------------------------+
+| OSSEC Agent      | `Debian`_, `Ubuntu`_                                                        |
++------------------+-----------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------------------------------------------------+
-| Debian                                                                                                             |
-+==============+=====================================================================================================+
-| OSSEC Server | `Wheezy, Jessie, Sid <http://ossec.alienvault.com/repos/apt/debian/pool/main/o/ossec-hids/>`_       |
-+--------------+-----------------------------------------------------------------------------------------------------+
-| OSSEC Agent  | `Wheezy, Jessie, Sid <http://ossec.alienvault.com/repos/apt/debian/pool/main/o/ossec-hids-agent/>`_ |
-+--------------+-----------------------------------------------------------------------------------------------------+
-
+.. _Debian: http://ossec.wazuh.com/repos/apt/debian/pool/main/o/ossec-hids/
+.. _Ubuntu: http://ossec.wazuh.com/repos/apt/ubuntu/pool/main/o/ossec-hids/
 
 DEB Installation
 ================
 
 To install with apt-get do the following:
 
-.. code:: console 
+Step 1. Install the apt-get repository key:
 
-    # wget -O – http://ossec.alienvault.com/repos/apt/conf/ossec-key.gpg.key | apt-key add –
-    # echo “deb http://ossec.alienvault.com/repos/apt/debian wheezy main” >> /etc/apt/sources.list
-    (change wheezy for your Debian distribution)
+.. code:: console
+
+    # apt-key adv --fetch-keys http://ossec.wazuh.com/repos/apt/conf/ossec-key.gpg.key
+
+Step 2. Add the repository for Debian (available distributions are Sid, Jessie and Wheezy):
+
+.. code:: console
+
+    # echo ‘deb http://ossec.wazuh.com/repos/apt/debian wheezy main’ >> /etc/apt/sources.list
+
+Or add the repository for Ubuntu (available distributions are Precise, Trusty and Utopic):
+
+.. code:: console
+
+    # echo ‘deb http://ossec.wazuh.com/repos/apt/ubuntu precise main’ >> /etc/apt/sources.list
+
+Step 3. Update the repository:
+
+.. code:: console
+
     # apt-get update
-    # apt-get install ossec-hids  (or ossec-hids-agent)
 
+Step 4. Install OSSEC HIDS server/manager:
+
+.. code:: console
+
+    # apt-get install ossec-hids
+
+Or install OSSEC HIDS agent:
+
+.. code:: console
+
+    # apt-get install ossec-hids-age
 
 PGP key
 ~~~~~~~
@@ -107,7 +142,7 @@ to using gpg. You first need to import our public key:
 
 .. code:: console
 
-    ossec-test# wget http://www.ossec.net/files/OSSEC-PGP-KEY.asc
+    ossec-test# wget http://ossec.github.io/files/OSSEC-PGP-KEY.asc
     ossec-test# gpg –import OSSEC-PGP-KEY.asc
 
 And then verify each file against its signature:
@@ -135,3 +170,5 @@ Contribute back!
 If you find ossec useful and would like to contribute back to the
 community, please contact us. We have a lot of work to do and any help
 is appreciated.
+
+|
