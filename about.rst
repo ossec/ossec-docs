@@ -106,4 +106,12 @@ The OSSEC Team consists of the following team of developers and committers to th
 
 **Jia-Bing (JB) Cheng** – SIEM integration, community support – Jia-BingJB_Cheng (at) trendmicro.com
 
+
+Former OSSEC Team Members
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Daniel B. Cid** \xe2\x80\x93 Founder of the OSSEC Project \xe2\x80\x93 dcid (at) dcid.me
+**Michael Starks \xe2\x80\x93 Community Support, rules
+
+
 |
