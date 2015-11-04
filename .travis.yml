@@ -8,4 +8,4 @@ script:
   - make html
 
 after_success:
-  - (cd _build/html/ && git add . && git commit -m "deployed to github pages" && git push --force --quiet http://$GH_TOKEN@github.com/ossec/ossec.github.io.git)
+  - (cd _build/html/ && git add . && git commit -m "deployed to github pages" &&  git config --global user.email travis-ci@travis && git config --global user.name  "Travis-CI" && git push --force --quiet http://$GH_TOKEN@github.com/ossec/ossec.github.io.git)
