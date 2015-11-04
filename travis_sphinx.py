@@ -4,6 +4,7 @@ import subprocess
 import getopt
 import sphinx
 
+
 def run(*args):
     ret = subprocess.call(args, stdout=sys.stdout, stderr=sys.stderr)
     if ret != 0:
