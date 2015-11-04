@@ -4,7 +4,8 @@ sudo: false
 install: "pip install -r requirements.txt"
 
 script: 
-  - python travis_sphinx.py --nowarn --source=. build
+  - git clone https://github.com/ossec/ossec.github.io _build/html/
+  - make html
 
 after_success:
-    - python travis_sphinx.py  deploy
+  - (cd _build/html/ && git add . && git commit -m "deployed to github pages" && git push --force --quiet http://$GH_TOKEN@github.com/ossec/ossec.github.io.git)
