@@ -3,6 +3,19 @@
 What's new
 ##########
 
+2.8.3
+-----
+
+Released November 5, 2015:
+
+.. note::
+
+   This is a bug fix release.
+
+* Fix eventchannel support for Windows agents.
+* Fix hybrid mode.
+
+
 2.8.2
 -----
 
