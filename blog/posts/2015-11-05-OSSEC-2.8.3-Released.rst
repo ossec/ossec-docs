@@ -1,0 +1,13 @@
+.. post:: Nov 05, 2015
+   :tags: minor
+   :category: Releases
+   :author: Vic Hargrave
+
+====================
+OSSEC 2.8.3 Released
+====================
+
+OSSEC 2.8.3 has been released and posted on our `Downloads
+page <http://ossec.github.io/downloads.html>`_. You can check the `Release
+Notes <https://bintray.com/ossec/ossec-hids/ossec-hids/view#release>`_ to find out
+what has been updated in this release.
