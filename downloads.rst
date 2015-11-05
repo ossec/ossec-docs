@@ -18,18 +18,18 @@ Source Downloads
 +---------------------+-----------------------------------------------+--------------------------+------------+
 | Latest Stable Release (2.8.2)                                                                  |            |
 +=====================+===============================================+==========================+============+
-| Server/Agent Unix   | `ossec-hids-2.8.2.tar.gz`_ – `Release Notes`_ | `Unix Checksum`_         |            |
+| Server/Agent Unix   | `ossec-hids-2.8.3.tar.gz`_ – `Release Notes`_ | `Unix Checksum`_         |            |
 +---------------------+-----------------------------------------------+--------------------------+------------+
-| Agent Windows       | `ossec-agent-win32-2.8.exe`_                  | `Win Checksum`_          |            |
+| Agent Windows       | `ossec-agent-win32-2.8.3.exe`_                | `Win Checksum`_          |            |
 +---------------------+-----------------------------------------------+--------------------------+------------+
 | Virtual Appliance   | `ossec-vm-2.8.2.ova`_ – `README`_             | `VA Checksum`_           |            |
 +---------------------+-----------------------------------------------+--------------------------+------------+
 
-.. _ossec-hids-2.8.2.tar.gz: https://github.com/ossec/ossec-hids/archive/2.8.2.tar.gz
-.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.8.2
-.. _Unix Checksum: https://github.com/ossec/ossec-hids/releases/download/2.8.2/ossec-hids-2.8.2.tar.gz-checksum.txt
-.. _ossec-agent-win32-2.8.exe: https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-agent-win32-2.8.exe
-.. _Win Checksum: https://github.com/ossec/ossec-hids/releases/download/v2.8.0/ossec-agent-win32-2.8-checksum.txt
+.. _ossec-hids-2.8.3.tar.gz: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
+.. _Release Notes: https://bintray.com/ossec/ossec-hids/ossec-hids/view#release
+.. _Unix Checksum: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz.sha256
+.. _ossec-agent-win32-2.8.3.exe: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-agent-win32-2.8.3.exe
+.. _Win Checksum: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-agent-win32-2.8.3.exe.sha256
 .. _ossec-vm-2.8.2.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.2.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.2.README
 .. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.2-checksum.txt
