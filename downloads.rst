@@ -131,7 +131,7 @@ Or install OSSEC HIDS agent:
 
 .. code:: console
 
-    # apt-get install ossec-hids-age
+    # apt-get install ossec-hids-agent
 
 PGP key
 ~~~~~~~
