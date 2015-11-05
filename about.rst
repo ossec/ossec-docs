@@ -8,6 +8,8 @@ checking, Windows registry monitoring, centralized policy enforcement, rootkit d
 real-time alerting and active response.It runs on most operating systems, including Linux,
 OpenBSD, FreeBSD, MacOS, Solaris and Windows.
 
+Check out `What's New <http://ossec.github.io/docs/whatsnew/index.html>`_ for the latest release info.
+
 OSSEC is Free
 ~~~~~~~~~~~~~
 
