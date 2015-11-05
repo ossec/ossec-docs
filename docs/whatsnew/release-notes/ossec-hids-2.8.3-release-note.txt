@@ -1,0 +1,15 @@
+Trend Micro, Inc.                                               November 5, 2015
+--------------------------------------------------------------------------------
+                       OSSEC "v2.8.3" Release Note^
+--------------------------------------------------------------------------------
+
+Summary of changes in v2.8.3
+
+== NOTE: In terms of features this release is the same as OSSEC 2.8.2, *EXCEPT*
+         it includes important bug fixes.
+
+  * The eventchannel support for Windows agents has received an important reliability fix.
+
+  * The hybrid support has received an important reliability fix.
+
+			=== END ===
