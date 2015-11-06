@@ -10,7 +10,7 @@ installed. The rootcheck (rootkit detection engine) will be executed every X min
 Used with the log analysis and the integrity checking engine, it will become a very 
 powerful monitoring solution.
 
-Checks that rootcheck preforms 
+Checks that rootcheck performs 
 ------------------------------
 
 #. Read the rootkit_files.txt which contains a database of rootkits and files commonly
