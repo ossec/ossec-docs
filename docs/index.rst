@@ -13,6 +13,17 @@ and active response. It runs on most operating systems, including Linux, OpenBSD
 FreeBSD, Mac OS X, Solaris and Windows. A list with all supported platforms is available
 at: :ref:`supported-systems`
 
+
+News & Info
+===========
+
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   whatsnew/index
+
 Manual & FAQ 
 ============
 
@@ -47,7 +58,7 @@ Reference
     syntax/index
     formats/index
     programs/index
-    whatsnew/index
+    .. whatsnew/index
     .. rules/index
     rootcheck/index
     .. log_samples/index
