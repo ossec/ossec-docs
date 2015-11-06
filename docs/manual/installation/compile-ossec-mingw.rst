@@ -22,7 +22,7 @@ And generate the Windows package directory:
 
 .. code-block:: console
 
-    # cd ossec-hids-2.8.1/src/win32
+    # cd ossec-hids-2.8.3/src/win32
     # ./gen-win.sh
 
 Now, you will have the win-pkg directory under src. Just go there and run make.sh. Your Windows agent package should be created in a few minutes:
