@@ -94,23 +94,22 @@ or visiting their website at: `<http://www.wazuh.com/professional-services/#OSSE
 OSSEC Team
 ~~~~~~~~~~
 
-The OSSEC Team consists of the following team of developers and committers to the project:
-
-**Daniel B. Cid** – Founder of the OSSEC Project – dcid (at) dcid.me
+OSSEC was originally developed by Daniel Cid. The core OSSEC Team consists of the following team of 
+developers and committers to the project:
 
 **Jeremy Rossi** – OSSEC Development Manager – jeremy (at) jeremyrossi.com
 
-**Dan Parriott** – Community support, docs, rules, QA – ddpbsd (at) gmail.com
+**Dan Parriott** – Community support, docs, rules, testing – ddpbsd (at) gmail.com
 
 **Scott R. Shinn** – RPM repositories, rules, tools integration – scott (at) atomicorp.com
 
-**Santiago Gonzalez** – DEB repositories, SIEM integration  – santiago . bassett (at) gmail.com
+**Santiago Gonzalez** – DEB repositories, SIEM integration  – santiago  (at) wazuh.com
 
 **Brad Lhotsky** – Development, system integration, rules – brad . lhotsky (at) gmail.com
 
-**Andrew Widdersheim** – Development – awiddersheim (at) hotmail.com
+**Andrew Widdersheim** – Development, testing, rules – awiddersheim (at) hotmail.com
 
-**Vic Hargrave** – SIEM integration, webmaster – vichargrave (at) gmail.com
+**Vic Hargrave** – SIEM integration, webmaster, development – vichargrave (at) gmail.com
 
 **Jia-Bing (JB) Cheng** – SIEM integration, community support – Jia-BingJB_Cheng (at) trendmicro.com
 
