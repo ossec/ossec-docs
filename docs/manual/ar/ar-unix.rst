@@ -55,7 +55,7 @@ figurations>`_.
     </active-response>
 
 
-- **disabled**: Disables active response if set to yes.
+- **disabled**: Disables the active response capabilities if set to yes. If this is set, active response will not work.
 - **command**: Used to link the response to the command
 - **location**: Where the command should be executed. You have four options:
 
@@ -89,7 +89,7 @@ active-response tools:
         table id.
     
 - **firewall-drop.sh** (ipsec): Adds an IP to the ipsec drop table (AIX).
-- **firewall-drop.sh** (pf): Adds an IP to a pre-configured pf deny table (OpenBSD and FreeBSD).
+- **pf.sh** (pf): Adds an IP to a pre-configured pf deny table (OpenBSD and FreeBSD).
 
     .. note:: 
 
@@ -100,6 +100,7 @@ active-response tools:
 
         block in quick from <ossec_fwtable> to any
         block out quick from any to <ossec_fwtable>
+
 - **firewalld-drop.sh** (firewalld): Adds a rich-rule to block an IP to firewalld (Linux with firewalld enabled).
 
     .. note::
