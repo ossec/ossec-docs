@@ -96,7 +96,7 @@ OSSEC Team
 
 OSSEC was originally developed by Daniel Cid. 
 
-Currently the core OSSEC Team consists of the following team of developers and committers:
+Currently the core OSSEC Team consists of the following developers and committers:
 
 **Jeremy Rossi** – OSSEC Development Manager – jeremy (at) jeremyrossi.com
 
