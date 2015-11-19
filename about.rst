@@ -94,8 +94,9 @@ or visiting their website at: `<http://www.wazuh.com/professional-services/#OSSE
 OSSEC Team
 ~~~~~~~~~~
 
-OSSEC was originally developed by Daniel Cid. The core OSSEC Team consists of the following team of 
-developers and committers to the project:
+OSSEC was originally developed by Daniel Cid. 
+
+Currently the core OSSEC Team consists of the following team of developers and committers:
 
 **Jeremy Rossi** – OSSEC Development Manager – jeremy (at) jeremyrossi.com
 
