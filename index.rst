@@ -41,12 +41,10 @@
                   <div class="panel-body">Got a variety of operating systems to support and protect?  OSSEC has
                   you covered with comprehensive host based intrusion detection across multiple platforms including
                   Linux,Solaris, AIX, HP-UX, BSD, Windows, Mac and VMware ESX.
-                <div class="panel-body">
                 </div>
               </div>
             </div>
         </div><!--/row-->
-
     </div><!--/container-->
 
     <div class="divider"></div>
@@ -88,7 +86,6 @@
                 users. You can tap these resources through our <a href="https://github.com/ossec/ossec-hids">Github</a> 
                 site, subscribing to one of our Google support groups, or by contacting one of our partner
                 companies.
-                <div class="panel-body">
                 </div>
               </div>
             </div>
