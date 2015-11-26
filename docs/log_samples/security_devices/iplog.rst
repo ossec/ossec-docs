@@ -334,7 +334,7 @@ Nov 14 15:57:56 TCP: Bogus TCP flags set by 10.10.160.2:60873 (dest port 25)
 
  <decoder name="iplog-bogustcp">
   <prematch>Bogus TCP flags set by</prematch>
-  <regex offset="after_prematch">(\d+.\d+.\d+.\d+):\d+</regex>
+  <regex offset="after_prematch">(\S+):\d+</regex>
   <order>srcip</order>
  </decoder>
 
