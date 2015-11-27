@@ -348,7 +348,7 @@ a proppossed decoder is (not tested):
 
  <decoder name="iplog-bogustcp">
   <prematch>Bogus TCP flags set by</prematch>
-  <regex offset="after_prematch">(\d+.\d+.\d+.\d+):\d+</regex>
+  <regex offset="after_prematch">(\S+):\d+</regex>
   <order>srcip</order>
  </decoder>
 
