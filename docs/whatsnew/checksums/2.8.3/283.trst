@@ -1,7 +1,9 @@
 
-Checksum for ossec-hids-2.8.3.tar.gz: `ossec-hids-2.8.3.tar.gz.sha256 <./ossec-hids-2.8.3.tar.gz.sha256>`_
+Checksum for ossec-hids-2.8.3.tar.gz:
+:download:`ossec-hids-2.8.3.tar.gz.sha256 </docs/whatsnew/checksums/2.8.3/ossec-hids-2.8.3.tar.gz.sha256>`
 
-Checkdum for ossec-agent-win32-2.8.3.exe: `ossec-agent-win32-2.8.3.exe.sha256 <./ossec-agent-win32-2.8.3.exe.sha256>`_
+Checkdum for ossec-agent-win32-2.8.3.exe:
+:download:`ossec-agent-win32-2.8.3.exe.sha256 </docs/whatsnew/checksums/2.8.3/ossec-agent-win32-2.8.3.exe.sha256>`
 
 .. code-block:: console
 
