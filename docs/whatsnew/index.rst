@@ -15,6 +15,7 @@ Released November 5, 2015:
 * Fix eventchannel support for Windows agents.
 * Fix hybrid mode.
 
+.. include:: checksums/2.8.3/index.trst
 
 2.8.2
 -----

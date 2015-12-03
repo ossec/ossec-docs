@@ -1,0 +1,10 @@
+
+Checksum for ossec-hids-2.8.3.tar.gz: `ossec-hids-2.8.3.tar.gz.sha256 <./ossec-hids-2.8.3.tar.gz.sha256>`_
+
+Checkdum for ossec-agent-win32-2.8.3.exe: `ossec-agent-win32-2.8.3.exe.sha256 <./ossec-agent-win32-2.8.3.exe.sha256>`_
+
+.. code-block:: console
+
+   SHA256 (ossec-agent-win32-2.8.3.exe) = 82c143613c4538101b64ccb6deec8cdf6f88e59a9cc45585c1a81bce8d78f015
+   SHA256 (ossec-hids-2.8.3.tar.gz) = 917989e23330d18b0d900e8722392cdbe4f17364a547508742c0fd005a1df7dd
+
