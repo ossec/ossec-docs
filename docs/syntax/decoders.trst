@@ -14,6 +14,7 @@
 
 .. xml:element:: decoder.accumulate
 
+   .. versionadded:: 2.9.0
    Allow OSSEC to track events over multiple log messages based on a decoded id.
 
    .. code-block:: xml
@@ -30,7 +31,7 @@
 
    .. warning::
 
-      accumulate first appeared in OSSEC 2.9.
+      accumulate first appeared in OSSEC 2.9.0
 
 .. xml:element:: decoder.program_name 
 
