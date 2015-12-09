@@ -158,6 +158,7 @@
 
 .. xml:element:: skip_nfs
 
+    .. versionadded:: 2.9.0
     Specifies if rootcheck should scan network mounted filesystems.  Works on Linux and FreeBSD.  Currently skip_nfs will abort checks running against CIFS or NFS mounts.
 
     **Default:** no
@@ -166,5 +167,5 @@
 
     .. note::
 
-       This option was added in OSSEC 2.9.
+       This option was added in OSSEC 2.9.0.
 
