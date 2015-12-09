@@ -82,7 +82,7 @@ This active-response will run on agent ``001`` only.
     <rules_group>authentication_failed,authentication_failures</rules_group>
   </active-response>
 
-.. warning:
+.. warning::
 
     This may trigger on a single authentication failure.
 
@@ -159,7 +159,7 @@ It also uses the ``repeated_offenders`` option blocking an IP for 30 minutes on 
    </active-response>
 
 
-.. warning:
+.. warning::
 
     This may trigger on a single authentication failure.
 
