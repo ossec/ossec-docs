@@ -100,7 +100,7 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 **Jeremy Rossi** – OSSEC Development Manager – jeremy (at) jeremyrossi.com
 
-**`Dan Parriott <https://keybase.io/ddpbsd>`_** – Community support, docs, rules, testing – ddpbsd (at) gmail.com
+**Dan Parriott** – Community support, docs, rules, testing – ddpbsd (at) gmail.com
 
 **Scott R. Shinn** – RPM repositories, rules, tools integration – scott (at) atomicorp.com
 
