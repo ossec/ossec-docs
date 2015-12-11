@@ -8,4 +8,5 @@ Checksums
    :glob:
 
    2.8.3/index
+   2.9.0/index
 
