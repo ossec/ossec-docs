@@ -10,7 +10,7 @@ Source Downloads
 +==============+===============================================+=============+
 | Server/Agent | https://github.com/ossec/ossec-hids/releases                |
 +--------------+-----------------------------------------------+-------------+
-| Web UI       | https://github.com/ossec/ossec-wui/release                  |
+| Web UI       | https://github.com/ossec/ossec-wui/releases                 |
 +--------------+-----------------------------------------------+-------------+
 | Docs         | https://github.com/ossec/ossec-docs                         |
 +--------------+-----------------------------------------------+-------------+
