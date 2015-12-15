@@ -26,8 +26,8 @@ The first rule acts as a "collector" for specific log messages.  As part of the 
 
  <decoder name="web-accesslog">
    <type>web-log</type>
-   <prematch>^\d+.\d+.\d+.\d+ - </prematch>
-   <regex>^(\d+.\d+.\d+.\d+) - \S+ [\S+ -\d+] </regex>
+   <prematch>^\S+ - </prematch>
+   <regex>^(\S+) - \S+ [\S+ -\d+] </regex>
    <regex>"\w+ (\S+) HTTP\S+ (\d+) </regex>
    <order>srcip,url,id</order>
  </decoder>

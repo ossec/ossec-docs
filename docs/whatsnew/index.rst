@@ -3,6 +3,12 @@
 What's new
 ##########
 
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   checksums/index
+
 2.8.3
 -----
 
@@ -15,6 +21,7 @@ Released November 5, 2015:
 * Fix eventchannel support for Windows agents.
 * Fix hybrid mode.
 
+.. include:: checksums/2.8.3/283.trst
 
 2.8.2
 -----
@@ -107,5 +114,6 @@ Released Sept 9, 2014:
 * Changed ``-f`` to ``-v`` in ossec-logtest
 
 * Added ``-f`` to manage_agents to create agent keys in bulk
+
 
 
