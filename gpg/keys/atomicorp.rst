@@ -36,3 +36,6 @@ Atomicorp PGP key
    kt1o05etg6iRaeSaNQ==
    =DrwN
    -----END PGP PUBLIC KEY BLOCK-----
+
+`keybase link <https://keybase.io/atomicturtle>`_
+

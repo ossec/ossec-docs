@@ -59,3 +59,6 @@ Dan
    -----END PGP PUBLIC KEY BLOCK-----
 
 
+`keybase link <https://keybase.io/ddpbsd>`_
+
+
