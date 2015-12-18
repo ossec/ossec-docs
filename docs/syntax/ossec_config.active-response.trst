@@ -39,7 +39,8 @@ Active-response Options
 
 .. xml:element:: disabled 
 
-    Disables active response if set to yes. If this is not defined active response is enabled.
+    Disables active response if set to yes. If this is not defined active response is enabled. This option is available on server, local, and agent installations.
+    Setting it on an agent will disable active-response for that agent only, while setting it on the server will disable all active-response.
 
 .. xml:element:: command 
 
