@@ -114,7 +114,7 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 **Jia-Bing (JB) Cheng** – SIEM integration, community support – Jia-BingJB_Cheng (at) trendmicro.com
 
-`GPG/PGP keys <./gpg/keys/index.html>`_
+`GPG/PGP keys <./gpg/index.html>`_
 
 
 Former OSSEC Team Members
