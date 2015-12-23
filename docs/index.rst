@@ -49,6 +49,8 @@ Development
 
    development/oRFC/index 
 
+   development/gpg/index
+
 Reference 
 =========
 
@@ -62,6 +64,7 @@ Reference
     .. rules/index
     rootcheck/index
     .. log_samples/index
+    examples/index
     glossary
 
 

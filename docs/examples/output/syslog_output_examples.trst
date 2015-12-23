@@ -1,7 +1,4 @@
-.. _syslog_output_examples:
-
-Examples:
----------
+.. _syslog_output_examples::
 
 Send all alerts to 10.10.10.125:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

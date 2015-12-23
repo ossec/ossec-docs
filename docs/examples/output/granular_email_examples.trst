@@ -36,6 +36,7 @@ Example 3: Email based on Rule ID's
 To e-mail *bb@y.z* for every event from rule 123 or rule 124 (without grouping):
 
 .. code-block:: xml 
+
      <email_alerts>
          <email_to>bb@y.z</email_to>
          <rule_id>123, 124</rule_id>
