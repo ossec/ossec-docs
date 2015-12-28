@@ -164,11 +164,57 @@ Note that the key expiration date was changed lately. If you get an
 warning saying “gpg: Note: This key has expired!”, make sure to update
 the key and run the “import” command again (as specified above).
 
+Presentation Slides
+~~~~~~~~~~~~~~~~~~~
+
+Several of the OSSEC Project Team members have presented at conferences. 
+Here is a collection of materials from some of those presentations.
+
++----------------------------------------------------------------------+
+| `Decoding AWS CloudTrail with OSSEC`_                                |
++----------------------------------------------------------------------+
+| `Log Analysis Using OSSEC`_                                          |
++----------------------------------------------------------------------+
+| `Making the Most of OSSEC`_                                          |
++----------------------------------------------------------------------+
+| `Malware Detection with OSSEC`_                                      |
++----------------------------------------------------------------------+
+| `Open Source Security`_                                              |
++----------------------------------------------------------------------+
+| `OSSEC Active Response and Self Healing`_                            |
++----------------------------------------------------------------------+
+| `OSSEC and OSSIM Unified Open Source Security`_                      |
++----------------------------------------------------------------------+
+| `OSSEC at Scale`_                                                    |
++----------------------------------------------------------------------+
+| `OSSEC Con 2012 Day 1`_                                              |
++----------------------------------------------------------------------+
+| `OSSEC Con 2012 Day 2`_                                              |
++----------------------------------------------------------------------+
+| `OSSEC Log Management with Elasticsearch`_                           |
++----------------------------------------------------------------------+
+| `OSSEC PCI Solution 2.0`_                                            |
++----------------------------------------------------------------------+
+ 
+.. _Decoding AWS CloudTrail with OSSEC: https://bintray.com/artifact/download/ossec/ossec-presentations/Decoding_AWS_CloudTrail_with_OSSEC.pptx
+ .. _Log Analysis Using OSSEC: https://bintray.com/artifact/download/ossec/ossec-presentations/Log_Analysis_using_OSSEC.pdf
+ .. _Making the Most of OSSEC: https://bintray.com/artifact/download/ossec/ossec-presentations/Making_the_Most_of_OSSEC.pdf 
+ .. _Malware Detection with OSSEC: https://bintray.com/artifact/download/ossec/ossec-presentations/Malware_Detection_with_OSSEC.pptx
+ .. _Open Source Security: https://bintray.com/artifact/download/ossec/ossec-presentations/OpenSourceSecurity_2013.pptx
+ .. _OSSEC Active Response and Self Healing: https://bintray.com/artifact/download/ossec/ossec-presentations/OSSEC_Active_Response_and_Self_Healing.pdf
+ .. _OSSEC and OSSIM Unified Open Source Security: https://bintray.com/artifact/download/ossec/ossec-presentations/OSSEC_and_OSSIM_Unified_Open_Source_Security.pdf
+ .. _OSSEC at Scale: https://bintray.com/artifact/download/ossec/ossec-presentations/OSSEC_at_Scale.pdf
+ .. _OSSEC Con 2012 Day 1: https://bintray.com/artifact/download/ossec/ossec-presentations/OSSEC_Con_2012-day-1.pdf
+ .. _OSSEC Con 2012 Day 2: https://bintray.com/artifact/download/ossec/ossec-presentations/OSSEC_Con_2012-day-2.pdf
+ .. _OSSEC Log Management with Elasticsearch: https://bintray.com/artifact/download/ossec/ossec-presentations/OSSEC_Log_Mangement_with_Elasticsearch.pptx
+ .. _OSSEC PCI Solution 2.0: https://bintray.com/artifact/download/ossec/ossec-presentations/OSSEC_PCI_Solution_2.0.pdf
+
 Contribute back!
 ~~~~~~~~~~~~~~~~
 
 If you find ossec useful and would like to contribute back to the
 community, please contact us. We have a lot of work to do and any help
 is appreciated.
+
 
 |
