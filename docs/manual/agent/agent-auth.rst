@@ -16,7 +16,7 @@ ossec-authd
 
 .. warning::
 
-   There is currently no authentication, so any host that can cannot to the port ossec-authd listens to can obtain an OSSEC agent key.
+   There is currently no authentication, so any host that can connect to the port ossec-authd listens to can obtain an OSSEC agent key.
    It is recommended that the OSSEC manager's firewall be used to help limit connections.
 
 
