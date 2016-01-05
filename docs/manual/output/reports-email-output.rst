@@ -13,4 +13,4 @@ All of these configuration options should be specified in the /var/ossec/etc/oss
 
 .. include:: ../../syntax/ossec_config.reports.trst 
 
-.. include: ../../examples/output/report_output_examples.trst
+.. include:: ../../examples/output/report_output_examples.trst
