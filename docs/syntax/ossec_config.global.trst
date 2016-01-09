@@ -25,6 +25,7 @@
     
 .. xml:element:: email_reply_to
 
+    .. versionadded:: 3.0
     E-mail "Reply-to" of the alerts.
 
     **Allowed:** Any valid e-mail address
