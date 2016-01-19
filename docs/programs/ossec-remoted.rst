@@ -34,7 +34,7 @@ ossec-remoted argument options
 
 .. option:: -f
 
-    Run ossec-agentlessd in the foreground.
+    Run ossec-remoted in the foreground.
 
 .. option:: -g <group>
 
