@@ -10,10 +10,12 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Active-reponse options are available in the the following installation types:
+Most active-reponse options are available in the the following installation types:
 
 * server
 * local 
+
+The ``disabled`` option is available on all installation types.
 
 Configuration pieces
 ^^^^^^^^^^^^^^^^^^^^

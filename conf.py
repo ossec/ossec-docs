@@ -155,7 +155,7 @@ html_theme_options = {
     'navbar_links': [
         ('About <i class="fa fa-info-circle"></i>', "about"),
         ('Blog <i class="fa fa-archive"></i>', "blog"),
-        ('Documentaton <i class="fa fa-book"></i>', "docs/", 1),
+        ('Documentation <i class="fa fa-book"></i>', "docs/", 1),
         ('Downloads <i class="fa fa-download"></i>', "downloads"),
     ],
 

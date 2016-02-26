@@ -168,13 +168,14 @@
 
 .. object:: skip_nfs
 
+    .. versionadded:: 2.9.0
     Specifies if syscheck should scan network mounted filesystems.  Works on Linux and FreeBSD.  Currently skip_nfs will abort checks running against CIFS or NFS mounts.
 
     **Default:** no
 
     **Allowed:** yes/no
 
-    .. note::
+    .. warning::
 
        This option was added in OSSEC 2.9.
 
