@@ -20,27 +20,11 @@ is merely providing this information as a convenience for users.
 Interested parties are advised to directly contact the vendor for more
 information on their specific capabilities or offerings around OSSEC.
 
-`AlienVault <http://www.alienvault.com/>`__
+`Wazuh <http://www.wazuh.com/>`__
 
-While AlienVault does not offer stand-alone support options for OSSEC,
-it does offer OSSEC support through it’s commercial offering. OSSEC is
-one of many open source tools found in the AlienVault Unified Security
-Management (USM) platform which provides OSSEC users with an interface
-to manage and configure large agents deployments, customize rules,
-generate reports or dashboards and correlate incoming agents data. To
-learn more visit: `<http://www.alienvault.com/landing/ossec>`_ or
-contact us at ossec@alienvault.com.
+Wazuh contributes to the OSSEC project maintaing `installers <http://ossec.wazuh.com>`_ and providing an Open Source `ruleset <http://www.wazuh.com/ossec-ruleset/>`_ to improve OSSEC detection and log analysis capabilities. Wazuh has also developed its own modules for OSSEC integration with Log management systems like Splunk or `Elasticsearch <http://wazuh.com/elk-stack/>`_. Their website includes documentation explaining how to use OSSEC to get in compliance with `PCI-DSS <http://www.wazuh.com/pci-dss>`_, and to monitor Amazon AWS environments.
 
-OSSEC Training Resources from the AlienVault Community:
-
--  `Advanced OSSEC Training
-   Webcast <https://www.alienvault.com/resource-center/webcasts/advanced-ossec-training-integration-strategies-for-open-source-security>`__
--  `Installing OSSEC agent in a Windows
-   server <http://https//alienvault.bloomfire.com/posts/523831-installing-ossec-agent-in-a-windows-server/public>`__
--  `Reading a log file with OSSEC
-   agent <https://alienvault.bloomfire.com/posts/523833-reading-a-log-file-with-ossec-agent/public>`__
--  `Deploying OSSEC agents to Linux
-   Hosts <https://alienvault.bloomfire.com/posts/608119-deploying-ossec-agents-to-linux-hosts/public>`__
+Wazuh provides `support and professional services <http://www.wazuh.com/professional-services/>`_ to OSSEC users. The services include training, deployment assistance, health-checks, tuning and commercial support. You can reach Wazuh team at: contact@wazuh.com.
 
 `AtomiCorp <http://www.atomicorp.com/>`__
 

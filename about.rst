@@ -76,7 +76,9 @@ To unsubscribe:
 Commercial Support
 ------------------
 
-**Atomicorp** is the producer of Atomic Secured Linux™ which features a secure Linux system that 
+**Atomicorp** 
+
+Atomicorp is the producer of Atomic Secured Linux™ which features a secure Linux system that 
 includes OSSEC as one of its core technologies.  Atomicorp provides comprehensive support services 
 for all your security needs including deployment assistance and post-sale support for OSSEC. The 
 company has long been involved with the OSSEC Project and currently builds the OSSEC RPM packages 
@@ -84,12 +86,11 @@ for each release. You can find out more about Atomicorp product and support offe
 their sales team at sales@atomicorp.com or visiting their products listing page at: 
 `<https://atomicorp.com/product-listing/>`_.
 
-**Wazuh** offers OSSEC support and maintenance to enterprise users, as well as tuning services to 
-help them get in compliance with regulations like PCI DSS or HIPAA, or security benchmarks like 
-CIS. Wazuh also currently build and maintain the OSSEC installers for Linux Debian and Ubuntu 
-distributions. You can find out more about these services reaching the sales team at contact@wazuh.com, 
-or visiting their website at: `<http://www.wazuh.com/professional-services/#OSSEC HIDS Services>`_.
+**Wazuh** 
 
+Wazuh provides `support and professional services <http://www.wazuh.com/professional-services/>`_ to OSSEC users. The services include training, deployment assistance, health-checks, tuning and commercial support. You can reach Wazuh team at: contact@wazuh.com.
+
+Wazuh also contributes to the OSSEC project maintaing `installers <http://ossec.wazuh.com>`_ and providing an Open Source `ruleset <http://www.wazuh.com/ossec-ruleset/>`_ to improve OSSEC detection and log analysis capabilities. Wazuh has developed its own modules for OSSEC integration with Log management systems like Splunk or `Elasticsearch <http://wazuh.com/elk-stack/>`_. Their website includes documentation explaining how to use OSSEC to get in compliance with `PCI-DSS <http://www.wazuh.com/pci-dss>`_, and to monitor Amazon AWS environments. 
 
 OSSEC Team
 ~~~~~~~~~~
@@ -104,7 +105,7 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 **Scott R. Shinn** – RPM repositories, rules, tools integration – scott (at) atomicorp.com
 
-**Santiago Gonzalez** – DEB repositories, SIEM integration  – santiago  (at) wazuh.com
+**Santiago Bassett** – DEB repositories, SIEM integration  – santiago  (at) wazuh.com
 
 **Brad Lhotsky** – Development, system integration, rules – brad . lhotsky (at) gmail.com
 
