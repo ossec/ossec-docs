@@ -80,7 +80,7 @@ To install with yum do the following:
 DEBs for Debian and Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Available in the `Wazuh repository <http://ossec.wazuh.com/repos/apt/>`_.
+Available in the `Wazuh repository <http://ossec.wazuh.com/>`_.
 
 +------------------+-----------------------------------------------------------------------------+
 | Debian/Ubuntu                                                                                  |
@@ -104,17 +104,17 @@ Step 1. Install the apt-get repository key:
 
     # apt-key adv --fetch-keys http://ossec.wazuh.com/repos/apt/conf/ossec-key.gpg.key
 
-Step 2. Add the repository for Debian (available distributions are Sid, Jessie and Wheezy):
+Step 2. Add the repository for Debian, chaging ``wheezy`` by your distribution name (available ones are ``wheezy``, ``jessie``, ``strectch`` or ``sid``):
 
 .. code:: console
 
-    # echo ‘deb http://ossec.wazuh.com/repos/apt/debian wheezy main’ >> /etc/apt/sources.list
+    # echo "deb http://ossec.wazuh.com/repos/apt/debian wheezy main" >> /etc/apt/sources.list
 
-Or add the repository for Ubuntu (available distributions are Precise, Trusty and Utopic):
+Or add the repository for Ubuntu, changing ``precise`` by your distribution name (available ones are ``precise``, ``trusty``, ``vivid`` or ``wily``):
 
 .. code:: console
 
-    # echo ‘deb http://ossec.wazuh.com/repos/apt/ubuntu precise main’ >> /etc/apt/sources.list
+    # echo "deb http://ossec.wazuh.com/repos/apt/ubuntu precise main" >> /etc/apt/sources.list
 
 Step 3. Update the repository:
 
