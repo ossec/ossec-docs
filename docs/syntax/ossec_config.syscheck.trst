@@ -75,6 +75,19 @@
 
     **Allowed:** Any directory or file name
 
+.. object:: nodiff
+
+    .. versionadded:: 3.0
+    List of files to not attach a diff. The files are still checked, but no diff is computed. This allows to monitor sensible files like private key or database configuration without leaking sensible data through alerts.
+
+    **Attributes:**
+
+    - **type**: Value=sregex
+
+        - This is a simple regex pattern to filter out files so alerts are not generated.
+
+    **Allowed:** Any directory or file name
+
 .. object:: frequency
 
     Frequency that the syscheck is going to be executed (in seconds).
