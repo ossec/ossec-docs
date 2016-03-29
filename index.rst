@@ -120,11 +120,13 @@
             <div class="col-md-4">
               <div class="panel panel-default">
                 <div class="panel-heading"><h3><a href="http://wazuh.com">Wazuh</a></h3></div>
-                <div class="panel-body">Wazuh offers deployment and support for OSSEC HIDS and AlienVault USM™ security 
-                services. Wazuh identifies performance and configuration issues affecting your deployed solution. This 
-                process involves OSSEC, server and agent components, analysis of configurations and communications, as 
-                well as an overall system health-check. If you are an organization that requires commercial support of 
-                your OSSEC deployment, Wazuh is the company for you. 
+                <div class="panel-body"><p>Wazuh provides OSSEC <a href="http://www.wazuh.com/professional-services/">support
+                and professional services</a>. The services include training, deployment assistance and annual support.</p>
+                <p>Wazuh has developed an OSSEC <a href="http://www.wazuh.com/ossec-ruleset/">ruleset</a>, to improve
+                detection capabilities. Among others, it includes rules to monitor <a href="http://www.wazuh.com/pci-dss/">
+                PCI DSS</a> controls, and Amazon AWS environments.</p> 
+                <p>Wazuh has integrated OSSEC and <a href="http://www.wazuh.com/ossec-elk/">Elasticsearch</a>, providing
+                comprehensive alerts and monitoring dashboards. More info at: contact@wazuh.com</p>
                 </div>
               </div>
             </div>
