@@ -2,7 +2,7 @@
 About
 =====
 
-OSSEC is a scalable, multi-platform, open source Host-based Intrusion Detection System (HIDS).
+OSSEC is a scalable, multi-platform, open source Host-based Intrusion Detection System (HIDS). 
 It has a powerful correlation and analysis engine, integrating log analysis, file integrity
 checking, Windows registry monitoring, centralized policy enforcement, rootkit detection,
 real-time alerting and active response.It runs on most operating systems, including Linux,
