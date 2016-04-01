@@ -3,6 +3,10 @@
 Configuring Checkpoint
 ----------------------
 
+.. warning::
+
+   This document does not provide a Checkpoint version, and may be out of date.
+   Please check the vendor's documentation for more up to date information.
 
 Run this command:
 ^^^^^^^^^^^^^^^^^
