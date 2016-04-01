@@ -125,7 +125,7 @@
                 <p>Wazuh has developed an OSSEC <a href="http://www.wazuh.com/ossec-ruleset/">ruleset</a>, to improve
                 detection capabilities. Among others, it includes rules to monitor <a href="http://www.wazuh.com/pci-dss/">
                 PCI DSS</a> controls, and Amazon AWS environments.</p> 
-                <p>Wazuh has integrated OSSEC and <a href="http://www.wazuh.com/ossec-elk/">Elasticsearch</a>, providing
+                <p>Wazuh has integrated OSSEC and <a href="http://www.wazuh.com/elk-stack/">Elasticsearch</a>, providing
                 comprehensive alerts and monitoring dashboards. More info at: contact@wazuh.com</p>
                 </div>
               </div>
