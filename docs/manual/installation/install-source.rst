@@ -20,7 +20,7 @@ More information on thse can be found on the `OSSEC Architecture page <../ossec-
 .. include:: getossec.trst
 
 2. Extract the compressed package and run the ``install.sh`` script. It will guide you 
-   through the installation.
+   through the installation and compile the source (not shown).
 
     .. code-block:: console 
 
