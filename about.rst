@@ -95,9 +95,9 @@ Wazuh also contributes to the OSSEC project maintaing `installers <http://ossec.
 OSSEC Team
 ~~~~~~~~~~
 
-OSSEC was originally developed by Daniel Cid. 
-
 Currently the core OSSEC Team consists of the following developers and committers:
+
+**Daniel B. Cid** – Founder of the OSSEC Project – dcid (at) dcid.me
 
 **Jeremy Rossi** – OSSEC Development Manager – jeremy (at) jeremyrossi.com
 
@@ -105,7 +105,7 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 **Scott R. Shinn** – RPM repositories, rules, tools integration – scott (at) atomicorp.com
 
-**Santiago Bassett** – DEB repositories, SIEM integration  – santiago  (at) wazuh.com
+**Santiago Bassett** – DEB repositories, SIEM integration – santiago  (at) wazuh.com
 
 **Brad Lhotsky** – Development, system integration, rules – brad . lhotsky (at) gmail.com
 
@@ -118,8 +118,6 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 Former OSSEC Team Members
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Daniel B. Cid** – Founder of the OSSEC Project – dcid (at) dcid.me
 
 **Michael Starks** – Community Support, rules
 
