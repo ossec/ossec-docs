@@ -51,19 +51,12 @@
 .. xml:element:: use_fqdn
 
     .. versionadded:: 2.9.0
-<<<<<<< HEAD
-=======
 
->>>>>>> f724f9a783fb2c7f3f4d9fddaad02d87b11dfd2a
     - By default, ossec truncates the hostname at the first period ('.') when generating syslog messages. Setting this option to 'yes' will cause it to use the full hostname configured on the server.
 
     - **Default** no
 
     - **Allowed** yes, no
-
-    .. warning::
-
-       This option was added in OSSEC 2.9.0.
 
 .. xml:element:: format
 
