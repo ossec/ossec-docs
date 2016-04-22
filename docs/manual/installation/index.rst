@@ -17,6 +17,7 @@ __ OSSEC Book install_
     installation-requirements
     install-source
     installation-windows
+    installation-package
     installation-binary
     install-virtual-server
     install-source-unattended

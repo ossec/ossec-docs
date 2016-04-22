@@ -24,6 +24,8 @@ Source Downloads
 +---------------------+-----------------------------------------------+--------------------------+------------+
 | Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |            |
 +---------------------+-----------------------------------------------+--------------------------+------------+
+| Docker Container    | `wazuh/docker-ossec`_                         |                          |            |
++---------------------+-----------------------------------------------+--------------------------+------------+
 
 .. _ossec-hids-2.8.3.tar.gz: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
 .. _Release Notes: https://bintray.com/ossec/ossec-hids/ossec-hids/view#release
@@ -33,6 +35,7 @@ Source Downloads
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
 .. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
+.. _wazuh/docker-ossec: https://hub.docker.com/r/wazuh/docker-ossec/
 
 
 RPMs for RHEL, CentOS, Fedora and others
