@@ -119,5 +119,6 @@ Former OSSEC Team Members
 
 **Michael Starks** – Community Support, rules
 
+**Vic Hargrave** – SIEM integration, webmaster, development – vichargrave (at) gmail.com
 
 |
