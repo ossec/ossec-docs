@@ -37,9 +37,8 @@ agent configuration can be pushed from the manager.
 
 .. note::
 
-   OSSEC can only be installed as an agent on Microsoft Windows platforms.
-   These systems will require an OSSEC server, running on Linux or another
-   unix-like system.
+   OSSEC only supports agents on Microsoft Windows platforms. These systems will require
+   an OSSEC server, running on Linux or another unix-like system.
 
 Agentless
 ~~~~~~~~~
