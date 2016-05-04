@@ -88,13 +88,15 @@ Available in the `Wazuh repository <http://ossec.wazuh.com/>`_.
 +------------------+-----------------------------------------------------------------------------+
 | Debian/Ubuntu                                                                                  |
 +==================+=============================================================================+
-| OSSEC Server     | `Debian`_, `Ubuntu`_                                                        |
+| OSSEC Server     | `Debian server`_, `Ubuntu server`_                                          |
 +------------------+-----------------------------------------------------------------------------+
-| OSSEC Agent      | `Debian`_, `Ubuntu`_                                                        |
+| OSSEC Agent      | `Debian agent`_, `Ubuntu agent`_                                            |
 +------------------+-----------------------------------------------------------------------------+
 
-.. _Debian: http://ossec.wazuh.com/repos/apt/debian/pool/main/o/ossec-hids/
-.. _Ubuntu: http://ossec.wazuh.com/repos/apt/ubuntu/pool/main/o/ossec-hids/
+.. _Debian server: http://ossec.wazuh.com/repos/apt/debian/pool/main/o/ossec-hids/
+.. _Ubuntu server: http://ossec.wazuh.com/repos/apt/ubuntu/pool/main/o/ossec-hids/
+.. _Debian agent: http://ossec.wazuh.com/repos/apt/debian/pool/main/o/ossec-hids-agent/
+.. _Ubuntu agent: http://ossec.wazuh.com/repos/apt/ubuntu/pool/main/o/ossec-hids-agent/
 
 DEB Installation
 ================
