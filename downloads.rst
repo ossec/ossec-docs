@@ -115,7 +115,7 @@ Step 2. Add the repository for Debian, chaging ``wheezy`` by your distribution n
 
     # echo "deb http://ossec.wazuh.com/repos/apt/debian wheezy main" >> /etc/apt/sources.list
 
-Or add the repository for Ubuntu, changing ``precise`` by your distribution name (available ones are ``precise``, ``trusty``, ``vivid`` or ``wily``):
+Or add the repository for Ubuntu, changing ``precise`` by your distribution name (available ones are ``precise``, ``trusty``, ``vivid``, ``wily`` or ``xenial``):
 
 .. code:: console
 
