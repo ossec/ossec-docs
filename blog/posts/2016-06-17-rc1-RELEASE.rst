@@ -1,0 +1,31 @@
+.. post:: Jun 17, 2016
+   :tags: beta
+   :category: Releases
+   :author: Scott R. Shinn
+
+
+===============
+OSSEC 2.9.0 RC1
+===============
+This release marks our first (and possibly only if all goes well) release candidate for OSSEC 2.9. 
+Assuming no issues are reported, this release will become the final OSSEC release. 
+
+Now is when we need really your help! As a community driven project, we need all the testing a release this size can get. Let us know in the OSSEC mailing list, Github bug tracker, the official OSSEC irc channel (#ossec irc.freenode.net) or on our new Facebook Group: https://www.facebook.com/ossechids/
+
+
+**Download**
+
+`https://github.com/ossec/ossec-hids/releases <https://github.com/ossec/ossec-hids/releases>`_
+
+**Changelog**
+
+* Fixed some memory leaks at analysisd
+* Fixed memory error on CDB lists management
+* Fixed bug at logcollector that inhibited alerts about file reduction
+* Fixed compilation issue at Win32
+* Fix for the mysql/postgres insert condition
+* ossec_rules_list script: Attached GPLv2 license
+* Fixed bug at logcollector that inhibited alerts about file reduction
+
+
+
