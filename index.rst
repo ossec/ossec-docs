@@ -108,12 +108,13 @@
             <div class="col-md-4">
               <div class="panel panel-default">
                 <div class="panel-heading"><h3><a href="https://atomicorp.com/">Atomicorp</a></h3></div>
-                <div class="panel-body">Atomicorp is the producer of Atomic Secured Linux™ which provides the most
+                <div class="panel-body"><p>Atomicorp is the producer of Atomic Secured Linux™ which provides the most
                 secure Linux kernel on the market that combines OSSEC host intrusion detection, a threat manager 
                 that hardens both your web applications and the operating system, and a self healing system that 
                 automatically fixes problems as they occur, from crashed processes on your server, to problems 
-                with your database, to even basic system errors.  Atomicorp provides comprehensive support deployment 
-                assistance and post-sale support for OSSEC.   
+                with your database, to even basic system errors. </p>
+                <p> Atomicorp provides <a href="https://atomicorp.com/product-listing/">comprehensive support</a>
+                and <a href="http://www.atomicrbl.com/map/">Threat Intelligence</a> feeds for OSSEC.  Contact: <a href="mailto:sales@atomicorp.com?Subject=OSSEC%20Commercial%20Support">OSSEC Support</a> </p>
                 </div>
               </div>
             </div>
