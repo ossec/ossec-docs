@@ -1,0 +1,29 @@
+.. post:: Jun 30, 2016
+   :tags: beta
+   :category: Releases
+   :author: Scott R. Shinn
+
+
+===============
+OSSEC 2.9.0 RC2
+===============
+This release marks our second release candidate for OSSEC 2.9 after some great input from our testers out there. 
+Assuming no issues are reported, this release will become the final OSSEC release. 
+
+Now is when we need really your help! As a community driven project, we need all the testing a release this size can get. Let us know in the OSSEC mailing list, Github bug tracker, the official OSSEC irc channel (#ossec irc.freenode.net) or on our new Facebook Group: https://www.facebook.com/ossechids/
+
+
+**Download**
+
+`https://github.com/ossec/ossec-hids/releases <https://github.com/ossec/ossec-hids/releases>`_
+
+**Changelog**
+
+
+* PR #864 Fix ossec-logtest to chroot when testing check_diff rules
+* PR #870 Fix installer permissions on the etc/shared directory
+* PR #878 Fix version field to correctly report "2.9.0" instead of 2.8.3
+
+
+
+
