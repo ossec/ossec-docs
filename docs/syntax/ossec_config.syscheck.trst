@@ -100,9 +100,13 @@
 
 .. object:: scan_time
 
-    Time to run the scans (can be in the formats of 21pm, 8:30, 12am, etc)
+    Time to run the scans (can be in the formats of 21pm, 8:30, 12am, etc).
 
     **Allowed:** Time to run scan
+
+    .. note::
+
+       This may delay the initialization of realtime scans.
 
 .. object:: scan_day
 
