@@ -28,7 +28,7 @@ Enabling json output
 
 An OSSEC server can be configured to write the alerts in json format. 
 
-File: /var/ossec/logs/ossec.conf
+File: /var/ossec/etc/ossec.conf
 
 .. code-block:: xml
 
