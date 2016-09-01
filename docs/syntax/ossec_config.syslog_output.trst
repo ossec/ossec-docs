@@ -58,10 +58,6 @@
 
     - **Allowed** yes, no
 
-    .. warning::
-
-       This option was added in OSSEC 2.9.0.
-
 .. xml:element:: format
 
     - Format of alert output. The default format is "default", or full syslog output.
