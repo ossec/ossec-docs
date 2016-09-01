@@ -148,7 +148,7 @@ to using gpg. You first need to import our public key:
 
 .. code:: console
 
-    ossec-test# wget http://ossec.github.io/files/OSSEC-PGP-KEY.asc
+    ossec-test# wget https://ossec.github.io/files/OSSEC-PGP-KEY.asc
     ossec-test# gpg –import OSSEC-PGP-KEY.asc
 
 And then verify each file against its signature:
