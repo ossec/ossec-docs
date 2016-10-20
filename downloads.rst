@@ -80,65 +80,6 @@ To install with yum do the following:
     # yum install ossec-hids ossec-hids-server (or ossec-hids-client for the agent)
 
 
-DEBs for Debian and Ubuntu
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Available in the `Wazuh repository <http://ossec.wazuh.com/>`_.
-
-+------------------+-----------------------------------------------------------------------------+
-| Debian/Ubuntu                                                                                  |
-+==================+=============================================================================+
-| OSSEC Server     | `Debian server`_, `Ubuntu server`_                                          |
-+------------------+-----------------------------------------------------------------------------+
-| OSSEC Agent      | `Debian agent`_, `Ubuntu agent`_                                            |
-+------------------+-----------------------------------------------------------------------------+
-
-.. _Debian server: http://ossec.wazuh.com/repos/apt/debian/pool/main/o/ossec-hids/
-.. _Ubuntu server: http://ossec.wazuh.com/repos/apt/ubuntu/pool/main/o/ossec-hids/
-.. _Debian agent: http://ossec.wazuh.com/repos/apt/debian/pool/main/o/ossec-hids-agent/
-.. _Ubuntu agent: http://ossec.wazuh.com/repos/apt/ubuntu/pool/main/o/ossec-hids-agent/
-
-DEB Installation
-================
-
-To install with apt-get do the following:
-
-Step 1. Install the apt-get repository key:
-
-.. code:: console
-
-    # apt-key adv --fetch-keys http://ossec.wazuh.com/repos/apt/conf/ossec-key.gpg.key
-
-Step 2. Add the repository for Debian, chaging ``wheezy`` by your distribution name (available ones are ``wheezy``, ``jessie``, ``strectch`` or ``sid``):
-
-.. code:: console
-
-    # echo "deb http://ossec.wazuh.com/repos/apt/debian wheezy main" >> /etc/apt/sources.list
-
-Or add the repository for Ubuntu, changing ``precise`` by your distribution name (available ones are ``precise``, ``trusty``, ``vivid``, ``wily`` or ``xenial``):
-
-.. code:: console
-
-    # echo "deb http://ossec.wazuh.com/repos/apt/ubuntu precise main" >> /etc/apt/sources.list
-
-Step 3. Update the repository:
-
-.. code:: console
-
-    # apt-get update
-
-Step 4. Install OSSEC HIDS server/manager:
-
-.. code:: console
-
-    # apt-get install ossec-hids
-
-Or install OSSEC HIDS agent:
-
-.. code:: console
-
-    # apt-get install ossec-hids-agent
-
 PGP key
 ~~~~~~~
 
