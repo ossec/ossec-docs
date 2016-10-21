@@ -385,8 +385,6 @@
 
     **Usage:** <check_diff />
 
-    **Additional info:** `Daniel Cid <http://dcid.me/blog/2010/03/alerting-when-a-log-or-output-of-a-command-changes/>`_ has written a blog post about the feature.
-
 .. xml:element:: group 
 
    - Add additional groups to the alert. Groups are optional tags added to alerts. They can be used by other rules by using ``if_group`` or ``if_matched_group``, or by alert parsing tools to categorize alerts.
