@@ -70,7 +70,7 @@ Active-response Options
 
 .. xml:element:: rules_group
 
-    The response will be executed on any event in the defined group. Multiple groups can be defined if separated by a comma.
+    The response will be executed on any event in the defined group. Multiple groups can be defined if separated by a pipe (`|`).
 
 .. xml:element:: rules_id
 
