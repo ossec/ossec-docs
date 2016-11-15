@@ -135,7 +135,7 @@
 
     - Week day that the event was generated. 
 
-    - **Allowed:** monday - sunday, weekday, weekends
+    - **Allowed:** monday - sunday, weekdays, weekends
 
 .. xml:element:: id 
 
