@@ -133,7 +133,7 @@
 
 .. xml:element:: weekday 
 
-    - Week day that the event was generated. 
+    - Week day that the event was generated. Multiple entries can be separated by commas.
 
     - **Allowed:** monday - sunday, weekdays, weekends
 
