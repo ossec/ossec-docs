@@ -99,7 +99,7 @@ And then verify each file against its signature:
 
 .. code:: console
 
-    ossec-test# gpg –verify file.sig file
+    ossec-test# gpg –verify file.asc 
 
 You should get the following result:
 
