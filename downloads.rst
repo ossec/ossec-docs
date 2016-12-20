@@ -41,38 +41,40 @@ Source Downloads
 RPMs for RHEL, CentOS, Fedora and others
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Available in the `Atomicorp repository <http://www5.atomicorp.com/channels/ossec/>`_.
+Available in the `Atomicorp repository <http://updates.atomicorp.com/channels/ossec/>`_.
 
 +------------------------------------------------------------------------------------------------+
-| CentOS                                                                                         |
+| CentOS / Redhat                                                                                |
 +==============+=================================================================================+
-| el5          | `i386 <http://www5.atomicorp.com/channels/ossec/centos/5/i386/RPMS/>`_          |
+| el5          | `i386 <http://updates.atomicorp.com/channels/ossec/centos/5/i386/RPMS/>`_       |
 +--------------+---------------------------------------------------------------------------------+
-| el5          | `x86_64 <http://www5.atomicorp.com/channels/ossec/centos/5/x86_64/RPMS/>`_      |
+| el5          | `x86_64 <http://updates.atomicorp.com/channels/ossec/centos/5/x86_64/RPMS/>`_   |
 +--------------+---------------------------------------------------------------------------------+
-| el6          | `i386 <http://www5.atomicorp.com/channels/ossec/centos/5/i386/RPMS/>`_          |
+| el6          | `i386 <http://updates.atomicorp.com/channels/ossec/centos/6/i386/RPMS/>`_       |
 +--------------+---------------------------------------------------------------------------------+
-| el6          | `x86_64 <http://www5.atomicorp.com/channels/ossec/centos/6/x86_64/RPMS/>`_      |
+| el6          | `x86_64 <http://updates.atomicorp.com/channels/ossec/centos/6/x86_64/RPMS/>`_   |
++--------------+---------------------------------------------------------------------------------+
+| el7          | `i386 <http://updates.atomicorp.com/channels/ossec/centos/7/i386/RPMS/>`_       |
++--------------+---------------------------------------------------------------------------------+
+| el7          | `x86_64 <http://updates.atomicorp.com/channels/ossec/centos/7/x86_64/RPMS/>`_   |
 +--------------+---------------------------------------------------------------------------------+
 
 +------------------------------------------------------------------------------------------------+
 | Fedora                                                                                         |
 +==============+=================================================================================+
-| el5          | `i386 <http://www5.atomicorp.com/channels/ossec/fedora/20/i386/RPMS/>`_         |
+| fc23          | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/23/i386/RPMS/>`_   |
 +--------------+---------------------------------------------------------------------------------+
-| el5          | `x86_64 <http://www5.atomicorp.com/channels/ossec/fedora/5/x86_64/RPMS/>`_      |
+| fc24          | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/24/x86_64/RPMS/>`_ |
 +--------------+---------------------------------------------------------------------------------+
-| el6          | `i386 <http://www5.atomicorp.com/channels/ossec/fedora/5/i386/RPMS/>`_          |
+| fc25          | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/25/i386/RPMS/>`_   |
 +--------------+---------------------------------------------------------------------------------+
-| el6          | `x86_64 <http://www5.atomicorp.com/channels/ossec/fedora/6/x86_64/RPMS/>`_      |
-+--------------+---------------------------------------------------------------------------------+
-| All          | `6 - 20 <http://www5.atomicorp.com/channels/ossec/fedora/>`_                    |
+| Legacy       | `6 - 22 <http://updates.atomicorp.com/channels/ossec/fedora/>`_                 |
 +--------------+---------------------------------------------------------------------------------+
 
 RPM Installation
 ================
 
-To install with yum do the following:
+Automated installer:
 
 .. code:: console
 
