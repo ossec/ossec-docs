@@ -15,21 +15,22 @@ Source Downloads
 | Docs         | https://github.com/ossec/ossec-docs                         |
 +--------------+-----------------------------------------------+-------------+
 
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Latest Stable Release (2.8.3)                                                                  |            |
-+=====================+===============================================+==========================+============+
-| Server/Agent Unix   | `ossec-hids-2.8.3.tar.gz`_ – `Release Notes`_ | `Unix Checksum`_         |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Agent Windows       | `ossec-agent-win32-2.8.3.exe`_                | `Win Checksum`_          |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Docker Container    | `wazuh/docker-ossec`_                         |                          |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Latest Stable Release (2.8.3)                                                                  |              |
++=====================+===============================================+==========================+==============+
+| Server/Agent Unix   | `ossec-hids-2.8.3.tar.gz`_ – `Release Notes`_ | `Unix Checksum`_         | `signature`_ |      
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Agent Windows       | `ossec-agent-win32-2.8.3.exe`_                | `Win Checksum`_          |              |
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |              |
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Docker Container    | `wazuh/docker-ossec`_                         |                          |              |
++---------------------+-----------------------------------------------+--------------------------+--------------+
 
 .. _ossec-hids-2.8.3.tar.gz: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
 .. _Release Notes: https://bintray.com/ossec/ossec-hids/ossec-hids/view#release
 .. _Unix Checksum: https://github.com/ossec/ossec-docs/blob/master/docs/whatsnew/checksums/2.8.3/ossec-hids-2.8.3.tar.gz.sha256
+.. _signature: https://github.com/ossec/ossec-hids/releases/download/v2.8.3/ossec-hids-2.8.3.tar.gz.asc
 .. _ossec-agent-win32-2.8.3.exe: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-agent-win32-2.8.3.exe
 .. _Win Checksum: https://github.com/ossec/ossec-docs/blob/master/docs/whatsnew/checksums/2.8.3/ossec-agent-win32-2.8.3.exe.sha256
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
