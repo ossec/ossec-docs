@@ -91,8 +91,8 @@ to using gpg. You first need to import our public key:
 
 .. code:: console
 
-    ossec-test# wget https://ossec.github.io/files/OSSEC-PGP-KEY.asc
-    ossec-test# gpg –import OSSEC-PGP-KEY.asc
+    # wget https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc
+    # gpg –import OSSEC-ARCHIVE-KEY.asc
 
 And then verify each file against its signature:
 
@@ -105,13 +105,15 @@ You should get the following result:
 
 .. code:: console
 
-    gpg: Signature made Tue 19 Jul 2011 03:13:58 PM BRT using RSA key ID A3901351
-    gpg: Good signature from “Daniel B. Cid ”
-    Primary key fingerprint: 6F11 9E06 487A AF17 C84C E48A 456B 17CF A390 1351
+    gpg: Signature made Tue 20 Dec 2016 11:35:58 AM EST using RSA key ID 2D8387B7
+    gpg: Good signature from "Scott R. Shinn <scott@atomicorp.com>"
+    Primary key fingerprint: B50F B194 7A0A E311 45D0  5FAD EE1B 0E6B 2D83 87B7
 
-Note that the key expiration date was changed lately. If you get an
-warning saying “gpg: Note: This key has expired!”, make sure to update
-the key and run the “import” command again (as specified above).
+
+Note that the signing key was changed in December 2016. The previous signing key
+"6F11 9E06 487A AF17 C84C E48A 456B 17CF A390 1351" has expired. If you get an warning 
+saying “gpg: Note: This key has expired!”, make sure to update the key and run the 
+“import” command again (as specified above).
 
 Presentation Slides
 ~~~~~~~~~~~~~~~~~~~
