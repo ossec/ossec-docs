@@ -62,11 +62,11 @@ Available in the `Atomicorp repository <http://updates.atomicorp.com/channels/os
 +------------------------------------------------------------------------------------------------+
 | Fedora                                                                                         |
 +==============+=================================================================================+
-| fc23          | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/23/i386/RPMS/>`_   |
+| fc23         | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/23/x86_64/RPMS/>`_  |
 +--------------+---------------------------------------------------------------------------------+
-| fc24          | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/24/x86_64/RPMS/>`_ |
+| fc24         | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/24/x86_64/RPMS/>`_  |
 +--------------+---------------------------------------------------------------------------------+
-| fc25          | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/25/i386/RPMS/>`_   |
+| fc25         | `x86_64 <http://updates.atomicorp.com/channels/ossec/fedora/25/x86_64/RPMS/>`_  |
 +--------------+---------------------------------------------------------------------------------+
 | Legacy       | `6 - 22 <http://updates.atomicorp.com/channels/ossec/fedora/>`_                 |
 +--------------+---------------------------------------------------------------------------------+
