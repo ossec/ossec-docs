@@ -15,21 +15,22 @@ Source Downloads
 | Docs         | https://github.com/ossec/ossec-docs                         |
 +--------------+-----------------------------------------------+-------------+
 
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Latest Stable Release (2.8.3)                                                                  |            |
-+=====================+===============================================+==========================+============+
-| Server/Agent Unix   | `ossec-hids-2.8.3.tar.gz`_ – `Release Notes`_ | `Unix Checksum`_         |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Agent Windows       | `ossec-agent-win32-2.8.3.exe`_                | `Win Checksum`_          |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
-| Docker Container    | `wazuh/docker-ossec`_                         |                          |            |
-+---------------------+-----------------------------------------------+--------------------------+------------+
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Latest Stable Release (2.8.3)                                                                  |              |
++=====================+===============================================+==========================+==============+
+| Server/Agent Unix   | `ossec-hids-2.8.3.tar.gz`_ – `Release Notes`_ | `Unix Checksum`_         | `signature`_ |      
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Agent Windows       | `ossec-agent-win32-2.8.3.exe`_                | `Win Checksum`_          |              |
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |              |
++---------------------+-----------------------------------------------+--------------------------+--------------+
+| Docker Container    | `wazuh/docker-ossec`_                         |                          |              |
++---------------------+-----------------------------------------------+--------------------------+--------------+
 
 .. _ossec-hids-2.8.3.tar.gz: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
 .. _Release Notes: https://bintray.com/ossec/ossec-hids/ossec-hids/view#release
 .. _Unix Checksum: https://github.com/ossec/ossec-docs/blob/master/docs/whatsnew/checksums/2.8.3/ossec-hids-2.8.3.tar.gz.sha256
+.. _signature: https://github.com/ossec/ossec-hids/releases/download/v2.8.3/ossec-hids-2.8.3.tar.gz.asc
 .. _ossec-agent-win32-2.8.3.exe: https://bintray.com/artifact/download/ossec/ossec-hids/ossec-agent-win32-2.8.3.exe
 .. _Win Checksum: https://github.com/ossec/ossec-docs/blob/master/docs/whatsnew/checksums/2.8.3/ossec-agent-win32-2.8.3.exe.sha256
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
@@ -91,27 +92,29 @@ to using gpg. You first need to import our public key:
 
 .. code:: console
 
-    ossec-test# wget https://ossec.github.io/files/OSSEC-PGP-KEY.asc
-    ossec-test# gpg –import OSSEC-PGP-KEY.asc
+    # wget https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc
+    # gpg –import OSSEC-ARCHIVE-KEY.asc
 
 And then verify each file against its signature:
 
 .. code:: console
 
-    ossec-test# gpg –verify file.sig file
+    ossec-test# gpg –verify file.asc 
 
 You should get the following result:
 
 
 .. code:: console
 
-    gpg: Signature made Tue 19 Jul 2011 03:13:58 PM BRT using RSA key ID A3901351
-    gpg: Good signature from “Daniel B. Cid ”
-    Primary key fingerprint: 6F11 9E06 487A AF17 C84C E48A 456B 17CF A390 1351
+    gpg: Signature made Tue 20 Dec 2016 11:35:58 AM EST using RSA key ID 2D8387B7
+    gpg: Good signature from "Scott R. Shinn <scott@atomicorp.com>"
+    Primary key fingerprint: B50F B194 7A0A E311 45D0  5FAD EE1B 0E6B 2D83 87B7
 
-Note that the key expiration date was changed lately. If you get an
-warning saying “gpg: Note: This key has expired!”, make sure to update
-the key and run the “import” command again (as specified above).
+
+Note that the signing key was changed in December 2016. The previous signing key
+"6F11 9E06 487A AF17 C84C E48A 456B 17CF A390 1351" has expired. If you get an warning 
+saying “gpg: Note: This key has expired!”, make sure to update the key and run the 
+“import” command again (as specified above).
 
 Presentation Slides
 ~~~~~~~~~~~~~~~~~~~
