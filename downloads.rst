@@ -86,6 +86,14 @@ Automated installer:
 PGP key
 ~~~~~~~
 
++-----------------------+-----------------------------------------------------+
+| Key                   | Manual Download Link                                |
++-----------------------+-----------------------------------------------------+
+| OSSEC-ARCHIVE-KEY.asc | https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc |
++-----------------------+-----------------------------------------------------+
+| OSSEC-PGP-KEY.asc     | https://ossec.github.io/files/OSSEC-PGP-KEY.asc     |
++-----------------------+-----------------------------------------------------+
+
 Before you install any package from our project, we recommend that you
 verify it using our PGP key. Follow these two steps if you are not used
 to using gpg. You first need to import our public key:
@@ -115,14 +123,6 @@ Note that the signing key was changed in December 2016. The previous signing key
 "6F11 9E06 487A AF17 C84C E48A 456B 17CF A390 1351" has expired. If you get an warning 
 saying “gpg: Note: This key has expired!”, make sure to update the key and run the 
 “import” command again (as specified above).
-
-+-----------------------+-----------------------------------------------------+
-| Key                   | Manual Download Link                                |
-+-----------------------+-----------------------------------------------------+
-| OSSEC-ARCHIVE-KEY.asc | https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc |
-+-----------------------+-----------------------------------------------------+
-| OSSEC-PGP-KEY.asc     | https://ossec.github.io/files/OSSEC-PGP-KEY.asc     |
-+-----------------------+-----------------------------------------------------+
 
 
 Presentation Slides
