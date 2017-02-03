@@ -93,13 +93,13 @@ to using gpg. You first need to import our public key:
 .. code:: console
 
     # wget https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc
-    # gpg –import OSSEC-ARCHIVE-KEY.asc
+    # gpg --import OSSEC-ARCHIVE-KEY.asc
 
 And then verify each file against its signature:
 
 .. code:: console
 
-    ossec-test# gpg –verify file.asc 
+    ossec-test# gpg --verify file.asc 
 
 You should get the following result:
 
