@@ -116,13 +116,13 @@ Note that the signing key was changed in December 2016. The previous signing key
 saying “gpg: Note: This key has expired!”, make sure to update the key and run the 
 “import” command again (as specified above).
 
-+-----------------------+-----------------------------------------------------------+
-| Key                   | Manual Download Link                                      |
-+-----------------------+-----------------------------------------------------------+
-| OSSEC-ARCHIVE-KEY.asc | https://ossec.github.io/files/files/OSSEC-ARCHIVE-KEY.asc |
-+-----------------------+-----------------------------------------------------------+
-| OSSEC-PGP-KEY.asc     | https://ossec.github.io/files/files/OSSEC-PGP-KEY.asc     |
-+-----------------------+-----------------------------------------------------------+
++-----------------------+-----------------------------------------------------+
+| Key                   | Manual Download Link                                |
++-----------------------+-----------------------------------------------------+
+| OSSEC-ARCHIVE-KEY.asc | https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc |
++-----------------------+-----------------------------------------------------+
+| OSSEC-PGP-KEY.asc     | https://ossec.github.io/files/OSSEC-PGP-KEY.asc     |
++-----------------------+-----------------------------------------------------+
 
 
 Presentation Slides
