@@ -42,4 +42,4 @@ The CIS RHEL Benchmark v1.1 is available at: `http://www.cisecurity.org/tools2/l
 Update for RHEL6
 ----------------
 
-the latest CIS benchmark for RHEL6 can be found here `https://github.com/ossec/ossec-hids/blob/master/src/rootcheck/db/cis_rhel6_linux_rcl.txt<https://github.com/ossec/ossec-hids/blob/master/src/rootcheck/db/cis_rhel6_linux_rcl.txt>`_.
+the latest CIS benchmark for RHEL6 can be found here `https://github.com/ossec/ossec-hids/blob/master/src/rootcheck/db/cis_rhel6_linux_rcl.txt <https://github.com/ossec/ossec-hids/blob/master/src/rootcheck/db/cis_rhel6_linux_rcl.txt>`_.

@@ -26,6 +26,8 @@ Packages
 
 Listing::
 
+.. code-block:: console
+
     [root@angel tuxkit-1.0]# ls -l ../tuxkit  (tuxkit.tgz)
     total 2600
     -rw-------    1 sfork   sfork     502884 Dec  5 07:55 bin.tgz
@@ -213,17 +215,21 @@ Hey, why wasn't lsof trojaned? t0rn has a trojaned lsof :)
 Detecting tuxkit - trojans
 --------------------------
 
-#  md5sums - if you've keep an md5sum of the virgin state of your
-   installation, detecting trojans should be a walk in the park. Every
-   system administrator should use file integrity checker to monitor 
-   critical file change.
-#  Look for /usr/bin/xsf and /usr/bin/xchk
-#  Look for extra lines in /etc/rc.sysinit
-#  cd /etc/ssh; ls -l. The trojaned ls will return nothing, when in 
-   fact your ssh config files are still there.
+.. code-block:: console
+
+   #  md5sums - if you've keep an md5sum of the virgin state of your
+      installation, detecting trojans should be a walk in the park. Every
+      system administrator should use file integrity checker to monitor 
+      critical file change.
+   #  Look for /usr/bin/xsf and /usr/bin/xchk
+   #  Look for extra lines in /etc/rc.sysinit
+   #  cd /etc/ssh; ls -l. The trojaned ls will return nothing, when in 
+      fact your ssh config files are still there.
 
 The following are the size difference between tuxkit and Redhat 7.1 binaries.
 (before installation)::
+
+.. code-block:: console
 
     files        tuxkit        Redhat 7.1
     ------------------------------------------
@@ -294,6 +300,8 @@ Appendix - Contents of each packages
 ------------------------------------
 
 Contents::
+
+.. code-block:: console
 
     [root@angel tuxkit-1.0]# less bin.tgz 
     -rwx------ root/root     29052 2001-12-26 21:37:57 bin/crontab

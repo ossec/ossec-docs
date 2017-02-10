@@ -1,7 +1,7 @@
 Why is OSSEC not seeing my iptables messages?
 ---------------------------------------------
 
-* By `Daniel B. Cid `http://www.dcid.me/>`_
+* By `Daniel B. Cid `<http://www.dcid.me/>`_
 
 The most common reason why ossec would not see your `iptables <http://www.iptables.org/>`_ logs is
 because you didn't configure it properly to log. By default iptables will ``NOT log anything``. 

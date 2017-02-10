@@ -1,4 +1,4 @@
-.. _manual-agent-dhcp-nat::
+.. _manual-agent-dhcp-nat:
 
 Agent systems behind NAT or with dynamic IPs (DHCP)
 ===================================================
