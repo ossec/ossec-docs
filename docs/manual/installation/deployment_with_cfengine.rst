@@ -109,7 +109,7 @@ Configuring the OSSEC Server w/cfengine
 
 The cfengine part of this was a pain for me because of the order of the actions I had defined and the extent of work I had done incorrectly in the past.  I could have figured out an interesting way to handle this, but I didn't want to scrap my entire cfengine config and start from scratch.  So I created a perl script that allowed me to use the ``manage_agents`` script without interaction.  It does require the ``Expect.pm`` & ``Regexp::Common`` from CPAN, but is otherwise stock Perl 5.8.x.  I also wrote a shell script wrapper to handle running the perl script and culminating the results.  I saved these two scripts in ``/root/security``, so if you put them elsewhere, make sure to update the shell script wrapper.
 
-The scripts for managing keys can be downloaded `here < http://db0.us/~brad/cfengine-ossec-scripts.tar.gz>`_
+The scripts for managing keys can be downloaded `here <http://db0.us/~brad/cfengine-ossec-scripts.tar.gz>`_
 
 The cfengine bit was really simple, it just had to call my wrapper shell script and set the class.  I did this with a control block:
 

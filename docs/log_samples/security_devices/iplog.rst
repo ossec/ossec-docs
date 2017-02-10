@@ -1,6 +1,9 @@
 Log samples for Iplog
 ---------------------
 
+.. warning::
+
+   This document is extracted directly from the old wiki. It is probably out of date, and definitely not formatted properly.
 
 
 Some log samples for `iplog <http://freshmeat.net/projects/iplog/>`_
@@ -394,60 +397,64 @@ add to your ipfw script the follow lines, if you are using the 00001 rule number
 
 Change  ~/ossec/active-response/bin/firewall-drop.sh to adjust to the red lines
 
- <nowiki>#!/bin/sh</nowiki>
- <nowiki># Adds an IP to the IPFW drop list.</nowiki>
- <nowiki># Only works with IPFW.</nowiki>
- <nowiki># We use TABLE 00001. If you use this table for anything else,</nowiki>
- <nowiki># please change it here.</nowiki>
- <nowiki># Expect: srcip</nowiki>
- <nowiki># Author: Rafael Capovilla - under @ ( at ) underlinux.com.br</nowiki>
- <nowiki># Author: Daniel B. Cid - dcid @ ( at ) ossec.net</nowiki>
- <nowiki># Last modified: May 07, 2006</nowiki>
- UNAME=`uname`
- IPFW="/sbin/ipfw"
- ARG1=""
- ARG2=""
- ACTION=$1
- USER=$2
- IP=$3
- <font color="red">TABLE_ID=00002</font>
- LOCAL=`dirname $0`;
- cd $LOCAL
- cd ../
- PWD=`pwd`
- echo "`date` $0 $1 $2 $3" >> ${PWD}/ossec-hids-responses.log
- <nowiki># Checking for an IP</nowiki>
- if [ "x${IP}" = "x" ]; then
-   echo "$0: <action> <username> <ip>" 
-   exit 1;
- fi
- <nowiki># Blocking IP</nowiki>
- if [ "x${ACTION}" != "xadd" -a "x${ACTION}" != "xdelete" ]; then
-    echo "$0: Invalid action: ${ACTION}"
-    exit 1;
- fi
- <nowiki># We should run on FreeBSD</nowiki>
- <nowiki># We always use table 00001 and rule id 00001.</nowiki>
- if [ "X${UNAME}" = "XFreeBSD" ]; then
-    ls ${IPFW} >> /dev/null 2>&1
-    if [ $? != 0 ]; then
+.. code-block:: console
+
+   <nowiki>#!/bin/sh</nowiki>
+   <nowiki># Adds an IP to the IPFW drop list.</nowiki>
+   <nowiki># Only works with IPFW.</nowiki>
+   <nowiki># We use TABLE 00001. If you use this table for anything else,</nowiki>
+   <nowiki># please change it here.</nowiki>
+   <nowiki># Expect: srcip</nowiki>
+   <nowiki># Author: Rafael Capovilla - under @ ( at ) underlinux.com.br</nowiki>
+   <nowiki># Author: Daniel B. Cid - dcid @ ( at ) ossec.net</nowiki>
+   <nowiki># Last modified: May 07, 2006</nowiki>
+   UNAME=`uname`
+   IPFW="/sbin/ipfw"
+   ARG1=""
+   ARG2=""
+   ACTION=$1
+   USER=$2
+   IP=$3
+   <font color="red">TABLE_ID=00002</font>
+   LOCAL=`dirname $0`;
+   cd $LOCAL
+   cd ../
+   PWD=`pwd`
+   echo "`date` $0 $1 $2 $3" >> ${PWD}/ossec-hids-responses.log
+   <nowiki># Checking for an IP</nowiki>
+   if [ "x${IP}" = "x" ]; then
+     echo "$0: <action> <username> <ip>" 
+     exit 1;
+   fi
+   <nowiki># Blocking IP</nowiki>
+   if [ "x${ACTION}" != "xadd" -a "x${ACTION}" != "xdelete" ]; then
+     echo "$0: Invalid action: ${ACTION}"
+     exit 1;
+   fi
+   <nowiki># We should run on FreeBSD</nowiki>
+   <nowiki># We always use table 00001 and rule id 00001.</nowiki>
+   if [ "X${UNAME}" = "XFreeBSD" ]; then
+     ls ${IPFW} >> /dev/null 2>&1
+     if [ $? != 0 ]; then
         exit 0;
-    fi
-   <nowiki> # Check if our table is set</nowiki>
-   <font color="red"> ${IPFW} show | grep "^00001" | grep "table(2)" >/dev/null 2>&1</font>
-    if [ ! $? = 0 ]; then
+     fi
+     <nowiki> # Check if our table is set</nowiki>
+     <font color="red"> ${IPFW} show | grep "^00001" | grep "table(2)" >/dev/null 2>&1</font>
+     if [ ! $? = 0 ]; then
          # We need to add the table
          ${IPFW} -q 00001 add deny ip from table\(${TABLE_ID}\) to any
          ${IPFW} -q 00001 add deny ip from any to table\(${TABLE_ID}\)
-    fi    
- <nowiki>   # Executing and exiting</nowiki>
-    ${IPFW} -q table ${TABLE_ID} ${ACTION} ${IP}
-    exit 0;
- fi
- <nowiki># Not FreeBSD</nowiki>
- exit 1;
+     fi    
+   <nowiki>   # Executing and exiting</nowiki>
+     ${IPFW} -q table ${TABLE_ID} ${ACTION} ${IP}
+     exit 0;
+   fi
+   <nowiki># Not FreeBSD</nowiki>
+   exit 1;
 
 Include in ~/ossec/etc/ossec.conf:
+
+.. code-block:: console
 
   <command>
     <name>firewall-drop</name>
@@ -463,7 +470,7 @@ Include in ~/ossec/etc/ossec.conf:
   </active-response>
 
 restart ossec:
- ~/ossec/bin/ossec-control restart
+ `~/ossec/bin/ossec-control restart`
 
 Scan your machine (caution OSSEC will block the scanner IP) from online scanner server like: http://www.derkeiler.com/Service/PortScan/, or from a remote machine with: 
  nmap -sT -PI -PT 1.2.3.4

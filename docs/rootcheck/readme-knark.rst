@@ -162,6 +162,7 @@ This is not a bug-free release. Please let me know if you find things to
 improve.
 
 
+.. code-block:: console
 
-email: creed@sekure.net
-Ircnet and EFNet: Creed (or Creed_ or something like that) @sekure.net
+   email: creed@sekure.net
+   Ircnet and EFNet: Creed (or Creed_ or something like that) @sekure.net

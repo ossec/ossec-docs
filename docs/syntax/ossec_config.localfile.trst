@@ -131,7 +131,7 @@
                   Aug  9 14:22:47 hostname log line four
                   Aug  9 14:22:47 hostname log line five
 
-              Log message as analyzed by ossec-analysisd_:
+              Log message as analyzed by `ossec-analysisd`:
 
               .. code-block:: console
 

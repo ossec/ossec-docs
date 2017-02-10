@@ -2,7 +2,7 @@
 
    This is the section that will contain the agentless configuration.
 
-.. xml:elemnet:: type 
+.. xml:element:: type 
 
     The type of check to be run on the agentless system.
 
