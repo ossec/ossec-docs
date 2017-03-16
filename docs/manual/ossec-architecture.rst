@@ -18,6 +18,9 @@ integrity checking databases, the logs, events, and system auditing entries.
 All the rules, decoders, and major configuration options are stored centrally in 
 the manager; making it easy to administer even a large number of agents.
 
+Agents connect to the server on port 1514/udp. Communication to this port must be
+allowed for agents to communicate with the server.
+
 .. note::
 
    The manager may be called the OSSEC server, or even just server in this documentation.
