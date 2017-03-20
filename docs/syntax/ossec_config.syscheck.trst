@@ -22,7 +22,7 @@
 
     - **check_all**: Value=yes
 
-        - All the following check_* options are used together unless explicitly overriden with "no".
+        - All the following check_* options are used together unless a specific option is explicitly overriden with "no". 
 
     - **check_sum**: Value=yes
 
