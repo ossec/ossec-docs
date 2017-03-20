@@ -3,7 +3,7 @@
 Regular Expression Syntax
 =========================
 
-Currently OSSEC supports to regex syntax:
+Currently OSSEC supports two regex syntaxes:
 
 * OS_Regex or regex
 * OS_Match or sregex
@@ -12,7 +12,7 @@ Currently OSSEC supports to regex syntax:
 
 .. _os_regex:
 
-OR_Regex/regex Syntax
+OS_Regex/regex Syntax
 ---------------------
 
 Fast and simple library for regular expressions in C.
