@@ -92,14 +92,6 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_policy
-
-     **Enable or disable the checking of something**
-
-     **Default:** yes
-
-     **Allowed:** yes or no
-
 .. xml:element:: check_ports
 
      Enable or disable the checking of network ports.
