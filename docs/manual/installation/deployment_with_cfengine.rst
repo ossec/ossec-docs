@@ -1,4 +1,4 @@
-Intergration and Deployment with cfengine
+Integration and Deployment with cfengine
 -----------------------------------------
 
 I recently required a larger deployment of OSSEC-HIDS without too much manual intervention.  Almost every OSSEC-HIDS tutorial I've across says this is possible, yet I was unable to find a tutorial demonstrating it.   So, in the spirit of open source, I'm contributing a brief overview.
