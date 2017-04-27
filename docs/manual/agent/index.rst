@@ -16,6 +16,7 @@ any RPC method (e.g. ssh, snmp rdp, wmi).
 .. toctree::
     :maxdepth: 2
 
+    communication
     agent-management
     agent-dhcp-nat
     agent-auth
