@@ -62,7 +62,7 @@
 
 .. xml:element:: check_dev
 
-     **Enable or disable the checking of something**
+     **Enable or disable the checking for files in the `/dev` filesystem**
 
      **Default:** yes
 
@@ -70,7 +70,7 @@
 
 .. xml:element:: check_files
 
-     **Enable or disable the checking of something**
+     **Enable or disable the checking based on the rootkit files**
 
      **Default:** yes
 
@@ -78,7 +78,7 @@
 
 .. xml:element:: check_if
 
-     **Enable or disable the checking of something**
+     **Enable or disable the checking the network interfaces**
 
      **Default:** yes
 
@@ -86,15 +86,7 @@
 
 .. xml:element:: check_pids
 
-     **Enable or disable the checking of something**
-
-     **Default:** yes
-
-     **Allowed:** yes or no
-
-.. xml:element:: check_policy
-
-     **Enable or disable the checking of something**
+     **Enable or disable the checking of process IDs**
 
      **Default:** yes
 
@@ -110,7 +102,7 @@
 
 .. xml:element:: check_sys
 
-     **Enable or disable the checking of something**
+     **Enable or disable the checking the filesystem looking for possible issues**
 
      **Default:** yes
 
@@ -126,7 +118,7 @@
 
 .. xml:element:: check_unixaudit
 
-     **Enable or disable the checking of something**
+     **Enable or disable the checking of unix issues**
 
      **Default:** yes
 
@@ -134,7 +126,7 @@
 
 .. xml:element:: check_winapps
 
-     **Enable or disable the checking of something**
+     **Enable or disable the checking of Windows apps**
 
      **Default:** yes
 
@@ -142,7 +134,7 @@
 
 .. xml:element:: check_winaudit
 
-     **Enable or disable the checking of something**
+     **Enable or disable the checking of Windows issues**
 
      **Default:** 1
 
