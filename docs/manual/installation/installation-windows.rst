@@ -34,18 +34,18 @@ Step 2: Adding an Agent
 -----------------------
 Adding an agent is the first thing that needs to be done. Choose action "A". 
 
-The agent manager first asks for a name::
+The agent manager first asks for a name. This can be named anything. ::
 
             Adding a new agent (use '\q' to return to the main menu).  
             Please provide the following:   * A name for the new agent: 
 
 
-Next, it asks for the IP address of the client::
+Next, it asks for the IP address of the windows client. ::
 
          The IP Address of the new agent:
 
 
-After that, it asks for a unique ID to assign to the client. The ID must be all numerical with a maximum of eight digits::
+After that, it asks for a unique ID to assign to the client. The ID must be all numerical with a maximum of eight digits. The agent manager also suggests ID's for new agents. ::
 
          An ID for the new agent[001]:
 
@@ -59,16 +59,14 @@ Now, the client key needs to be extracted. From the main menu, choose action "E"
          Available agents:   ID: 001, Name: agent1, IP: 10.10.50.2
          Provide the ID of the agent to extract the key (or '\q' to quit): 
 
-Enter the full ID of the agent to extract the key for. It will display the entire key. Copy that to the clipboard, for it will be needed later:: 
+Enter the full ID of the agent to extract the key for. It will display the entire key. Copy that to the clipboard, for it will be needed later. :: 
 
          Agent key information for '001' is:MDAyIGFnZW50MSAxOTIuMTY4LjIuMC8yNCBlNmY3N2RiMTdmMTJjZGRmZjg5YzA4ZDk5m
 
 
 Step 4: The Windows Side
 ------------------------
-Next up, download the executable from https://ossec.github.io/downloads.html. Run through the install wizard with all defaults. It should launch the Ossec Agent Manager when it's done. The Ossec Agent Manager looks like this: 
-
-
+Next up, download the executable named Agent Windows from https://ossec.github.io/downloads.html. Run through the install wizard with all defaults. It should launch the Ossec Agent Manager when it's done. The Ossec Agent Manager looks like this: 
 
 .. |image0| image:: https://github.com/Vendetta547/ossec-docs/blob/patch-1/OSSEC-Agent-Manager-Windows.png
 
