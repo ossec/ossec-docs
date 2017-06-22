@@ -68,6 +68,10 @@ Step 4: The Windows Side
 ------------------------
 Next up, download the executable from https://ossec.github.io/downloads.html. Run through the install wizard with all defaults. It should launch the Ossec Agent Manager when it's done. The Ossec Agent Manager looks like this: 
 
-![Screenshot](OSSEC-Agent-Manager-Windows.png)
+
+
+.. |image0| image:: https://github.com/Vendetta547/ossec-docs/blob/patch-1/OSSEC-Agent-Manager-Windows.png
+
+|image0|
 
 Enter the IP address of your ossec server in the first text field, and enter the extracted key that was copied to the clipboard earlier to the second textfield. Finally, click on the manage tab and hit restart. 
