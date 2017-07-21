@@ -18,19 +18,30 @@ These configurations options can be specified in the server or local install oss
 
 Enabling Database Support
 ^^^^^^^^^^^^^^^^^^^^^^^^^
+You must have the MySQL or PgSQL Client libraries installed on the OSSEC server. Typically something like
 
-.. note::
+.. code-block:: console
 
-    You must have the MySQL or PgSQL Client libraries installed on the OSSEC server.
+    Ubuntu
+    # apt install mysql-server libmysqld-dev
+      or
+    # apt install postgresql libpq-dev 
 
-Before you run the "./install.sh" script execute the following to compile OSSEC with
-database support. 
+    RedHat / CentOS
+    # yum install mysql-devel
+      or
+    # yum install postgresql-devel
+
+
+You then need to set the DATABASE environment variable and run the "./install.sh" script, to compile OSSEC with the appropriate database support. 
 
 .. code-block:: console 
 
-    # cd ossec-hids-*
-    # cd src; make setdb; cd ..
-    # ./install.sh 
+    # DATABASE=mysql ./install.sh
+      or
+    # DATABASE=pgsql ./install.sh
+  
+    
 
 Enable Database output in the configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
