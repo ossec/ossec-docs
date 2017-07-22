@@ -25,9 +25,22 @@ Global Configuration with a larger maximum emails per hour:
   <global>
     <email_notification>yes</email_notification>
     <email_to>admin@example.com</email_to>
-    <smtp_server>127.0.0.1</smtp_server>
+    <smtp_server>smtp.example.com</smtp_server>
     <email_from>ossecm@example.com</email_from>
     <email_maxperhour>100</email_maxperhour>
+  </global>
+
+
+Using sendmail binary to send the emails:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  <global>
+    <email_notification>yes</email_notification>
+    <email_to>admin@example.com</email_to>
+    <smtp_server>/usr/sbin/sendmail -t</smtp_server>
+    <email_from>ossecm@example.com</email_from>
   </global>
 
 
