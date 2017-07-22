@@ -16,8 +16,9 @@ These configurations options can be specified in the server or local install oss
 .. include:: ../../syntax/ossec_config.database_output.trst 
 
 
-Enabling Database Support
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Enabling Database Support in 2.9
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 You must have the MySQL or PgSQL Client libraries installed on the OSSEC server. Typically something like
 
 .. code-block:: console
@@ -61,5 +62,18 @@ Database Specific Setup
     
     mysql-database-output 
     pgsql-database-outout
+
+
+
+Enabling Database Support in 2.8
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before you run the "./install.sh" script execute the following to compile OSSEC with database support.
+
+.. code-block:: console
+
+    # cd ossec-hids-*
+    # cd src; make setdb; cd ..
+    # ./install.sh 
 
 

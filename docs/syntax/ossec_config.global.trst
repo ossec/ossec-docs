@@ -34,7 +34,7 @@
 
     SMTP server.
 
-    **Allowed:** Any valid hostname or IP Address 
+    **Allowed:** Any valid hostname, IP Address , or full path to a mail sending binary
 
 .. xml:element:: email_maxperhour
 
