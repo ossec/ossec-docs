@@ -25,14 +25,23 @@ install and unpack it (on the system with a compiler).
 
 .. code-block:: console 
 
-    # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8.1.tar.gz
-    # tar -zxvf ossec-hids-latest.tar.gz 
+    # wget https://github.com/ossec/ossec-hids/archive/2.9.1.tar.gz
+    # tar -zxvf 2.9.1.tar.gz 
 
     
 Enter in the source directory of the downloaded package, and configure OSSEC to build the ``agent`` version.
 The ``make`` commands should compile the correct binaries.
 
+For 2.9 and later:
+
 .. code-block:: console 
+
+    # cd ossec-*/src
+    # make TARGET=agent
+
+For 2.8 and before:
+
+.. code-block:: console
 
     # cd ossec-*/src
     # make setagent
