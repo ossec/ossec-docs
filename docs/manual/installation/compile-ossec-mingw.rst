@@ -5,7 +5,7 @@ OSSEC's Windows agent is compiled using `MinGW <http://www.mingw.org/>`_
 
 .. note::
 
-   This documentation assumes you have MinGW installed, and it is usable.
+   This documentation assumes you have MinGW installed, and it is usable. An example of installing MinGW on CentOS is available `here </install-mingw.html>`_
 
 It has always been a pain to generate snapshots for Windows because it required me to open up my Windows VM (slow), push the code there, compile, etc. Well, until this week when I started to play with MinGW cross-compilation feature to completely build an Windows agent from Linux.
 
