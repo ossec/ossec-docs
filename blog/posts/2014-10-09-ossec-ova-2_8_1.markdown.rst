@@ -13,4 +13,4 @@ system to handle ELK monitoring. It is a single gzipped OVA that can be
 easily imported into VirtualBox or any other virtualization system that
 supports OVA files.
 
-Look for it in the `Downloads section <../../downloads.html>`_.
+Look for it in the `Downloads section <https://ossec.github.io/downloads.html>`_.
