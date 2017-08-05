@@ -10,7 +10,7 @@
 
     In the xml based examples, any text between ``<!--`` and ``-->`` are comments.
     In the console based examples, anything after ``#`` may be an example.
-    For more information on OSSEC's non-standard regular expression (regex) syntax, refer to the `regex page <../syntax/regex.html>`_.
+    For more information on OSSEC's non-standard regular expression (regex) syntax, refer to the `regex page <../../syntax/regex.html>`_.
 
 
 Create Custom decoder and rules
@@ -61,9 +61,9 @@ The first log message is broken down as follows:
 * [9123] - process ID of the ossec-exampled instance
 * test connection from 192.168.1.1 via test-protocol1 - log message
 
-`ossec-logtest <../programs/ossec-logtest.html>`_ will be used to test the custom decoder and any custom rules.
+`ossec-logtest <../../programs/ossec-logtest.html>`_ will be used to test the custom decoder and any custom rules.
 
-Custom decoders are added to the ``local_decoder.xml`` file, typically found in ``/var/ossec/etc`` on a standard installation. The basic syntax is listed `here <../syntax/head_decoders.html>`_, but this page is not well documented at the moment.
+Custom decoders are added to the ``local_decoder.xml`` file, typically found in ``/var/ossec/etc`` on a standard installation. The basic syntax is listed `here <../../syntax/head_decoders.html>`_, but this page is not well documented at the moment.
 
 
 Using ossec-logtest on this sample rule results in the following output:
@@ -244,4 +244,9 @@ Now the useful fields have been extracted for this log message as well. Double c
           proto: 'test-protocol1'
 
 
+Historical
+~~~~~~~~~~
+
+Previous versions of this page page orginally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
+This blog no longer exists (at least at that location).
 
