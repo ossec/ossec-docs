@@ -16,11 +16,11 @@ Source Downloads
 +--------------+-----------------------------------------------+-------------+
 
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Latest Stable Release (2.9.0)                                       | Checksum                 | Signature      |
+| Latest Stable Release (2.9.1)                                       | Checksum                 | Signature      |
 +=====================+===============================================+==========================+================+
 | Server/Agent Unix   | `ossec-hids-2.9.1.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Agent Windows       | `ossec-agent-win32-2.9.0.exe`_                |                          | `GPG Windows`_ |
+| Agent Windows       | `ossec-agent-win32-2.9.1.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
@@ -30,7 +30,7 @@ Source Downloads
 .. _ossec-hids-2.9.1.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.1.tar.gz
 .. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.1
 .. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.1/ossec-hids-2.9.1.tar.gz.asc
-.. _ossec-agent-win32-2.9.0.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe
+.. _ossec-agent-win32-2.9.1.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe
 .. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe.asc
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
@@ -190,11 +190,9 @@ GPG / PGP key
 +-----------------------+-----------------------------------------------------+
 | Key                   | Manual Download Link                                |
 +-----------------------+-----------------------------------------------------+
-| OSSEC-ARCHIVE-KEY.asc | https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc |
+| Package Signing Key   | https://www.atomicorp.com/RPM-GPG-KEY.art.txt       |
 +-----------------------+-----------------------------------------------------+
-| OSSEC-PGP-KEY.asc     | https://ossec.github.io/files/OSSEC-PGP-KEY.asc     |
-+-----------------------+-----------------------------------------------------+
-| RPM-GPG-KEY.art.txt   | https://www.atomicorp.com/RPM-GPG-KEY.art.txt       |
+| Source Signing Key  c | https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc |
 +-----------------------+-----------------------------------------------------+
 
 Before you install any package from our project, we recommend that you
