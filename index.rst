@@ -123,7 +123,7 @@
                 <div class="panel-heading"><h3><a href="http://wazuh.com">Wazuh</a></h3></div>
                 <div class="panel-body"><p>Wazuh provides OSSEC <a href="http://www.wazuh.com/professional-services/">support
                 and professional services</a>. The services include training, deployment assistance and annual support.</p>
-                <p>Wazuh has developed an OSSEC <a href="http://www.wazuh.com/ossec-ruleset/">ruleset</a>, to improve
+                <p>Wazuh has developed an OSSEC <a href="http://www.wazuh.com/ruleset/">ruleset</a>, to improve
                 detection capabilities. Among others, it includes rules to monitor <a href="http://www.wazuh.com/pci-dss/">
                 PCI DSS</a> controls, and Amazon AWS environments.</p> 
                 <p>Wazuh has integrated OSSEC and <a href="http://www.wazuh.com/elk-stack/">Elasticsearch</a>, providing
