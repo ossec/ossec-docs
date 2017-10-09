@@ -16,9 +16,9 @@ Source Downloads
 +--------------+-----------------------------------------------+-------------+
 
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Latest Stable Release (2.9.1)                                       | Checksum                 | Signature      |
+| Latest Stable Release (2.9.2)                                       | Checksum                 | Signature      |
 +=====================+===============================================+==========================+================+
-| Server/Agent Unix   | `ossec-hids-2.9.1.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
+| Server/Agent Unix   | `ossec-hids-2.9.2.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Agent Windows       | `ossec-agent-win32-2.9.1.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
@@ -27,9 +27,9 @@ Source Downloads
 | Docker Container    | `wazuh/docker-ossec`_                         |                          |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 
-.. _ossec-hids-2.9.1.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.1.tar.gz
-.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.1
-.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.1/ossec-hids-2.9.1.tar.gz.asc
+.. _ossec-hids-2.9.2.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.2.tar.gz
+.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.2
+.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.2/ossec-hids-2.9.2.tar.gz.asc
 .. _ossec-agent-win32-2.9.1.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe
 .. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe.asc
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
