@@ -20,22 +20,22 @@ Source Downloads
 +=====================+===============================================+==========================+================+
 | Server/Agent Unix   | `ossec-hids-2.9.2.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Agent Windows       | `ossec-agent-win32-2.9.1.exe`_                |                          | `GPG Windows`_ |
+| Agent Windows       | `ossec-agent-win32-2.9.2.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Docker Container    | `wazuh/docker-ossec`_                         |                          |                |
+| Docker Container    | `atomicorp/ossec-docker`_                     |                          |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 
 .. _ossec-hids-2.9.2.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.2.tar.gz
 .. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.2
 .. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.2/ossec-hids-2.9.2.tar.gz.asc
-.. _ossec-agent-win32-2.9.1.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe
-.. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe.asc
+.. _ossec-agent-win32-2.9.2.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.2-2154.exe
+.. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.2-2154.exe.asc
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
 .. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
-.. _wazuh/docker-ossec: https://hub.docker.com/r/wazuh/docker-ossec/
+.. _atomicorp/ossec-docker: https://hub.docker.com/r/atomicorp/ossec-docker/
 
 
 RHEL, CentOS, Fedora and others
