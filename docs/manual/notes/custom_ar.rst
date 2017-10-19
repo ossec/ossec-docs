@@ -53,7 +53,7 @@ Create active response script:
 With that done, we can create the active response script. The ``mail-test.sh`` must be inside the 
 ``/var/ossec/active-response/bin/`` with the execution permissions set.
 
-**What are the arguments are passed to the script?**
+**What are the arguments passed to the script?**
 
 * action (delete or add)
 * user name (or - if not set)
