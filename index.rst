@@ -114,7 +114,7 @@
                 automatically fixes problems as they occur, from crashed processes on your server, to problems 
                 with your database, to even basic system errors. </p>
                 <p> Atomicorp provides <a href="https://atomicorp.com/atomic-secured-ossec/">comprehensive support</a>
-                and <a href="http://www.atomicrbl.com/map/">Threat Intelligence</a> feeds for OSSEC.  Contact: <a href="mailto:sales@atomicorp.com?Subject=OSSEC%20Commercial%20Support">OSSEC Support</a> </p>
+                and <a href="http://www.atomicrbl.com/map/">Threat Intelligence</a> feeds for OSSEC.  Contact: <a href="mailto:ossec@atomicorp.com?Subject=OSSEC%20Commercial%20Support">OSSEC Support</a> </p>
                 </div>
               </div>
             </div>
