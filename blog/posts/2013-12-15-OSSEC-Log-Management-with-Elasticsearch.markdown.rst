@@ -19,4 +19,4 @@ data. So I’ve been working on a solution for collecting OSSEC security
 alerts based on Elasticsearch that provides a cost effective alternative
 to Splunk.
 
-`Read more <http://vichargrave.com/ossec-log-management-with-elasticsearch/>`_
+`Read more <https://vichargrave.github.io/articles/2013-11/ossec-log-management-with-elasticsearch>`_
