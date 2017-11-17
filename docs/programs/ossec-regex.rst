@@ -2,9 +2,9 @@
 .. _ossec-regex:
 
 ossec-regex
-=============
+===========
 
-``ossec-regex` is a simple program that will validate a regex expression.a
+``ossec-regex`` is a simple program that will validate a regex expression.a
 The pattern should be enclosed in single quotes to help prevent any strange interactions with the shell.
 
 The syntax for ``ossec-regex`` is simple: ``/var/ossec/bin/ossec-regex '<pattern>'``

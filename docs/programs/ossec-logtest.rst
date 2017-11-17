@@ -5,14 +5,14 @@ ossec-logtest
 =============
 
 ossec-logtest is the single most useful tool when working with ossec.  This tool allows oneself 
-to test and verify log files in the exact same way that `ossec-anaylistd` does.  
+to test and verify log files in the exact same way that ``ossec-anaylistd`` does.
 
-Something ossec-logtest can help with: 
+Something ossec-logtest can help with:
 
-- Writing rules (Debugging your custom rules) 
-- Troubleshooting false positives or false negatives 
+- Writing rules (Debugging your custom rules)
+- Troubleshooting false positives or false negatives
 
-ossec-logtest accepts standard input for all log to test.  
+ossec-logtest accepts standard input for all log to test.
 
 osssec-logtest argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,7 +92,7 @@ osssec-logtest argument options
 Caveats
 ~~~~~~~
 
-Some log formats will be processed differently than they appear in the log file. MySQL log files for instance will have ``MySQL log: `` prepended to the log message before analysis. If using ossec-logtest to test MySQL logs, please add this string to the beginning.
+Some log formats will be processed differently than they appear in the log file. MySQL log files for instance will have `MySQL log:` prepended to the log message before analysis. If using ossec-logtest to test MySQL logs, please add this string to the beginning.
 
 Example:
 

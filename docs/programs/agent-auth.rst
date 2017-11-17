@@ -2,7 +2,7 @@
 .. _agent-auth:
 
 agent-auth
-=============
+==========
 
 The agent-auth program is the client application used with :ref:`ossec-authd` to automatically add agents to an OSSEC manager.
 
@@ -12,7 +12,7 @@ The agent-auth program is the client application used with :ref:`ossec-authd` to
     this daemon only be run when a new agent is being added.
 
 agent-auth argument options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: agent-auth
 
@@ -106,7 +106,7 @@ agent-auth argument options
 .. _optional-server-authentication:
 
 Optional Server Authentication
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``agent-auth`` can verify that the server it's connecting to presents a valid X.509 certificate when requesting
 a key. This is optional and is only useful if hosts in your environment have access to the root certificate of
@@ -127,7 +127,7 @@ and agent-auth.
 .. _optional-client-authentication:
 
 Optional Client Authentication
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``agent-auth`` can present its own certificate to the server for verification. This is mandatory if :ref:`ossec-authd` 
 was run with the -v option and optional otherwise. This is only useful if hosts in your environment are assigned
@@ -136,7 +136,7 @@ to load a certificate and private key.
 
 
 agent-auth example usage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Example: Adding an agent with a hostname
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,7 +152,7 @@ Example: Adding an agent with a hostname
     INFO: Connection closed. 
 
 Example: Adding an agent and verifying the certificate presented by ossec-authd
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -163,7 +163,7 @@ Example: Adding an agent and verifying the certificate presented by ossec-authd
     ...
 
 Example: Adding an agent and presenting a certificate to ossec-authd
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 

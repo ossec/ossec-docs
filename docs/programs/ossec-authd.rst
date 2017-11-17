@@ -2,7 +2,7 @@
 .. _ossec-authd:
 
 ossec-authd
-=============
+===========
 
 The ossec-authd daemon will automatically add an agent to an OSSEC manager and provide the key to the agent.
 The :ref:`agent-auth` application is the client application used with ossec-authd. 
@@ -14,7 +14,7 @@ The :ref:`agent-auth` application is the client application used with ossec-auth
     this daemon only be run when a new agent is being added.
 
 ossec-authd argument options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-authd
 
@@ -100,7 +100,7 @@ If the default locations of /var/ossec/etc/sslmanager.cert and /var/ossec/etc/ss
 .. _optional-client-authentication:
 
 Optional Client Authentication
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``ossec-authd`` can verify that connecting agents present a valid X.509 certificate when requesting a key. This is optional
 and is only useful if hosts in your environment are assigned certificates when they're provisioned (or at some point before
@@ -115,7 +115,7 @@ A certificate presented by an agent may be found to be invalid for the following
 
 
 ossec-authd example usage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Example: Running ossec-authd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -134,7 +134,7 @@ And the logs when an agent is added:
     2011/01/19 15:04:41 ossec-authd: INFO: Agent key created for example-agent (requested by 192.168.10.5) 
 
 Example: Running ossec-authd with client authentication
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 

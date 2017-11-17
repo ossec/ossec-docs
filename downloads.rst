@@ -106,7 +106,7 @@ Ubuntu, and Debian and others
 
 
 Yum/DNF Automated Installation on Centos, Redhat, or Fedora
-================
+===========================================================
 
 Automated installer:
 
@@ -126,7 +126,7 @@ Automated installer:
 
 
 Manual Yum/DNF installation on Centos, Redhat, Amazon Linux or Fedora
-================
+=====================================================================
 
 1. Download the atomic-release file for your distribution
 
@@ -149,7 +149,7 @@ Manual Yum/DNF installation on Centos, Redhat, Amazon Linux or Fedora
 
 
 APT Automated Installation on Ubuntu and Debian
-===============
+===============================================
 
 .. code:: console
 
@@ -164,7 +164,7 @@ APT Automated Installation on Ubuntu and Debian
 
 
 Manual APT Installation on Ubuntu and Debian
-===============
+============================================
 
 1. Add the GPG key
 
@@ -185,7 +185,7 @@ Manual APT Installation on Ubuntu and Debian
         echo "deb https://updates.atomicorp.com/channels/atomic/debian $DISTRIB_CODENAME main" >>  /etc/apt/sources.list.d/atomic.list
 
 GPG / PGP key
-~~~~~~~
+~~~~~~~~~~~~~
 
 +-----------------------+-----------------------------------------------------+
 | Key                   | Manual Download Link                                |

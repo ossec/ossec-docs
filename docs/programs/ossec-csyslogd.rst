@@ -9,7 +9,7 @@ Configuration is done in the ``<syslog_output>`` section of the ossec.conf. (see
 
 
 ossec-csyslogd argument options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-csyslogd
 
