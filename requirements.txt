@@ -1,5 +1,4 @@
 Sphinx
 sphinx-bootstrap-theme==0.4.5
-ablog
-github3.py==0.9.3
+ablog==0.4
 docutils
