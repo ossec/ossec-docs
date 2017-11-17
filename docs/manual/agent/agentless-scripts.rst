@@ -377,7 +377,7 @@ sha1sum to generate the data needed. Here is an example of the output checking.
     INFO: Finished.
 
 Modifying to make own Agentless Script: ssh_dmz_linux
-----------------------------------------------------
+-----------------------------------------------------
 
 Using the built in OSSEC agentless scripts are great, but sometimes we need more 
 focused scanning and checking. So let’s modify the ssh_integrity_check_linux 

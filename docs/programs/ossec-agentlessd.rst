@@ -5,7 +5,7 @@ ossec-agentlessd
 ================
 
 ossec-agentlessd argument options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-agentlessd
 

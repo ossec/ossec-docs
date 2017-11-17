@@ -14,13 +14,13 @@ More Information
 N/A
 
 Origin of Rule
--------------
+--------------
 
 N/A
 
 
 File
------
+----
 
 - ``etc/rc.d/init.d/rc.modules``
 - ``lib/ldd.so``

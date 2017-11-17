@@ -2,7 +2,7 @@
 .. _ossec-makelists:
 
 ossec-makelists
-=============
+===============
 
 The ``ossec-makelists`` utility to compile cdb databases.
 ``ossec-makelists`` will scan ossec.conf for database files, check the mtime, and recompile all out of date databases.
@@ -10,7 +10,7 @@ The ``ossec-makelists`` utility to compile cdb databases.
 See :ref:`manual-rule-lists` for more information.
 
 ossec-makelists argument options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-makelists 
 
@@ -51,7 +51,7 @@ ossec-makelists argument options
 
 
 ossec-makelists example usage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
