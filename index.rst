@@ -108,13 +108,16 @@
             <div class="col-md-4">
               <div class="panel panel-default">
                 <div class="panel-heading"><h3><a href="https://atomicorp.com/">Atomicorp</a></h3></div>
-                <div class="panel-body"><p>Atomicorp is the producer of Atomic Secured Linux™ which provides the most
-                secure Linux kernel on the market that combines OSSEC host intrusion detection, a threat manager 
-                that hardens both your web applications and the operating system, and a self healing system that 
-                automatically fixes problems as they occur, from crashed processes on your server, to problems 
-                with your database, to even basic system errors. </p>
-                <p> Atomicorp provides <a href="https://atomicorp.com/atomic-secured-ossec/">comprehensive support</a>
-                and <a href="http://www.atomicrbl.com/map/">Threat Intelligence</a> feeds for OSSEC.  Contact: <a href="mailto:ossec@atomicorp.com?Subject=OSSEC%20Commercial%20Support">OSSEC Support</a> </p>
+                <div class="panel-body"><p>Atomicorp is your OSSEC expert which developed a set of tools 
+                and rules for managing and securing the OSSEC host intrusion 
+                detection system. Our <a href="https://atomicorp.com/atomic-secured-ossec/">Atomic Secured OSSEC</a> 
+                (ASO) secures your entire system and its applications and includes a cognitive self healing system that will automatically 
+                fix vulnerabilities and problems on the system before damage and intrusions can occur.</p><p>Installing ASO allows you to instantly meet 99 of 130 technical 
+                PCI-DSS requirements and Atomicorp offers comprehensive PCI-DSS, HiPAA and SOX services and support packages for OSSEC. We can 
+                Plan your Enterprise Monitoring Strategy for deployment, configuration, optimization, and even training your team to work 
+                with the open source software.  Atomicorp is your comprehensive support team and we provide 
+                <a href="http://www.atomicrbl.com/globe/">Threat Intelligence</a> feeds for the OSSEC engine.</p>
+                <p>For assistance with your OSSEC deployment contact us at <a href="mailto:ossec@atomicorp.com?Subject=OSSEC%20Commercial%20Support">OSSEC Help</a>.</p>
                 </div>
               </div>
             </div>
