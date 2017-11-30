@@ -103,7 +103,7 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 **Dan Parriott** – Community support, docs, rules, testing – ddpbsd (at) gmail.com
 
-**Scott R. Shinn** – RPM repositories, rules, tools integration – scott (at) atomicorp.com
+**Scott R. Shinn** – OSSEC Release Manager - RPM / DEB repositories, Docker, Development  – scott (at) atomicorp.com
 
 **Santiago Bassett** – DEB repositories, SIEM integration – santiago  (at) wazuh.com
 
