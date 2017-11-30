@@ -156,11 +156,14 @@ APT Automated Installation on Ubuntu and Debian
     # Add Apt sources.lst
     wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
 
+    # Update apt data
+    sudo apt-get update
+
     # Server 
-    apt-get install ossec-hids-server 
+    sudo apt-get install ossec-hids-server 
 
     # Agent
-    apt-get install ossec-hids-agent
+    sudo apt-get install ossec-hids-agent
 
 
 Manual APT Installation on Ubuntu and Debian
@@ -183,6 +186,20 @@ Manual APT Installation on Ubuntu and Debian
 
         # Debian
         echo "deb https://updates.atomicorp.com/channels/atomic/debian $DISTRIB_CODENAME main" >>  /etc/apt/sources.list.d/atomic.list
+
+3. Install Agent or Server
+
+.. code:: console
+
+    # Update apt data
+    sudo apt-get update
+
+    # Server 
+    sudo apt-get install ossec-hids-server 
+
+    # Agent
+    sudo apt-get install ossec-hids-agent
+
 
 GPG / PGP key
 ~~~~~~~~~~~~~
