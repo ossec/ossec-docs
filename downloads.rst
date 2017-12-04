@@ -68,6 +68,8 @@ Note: Amazon Linux users are recommended to use the EL6 x86_64 repository
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | fc26 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/26/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc26.art.noarch.rpm`_         |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
+| fc27 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/27/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc27.art.noarch.rpm`_         |
++------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | Legacy           | `<https://updates.atomicorp.com/channels/atomic/fedora/>`_                        |                                                      |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 
@@ -77,6 +79,7 @@ Note: Amazon Linux users are recommended to use the EL6 x86_64 repository
 .. _atomic-release-1.0-21.fc24.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/24/x86_64/RPMS/atomic-release-1.0-21.fc24.art.noarch.rpm
 .. _atomic-release-1.0-21.fc25.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/25/x86_64/RPMS/atomic-release-1.0-21.fc25.art.noarch.rpm
 .. _atomic-release-1.0-21.fc26.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/26/x86_64/RPMS/atomic-release-1.0-21.fc26.art.noarch.rpm
+.. _atomic-release-1.0-21.fc27.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/27/x86_64/RPMS/atomic-release-1.0-21.fc27.art.noarch.rpm
 
 
 Ubuntu, and Debian and others
