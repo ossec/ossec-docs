@@ -9,7 +9,7 @@ Windows Agent Installation
    OSSEC only supports Windows systems as agents, and they
    will require an OSSEC server to function.
 
-Step 1: Opening the Agent Manger menu
+Step 1: Opening the Agent Manager menu
 -------------------------------------
 The first step of this process is to get into the Agent Manager menu. From the ossec server, type the following command::
 
