@@ -11,7 +11,6 @@ More Information
 
 - A complete analysis, done by Toby Miller, can be found here: :ref:`analysis-knack`
 - Knark README can be found :ref:`readme-knack`
-- Download: http://www.ossec.net/rootkits/files/knark-2.4.3.tgz MD5: ca1ebe26ab1138ebe431751f526df817
 
 
 Files
@@ -31,6 +30,5 @@ Files
     
     All files with an "*" need to be search in all system
 
-If you have any more Information about this rootkits sent to rootkits at ossec.net 
 
 
