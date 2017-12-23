@@ -16,22 +16,22 @@ Source Downloads
 +--------------+-----------------------------------------------+-------------+
 
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Latest Stable Release (2.9.2)                                       | Checksum                 | Signature      |
+| Latest Stable Release (2.9.3)                                       | Checksum                 | Signature      |
 +=====================+===============================================+==========================+================+
-| Server/Agent Unix   | `ossec-hids-2.9.2.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
+| Server/Agent Unix   | `ossec-hids-2.9.3.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Agent Windows       | `ossec-agent-win32-2.9.2.exe`_                |                          | `GPG Windows`_ |
+| Agent Windows       | `ossec-agent-win32-2.9.3.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Docker Container    | `atomicorp/ossec-docker`_                     |                          |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 
-.. _ossec-hids-2.9.2.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.2.tar.gz
-.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.2
-.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.2/ossec-hids-2.9.2.tar.gz.asc
-.. _ossec-agent-win32-2.9.2.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.2-2154.exe
-.. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.2-2154.exe.asc
+.. _ossec-hids-2.9.3.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.3.tar.gz
+.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.3
+.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.3/ossec-hids-2.9.3.tar.gz.asc
+.. _ossec-agent-win32-2.9.3.exe: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
+.. _GPG Windows: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
 .. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
@@ -176,7 +176,7 @@ Manual APT Installation on Ubuntu and Debian
 
 .. code:: console
 
-        wget -q -O - https://www.atomicorp.com/RPM-GPG-KEY.art.txt  | sudo apt-key add -
+        wget -q -O - https://www.atomicorp.com/RPM-GPG-KEY.atomicorp.txt  | sudo apt-key add -
 
 2. Add the repo configuration to sources.list
 
