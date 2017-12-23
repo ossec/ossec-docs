@@ -176,7 +176,7 @@ Manual APT Installation on Ubuntu and Debian
 
 .. code:: console
 
-        wget -q -O - https://www.atomicorp.com/RPM-GPG-KEY.art.txt  | sudo apt-key add -
+        wget -q -O - https://www.atomicorp.com/RPM-GPG-KEY.atomicorp.txt  | sudo apt-key add -
 
 2. Add the repo configuration to sources.list
 
