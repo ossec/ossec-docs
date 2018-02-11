@@ -218,6 +218,7 @@
 
 .. xml:element  md5_whitelist
 
+    .. versionadded:: 3.0
     Define an sqlite database for white listed MD5 hashes.
 
    **Example:**
