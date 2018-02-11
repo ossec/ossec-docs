@@ -216,5 +216,16 @@
 
        <geoip6_db_path>/etc/GeoLiteCity.dat</geoip6_db_path>
 
+.. xml:element  md5_whitelist
+
+    Define an sqlite database for white listed MD5 hashes.
+
+   **Example:**
+
+   .. code-block:: console
+
+   <global>
+     <md5_whitelist>/rules/lists/md5whitelist.db</md5_whitelist>
+   </global>
 
 
