@@ -182,6 +182,17 @@ Options / Varaiables
 
     **Allowed:** 0/1
 
+.. envvar:: USE_SQLITE
+
+   ``USE_SQLITE`` enables support for sqlite3 databases.
+
+   **Spplies to Target:** server/hybrid/local
+
+   **Default:** 0
+
+   **Allowed:** 0/1
+
+
 .. envvar:: DATABASE
 
     The ``DATABASE`` variable selects the database
