@@ -13,7 +13,6 @@ Misc. Logs
    clamav
    dell_openmanage
    hpux_cimserver
-   index
    stunnel
    tightvnc
    wordpress

@@ -9,7 +9,6 @@ Linux Logs
 
    cron
    dpkg
-   index
    kernel
    pacman
    rshd

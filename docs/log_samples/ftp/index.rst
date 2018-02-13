@@ -9,7 +9,6 @@ FTP Logs
 
 
 
-   index
    microsoft
    proftpd
    pureftpd
