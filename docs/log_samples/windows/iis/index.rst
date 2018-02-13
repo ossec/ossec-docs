@@ -6,9 +6,6 @@ IIS Logs
    :maxdepth: 2
    :glob:
 
+   psoft_hsphere
+   w3c_extended
 
-
-
-
-  psoft_hsphere
-  w3c_extended
