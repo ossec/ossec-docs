@@ -6,8 +6,8 @@
 
     <!--parallax 1 -->
     <section class="bg-1 text-center">
-      <h1><img src="_static/ossec_logo.png">&nbsp;OSSEC</h1>
-      <p class="lead">Open Source HIDS SECurity</p>
+      <!-- <h1><img src="_static/ossec_logo.png">&nbsp;OSSEC</h1>
+      <p class="lead">Open Source HIDS SECurity</p> -->
     </section>
     <!--/parallax 1-->
 
