@@ -8,9 +8,7 @@
     <section class="bg-1 text-center">
       <!-- <h1><img src="_static/ossec_logo.png">&nbsp;OSSEC</h1>
       <p class="lead">Open Source HIDS SECurity</p> -->
-      <a href="https://atomicorp.com/ossec-conference-2018/">
-        <div id="rectangle" style="background:clear; width:22%; height:16%; position:relative; left:74%; top:73%;"></div>
-      </a>
+      <a href="https://atomicorp.com/ossec-conference-2018/" style="position:absolute;margin-left:315px;top:342px;width:281px;height:63px;"></a>
     </section>
     <!--/parallax 1-->
 
