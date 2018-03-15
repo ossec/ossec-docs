@@ -71,7 +71,7 @@ OS_Match/sregex Syntax
 Faster than the OS_Regex/regex, but only supports simple string matching and the
 following special characters.
 
-.. _os_match_schar::
+.. _os_match_schar:
 
 **Special Characters**::
 

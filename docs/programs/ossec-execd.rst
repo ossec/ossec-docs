@@ -2,16 +2,16 @@
 .. _ossec-execd:
 
 ossec-execd
-=============
+===========
 
 ``ossec-execd`` executes active responses by running the configured scripts.
 ``ossec-execd`` is configured in the ossec.conf. (see :ref:`ossec_config.active-response`)
 
 ossec-execd argument options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-execd
-i
+
 .. option:: -c <config>
 
     Run ``ossec-execd`` using <config> as the configuration file.

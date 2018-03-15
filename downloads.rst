@@ -16,26 +16,26 @@ Source Downloads
 +--------------+-----------------------------------------------+-------------+
 
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Latest Stable Release (2.9.1)                                       | Checksum                 | Signature      |
+| Latest Stable Release (2.9.3)                                       | Checksum                 | Signature      |
 +=====================+===============================================+==========================+================+
-| Server/Agent Unix   | `ossec-hids-2.9.1.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
+| Server/Agent Unix   | `ossec-hids-2.9.3.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Agent Windows       | `ossec-agent-win32-2.9.1.exe`_                |                          | `GPG Windows`_ |
+| Agent Windows       | `ossec-agent-win32-2.9.3.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Docker Container    | `wazuh/docker-ossec`_                         |                          |                |
+| Docker Container    | `atomicorp/ossec-docker`_                     |                          |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 
-.. _ossec-hids-2.9.1.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.1.tar.gz
-.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.1
-.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.1/ossec-hids-2.9.1.tar.gz.asc
-.. _ossec-agent-win32-2.9.1.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe
-.. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.0-1738.exe.asc
+.. _ossec-hids-2.9.3.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.3.tar.gz
+.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.3
+.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.3/ossec-hids-2.9.3.tar.gz.asc
+.. _ossec-agent-win32-2.9.3.exe: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
+.. _GPG Windows: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
 .. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
-.. _wazuh/docker-ossec: https://hub.docker.com/r/wazuh/docker-ossec/
+.. _atomicorp/ossec-docker: https://hub.docker.com/r/atomicorp/ossec-docker/
 
 
 RHEL, CentOS, Fedora and others
@@ -68,6 +68,8 @@ Note: Amazon Linux users are recommended to use the EL6 x86_64 repository
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | fc26 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/26/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc26.art.noarch.rpm`_         |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
+| fc27 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/27/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc27.art.noarch.rpm`_         |
++------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | Legacy           | `<https://updates.atomicorp.com/channels/atomic/fedora/>`_                        |                                                      |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 
@@ -77,6 +79,7 @@ Note: Amazon Linux users are recommended to use the EL6 x86_64 repository
 .. _atomic-release-1.0-21.fc24.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/24/x86_64/RPMS/atomic-release-1.0-21.fc24.art.noarch.rpm
 .. _atomic-release-1.0-21.fc25.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/25/x86_64/RPMS/atomic-release-1.0-21.fc25.art.noarch.rpm
 .. _atomic-release-1.0-21.fc26.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/26/x86_64/RPMS/atomic-release-1.0-21.fc26.art.noarch.rpm
+.. _atomic-release-1.0-21.fc27.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/27/x86_64/RPMS/atomic-release-1.0-21.fc27.art.noarch.rpm
 
 
 Ubuntu, and Debian and others
@@ -106,7 +109,7 @@ Ubuntu, and Debian and others
 
 
 Yum/DNF Automated Installation on Centos, Redhat, or Fedora
-================
+===========================================================
 
 Automated installer:
 
@@ -126,7 +129,7 @@ Automated installer:
 
 
 Manual Yum/DNF installation on Centos, Redhat, Amazon Linux or Fedora
-================
+=====================================================================
 
 1. Download the atomic-release file for your distribution
 
@@ -149,28 +152,31 @@ Manual Yum/DNF installation on Centos, Redhat, Amazon Linux or Fedora
 
 
 APT Automated Installation on Ubuntu and Debian
-===============
+===============================================
 
 .. code:: console
 
     # Add Apt sources.lst
     wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
 
+    # Update apt data
+    sudo apt-get update
+
     # Server 
-    apt-get install ossec-hids-server 
+    sudo apt-get install ossec-hids-server 
 
     # Agent
-    apt-get install ossec-hids-agent
+    sudo apt-get install ossec-hids-agent
 
 
 Manual APT Installation on Ubuntu and Debian
-===============
+============================================
 
 1. Add the GPG key
 
 .. code:: console
 
-        wget -q -O - https://www.atomicorp.com/RPM-GPG-KEY.art.txt  | sudo apt-key add -
+        wget -q -O - https://www.atomicorp.com/RPM-GPG-KEY.atomicorp.txt  | sudo apt-key add -
 
 2. Add the repo configuration to sources.list
 
@@ -184,8 +190,22 @@ Manual APT Installation on Ubuntu and Debian
         # Debian
         echo "deb https://updates.atomicorp.com/channels/atomic/debian $DISTRIB_CODENAME main" >>  /etc/apt/sources.list.d/atomic.list
 
+3. Install Agent or Server
+
+.. code:: console
+
+    # Update apt data
+    sudo apt-get update
+
+    # Server 
+    sudo apt-get install ossec-hids-server 
+
+    # Agent
+    sudo apt-get install ossec-hids-agent
+
+
 GPG / PGP key
-~~~~~~~
+~~~~~~~~~~~~~
 
 +-----------------------+-----------------------------------------------------+
 | Key                   | Manual Download Link                                |

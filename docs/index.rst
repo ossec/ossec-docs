@@ -61,7 +61,6 @@ Reference
     formats/index
     programs/index
     .. whatsnew/index
-    .. rules/index
     rootcheck/index
     .. log_samples/index
     examples/index

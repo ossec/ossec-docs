@@ -9,5 +9,5 @@ OSSEC 2.8 Beta-1 is Available
 
 The OSSEC developers have been hard at work on version 2.8 and we have
 made Beta-1 packages available for testing. See the
-`Downloads <../..//downloads.html/>`_ page. Helps us with the testing and fine
+`Downloads <https://ossec.github.io/downloads.html>`_ page. Helps us with the testing and fine
 tuning of this preliminary release.

@@ -2,7 +2,7 @@
 .. _rootcheck_control:
 
 rootcheck_control
-==============
+=================
 
 The rootcheck_control tool allows you to manage the policy monitoring and system auditing database that is stored on the server (manager) side. You can list anomalies detected by the rootcheck functionality, categorized into resolved and outstanding issues. Moreover you can find out when ossec-rootcheck was run the last time.
 

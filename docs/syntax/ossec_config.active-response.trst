@@ -74,11 +74,11 @@ Active-response Options
 
 .. xml:element:: rules_id
 
-    The response will be executes on any event with the defined ID. Multiple IDs can be specified if separated by a comma.
+    The response will be executed on any event with the defined ID. Multiple IDs can be specified if separated by a comma.
 
 .. xml:element:: timeout 
 
-    How long in seconds until the reverse command is executed (IP unblocked, for example). 
+    How long in seconds until the response command is executed (IP unblocked, for example). 
 
 .. xml:element:: repeated_offenders
 

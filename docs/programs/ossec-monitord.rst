@@ -2,14 +2,14 @@
 .. _ossec-monitord:
 
 ossec-monitord
-=============
+==============
 
 The ``ossec-monitord`` daemon monitors agent connectivity and compress daily log files.
 ``ossec-monitord`` is configured in ossec.conf.  (see :ref:`ossec_config.localfile`)
 
 
 ossec-monitord argument options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. program:: ossec-monitord
 

@@ -78,7 +78,7 @@ nethide	Used to hide strings in /proc/net/tcp and /proc/net/udp. This is
 	And now, lets check /proc/net/tcp. Type:
 	cat /proc/net/tcp
 	One of the lines looks like this:
-	  local_address rem_address   blablabla...
+	local_address rem_address   blablabla...
 	0:0100007F:0016 0100007F:03FF 01 00000000:00000000 00:00000000 00000000
 	If we want to hide everything about ip-address 127.0.0.1, we have to
 	translate it to this format. Start with 127: 7F in hex. Then 0: 00

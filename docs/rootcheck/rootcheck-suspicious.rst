@@ -14,13 +14,13 @@ More Information
 N/A
 
 Origin of Rule
--------------
+--------------
 
 N/A
 
 
 File
------
+----
 
 - ``etc/rc.d/init.d/rc.modules``
 - ``lib/ldd.so``
@@ -83,7 +83,5 @@ File
 .. note::
     
     All files with an "*" need to be search in all system
-
-If you have any more Information about this rootkits sent to rootkits at ossec.net 
 
 

@@ -32,6 +32,3 @@ Entries to search on file "/etc/rc.d/rc.sysinit":
     
     All files with an "*" need to be search in all system
 
-If you have any more Information about this rootkits sent to rootkits at ossec.net 
-
-

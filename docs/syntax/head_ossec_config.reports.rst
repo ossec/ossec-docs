@@ -2,7 +2,7 @@
 .. _ossec_config.reports: 
 
 ossec.conf: Reports options
-==========================
+===========================
 
 Overview 
 --------
