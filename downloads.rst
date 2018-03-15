@@ -30,8 +30,8 @@ Source Downloads
 .. _ossec-hids-2.9.3.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.3.tar.gz
 .. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.3
 .. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.3/ossec-hids-2.9.3.tar.gz.asc
-.. _ossec-agent-win32-2.9.3.exe: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
-.. _GPG Windows: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
+.. _ossec-agent-win32-2.9.3.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
+.. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
 .. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
