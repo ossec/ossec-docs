@@ -10,6 +10,8 @@ Source Downloads
 +==============+===============================================+=============+
 | Server/Agent | https://github.com/ossec/ossec-hids/releases                |
 +--------------+-----------------------------------------------+-------------+
+| Packages     | https://updates.atomicorp.com/channels/ossec-3-testing      |
++--------------+-----------------------------------------------+-------------+
 | Web UI       | https://github.com/ossec/ossec-wui/releases                 |
 +--------------+-----------------------------------------------+-------------+
 | Docs         | https://github.com/ossec/ossec-docs                         |
