@@ -24,7 +24,7 @@ Source Downloads
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Agent Windows       | `ossec-agent-win32-2.9.3.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |                |
+| Virtual Appliance   | `ossec-vm-2.9.3.ova`_ – `README`_             | `VA Checksum`_           |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Docker Container    | `atomicorp/ossec-docker`_                     |                          |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
@@ -34,9 +34,9 @@ Source Downloads
 .. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.3/ossec-hids-2.9.3.tar.gz.asc
 .. _ossec-agent-win32-2.9.3.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
 .. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
-.. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
-.. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
-.. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
+.. _ossec-vm-2.9.3.ova: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3.ova
+.. _README: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3.README
+.. _VA Checksum: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3-checksum.txt
 .. _atomicorp/ossec-docker: https://hub.docker.com/r/atomicorp/ossec-docker/
 
 
