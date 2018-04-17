@@ -1,0 +1,45 @@
+.. post:: Jun 19, 2017
+   :tags: update
+   :category: Releases
+   :author: Scott R. Shinn
+
+
+===============
+OSSEC 2.9.1 
+===============
+
+
+**Changelog**
+
+**Release Maintainers**
+
+Dan Parriott
+
+Scott R. Shinn (Atomicorp, Inc.)
+
+**Whats New**
+
+- Updated rootcheck audit db's
+
+- Updated GeoIP support
+
+**New Rules / Decoders**
+
+- Fixed Windows decoders
+
+- PR #980: Update for vsftp rules / decoders
+
+**General**
+
+-    PR #1108: Implement GeoIP checks in Groups and Events
+
+-    PR #1136: Fix for mysql building
+
+-    PR #1144: Fixes Issue #1142 for CEF support (@mkvocka)
+
+
+
+**Download**
+
+`https://github.com/ossec/ossec-hids/releases <https://github.com/ossec/ossec-hids/releases>`_
+

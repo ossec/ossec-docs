@@ -1,0 +1,90 @@
+.. post:: Dec 23, 2017
+   :tags: update
+   :category: Releases
+   :author: Scott R. Shinn
+
+
+===============
+OSSEC 2.9.3 
+===============
+
+
+**Changelog**
+
+**Release Maintainers**
+
+Dan Parriott
+
+Scott R. Shinn (Atomicorp, Inc.)
+
+**Whats New**
+
+New Rules / Decoders
+
+   -  NSD Rules and Decoders
+
+   -  Owncloud Rules and Decoders
+
+   -  ProxMox Rules and Decoders
+
+   -  PSAD Rules and Decoders
+
+
+**Updated Rules / Decoders**
+
+   - Apache Rules
+
+   - Asterisk Rules
+
+   - Mailscanner Rules
+
+   - Mysql Rules
+
+   - Nginx Rules
+
+   - OpenBSD Rules
+
+   - Postfix Rules
+
+   - RoundCube Rules
+
+   - Sendmail Rules
+
+   - Syslog Rules
+
+   - WebAppSec Rules
+
+
+**General**
+
+   - Added authd init scripts for Debian and Redhat/Centos
+
+   - Added Rootcheck CIS Mysql communnity and enterprise auditing
+
+   - Added Rootcheck CIS SSH checks
+
+   - Added Rootcheck CIS SLES 12 checks
+
+   - Update Rootcheck CIS RHEL / CentOS 5 checks
+
+   - Update Rootcheck CIS RHEL / CentOS 6 checks
+
+   - Update Rootcheck CIS RHEL / CentOS 7 checks
+
+   - Update Rootcheck CIS Windows checks
+
+   - Update Rootcheck trojans / malware DB
+
+   - Update Rootcheck Windows application DB
+
+   - Backported rule unit tests from master
+
+   - PR #915 allows the filename attribute in decoders and active response
+
+   - PR #1275 allow IPv6 addresses in names
+
+
+**Download**
+
+`https://github.com/ossec/ossec-hids/releases <https://github.com/ossec/ossec-hids/releases>`_
+
