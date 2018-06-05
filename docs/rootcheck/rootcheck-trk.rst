@@ -9,20 +9,20 @@ More Information
 
 No more information is available.
 
-Orgin of Rule
--------------
+Origin of Rule
+------------~-
 
 This rootkit was taken from chkrootkit: 
 
 .. code-block:: sh
 
     ### T.R.K
-    expertmode_output "${find} ${ROOTDIR}usr/bin -name soucemask -o -name ct" 
+    expertmode_output "${find} ${ROOTDIR}usr/bin -name sourcemask -o -name ct" 
 
 File
 -----
 
-- ``usr/bin/soucemask``
+- ``usr/bin/sourcemask``
 - ``usr/bin/sourcemask``
 
 .. note::

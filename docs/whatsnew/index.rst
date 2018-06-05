@@ -104,7 +104,7 @@ New Rules / Decoders
 * PR #643, Rules/Decoders, update to IIS decoder
 * PR #654, Rules/Decoders, update to the vsftpd decoder
 * PR #668: Rules/Decoders, Fix for Cisco PIX decoder, ms-se_rules.xml, msauth_rules.xml
-* PR #721: Rules/Decoders, Update for sytemd rules to add support for new program_name, systemctl
+* PR #721: Rules/Decoders, Update for systemd rules to add support for new program_name, systemctl
 * PR #746: Rules/Decoders, Update to the apache decoders to handle Apache 2.4 events more gracefully
 * PR #755: Rules/Decoders, Update to ssh rules. Adds rules 5750-5753 to dedect client, protocol, and hostkey events
 * PR #762: Rules/Decoders, Update to ssh rules. Associates 5751 with 5700 instead of 1002
@@ -138,23 +138,23 @@ General
 * PR #720: Fixes for the statfs error spam
 * PR #724: Authd, bugfix for issue #642, This brings ossec-authd into parity with whatever the MAX_AGENTS is set at build time
 * PR #726: Make syslog/cef consistent with json/splunk and add classification field to alerts.
-* PR #727: Maild, Add support for “email_reply_to”. This allows configuing the Reply-To: field in email alerts sent from ossec-maild
-* PR #740: Remoted, bugfix for issue #739, Ossec will now report the agent ID of the agent that tries to conect
+* PR #727: Maild, Add support for “email_reply_to”. This allows configuring the Reply-To: field in email alerts sent from ossec-maild
+* PR #740: Remoted, bugfix for issue #739, Ossec will now report the agent ID of the agent that tries to connect
 * PR #744: Syscheck, Bugfix for issue #42, corrects issue on windows that would produce an incorrect hash
-* PR #749: Windows, Changed Makefile to use Windows subsystem only wth UI manager
+* PR #749: Windows, Changed Makefile to use Windows subsystem only with UI manager
 * PR #750: Analysisd, Fixes glob() impelemtation bug, adds Hourly/Daily options to logcollector, improved dfalts to analysisd diff alerts.
 * PR #751: Add simple python rule updater script
 * PR #754: Install.sh, Bugfix for OpenBSD adduser support
-* PR #765: Syscheck, add “nodiff” support. Sensitive data may leak through the diff attached to alerts when some file changes. This pull request add a nodiff option, which allows to explicitely set files for which we never want to output a diff.
+* PR #765: Syscheck, add “nodiff” support. Sensitive data may leak through the diff attached to alerts when some file changes. This pull request add a nodiff option, which allows to explicitly set files for which we never want to output a diff.
 * PR #768: Analysisd, Bugfix for Issue #767, increase of value for stats
 * PR #770: Database support, Postgres support updates
 * PR #781: Syscheck, Bugfix for Issue #780
 * PR #788: System Audit, Add PCI DSS tags to RHEL/CentOS/Cloudlinux auditing tests
-* PR #789: Install.sh, Use ls for file existance checks, for cross platform compatibility
+* PR #789: Install.sh, Use ls for file existence checks, for cross platform compatibility
 * PR #791: Syscheck, add /boot to default directories. Fix for Issue #675
 * PR #797: Rootcheck, Remove legacy rootcheck options
 * PR #798: System Audit, Add RHEL/CentOS/Cloudlinux 7 CIS benchmarks
-* PR #802: Database support, Allow for longer entries in the system informtaion column
+* PR #802: Database support, Allow for longer entries in the system information column
 * PR #849 Format string security fix
 * PR #864 Fix ossec-logtest to chroot when testing check_diff rules
 * PR #870 Fix installer permissions on the etc/shared directory
@@ -215,7 +215,7 @@ Released Sept 9, 2014:
 * Windows: Added eventchannel support for Windows agent on Vista or later (gaelmuller)
 * syscheckd: Extended filesize from an integer to a long integer
 * Active Response: Fix active-response on MAC OS Firewall (jknockaert)
-* Log monitoring/analysis: Add option to allow the outputing of all alerts to a zeromq PUB socket in JSON format, using cJSON library (jrossi, justintime32)
+* Log monitoring/analysis: Add option to allow the outputting of all alerts to a zeromq PUB socket in JSON format, using cJSON library (jrossi, justintime32)
 * Log monitoring/analysis: Add TimeGenerated to the output of Windows Event logs (awiddersheim)
 * Rules/decoders: Added some additional sshd rules in sshd_rules.xml (joshgarnett)
 * Rules/decoders: Removed bro-ids_rules.xml (ddpbsd)

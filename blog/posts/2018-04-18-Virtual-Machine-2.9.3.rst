@@ -34,7 +34,7 @@ Longtime OSSEC Contributor Vic Hargrave has released an update to the OSSEC Virt
     into your virtualization application.  We recommend VirtualBox for running appliance.
 
 4.  The appliance network interface is configured to use NAT mode.  To use this appliance as a
-    regular OSSEC server you must configure the network interace on the appliance to use bridged
+    regular OSSEC server you must configure the network interface on the appliance to use bridged
     mode and set a static IP address on the CentOS guest. See this UnixCraft article on how to do
     this https://www.cyberciti.biz/faq/howto-setting-rhel7-centos-7-static-ip-configuration/.
 

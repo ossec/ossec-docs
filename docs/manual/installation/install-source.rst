@@ -8,7 +8,7 @@ Installation of OSSEC HIDS is very simple, the ``install.sh`` shell script autom
 There are a few questions to be answered before the installation will occur, one of the most 
 important being which type of installation is desired.
 It is important to choose the correct installation type: server, agent, local, or hybrid.
-More information on thse can be found on the `OSSEC Architecture page <../ossec-architecture.html>`_.
+More information on them can be found on the `OSSEC Architecture page <../ossec-architecture.html>`_.
 
 .. note::
 

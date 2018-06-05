@@ -115,7 +115,7 @@ taskhack Used to change *uid's and *gid's of running processes. Type:
 *	./rexec www.microsoft.com haxored.server.nu /bin/touch /LUDER
 *	This will send a spoofed udp packet from www.microsoft.com:53 to
 *	haxored.server.nu:53, which tells haxored.server.nu to /bin/touch
-*	/LUDER. If you wan't to try this on localhost, don't specify a
+*	/LUDER. If you want to try this on localhost, don't specify a
 *	spoofed address different from your own, since the kernel won't
 *	accept it.
 *	./rexec localhost localhost /bin/touch /LUDER
@@ -135,7 +135,7 @@ If you want to make a process visible again for some reason, and you've
 forgotten the pid, just cat /proc/knark/pids. This will give you a ps-like
 output of all hidden processes.
 
-Sniffers sets the network interface in promiscious mode, and many simple
+Sniffers sets the network interface in promiscuous mode, and many simple
 sniffer-detectors rely on this. When knark is loaded, no network interface
 will show the IFF_PROMISC flag when SIOCGIFFLAGS is requested. Hiding the
 sniffer with signal 31 is also recommended.

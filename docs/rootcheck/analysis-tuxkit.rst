@@ -125,7 +125,7 @@ README::
     ./tuxkit   
 
              Password : This will be the password you need to login onto
-                        the comromised system.
+                        the compromised system.
              SSD Port : This will be the port on which the SSHD will be
                         be listening on for incoming connections.
                         This port will be hidden automatically in netstat.
@@ -144,7 +144,7 @@ This sets tuxkit apart from t0rn - it does not use default ports.
 The default installation directory is /dev/tux. Shell script savvy skripkids
 may want to change this to avoid detection.
 
-NOTE: the tuxkit installationn script contains a variable EMAIL which has
+NOTE: the tuxkit installation script contains a variable EMAIL which has
 the default value of the author. At the end of the installation, the script
 will send an email which the subject "Tuxkit1.0". The e-mail contains 
 information about the host, the SSH backdoor port, the psyBNC port, and

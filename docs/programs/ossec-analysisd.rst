@@ -4,7 +4,7 @@
 ossec-analysisd
 ===============
 
-``ossec-analysisd`` recveives the log messages and compares them to the rules. It will create alerts when a log message matches an applicable rule.
+``ossec-analysisd`` receives the log messages and compares them to the rules. It will create alerts when a log message matches an applicable rule.
 
 
 ossec-analysisd argument options

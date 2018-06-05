@@ -1,6 +1,6 @@
 .. post:: Jan 1, 2014
    :tags: git, hg, development
-   :category: Anouncements
+   :category: Announcements
    :author: Vic Hargrave
 
 ======================
@@ -40,7 +40,7 @@ This will continue till to the cut over date of Feb 7th 2014.
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 We will copy all open issues from Bitbucket to github. Due to the api
-avaiable, and reporting user and all comments on issues will show up as
+available, and reporting user and all comments on issues will show up as
 the user performing the migration. Test runs are being preformed to
 `githib.com/jrossi/issue-migration-test <>`__
 
@@ -51,14 +51,14 @@ This process will be the hardest, and will be the hardest to detail, but
 we shall attempt it here.
 
 Contact pull request author to request they move to github and resubmit
-using github. If no response is recevied before the following:
+using github. If no response is received before the following:
 
 -  Create github.com/ossec/bitbucket-pull-requests as a fork of
    github.com/ossec/ossec-hids/
 -  Export each Pull Request as a patch bb-gh-pull-request-##.patch
 -  Import each patch into a branch named bb-gh-pull-request-##
 
-   -  Apply correct author/email git infomation so no infomation is
+   -  Apply correct author/email git information so no information is
       lost.
 
 -  Create a github pull request for each branch.

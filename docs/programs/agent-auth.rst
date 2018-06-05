@@ -158,7 +158,7 @@ Example: Adding an agent and verifying the certificate presented by ossec-authd
 
     # /var/ossec/bin/agent-auth -m ossec-manager.localdomain -p 1515 -v /etc/pki/CA/certs/internal_CA.cert
     INFO: Connected to 192.168.1.1:1515
-    INFO: Verifing manager's certificate
+    INFO: Verifying manager's certificate
     INFO: Using agent name as: melancia
     ...
 

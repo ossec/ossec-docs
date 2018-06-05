@@ -102,8 +102,8 @@ How to debug ossec?
       stand out better.
     * If you need to get information from several source files, including the file 
       name the_file.c, in this example is helpful.
-    * You will almost surely want information from more than one fuction, including 
-      the name, the_fuction() will show which function sent the log.
+    * You will almost surely want information from more than one function, including 
+      the name, the_function() will show which function sent the log.
     * Finally, you can include a variable string with the printf format specifier %s 
       in the log entry and the_string is the name of the string variable to send to the log.
     
@@ -258,7 +258,7 @@ Remote commands are not accepted from the manager. Ignoring it on the agent.conf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This error message is caused by ``command`` or ``full_command`` log types in the agent.conf.
-Originally OSSEC supported running commands from the agent.conf by default. Thie was later changed as a security 
+Originally OSSEC supported running commands from the agent.conf by default. This was later changed as a security 
 precaution due to the commands being run as root. When a command is encountered on an agent in the agent.conf 
 this error will be produced and the agent may not fully start. This error may also accompany the above error 
 message:

@@ -22,7 +22,7 @@ Command Options
 
     .. note::
 
-       ``expect`` is required, but it is not reqiured to populate it. ``<expect></expect>`` is valid if no options need to be passed to the active-response script.
+       ``expect`` is required, but it is not required to populate it. ``<expect></expect>`` is valid if no options need to be passed to the active-response script.
 
 .. xml:element:: timeout_allowed
 

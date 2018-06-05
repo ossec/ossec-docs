@@ -30,7 +30,7 @@ Also see manual/output/json-alert-log-output.
         "sha1_before":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         "sha1_after":"YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY",
         "owner_before":"root",
-        "owwer_after":"nobody",
+        "owner_after":"nobody",
         "gowner_before":"root",
         "gowner_after":"nodody",
         "perm_before":660,
