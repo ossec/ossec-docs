@@ -186,7 +186,7 @@
 
         <zeromq_uri>tcp://eth0:21212/</zeromq_uri> 
 
-    This will listen for zeromq subscribers on the ip address assiged to eth0 port 21212 
+    This will listen for zeromq subscribers on the ip address assigned to eth0 port 21212 
 
     .. code-block:: xml 
 
