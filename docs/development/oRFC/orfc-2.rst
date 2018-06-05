@@ -69,7 +69,7 @@ Breaking long lines and strings
 Placing Braces and Spaces
 =========================
 
-* Braces shall be placed accoriding to the stroustrup style. *--style=stroustrup*
+* Braces shall be placed according to the stroustrup style. *--style=stroustrup*
 * Operators shall be padded by a space. *--pad-oper*
 * Every branch of conditional statements shall be surrounded by brackets. *--add-brackets*
 * Pointer and reference operators shall be attached to the variable name. *--align-pointer=name*
