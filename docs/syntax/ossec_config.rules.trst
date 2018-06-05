@@ -83,7 +83,7 @@
         
         - *Defaults*: regex ".xml$" is used unless another one is specified. 
       
-    **Allowed:** Path to a directoy of decoder files 
+    **Allowed:** Path to a directory of decoder files 
 
     **Example:**
 
