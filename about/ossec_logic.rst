@@ -4,7 +4,7 @@ OSSEC Processes and Data
 ========================
 
 +--------------------+--------------------------------------------------------------------------------+
-| Module             | Suposition                                                                     |
+| Module             | Supposition                                                                    |
 +====================+================================================================================+
 | ossec-analysisd    | Master program. Analyzes data from the logs, syscheck,rootcheck, etc.          |
 |                    | Runs as an unprivileged (ossec) user under chroot.                             |
