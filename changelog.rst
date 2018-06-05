@@ -478,7 +478,7 @@ v2.8.0 (2014/05/22 13:10 +00:00)
 -  `#173 <https://github.com/ossec/ossec-hids/pull/173>`__ os\_xml
    refresh2 (@cgzones)
 -  `#180 <https://github.com/ossec/ossec-hids/pull/180>`__ Use the
-   evironment for the CC binary (@jrossi)
+   environment for the CC binary (@jrossi)
 -  `#179 <https://github.com/ossec/ossec-hids/pull/179>`__ Fixes to
    win32 installation (@awiddersheim)
 -  `#176 <https://github.com/ossec/ossec-hids/pull/176>`__ Fix windows
