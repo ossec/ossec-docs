@@ -12,7 +12,7 @@ Summary of changes in v2.8
     == Agent 
 	 - Fixed manage_agents -f potential infinite loop (awiddersheim)
 	 - Added manage_agents -r <id> to remove an agent (awiddersheim)
-	 - Allow NIX agents to use "-f" option and run in forground (awiddersheim)
+	 - Allow NIX agents to use "-f" option and run in foreground (awiddersheim)
 	 
      - Windows agent install/uninstall GUI enhancements (awiddersheim)
 	 - Windows agent_config profile fixed (gaelmuller)
