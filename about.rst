@@ -82,7 +82,7 @@ Atomicorp is the producer of Atomic Secured Linux™ which features a secure Lin
 includes OSSEC as one of its core technologies.  Atomicorp provides comprehensive support services 
 for all your security needs including deployment assistance and post-sale support for OSSEC. The 
 company has long been involved with the OSSEC Project and currently builds the OSSEC RPM packages 
-for each release. You can find out more about Atomicorp product and support offereings by contacting 
+for each release. You can find out more about Atomicorp product and support offerings by contacting 
 their sales team at sales@atomicorp.com or visiting their products listing page at: 
 `<https://atomicorp.com/product-listing/>`_.
 
