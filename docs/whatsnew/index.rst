@@ -104,7 +104,7 @@ New Rules / Decoders
 * PR #643, Rules/Decoders, update to IIS decoder
 * PR #654, Rules/Decoders, update to the vsftpd decoder
 * PR #668: Rules/Decoders, Fix for Cisco PIX decoder, ms-se_rules.xml, msauth_rules.xml
-* PR #721: Rules/Decoders, Update for sytemd rules to add support for new program_name, systemctl
+* PR #721: Rules/Decoders, Update for systemd rules to add support for new program_name, systemctl
 * PR #746: Rules/Decoders, Update to the apache decoders to handle Apache 2.4 events more gracefully
 * PR #755: Rules/Decoders, Update to ssh rules. Adds rules 5750-5753 to dedect client, protocol, and hostkey events
 * PR #762: Rules/Decoders, Update to ssh rules. Associates 5751 with 5700 instead of 1002
