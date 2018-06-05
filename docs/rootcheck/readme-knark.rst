@@ -135,7 +135,7 @@ If you want to make a process visible again for some reason, and you've
 forgotten the pid, just cat /proc/knark/pids. This will give you a ps-like
 output of all hidden processes.
 
-Sniffers sets the network interface in promiscious mode, and many simple
+Sniffers sets the network interface in promiscuous mode, and many simple
 sniffer-detectors rely on this. When knark is loaded, no network interface
 will show the IFF_PROMISC flag when SIOCGIFFLAGS is requested. Hiding the
 sniffer with signal 31 is also recommended.
