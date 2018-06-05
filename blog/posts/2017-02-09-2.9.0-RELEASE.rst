@@ -126,7 +126,7 @@ Scott R. Shinn (Atomicorp, Inc.)
 
 - PR #726: Make syslog/cef consistent with json/splunk and add classification field to alerts.
 
-- PR #727: Maild, Add support for “email_reply_to”. This allows configuing the Reply-To: field in email alerts sent from ossec-maild
+- PR #727: Maild, Add support for “email_reply_to”. This allows configuring the Reply-To: field in email alerts sent from ossec-maild
 
 - PR #740: Remoted, bugfix for issue #739, Ossec will now report the agent ID of the agent that tries to conect
 
