@@ -192,7 +192,7 @@ snapshot/20150112 (2015/01/11 13:57 +00:00)
 -  `#398 <https://github.com/ossec/ossec-hids/pull/398>`__ Cppcheck
    cleanup (@jrossi)
 -  `#396 <https://github.com/ossec/ossec-hids/pull/396>`__ enabling
-   apparomor for new installs (@jrossi)
+   apparmor for new installs (@jrossi)
 -  `#395 <https://github.com/ossec/ossec-hids/pull/395>`__ moving
    srandom\_init before chroot (@jrossi)
 -  `#385 <https://github.com/ossec/ossec-hids/pull/385>`__ os\_auth
