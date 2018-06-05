@@ -34,6 +34,6 @@ security solution for Linux web servers which features OSSEC as one of
 its primary security tools. AtomiCorp has long been involved with the
 OSSEC Project and currently builds the OSSEC RPM packages for each
 release. If you are interested in the Atomic Secured Linux, AtomiCorp
-provides commericial support for the system You can find out more about
+provides commercial support for the system You can find out more about
 Atomic Secured linux by contating AtomiCorp sales at
 sales@atomicorp.com.
