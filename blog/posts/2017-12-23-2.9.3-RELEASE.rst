@@ -59,7 +59,7 @@ New Rules / Decoders
 
    - Added authd init scripts for Debian and Redhat/Centos
 
-   - Added Rootcheck CIS Mysql communnity and enterprise auditing
+   - Added Rootcheck CIS Mysql community and enterprise auditing
 
    - Added Rootcheck CIS SSH checks
 
