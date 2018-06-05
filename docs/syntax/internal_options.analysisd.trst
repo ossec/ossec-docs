@@ -6,46 +6,46 @@
 
     **Default:** 360 
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
 
 .. OS:intopt:: analysisd.stats_maxdiff
 
     **Default:** 25000
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
 
 .. OS:intopt:: analysisd.stats_mindiff
 
     **Default:** 250
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
 
 .. OS:intopt:: analysisd.stats_percent_diff
 
     **Default:** 30
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
 
 .. OS:intopt:: analysisd.fts_list_size
 
     **Default:** 32
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
 
 .. OS:intopt:: analysisd.fts_min_size_for_str
 
     **Default:** 14
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
 
 .. OS:intopt:: analysisd.log_fw
 
     **Default:** 1
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
 
 .. OS:intopt:: analysisd.debug
 
     **Default:** 0
 
-    **Allowed:** Any interger 
+    **Allowed:** Any integer 
