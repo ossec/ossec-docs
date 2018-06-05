@@ -558,8 +558,8 @@ To Enable or disable a mechanism that attempts to fool programs, such as nmap an
 
 As a side effect, enabling this option will also cause most of nmap's stealth" scans to fail.
 
-BSD's sysctl (some FreeBSD especific):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BSD's sysctl (some FreeBSD specific):
+^^^^^^^^^^^^^^^^^%^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
