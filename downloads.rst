@@ -141,7 +141,7 @@ Manual Yum/DNF installation on Centos, Redhat, Amazon Linux or Fedora
 
 1. Download the atomic-release file for your distribution
 
-2. Install the atomic-relase package (Note: This includes the OSSEC GPG key)
+2. Install the atomic-release package (Note: This includes the OSSEC GPG key)
 
 .. code:: console
 
