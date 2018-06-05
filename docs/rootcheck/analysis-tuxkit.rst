@@ -125,7 +125,7 @@ README::
     ./tuxkit   
 
              Password : This will be the password you need to login onto
-                        the comromised system.
+                        the compromised system.
              SSD Port : This will be the port on which the SSHD will be
                         be listening on for incoming connections.
                         This port will be hidden automatically in netstat.
