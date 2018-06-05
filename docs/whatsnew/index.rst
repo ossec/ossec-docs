@@ -154,7 +154,7 @@ General
 * PR #791: Syscheck, add /boot to default directories. Fix for Issue #675
 * PR #797: Rootcheck, Remove legacy rootcheck options
 * PR #798: System Audit, Add RHEL/CentOS/Cloudlinux 7 CIS benchmarks
-* PR #802: Database support, Allow for longer entries in the system informtaion column
+* PR #802: Database support, Allow for longer entries in the system information column
 * PR #849 Format string security fix
 * PR #864 Fix ossec-logtest to chroot when testing check_diff rules
 * PR #870 Fix installer permissions on the etc/shared directory

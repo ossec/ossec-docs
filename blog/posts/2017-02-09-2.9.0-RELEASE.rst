@@ -158,7 +158,7 @@ Scott R. Shinn (Atomicorp, Inc.)
 
 - PR #798: System Audit, Add RHEL/CentOS/Cloudlinux 7 CIS benchmarks
 
-- PR #802: Database support, Allow for longer entries in the system informtaion column
+- PR #802: Database support, Allow for longer entries in the system information column
 
 - PR #849 Format string security fix
 

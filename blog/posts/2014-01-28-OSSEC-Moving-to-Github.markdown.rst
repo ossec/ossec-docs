@@ -58,7 +58,7 @@ using github. If no response is recevied before the following:
 -  Export each Pull Request as a patch bb-gh-pull-request-##.patch
 -  Import each patch into a branch named bb-gh-pull-request-##
 
-   -  Apply correct author/email git infomation so no infomation is
+   -  Apply correct author/email git information so no information is
       lost.
 
 -  Create a github pull request for each branch.
