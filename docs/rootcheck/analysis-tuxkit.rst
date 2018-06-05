@@ -144,7 +144,7 @@ This sets tuxkit apart from t0rn - it does not use default ports.
 The default installation directory is /dev/tux. Shell script savvy skripkids
 may want to change this to avoid detection.
 
-NOTE: the tuxkit installationn script contains a variable EMAIL which has
+NOTE: the tuxkit installation script contains a variable EMAIL which has
 the default value of the author. At the end of the installation, the script
 will send an email which the subject "Tuxkit1.0". The e-mail contains 
 information about the host, the SSH backdoor port, the psyBNC port, and
