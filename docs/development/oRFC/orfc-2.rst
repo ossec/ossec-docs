@@ -30,7 +30,7 @@ Goals
 ------
 
 The OSSEC Style Guide is meant to provide framework and guide of formating 
-code contributer to OSSEC.  The overall goals are:
+code contributor to OSSEC.  The overall goals are:
 
 * Maximize Readability of code in OSSEC;
 * Reduction in the number of bugs by removing ambiguity in code and logic flow;
