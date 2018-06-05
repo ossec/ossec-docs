@@ -1,6 +1,6 @@
 .. post:: Jan 1, 2014
    :tags: git, hg, development
-   :category: Anouncements
+   :category: Announcements
    :author: Vic Hargrave
 
 ======================
