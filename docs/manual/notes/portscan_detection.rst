@@ -6,7 +6,7 @@ iplog is a TCP/IP traffic logger. Currently, it is capable of logging TCP, UDP, 
 iplog.conf:
 ^^^^^^^^^^^
 
- The syslog, user, group and internal network configuration is not show (OS dependient)
+ The syslog, user, group and internal network configuration is not show (OS dependent)
  iplog can log in diferets ways depending of the configuration parameters (DNS resolv, log_dest, etc), the proposed decoders and rules 
  only work with the logs later described, this configuration file extract is functional with this requeriment, please read man iplog 
  and man iplog.conf 
