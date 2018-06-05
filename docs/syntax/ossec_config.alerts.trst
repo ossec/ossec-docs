@@ -12,7 +12,7 @@
 
     .. note::
 
-       This is the minumum level for an alert to trigger an email. 
+       This is the minimum level for an alert to trigger an email. 
        This overrides granular email alert levels. 
        Setting this to 10 would prevent emails for alerts at levels 
        lower than 10 to be sent despite settings in the granular email configuration.
