@@ -223,7 +223,7 @@ snapshot/20150112 (2015/01/11 13:57 +00:00)
    agents keys (@awiddersheim)
 -  `#379 <https://github.com/ossec/ossec-hids/pull/379>`__ Remove unused
    files and moved files into correct location. (@jrossi)
--  `#378 <https://github.com/ossec/ossec-hids/pull/378>`__ intergrations
+-  `#378 <https://github.com/ossec/ossec-hids/pull/378>`__ integrations
    into slack (@jrossi)
 -  `#376 <https://github.com/ossec/ossec-hids/pull/376>`__ Merge test
    makefile (@cgzones)
