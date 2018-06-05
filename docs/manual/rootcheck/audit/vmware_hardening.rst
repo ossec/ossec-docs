@@ -44,7 +44,7 @@ Example output from the test
 
   # /var/ossec/bin/rootcheck_control -i local
 
-  System Audit: System Audit: VMware ESX - Testing against the Security Harderning benchmark VI3 for ESX 3.5. 
+  System Audit: System Audit: VMware ESX - Testing against the Security Hardening benchmark VI3 for ESX 3.5. 
   File: /etc/vmware-release. 
   Reference: http://www.ossec.net/wiki/index.php/SecurityHardening_VMwareESX .
 
