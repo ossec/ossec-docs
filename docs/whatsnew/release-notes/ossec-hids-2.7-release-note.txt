@@ -4,7 +4,7 @@ Trend Micro, Inc.                                             November 16, 2012
 --------------------------------------------------------------------------------
 
 === LICENSE text: Added exception clause for OpenSSL, and make OSSEC GPLv2 (was v3)
-Fixed OpenSSL exception clause in LICNESE, adn os_auth source files.
+Fixed OpenSSL exception clause in LICENSE, adn os_auth source files.
      
 >   * As a special exception, the copyright holders give
 >   * permission to link the code of portions of this program with the
