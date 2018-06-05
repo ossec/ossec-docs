@@ -87,7 +87,7 @@ or the official OSSEC irc channel.
 * PR#727: Maild, Add support for "email_reply_to". This allows configuring the Reply-To: field in email alerts sent from ossec-maild
 * PR#740: Remoted, bugfix for issue #739, Ossec will now report the agent ID of the agent that tries to connect
 * PR#744: Syscheck, Bugfix for issue #42, corrects issue on windows that would produce an incorrect hash
-* PR#749: Windows, Changed Makefile to use Windows subsystem only wth UI manager
+* PR#749: Windows, Changed Makefile to use Windows subsystem only with UI manager
 * PR#750: Analysisd, Fixes glob() impelemtation bug, adds Hourly/Daily options to logcollector, improved dfalts to analysisd diff alerts.
 * PR#751: Add simple python rule updater script
 * PR#754: Install.sh, Bugfix for OpenBSD adduser support

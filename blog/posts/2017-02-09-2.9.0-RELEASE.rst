@@ -132,7 +132,7 @@ Scott R. Shinn (Atomicorp, Inc.)
 
 - PR #744: Syscheck, Bugfix for issue #42, corrects issue on windows that would produce an incorrect hash
 
-- PR #749: Windows, Changed Makefile to use Windows subsystem only wth UI manager
+- PR #749: Windows, Changed Makefile to use Windows subsystem only with UI manager
 
 - PR #750: Analysisd, Fixes glob() impelemtation bug, adds Hourly/Daily options to logcollector, improved dfalts to analysisd diff alerts.
 
