@@ -9,8 +9,8 @@ More Information
 
 No more information is available.
 
-Orgin of Rule
--------------
+Origin of Rule
+------------~-
 
 This rootkit was taken from chkrootkit: 
 
