@@ -140,7 +140,7 @@ snapshot/20150112 (2015/01/11 13:57 +00:00)
 -  `#449 <https://github.com/ossec/ossec-hids/pull/449>`__ Fix include
    order warnings when compiling win32 (@awiddersheim)
 -  `#448 <https://github.com/ossec/ossec-hids/pull/448>`__ Fix manage
-   agents error messaage compile warning (@awiddersheim)
+   agents error message compile warning (@awiddersheim)
 -  `#441 <https://github.com/ossec/ossec-hids/pull/441>`__ Fix
    csyslogd-config XML syslog location definition (@mikey-austin)
 -  `#440 <https://github.com/ossec/ossec-hids/pull/440>`__ Format
