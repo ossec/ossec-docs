@@ -57,7 +57,7 @@ osssec-logtest argument options
 
     .. note::
 
-      This ossec-logtest code requires access to all ossec configuation files.  
+      This ossec-logtest code requires access to all ossec configuration files.  
       This is a bug and will be corrected. It is documented in issue #`61 <https://bitbucket.org/jbcheng/ossec-hids/issue/61/ossec-logtest-must-be-used-with-a-full>`_
 
     .. code-block:: console

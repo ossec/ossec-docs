@@ -18,7 +18,7 @@ svn is required for PicViz to work with OSSEC.
 Setup OSSEC for PicViz 
 ----------------------
 
-Configure OSSEC to send events to PicViz.  The following configuation 
+Configure OSSEC to send events to PicViz.  The following configuration 
 needs to be added to /var/ossec/etc/ossec.conf. 
 
 .. code-block:: xml
