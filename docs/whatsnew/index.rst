@@ -145,7 +145,7 @@ General
 * PR #750: Analysisd, Fixes glob() impelemtation bug, adds Hourly/Daily options to logcollector, improved dfalts to analysisd diff alerts.
 * PR #751: Add simple python rule updater script
 * PR #754: Install.sh, Bugfix for OpenBSD adduser support
-* PR #765: Syscheck, add “nodiff” support. Sensitive data may leak through the diff attached to alerts when some file changes. This pull request add a nodiff option, which allows to explicitely set files for which we never want to output a diff.
+* PR #765: Syscheck, add “nodiff” support. Sensitive data may leak through the diff attached to alerts when some file changes. This pull request add a nodiff option, which allows to explicitly set files for which we never want to output a diff.
 * PR #768: Analysisd, Bugfix for Issue #767, increase of value for stats
 * PR #770: Database support, Postgres support updates
 * PR #781: Syscheck, Bugfix for Issue #780
