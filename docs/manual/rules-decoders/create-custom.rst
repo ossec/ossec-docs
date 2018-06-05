@@ -3,7 +3,7 @@
 
 .. note::
 
-    Previous versions of this page page orginally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
+    Previous versions of this page page originally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
     Some content may be the same, but examples have been updated.
 
 .. note::
@@ -247,6 +247,6 @@ Now the useful fields have been extracted for this log message as well. Double c
 Historical
 ~~~~~~~~~~
 
-Previous versions of this page page orginally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
+Previous versions of this page page originally was created by @j_hen on her blog http://jentalkstoomuch.blogspot.com/2010/09/writing-custom-ossec-rules-for-your.html
 This blog no longer exists (at least at that location).
 
