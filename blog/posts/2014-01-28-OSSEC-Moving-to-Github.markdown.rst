@@ -40,7 +40,7 @@ This will continue till to the cut over date of Feb 7th 2014.
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 We will copy all open issues from Bitbucket to github. Due to the api
-avaiable, and reporting user and all comments on issues will show up as
+available, and reporting user and all comments on issues will show up as
 the user performing the migration. Test runs are being preformed to
 `githib.com/jrossi/issue-migration-test <>`__
 

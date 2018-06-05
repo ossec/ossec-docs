@@ -648,7 +648,7 @@ v2.8.0 (2014/05/22 13:10 +00:00)
 -  `#55 <https://github.com/ossec/ossec-hids/pull/55>`__ Merging in
    changes from @cgzones (@jrossi)
 -  `#53 <https://github.com/ossec/ossec-hids/pull/53>`__ Travis ci build
-   windows and fix for setenv not being avaiable on win32 (@jrossi)
+   windows and fix for setenv not being available on win32 (@jrossi)
 -  `#49 <https://github.com/ossec/ossec-hids/pull/49>`__ Use cJSON
    instead of writing a custom JSON output format. (@reyjrar)
 -  `#44 <https://github.com/ossec/ossec-hids/pull/44>`__ Feature:
