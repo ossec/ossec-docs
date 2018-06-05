@@ -258,7 +258,7 @@ Remote commands are not accepted from the manager. Ignoring it on the agent.conf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This error message is caused by ``command`` or ``full_command`` log types in the agent.conf.
-Originally OSSEC supported running commands from the agent.conf by default. Thie was later changed as a security 
+Originally OSSEC supported running commands from the agent.conf by default. This was later changed as a security 
 precaution due to the commands being run as root. When a command is encountered on an agent in the agent.conf 
 this error will be produced and the agent may not fully start. This error may also accompany the above error 
 message:
