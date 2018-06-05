@@ -30,7 +30,7 @@ iplog.conf:
 
   set ignore_dns true
 
-#. I dont want too many logs: ignore www, netbios, microsoft-ds loc-srv, 5900 tcp/port connections, not all the OS recognize the port alias, replace with de adecuate port number
+#. I dont want too many logs: ignore www, netbios, microsoft-ds loc-srv, 5900 tcp/port connections, not all the OS recognize the port alias, replace with the OS recognize the port alias, replace with the port number
 
 .. code-block:: console
 
