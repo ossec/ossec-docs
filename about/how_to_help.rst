@@ -35,7 +35,7 @@ directory:
 
 Inside each directory you will find a messages.txt and language.txt file and a messages/ and errors/ directory. If you are fixing one of the languages we already have, just modify them and send the changes to us.
 
-If you want to support a new language, just copy the English one to your contry code and start translating:
+If you want to support a new language, just copy the English one to your country code and start translating:
 
 .. code-block:: console
 
