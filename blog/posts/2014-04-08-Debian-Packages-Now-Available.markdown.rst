@@ -12,7 +12,7 @@ and now host Debian packages of OSSEC for Ubuntu Wheezy, Jessie and Sid.
 See the `Downloads <https://ossec.github.io/downloads.html>`_ page for the links to the packages
 and AlienVault's respositories. Thanks to OSSEC Project team member
 Santiago Gonzalez for taking the time to create these packages and
-AlientVault for hosting them
+AlienVault for hosting them
 
 And just a reminder, we have RPMs for all the major RedHat derived
 distros courtesy of our friends at Atomicorp and long time team member
