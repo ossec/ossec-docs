@@ -163,7 +163,7 @@
 
     .. warning::
       
-        ZeroMQ is experimental and will likely change drasticly from vesion to 
+        ZeroMQ is experimental and will likely change drastically from vesion to 
         version.  
 
     **Allowed:** yes/no
