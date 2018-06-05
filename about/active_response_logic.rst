@@ -11,7 +11,7 @@ This is taken directly from the documentation in the source.
 
 How the active response works internally:
 
-* Read active-respose-doc.txt for details on configuration
+* Read active-response-doc.txt for details on configuration
 
 
 #. The analysis server receives an event that matches the active response policy.
