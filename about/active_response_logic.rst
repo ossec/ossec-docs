@@ -17,7 +17,7 @@ How the active response works internally:
 #. The analysis server receives an event that matches the active response policy.
 #. The analysis server verifies that all required fields are provided with the event. It means that the analysis server was able to decode the event and extract the necessary information. One example is if it was able to extract the IP address from the event to send to the firewall to be blocked.
 #. If the active response policy specify that the action must be executed locally on the AS, a message is sent to the execd directly.
-#. If the active response policy specify that the action must be executed remotelly, a message is sent to the "Active response forwarder" (remoted) to forward the event to the specified agent.
+#. If the active response policy specify that the action must be executed remotely, a message is sent to the "Active response forwarder" (remoted) to forward the event to the specified agent.
 
 
 
