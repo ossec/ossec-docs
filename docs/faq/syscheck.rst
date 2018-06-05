@@ -87,7 +87,7 @@ beyond a file or two per restart of the client. The log monitoring continues
 to work, so you know it's not a communication issue, and you will often 
 see a slight increase in syscheck database file size after the client has 
 restarted (in one case about 20 minutes after). But the database will never be 
-completely built; there will only be a couple files listed in datebase.
+completely built; there will only be a couple files listed in database.
 
 The solution is to add an ignore clause to ossec.conf on the client:
 
