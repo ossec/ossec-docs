@@ -12,7 +12,7 @@ OSSEC Commercial Support contracts will no longer be available directly
 from Trend Micro as of March 2014; however all existing agreements will
 continue to be fully supported until the end of their respective terms.
 
-If you are still interested in OSSEC and requrie commercial support,
+If you are still interested in OSSEC and require commercial support,
 Trend Micro is aware of some 3rd party vendors who may be able to
 provide some deployment assistance or post-sale support options. Please
 note that Trend Micro does not specifically endorse these vendors, but
