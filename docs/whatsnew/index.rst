@@ -150,7 +150,7 @@ General
 * PR #770: Database support, Postgres support updates
 * PR #781: Syscheck, Bugfix for Issue #780
 * PR #788: System Audit, Add PCI DSS tags to RHEL/CentOS/Cloudlinux auditing tests
-* PR #789: Install.sh, Use ls for file existance checks, for cross platform compatibility
+* PR #789: Install.sh, Use ls for file existence checks, for cross platform compatibility
 * PR #791: Syscheck, add /boot to default directories. Fix for Issue #675
 * PR #797: Rootcheck, Remove legacy rootcheck options
 * PR #798: System Audit, Add RHEL/CentOS/Cloudlinux 7 CIS benchmarks

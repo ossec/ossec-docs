@@ -150,7 +150,7 @@ Scott R. Shinn (Atomicorp, Inc.)
 
 - PR #788: System Audit, Add PCI DSS tags to RHEL/CentOS/Cloudlinux auditing tests
 
-- PR #789: Install.sh, Use ls for file existance checks, for cross platform compatibility
+- PR #789: Install.sh, Use ls for file existence checks, for cross platform compatibility
 
 - PR #791: Syscheck, add /boot to default directories. Fix for Issue #675
 
