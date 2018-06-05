@@ -48,7 +48,7 @@ Running the following command:
 
     # /var/ossec/bin/util.sh adddns ossec.net
 
-will add the folling to that system's ``ossec.conf``:
+will add the following to that system's ``ossec.conf``:
 
 .. code-block:: console
 
