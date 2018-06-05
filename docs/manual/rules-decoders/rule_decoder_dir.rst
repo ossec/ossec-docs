@@ -41,7 +41,7 @@ files in the rules dir that match the regex ``_rules.xml$``.
             <rule_dir pattern="_rules.xml">rules</rule_dir>
 
 The pattern is optional and defaults to _rules.xml for rules loading so this
-could be writen as:
+could be written as:
 
 .. code-block:: xml 
 
