@@ -215,7 +215,7 @@ Released Sept 9, 2014:
 * Windows: Added eventchannel support for Windows agent on Vista or later (gaelmuller)
 * syscheckd: Extended filesize from an integer to a long integer
 * Active Response: Fix active-response on MAC OS Firewall (jknockaert)
-* Log monitoring/analysis: Add option to allow the outputing of all alerts to a zeromq PUB socket in JSON format, using cJSON library (jrossi, justintime32)
+* Log monitoring/analysis: Add option to allow the outputting of all alerts to a zeromq PUB socket in JSON format, using cJSON library (jrossi, justintime32)
 * Log monitoring/analysis: Add TimeGenerated to the output of Windows Event logs (awiddersheim)
 * Rules/decoders: Added some additional sshd rules in sshd_rules.xml (joshgarnett)
 * Rules/decoders: Removed bro-ids_rules.xml (ddpbsd)
