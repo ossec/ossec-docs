@@ -31,7 +31,7 @@ OSSEC Processes and Data
 
 *  ossec-logcollector on agent machine tails log file & sends to ossec-agent.
 *  ossec-agent routes the information to the ossec-server (on server system).
-*  ossec-remoted receives data, uncompress and unencrypt it and sends to analysysd.
+*  ossec-remoted receives data, uncompress and unencrypt it and sends to analysisd.
 *  ossec-analysisd detects an actionable issue.
 *  ossec-analysisd actions:
 
