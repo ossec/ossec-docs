@@ -283,8 +283,8 @@ For this log:
 
   Nov 14 18:35:00 UDP: scan/flood detected [ports 33161,41107,63571,48714,25271,...] from 10.10.150.1 [ports 60362]
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -301,8 +301,8 @@ For this log:
 
   Nov 14 19:09:33 ICMP: ping flood detected from 10.10.150.1
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -321,8 +321,8 @@ For this log:
 
   Nov 14 18:57:18 UDP: traceroute from 10.10.150.2
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -343,8 +343,8 @@ For this log:
 
   Nov 14 15:57:56 TCP: Bogus TCP flags set by 10.10.160.2:60873 (dest port 25)
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  <decoder name="iplog-bogustcp">
   <prematch>Bogus TCP flags set by</prematch>
