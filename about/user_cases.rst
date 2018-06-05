@@ -232,7 +232,7 @@ Pilou (2006)
   *"Nice soft.*
 
   *I've testing this hids on a Debian (kernel 2.6.17) and on a Red Hat Enterprise 3 (kernel 2.4).*
-  *It's works without problems. I've use Nessus to testing it, and, it's wonderfull.*
+  *It's works without problems. I've use Nessus to testing it, and, it's wonderful.*
   *Iptables and hosts.deny was use without troubles, and Nessus can't report some trouble or else.*
 
   *Great.*
