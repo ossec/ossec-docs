@@ -51,7 +51,7 @@ This process will be the hardest, and will be the hardest to detail, but
 we shall attempt it here.
 
 Contact pull request author to request they move to github and resubmit
-using github. If no response is recevied before the following:
+using github. If no response is received before the following:
 
 -  Create github.com/ossec/bitbucket-pull-requests as a fork of
    github.com/ossec/ossec-hids/
