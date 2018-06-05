@@ -55,7 +55,7 @@ Indentation
 
 * 4 spaces shall be used per indentation level. *--indent=spaces=4*
 * Switch and case blocks shall be indented. *--indent-switches*
-* Preprocessor conditional statements shall be indeted to the same level as the source code. *--indent-preproc-cond*
+* Preprocessor conditional statements shall be indented to the same level as the source code. *--indent-preproc-cond*
 
 File endings
 ============
