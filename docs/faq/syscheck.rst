@@ -102,7 +102,7 @@ Why aren't new files creating an alert?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default OSSEC does not alert on new files.
-To enable this functionlity, <alert_new_files> must be set to yes inside the <syscheck> section of the manager's ossec.conf.
+To enable this functionality, <alert_new_files> must be set to yes inside the <syscheck> section of the manager's ossec.conf.
 Also, the rule to alert on new files (rule 554) is set to level 0 by default. 
 The alert level will need to be raised in order to see the alert.
 Alerting on new files does not work in realtime, a full scan will be necessary to detect them.
