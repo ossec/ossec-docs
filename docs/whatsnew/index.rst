@@ -7,7 +7,81 @@ What's new
    :maxdepth: 1
    :glob:
 
-   checksums/index
+2.9.4
+-----
+
+.. note::
+   This is a maintenance update, and the last release in the 2.9 series
+
+
+
+
+Released June 20, 2018
+
+General
+
+* PR #1207, for issue #1205, Pushing merged.mg to Windows agents fails due to EOL conversion
+* PR #1259, for issue #1145, fixes for RHEL getaddrinfo/ipv6
+* PR #1428, for issue #1425, check owner option doesnt work on windows agent
+* PR #1428, for issue #1425, check owner option doesnt work on windows agent
+* PR #1421, for issue #1421, fixes for ossec-slack.sh alerts path
+* PR #1422, for issue #1421, fixes for ossec-slack.sh active-response path
+* PR #1421, for issue #1421, fixes for ossec-slack.sh path
+* PR #1409 for issue #1402, Real-time file monitoring stops working if several files are encrypted at the same time
+* PR #1100, fix for open received files in binary mode on windows
+* PR #1350, fix for basename, Missing agent.conf messags are reportied as warnings
+* PR #1334 for issue #210, do not add 12 to 12pm
+* PR #1340 for issue #1065, fix for negating IP address
+* PR #1088 for issue #1084, reportd double free
+
+
+2.9.3
+-----
+
+Released December 23, 2017
+
+.. note::
+   This is a maintenance release, and includes a major rule & decoder update
+
+New Rules / Decoders
+
+* NSD Rules and Decoders
+* Owncloud Rules and Decoders
+* ProxMox Rules and Decoders
+* PSAD Rules and Decoders
+
+
+Updated Rules / Decoders
+
+* Apache Rules
+* Asterisk Rules
+* Mailscanner Rules
+* Mysql Rules
+* Nginx Rules
+* OpenBSD Rules
+* Postfix Rules
+* RoundCube Rules
+* Sendmail Rules
+* Syslog Rules
+* WebAppSec Rules
+
+General
+
+* Added authd init scripts for Debian and Redhat/Centos
+* Added Rootcheck CIS Mysql communnity and enterprise auditing
+* Added Rootcheck CIS SSH checks
+* Added Rootcheck CIS SLES 12 checks
+* Update Rootcheck CIS RHEL / CentOS 5 checks
+* Update Rootcheck CIS RHEL / CentOS 6 checks
+* Update Rootcheck CIS RHEL / CentOS 7 checks
+* Update Rootcheck CIS Windows checks
+* Update Rootcheck trojans / malware DB
+* Update Rootcheck Windows application DB
+* Backported rule unit tests from master
+* PR #915 allows the filename attribute in decoders and active response
+* PR #1275 allow IPv6 addresses in names
+
+
 
 2.9.2
 -----
@@ -44,7 +118,6 @@ Updated Rules / Decoders (Leo Feyer)
 * SSHd Rules
 * Syslog Rules
 
-.. include:: checksums/2.9.2/292.trst
 
 2.9.1
 -----
