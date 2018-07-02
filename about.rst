@@ -111,8 +111,6 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 **Andrew Widdersheim** – Development, testing, rules – awiddersheim (at) hotmail.com
 
-**Vic Hargrave** – Development, testing – vichargrave (at) gmail.com
-
 **Jia-Bing (JB) Cheng** – SIEM integration, community support – Jia-BingJB_Cheng (at) trendmicro.com
 
 
@@ -121,5 +119,6 @@ Former OSSEC Team Members
 
 **Michael Starks** – Community Support, rules
 
+**Vic Hargrave** – Development, testing – vichargrave (at) gmail.com
 
 |
