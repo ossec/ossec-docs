@@ -19,7 +19,7 @@
             <div class="col-md-4">
               <div class="panel panel-default">
                 <div class="panel-heading"><h3>Watching</h3></div>
-                <div class="panel-body">OSSEC watches it all, actively monitoring all aspects of Unix system
+                <div class="panel-body">OSSEC watches it all, actively monitoring all aspects of system
                 activity with file integrity monitoring, log monitoring, rootcheck, and process monitoring.
                 With OSSEC you won't be in the dark about what is happening to your valuable computer system
                 assets.
