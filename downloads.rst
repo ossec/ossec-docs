@@ -10,6 +10,8 @@ Source Downloads
 +==============+===============================================+=============+
 | Server/Agent | https://github.com/ossec/ossec-hids/releases                |
 +--------------+-----------------------------------------------+-------------+
+| Packages     | https://updates.atomicorp.com/channels/ossec-3-testing      |
++--------------+-----------------------------------------------+-------------+
 | Web UI       | https://github.com/ossec/ossec-wui/releases                 |
 +--------------+-----------------------------------------------+-------------+
 | Docs         | https://github.com/ossec/ossec-docs                         |
@@ -30,8 +32,8 @@ Source Downloads
 .. _ossec-hids-2.9.3.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.3.tar.gz
 .. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.3
 .. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.3/ossec-hids-2.9.3.tar.gz.asc
-.. _ossec-agent-win32-2.9.3.exe: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
-.. _GPG Windows: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
+.. _ossec-agent-win32-2.9.3.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
+.. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
 .. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
 .. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
 .. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
@@ -43,21 +45,23 @@ RHEL, CentOS, Fedora and others
 
 Available in the `Atomicorp repository <https://updates.atomicorp.com/channels/atomic/>`_.
 
-+-----------------------------------------------------------------------------------------------------+---------------------------------------------------+
-| CentOS / Redhat / Amazon Linux                                                                      |  atomic-release                                   |
-+=================+===================================================================================+===================================================+
-| el5 i386        | `<https://updates.atomicorp.com/channels/atomic/centos/5/i386/RPMS/>`_            | `atomic-release-1.0-21.el5.art.noarch.rpm`_       |
-+-----------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
-| el5 x86_64      | `<https://updates.atomicorp.com/channels/atomic/centos/5/x86_64/RPMS/>`_          | `atomic-release-1.0-21.el5.art.noarch.rpm`_       |
-+-----------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
-| el6 i386        | `<https://updates.atomicorp.com/channels/atomic/centos/6/i386/RPMS/>`_            | `atomic-release-1.0-21.el6.art.noarch.rpm`_       |
-+-----------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
-| el6 x86_64      | `<https://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/>`_          | `atomic-release-1.0-21.el6.art.noarch.rpm`_       |
-+-----------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
-| el7 x86_64      | `<https://updates.atomicorp.com/channels/atomic/centos/7/x86_64/RPMS/>`_          | `atomic-release-1.0-21.el7.art.noarch.rpm`_       |
-+-----------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
-
-Note: Amazon Linux users are recommended to use the EL6 x86_64 repository
++--------------------------------------------------------------------------------------------------------+---------------------------------------------------+
+| CentOS / Redhat / Amazon Linux                                                                         |  atomic-release                                   |
++====================+===================================================================================+===================================================+
+| el5 i386           | `<https://updates.atomicorp.com/channels/atomic/centos/5/i386/RPMS/>`_            | `atomic-release-1.0-21.el5.art.noarch.rpm`_       |
++--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
+| el5 x86_64         | `<https://updates.atomicorp.com/channels/atomic/centos/5/x86_64/RPMS/>`_          | `atomic-release-1.0-21.el5.art.noarch.rpm`_       |
++--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
+| el6 i386           | `<https://updates.atomicorp.com/channels/atomic/centos/6/i386/RPMS/>`_            | `atomic-release-1.0-21.el6.art.noarch.rpm`_       |
++--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
+| el6 x86_64         | `<https://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/>`_          | `atomic-release-1.0-21.el6.art.noarch.rpm`_       |
++--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
+| el7 x86_64         | `<https://updates.atomicorp.com/channels/atomic/centos/7/x86_64/RPMS/>`_          | `atomic-release-1.0-21.el7.art.noarch.rpm`_       |
++--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
+| Amazon Linux       | `<https://updates.atomicorp.com/channels/atomic/amazon/1/x86_64/RPMS/>`_          |                                                   |
++--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
+| Amazon Linux (LTS) | `<https://updates.atomicorp.com/channels/atomic/amazon/2/x86_64/RPMS/>`_          |                                                   |
++--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
 
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 | Fedora                                                                                               | atomic-release                                       |
@@ -94,6 +98,8 @@ Ubuntu, and Debian and others
 +--------------+------------------------------------------------------------------------+
 | 16 (xenial)  | `<https://updates.atomicorp.com/channels/ossec/ubuntu/pool/main/o/>`_  | 
 +--------------+------------------------------------------------------------------------+
+| 17 (artful)  | `<https://updates.atomicorp.com/channels/ossec/ubuntu/pool/main/o/>`_  | 
++--------------+------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------+
@@ -102,6 +108,8 @@ Ubuntu, and Debian and others
 | 7 (wheezy)   | `<https://updates.atomicorp.com/channels/ossec/debian/pool/main/o/>`_  | 
 +--------------+------------------------------------------------------------------------+
 | 8 (jessie)   | `<https://updates.atomicorp.com/channels/ossec/debian/pool/main/o/>`_  | 
++--------------+------------------------------------------------------------------------+
+| 9 (stretch)  | `<https://updates.atomicorp.com/channels/ossec/debian/pool/main/o/>`_  | 
 +--------------+------------------------------------------------------------------------+
 
 
