@@ -1,3 +1,5 @@
+SELinux
+-------
 I enabled SELinux on my Kubuntu workstation and almost immediately received notifications from OSSEC. It has been a while since I reviewed the [http://www.centos.org/docs/4/html/rhel-selg-en-4/ RHEL SELinux documentation] that explains these log entries from /var/log/messages. There's a very real possibility that I did not set SELinux up properly, it is not very well supported by Ubuntu at the moment. I may change this entry after I re-review the SELinux docs.
 
 Anyway, here's something to chew on FWIW ...

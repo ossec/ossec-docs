@@ -39,6 +39,19 @@ Source Downloads
 .. _VA Checksum: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3-checksum.txt
 .. _atomicorp/ossec-docker: https://hub.docker.com/r/atomicorp/ossec-docker/
 
++=====================+================================+==========================================================================+======================+
+| v3.0.0              | Download                       | Checksum                                                                 | Signature            |
++=====================+================================+==========================================================================+======================+
+| Unix Server/Agent   | `ossec-hids-3.0.0.tar.gz`_     | SHA256 a271d665ed502b3df4ff055a177159dfc0bc8a69dd44eab1f7c57fe8fff42a98  | `GPG-unix-v3`_       |
++---------------------+--------------------------------+--------------------------------------------------------------------------+----------------------+
+| Windows Agent       | `ossec-agent-win32-3.0.0.exe`_ | SHA256 a6f5f59723fb10408063879b44cff4d59bf2c77310adf2f6b339b85b441d0b17  | `GPG-windows-v3`_    |
++---------------------+--------------------------------+--------------------------------------------------------------------------+----------------------+
+
+.. _ossec-hids-3.0.0.tar.gz: https://github.com/ossec/ossec-hids/archive/3.0.0.tar.gz
+.. _ossec-agent-win32-3.0.0.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-3.0.0-5505.exe
+.. _GPG-windows-v3: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-3.0.0-5505.exe.asc
+.. _GPG-unix-v3: https://github.com/ossec/ossec-hids/releases/download/3.0.0/ossec-hids-3.0.0.tar.gz.asc
+
 
 RHEL, CentOS, Fedora and others
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

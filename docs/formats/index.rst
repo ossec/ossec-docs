@@ -8,6 +8,4 @@ Output Formats
 
     alerts
     json 
-    syslog 
-    default
     cef

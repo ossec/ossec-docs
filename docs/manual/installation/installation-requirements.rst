@@ -29,6 +29,13 @@ installed. Run the following command to install these packages.
 
     # apt-get install mysql-dev postgresql-dev
 
+To use the SQLite features, the `libsqlite3-dev` package is necessary.
+
+.. versionadded:: 3.0
+
+.. code-block:: console
+
+   # apt-get install libsqlite3-dev
 
 RedHat
 ------
@@ -40,6 +47,14 @@ need to be installed.
 .. code-block:: console
 
     # yum install mysql-devel postgresql-devel
+
+To use the SQLite features, the `sqlite-devel` package is necessary.
+
+.. versionadded:: 3.0
+
+.. code-block:: console
+
+   # yum install sqlite-devel
 
 
 Debian

@@ -8,5 +8,4 @@ Checksums
    :glob:
 
    2.8.3/index
-   2.9.0-beta-20151211/index
 

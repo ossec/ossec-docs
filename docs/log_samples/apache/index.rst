@@ -10,5 +10,3 @@ Apache Logs
 
    apache
    apache_attacks
-   index
-   test

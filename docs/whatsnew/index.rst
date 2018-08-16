@@ -7,6 +7,29 @@ What's new
    :maxdepth: 1
    :glob:
 
+..   checksums/index
+
+3.0.0
+-----
+
+Released July 17, 2018:
+
+New Features
+
+* SQLite whitelist support for syscheck
+* Pagerduty Active Response
+* OSSEC agent selinux module
+* Win32 agent-auth support
+
+Updates
+
+* cJSON updated to 1.7.0
+* zlib update to 1.2.11
+
+Bug Fixes
+
+* So many. So. Many.
+=======
 2.9.4
 -----
 

@@ -1,3 +1,6 @@
+dpkg logs:
+^^^^^^^^^^
+
 `dpkg <http://en.wikipedia.org/wiki/Dpkg>`_ is the software at the base of the Debian package management system. dpkg is used to install, remove, and provide information about ``.deb`` packages.
 
 .. code-block:: console
