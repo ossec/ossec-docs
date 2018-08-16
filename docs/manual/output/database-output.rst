@@ -60,6 +60,6 @@ Database Specific Setup
 .. toctree::
     
     mysql-database-output 
-    pgsql-database-outout
+    pgsql-database-output
 
 

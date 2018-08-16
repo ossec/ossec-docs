@@ -200,7 +200,7 @@ Sifu Kurt at InfoSec Kwoon (2006 Oct)
 
   *"I've used a lot of different file integrity monitoring programs (Samhain, Osiris, and Tripwire just to name a few), and I've *
   *messed with a number of different programs for log parsing and event correlation. <b>Then I found OSSEC, which takes all of these *
-  *things to  an entirely new level</b>. Now instead of having to manage multiple different softare packages, I can do it in one. But *
+  *things to  an entirely new level</b>. Now instead of having to manage multiple different software packages, I can do it in one. But *
   *that's not the  coolest thing. OSSEC will allow you to monitor syslog and Windows event logs as well as Apache, IIS, Snort, and numerous other logs from a single location, and it has a very robust set of rules to do event correlation. If you are so inclined, *
   *you can even take advantage of the Active Response option and have OSSEC disable accounts, drop in firewall rules, etc., etc. Plus *
   *it does file  integrity monitoring on top of it all..."*
@@ -232,7 +232,7 @@ Pilou (2006)
   *"Nice soft.*
 
   *I've testing this hids on a Debian (kernel 2.6.17) and on a Red Hat Enterprise 3 (kernel 2.4).*
-  *It's works without problems. I've use Nessus to testing it, and, it's wonderfull.*
+  *It's works without problems. I've use Nessus to testing it, and, it's wonderful.*
   *Iptables and hosts.deny was use without troubles, and Nessus can't report some trouble or else.*
 
   *Great.*

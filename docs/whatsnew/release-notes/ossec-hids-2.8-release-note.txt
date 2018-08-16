@@ -12,7 +12,7 @@ Summary of changes in v2.8
     == Agent 
 	 - Fixed manage_agents -f potential infinite loop (awiddersheim)
 	 - Added manage_agents -r <id> to remove an agent (awiddersheim)
-	 - Allow NIX agents to use "-f" option and run in forground (awiddersheim)
+	 - Allow NIX agents to use "-f" option and run in foreground (awiddersheim)
 	 
      - Windows agent install/uninstall GUI enhancements (awiddersheim)
 	 - Windows agent_config profile fixed (gaelmuller)
@@ -27,7 +27,7 @@ Summary of changes in v2.8
     == Fix active-response on MAC OS Firewall (jknockaert)
 
 === Log monitoring/analysis
-	== Add option to allow the outputing of all alerts to a zeromq PUB socket 
+	== Add option to allow the outputting of all alerts to a zeromq PUB socket 
 		in JSON format, using cJSON library (jrossi, justintime32). New Config:
 		<ossec>
 			<global>

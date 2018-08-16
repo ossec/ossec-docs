@@ -395,7 +395,7 @@ Figure 6 explains everything.  I would like to point out a few important lines i
 
  
 
-Well, for all who don.t have enough time to do hex conversions here are the hex to decimel conversions:
+Well, for all who don.t have enough time to do hex conversions here are the hex to decimal conversions:
 
 48EB = 18667                         1A05 = 6661
 

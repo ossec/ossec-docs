@@ -4,7 +4,7 @@ Trend Micro, Inc.                                             November 16, 2012
 --------------------------------------------------------------------------------
 
 === LICENSE text: Added exception clause for OpenSSL, and make OSSEC GPLv2 (was v3)
-Fixed OpenSSL exception clause in LICNESE, adn os_auth source files.
+Fixed OpenSSL exception clause in LICENSE, adn os_auth source files.
      
 >   * As a special exception, the copyright holders give
 >   * permission to link the code of portions of this program with the
@@ -153,7 +153,7 @@ Fixed OpenSSL exception clause in LICNESE, adn os_auth source files.
        - firewall-drop.sh - Updated to support both IPv4 and IPv6 
        - firewall-drop.sh - fixed fw-drop lock issue that prevented script from exiting(beta1)
     == Fix active-response.c config value: "srcip" worked, but "user" was ignored 
-    == Fix Active Response to allow AR being triggerred with "(local_source)" (beta1)
+    == Fix Active Response to allow AR being triggered with "(local_source)" (beta1)
         It is a modification to OS_Exec(int *execq, int *arq, Eventinfo *lf, active_response *ar)
         Originally, OS_Exec would process the AR exec_msg only if the event location, 
         lf->location, contains a string starting with '(', signaling an agent_id is 

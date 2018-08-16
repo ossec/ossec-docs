@@ -23,7 +23,7 @@ Summary of changes in v2.7.1
 
 
 === Agents
-    == Make Heartbeat interval configuable (Christobel Rosa)
+    == Make Heartbeat interval configurable (Christobel Rosa)
 	- Was fixed at 10 minutes interval, now configurable
 	- Use ossec.conf "notify_time", "time-reconnect"
 	- For both *nix and Windows agents

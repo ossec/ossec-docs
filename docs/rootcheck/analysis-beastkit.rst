@@ -25,7 +25,7 @@ results of unmodified netstat shows following interesting connections:
     Proto Recv-Q Send-Q Local Address           Foreign Address         State
     tcp        0      0 0.0.0.0:56493           0.0.0.0:*               LISTEN
 
-    results of unmodified ps shows following interesting proceses: 
+    results of unmodified ps shows following interesting processes: 
     USER       PID %CPU %MEM  SIZE   RSS TTY STAT START   TIME COMMAND
     root     17081  0.0  0.0  1880     4  ?  S   03:42   0:00 /usr/sbin/arobia -q -p 56493 
     root     17097  0.0  0.0  1528   160  ?  S   03:42   0:00 lpsched  /usr/local/bin/bin/..././

@@ -20,7 +20,7 @@
 
 .. xml:element:: rule_dir 
 
-    Load a directory of rules.  The order of loaded files will be in alphebical order 
+    Load a directory of rules.  The order of loaded files will be in alphabetical order 
     and will not load any files that have been loaded before. 
 
     **Attributes:** 
@@ -72,18 +72,18 @@
 
 .. xml:element:: decoder_dir 
 
-    Load a directory of decoders.  The order of loaded files will be in alphebics order 
+    Load a directory of decoders.  The order of loaded files will be in alphabetical order 
     and will not load any files that have been loaded before.
     The path should be relative to the install directory, typically ``/var/ossec``.
 
     **Attributes:** 
     
-    - *pattern*: is a regex match string use to detemine if a file needs to be 
+    - *pattern*: is a regex match string use to determine if a file needs to be 
       loaded. 
         
         - *Defaults*: regex ".xml$" is used unless another one is specified. 
       
-    **Allowed:** Path to a directoy of decoder files 
+    **Allowed:** Path to a directory of decoder files 
 
     **Example:**
 

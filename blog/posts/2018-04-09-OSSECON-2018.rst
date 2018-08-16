@@ -1,0 +1,19 @@
+.. post:: Apr 09, 2018
+   :tags: ossecon
+   :category: Announcements
+   :author: Scott R. Shinn
+
+
+===============
+OSSEC CON 2018
+===============
+
+Thanks again for everyone who attended OSSEC Con 2018, it was fantastic meeting everyone and hearing how you're using OSSEC. I'd especially like to thank our sponsors: Virgil Security, Prometheus Global, Atomicorp and Cyber Academy.
+
+We've got some really exciting changes coming up soon!  We've started collecting the slides from the show here: `https://atomicorp.com/ossec-conference-2018/ <https://atomicorp.com/ossec-conference-2018/>`_ 
+
+Want to stay in touch with the latest OSSEC News, sign up at: `https://atomicorp.com/subscribe-ossec-monthly/ <https://atomicorp.com/subscribe-ossec-monthly/>`_
+
+
+As always, if you'd like to participate in OSSEC you can join us on Github page:  `https://github.com/ossec/ossec-hids/ <https://github.com/ossec/ossec-hids/>`_
+

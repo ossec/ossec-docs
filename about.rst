@@ -82,7 +82,7 @@ Atomicorp is the producer of Atomic Secured Linux™ which features a secure Lin
 includes OSSEC as one of its core technologies.  Atomicorp provides comprehensive support services 
 for all your security needs including deployment assistance and post-sale support for OSSEC. The 
 company has long been involved with the OSSEC Project and currently builds the OSSEC RPM packages 
-for each release. You can find out more about Atomicorp product and support offereings by contacting 
+for each release. You can find out more about Atomicorp product and support offerings by contacting 
 their sales team at sales@atomicorp.com or visiting their products listing page at: 
 `<https://atomicorp.com/product-listing/>`_.
 
@@ -90,7 +90,7 @@ their sales team at sales@atomicorp.com or visiting their products listing page 
 
 Wazuh provides `support and professional services <http://www.wazuh.com/professional-services/>`_ to Wazuh OSSEC users. The services include training, deployment assistance, health-checks, tuning and commercial support. You can reach Wazuh team at: contact@wazuh.com.
 
-Wazuh also contributes to the OSSEC project maintaing `installers <http://ossec.wazuh.com>`_ and providing an Open Source `ruleset <http://www.wazuh.com/ossec-ruleset/>`_ to improve OSSEC detection and log analysis capabilities. Wazuh has developed its own modules for OSSEC integration with Log management systems like Splunk or `Elasticsearch <http://wazuh.com/elk-stack/>`_. Their website includes documentation explaining how to use OSSEC to get in compliance with `PCI-DSS <http://www.wazuh.com/pci-dss>`_, and to monitor Amazon AWS environments. 
+Wazuh also contributes to the OSSEC project maintaining `installers <http://ossec.wazuh.com>`_ and providing an Open Source `ruleset <http://www.wazuh.com/ossec-ruleset/>`_ to improve OSSEC detection and log analysis capabilities. Wazuh has developed its own modules for OSSEC integration with Log management systems like Splunk or `Elasticsearch <http://wazuh.com/elk-stack/>`_. Their website includes documentation explaining how to use OSSEC to get in compliance with `PCI-DSS <http://www.wazuh.com/pci-dss>`_, and to monitor Amazon AWS environments. 
 
 OSSEC Team
 ~~~~~~~~~~
@@ -111,8 +111,6 @@ Currently the core OSSEC Team consists of the following developers and committer
 
 **Andrew Widdersheim** – Development, testing, rules – awiddersheim (at) hotmail.com
 
-**Vic Hargrave** – Development, testing – vichargrave (at) gmail.com
-
 **Jia-Bing (JB) Cheng** – SIEM integration, community support – Jia-BingJB_Cheng (at) trendmicro.com
 
 
@@ -121,5 +119,6 @@ Former OSSEC Team Members
 
 **Michael Starks** – Community Support, rules
 
+**Vic Hargrave** – Development, testing – vichargrave (at) gmail.com
 
 |

@@ -6,9 +6,9 @@ iplog is a TCP/IP traffic logger. Currently, it is capable of logging TCP, UDP, 
 iplog.conf:
 ^^^^^^^^^^^
 
- The syslog, user, group and internal network configuration is not show (OS dependient)
- iplog can log in diferets ways depending of the configuration parameters (DNS resolv, log_dest, etc), the proposed decoders and rules 
- only work with the logs later described, this configuration file extract is functional with this requeriment, please read man iplog 
+ The syslog, user, group and internal network configuration is not show (OS dependent)
+ iplog can log in different ways depending of the configuration parameters (DNS resolv, log_dest, etc), the proposed decoders and rules 
+ only work with the logs later described, this configuration file extract is functional with this requirement, please read man iplog 
  and man iplog.conf 
 
 
@@ -30,7 +30,7 @@ iplog.conf:
 
   set ignore_dns true
 
-#. I dont want too many logs: ignore www, netbios, microsoft-ds loc-srv, 5900 tcp/port conecctions, not all the OS recognize the port alias, replace with de adecuate port number
+#. I dont want too many logs: ignore www, netbios, microsoft-ds loc-srv, 5900 tcp/port connections, not all the OS recognize the port alias, replace with the OS recognize the port alias, replace with the port number
 
 .. code-block:: console
 
@@ -283,8 +283,8 @@ For this log:
 
   Nov 14 18:35:00 UDP: scan/flood detected [ports 33161,41107,63571,48714,25271,...] from 10.10.150.1 [ports 60362]
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -301,8 +301,8 @@ For this log:
 
   Nov 14 19:09:33 ICMP: ping flood detected from 10.10.150.1
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -321,8 +321,8 @@ For this log:
 
   Nov 14 18:57:18 UDP: traceroute from 10.10.150.2
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -343,8 +343,8 @@ For this log:
 
   Nov 14 15:57:56 TCP: Bogus TCP flags set by 10.10.160.2:60873 (dest port 25)
 
-a proppossed decoder is (not tested):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a proposed decoder is (not tested):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  <decoder name="iplog-bogustcp">
   <prematch>Bogus TCP flags set by</prematch>
@@ -558,8 +558,8 @@ To Enable or disable a mechanism that attempts to fool programs, such as nmap an
 
 As a side effect, enabling this option will also cause most of nmap's stealth" scans to fail.
 
-BSD's sysctl (some FreeBSD especific):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BSD's sysctl (some FreeBSD specific):
+^^^^^^^^^^^^^^^^^%^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 

@@ -59,7 +59,7 @@ discoverable for other developers.
 
 
 
-Options / Varaiables
+Options / Variables
 --------------------
 
 .. envvar:: TARGET 

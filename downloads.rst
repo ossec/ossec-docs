@@ -18,25 +18,25 @@ Source Downloads
 +--------------+-----------------------------------------------+-------------+
 
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Latest Stable Release (2.9.3)                                       | Checksum                 | Signature      |
+| Latest Stable Release (3.0.0)                                       | Checksum                 | Signature      |
 +=====================+===============================================+==========================+================+
-| Server/Agent Unix   | `ossec-hids-2.9.3.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
+| Server/Agent Unix   | `ossec-hids-3.0.0.tar.gz`_ – `Release Notes`_ |                          | `GPG Unix`_    |      
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Agent Windows       | `ossec-agent-win32-2.9.3.exe`_                |                          | `GPG Windows`_ |
+| Agent Windows       | `ossec-agent-win32-3.0.0.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Virtual Appliance   | `ossec-vm-2.8.3.ova`_ – `README`_             | `VA Checksum`_           |                |
+| Virtual Appliance   | `ossec-vm-2.9.3.ova`_ – `README`_             | `VA Checksum`_           |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Docker Container    | `atomicorp/ossec-docker`_                     |                          |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 
-.. _ossec-hids-2.9.3.tar.gz: https://github.com/ossec/ossec-hids/archive/2.9.3.tar.gz
-.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/2.9.3
-.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/2.9.3/ossec-hids-2.9.3.tar.gz.asc
-.. _ossec-agent-win32-2.9.3.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe 
-.. _GPG Windows: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-2.9.3-2912.exe.asc
-.. _ossec-vm-2.8.3.ova: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.ova
-.. _README: http://ossec.wazuh.com/vm/ossec-vm-2.8.3.README
-.. _VA Checksum: http://ossec.wazuh.com/vm/ossec-vm-2.8.3-checksum.txt
+.. _ossec-hids-3.0.0.tar.gz: https://github.com/ossec/ossec-hids/archive/3.0.0.tar.gz
+.. _Release Notes: https://github.com/ossec/ossec-hids/releases/tag/3.0.0
+.. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/3.0.0/ossec-hids-3.0.0.tar.gz.asc
+.. _ossec-agent-win32-3.0.0.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-3.0.0-5505.exe
+.. _GPG Windows: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-3.0.0-5505.exe.asc
+.. _ossec-vm-2.9.3.ova: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3.ova
+.. _README: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3.README
+.. _VA Checksum: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3-checksum.txt
 .. _atomicorp/ossec-docker: https://hub.docker.com/r/atomicorp/ossec-docker/
 
 +=====================+================================+==========================================================================+======================+
@@ -71,10 +71,6 @@ Available in the `Atomicorp repository <https://updates.atomicorp.com/channels/a
 +--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
 | el7 x86_64         | `<https://updates.atomicorp.com/channels/atomic/centos/7/x86_64/RPMS/>`_          | `atomic-release-1.0-21.el7.art.noarch.rpm`_       |
 +--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
-| Amazon Linux       | `<https://updates.atomicorp.com/channels/atomic/amazon/1/x86_64/RPMS/>`_          |                                                   |
-+--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
-| Amazon Linux (LTS) | `<https://updates.atomicorp.com/channels/atomic/amazon/2/x86_64/RPMS/>`_          |                                                   |
-+--------------------+-----------------------------------------------------------------------------------+---------------------------------------------------+
 
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 | Fedora                                                                                               | atomic-release                                       |
@@ -87,8 +83,18 @@ Available in the `Atomicorp repository <https://updates.atomicorp.com/channels/a
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | fc27 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/27/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc27.art.noarch.rpm`_         |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
+| fc28 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/28/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc28.art.noarch.rpm`_         |
++------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | Legacy           | `<https://updates.atomicorp.com/channels/atomic/fedora/>`_                        |                                                      |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
+
++-----------------------------------------------------------------------------------------+
+| Amazon Linux                                                                            |
++==============+==========================================================================+
+| Amazon       | `<https://updates.atomicorp.com/channels/ossec/amazon/1/x86_64/RPMS/>`_  |
++--------------+--------------------------------------------------------------------------+
+| Amazon (LTS) | `<https://updates.atomicorp.com/channels/ossec/amazon/2/x86_64/RPMS/>`_  |
++--------------+--------------------------------------------------------------------------+
 
 .. _atomic-release-1.0-21.el5.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/centos/5/i386/RPMS/atomic-release-1.0-21.el5.art.noarch.rpm
 .. _atomic-release-1.0-21.el6.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/centos/6/i386/RPMS/atomic-release-1.0-21.el6.art.noarch.rpm
@@ -97,9 +103,13 @@ Available in the `Atomicorp repository <https://updates.atomicorp.com/channels/a
 .. _atomic-release-1.0-21.fc25.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/25/x86_64/RPMS/atomic-release-1.0-21.fc25.art.noarch.rpm
 .. _atomic-release-1.0-21.fc26.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/26/x86_64/RPMS/atomic-release-1.0-21.fc26.art.noarch.rpm
 .. _atomic-release-1.0-21.fc27.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/27/x86_64/RPMS/atomic-release-1.0-21.fc27.art.noarch.rpm
+.. _atomic-release-1.0-21.fc28.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/28/x86_64/RPMS/atomic-release-1.0-21.fc28.art.noarch.rpm
 
 
-Ubuntu, and Debian and others
+
+
+
+Ubuntu, and Debian 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +---------------------------------------------------------------------------------------+
@@ -111,7 +121,7 @@ Ubuntu, and Debian and others
 +--------------+------------------------------------------------------------------------+
 | 16 (xenial)  | `<https://updates.atomicorp.com/channels/ossec/ubuntu/pool/main/o/>`_  | 
 +--------------+------------------------------------------------------------------------+
-| 17 (artful)  | `<https://updates.atomicorp.com/channels/ossec/ubuntu/pool/main/o/>`_  | 
+| 18 (bionic)  | `<https://updates.atomicorp.com/channels/ossec/ubuntu/pool/main/o/>`_  | 
 +--------------+------------------------------------------------------------------------+
 
 
@@ -128,9 +138,8 @@ Ubuntu, and Debian and others
 
 
 
-
-Yum/DNF Automated Installation on Centos, Redhat, or Fedora
-===========================================================
+Yum/DNF Automated Installation on Centos, Redhat, Amazon Linux or Fedora
+========================================================================
 
 Automated installer:
 
@@ -154,7 +163,7 @@ Manual Yum/DNF installation on Centos, Redhat, Amazon Linux or Fedora
 
 1. Download the atomic-release file for your distribution
 
-2. Install the atomic-relase package (Note: This includes the OSSEC GPG key)
+2. Install the atomic-release package (Note: This includes the OSSEC GPG key)
 
 .. code:: console
 
@@ -228,13 +237,13 @@ Manual APT Installation on Ubuntu and Debian
 GPG / PGP key
 ~~~~~~~~~~~~~
 
-+-----------------------+-----------------------------------------------------+
-| Key                   | Manual Download Link                                |
-+-----------------------+-----------------------------------------------------+
-| Package Signing Key   | https://www.atomicorp.com/RPM-GPG-KEY.art.txt       |
-+-----------------------+-----------------------------------------------------+
-| Source Signing Key  c | https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc |
-+-----------------------+-----------------------------------------------------+
++-----------------------+-----------------------------------------------------------+
+| Key                   | Manual Download Link                                      |
++-----------------------+-----------------------------------------------------------+
+| Package Signing Key   | https://www.atomicorp.com/RPM-GPG-KEY.atomicorp.txt       |
++-----------------------+-----------------------------------------------------------+
+| Source Signing Key  c | https://ossec.github.io/files/OSSEC-ARCHIVE-KEY.asc       |
++-----------------------+-----------------------------------------------------------+
 
 Before you install any package from our project, we recommend that you
 verify it using our PGP key. Follow these two steps if you are not used

@@ -140,7 +140,7 @@ snapshot/20150112 (2015/01/11 13:57 +00:00)
 -  `#449 <https://github.com/ossec/ossec-hids/pull/449>`__ Fix include
    order warnings when compiling win32 (@awiddersheim)
 -  `#448 <https://github.com/ossec/ossec-hids/pull/448>`__ Fix manage
-   agents error messaage compile warning (@awiddersheim)
+   agents error message compile warning (@awiddersheim)
 -  `#441 <https://github.com/ossec/ossec-hids/pull/441>`__ Fix
    csyslogd-config XML syslog location definition (@mikey-austin)
 -  `#440 <https://github.com/ossec/ossec-hids/pull/440>`__ Format
@@ -192,7 +192,7 @@ snapshot/20150112 (2015/01/11 13:57 +00:00)
 -  `#398 <https://github.com/ossec/ossec-hids/pull/398>`__ Cppcheck
    cleanup (@jrossi)
 -  `#396 <https://github.com/ossec/ossec-hids/pull/396>`__ enabling
-   apparomor for new installs (@jrossi)
+   apparmor for new installs (@jrossi)
 -  `#395 <https://github.com/ossec/ossec-hids/pull/395>`__ moving
    srandom\_init before chroot (@jrossi)
 -  `#385 <https://github.com/ossec/ossec-hids/pull/385>`__ os\_auth
@@ -223,7 +223,7 @@ snapshot/20150112 (2015/01/11 13:57 +00:00)
    agents keys (@awiddersheim)
 -  `#379 <https://github.com/ossec/ossec-hids/pull/379>`__ Remove unused
    files and moved files into correct location. (@jrossi)
--  `#378 <https://github.com/ossec/ossec-hids/pull/378>`__ intergrations
+-  `#378 <https://github.com/ossec/ossec-hids/pull/378>`__ integrations
    into slack (@jrossi)
 -  `#376 <https://github.com/ossec/ossec-hids/pull/376>`__ Merge test
    makefile (@cgzones)
@@ -478,7 +478,7 @@ v2.8.0 (2014/05/22 13:10 +00:00)
 -  `#173 <https://github.com/ossec/ossec-hids/pull/173>`__ os\_xml
    refresh2 (@cgzones)
 -  `#180 <https://github.com/ossec/ossec-hids/pull/180>`__ Use the
-   evironment for the CC binary (@jrossi)
+   environment for the CC binary (@jrossi)
 -  `#179 <https://github.com/ossec/ossec-hids/pull/179>`__ Fixes to
    win32 installation (@awiddersheim)
 -  `#176 <https://github.com/ossec/ossec-hids/pull/176>`__ Fix windows
@@ -648,7 +648,7 @@ v2.8.0 (2014/05/22 13:10 +00:00)
 -  `#55 <https://github.com/ossec/ossec-hids/pull/55>`__ Merging in
    changes from @cgzones (@jrossi)
 -  `#53 <https://github.com/ossec/ossec-hids/pull/53>`__ Travis ci build
-   windows and fix for setenv not being avaiable on win32 (@jrossi)
+   windows and fix for setenv not being available on win32 (@jrossi)
 -  `#49 <https://github.com/ossec/ossec-hids/pull/49>`__ Use cJSON
    instead of writing a custom JSON output format. (@reyjrar)
 -  `#44 <https://github.com/ossec/ossec-hids/pull/44>`__ Feature:

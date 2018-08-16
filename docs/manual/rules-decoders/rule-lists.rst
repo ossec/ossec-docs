@@ -113,7 +113,7 @@ CDB files must be compiled before they can be used.  :ref:`ossec-makelists` is u
 to compile lists.  
 
 The command :ref:`ossec-makelists` will process and compile all lists if the master text 
-rules have been changed. Basicly logic is as follows:
+rules have been changed. Basically logic is as follows:
 
 - Read ossec.conf for all lists 
 - Check the mtime of each list and compare it to the mtime of the compiled .cdb file

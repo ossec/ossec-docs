@@ -1,4 +1,4 @@
-* This page was reproduced here with permission from Jeremy Rossi.  Orgianl post was `Praetorian Prefect: OSSEC: Agentless scripts <http://praetorianprefect.com/archives/2009/11/ossec-agentless-scripts/>`_
+* This page was reproduced here with permission from Jeremy Rossi.  Original post was `Praetorian Prefect: OSSEC: Agentless scripts <http://praetorianprefect.com/archives/2009/11/ossec-agentless-scripts/>`_
 
 Agentless Scripts
 ^^^^^^^^^^^^^^^^^
