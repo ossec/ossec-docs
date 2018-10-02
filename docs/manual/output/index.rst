@@ -14,7 +14,6 @@ Contents:
     json-alert-log-output
     database-output 
     reports-email-output
-    picviz-output
     prelude-output
 
 
