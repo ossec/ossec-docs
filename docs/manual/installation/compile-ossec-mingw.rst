@@ -74,7 +74,6 @@ This should produce a good amount of compilation output that ends with:
        USE_GEOIP:        no
        USE_PRELUDE:      no
        USE_OPENSSL:      no
-       USE_PICVIZ:       no
        USE_INOTIFY:      no
    Mysql settings:
        includes:
