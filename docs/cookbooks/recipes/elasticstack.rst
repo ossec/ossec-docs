@@ -44,6 +44,7 @@ Configure logstash:
            "[type]" => "osseclogs"
          }
        }
+     }
    }
 
    output {
