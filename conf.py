@@ -67,7 +67,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OSSEC'
-copyright = u'2010-2017, OSSEC Project Team'
+copyright = u'2010-2018, OSSEC Project Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
