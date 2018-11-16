@@ -22,6 +22,11 @@ The destination email address and mail host should be configured inside the
 
 Full details on all the options are available at :ref:`ossec_config.global`
 
+.. note::
+
+   If the `smtp_server` entry contains a hostname, `/etc/resolv.conf` will probably have to be 
+   copied to OSSEC's `etc` directory (`/var/ossec/etc` by default).
+
 Set the alert levels that will send notifications 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

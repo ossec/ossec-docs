@@ -36,6 +36,11 @@
 
     **Allowed:** Any valid hostname or IP Address 
 
+.. note::
+
+   If the `smtp_server` entry contains a hostname, `/etc/resolv.conf` will probably have to be
+   copied to OSSEC's `etc` directory (`/var/ossec/etc` by default).   
+
 .. xml:element:: email_maxperhour
 
     Specifies the maximum number of e-mails to be sent per hour. All emails in excess of this setting will be queued for later distribution.
