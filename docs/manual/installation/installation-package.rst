@@ -28,7 +28,7 @@ And for an agent run:
 
 .. code-block:: console
 
-   # yum install ossec-hids ossec-hids-client
+   # yum install ossec-hids ossec-hids-agent
 
 
 Deb Installation
