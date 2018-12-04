@@ -8,10 +8,24 @@
     <section class="bg-1 text-center">
       <!-- <h1><img src="_static/ossec_logo.png">&nbsp;OSSEC</h1>
       <p class="lead">Open Source HIDS SECurity</p> -->
-      <a href="https://atomicorp.com/ossec-conference-2019-subscribe/" style="position:absolute;margin-left:315px;top:342px;width:281px;height:63px;"></a>
+      <a href="https://atomicorp.com/ossec-con2019/" style="position:absolute;margin-left:315px;top:342px;width:281px;height:63px;"></a>
     </section>
     <!--/parallax 1-->
 
+      <h1>OSSEC CON 2019</h1>
+      <hr>
+
+      <p>Join OSSEC users from around the world on&nbsp;<strong>March 20-21, 2019&nbsp;</strong>at the Dulles Hilton in Herndon, Virginia to discuss the latest project updates, hear from project leaders about new features in OSSEC 3.1 and review case studies and best practices. <strong>Atomicorp</strong> is pleased to once again host this global gathering of the OSSEC community.</p>
+      <p><strong><u>Help Us Better Serve the OSSEC Community!</u></strong></p>
+
+      <p class="mFont14">Please take a 10 minute survey&nbsp;to tell us&nbsp;more about how you&rsquo;re using OSSEC and what you would like to see in the future.&nbsp;</p>
+
+      <p class="mFont14">We&rsquo;ll analyze&nbsp;the data and share the findings with everyone who participates.</p>
+      <p>To sweeten the pot, we&rsquo;re also doing a drawing for a $250 Amazon gift card!</p>
+
+      <p><a title="Click Here for OSSEC Survey" href="https://www.surveymonkey.com/r/OSSECSite ">Click Here for the OSSEC Survey</a>. Thank you in advance for your feedback!</p>
+
+      <br><hr>
     <div class="divider"></div>
 
     <div class="container">
