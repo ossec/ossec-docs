@@ -8,8 +8,8 @@
     <section class="bg-1 text-center">
       <!-- <h1><img src="_static/ossec_logo.png">&nbsp;OSSEC</h1>
       <p class="lead">Open Source HIDS SECurity</p> -->
-      <a href = https://atomicorp.com" style="position:absolute;margin-left:115px;top:142px;width:261px;height:63px;"></a>
-      <a href="https://atomicorp.com/ossec-con2019/" style="position:absolute;margin-left:315px;top:342px;width:261px;height:63px;"></a>
+      <a href = "https://atomicorp.com/ossec-con2019/"style=position:absolute;margin-left:115px;top:142px;width:261px;height:63px;"></a>
+      <a href="https://www.surveymonkey.com/r/OSSECSite" style="position:absolute;margin-left:315px;top:342px;width:261px;height:63px;"></a>
     </section>
     <!--/parallax 1-->
 
