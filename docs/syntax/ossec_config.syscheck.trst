@@ -61,6 +61,14 @@
 
         **Allowed:** Any directory or file name (but not a path)
 
+    - **no_recurse**: Value=no
+
+        .. versionadded:: 3.2
+
+        - Do not recurse into the defined directory.
+
+        **Allowed:** yes/no
+
 .. object:: ignore
 
     List of files or directories to be ignored (one entry per element). The files and directories are still checked, but the results are ignored.
