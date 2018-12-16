@@ -88,6 +88,8 @@ Available in the `Atomicorp repository <https://updates.atomicorp.com/channels/a
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | fc28 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/28/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc28.art.noarch.rpm`_         |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
+| fc29 x86_64      | `<https://updates.atomicorp.com/channels/atomic/fedora/29/x86_64/RPMS/>`_         | `atomic-release-1.0-21.fc29.art.noarch.rpm`_         |
++------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 | Legacy           | `<https://updates.atomicorp.com/channels/atomic/fedora/>`_                        |                                                      |
 +------------------+-----------------------------------------------------------------------------------+------------------------------------------------------+
 
@@ -107,6 +109,7 @@ Available in the `Atomicorp repository <https://updates.atomicorp.com/channels/a
 .. _atomic-release-1.0-21.fc26.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/26/x86_64/RPMS/atomic-release-1.0-21.fc26.art.noarch.rpm
 .. _atomic-release-1.0-21.fc27.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/27/x86_64/RPMS/atomic-release-1.0-21.fc27.art.noarch.rpm
 .. _atomic-release-1.0-21.fc28.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/28/x86_64/RPMS/atomic-release-1.0-21.fc28.art.noarch.rpm
+.. _atomic-release-1.0-21.fc29.art.noarch.rpm: https://updates.atomicorp.com/channels/atomic/fedora/29/x86_64/RPMS/atomic-release-1.0-21.fc29.art.noarch.rpm
 
 
 
