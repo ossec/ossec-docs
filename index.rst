@@ -109,7 +109,7 @@
         <div class="row">
             <div class="col-md-4">
               <div class="panel panel-default">
-                <div class="panel-heading"><h3><a href="https://atomicorp.com/">Atomicorp</a></h3></div>
+                <div class="panel-heading"><h3><a href="https://atomicorp.com/atomic-secured-ossec/">Atomicorp</a></h3></div>
                 <div class="panel-body"><p>Atomicorp is your OSSEC expert which developed a set of tools
                 and rules for managing and securing the OSSEC host intrusion
                 detection system. Our <a href="https://atomicorp.com/atomic-secured-ossec/">Atomic Secured OSSEC</a>
