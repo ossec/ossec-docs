@@ -178,7 +178,7 @@ This feature uses code from `Xavier Mertens. <https://blog.rootshell.be/2013/05/
 
 Configure the database in `ossec.conf`:
 
-.. code-block:: console
+.. code-block:: xml
 
    </global>
      <md5_whitelist>/rules/lists/md5whitelist.db</md5_whitelist>
