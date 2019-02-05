@@ -72,6 +72,7 @@ Dominik Lisiak
 
 
 **General**
+
 * (@mig5) - firewall-drop.sh, modify to support non-bash environments - PR #1572
 * (@mwmahlberg) - ossec-agent.conf, remove double hyphen in comment. Fixes issue #1582 - PR #1583
 * (@ddpbsd) - ossec-maild, allow permission changes to make it into email alerts. Fixes issue #1571 - PR #1593
