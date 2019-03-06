@@ -59,7 +59,7 @@ discoverable for other developers.
 
 
 
-Options / Varaiables
+Options / Variables
 --------------------
 
 .. envvar:: TARGET 
@@ -93,6 +93,30 @@ Options / Varaiables
     **Default:** /var/ossec 
 
     **Allowed:** All valid paths 
+
+.. envvar:: ZLIB_SYSTEM
+
+.. versionadded:: 3.0
+
+   ``ZLIB_SYSTEM`` can enable OSSEC to use a pre-installed zlib instead of the bundled version.
+
+   **Applies to Target:** all
+
+   **Default:** no
+
+   **Allowed:** yes/no
+
+.. envvar:: LUA_ENABLE
+
+.. versionadded:: 3.0
+
+   ``LUA_ENABLE`` can enable or disable the bundled lua support.
+
+   **Applies to Target:** all
+
+   **Default:** yes
+
+   **Allowed:** yes/no
 
 .. envvar:: MAXAGENTS 
 
@@ -181,6 +205,17 @@ Options / Varaiables
     **Default:** 0
 
     **Allowed:** 0/1
+
+.. envvar:: USE_SQLITE
+
+   ``USE_SQLITE`` enables support for sqlite3 databases.
+
+   **Spplies to Target:** server/hybrid/local
+
+   **Default:** 0
+
+   **Allowed:** 0/1
+
 
 .. envvar:: DATABASE
 

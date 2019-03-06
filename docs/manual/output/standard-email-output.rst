@@ -20,7 +20,12 @@ The destination email address and mail host should be configured inside the
             <smtp_server>mx.example.com..</smtp_server>
             <email_from>ossec@example.com</email_from>
 
-Full details on all the options are avaiable at :ref:`ossec_config.global`
+Full details on all the options are available at :ref:`ossec_config.global`
+
+.. note::
+
+   If the `smtp_server` entry contains a hostname, `/etc/resolv.conf` will probably have to be 
+   copied to OSSEC's `etc` directory (`/var/ossec/etc` by default).
 
 Set the alert levels that will send notifications 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -34,7 +39,7 @@ The minimum email_alert_level can be set inside the <alerts> section of the
         <alerts>
             <email_alert_level>10</email_alert_level> 
 
-Full details on all the options are avaiable at :ref:`ossec_config.alerts`
+Full details on all the options are available at :ref:`ossec_config.alerts`
 
 
 Restart OSSEC to complete the changes

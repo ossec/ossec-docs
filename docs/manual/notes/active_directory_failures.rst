@@ -19,7 +19,7 @@ This `link <http://blog.scottlowe.org/2006/10/23/event-logging-in-ad-integration
   3. Logs the 675 error in the Event log.
 
 
-To avoid receving multiple ``18152 fired (level 10) -> "Multiple Windows Logon Failures."`` on OSSEC, you can ignore this specific event id, with the following local rule (ignoring 675 error with Failure code 0x19):
+To avoid receiving multiple ``18152 fired (level 10) -> "Multiple Windows Logon Failures."`` on OSSEC, you can ignore this specific event id, with the following local rule (ignoring 675 error with Failure code 0x19):
 
 .. code-block:: console
 

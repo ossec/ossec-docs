@@ -10,7 +10,7 @@ Overview
 Supported types 
 ^^^^^^^^^^^^^^^
 
-Most active-reponse options are available in the the following installation types:
+Most active-response options are available in the the following installation types:
 
 * server
 * local 

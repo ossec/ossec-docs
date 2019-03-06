@@ -46,7 +46,7 @@ ossec-makelists argument options
 
 .. option:: -V
 
-    Diplay the version and license information.
+    Display the version and license information.
 
 
 

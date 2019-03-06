@@ -167,4 +167,34 @@ For example:
     designated, e.g. mp3, iso, executable, /chroot/dev/urandom (which would fill your hard drive). 
     So unless libmagic is used, be very carefull on which directory you enable report_changes.
 
+
+MD5 whitelist database
+----------------------
+
+`ossec-analysisd` can query an sqlite database for known-good md5 hashes.
+The database should contain the hashes, file names, and an optional date.
+
+This feature uses code from `Xavier Mertens. <https://blog.rootshell.be/2013/05/13/improving-file-integrity-monitoring-with-ossec/>`_
+
+Configure the database in `ossec.conf`:
+
+.. code-block:: xml
+
+   </global>
+     <md5_whitelist>/rules/lists/md5whitelist.db</md5_whitelist>
+   </global>
+
+Schema:
+
+.. code-block:: sql
+
+   CREATE TABLE files (
+       md5sum VARCHAR(32),
+       file VARCHAR(256),
+       time DATETIME
+   );
+   CREATE UNIQUE INDEX files_idx ON files(md5sum);
+
+
+
 .. include:: ../../faq/syscheck.rst

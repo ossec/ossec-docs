@@ -10,7 +10,7 @@ section {
 }
 
 .bg-1 {
-    background: url('laptop.jpg') no-repeat center center fixed;
+    background: url('ossec-conference-2019-github-banner-01.png') no-repeat center center;
     color:#fff;
     background-size:cover;
     margin-left: -80px;
@@ -44,4 +44,3 @@ section {
 #footer a {
   color:#efefef;
 }
-

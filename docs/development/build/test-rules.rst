@@ -5,7 +5,7 @@ test-rules:
 
 OSSEC includes the facilities to test rules in bulk.
 These checks should ensure there are no regressions after changes have been made.
-``ossec-logtest -U`` is used to testthe outcome of rules. If ``ossec-logtest`` 
+``ossec-logtest -U`` is used to test the outcome of rules. If ``ossec-logtest`` 
 exits with any code but 0 it is considered a failure.
 
 

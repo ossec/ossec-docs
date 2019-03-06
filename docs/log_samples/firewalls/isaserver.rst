@@ -1,5 +1,5 @@
 Microsoft ISA Server
-  --------------------
+--------------------
 
 Here is a sample of the firewall log from Microsoft ISA Server 2004
 (in W3c extended format). Note that when the W3C extended log format

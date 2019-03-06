@@ -3,7 +3,7 @@ Information about the Knark Rootkit
 ===================================
 
 Knark is a kernel-based rootkit for Linux 2.2/2.4. It hide ports, files 
-and processes from the administrator. This rootkit is very powerfull 
+and processes from the administrator. This rootkit is very powerful
 and had been used by "crackers" in a lot of compromised machines. 
 
 More Information
@@ -11,7 +11,6 @@ More Information
 
 - A complete analysis, done by Toby Miller, can be found here: :ref:`analysis-knack`
 - Knark README can be found :ref:`readme-knack`
-- Download: http://www.ossec.net/rootkits/files/knark-2.4.3.tgz MD5: ca1ebe26ab1138ebe431751f526df817
 
 
 Files
@@ -31,6 +30,5 @@ Files
     
     All files with an "*" need to be search in all system
 
-If you have any more Information about this rootkits sent to rootkits at ossec.net 
 
 

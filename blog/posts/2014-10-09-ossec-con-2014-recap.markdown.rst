@@ -1,5 +1,5 @@
 .. post:: Oct 09, 2014
-   :tags: ossec, osssecon, conf, aleinvault, atomicorp
+   :tags: ossec, osssecon, conf, alienvault, atomicorp
    :category: Announcements
    :author: Vic Hargrave
 
@@ -28,7 +28,7 @@ Lhotsky <https://www.packtpub.com/networking-and-servers/instant-ossec-host-base
 talked to us about what he has done with OSSEC to help automate his
 security operations at Booking.com.
 
-Barry O’Meara from AleinVault shared his experiences with using OSSEC
+Barry O’Meara from AlienVault shared his experiences with using OSSEC
 with Amazon CloudTrail to provide intrusion detection for AWS instances.
 
 I gave a talk on using Elasticsearch to manage OSSEC security alerts. I

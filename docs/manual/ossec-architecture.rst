@@ -82,22 +82,7 @@ can be executed and the admin is notified.
    :align: center
    :alt: Ossec architecture network diagram
 
-Internal Architecture
-~~~~~~~~~~~~~~~~~~~~~
-
-For technical and deep detailed information on how it works, please read the 
-following documents:
-
-`OSSEC log analysis/inspection architecture <http://ossec.net/ossec-docs/auscert-2007-dcid.pdf>`_ (PDF) - by Daniel Cid
-
-
  
-.. image:: logo_tagline_09.png
-   :align: center 
-   :target: http://www.ossec.net/main/get-commercial-support
-
-
-
 
 
 

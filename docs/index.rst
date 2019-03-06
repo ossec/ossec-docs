@@ -60,11 +60,8 @@ Reference
     syntax/index
     formats/index
     programs/index
-    .. whatsnew/index
     rootcheck/index
-    .. log_samples/index
     examples/index
-    glossary
 
 
 

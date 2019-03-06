@@ -26,7 +26,7 @@ The checksum and gpg signature are also available:
 
 List of features/bugs that we plan to add on the next version. 
 
-* [http://www.ossec.net/bugs/show_bug.cgi?id=125 Bug 118] Is it possible to add one link in the main page (next to the agents list) that would search for alll the messages from the selected agent? by <i>Nuno Gomes</i>
+* [http://www.ossec.net/bugs/show_bug.cgi?id=125 Bug 118] Is it possible to add one link in the main page (next to the agents list) that would search for all the messages from the selected agent? by <i>Nuno Gomes</i>
 
 * [http://www.ossec.net/bugs/show_bug.cgi?id=125 Bug 119] Support for Firewall logs (reading from logs/firewall/firewall.log). We already started something, but it is incomplete (look at searchfw.php).
 

@@ -30,7 +30,7 @@ Goals
 ------
 
 The OSSEC Style Guide is meant to provide framework and guide of formating 
-code contributer to OSSEC.  The overall goals are:
+code contributor to OSSEC.  The overall goals are:
 
 * Maximize Readability of code in OSSEC;
 * Reduction in the number of bugs by removing ambiguity in code and logic flow;
@@ -55,7 +55,7 @@ Indentation
 
 * 4 spaces shall be used per indentation level. *--indent=spaces=4*
 * Switch and case blocks shall be indented. *--indent-switches*
-* Preprocessor conditional statements shall be indeted to the same level as the source code. *--indent-preproc-cond*
+* Preprocessor conditional statements shall be indented to the same level as the source code. *--indent-preproc-cond*
 
 File endings
 ============
@@ -69,7 +69,7 @@ Breaking long lines and strings
 Placing Braces and Spaces
 =========================
 
-* Braces shall be placed accoriding to the stroustrup style. *--style=stroustrup*
+* Braces shall be placed according to the stroustrup style. *--style=stroustrup*
 * Operators shall be padded by a space. *--pad-oper*
 * Every branch of conditional statements shall be surrounded by brackets. *--add-brackets*
 * Pointer and reference operators shall be attached to the variable name. *--align-pointer=name*

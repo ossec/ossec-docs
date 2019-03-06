@@ -12,8 +12,8 @@ It then reads strings from stdin and outputs matches to stdout.
 ``+OSRegex_Execute`` and ``+OS_Regex`` are printed if a match is successful.
 
 
-Example 1: A siple digit match:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example 1: A simple digit match:
+^^^^^^^^^^^^^~^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 

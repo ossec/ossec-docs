@@ -31,7 +31,7 @@ Convert the file using the following procedure:
 
 .. code-block:: console
 
-   # tar zxvf ossec_virtual_apliance.tar.gz
+   # tar zxvf ossec_virtual_appliance.tar.gz
    # cd ossec_virtual_appliance
    # ovftool ossec.ovf ossec.vmx
 

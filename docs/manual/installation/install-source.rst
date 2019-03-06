@@ -8,12 +8,12 @@ Installation of OSSEC HIDS is very simple, the ``install.sh`` shell script autom
 There are a few questions to be answered before the installation will occur, one of the most 
 important being which type of installation is desired.
 It is important to choose the correct installation type: server, agent, local, or hybrid.
-More information on thse can be found on the `OSSEC Architecture page <../ossec-architecture.html>`_.
+More information on them can be found on the `OSSEC Architecture page <../ossec-architecture.html>`_.
 
 .. note::
 
     In the following installation the commands follow the ``#``. 
-    Everything else is either comments out output. 
+    Everything else is either comments or output. 
 
 1. Download the latest version and verify its checksum.
 
@@ -41,5 +41,20 @@ More information on thse can be found on the `OSSEC Architecture page <../ossec-
         # /var/ossec/bin/ossec-control start  
 
 
+Manual Installation
+===================
 
+OSSEC can also be installed in a more manual fashion.
+No modifications will be made to the `ossec.conf` file, so it will have to be configured after installation.
+The `ossec`, `ossecm` and `ossecr` users will still be created automatically.
+
+After the source tarball is downloaded and extracted:
+
+.. code-block:: console
+
+   cd ossec-hids-*/src
+   make TARGET=<server|local|agent>
+   make install
+
+Build options can still be passed to `make` (`USE_ZEROMQ`, `USE_GEOIP`, etc.).
 
