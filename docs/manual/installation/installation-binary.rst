@@ -5,8 +5,10 @@ Compiling OSSEC for a Binary Installation
 
 OSSEC is typically compiled on each system it is installed on, but this may not always be easy. 
 To help in these cases there are a few methods of binary installation available. OSSEC can be 
-compiled on one system, and copied to the destination systems. There ar RPM and deb packages 
-available.
+compiled on one system, and copied to the destination systems. This installation method still 
+requires GNU make on the target system.
+
+There are also RPM and deb packages available for some systems.
 
 
 
