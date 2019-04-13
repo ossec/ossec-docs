@@ -9,9 +9,6 @@ OpenSSL is a suggested, but optional, prerequisite.
 However, you always have the option to pre-compile
 it on one system and move the binaries to the final box.
 
-General
-=======
-
 PCRE2
 -----
 
@@ -48,9 +45,6 @@ To use the included version of zlib, simply set `ZLIB_SYSTEM` to `no`:
 
    # cd ossec-hids-*
    # ZLIB_SYSTEM=no ./install.sh
-
-Linux
-=====
 
 Ubuntu
 ------
