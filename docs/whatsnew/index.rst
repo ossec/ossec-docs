@@ -165,8 +165,6 @@ General
 * PR #1136: Fix for mysql building
 * PR #1144: Fixes Issue #1142 for CEF support (@mkvocka)
 
-.. include:: checksums/2.9.1/291.trst
-
 
 
 2.9.0
@@ -262,8 +260,6 @@ General
 * PR #926 Rootcheck, updates or EL7
 * PR #945 Remove debug message
 * PR #986 - Prevent manage_agents from chrooting in bulk mode
-
-.. include:: checksums/2.9.0/290.trst
 
 
 2.8.3
