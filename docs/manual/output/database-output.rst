@@ -1,5 +1,5 @@
 
-.. _manual-out-prelude:
+.. _manual-out-database:
 
 Sending output to a Database
 ----------------------------

@@ -16,7 +16,7 @@ The RPMs can be installed by adding the AtomiCorp yum repository:
 
 .. code-block:: console
 
-   # wget -q -O - https://updates.atomicorp.com/installers/atomic |sh 
+   # wget -q -O - https://updates.atomicorp.com/installers/atomic | sh 
 
 Next use ``yum`` to install the specific packages. For an OSSEC server run:
 
@@ -65,8 +65,6 @@ Install OSSEC HIDS server/manager:
 .. code-block:: console
 
     # apt-get install ossec-hids
-
-.. code-block:: console
 
 Or install OSSEC HIDS agent:
 
