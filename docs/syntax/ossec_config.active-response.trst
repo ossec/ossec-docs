@@ -58,7 +58,7 @@ Active-response Options
     - *server*: on the OSSEC server 
     - *defined-agent*: on a specific agent (when using this option, you need to set the 
       agent_id to use)
-    - *all*: or everywhere.
+    - *all*: all agents
 
 .. xml:element:: agent_id 
 
