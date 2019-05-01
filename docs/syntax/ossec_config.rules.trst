@@ -28,7 +28,7 @@
     - *pattern*: is a regex match string use to determine if a file needs to be 
       loaded. 
         
-        - *Defaults*: regex "_rules.xml$" is used unless another one is specified. 
+        - *Default*: regex "_rules.xml$" is used unless another one is specified. 
       
     **Allowed:** Path to a directory of rule files 
 
@@ -50,7 +50,7 @@
             
             <ossec_config>
                 <rules>
-                    <rule_dir pattern=".xml$">rules</rule_dir>
+                    <rule_dir pattern=".xml$">rules/plugins</rule_dir>
                 </rules>
             </ossec_config>
 
