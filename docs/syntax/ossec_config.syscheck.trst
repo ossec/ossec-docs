@@ -177,7 +177,7 @@
     **Allowed:** Any registry entry (one per element)
 
 
-.. object:: refilter_cmd
+.. object:: prefilter_cmd
 
     Command to run to prevent prelinking from creating false positives.
 
