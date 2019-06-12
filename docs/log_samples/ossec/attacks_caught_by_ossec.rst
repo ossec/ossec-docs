@@ -1,5 +1,5 @@
 Web Scan sample 2
-  -----------------
+-----------------
 
 Example of web scan detected by ossec (looking for Wordpress, xmlrpc and awstats):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

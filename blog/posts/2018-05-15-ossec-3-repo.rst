@@ -4,9 +4,9 @@
    :author: Scott R. Shinn
 
 
-===============
+========================
 OSSEC HIDS 3.0 Snapshots
-===============
+========================
 
 OSSEC 3.0 release candidate builds are available from our testing Yum/Apt repo for the following distributions:
 

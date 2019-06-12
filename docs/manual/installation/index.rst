@@ -5,8 +5,6 @@ Installation
 
 The best installation tutorial is available in the `OSSEC book <http://www.amazon.com/OSSEC-Host-Based-Intrusion-Detection-Guide/dp/159749240X>`_. 
 
-__ OSSEC Book install_
-
 
 .. toctree::
 

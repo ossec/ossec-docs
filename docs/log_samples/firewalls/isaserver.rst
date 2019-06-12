@@ -280,9 +280,9 @@ Here is a sample of the ISA Server 2000 web proxy log in W3C Extended format
 
 
 
-A description of the fields in the ISA Server 2000 version log files can be found `at this site. <http://msdn2.microsoft.com/en-us/library/ms813182.aspx>`_
+A description of the fields in the ISA Server 2000 version log files can be found `on the Microsoft site. <http://msdn2.microsoft.com/en-us/library/ms813182.aspx>`_
 
-A description of the fields in the ISA Server 2004 log files can be found `at this site. <http://msdn2.microsoft.com/en-us/library/aa503237.aspx>`_ 
+A description of the fields in the ISA Server 2004 log files can be found `at this msdn site. <http://msdn2.microsoft.com/en-us/library/aa503237.aspx>`_ 
 
 Other general information about ISA Server and ISA Server logs can be found at the following links:
 

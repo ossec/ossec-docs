@@ -1,4 +1,4 @@
-.. _gpg::
+.. _gpg:
 
 OSSEC PGP/GPG keys
 ------------------

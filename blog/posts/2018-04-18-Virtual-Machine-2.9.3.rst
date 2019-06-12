@@ -4,9 +4,9 @@
    :author: Scott R. Shinn
 
 
-===============
+=============================
 OSSEC Virtual Appliance 2.9.3
-===============
+=============================
 
 Longtime OSSEC Contributor Vic Hargrave has released an update to the OSSEC Virtual appliance. 
 
