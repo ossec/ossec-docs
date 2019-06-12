@@ -21,6 +21,10 @@ More information on them can be found on the `OSSEC Architecture page <../ossec-
 
 2. Verify the requirements listed in :ref:`install_req` are installed or available.
 
+   .. versionadded: 3.3
+
+      PCRE2 is a new requirement, and manual installation is required.
+
 3. Extract the compressed package and run the ``install.sh`` script. It will guide you 
    through the installation and compile the source (not shown).
 
