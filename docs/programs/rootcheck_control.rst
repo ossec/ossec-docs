@@ -26,10 +26,7 @@ rootcheck_control argument options
 .. option:: -u <id>
 
     Updates (clear) the database for the agent.
-
-.. option:: -u all 
-
-    Updates (clear) the database for all agents.
+    `<id>` can be an agent ID or `all` to cleare the database for all agents.
 
 .. option:: -i AGENT_ID
 

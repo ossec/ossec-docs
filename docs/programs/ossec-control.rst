@@ -11,22 +11,22 @@ ossec-control argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-    .. _ossec-control-start::
+    .. _ossec-control-start:
 
     **start**
       Start the OSSEC processes.
 
-    .. _ossec-control-stop::
+    .. _ossec-control-stop:
 
     **stop**
       Stop the OSSEC processes.
 
-    .. _ossec-control-restart::
+    .. _ossec-control-restart:
 
     **restart**
       Restart the OSSEC processes.
 
-    .. _ossec-control-reload::
+    .. _ossec-control-reload:
 
     **reload**
       Restart all OSSEC processes except ``ossec-execd``. This allows an agent to reload without losing active response status.
@@ -35,17 +35,17 @@ ossec-control argument options
 
          This is only available on an OSSEC agent.
 
-    .. _ossec-control-status::
+    .. _ossec-control-status:
 
     **status**
       Determine which OSSEC processes are running.
 
-    .. _ossec-control-enable::
+    .. _ossec-control-enable:
 
     **enable**
       Enable OSSEC functionality.
 
-        .. _ossec-control-enable-database::
+        .. _ossec-control-enable-database:
 
         **database**
           Enable the ``ossec-dbd`` daemon for logging to a database.
@@ -56,32 +56,32 @@ ossec-control argument options
 
               Database support must be compiled in at install time.
 
-        .. _ossec-control-enable-client-syslog::
+        .. _ossec-control-enable-client-syslog:
 
         **client-syslog**
           Enable ``ossec-csyslogd`` for logging to remote syslog.
 
           **Available:** Server and local installs only.
 
-        .. _ossec-control-enable-agentless::
+        .. _ossec-control-enable-agentless:
 
         **agentless**
           Enable ``ossec-agentlessd`` for running commands on systems without OSSEC agents.
 
           **Available:** Server and local installs only.
 
-        .. _ossec-control-enable-debug::
+        .. _ossec-control-enable-debug:
 
         **debug**
           Run all OSSEC daemons in debug mode.
 
 
-    .. _ossec-control-disable::
+    .. _ossec-control-disable:
 
     **disable**
       Disable OSSEC functionality.
 
-        .. _ossec-control-disable-database::
+        .. _ossec-control-disable-database:
 
         **database**
           Disable the ``ossec-dbd`` daemon for logging to a database.
@@ -92,21 +92,21 @@ ossec-control argument options
 
               Database support must be compiled in at install time.
 
-        .. _ossec-control-disable-client-syslog::
+        .. _ossec-control-disable-client-syslog:
 
         **client-syslog**
           Disable ``ossec-csyslogd`` for logging to remote syslog.
 
          **Available:** Server and local installs only.
 
-        .. _ossec-control-disable-agentless::
+        .. _ossec-control-disable-agentless:
 
         **agentless**
           Disable ``ossec-agentlessd`` for running commands on systems without OSSEC agents.
 
           **Available:** Server and local installs only.
 
-        .. _ossec-control-disable-debug::
+        .. _ossec-control-disable-debug:
 
         **debug**
           Turn off debug mode.

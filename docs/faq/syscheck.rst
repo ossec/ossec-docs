@@ -1,4 +1,4 @@
-.. _faq_syscheck:
+.. _faq_syscheck-faq:
 
 Syscheck: FAQ
 -------------

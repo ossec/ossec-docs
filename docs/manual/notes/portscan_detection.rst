@@ -346,6 +346,8 @@ For this log:
 a proposed decoder is (not tested):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. code-block:: console
+
  <decoder name="iplog-bogustcp">
   <prematch>Bogus TCP flags set by</prematch>
   <regex offset="after_prematch">(\S+):\d+</regex>
