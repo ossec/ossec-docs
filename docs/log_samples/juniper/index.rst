@@ -6,9 +6,5 @@ Juniper Logs
    :maxdepth: 2
    :glob:
 
-
-
-
-   index
    juniper_sa
    netscreen

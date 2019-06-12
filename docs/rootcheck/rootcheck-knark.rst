@@ -10,7 +10,7 @@ More Information
 ----------------
 
 - A complete analysis, done by Toby Miller, can be found here: :ref:`analysis-knack`
-- Knark README can be found :ref:`readme-knack`
+- Knark README can be found :ref:`readme-knark`
 
 
 Files

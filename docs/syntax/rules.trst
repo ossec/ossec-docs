@@ -83,7 +83,7 @@
 
     - The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
 
-    - **Allowed:** Any category :ref:`categories` 
+    - **Allowed:** Any category `categories` 
 
 .. xml:element:: srcip 
 

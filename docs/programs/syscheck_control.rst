@@ -61,7 +61,7 @@ syscheck_control example usage
 Example 1: Getting a list of modified files for an agent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To retrieve information about files that were monitored by OSSEC and modified after OSSEC was deployed, run :option:`syscheck_control -i AGENT_ID`.
+To retrieve information about files that were monitored by OSSEC and modified after OSSEC was deployed, run `syscheck_control -i AGENT_ID`.
 
 .. code-block:: console 
 

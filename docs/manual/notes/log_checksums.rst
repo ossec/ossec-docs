@@ -1,3 +1,7 @@
+
+Log Checksums
+=============
+
 How do the log checksums work?
 
 *by `Daniel B. Cid <http://www.dcid.me>`_*

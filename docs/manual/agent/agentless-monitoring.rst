@@ -15,7 +15,7 @@ Agentless configuration options
 
 .. include:: ../../syntax/ossec_config.agentless.trst 
 
-Check :ref:`_manual-agentless-scripts` for more information.
+Check :ref:`manual-agentless-scripts` for more information.
 
 Getting started with agentless
 ------------------------------
