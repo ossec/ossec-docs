@@ -31,7 +31,7 @@ rootcheck_control argument options
 
     Updates (clear) the database for all agents.
 
-.. option:: -i <agent_id>
+.. option:: -i AGENT_ID
 
     Prints database for the agent.
 
@@ -58,7 +58,7 @@ rootcheck_control example usage
 Example 1: Getting a list of system auditing/policy monitoring events
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To get a list of all auditing/policy monitoring events for a specific agent, you can run :option:`rootcheck_control -i <agent_id>`. To retrieve the agent id you can use any of the following commands:
+To get a list of all auditing/policy monitoring events for a specific agent, you can run :option:`rootcheck_control -i AGENT_ID`. To retrieve the agent id you can use any of the following commands:
 
 - :option:`rootcheck_control -l`,
 - :option:`agent_control -l` 
@@ -89,11 +89,11 @@ To get a list of all auditing/policy monitoring events for a specific agent, you
     2010 Jun 17 17:34:37 (first time detected: 2009 Dec 10 18:48:43)
     System Audit: System Audit: CIS - Debian Linux 2.3 - SSH Configuration - Root login allowed. File: /etc/ssh/sshd_config. Reference: http://www.ossec.net/wiki/index.php/CIS_DebianLinux .
 
-As you can see the detected events are shown in two categories, resolved events and outstanding event. To only show resolved events, run :option:`rootcheck_control -ri <agent_id>`.
-To only show outstanding events, run :option:`rootcheck_control -qi <agent_id>`.
-To only show the results of the last scan and time of that scan, run :option:`rootcheck_control -Li <agent_id>`.
+As you can see the detected events are shown in two categories, resolved events and outstanding event. To only show resolved events, run :option:`rootcheck_control -ri AGENT_ID`.
+To only show outstanding events, run :option:`rootcheck_control -qi AGENT_ID`.
+To only show the results of the last scan and time of that scan, run :option:`rootcheck_control -Li AGENT_ID`.
 
-To gain that kind of information for the OSSEC server, run :option:`rootcheck_control -i 000`.
+To gain that kind of information for the OSSEC server, run `rootcheck_control -i 000`.
 
 Example 2: Clearing the system auditing/policy database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,3 +1,5 @@
+.. _analysis-knack:
+
 Analysis of the KNARK Rootkit 
 =============================
 
