@@ -131,11 +131,8 @@
     Enable or disable writing of json-formated alerts at /var/ossec/logs/alerts/alerts.json
 
     **Default:** no
+
     **Allowed:** yes/no
-
-.. warning::
-
-   This feature first appeared in OSSEC 2.9.
 
 .. xml:element:: prelude_output 
 
