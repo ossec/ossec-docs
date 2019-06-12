@@ -1,4 +1,4 @@
-.. _gpg_key_brad::
+.. _gpg_key_brad:
 
 
 

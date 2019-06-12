@@ -1,4 +1,4 @@
-.. _gpg_keys_jeremy::
+.. _gpg_keys_jeremy:
 
 Jeremy
 ^^^^^^

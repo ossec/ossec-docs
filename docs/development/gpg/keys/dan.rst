@@ -1,4 +1,4 @@
-.. _gpg_dan::
+.. _gpg_dan:
 
 Dan
 ^^^
