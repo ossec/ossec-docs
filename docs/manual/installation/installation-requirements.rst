@@ -133,6 +133,29 @@ need to be installed.
 
    # zypper install postgresql-devel mysql-devel
 
+FreeBSD
+-------
+
+If you want to build and install OSSEC on FreeBSD you can work together with
+its `Ports Collection <https://www.freebsd.org/ports>`_.
+
+There you can find and setup **ossec-hids-agent**, **ossec-hids-local** or
+**ossec-hids-server**.
+
+If you want to build and install only the the required dependencies to run an
+OSSEC server/manager, without installing it:
+
+.. code-block:: console
+
+   # cd /usr/ports/security/ossec-hids-server
+   # make
+
+If you want to install this particular port, you should run ``make install``.
+
+FreeBSD also offers pre-compiled packages for OSSEC and all its dependencies. If you
+want to install them you must work with
+`pkg <https://www.freebsd.org/doc/handbook/pkgng-intro.html>`_.
+
 Debian
 ------
 
