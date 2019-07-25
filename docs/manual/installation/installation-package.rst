@@ -95,6 +95,11 @@ If you want to install an OSSEC Agent:
 
    # pkg install ossec-hids-agent
 
+.. note::
+
+   These steps also work for **DragonFlyBSD**. It also uses ``pkg``, just like FreeBSD. You can
+   read more about it `here <https://www.dragonflybsd.org/docs/howtos/HowToDPorts/>`_.
+
 * **OpenBSD**
 
 Here you must work with ``pkg_add`` instead of `pkg`, but no worries it's the same concept.
