@@ -88,3 +88,9 @@ Should you opt to install an OSSEC Server/Manager:
 
    # pkg install ossec-hids-server
 
+If you want to install an OSSEC Agent:
+
+.. code-block:: console
+
+   # pkg install ossec-hids-agent
+
