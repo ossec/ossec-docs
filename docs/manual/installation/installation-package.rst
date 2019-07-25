@@ -72,5 +72,19 @@ Or install OSSEC HIDS agent:
 
     # apt-get install ossec-hids-agent
 
+pkg Installation
+----------------
 
+Some of the BSD operating systems offer OSSEC packages you can use. Here you have FreeBSD as example.
+
+* **FreeBSD**
+
+You are going to work together with ``pkg`` here. Just choose which type of setup you need
+(agent, local monitoring, or server/manager) and install the respective OSSEC package.
+
+Should you opt to install an OSSEC Server/Manager:
+
+.. code-block:: console
+
+   # pkg install ossec-hids-server
 
