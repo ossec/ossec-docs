@@ -75,7 +75,8 @@ Or install OSSEC HIDS agent:
 pkg Installation
 ----------------
 
-Some of the BSD operating systems offer OSSEC packages you can use. Here you have FreeBSD as example.
+Some of the BSD operating systems offer OSSEC packages you can use. Here you have
+FreeBSD and OpenBSD as example.
 
 * **FreeBSD**
 
@@ -93,4 +94,14 @@ If you want to install an OSSEC Agent:
 .. code-block:: console
 
    # pkg install ossec-hids-agent
+
+* **OpenBSD**
+
+Here you must work with ``pkg_add`` instead of `pkg`, but no worries it's the same concept.
+
+As it only offers one package, here is how to install OSSEC HIDS on OpenBSD:
+
+.. code-block:: console
+
+   # pkg_add ossec-hids
 
