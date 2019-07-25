@@ -156,6 +156,23 @@ FreeBSD also offers pre-compiled packages for OSSEC and all its dependencies. If
 want to install them you must work with
 `pkg <https://www.freebsd.org/doc/handbook/pkgng-intro.html>`_.
 
+OpenBSD
+-------
+
+As OpenBSD also has its own `Ports Collection <https://www.openbsd.org/faq/ports/ports.html>`_,
+you can build and install OSSEC using it if you want.
+
+It only offers **security/ossec-hids**, so:
+
+.. code-block:: console
+
+   # cd /usr/ports/security/ossec-hids
+   # make
+
+Just like the previous example with FreeBSD, if you want to install it all (not just the
+dependencies) you must run ``make install`` instead. Another option would be using
+`pkg_add <https://www.openbsd.org/faq/faq15.html>`_.
+
 Debian
 ------
 
