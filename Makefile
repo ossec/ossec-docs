@@ -1,5 +1,5 @@
 # Makefile for Sphinx documentation
-#
+# Go through lines thoroughly
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
