@@ -19,7 +19,7 @@ The following operating systems are supported by the OSSEC agent:
 * FreeBSD (all current versions)
 * OpenBSD (all current versions)
 * NetBSD (all current versions)
-* Solaris 2.7, 2.8, 2.9 and 10
+* Solaris 2.7, 2.8, 2.9, 10 and 11.4
 * AIX 5.2 and 5.3
 * Mac OS X 10.x
 * HP-UX 11
