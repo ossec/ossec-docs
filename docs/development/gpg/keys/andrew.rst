@@ -1,6 +1,3 @@
-.. _gpg_keys_andrew::
-
-
 Andrew
 ^^^^^^
 
