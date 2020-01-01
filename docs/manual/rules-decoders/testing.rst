@@ -12,7 +12,7 @@ version 1.6, there is a tool to simplify this task (ossec-logtest).
 Testing using ossec-logtest
 ---------------------------
 
-The tool :ref:`ossec-logtest` is installed into ``/var/ossec/bin``. 
+The tool `ossec-logtest` is installed into ``/var/ossec/bin``. 
 It will read the current rules and decoder (from ``/var/ossec`` ) and accept 
 log input from stdin:
 
@@ -75,7 +75,7 @@ user logoff message from Windows:
     **Alert to be generated.
 
 
-In addition to the information above, :ref:`ossec-logtest -f` can be used 
+In addition to the information above, `ossec-logtest -f` can be used 
 to follow the log through the rule path:
 
 .. code-block:: console 
