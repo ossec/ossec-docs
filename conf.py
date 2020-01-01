@@ -27,19 +27,19 @@ import sphinx_bootstrap_theme
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-sys.path.append(".")
+#sys.path.append(".")
 sys.path.append("docs")
-extensions = [
-    'sphinx.ext.autodoc', 
-    'sphinx.ext.intersphinx', 
-    'sphinx.ext.todo',
-    'sphinx.ext.pngmath', 
-    'sphinx.ext.ifconfig', 
-    'sphinx.ext.viewcode',
-    "sphinx.ext.graphviz", 
-    "sphinx.ext.extlinks",
-    "_ext.xml_domain",
-]
+#extensions = [
+#    'sphinx.ext.autodoc', 
+#    'sphinx.ext.intersphinx', 
+#    'sphinx.ext.todo',
+#    'sphinx.ext.pngmath', 
+#    'sphinx.ext.ifconfig', 
+#    'sphinx.ext.viewcode',
+#    "sphinx.ext.graphviz", 
+#    "sphinx.ext.extlinks",
+#    "_ext.xml_domain",
+#]
 
 
 # if os.environ.get('READTHEDOCS', None) == 'True':
