@@ -8,8 +8,8 @@ and active response. It runs on most operating systems, including Linux, OpenBSD
 FreeBSD, Mac OS X, Solaris and Windows. A list with all supported platforms is available
 at: :ref:`supported-systems
 
-Manual & FAQ 
-============
+Manual 
+======
 
 
 .. toctree::
@@ -17,6 +17,14 @@ Manual & FAQ
    :glob:
 
    docs/manual/index
+
+
+FAQ
+===
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
 
    docs/faq/index
 
@@ -44,7 +52,6 @@ Reference
     docs/syntax/index
     docs/formats/index
     docs/programs/index
-    docs/rootcheck/index
     docs/examples/index
 
 
