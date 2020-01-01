@@ -1,5 +1,3 @@
-.. _gpg_scott::
-
 Scott
 ^^^^^
 

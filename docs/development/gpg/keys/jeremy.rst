@@ -1,5 +1,3 @@
-.. _gpg_keys_jeremy::
-
 Jeremy
 ^^^^^^
 

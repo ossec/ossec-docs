@@ -2,20 +2,22 @@ How to start helping with the project?
 --------------------------------------
 
 OSSEC is maintained by a small group of people from around the world. If you wish to
-get involved, there are multiple ways to do so. Check out our list of active contributors:
-`ossec team <http://www.ossec.net/en/about.html#dev-team>`_.
+get involved, there are multiple ways to do so.
 
 
 Testing OSSEC:
 ^^^^^^^^^^^^^^
 
-The easiest way of getting involved with OSSEC is by helping testing it. We always release 
-beta versions and we need a good quality control on every supported version before publicly
-releasing it.
+The easiest way of getting involved with OSSEC is by helping testing it.
 
 
 Translating OSSEC:
 ^^^^^^^^^^^^^^^^^^
+
+.. warning:
+
+   Translations have not been worked on for a long time.
+   They are most likely out of date, and possibly incorrect at this point in time.
 
 Translating OSSEC is easy. We already support many languages, but new ones are more than welcome and fixes
 for the ones we have already too.
@@ -45,16 +47,17 @@ If you want to support a new language, just copy the English one to your country
 Documenting OSSEC:
 ^^^^^^^^^^^^^^^^^^
 
-Development of the OSSEC web ui:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Requires HTML/PHP knowledge.
+The OSSEC documentation is hosted in a `github repository <https://github.com/ossec/ossec-docs>`_.
+Issues and pull requests can be submitted on the site.
+Emails containing details of issues can also be sent to the `ossec-list <https://groups.google.com/forum/#!forum/ossec-list>`_ google group.
 
 
 Development of OSSEC:
 ^^^^^^^^^^^^^^^^^^^^^
 
-The last way to get involved is by actually helping with the development of ossec. You must
-know **C** and be willing to take some time (actually quite some time) to understand how 
-the internals work.
+The OSSEC code is hosted in a `github repository <https://github.com/ossec/ossec-hids>`_.
+Issues and pull requests can be submited on the site.
+
+Contributing to the development of OSSEC's code base will most likely require knwoledge of **C**,
+and will take time learning how the internals work.
 

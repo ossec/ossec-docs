@@ -41,8 +41,6 @@ Development
 
    docs/development/oRFC/index 
 
-   docs/development/gpg/index
-
 Reference 
 =========
 
