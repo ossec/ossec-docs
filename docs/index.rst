@@ -14,16 +14,6 @@ FreeBSD, Mac OS X, Solaris and Windows. A list with all supported platforms is a
 at: :ref:`supported-systems`
 
 
-News & Info
-===========
-
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-
-   whatsnew/index
-
 Manual & FAQ 
 ============
 

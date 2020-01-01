@@ -1,6 +1,5 @@
 Sphinx==1.5.2
 sphinx-bootstrap-theme==0.4.5
-ablog==0.4
 github3.py==0.9.3
 travis-sphinx==1.1.0
 docutils==0.13.1
