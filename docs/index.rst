@@ -50,7 +50,6 @@ Reference
     syntax/index
     formats/index
     programs/index
-    rootcheck/index
     examples/index
 
 
