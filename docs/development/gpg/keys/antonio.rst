@@ -1,4 +1,4 @@
-.. _gpg_keys_antonio::
+.. _gpg_keys_antonio:
 
 Antonio
 ^^^^^^^

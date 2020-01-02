@@ -1,7 +1,7 @@
 GNU Radius
 ----------
 
-Information on GNU Radius can be found `here <http://www.gnu.org/software/radius/>`_.
+Information on GNU Radius can be found `on their site <http://www.gnu.org/software/radius/>`_.
 
 Information on the detailed accounting in GNU Radius can be found `here <http://www.gnu.org/software/radius/manual/html_mono/radius.html#SEC182>`_.
 

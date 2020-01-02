@@ -1,4 +1,4 @@
-.. _gpg_scott::
+.. _gpg_scott:
 
 Scott
 ^^^^^

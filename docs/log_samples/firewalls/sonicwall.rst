@@ -37,8 +37,6 @@ Dropped events:
 
 .. code-block:: console
 
-  id=firewall sn=00XX time="2005-10-22 00:12:11" fw=1.2.3.4 pri=5 c=128 m=37 msg="UDP packet dropped" n=14333 src=1.3.4.5 dst=2.5.6.7:1025:LAN
-Apr 1 10:45:16 10.1.5.1 id=firewall sn=00301E0526B1 time="2004-04-01 10:39:35" fw=67.32.44.2 pri=5 c=64 m=36 msg="TCP connection dropped" n=2686 src=67.101.200 .27:4507:WAN dst=67.32.44.2:445:LAN proto=tcp
-
-
+   id=firewall sn=00XX time="2005-10-22 00:12:11" fw=1.2.3.4 pri=5 c=128 m=37 msg="UDP packet dropped" n=14333 src=1.3.4.5 dst=2.5.6.7:1025:LAN
+   Apr 1 10:45:16 10.1.5.1 id=firewall sn=00301E0526B1 time="2004-04-01 10:39:35" fw=67.32.44.2 pri=5 c=64 m=36 msg="TCP connection dropped" n=2686 src=67.101.200 .27:4507:WAN dst=67.32.44.2:445:LAN proto=tcp
 

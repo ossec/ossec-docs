@@ -9,8 +9,8 @@ and had been used by "crackers" in a lot of compromised machines.
 More Information
 ----------------
 
-- A complete analysis, done by Toby Miller, can be found here: :ref:`analysis-knack`
-- Knark README can be found :ref:`readme-knack`
+- A complete analysis, done by Toby Miller, can be found here: `analysis-knack`
+- Knark README can be found `readme-knark`
 
 
 Files

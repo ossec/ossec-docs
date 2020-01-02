@@ -6,9 +6,6 @@ Security Logs
    :maxdepth: 2
    :glob:
 
-
-
-   index
    iplog
    mcafee_antivirus
    modsecurity

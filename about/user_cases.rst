@@ -157,7 +157,7 @@ Christopher J. Buckley - cbuckley at redhat.com (2007 May)
 ``May 04, 2007``
 
   *"OSSEC is a leading Intrusion Detection System for Enterprise UNIX(-like) and Windows platforms. <b>OSSEC is, by quite a way, the most innovative and customisable IDS product I have worked with.*
-  *As a result of it.s ease of customisations, the developer Daniel B. Cid, with a little bit of help from myself, have implemented supported rule-sets for my former employers. products: Zeus WebServer and ZXTM. Both products are widely deployed across many enterprise environments; adding specific rulesets for their software is one which I hope assists all fellow sysadmins tasked with running infrastructure using Zeus software. *
+  *As a result of it.s ease of customisations, the developer Daniel B. Cid, with a little bit of help from myself, have implemented supported rule-sets for my former employers. products: Zeus WebServer and ZXTM. Both products are widely deployed across many enterprise environments; adding specific rulesets for their software is one which I hope assists all fellow sysadmins tasked with running infrastructure using Zeus software.*
 
   Read full post at `his blog entry <http://www.cjbuckley.net/blog/2007/05/04/ossec-ruleset-for-zeus-webserver-and-zxtm>`_
 

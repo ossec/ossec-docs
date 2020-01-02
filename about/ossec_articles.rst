@@ -138,7 +138,3 @@ Archive:
 * 23, May, 2006 - Linuxsecurity.com - ` Log analysis for Intrusion detection document <http://www.linuxsecurity.com/content/view/122853/65/>`_
 * 01, Dec, 2005 - techtarget.com - `Is there free code available for intrusion detection systems? <http://expertanswercenter.techtarget.com/eac/knowledgebaseAnswer/0,295199,sid63_gci1150852,00.html>`_
  
- 
- 
- 
- 

@@ -1,4 +1,4 @@
-.. _gpg_keys_andrew::
+.. _gpg_keys_andrew:
 
 
 Andrew

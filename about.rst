@@ -191,7 +191,7 @@ Testing/Patches Rules and other contributions.
   - Meir Michanie <meirgotroot@gmail.com>
   - Stephen Bunn <sbunn@roguesoftware.net>
   - Jonathan Scheidell <jscheidell@secnap.net>
-  - |SaMaN| <saman@ttnet.net.tr>
+  - \|SaMaN\| <saman@ttnet.net.tr>
   - ChuckD <mdmonk@gmail.com>
   - Jorge Augusto Senger <jorge@br10.com.br> - ossec2mysql (contrib)
   - David J. Bianco <david at vorant.com>

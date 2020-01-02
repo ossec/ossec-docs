@@ -32,7 +32,7 @@ following task to be completed 7 days from now:
 ~~~~~~~~~~~~~~~
 
 This is currently done every 30 minutes (when hg-git does not break). We
-have set up and enabled `github.com/ossec/ossec-hids <>`__
+have set up and enabled `github.com/ossec/ossec-hids <https://github.com/ossec/ossec-hids>`__
 
 This will continue till to the cut over date of Feb 7th 2014.
 
@@ -42,7 +42,7 @@ This will continue till to the cut over date of Feb 7th 2014.
 We will copy all open issues from Bitbucket to github. Due to the api
 available, and reporting user and all comments on issues will show up as
 the user performing the migration. Test runs are being preformed to
-`githib.com/jrossi/issue-migration-test <>`__
+`github.com/jrossi/issue-migration-test <https://github.com/jrossi/issue-migration-test>`__
 
 3) Port all Open Pull Requests
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

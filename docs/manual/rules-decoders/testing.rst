@@ -75,7 +75,7 @@ user logoff message from Windows:
     **Alert to be generated.
 
 
-In addition to the information above, :ref:`ossec-logtest -f` can be used 
+In addition to the information above, `ossec-logtest -f` can be used 
 to follow the log through the rule path:
 
 .. code-block:: console 

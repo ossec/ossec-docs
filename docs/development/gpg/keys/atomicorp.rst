@@ -1,4 +1,4 @@
-.. _gpg_atomicorp::
+.. _gpg_atomicorp:
 
 Atomicorp PGP key
 ^^^^^^^^^^^^^^^^^

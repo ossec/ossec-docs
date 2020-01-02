@@ -1,4 +1,4 @@
-.. _install:
+.. _install_source:
 
 Manager/Agent Installation
 ==========================
@@ -15,11 +15,17 @@ More information on them can be found on the `OSSEC Architecture page <../ossec-
     In the following installation the commands follow the ``#``. 
     Everything else is either comments or output. 
 
-1. Download the latest version and verify its checksum.
 
-.. include:: getossec.trst
+1. Download the latest version and verify its signature. Github releases may change the actual
+   tarball downloads, so a checksum isn't a great way to verify it.
 
-2. Extract the compressed package and run the ``install.sh`` script. It will guide you 
+2. Verify the requirements listed in :ref:`install_req` are installed or available.
+
+   .. versionadded: 3.3
+
+      PCRE2 is a new requirement, and manual installation is required.
+
+3. Extract the compressed package and run the ``install.sh`` script. It will guide you 
    through the installation and compile the source (not shown).
 
     .. code-block:: console 
@@ -28,13 +34,13 @@ More information on them can be found on the `OSSEC Architecture page <../ossec-
         # cd ossec-hids-* 
         # ./install.sh
 
-3. The OSSEC manager listens on UDP port 1514. Any firewall sbetween the agents and 
+4. The OSSEC manager listens on UDP port 1514. Any firewalls between the agents and 
    the manager will need to allow this traffic.
 
-4. The server, agent, and hybrid installations will require additional configuration. 
+5. The server, agent, and hybrid installations will require additional configuration. 
    More information can be found on the `Managing the agents page <../agent/agent-management.html>`_.
 
-5. Start OSSEC HIDS by running the following command:
+6. Start OSSEC HIDS by running the following command:
 
     .. code-block:: console 
 

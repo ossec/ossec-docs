@@ -212,7 +212,7 @@ the alerts:
     Jan 15 11:19:20 enigma sshd[18853]: Accepted publickey for dcid from 127.0.0.1 port 6725 ssh2
 
 You will get the alerts just like you would at /var/ossec/logs/alerts.log. The 
-benefit now is that you can pipe this output to :ref:`ossec-reported` to get a 
+benefit now is that you can pipe this output to `ossec-reported` to get a 
 better view of what is going on:
 
 .. code-block:: console 

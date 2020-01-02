@@ -1338,12 +1338,12 @@ pacman install log
   [2010-05-28 16:13] installed xf86-input-vmmouse (12.6.5-3)
   [2010-05-28 16:13] installed xf86-input-void (1.3.0-1)
   [2010-05-28 16:16] warning: directory permissions differ on etc/privoxy/
-filesystem: 750  package: 770
+  filesystem: 750  package: 770
   [2010-05-28 16:16] warning: /etc/privoxy/default.action saved as /etc/privoxy/default.action.pacorig
   [2010-05-28 16:16] warning: /etc/privoxy/default.filter saved as /etc/privoxy/default.filter.pacorig
   [2010-05-28 16:16] warning: /etc/privoxy/config saved as /etc/privoxy/config.pacorig
   [2010-05-28 16:16] warning: directory permissions differ on etc/privoxy/templates/
-filesystem: 750  package: 770
+  filesystem: 750  package: 770
   [2010-05-28 16:16] installed privoxy (3.0.16-1)
   [2010-05-28 16:18] installed lynx (2.8.7-2)
   [2010-05-28 16:18] warning: /etc/lighttpd/lighttpd.conf saved as /etc/lighttpd/lighttpd.conf.pacorig
@@ -1590,6 +1590,4 @@ filesystem: 750  package: 770
   [2010-06-26 16:36] Running 'pacman -Sy'
   [2010-06-26 16:36] synchronizing package lists
   [2010-06-26 16:38] Running 'pacman -Scc'
-
-
 

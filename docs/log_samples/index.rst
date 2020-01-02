@@ -25,7 +25,6 @@ Stuff
    nessus/*
    misc/index
    cisco/index
-   checkpoint/*
    databases/*
    web/*
    dns/*

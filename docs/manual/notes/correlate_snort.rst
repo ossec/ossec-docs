@@ -12,12 +12,13 @@ The easiest way to solve this is by creating a local ossec rule (inside ``local_
 if any of the desired snort signatures are fired:
 
 .. code-block:: console
-<rule id="100015" level="6">
-  <if_sid>20101</if_sid>
-  <decoded_as>snort</decoded_as>
-  <id>1:xx|1:yy|1:zz</id>
-  <description>Watched snort ids</description>
-</rule>
+
+   <rule id="100015" level="6">
+     <if_sid>20101</if_sid>
+     <decoded_as>snort</decoded_as>
+     <id>1:xx|1:yy|1:zz</id>
+     <description>Watched snort ids</description>
+   </rule>
 
 Note that ``1:xx``, ``1:yy`` are the snort ids that you are interested to watch. We use the ``<if_sid>`` to 
 make sure that this rule is only tested if it is an IDS event (see rule 20101).
