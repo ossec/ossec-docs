@@ -37,6 +37,12 @@
           .. note::
              More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
 
+    - *noalert* 
+
+        - Specifies whether the rule generates an alert or not in a sense, that if it does, no new rules are tried, except the rules which specify this in their if_sid. Setting this to 1 is useful if trying other rules are the sensible thing to do if this one matches, but it's child rules (rules which specify this in their if_sid) do not.
+        - **Allowed:** 0 or 1 
+        - **Default:** 0 
+
 
 
     .. _timeframe:
