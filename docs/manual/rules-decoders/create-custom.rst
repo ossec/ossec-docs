@@ -36,8 +36,8 @@ Adding a log file to the configuration for monitoring is simple. In the system's
 
 .. note::
 
-    Additional examples can be found `here. <../monitoring/file-log-monitoring.html>`_
-    More detailed syntax can be found `here. <../../syntax/head_ossec_config.localfile.html>`_
+    Additional examples can be found `in file-log-monitoring. <../monitoring/file-log-monitoring.html>`_
+    More detailed syntax can be found `in the localfile syntax. <../../syntax/head_ossec_config.localfile.html>`_
 
 
 After adding a localfile entry, the OSSEC processes must be restarted.

@@ -2,7 +2,7 @@
 .. _ossec-csyslogd:
 
 ossec-csyslogd
-=============
+==============
 
 ``ossec-csyslogd`` is a daemon that forwards the OSSEC alerts via syslog.
 Configuration is done in the ``<syslog_output>`` section of the ossec.conf. (see :ref:`ossec_config.syslog_output`)

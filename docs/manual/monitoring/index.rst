@@ -1,5 +1,5 @@
 
-.. _manual_analysis::
+.. _manual_analysis:
 
 Log monitoring/analysis 
 ======================= 

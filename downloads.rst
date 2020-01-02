@@ -24,7 +24,7 @@ Source Downloads
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Agent Windows       | `ossec-agent-win32-3.2.0.exe`_                |                          | `GPG Windows`_ |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
-| Chocolatey Package  | `ossec-client.3.2.0.nupkg`_                   |                          |                |
+| Chocolatey Package  | `ossec-client.3.3.0.nupkg`_                   |                          |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
 | Virtual Appliance   | `ossec-vm-2.9.3.ova`_ – `README`_             | `VA Checksum`_           |                |
 +---------------------+-----------------------------------------------+--------------------------+----------------+
@@ -36,7 +36,7 @@ Source Downloads
 .. _GPG Unix: https://github.com/ossec/ossec-hids/releases/download/3.2.0/ossec-hids-3.2.0.tar.gz.asc
 .. _ossec-agent-win32-3.2.0.exe: https://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-3.2.0-6132.exe
 .. _GPG Windows: http://updates.atomicorp.com/channels/atomic/windows/ossec-agent-win32-3.2.0-6132.exe.asc
-.. _ossec-client.3.2.0.nupkg: https://chocolatey.org/api/v2/package/ossec-client/3.2.0
+.. _ossec-client.3.3.0.nupkg: https://chocolatey.org/api/v2/package/ossec-client/3.3.0
 .. _ossec-vm-2.9.3.ova: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3.ova
 .. _README: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3.README
 .. _VA Checksum: http://updates.atomicorp.com/channels/atomic/virtual-machines/ossec-vm-2.9.3-checksum.txt

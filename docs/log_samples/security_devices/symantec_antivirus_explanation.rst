@@ -1,3 +1,7 @@
+
+symantec antivirus explanation
+==============================
+
 Explanation of Symantec Antivirus Corporate Edition Windows Event log entries
 
 Symantec Antivirus Corporate Edition 8.x writes data to the Windows NT/2000 application event logs. These entries have Category and Event IDs.

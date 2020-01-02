@@ -509,7 +509,6 @@ As  a side effect, enabling this option will also cause most of nmap'sstealth" s
  net.inet.tcp.blackhole
  net.inet.udp.blackhole
 
-----
 More to com.. [http://zaterio.chilesincables.org Zaterio]
 
 [[Category:rules]] 
