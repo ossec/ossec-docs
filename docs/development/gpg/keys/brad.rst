@@ -1,8 +1,3 @@
-.. _gpg_key_brad:
-
-
-
-
 Brad
 ^^^^
 

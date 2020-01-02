@@ -1,7 +1,6 @@
-
-########
-Examples
-########
+======
+Output
+======
 
 .. toctree::
    :maxdepth: 1

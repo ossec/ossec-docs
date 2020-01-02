@@ -55,7 +55,7 @@ rootcheck_control example usage
 Example 1: Getting a list of system auditing/policy monitoring events
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To get a list of all auditing/policy monitoring events for a specific agent, you can run `rootcheck_control -i AGENT_ID`. To retrieve the agent id you can use any of the following commands:
+To get a list of all auditing/policy monitoring events for a specific agent, you can run `rootcheck_control -i <agent_id>`. To retrieve the agent id you can use any of the following commands:
 
 - :option:`rootcheck_control -l`,
 - :option:`agent_control -l` 
