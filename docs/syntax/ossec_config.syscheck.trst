@@ -86,6 +86,7 @@
 .. object:: nodiff
 
     .. versionadded:: 3.0
+
     List of files to not attach a diff. The files are still checked, but no diff is computed. This allows to monitor sensitive files like private key or database configuration without leaking sensitive data through alerts.
 
     **Attributes:**
@@ -194,6 +195,7 @@
 .. object:: skip_nfs
 
     .. versionadded:: 2.9.0
+
     Specifies if syscheck should scan network mounted filesystems.  Works on Linux and FreeBSD.  Currently skip_nfs will abort checks running against CIFS or NFS mounts.
 
     **Default:** no

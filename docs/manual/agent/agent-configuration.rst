@@ -1,5 +1,5 @@
 
-.. _manual-syscheck:
+.. _manual-syscheck-config:
 
 Centralized agent configuration
 ===============================

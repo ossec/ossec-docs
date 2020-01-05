@@ -232,7 +232,6 @@ The following are the size difference between tuxkit and Redhat 7.1 binaries.
 .. code-block:: console
 
     files        tuxkit        Redhat 7.1
-    ------------------------------------------
     crontab      29052               21280
     df           27112               26812
     dir          42952               45948

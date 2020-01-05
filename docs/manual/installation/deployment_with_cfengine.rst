@@ -70,6 +70,7 @@ This second stanza in the ``copy`` section copies a file from our ossec key dire
                                           group=ossec
                                           type=sum
                                           define=dc_restart_ossec
+
 * processes
 
 My processes block checks to ensure that OSSEC-HIDS is running the correct daemons.

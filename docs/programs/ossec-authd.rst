@@ -99,8 +99,8 @@ If the default locations of /var/ossec/etc/sslmanager.cert and /var/ossec/etc/ss
 
 .. _optional-client-authentication:
 
-Optional Client Authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Optional Client Authentication - server side
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``ossec-authd`` can verify that connecting agents present a valid X.509 certificate when requesting a key. This is optional
 and is only useful if hosts in your environment are assigned certificates when they're provisioned (or at some point before

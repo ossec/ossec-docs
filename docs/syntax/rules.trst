@@ -37,6 +37,12 @@
           .. note::
              More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
 
+    - *noalert* 
+
+        - Specifies whether the rule generates an alert or not in a sense, that if it does, no new rules are tried, except the rules which specify this in their if_sid. Setting this to 1 is useful if trying other rules are the sensible thing to do if this one matches, but it's child rules (rules which specify this in their if_sid) do not.
+        - **Allowed:** 0 or 1 
+        - **Default:** 0 
+
 
 
     .. _timeframe:
@@ -83,7 +89,7 @@
 
     - The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
 
-    - **Allowed:** Any category :ref:`categories` 
+    - **Allowed:** Any category `categories` 
 
 .. xml:element:: srcip 
 
@@ -240,6 +246,7 @@
     **Attributes:**
 
     .. _list-field:
+
     - *field* 
         
         Field that is used as the key to look up in the CDB file:
@@ -258,6 +265,7 @@
         - Value: action 
 
     .. _list-lookup:
+
     - *lookup*
         
         This is the type of lookup that is preformed: 
@@ -297,6 +305,7 @@
                This feature is not yet complete.
 
     .. _list-check_value:
+
     - *check_value* 
         
         - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value

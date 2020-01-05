@@ -23,7 +23,7 @@ syscheck_control argument options
 
     List only currently connected agents. 
 
-.. option:: -u <agent_id>
+.. option:: -u AGENT_ID
 
     Updates (clear) the database for the agent.
 
@@ -31,7 +31,7 @@ syscheck_control argument options
 
     Updates (clear) the database for all agents.
 
-.. option:: -i <agent_id>
+.. option:: -i AGENT_ID
 
     Prints database for the agent.
 
@@ -61,7 +61,7 @@ syscheck_control example usage
 Example 1: Getting a list of modified files for an agent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To retrieve information about files that were monitored by OSSEC and modified after OSSEC was deployed, run :option:`syscheck_control -i <agent_id>`.
+To retrieve information about files that were monitored by OSSEC and modified after OSSEC was deployed, run `syscheck_control -i AGENT_ID`.
 
 .. code-block:: console 
 
@@ -113,7 +113,7 @@ The integrity checking values include
 - owner and group id of the file
 - MD5 and SHA1 hashes of the file.
 
-To retrieve this information, run :option:`syscheck_control -i <agent_id> -f <filename>`:
+To retrieve this information, run `syscheck_control -i AGENT_ID -f FILENAME`:
 
 .. code-block:: console 
 
@@ -153,7 +153,7 @@ To clear the syscheck database for a certain agent run the following command:
 
     ** Integrity check database updated.
 
-:option:`syscheck_control -i 002` will now show that no modified files for that agent are in the database:
+`syscheck_control -i 002` will now show that no modified files for that agent are in the database:
 
 .. code-block:: console
 

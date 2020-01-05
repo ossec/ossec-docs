@@ -1,4 +1,4 @@
-.. _install_source_unattended
+.. _install_source_unattended:
 
 
 Unattended Source Installation

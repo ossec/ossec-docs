@@ -10,12 +10,15 @@ Windows Agent Installation
    will require an OSSEC server to function.
 
 Step 1: Opening the Agent Manager menu
--------------------------------------
-The first step of this process is to get into the Agent Manager menu. From the ossec server, type the following command::
+--------------------------------------
 
-/var/ossec/bin/manage_agents
+The first step of this process is to get into the Agent Manager menu. From the ossec server, type the following command:
 
-The menu should look like this::
+`/var/ossec/bin/manage_agents`
+
+The menu should look like this:
+
+.. code-block:: console
 
          ****************************************
          * OSSEC HIDS v2.5-SNP-100809 Agent manager.*

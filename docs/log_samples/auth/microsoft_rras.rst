@@ -3,7 +3,7 @@ Windows Routing and Remote Access logs
 
 
 This sample is in the Microsoft IAS Database Compatible log format (text file).
-A description of this format is found `here <http://www.microsoft.com/windows2000/en/server/help/sag_ias_log2a.htm>`_ and `here <http://www.radiusreporting.com/IAS-DB-Attribute-Format-Table.html>`_
+A description of this format is found `on the Microsoft site <http://www.microsoft.com/windows2000/en/server/help/sag_ias_log2a.htm>`_ and `on radiusreporting.com <http://www.radiusreporting.com/IAS-DB-Attribute-Format-Table.html>`_
 
 .. code-block:: console
 

@@ -1,4 +1,4 @@
-.. _checkpoint_config::
+.. _checkpoint_config:
 
 Configuring Checkpoint
 ----------------------

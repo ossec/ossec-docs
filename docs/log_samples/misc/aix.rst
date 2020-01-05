@@ -30,7 +30,7 @@ Examples AIX/IBM AccessManager request.log (weblog):
 
 
 
-*Examples of AIX ipsec logs:
+*Examples of AIX ipsec logs:*
 .. code-block:: console
 
   ipsec_logd: #:3 R:p  I:10.0.0.99 S:10.0.0.82 D:10.0.0.99     P:tcp/ack SP:50349 DP:22 R:l I:en0 F:n T:0 L:88
