@@ -1,322 +1,328 @@
 
 .. xml:element:: rule 
 
-    Defines a rule 
+   Defines a rule 
 
-    **Attributes:** 
+   **Attributes:** 
 
-    .. _level:
+   .. _level:
 
-    - *level* 
+   - *level* 
 
-        - Specifies the level of the rule. Alerts and responses use this value. 
-        - **Allowed:** Any number (0 to 16) 
+       - Specifies the level of the rule. Alerts and responses use this value. 
+       - **Allowed:** Any number (0 to 16) 
 
-    .. _id:
+   .. _id:
 
-    - *id* 
+   - *id* 
 
-        - Specifies the ID of the rule. 
-        - **Allowed:** Any number from 100 to 99999 
+       - Specifies the ID of the rule. 
+       - **Allowed:** Any number from 100 to 99999 
 
-    .. _maxsize:
+   .. _maxsize:
 
-    - *maxsize* 
+   - *maxsize* 
 
-        - Specifies the maximum size of the event. 
-        - **Allowed:** Any number from 1 to 99999 
+       - Specifies the maximum size of the event. 
+       - **Allowed:** Any number from 1 to 99999 
 
-    .. _frequency:
+   .. _frequency:
 
-    - *frequency*
+   - *frequency*
 
-          - Specifies the number of times the rule must have matched before firing. The number that triggers the rule is actually 2 more than this setting.
-          - **Allowed:** Any number from 1 to 999
+         - Specifies the number of times the rule must have matched before firing. The number that triggers the rule is actually 2 more than this setting.
+         - **Allowed:** Any number from 1 to 999
 	  - **Example:** frequency="2" would mean the rule must be matched 4 times
 
-          .. note::
-             More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
+         .. note::
+            More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
 
-    - *noalert* 
+   - *noalert* 
 
-        - Specifies whether the rule generates an alert or not in a sense, that if it does, no new rules are tried, except the rules which specify this in their if_sid. Setting this to 1 is useful if trying other rules are the sensible thing to do if this one matches, but it's child rules (rules which specify this in their if_sid) do not.
-        - **Allowed:** 0 or 1 
-        - **Default:** 0 
+       - Specifies whether the rule generates an alert or not in a sense, that if it does, no new rules are tried, except the rules which specify this in their if_sid. Setting this to 1 is useful if trying other rules are the sensible thing to do if this one matches, but it's child rules (rules which specify this in their if_sid) do not.
+       - **Allowed:** 0 or 1 
+       - **Default:** 0 
 
 
 
-    .. _timeframe:
+   .. _timeframe:
 
-    - *timeframe*
+   - *timeframe*
 
-        - The timeframe in seconds.
-        - This option is intended to be used with the frequency option.
-        - **Allowed:** Any number from 1 to 9999
+       - The timeframe in seconds.
+       - This option is intended to be used with the frequency option.
+       - **Allowed:** Any number from 1 to 9999
 
-    .. _ignore:
+   .. _ignore:
 
-    - *ignore* 
+   - *ignore* 
 
-        - The time (in seconds) to ignore this rule after firing it (to avoid floods). 
-        - **Allowed:** Any number from 1 to 9999
+       - The time (in seconds) to ignore this rule after firing it (to avoid floods). 
+       - **Allowed:** Any number from 1 to 9999
 
-    .. _overwrite:
+   .. _overwrite:
 
-    - *overwrite*
+   - *overwrite*
 	- Used to supercede an OSSEC rule with local changes.
-        - This is useful to change the level or other options of rules included with OSSEC.
+       - This is useful to change the level or other options of rules included with OSSEC.
 	- **Allowed** yes
 
 .. xml:element:: match
 
-    - Any string to match against the log event.
+   - Any string to match against the log event.
 
-    - **Allowed:** Any :ref:`os_match` 
+   - **Allowed:** Any :ref:`os_match` 
 
 .. xml:element:: regex 
 
-    - Any regex to match against the log event. 
+   - Any regex to match against the log event. 
 
-    - **Allowed:** Any :ref:`os_regex`
+   - **Allowed:** Any :ref:`os_regex`
+
+.. xml:element:: pcre2
+
+   - A string using the pcre2 syntax to match a log message.
+
+   - **Allowed:** Any pcre2 valid string
 
 .. xml:element:: decoded_as 
 
-    - Any decoder name (see :ref:`rules_decoders`)
+   - Any decoder name (see :ref:`rules_decoders`)
 
-    - **Allowed:** Any decoder name
+   - **Allowed:** Any decoder name
 
 .. xml:element:: category
 
-    - The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
+   - The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
 
-    - **Allowed:** Any category `categories` 
+   - **Allowed:** Any category `categories` 
 
 .. xml:element:: srcip 
 
-    - Any IP address or CIDR block to be compared to an IP decoded as srcip.
-    - Use "!" to negate it.
+   - Any IP address or CIDR block to be compared to an IP decoded as srcip.
+   - Use "!" to negate it.
 
-    - **Allowed:** Any srcip 
+   - **Allowed:** Any srcip 
 
 .. xml:element:: dstip 
 
-    - Any IP address or CIDR block to be compared to an IP decoded as dstip.
-    - Use "!" to negate it.
+   - Any IP address or CIDR block to be compared to an IP decoded as dstip.
+   - Use "!" to negate it.
 
-    - **Allowed:** Any dstip 
+   - **Allowed:** Any dstip 
 
 .. xml:element:: extra_data
 
-    - Any string that is decoded into the ``extra_data`` field.
+   - Any string that is decoded into the ``extra_data`` field.
 
-    - **Allowed:** Any string.
+   - **Allowed:** Any string.
 
 .. xml:element:: user 
 
-    - Any username (decoded as the username).
+   - Any username (decoded as the username).
 
-    - **Allowed:** any :ref:`os_match` 
+   - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: program_name
 
-    - Program name is decoded from syslog process name. 
+   - Program name is decoded from syslog process name. 
 
-    - **Allowed:** any :ref:`os_match` 
+   - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: hostname 
 
-    - Any hostname (decoded as the syslog hostname) or log file.
+   - Any hostname (decoded as the syslog hostname) or log file.
 
-    - **Allowed:** any :ref:`os_match` 
+   - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: time 
 
-    - Time that the event was generated.
+   - Time that the event was generated.
 
-    - **Allowed:** Any time range (hh:mm-hh:mm) 
+   - **Allowed:** Any time range (hh:mm-hh:mm) 
 
-    - **Example:** ``<time>6 am - 6 pm</time>``
+   - **Example:** ``<time>6 am - 6 pm</time>``
 
 .. xml:element:: weekday 
 
-    - Week day that the event was generated. Multiple entries can be separated by commas.
+   - Week day that the event was generated. Multiple entries can be separated by commas.
 
-    - **Allowed:** monday - sunday, weekdays, weekends
+   - **Allowed:** monday - sunday, weekdays, weekends
 
 .. xml:element:: id 
 
-    - Any ID (decoded as the ID). 
+   - Any ID (decoded as the ID). 
 
-    - **Allowed:** any :ref:`os_match` 
+   - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: url 
 
-    - Any URL (decoded as the URL).
-    
-    - **Allowed:** any :ref:`os_match` 
+   - Any URL (decoded as the URL).
+   
+   - **Allowed:** any :ref:`os_match` 
 
 .. xml:element:: if_sid 
 
-    - Matches if the ID has matched. 
+   - Matches if the ID has matched. 
 
-    - **Allowed:** Any rule id 
+   - **Allowed:** Any rule id 
 
 .. xml:element:: if_group 
 
-    - Matches if the group has matched before. 
+   - Matches if the group has matched before. 
 
-    - **Allowed:** Any Group 
+   - **Allowed:** Any Group 
 
 .. xml:element:: if_level 
 
-    - Matches if the level has matched before. 
+   - Matches if the level has matched before. 
 
-    - **Allowed:** Any level from 1 to 16 
+   - **Allowed:** Any level from 1 to 16 
 
 .. xml:element:: if_matched_sid 
 
-    - Matches if an alert of the defined ID has been triggered in a set number of seconds.
-    - This option is used in conjunction with frequency_ and timeframe_.
+   - Matches if an alert of the defined ID has been triggered in a set number of seconds.
+   - This option is used in conjunction with frequency_ and timeframe_.
 
-    .. note::
-        Rules at level 0 are discarded immediately and will not be used with the ``if_matched_`` rules. The level must be at least ``1``, but the ``<no_log>`` option can be added to the rule to make sure it does not get logged.
+   .. note::
+       Rules at level 0 are discarded immediately and will not be used with the ``if_matched_`` rules. The level must be at least ``1``, but the ``<no_log>`` option can be added to the rule to make sure it does not get logged.
 
-    - **Allowed:** Any rule id 
+   - **Allowed:** Any rule id 
 
 .. xml:element:: if_matched_group 
 
-    - Matches if an alert of the defined group has been triggered in a set number of seconds.
-    - This option is used in conjunction with frequency_ and timeframe_.
+   - Matches if an alert of the defined group has been triggered in a set number of seconds.
+   - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Allowed:** Any group 
+   - **Allowed:** Any group 
 
 .. xml:element:: same_id
 
-    - Specifies that the decoded id must be the same.
-    - This option is used in conjunction with frequency_ and timeframe_.
+   - Specifies that the decoded id must be the same.
+   - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Example:** <same_id />
+   - **Example:** <same_id />
 
 .. xml:element:: same_source_ip 
 
-    - Specifies that the decoded source ip must be the same. 
-    - This option is used in conjunction with frequency_ and timeframe_.
+   - Specifies that the decoded source ip must be the same. 
+   - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Example:** <same_source_ip />
+   - **Example:** <same_source_ip />
 
 .. xml:element:: same_source_port 
 
-    - Specifies that the decoded source port must be the same. 
-    - This option is used in conjunction with frequency_ and timeframe_.
+   - Specifies that the decoded source port must be the same. 
+   - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Example:** <same_source_port />
+   - **Example:** <same_source_port />
 
 .. xml:element:: same_dst_port
 
-    - Specifies that the decoded destination port must be the same.
-    - This option is used in conjunction with frequency_ and timeframe_.
+   - Specifies that the decoded destination port must be the same.
+   - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Example:** <same_source_port />
+   - **Example:** <same_source_port />
 
 .. xml:element:: same_location 
 
-    - Specifies that the location must be the same.
-    - This option is used in conjunction with frequency_ and timeframe_.
+   - Specifies that the location must be the same.
+   - This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Example:** <same_location />
+   - **Example:** <same_location />
 
 .. xml:element:: same_user
 
-    - Specifies that the decoded user must be the same.
-    - This option is used in conjunction with frequency_ an timeframe_.
+   - Specifies that the decoded user must be the same.
+   - This option is used in conjunction with frequency_ an timeframe_.
 
-    - **Example:** <same_user />
+   - **Example:** <same_user />
 
 .. xml:element:: description 
 
-    - Rule description. 
+   - Rule description. 
 
-    - **Allowed:** Any string 
+   - **Allowed:** Any string 
 
 .. xml:element:: list 
 
-    Preform a CDB lookup using an ossec list.  This is a fast on disk database which will 
-    always find keys within two seeks of the file.  
+   Preform a CDB lookup using an ossec list.  This is a fast on disk database which will 
+   always find keys within two seeks of the file.  
 
-    **Attributes:**
+   **Attributes:**
 
-    .. _list-field:
+   .. _list-field:
 
-    - *field* 
-        
-        Field that is used as the key to look up in the CDB file:
+   - *field* 
+       
+       Field that is used as the key to look up in the CDB file:
 
-        - Value: srcip 
-        - Value: srcport 
-        - Value: dstip 
-        - Value: dstport 
-        - Value: extra_data
-        - Value: user 
-        - Value: url 
-        - Value: id
-        - Value: hostname 
-        - Value: program_name 
-        - Value: status 
-        - Value: action 
+       - Value: srcip 
+       - Value: srcport 
+       - Value: dstip 
+       - Value: dstport 
+       - Value: extra_data
+       - Value: user 
+       - Value: url 
+       - Value: id
+       - Value: hostname 
+       - Value: program_name 
+       - Value: status 
+       - Value: action 
 
-    .. _list-lookup:
+   .. _list-lookup:
 
-    - *lookup*
-        
-        This is the type of lookup that is preformed: 
+   - *lookup*
+       
+       This is the type of lookup that is preformed: 
 
-        - Value: match_key
+       - Value: match_key
 
-            - Positive key match: field is the key to search within the cdb and will match if they key is present.
+           - Positive key match: field is the key to search within the cdb and will match if they key is present.
 
-            - This is the default if no lookup is specified.
+           - This is the default if no lookup is specified.
 
-        - Value: not_match_key
+       - Value: not_match_key
 
-            - Negative key match: field is the key to search and will match if it *IS NOT* present in the database.
-            
-        - Value: match_key_value
+           - Negative key match: field is the key to search and will match if it *IS NOT* present in the database.
+           
+       - Value: match_key_value
 
-            - Key and Value Match: field is searched for in the cdb and if found the value will be compared with regex from attribute check_value.
+           - Key and Value Match: field is searched for in the cdb and if found the value will be compared with regex from attribute check_value.
 
-            .. note::
+           .. note::
 
-               This feature is not yet complete.
+              This feature is not yet complete.
 
-        - Value: address_match_key 
+       - Value: address_match_key 
 
-            - Positive key match: field is an IP address and the key to search within the cdb and will match if they key is present.
+           - Positive key match: field is an IP address and the key to search within the cdb and will match if they key is present.
 
-        - Value: not_address_match_key
+       - Value: not_address_match_key
 
-            - Negative key match: field is an IP address the key to search and will match if it *IS NOT* present in the database.
+           - Negative key match: field is an IP address the key to search and will match if it *IS NOT* present in the database.
 
-        - Value: address_match_key_value
+       - Value: address_match_key_value
 
-            - Key and Value Match: field is an IP address searched for in the cdb and if found the value will be compared with regex from attribute check_value.
+           - Key and Value Match: field is an IP address searched for in the cdb and if found the value will be compared with regex from attribute check_value.
 
-            .. note::
+           .. note::
 
-               This feature is not yet complete.
+              This feature is not yet complete.
 
-    .. _list-check_value:
+   .. _list-check_value:
 
-    - *check_value* 
-        
-        - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
+   - *check_value* 
+       
+       - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
 
-    **Allowed:** 
-        
-        Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
+   **Allowed:** 
+       
+       Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
 
-    **Example:**
+   **Example:**
 
-    .. code-block:: xml
+   .. code-block:: xml
 
 	<rule id="100000" level="7">
 	  <list lookup="match_key" field="srcip">path/to/list/file</list>
@@ -326,76 +332,76 @@
 
 .. xml:element:: info 
 
-    Extra information may be added through the following attributes:
+   Extra information may be added through the following attributes:
 
-    **Attributes:**
+   **Attributes:**
 
-    - *type* 
+   - *type* 
 
-        - Value: text 
+       - Value: text 
 
-            This is the default when no type is selected.  Just used for additional 
-            information about the alert/event. 
+           This is the default when no type is selected.  Just used for additional 
+           information about the alert/event. 
 
-        - Value: link
+       - Value: link
 
-            Link to more information about the alert/event.  
+           Link to more information about the alert/event.  
 
-        - Value: cve 
+       - Value: cve 
 
-            The CVE Number related to this alert/event.  
+           The CVE Number related to this alert/event.  
 
-        - Value: ovsdb 
+       - Value: ovsdb 
 
-            The osvdb id related to this alert/event. 
+           The osvdb id related to this alert/event. 
 
-    **Allowed:** String but content is dependent on the type attribute. 
+   **Allowed:** String but content is dependent on the type attribute. 
 
-    **Example:** 
+   **Example:** 
 
-    .. code-block:: xml
+   .. code-block:: xml
 
-        <rule id="502" level="3">
-            <if_sid>500</if_sid>
-            <options>alert_by_email</options>
-            <match>Ossec started</match>
-            <description>Ossec server started.</description>
-            <info type="link">http://ossec.net/wiki/Rule:205</info>
-            <info type="cve">2009-1002</info>
-            <info type="osvdb"> 61509</info>
-            <info type="text">Internal Why we are running this run in our company</info>
-            <info>Type text is the default</info>
-        </rule>
+       <rule id="502" level="3">
+           <if_sid>500</if_sid>
+           <options>alert_by_email</options>
+           <match>Ossec started</match>
+           <description>Ossec server started.</description>
+           <info type="link">http://ossec.net/wiki/Rule:205</info>
+           <info type="cve">2009-1002</info>
+           <info type="osvdb"> 61509</info>
+           <info type="text">Internal Why we are running this run in our company</info>
+           <info>Type text is the default</info>
+       </rule>
 
 .. xml:element:: options 
 
-    Additional rule options 
+   Additional rule options 
 
-    **Allowed:** 
+   **Allowed:** 
 
-    - *alert_by_email*
+   - *alert_by_email*
 	- Always alert by email.
 
-        - *Example:* <options>alert_by_email</options>
+       - *Example:* <options>alert_by_email</options>
 
-    - *no_email_alert* 
+   - *no_email_alert* 
 	- Never alert by email.
 
-        - *Example:* <options>no_email_alert</options>
+       - *Example:* <options>no_email_alert</options>
 
-    - no_log
+   - no_log
 	- Do not log this alert.
 
-        - *Example:* <options>no_log</options>
+       - *Example:* <options>no_log</options>
 
 .. xml:element:: check_diff 
 
-    Used to determine when the output of a command changes.
+   Used to determine when the output of a command changes.
 
-    **Usage:** <check_diff />
+   **Usage:** <check_diff />
 
 .. xml:element:: group 
 
    - Add additional groups to the alert. Groups are optional tags added to alerts. They can be used by other rules by using ``if_group`` or ``if_matched_group``, or by alert parsing tools to categorize alerts.
 
-    *Example:* <group>group1, group2</group>
+   *Example:* <group>group1, group2</group>
