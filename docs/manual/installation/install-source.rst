@@ -25,6 +25,10 @@ More information on them can be found on the `OSSEC Architecture page <../ossec-
 
       PCRE2 is a new requirement, and manual installation is required.
 
+   .. versionadded: 3.5
+
+      The default compilation process assumes the development package for PCRE2 is installed.
+
 3. Extract the compressed package and run the ``install.sh`` script. It will guide you 
    through the installation and compile the source (not shown).
 
