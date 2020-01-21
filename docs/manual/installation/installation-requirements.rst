@@ -54,6 +54,12 @@ To use the included version of zlib, simply set `ZLIB_SYSTEM` to `no`:
 Ubuntu
 ------
 
+At a minimum, the following packages should be installed:
+
+.. code-block:: console
+
+   apt-get install build-essential make zlib1g-dev libpcre2-dev
+
 On Ubuntu you will need the *build-essential* package in order to
 compile and install OSSEC.
 
@@ -87,6 +93,12 @@ To use the SQLite features, the `libsqlite3-dev` package is necessary.
 
 RedHat
 ------
+
+At a minimum, the following packages should be installed:
+
+.. code-block:: console
+
+   yum install zlib-devel pcre2-devel make gcc
 
 RedHat should have most of the packages needed by default. The zlib development package
 should be installed:
