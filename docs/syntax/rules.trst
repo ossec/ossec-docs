@@ -246,6 +246,7 @@
     **Attributes:**
 
     .. _list-field:
+
     - *field* 
         
         Field that is used as the key to look up in the CDB file:
@@ -264,6 +265,7 @@
         - Value: action 
 
     .. _list-lookup:
+
     - *lookup*
         
         This is the type of lookup that is preformed: 
@@ -303,6 +305,7 @@
                This feature is not yet complete.
 
     .. _list-check_value:
+
     - *check_value* 
         
         - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
