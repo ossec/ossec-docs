@@ -43,7 +43,7 @@
 
     Option to send granular emails based on rule id.
 
-    **Allowed:**  One or more rule IDs can be used here, separated by a comma and space (``, ``).
+    **Allowed:**  One or more rule IDs can be used here, separated by a comma and space.
 
     **Example:**
 

@@ -9,7 +9,7 @@ Output
 Granular Email Examples
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: granular_email_examples.trst
+.. include:: ./granular_email_examples.trst
 
 Report Output Examples
 ^^^^^^^^^^^^^^^^^^^^^^

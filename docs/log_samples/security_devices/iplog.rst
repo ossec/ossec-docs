@@ -261,6 +261,7 @@ Nov 18 19:28:07 ICMP/UDP: smurf attack mode expired for 201.223.41.0 - received 
 <font color="red">Nov 14 15:57:56 TCP: Bogus TCP flags set by 10.10.160.2:60873 (dest port 25)</font>
 
 ='''OSSEC (HIDS) + iplog (sensor) implementation'''=
+
 *Work in progress
 *TODO: improve regex, decoders and rules. p0f complementation?
 *Configuration tested in FreeBSD 6.1 and archlinux gimmick
@@ -282,11 +283,13 @@ Nov 14 18:30:30 TCP: Xmas scan detected [ports 636,256,554,389,1723,53,443,21,33
 
 '''a working decoder is:''' 
 
- <decoder name="iplog-scan">
-  <prematch>\S+ scan detected</prematch>
-  <regex offset="after_prematch">\S+ \S+ from (\S+)</regex>
-  <order>srcip</order>
- </decoder>
+.. code-block:: xml
+
+   <decoder name="iplog-scan">
+    <prematch>\S+ scan detected</prematch>
+    <regex offset="after_prematch">\S+ \S+ from (\S+)</regex>
+    <order>srcip</order>
+   </decoder>
 
 
 '''For this log:'''
@@ -295,11 +298,13 @@ Nov 14 18:35:00 UDP: scan/flood detected [ports 33161,41107,63571,48714,25271,..
 
 '''a proppossed decoder is (not tested):'''
 
- <decoder name="iplog-flood">
-  <prematch>scan/flood detected</prematch>
-  <regex offset="after_prematch">\S+ \S+ from (\S+)</regex>
-  <order>srcip</order>
- </decoder>
+.. code-block:: xml
+
+   <decoder name="iplog-flood">
+     <prematch>scan/flood detected</prematch>
+     <regex offset="after_prematch">\S+ \S+ from (\S+)</regex>
+     <order>srcip</order>
+   </decoder>
 
 '''For this log:'''
 
@@ -307,11 +312,13 @@ Nov 14 19:09:33 ICMP: ping flood detected from 10.10.150.1
 
 '''a proppossed decoder is (not tested):'''
 
- <decoder name="iplog-pingflood">
-  <prematch>ping flood detected from</prematch>
-  <regex offset="after_prematch">(\S+)</regex>
-  <order>srcip</order>
- </decoder>
+.. code-block:: xml
+
+   <decoder name="iplog-pingflood">
+     <prematch>ping flood detected from</prematch>
+     <regex offset="after_prematch">(\S+)</regex>
+     <order>srcip</order>
+   </decoder>
 
 '''For this log:'''
 (necesary to include???????) i Think no (very paranoic)
@@ -320,11 +327,13 @@ Nov 14 18:57:18 UDP: traceroute from 10.10.150.2
 
 '''a proppossed decoder is (not tested):'''
 
- <decoder name="iplog-traceroute">
-  <prematch>pingtraceroute from</prematch>
-  <regex offset="after_prematch">(\S+)</regex>
-  <order>srcip</order>
- </decoder>
+.. code-block:: xml
+
+   <decoder name="iplog-traceroute">
+     <prematch>pingtraceroute from</prematch>
+     <regex offset="after_prematch">(\S+)</regex>
+     <order>srcip</order>
+   </decoder>
 
  
 
@@ -335,55 +344,71 @@ Nov 14 15:57:56 TCP: Bogus TCP flags set by 10.10.160.2:60873 (dest port 25)
 
 '''a proppossed decoder is (not tested):'''
 
- <decoder name="iplog-bogustcp">
-  <prematch>Bogus TCP flags set by</prematch>
-  <regex offset="after_prematch">(\S+):\d+</regex>
-  <order>srcip</order>
- </decoder>
+.. code-block:: xml
+
+   <decoder name="iplog-bogustcp">
+     <prematch>Bogus TCP flags set by</prematch>
+     <regex offset="after_prematch">(\S+):\d+</regex>
+     <order>srcip</order>
+   </decoder>
 
 =='''iplog rules'''==
 
 Only for working decoders
 
- cd ~/ossec/rules
- touch iplog_rules.xml
- chown root:ossec iplog_rules.xml
- chmod 550 iplog_rules.xml
+.. code-block:: console
+
+   cd ~/ossec/rules
+   touch iplog_rules.xml
+   chown root:ossec iplog_rules.xml
+   chmod 550 iplog_rules.xml
 
 in iplog_rules.xml include:
 
- <group name="syslog,errors,">
-  <rule id="99990" level="6">
-    <decoded_as>iplog-scan</decoded_as>
-    <description>iplog scan detect</description>
-  </rule>
+.. code-block:: xml
+
+   <group name="syslog,errors,">
+     <rule id="99990" level="6">
+     <decoded_as>iplog-scan</decoded_as>
+     <description>iplog scan detect</description>
+   </rule>
  </group>
 
 =='''ossec.conf'''==
 
- cd ~/ossec/etc
- vi  ossec.conf
+.. code-block:: console
+
+   cd ~/ossec/etc
+   vi  ossec.conf
 
 include in the correct place:
 
- <include>iplog_rules.xml</include>
+.. code-block:: xml
+
+   <include>iplog_rules.xml</include>
 
 and
 
-  <localfile>
-    <log_format>syslog</log_format>
-    <location>/var/log/iplog</location>
-  </localfile>
+.. code-block:: xml
+
+   <localfile>
+     <log_format>syslog</log_format>
+     <location>/var/log/iplog</location>
+   </localfile>
 
 or wherever you put your iplog logs
 
 start iplog
 
- iplog -d 
+.. code-block:: console
+
+   iplog -d 
 
 restart ossec
 
- ~/ossec/bin/ossec-control restart
+.. code-block:: console
+
+   ~/ossec/bin/ossec-control restart
 
 test with nmap (see before)
 
@@ -392,8 +417,10 @@ test with nmap (see before)
 =='''Firewall Drop: FreeBSD-IPFW'''==
 add to your ipfw script the follow lines, if you are using the 00001 rule number disoccupying:
 
- /sbin/ipfw add 00001 deny ip from table\(00002\) to any
- /sbin/ipfw add 00001 deny ip from any to table\(00002\)
+.. code-block:: console
+
+   /sbin/ipfw add 00001 deny ip from table\(00002\) to any
+   /sbin/ipfw add 00001 deny ip from any to table\(00002\)
 
 Change  ~/ossec/active-response/bin/firewall-drop.sh to adjust to the red lines
 

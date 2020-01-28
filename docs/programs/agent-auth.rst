@@ -68,8 +68,8 @@ agent-auth argument options
 
 .. _optional-server-authentication:
 
-Optional Server Authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Optional Server Authentication - client side
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``agent-auth`` can verify that the server it's connecting to presents a valid X.509 certificate when requesting
 a key. This is optional and is only useful if hosts in your environment have access to the root certificate of

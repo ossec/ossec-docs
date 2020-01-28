@@ -4,8 +4,8 @@ Example active response configurations:
 ---------------------------------------
 
 
-Command: Restart OSSEC on *nix systems:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Command: Restart OSSEC on unix-like systems:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This command can be used to restart the OSSEC processes. It's commonly used to automatically restart agent processes when an ``agent.conf`` is modified.
 Since no parameters are necessary the ``<expect>`` is empty.

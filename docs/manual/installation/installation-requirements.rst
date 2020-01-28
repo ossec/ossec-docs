@@ -154,7 +154,7 @@ FreeBSD
 -------
 
 If you want to build and install OSSEC on FreeBSD you can work together with
-its `Ports Collection <https://www.freebsd.org/ports>`_.
+its `FreeBSD Ports Collection <https://www.freebsd.org/ports>`_.
 
 There you can find and setup **ossec-hids-agent**, **ossec-hids-local** or
 **ossec-hids-server**.
@@ -176,7 +176,7 @@ want to install them you must work with
 OpenBSD
 -------
 
-As OpenBSD also has its own `Ports Collection <https://www.openbsd.org/faq/ports/ports.html>`_,
+As OpenBSD also has its own `OpenBSD Ports Collection <https://www.openbsd.org/faq/ports/ports.html>`_,
 you can build and install OSSEC using it if you want.
 
 It only offers **security/ossec-hids**, so:

@@ -22,7 +22,6 @@ Example preloaded-vars.conf:
 
 .. code-block:: console
 
-
    # preloaded-vars.conf, Daniel B. Cid (dcid @ ossec.net).
    #
    # Use this file to customize your installations.

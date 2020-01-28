@@ -1,5 +1,3 @@
-.. _faq_syscheck-faq:
-
 Syscheck: FAQ
 -------------
 

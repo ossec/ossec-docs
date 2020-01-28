@@ -10,27 +10,17 @@ Good login:
 
 .. code-block:: console
 
-  2006-08-10 19:22:40: INFO: respond new phase 1 negotiation:
-111.111.111.194[500]<=>83.36.51.44[500]
+  2006-08-10 19:22:40: INFO: respond new phase 1 negotiation: 111.111.111.194[500]<=>83.36.51.44[500]
   2006-08-10 19:22:40: INFO: begin Aggressive mode.
-  2006-08-10 19:22:40: INFO: received Vendor ID: draft-ietf-ipsec-nat-t-
-ike-02
-  2006-08-10 19:22:41: INFO: ISAKMP-SA established 111.111.111.194
-[500]-83.36.51.44[500] spi:3ac2d5023f433d3e:e2d682b6f4fc4830
-  2006-08-10 19:22:42: INFO: respond new phase 2 negotiation:
-111.111.111.194[0]<=>83.36.51.44[0]
-  2006-08-10 19:22:42: INFO: no policy found, try to generate the
-policy : 10.0.1.5/32[0] 10.15.13.224/27[0] proto=any dir=in
-  2006-08-10 19:22:42: INFO: IPsec-SA established: ESP/Tunnel
-83.36.51.44->111.111.111.194 spi=188599340(0xb3dcc2c)
-  2006-08-10 19:22:42: INFO: IPsec-SA established: ESP/Tunnel
-111.111.111.194->83.36.51.44 spi=19221256(0x1254b08)
-  2006-08-10 19:22:42: ERROR: such policy does not already exist:
-10.0.1.5/32[0] 10.15.13.224/27[0] proto=any dir=in
-  2006-08-10 19:22:42: ERROR: such policy does not already exist:
-10.0.1.5/32[0] 10.15.13.224/27[0] proto=any dir=fwd
-  2006-08-10 19:22:42: ERROR: such policy does not already exist:
-10.15.13.224/27[0] 10.0.1.5/32[0] proto=any dir=out
+  2006-08-10 19:22:40: INFO: received Vendor ID: draft-ietf-ipsec-nat-t-ike-02
+  2006-08-10 19:22:41: INFO: ISAKMP-SA established 111.111.111.114[500]-83.36.51.44[500] spi:3ac2d5023f433d3e:e2d682b6f4fc4830
+  2006-08-10 19:22:42: INFO: respond new phase 2 negotiation: 111.111.111.194[0]<=>83.36.51.44[0]
+  2006-08-10 19:22:42: INFO: no policy found, try to generate the policy : 10.0.1.5/32[0] 10.15.13.224/27[0] proto=any dir=in
+  2006-08-10 19:22:42: INFO: IPsec-SA established: ESP/Tunnel 83.36.51.44->111.111.111.194 spi=188599340(0xb3dcc2c)
+  2006-08-10 19:22:42: INFO: IPsec-SA established: ESP/Tunnel 111.111.111.194->83.36.51.44 spi=19221256(0x1254b08)
+  2006-08-10 19:22:42: ERROR: such policy does not already exist: 10.0.1.5/32[0] 10.15.13.224/27[0] proto=any dir=in
+  2006-08-10 19:22:42: ERROR: such policy does not already exist: 10.0.1.5/32[0] 10.15.13.224/27[0] proto=any dir=fwd
+  2006-08-10 19:22:42: ERROR: such policy does not already exist: 10.15.13.224/27[0] 10.0.1.5/32[0] proto=any dir=out
 
 
 This line indicates that the initial phase 1 auth (pskeys or certificates) have been exchanged correctly:

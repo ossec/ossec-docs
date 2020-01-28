@@ -47,7 +47,7 @@ If you want to support a new language, just copy the English one to your country
 Documenting OSSEC:
 ^^^^^^^^^^^^^^^^^^
 
-The OSSEC documentation is hosted in a `github repository <https://github.com/ossec/ossec-docs>`_.
+The OSSEC documentation is hosted in the `ossec-docs <https://github.com/ossec/ossec-docs>`_ github repository.
 Issues and pull requests can be submitted on the site.
 Emails containing details of issues can also be sent to the `ossec-list <https://groups.google.com/forum/#!forum/ossec-list>`_ google group.
 
@@ -55,7 +55,7 @@ Emails containing details of issues can also be sent to the `ossec-list <https:/
 Development of OSSEC:
 ^^^^^^^^^^^^^^^^^^^^^
 
-The OSSEC code is hosted in a `github repository <https://github.com/ossec/ossec-hids>`_.
+The OSSEC code is hosted in the `ossec-hids <https://github.com/ossec/ossec-hids>`_ github repository.
 Issues and pull requests can be submited on the site.
 
 Contributing to the development of OSSEC's code base will most likely require knwoledge of **C**,
