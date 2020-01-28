@@ -215,7 +215,7 @@ Hey, why wasn't lsof trojaned? t0rn has a trojaned lsof :)
 Detecting tuxkit - trojans
 --------------------------
 
-.. code-block:: console
+::
 
    #  md5sums - if you've keep an md5sum of the virgin state of your
       installation, detecting trojans should be a walk in the park. Every

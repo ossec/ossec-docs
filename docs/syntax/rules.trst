@@ -23,25 +23,26 @@
 
    - *maxsize* 
 
-       - Specifies the maximum size of the event. 
-       - **Allowed:** Any number from 1 to 99999 
+      - Specifies the maximum size of the event. 
+      - **Allowed:** Any number from 1 to 99999 
 
    .. _frequency:
 
    - *frequency*
 
-         - Specifies the number of times the rule must have matched before firing. The number that triggers the rule is actually 2 more than this setting.
-         - **Allowed:** Any number from 1 to 999
-	  - **Example:** frequency="2" would mean the rule must be matched 4 times
+      - Specifies the number of times the rule must have matched before firing. The number that triggers the rule is actually 2 more than this setting.
+      - **Allowed:** Any number from 1 to 999
+      - **Example:** frequency="2" would mean the rule must be matched 4 times
 
-         .. note::
-            More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
+      .. note::
+
+         More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
 
    - *noalert* 
 
-       - Specifies whether the rule generates an alert or not in a sense, that if it does, no new rules are tried, except the rules which specify this in their if_sid. Setting this to 1 is useful if trying other rules are the sensible thing to do if this one matches, but it's child rules (rules which specify this in their if_sid) do not.
-       - **Allowed:** 0 or 1 
-       - **Default:** 0 
+      - Specifies whether the rule generates an alert or not in a sense, that if it does, no new rules are tried, except the rules which specify this in their if_sid. Setting this to 1 is useful if trying other rules are the sensible thing to do if this one matches, but it's child rules (rules which specify this in their if_sid) do not.
+      - **Allowed:** 0 or 1 
+      - **Default:** 0 
 
 
 
@@ -63,9 +64,10 @@
    .. _overwrite:
 
    - *overwrite*
-	- Used to supercede an OSSEC rule with local changes.
+
+       - Used to supercede an OSSEC rule with local changes.
        - This is useful to change the level or other options of rules included with OSSEC.
-	- **Allowed** yes
+       - **Allowed** yes
 
 .. xml:element:: match
 
@@ -324,10 +326,10 @@
 
    .. code-block:: xml
 
-	<rule id="100000" level="7">
-	  <list lookup="match_key" field="srcip">path/to/list/file</list>
-	  <description>Checking srcip against cdb list file</description>
-	</rule>
+      <rule id="100000" level="7">
+        <list lookup="match_key" field="srcip">path/to/list/file</list>
+        <description>Checking srcip against cdb list file</description>
+      </rule>
 
 
 .. xml:element:: info 
@@ -380,19 +382,19 @@
    **Allowed:** 
 
    - *alert_by_email*
-	- Always alert by email.
+      - Always alert by email.
 
-       - *Example:* <options>alert_by_email</options>
+      - *Example:* <options>alert_by_email</options>
 
    - *no_email_alert* 
-	- Never alert by email.
+      - Never alert by email.
 
-       - *Example:* <options>no_email_alert</options>
+      - *Example:* <options>no_email_alert</options>
 
    - no_log
-	- Do not log this alert.
+      - Do not log this alert.
 
-       - *Example:* <options>no_log</options>
+      - *Example:* <options>no_log</options>
 
 .. xml:element:: check_diff 
 
