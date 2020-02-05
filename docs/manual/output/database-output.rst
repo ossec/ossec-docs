@@ -34,6 +34,8 @@ You must have the MySQL or PgSQL Client libraries installed on the OSSEC server.
 
 
 You then need to set the DATABASE environment variable and run the "./install.sh" script, to compile OSSEC with the appropriate database support. 
+
+
 If OSSEC had been previously compiled without database support the files created during the previous build should be removed from the `src` directory.
 
 .. code-block:: console
