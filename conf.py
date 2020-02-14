@@ -11,14 +11,15 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import sys
+import os
 import sphinx_bootstrap_theme
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.append(os.path.abspath('.'))
+# sys.path.append(os.path.abspath('.'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -30,13 +31,13 @@ import sphinx_bootstrap_theme
 sys.path.append(".")
 sys.path.append("docs")
 extensions = [
-    'sphinx.ext.autodoc', 
-    'sphinx.ext.intersphinx', 
+    'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
-    #'sphinx.ext.pngmath', 
-    'sphinx.ext.ifconfig', 
+    # 'sphinx.ext.pngmath',
+    'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    "sphinx.ext.graphviz", 
+    "sphinx.ext.graphviz",
     "sphinx.ext.extlinks",
     "_ext.xml_domain",
 ]
@@ -72,7 +73,7 @@ copyright = u'2010-2020, OSSEC Project Team'
 # built documents.
 #
 # The short X.Y version.
-version = '3.3'
+version = '3.6.0'
 # The full version, including alpha/beta/rc tags.
 release = '3.3.0'
 
@@ -111,13 +112,11 @@ pygments_style = 'sphinx'
 #modindex_common_prefix = []
 
 
-
-
 # -- Options for HTML output ---------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#sys.path.append(os.path.abspath('_themes'))
+# sys.path.append(os.path.abspath('_themes'))
 #html_theme_path = ['_themes']
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_theme_path.append("_themes")
@@ -145,9 +144,12 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
-        ('About <i class="fa fa-info-circle"></i>', "about"),
-        ('Documentation <i class="fa fa-book"></i>', "docs/", 1),
-        ('Downloads <i class="fa fa-download"></i>', "downloads"),
+        ('About <i class="fa fa-info-circle"></i>',
+         "https://www.ossec.net/about/", True),
+        ('Documentation <i class="fa fa-book"></i>',
+         "https://www.ossec.net/docs/", True),
+        ('Downloads <i class="fa fa-download"></i>',
+         "https://www.ossec.net/downloads/", True),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
@@ -188,13 +190,13 @@ html_theme_options = {
     #
     # Options are nothing (default) or the name of a valid theme
     # such as "amelia" or "cosmo".
-    #'bootswatch_theme': "united",
+    # 'bootswatch_theme': "united",
 
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
     'bootstrap_version': "3",
 
-    #'bootswatch_css_custom': ['parallax.css'], 
+    # 'bootswatch_css_custom': ['parallax.css'],
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -231,11 +233,11 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-    #'**': ['localtoc.html', 'ossec_links.html','searchbox.html'],
+    # '**': ['localtoc.html', 'ossec_links.html','searchbox.html'],
     'about*': ['localtoc.html'],
-    #'blog/**': ['postcard.html', 'recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
-    #'blog*': ['recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
-    #'docs/**': ['localtoc.html', 'searchbox.html'],
+    # 'blog/**': ['postcard.html', 'recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
+    # 'blog*': ['recentposts.html', 'categories.html', 'archives.html', 'searchbox.html'],
+    # 'docs/**': ['localtoc.html', 'searchbox.html'],
     'downloads*': ['localtoc.html'],
     'index': [],
     '': [],
@@ -287,8 +289,8 @@ htmlhelp_basename = 'OSSECdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'OSSECRules.tex', u'OSSEC Documentation',
-   u'Jeremy Rossi', 'manual'),
+    ('index', 'OSSECRules.tex', u'OSSEC Documentation',
+     u'Jeremy Rossi', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -322,20 +324,19 @@ latex_documents = [
 man_pages = [
     #('index/index', 'ossecrules', u'OSSEC Documentation', [u'Jeremy Rossi'], 1)
 ]
-import os 
 for dirpath, dirnames, filenames in os.walk("programs"):
-  for f in filenames:
-    if f.endswith(".rst") and f != 'index.rst':
-      srcfile = os.path.normpath(os.path.join(dirpath, f[:-4]))
-      dstfile = f[:-4] 
-      man_pages.append((
-          srcfile,
-          dstfile,
-          "Description of {}".format(srcfile),
-          [u"Jeremy Rossi"], 
-          1,
-        )
-      )
+    for f in filenames:
+        if f.endswith(".rst") and f != 'index.rst':
+            srcfile = os.path.normpath(os.path.join(dirpath, f[:-4]))
+            dstfile = f[:-4]
+            man_pages.append((
+                srcfile,
+                dstfile,
+                "Description of {}".format(srcfile),
+                [u"Jeremy Rossi"],
+                1,
+            )
+            )
 
 
 # -- Options for Epub output ---------------------------------------------------
