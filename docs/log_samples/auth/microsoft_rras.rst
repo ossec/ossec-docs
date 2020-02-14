@@ -21,7 +21,7 @@ A description of this format is found `on the Microsoft site <http://www.microso
   "RasBox","RAS",10/22/2006,11:57:54,1,"ACME\megaman","acme.net/Users/megaman",,,,,,"192.168.132.45",13,,"192.168.132.45",,,,0,"CONNECT 26400",1,2,4,,0,"311 1 192.168.132.45 07/31/2006 21:35:14 754",,,,,,,,,,,,,,,,,,,,,,,,,,,,"MSRASV5.00",311,,,,
 
 
-You can find information on the IAS standard log format `here <http://www.microsoft.com/windows2000/en/server/help/default.asp?url=/windows2000/en/server/help/sag_ias_log1a.html>`_ and `here <http://www.radiusreporting.com/IAS-Standard-Attribute-Table.html>`_
+You can find information on the IAS standard log format here on `Microsoft's site <http://www.microsoft.com/windows2000/en/server/help/default.asp?url=/windows2000/en/server/help/sag_ias_log1a.html>`_ and here `on radiusreporting <http://www.radiusreporting.com/IAS-Standard-Attribute-Table.html>`_
 
 
 

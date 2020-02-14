@@ -26,10 +26,7 @@ syscheck_control argument options
 .. option:: -u AGENT_ID
 
     Updates (clear) the database for the agent.
-
-.. option:: -u all 
-
-    Updates (clear) the database for all agents.
+    If `all` is used as the `AGENT_ID`, the syscheck databases for all agents are cleared.
 
 .. option:: -i AGENT_ID
 

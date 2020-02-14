@@ -34,8 +34,7 @@ Insufficient storage:
 .. code-block:: console
 
   Sep  4 01:14:35 vector postfix/smtpd[15337]: NOQUEUE: reject: MAIL from 89.pool85-60-78.dynamic.orange.es[85.60.78.89]: 452 4.3.1 Insufficient system storage; proto=ESMTP helo=<89.pool85-60-78.dynamic.orange.es>
-  Sep  4 02:24:39 vector postfix/smtpd[16863]: NOQUEUE: reject: MAIL from 217-133-56-239.b2b.tiscali.it[217.133.56.239]: 452 4.3.1 Insufficient system storage; proto=ESMTP
-helo=<217-133-56-239.b2b.tiscali.it>
+  Sep  4 02:24:39 vector postfix/smtpd[16863]: NOQUEUE: reject: MAIL from 217-133-56-239.b2b.tiscali.it[217.133.56.239]: 452 4.3.1 Insufficient system storage; proto=ESMTP helo=<217-133-56-239.b2b.tiscali.it>
   Jun 29 17:28:38 linuxserver postfix/smtpd[27712]: NOQUEUE: reject: MAIL from localhost[127.0.0.1]: 452 Insufficient system storage; proto=ESMTP helo=<localhost>
 
 

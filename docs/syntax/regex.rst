@@ -3,17 +3,28 @@
 Regular Expression Syntax
 =========================
 
-Currently OSSEC supports two regex syntaxes:
+Currently OSSEC supports three regex syntaxes:
 
+* `pcre2 <http://www.pcre.org>`_
 * OS_Regex or regex
 * OS_Match or sregex
 
+.. _regex_pcre2:
 
+pcre2
+-----
+
+Information onthe syntax for pcre2 can be found in the `pcre <http://www.pcre.org/current/doc/html/>`_
+documentation.
 
 .. _os_regex:
 
 OS_Regex/regex Syntax
 ---------------------
+
+.. warning::
+
+   The OSSEC regex syntax is legacy. The preferred method is pcre2 where available.
 
 Fast and simple library for regular expressions in C.
 

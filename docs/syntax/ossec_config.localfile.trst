@@ -137,7 +137,18 @@
 
                   Aug  9 14:22:47 hostname log line one Aug  9 14:22:47 hostname log line two Aug  9 14:22:47 hostname log line three Aug  9 14:22:47 hostname log line four Aug  9 14:22:47 hostname log line five
 
+      .. _logformat_multi-line_indented:
+
+      - multi-line_indented
+           This log format accepts logs spanning multiple lines with subsequent lines beginning with either a space or tab.
+
+           **Example:**
+               .. code-block:: xml
+
+                  <log_format>multi-line_indented</log_format>
+
 .. _command:
+
 .. xml:element:: command 
 
     The command to be run. All output from this command will be read as one or more log messages depending on whether command or full_command_ is used.

@@ -13,10 +13,16 @@ PCRE2
 
 .. versionadded:: 3.3
 
-PCRE2 has been added to version 3.3. The build system can either use the system's PCRE2 libraries,
+PCRE2 support has been added to OSSEC v3.3. The build system can either use the system's PCRE2 libraries,
 or the necessary bits can be built as part of the installation process.
 
-The default build process expects the `pcre2-10.32` source to be installed in `src/external`:
+.. versionadded:: 3.4
+
+As of v3.4 the default build process has set `PCRE2_SYSTEM`, and expects pcre2 to be installed on the system.
+On many Linux systems the necessary packages would be `dev` or `devel` packages specifically.
+
+Alternatively, OSSEC can build and use pcre2 without installing the packages.
+To do this the `pcre2-10.32` sources must be installed in `src/external`:
 
 .. code-block:: console
 
@@ -47,6 +53,12 @@ To use the included version of zlib, simply set `ZLIB_SYSTEM` to `no`:
 
 Ubuntu
 ------
+
+At a minimum, the following packages should be installed:
+
+.. code-block:: console
+
+   apt-get install build-essential make zlib1g-dev libpcre2-dev
 
 On Ubuntu you will need the *build-essential* package in order to
 compile and install OSSEC.
@@ -81,6 +93,12 @@ To use the SQLite features, the `libsqlite3-dev` package is necessary.
 
 RedHat
 ------
+
+At a minimum, the following packages should be installed:
+
+.. code-block:: console
+
+   yum install zlib-devel pcre2-devel make gcc
 
 RedHat should have most of the packages needed by default. The zlib development package
 should be installed:
@@ -136,7 +154,7 @@ FreeBSD
 -------
 
 If you want to build and install OSSEC on FreeBSD you can work together with
-its `Ports Collection <https://www.freebsd.org/ports>`_.
+its `FreeBSD Ports Collection <https://www.freebsd.org/ports>`_.
 
 There you can find and setup **ossec-hids-agent**, **ossec-hids-local** or
 **ossec-hids-server**.
@@ -158,7 +176,7 @@ want to install them you must work with
 OpenBSD
 -------
 
-As OpenBSD also has its own `Ports Collection <https://www.openbsd.org/faq/ports/ports.html>`_,
+As OpenBSD also has its own `OpenBSD Ports Collection <https://www.openbsd.org/faq/ports/ports.html>`_,
 you can build and install OSSEC using it if you want.
 
 It only offers **security/ossec-hids**, so:

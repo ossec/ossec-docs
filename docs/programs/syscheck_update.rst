@@ -28,9 +28,5 @@ syscheck_update argument options
 .. option:: -u <agent_id>
 
     Updates the database for the agent.
-
-.. option:: -u local
-
-    Updates the local database.
-
+    If `local` is used as the `<agent_id>`, the local database is updated.
 

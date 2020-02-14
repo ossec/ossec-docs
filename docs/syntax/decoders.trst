@@ -1,74 +1,148 @@
 .. xml:element:: decoder 
 
-    **Attributes:** 
+   Each decoder must have its name defined for reference by rules and other decoders.
 
-    - *id*: 
+   **Attributes:** 
 
-    - *name*:
+   - *name*:
 
-    - *type*: 
+   **Example:**
 
-    - *status*: 
+   .. code-block:: xml
 
-.. xml:element:: decoder.parent 
+     <decoder name="atomic-widget">
+
+.. xml:element:: decoder.parent
+
+   A decoder may be the child of another decoder, offering further parsing.
+   The child decoders will not be checked if the parent does not match the log message.
+
+   **Example:**
+
+   .. code-block:: xml
+
+     <decoder name="atomic-widget-login">
+       <parent>atomic-widget</parent>
 
 .. xml:element:: decoder.accumulate
 
    .. versionadded:: 2.9.0
+
    Allow OSSEC to track events over multiple log messages based on a decoded id.
 
    .. code-block:: xml
 
-      <decoder name="example">
-        ...
-        <order>id</order>
-        <accumulate/>
-      </decoder>
+     <decoder name="example">
+       ...
+       <order>id</order>
+       <accumulate/>
+     </decoder>
 
    .. note::
 
-      Requires a regex populating the ``id`` field.
-
-   .. warning::
-
-      accumulate first appeared in OSSEC 2.9.0
+     Requires a regex populating the ``id`` field using `regex` or `pcre2`.
 
 .. xml:element:: decoder.program_name 
 
-    **Allowed:** Any :ref:`os_match`
+   For many log messages a program name can be extracted automatically.
+   This option compares the value with the decoded `program_name` value.
+
+   **Allowed:** Any :ref:`os_match`
+
+   **Example:**
+
+   .. code-block:: xml
+
+      <decoder name="atomic-widget">
+        <program_name>atomic-widget</program_name>
+
+.. xml:element:: decoder.program_name_pcre2
+
+   For many log messages a program name can be extracted automatically.
+   This option compares the value with the decoded `program_name` value.
+
+   **Allowed:** A pcre2 compliant string to match the `program_name`.
 
 .. xml:element:: decoder.prematch 
 
-    **Allowed:** Any :ref:`os_match`
+   `prematch` looks for a string to determine whether the decoder is applicable.
+
+   **Allowed:** Any :ref:`os_match`
+
+.. xml:element:: decoder.prematch_pcre2
+
+   `prematch` uses pcre2 to look for a string to determine whether the decoder is applicable.
+
+   **Allowed:** A pcre2 compliant string.
 
 .. xml:element:: decoder.regex 
 
-    **Allowed:** Any :ref:`os_regex`
+   This option will allow parts of the log messages to be extracted into fields defined in the `order` option,
+   using the OSSEC regex syntax.
+
+   **Allowed:** Any :ref:`os_regex`
+
+.. xml:element:: decoder.pcre2
+
+   This option will allow parts of the log messages to be extracted into fields defined in the `order` option,
+   using the PCRE2 syntax.
+
+   **Allowed:** A pcre2 compliant search string.
 
 .. xml:element:: decoder.order 
 
+   This option names the fields used by the `regex` or `pcre2` options.
+   The field names are comma separated.
 
-    **Allowed:**
+   .. versionadded: 3.3
 
-      - location - where the log came from (only on FTS)
-      - srcuser  - extracts the source username
-      - dstuser  - extracts the destination (target) username
-      - user     - an alias to dstuser (only one of the two can be used)
-      - srcip    - source ip
-      - dstip    - dst ip
-      - srcport  - source port
-      - dstport  - destination port
-      - protocol - protocol
-      - id       - event id
-      - url      - url of the event
-      - action   - event action (deny, drop, accept, etc)
-      - status   - event status (success, failure, etc)
-      - extra_data     - Any extra data
+      The list below was previously the only field names that could be used.
+      For 3.3 dynamic decoders have been added, allowing any names to be used.
+
+   **Field Name List:**
+
+     - location - where the log came from (only on FTS)
+     - srcuser  - extracts the source username
+     - dstuser  - extracts the destination (target) username
+     - user     - an alias to dstuser (only one of the two can be used)
+     - srcip    - source ip
+     - dstip    - dst ip
+     - srcport  - source port
+     - dstport  - destination port
+     - protocol - protocol
+     - id       - event id
+     - url      - url of the event
+     - action   - event action (deny, drop, accept, etc)
+     - status   - event status (success, failure, etc)
+     - extra_data     - Any extra data
+
+   **Active Response fields:**
+
+      The following fields may be used for active responses.
+
+      - user
+      - srcip
+      - filename
 
 
 .. xml:element:: decoder.fts
 
+   `fts` is the First Time Seen option inside of analysisd.
+   It will alert the first time any defined decoded field is populated with a new value.
+
+   **Allowed:** Field names as listed in `order` above.
+
+   **Example:**
+
+   .. code-block:: xml
+
+      <decoder name="atomic-widget-login">
+        <parent>atomic-widget</parent>
+        <regex>user=(\S+)</regex>
+        <order>srcuser</order>
+        <fts>srcuser</fts>
+
 .. xml:element:: decoder.ftscomment 
 
-    Unused at this time. 
+   Unused at this time. 
 
