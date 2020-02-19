@@ -86,17 +86,10 @@ for each release. You can find out more about Atomicorp product and support offe
 their sales team at sales@atomicorp.com or visiting their products listing page at: 
 `<https://atomicorp.com/product-listing/>`_.
 
-**Wazuh** 
-
-Wazuh provides `support and professional services <http://www.wazuh.com/professional-services/>`_ to Wazuh OSSEC users. The services include training, deployment assistance, health-checks, tuning and commercial support. You can reach Wazuh team at: contact@wazuh.com.
-
-Wazuh also contributes to the OSSEC project maintaining `installers <http://ossec.wazuh.com>`_ and providing an Open Source `ruleset <http://www.wazuh.com/ossec-ruleset/>`_ to improve OSSEC detection and log analysis capabilities. Wazuh has developed its own modules for OSSEC integration with Log management systems like Splunk or `Elasticsearch <http://wazuh.com/elk-stack/>`_. Their website includes documentation explaining how to use OSSEC to get in compliance with `PCI-DSS <http://www.wazuh.com/pci-dss>`_, and to monitor Amazon AWS environments. 
-
 OSSEC Team
 ~~~~~~~~~~
 
 Currently the core OSSEC Team consists of the following developers and committers:
-
 
 
 **Scott R. Shinn** – OSSEC Development Manager – scott (at) atomicorp.com

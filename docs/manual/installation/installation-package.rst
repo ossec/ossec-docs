@@ -34,25 +34,13 @@ And for an agent run:
 Deb Installation
 ----------------
 
-OSSEC's deb packages are available in the Wazuh repository.
+OSSEC's DEB packages are made available by `Atomicorp <http://www.atomicorp.com>`_.
 
-Install the apt-get repository key:
+Run the Repo installer:
 
 .. code-block:: console
     
-    # apt-key adv --fetch-keys http://ossec.wazuh.com/repos/apt/conf/ossec-key.gpg.key
-
-Add the repository for Debian (available distributions are Sid, Jessie and Wheezy):
-
-.. code-block:: console
-
-    # echo 'deb http://ossec.wazuh.com/repos/apt/debian wheezy main' >> /etc/apt/sources.list
-
-Or add the repository for Ubuntu (available distributions are Precise, Trusty and Utopic):
-
-.. code-block:: console
-
-    # echo 'deb http://ossec.wazuh.com/repos/apt/ubuntu precise main' >> /etc/apt/sources.list
+    # wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
 
 Update the repository:
  
