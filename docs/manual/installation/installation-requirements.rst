@@ -1,6 +1,6 @@
 .. _install_req:
 
-Installations requirements
+Installation requirements
 ==========================
 
 For UNIX systems, OSSEC only requires gnu make, gcc, and libc.
@@ -51,7 +51,31 @@ To use the included version of zlib, simply set `ZLIB_SYSTEM` to `no`:
    # cd ossec-hids-*
    # ZLIB_SYSTEM=no ./install.sh
 
-Ubuntu
+RedHat / Centos / Fedora / Amazon Linux
+------
+
+Step 1) At a minimum, the following packages should be installed:
+
+.. code-block:: console
+
+   yum install zlib-devel pcre2-devel make gcc zlib-devel pcre2-devel sqlite-devel openssl-devel
+
+Step 2) For optional database support add thepackage mysql-devel and/or postgresql-devel packages
+
+.. code-block:: console
+
+   yum install mysql-devel postgresql-devel
+
+
+Step 3) Run the installation script
+
+.. code-block:: console
+
+   ./install.sh
+
+
+
+Ubuntu / Debian
 ------
 
 At a minimum, the following packages should be installed:
@@ -67,20 +91,20 @@ To install the package run the following command.
 
 .. code-block:: console
 
-    # apt-get install build-essential zlib1g-dev
+   apt-get install build-essential zlib1g-dev
 
 To use the system's pcre2 libraries, install the libpcre2 development package:
 
 .. code-block:: console
 
-   # apt-get install libpcre2-dev
+   apt-get install libpcre2-dev
 
 If database support is needed *mysql-dev* or *postgresql-dev* should be
 installed. Run the following command to install these packages.
 
 .. code-block:: console 
 
-    # apt-get install mysql-dev postgresql-dev
+    apt-get install mysql-dev postgresql-dev
 
 To use the SQLite features, the `libsqlite3-dev` package is necessary.
 
@@ -88,45 +112,9 @@ To use the SQLite features, the `libsqlite3-dev` package is necessary.
 
 .. code-block:: console
 
-   # apt-get install libsqlite3-dev
+   apt-get install libsqlite3-dev
 
 
-RedHat
-------
-
-At a minimum, the following packages should be installed:
-
-.. code-block:: console
-
-   yum install zlib-devel pcre2-devel make gcc
-
-RedHat should have most of the packages needed by default. The zlib development package
-should be installed:
-
-.. code-block:: console
-
-   # yum install zlib-devel
-
-To use the system's pcre2 libraries, add the pcre2 development package:
-
-.. code-block:: console
-
-   # yum install pcre2-devel
-
-If database support is needed the package mysql-devel and/or postgresql-devel will
-need to be installed.
-
-.. code-block:: console
-
-    # yum install mysql-devel postgresql-devel
-
-To use the SQLite features, the `sqlite-devel` package is necessary.
-
-.. versionadded:: 3.0
-
-.. code-block:: console
-
-   # yum install sqlite-devel
 
 OpenSuse
 --------
@@ -135,20 +123,20 @@ The zlib development package should be installed:
 
 .. code-block:: console
 
-   # zypper install zlib-devel
+   zypper install zlib-devel
 
 To use the system's pcre2 libraries, add the pcre2 development package:
 
 .. code-block:: console
 
-   # zypper install pcre2-devel
+   zypper install pcre2-devel
 
 If database support is needed the package mysql-devel and/or postgresql-devel will
 need to be installed.
 
 .. code-block:: console
 
-   # zypper install postgresql-devel mysql-devel
+   zypper install postgresql-devel mysql-devel
 
 FreeBSD
 -------
@@ -183,8 +171,8 @@ It only offers **security/ossec-hids**, so:
 
 .. code-block:: console
 
-   # cd /usr/ports/security/ossec-hids
-   # make
+   cd /usr/ports/security/ossec-hids
+   make
 
 Just like the previous example with FreeBSD, if you want to install it all (not just the
 dependencies) you must run ``make install`` instead. Another option would be using
@@ -219,6 +207,6 @@ This can also be avoided by using bash to run ``install.sh``:
 
 .. code-block:: console
 
-   # bash ./install.sh
+   bash ./install.sh
 
 
