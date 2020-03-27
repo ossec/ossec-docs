@@ -60,7 +60,7 @@ libevent
 for this should be installed on the system.
 
 RedHat / Centos / Fedora / Amazon Linux
-------
+---------------------------------------
 
 Step 1) At a minimum, the following packages should be installed:
 
@@ -84,13 +84,19 @@ Step 3) Run the installation script
 
 
 Ubuntu / Debian
-------
+---------------
 
 At a minimum, the following packages should be installed:
 
 .. code-block:: console
 
-   apt-get install build-essential make zlib1g-dev libpcre2-dev libevent-dev
+   apt-get install build-essential make zlib1g-dev libpcre2-dev libevent-dev libssl-dev
+
+On Debian 10 Buster, `zlib` could be `libz`.
+
+.. code-block:: console
+
+   apt-get install libz-dev
 
 On Ubuntu you will need the *build-essential* package in order to
 compile and install OSSEC.
@@ -113,6 +119,12 @@ installed. Run the following command to install these packages.
 .. code-block:: console 
 
     apt-get install mysql-dev postgresql-dev
+
+On Debian 10 Buster the following packages may be installed for MySQL/MariaDB support:
+
+.. code-block:: console
+
+   apt-get install default-libmysqlclient-dev libmariadb-dev-compat 
 
 To use the SQLite features, the `libsqlite3-dev` package is necessary.
 
@@ -185,36 +197,5 @@ It only offers **security/ossec-hids**, so:
 Just like the previous example with FreeBSD, if you want to install it all (not just the
 dependencies) you must run ``make install`` instead. Another option would be using
 `pkg_add <https://www.openbsd.org/faq/faq15.html>`_.
-
-Debian
-------
-
-.. warning::
-
-   The Debian instructions are probably out of date. Contributions updating this section
-   would be appreciated.
-
-
-Debian has replaced bash with dash, and this may cause issues during
-installation. Dash does not appear to support all of the features
-available in other shells, and may display an error when trying to set
-the server's IP address on an agent system. The error can be ignored,
-but the server ip address will need to be set.
-
-Do this by making sure something like the following information is in
-the agent's ossec.conf:
-
-.. code-block:: console
-
-   <ossec_config>
-     <client>
-       <server-ip>SERVER'S IP</server-ip>
-     </client>
-
-This can also be avoided by using bash to run ``install.sh``:
-
-.. code-block:: console
-
-   bash ./install.sh
 
 
