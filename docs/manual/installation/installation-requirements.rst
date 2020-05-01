@@ -26,7 +26,7 @@ To do this the `pcre2-10.32` sources must be installed in `src/external`:
 
 .. code-block:: console
 
-   $ cd ossec-hids-*/src
+   $ cd ossec-hids-*
    $ wget https://ftp.pcre.org/pub/pcre/pcre2-10.32.tar.gz
    $ tar xzf pcre2-10.32.tar.gz -C src/external
 
