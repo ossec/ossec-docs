@@ -26,9 +26,16 @@ To do this the `pcre2-10.32` sources must be installed in `src/external`:
 
 .. code-block:: console
 
-   $ cd ossec-hids-*/src
+   $ cd ossec-hids-*
    $ wget https://ftp.pcre.org/pub/pcre/pcre2-10.32.tar.gz
    $ tar xzf pcre2-10.32.tar.gz -C src/external
+
+If you use the `pcre2-10.32` sources, set the `PCRE2_SYSTEM` variable to no:
+
+.. code-block:: console
+
+   # cd ossec-hids-*
+   # PCRE2_SYSTEM=no ./install.sh
 
 To use the system's PCRE2, set the `PCRE2_SYSTEM` variable to yes:
 
