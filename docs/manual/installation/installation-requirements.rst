@@ -58,6 +58,14 @@ To use the included version of zlib, simply set `ZLIB_SYSTEM` to `no`:
    # cd ossec-hids-*
    # ZLIB_SYSTEM=no ./install.sh
 
+libevent
+--------
+
+.. versionadded:: 3.5
+
+`libevent <http://libevent.org/>`_ was added for `ossec-agentd` and `ossec-maild`. A development package
+for this should be installed on the system.
+
 RedHat / Centos / Fedora / Amazon Linux
 ---------------------------------------
 
@@ -65,7 +73,7 @@ Step 1) At a minimum, the following packages should be installed:
 
 .. code-block:: console
 
-   yum install zlib-devel pcre2-devel make gcc zlib-devel pcre2-devel sqlite-devel openssl-devel
+   yum install zlib-devel pcre2-devel make gcc zlib-devel pcre2-devel sqlite-devel openssl-devel libevent-devel
 
 Step 2) For optional database support add thepackage mysql-devel and/or postgresql-devel packages
 
