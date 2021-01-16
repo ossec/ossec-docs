@@ -15,13 +15,6 @@ Manual
     syscheck/index
     rootcheck/index
     rules-decoders/index
-    output/index 
+    output/index
     ar/index
-    
-
-
-
-    
-   
-
-
+    integrations/index
