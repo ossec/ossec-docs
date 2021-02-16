@@ -44,7 +44,7 @@ Run the Repo installer:
 
 Update the repository:
  
-.. code-block::console
+.. code-block:: console
 
     # apt-get update
 
