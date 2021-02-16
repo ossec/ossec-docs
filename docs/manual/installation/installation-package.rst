@@ -52,7 +52,7 @@ Install OSSEC HIDS server/manager:
 
 .. code-block:: console
 
-    # apt-get install ossec-hids
+    # apt-get install ossec-hids-server
 
 Or install OSSEC HIDS agent:
 
