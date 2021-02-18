@@ -1,3 +1,14 @@
+.. topic:: Upgrade to OSSEC+ for Free
+
+    `OSSEC+ <https://www.ossec.net/ossec-downloads/>`_ provides additional capabilities to the basic OSSEC version such as the Machine Learning System for those that simply register. The cost is still free but `OSSEC+ <https://www.ossec.net/ossec-downloads/>`_ does more! 
+   
+
+    * ELK Stack 
+    * Real Time Community Threat Sharing 
+    * 1000s of New Rules 
+    * Machine Learning.
+
+
 ===================
 OSSEC Documentation
 ===================
