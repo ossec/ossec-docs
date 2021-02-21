@@ -73,7 +73,7 @@ Step 1) At a minimum, the following packages should be installed:
 
 .. code-block:: console
 
-   yum install zlib-devel pcre2-devel make gcc sqlite-devel openssl-devel libevent-devel
+   yum install zlib-devel pcre2-devel make gcc sqlite-devel openssl-devel libevent-devel systemd-devel
 
 Step 2) For optional database support add thepackage mysql-devel and/or postgresql-devel packages
 
