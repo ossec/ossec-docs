@@ -148,6 +148,7 @@ html_theme_options = {
          "https://www.ossec.net/about/", True),
         ('Documentation <i class="fa fa-book"></i>',
          "https://www.ossec.net/docs/", True),
+         ('Get OSSEC+ <i class="fa fa-download></li>'),
         ('Downloads <i class="fa fa-download"></i>',
          "https://www.ossec.net/downloads/", True),
     ],
