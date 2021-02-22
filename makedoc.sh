@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pushd docker/el7
+pushd docker/sphinx
 	docker build -t ossec-documentation .
 popd
 
