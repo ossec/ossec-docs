@@ -1,4 +1,4 @@
-.. xml:element:: decoder 
+- decoder 
 
    Each decoder must have its name defined for reference by rules and other decoders.
 
@@ -12,7 +12,7 @@
 
      <decoder name="atomic-widget">
 
-.. xml:element:: decoder.parent
+- decoder.parent
 
    A decoder may be the child of another decoder, offering further parsing.
    The child decoders will not be checked if the parent does not match the log message.
@@ -24,7 +24,7 @@
      <decoder name="atomic-widget-login">
        <parent>atomic-widget</parent>
 
-.. xml:element:: decoder.accumulate
+- decoder.accumulate
 
    .. versionadded:: 2.9.0
 
@@ -42,7 +42,7 @@
 
      Requires a regex populating the ``id`` field using `regex` or `pcre2`.
 
-.. xml:element:: decoder.program_name 
+- decoder.program_name 
 
    For many log messages a program name can be extracted automatically.
    This option compares the value with the decoded `program_name` value.
@@ -56,40 +56,40 @@
       <decoder name="atomic-widget">
         <program_name>atomic-widget</program_name>
 
-.. xml:element:: decoder.program_name_pcre2
+- decoder.program_name_pcre2
 
    For many log messages a program name can be extracted automatically.
    This option compares the value with the decoded `program_name` value.
 
    **Allowed:** A pcre2 compliant string to match the `program_name`.
 
-.. xml:element:: decoder.prematch 
+- decoder.prematch 
 
    `prematch` looks for a string to determine whether the decoder is applicable.
 
    **Allowed:** Any :ref:`os_match`
 
-.. xml:element:: decoder.prematch_pcre2
+- decoder.prematch_pcre2
 
    `prematch` uses pcre2 to look for a string to determine whether the decoder is applicable.
 
    **Allowed:** A pcre2 compliant string.
 
-.. xml:element:: decoder.regex 
+- decoder.regex 
 
    This option will allow parts of the log messages to be extracted into fields defined in the `order` option,
    using the OSSEC regex syntax.
 
    **Allowed:** Any :ref:`os_regex`
 
-.. xml:element:: decoder.pcre2
+- decoder.pcre2
 
    This option will allow parts of the log messages to be extracted into fields defined in the `order` option,
    using the PCRE2 syntax.
 
    **Allowed:** A pcre2 compliant search string.
 
-.. xml:element:: decoder.order 
+- decoder.order 
 
    This option names the fields used by the `regex` or `pcre2` options.
    The field names are comma separated.
@@ -125,7 +125,7 @@
       - filename
 
 
-.. xml:element:: decoder.fts
+- decoder.fts
 
    `fts` is the First Time Seen option inside of analysisd.
    It will alert the first time any defined decoded field is populated with a new value.
@@ -142,7 +142,7 @@
         <order>srcuser</order>
         <fts>srcuser</fts>
 
-.. xml:element:: decoder.ftscomment 
+- decoder.ftscomment 
 
    Unused at this time. 
 

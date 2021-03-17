@@ -1,32 +1,32 @@
 
-.. xml:element:: database_output 
+- database_output 
 
 
-.. xml:element:: hostname 
+- hostname 
 
     IP Address of the database server. 
 
     **Allowed:** any valid IP address 
 
-.. xml:element:: username 
+- username 
 
     Username to access the database. 
 
     **Allowed:** Any Valid Username 
 
-.. xml:element:: password 
+- password 
 
     Password to access the database. 
 
     **Allowed:** Any Password 
 
-.. xml:element:: database  
+- database  
 
     Database name to store the alerts. 
 
     **Allowed:** database name  
 
-.. xml:element:: type
+- type
 
     Type of database (Mysql or PostgreSQL). 
 

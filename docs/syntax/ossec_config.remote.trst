@@ -1,6 +1,6 @@
-.. xml:element:: remote 
+- remote 
 
-.. xml:element:: connection 
+- connection 
 
     Specify the type of connection being enabled: secure or using syslog.
 
@@ -8,7 +8,7 @@
 
     **Allowed:** secure/syslog 
 
-.. xml:element:: port 
+- port 
 
     Specifies the port to listen for events.
 
@@ -19,7 +19,7 @@
 
     **Allowed:** Any port number from 1 to 65535
 
-.. xml:element:: protocol
+- protocol
 
     Specifies the protocol to use for syslog events.
 
@@ -27,7 +27,7 @@
 
     **Allowed:** udp or tcp
 
-.. xml:element:: allowed-ips 
+- allowed-ips 
 
     List of IP addresses that are allowed to send syslog messages to the server (one per element).
 
@@ -37,13 +37,13 @@
 
        It is necessary to allow at least one IP address when using the syslog connection type.
 
-.. xml:element:: deny-ips 
+- deny-ips 
 
     List of IP addresses that are not allowed to send syslog messages to the server(one per element).
 
     **Allowed:** Any IP address or network 
 
-.. xml:element:: local_ip 
+- local_ip 
     
     Local ip address to listen for connections.
 
@@ -51,7 +51,7 @@
 
     **Allowed:** Any internal ip address
 
-.. xml:element:: ipv6
+- ipv6
 
     Local ipv6 address to listen for connections.
 

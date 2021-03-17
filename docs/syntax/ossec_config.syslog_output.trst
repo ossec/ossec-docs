@@ -1,14 +1,14 @@
 
-.. xml:element:: syslog_output 
+- syslog_output 
 
 
-.. xml:element:: server
+- server
 
     - IP Address of the syslog server. 
 
     - **Allowed:** any valid IP address 
 
-.. xml:element:: port
+- port
 
     - Port to forward alerts to.
 
@@ -16,13 +16,13 @@
 
     - **Allowed:** Any valid port
 
-.. xml:element:: level
+- level
 
     - Minimum alert level of the alerts to be forwarded.
 
     - **Allowed:** 1 - 16 
 
-.. xml:element:: group
+- group
 
     - Alerts belonging to this group will be forwarded.
 
@@ -36,19 +36,19 @@
        <group>authentication_failure|authentication_success</group>
 
 
-.. xml:element:: rule_id
+- rule_id
 
     - Alerts matching this rule_id will be forwarded.
 
     - **Allowed:** Any valid rule_id
 
-.. xml:element:: location
+- location
 
     - Alerts from this location will be forwarded.
 
     - **Allowed:** Any valid logfile location
 
-.. xml:element:: use_fqdn
+- use_fqdn
 
     .. versionadded:: 2.9.0
 
@@ -58,7 +58,7 @@
 
     - **Allowed** yes, no
 
-.. xml:element:: format
+- format
 
     - Format of alert output. The default format is "default", or full syslog output.
 
