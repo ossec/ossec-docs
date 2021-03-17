@@ -1,64 +1,64 @@
-.. xml:element:: remote 
+- remote 
 
-.. xml:element:: connection 
+   - connection 
 
-    Specify the type of connection being enabled: secure or using syslog.
+       Specify the type of connection being enabled: secure or using syslog.
 
-    **Default:** secure 
+       **Default:** secure 
 
-    **Allowed:** secure/syslog 
+       **Allowed:** secure/syslog 
 
-.. xml:element:: port 
+   - port 
 
-    Specifies the port to listen for events.
+       Specifies the port to listen for events.
 
-    **Default:**
+       **Default:**
 
-    - 1514: if connection is set to `secure` 
-    - 514: if connection is set to `syslog`
+       - 1514: if connection is set to `secure` 
+       - 514: if connection is set to `syslog`
 
-    **Allowed:** Any port number from 1 to 65535
+       **Allowed:** Any port number from 1 to 65535
 
-.. xml:element:: protocol
+   - protocol
 
-    Specifies the protocol to use for syslog events.
+       Specifies the protocol to use for syslog events.
 
-    **Default:** udp
+       **Default:** udp
 
-    **Allowed:** udp or tcp
+       **Allowed:** udp or tcp
 
-.. xml:element:: allowed-ips 
+   - allowed-ips 
 
-    List of IP addresses that are allowed to send syslog messages to the server (one per element).
+       List of IP addresses that are allowed to send syslog messages to the server (one per element).
 
-    **Allowed:** Any IP address or network 
+       **Allowed:** Any IP address or network 
 
-    .. note::
+       .. note::
 
-       It is necessary to allow at least one IP address when using the syslog connection type.
+          It is necessary to allow at least one IP address when using the syslog connection type.
 
-.. xml:element:: deny-ips 
+   - deny-ips 
 
-    List of IP addresses that are not allowed to send syslog messages to the server(one per element).
+       List of IP addresses that are not allowed to send syslog messages to the server(one per element).
 
-    **Allowed:** Any IP address or network 
+       **Allowed:** Any IP address or network 
 
-.. xml:element:: local_ip 
-    
-    Local ip address to listen for connections.
+   - local_ip 
+       
+       Local ip address to listen for connections.
 
-    **Default:** all interfaces
+       **Default:** all interfaces
 
-    **Allowed:** Any internal ip address
+       **Allowed:** Any internal ip address
 
-.. xml:element:: ipv6
+   - ipv6
 
-    Local ipv6 address to listen for connections.
+       Local ipv6 address to listen for connections.
 
-    **Default:** None
+       **Default:** None
 
-    **Allowed:** Any IPv6 address.
+       **Allowed:** Any IPv6 address.
 
-    .. note::
+       .. note::
 
-       This is not well tested. For the time being I recommend using the full IPv6 address instead of one of the many shortcuts.
+          This is not well tested. For the time being I recommend using the full IPv6 address instead of one of the many shortcuts.

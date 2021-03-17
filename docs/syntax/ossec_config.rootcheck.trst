@@ -1,4 +1,4 @@
-.. xml:element:: base_directory
+- base_directory
 
     The base directory that will be appended to the following options:
 
@@ -12,7 +12,7 @@
     **Allowed:** Path to a directory
     **Default:** /var/ossec
 
-.. xml:element:: rootkit_files
+- rootkit_files
 
     This option can be used to change the location of the rootkit files database.
 
@@ -20,7 +20,7 @@
 
     **Default:** /etc/shared/rootkit_files.txt
 
-.. xml:element:: rootkit_trojans
+- rootkit_trojans
 
     This option can be used to change the location of the rootkit trojans database.
 
@@ -28,15 +28,15 @@
 
     **Allowed:** A file with the trojans signatures
 
-.. xml:element:: windows_audit
+- windows_audit
 
-.. xml:element:: system_audit
+- system_audit
 
-.. xml:element:: windows_apps
+- windows_apps
 
-.. xml:element:: windows_malware
+- windows_malware
 
-.. xml:element:: scanall
+- scanall
 
     Tells rootcheck to scan the whole system (may lead to some false positives).
 
@@ -44,7 +44,7 @@
 
     **Allowed:** yes/no
 
-.. xml:element:: frequency
+- frequency
 
     Frequency that the rootcheck is going to be executed (in seconds).
 
@@ -52,7 +52,7 @@
 
     **Allowed:** Time (in seconds)
 
-.. xml:element:: disabled
+- disabled
 
     Disables the execution of rootcheck.
 
@@ -60,7 +60,7 @@
 
     **Allowed:** yes/no
 
-.. xml:element:: check_dev
+- check_dev
 
      **Enable or disable the checking for files in the `/dev` filesystem**
 
@@ -68,7 +68,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_files
+- check_files
 
      **Enable or disable the checking based on the rootkit files**
 
@@ -76,7 +76,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_if
+- check_if
 
      **Enable or disable the checking the network interfaces**
 
@@ -84,7 +84,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_pids
+- check_pids
 
      **Enable or disable the checking of process IDs**
 
@@ -92,7 +92,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_ports
+- check_ports
 
      Enable or disable the checking of network ports.
 
@@ -100,7 +100,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_sys
+- check_sys
 
      **Enable or disable the checking the filesystem looking for possible issues**
 
@@ -108,7 +108,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_trojans
+- check_trojans
 
      Enable or disable the checking of trojans.
 
@@ -116,7 +116,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_unixaudit
+- check_unixaudit
 
      **Enable or disable the checking of unix issues**
 
@@ -124,7 +124,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_winapps
+- check_winapps
 
      **Enable or disable the checking of Windows apps**
 
@@ -132,7 +132,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: check_winaudit
+- check_winaudit
 
      **Enable or disable the checking of Windows issues**
 
@@ -140,7 +140,7 @@
 
      **Allowed:** 1 or 0
 
-.. xml:element:: check_winmalware
+- check_winmalware
 
      Enable or disable the checking of Windows malware.
 
@@ -148,7 +148,7 @@
 
      **Allowed:** yes or no
 
-.. xml:element:: skip_nfs
+- skip_nfs
 
     .. versionadded:: 2.9.0
 

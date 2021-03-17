@@ -1,16 +1,16 @@
-.. xml:element:: server-ip 
+- server-ip 
 
     Specify the IP address of the analysis server
 
     **Allowed:** Any Valid IP Address 
 
-.. xml:element:: server-hostname 
+- server-hostname 
 
     Specify the hostname of the analysis server 
 
     **Allowed:** Any Valid hostname 
 
-.. xml:element:: port 
+- port 
 
     Specifies the port to send the events (must be the same to the one used by the analysis server). 
 
@@ -18,7 +18,7 @@
 
     **Allowed:** Any port number from 1 to 65535
 
-.. xml:element:: config-profile
+- config-profile
 
     Specifies the ``agent.conf`` profiles to be used by the agent. Multiple profiles can be included, separated by a comma and a space.
 
@@ -34,11 +34,11 @@
 
         This first appeared in OSSEC 2.7.
 
-.. xml:element:: notify_time
+- notify_time
 
     Specifies the time in seconds between information messages sent by the agents to the server.
 
-.. xml:element:: time-reconnect
+- time-reconnect
 
     Time in seconds until a reconnection attempt. This should be set to a higher number than notify_time.
 

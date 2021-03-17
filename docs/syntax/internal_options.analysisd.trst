@@ -1,51 +1,51 @@
 .. _analysisd:
 
-.. OS:intopt:: analysisd.default_timeframe 
+   - analysisd.default_timeframe 
 
-    Analysisd default rule timeframe
+       Analysisd default rule timeframe
 
-    **Default:** 360 
+       **Default:** 360 
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 
 
-.. OS:intopt:: analysisd.stats_maxdiff
+   - analysisd.stats_maxdiff
 
-    **Default:** 25000
+       **Default:** 25000
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 
 
-.. OS:intopt:: analysisd.stats_mindiff
+   - analysisd.stats_mindiff
 
-    **Default:** 250
+       **Default:** 250
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 
 
-.. OS:intopt:: analysisd.stats_percent_diff
+   - analysisd.stats_percent_diff
 
-    **Default:** 30
+       **Default:** 30
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 
 
-.. OS:intopt:: analysisd.fts_list_size
+   - analysisd.fts_list_size
 
-    **Default:** 32
+       **Default:** 32
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 
 
-.. OS:intopt:: analysisd.fts_min_size_for_str
+   - analysisd.fts_min_size_for_str
 
-    **Default:** 14
+       **Default:** 14
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 
 
-.. OS:intopt:: analysisd.log_fw
+   - analysisd.log_fw
 
-    **Default:** 1
+       **Default:** 1
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 
 
-.. OS:intopt:: analysisd.debug
+   - analysisd.debug
 
-    **Default:** 0
+       **Default:** 0
 
-    **Allowed:** Any integer 
+       **Allowed:** Any integer 

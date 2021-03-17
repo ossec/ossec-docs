@@ -1,22 +1,22 @@
 Command Options
 ---------------
 
-.. xml:element:: command
+- command
 
     In the commands configuration you create new "commands" to be used as responses.
     You can have as many commands as you want. Each one should be inside their own "command" element. ``command`` is required.
 
-.. xml:element:: name
+- name
 
     Used to link the command to the response. ``name`` is required.
 
-.. xml:element:: executable
+- executable
 
     It must be a file (with exec permissions) inside ``/var/ossec/active-response/bin``. ``executable`` is required.
 
     You don't need to provide the whole path.
 
-.. xml:element:: expect
+- expect
 
     The arguments this command is expecting (options are srcip and username). If a field is not within the ``expect`` option it will be passed as a dash (``-``) instead of the actual value. For instance, if ``srcip`` is required for an active-response script to work it **must** be inside of an ``expect`` option. ``expect`` is required.
 
@@ -24,31 +24,31 @@ Command Options
 
        ``expect`` is required, but it is not required to populate it. ``<expect></expect>`` is valid if no options need to be passed to the active-response script.
 
-.. xml:element:: timeout_allowed
+- timeout_allowed
 
     Specifies if this command supports a timeout. This is optional, and defaults to ``yes``.
 
 Active-response Options
 -----------------------
 
-.. xml:element:: active-response 
+- active-response 
 
     In the active-response configuration, you bind the commands (created) to events. 
     You can have as many responses as you want. Each one should be inside their own 
     “active-response” element.
 
-.. xml:element:: disabled 
+- disabled 
 
     Disables active response if set to yes. If this is not defined active response is enabled on unix systems, and disabled on Windows systems.
     This option is available on server, local, and agent installations.
     Setting it to ``yes`` on an agent will disable active-response for that agent only,
     while setting it on the server will disable all active-response.
 
-.. xml:element:: command 
+- command 
 
     Used to link the response to the command 
 
-.. xml:element:: location 
+- location 
 
     Where the command should be executed. You have four options: 
 
@@ -60,27 +60,27 @@ Active-response Options
       agent_id to use)
     - *all*: all agents
 
-.. xml:element:: agent_id 
+- agent_id 
 
     The ID of the agent to execute the response (when defined-agent is set). 
 
-.. xml:element:: level 
+- level 
     
     The response will be executed on any event with this level or higher. 
 
-.. xml:element:: rules_group
+- rules_group
 
     The response will be executed on any event in the defined group. Multiple groups can be defined if separated by a pipe (`|`).
 
-.. xml:element:: rules_id
+- rules_id
 
     The response will be executed on any event with the defined ID. Multiple IDs can be specified if separated by a comma.
 
-.. xml:element:: timeout 
+- timeout 
 
     How long in seconds until the response command is executed (IP unblocked, for example). 
 
-.. xml:element:: repeated_offenders
+- repeated_offenders
 
    A comma separated list of increasing timeouts in minutes for repeat offenders. There can be a maximum of 5 entries.
 

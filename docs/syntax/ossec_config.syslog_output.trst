@@ -1,81 +1,81 @@
 
-.. xml:element:: syslog_output 
+- syslog_output 
 
 
-.. xml:element:: server
+   - server
 
-    - IP Address of the syslog server. 
+       - IP Address of the syslog server. 
 
-    - **Allowed:** any valid IP address 
+       - **Allowed:** any valid IP address 
 
-.. xml:element:: port
+   - port
 
-    - Port to forward alerts to.
+       - Port to forward alerts to.
 
-    - **Default** 514
+       - **Default** 514
 
-    - **Allowed:** Any valid port
+       - **Allowed:** Any valid port
 
-.. xml:element:: level
+   - level
 
-    - Minimum alert level of the alerts to be forwarded.
+       - Minimum alert level of the alerts to be forwarded.
 
-    - **Allowed:** 1 - 16 
+       - **Allowed:** 1 - 16 
 
-.. xml:element:: group
+   - group
 
-    - Alerts belonging to this group will be forwarded.
+       - Alerts belonging to this group will be forwarded.
 
-    - **Allowed:** Any valid group. Separate multiple groups with the pipe (``|``) character.
+       - **Allowed:** Any valid group. Separate multiple groups with the pipe (``|``) character.
 
-    - **Examples:**
+       - **Examples:**
 
-    .. code-block:: console
+       .. code-block:: console
 
-       <group>syscheck</group>
-       <group>authentication_failure|authentication_success</group>
+          <group>syscheck</group>
+          <group>authentication_failure|authentication_success</group>
 
 
-.. xml:element:: rule_id
+   - rule_id
 
-    - Alerts matching this rule_id will be forwarded.
+       - Alerts matching this rule_id will be forwarded.
 
-    - **Allowed:** Any valid rule_id
+       - **Allowed:** Any valid rule_id
 
-.. xml:element:: location
+   - location
 
-    - Alerts from this location will be forwarded.
+       - Alerts from this location will be forwarded.
 
-    - **Allowed:** Any valid logfile location
+       - **Allowed:** Any valid logfile location
 
-.. xml:element:: use_fqdn
+   - use_fqdn
 
-    .. versionadded:: 2.9.0
+       .. versionadded:: 2.9.0
 
-    - By default, ossec truncates the hostname at the first period ('.') when generating syslog messages. Setting this option to 'yes' will cause it to use the full hostname configured on the server.
+       - By default, ossec truncates the hostname at the first period ('.') when generating syslog messages. Setting this option to 'yes' will cause it to use the full hostname configured on the server.
 
-    - **Default** no
+       - **Default** no
 
-    - **Allowed** yes, no
+       - **Allowed** yes, no
 
-.. xml:element:: format
+   - format
 
-    - Format of alert output. The default format is "default", or full syslog output.
+       - Format of alert output. The default format is "default", or full syslog output.
 
-    - CEF is the ArcSight Common Event Format.
+       - CEF is the ArcSight Common Event Format.
 
-    - json can be used with a variety of tools.
+       - json can be used with a variety of tools.
 
-    - The splunk option is for sending data to a Splunk server.
+       - The splunk option is for sending data to a Splunk server.
 
-    - **Allowed** default, cef, splunk, json
+       - **Allowed** default, cef, splunk, json
 
-    - **Example:**
+       - **Example:**
 
-    .. code-block:: xml
+       .. code-block:: xml
 
-    	<syslog_output>
-      	  <server>10.0.0.1</server>
-      	  <port>514</port>
-      	  <format>cef</format>
-    	</syslog_output>
+       	<syslog_output>
+         	  <server>10.0.0.1</server>
+         	  <port>514</port>
+         	  <format>cef</format>
+       	</syslog_output>
