@@ -1,73 +1,73 @@
 - reports 
 
 
-- group
+   - group
 
-    Filter by group/category.  
+       Filter by group/category.  
 
-    **Allowed:** Any category used within OSSEC Rules. 
+       **Allowed:** Any category used within OSSEC Rules. 
 
-- categories
+   - categories
 
-    Filter by group/category. 
+       Filter by group/category. 
 
-    .. note:: 
+       .. note:: 
 
-        This is the same as the group option above.  
+           This is the same as the group option above.  
 
-    **Allowed:** Any category used within OSSEC Rules. 
+       **Allowed:** Any category used within OSSEC Rules. 
 
-- rule
-        
-    Rule ID to Filter for. 
+   - rule
+           
+       Rule ID to Filter for. 
 
-    **Allowed:** Any Rule ID in OSSEC Rules. 
+       **Allowed:** Any Rule ID in OSSEC Rules. 
 
-- level
+   - level
 
-    Alert level to filter for.  This is an inclusive option so all higher level 
-    alerts will also match. 
+       Alert level to filter for.  This is an inclusive option so all higher level 
+       alerts will also match. 
 
-    **Allowed:** Any Alert level 1 to 16 
+       **Allowed:** Any Alert level 1 to 16 
 
-- location
+   - location
 
-    Filter by the log location or agent name. 
+       Filter by the log location or agent name. 
 
-    **Allowed:** Any file path or hostname or network.  
+       **Allowed:** Any file path or hostname or network.  
 
-- srcip 
+   - srcip 
 
-    Filter by the source ip of the event. 
+       Filter by the source ip of the event. 
 
-    **Allowed:** Any hostname or network 
+       **Allowed:** Any hostname or network 
 
-- user 
+   - user 
 
-    Filter by the user name.  This will match on either srcuser or dstuser 
+       Filter by the user name.  This will match on either srcuser or dstuser 
 
-    **Allowed:** Any username 
+       **Allowed:** Any username 
 
-- title 
+   - title 
 
-    The name of the report.  
-    
-    This is a required field for reports to function. 
+       The name of the report.  
+       
+       This is a required field for reports to function. 
 
-    **Allowed:** Any Text 
+       **Allowed:** Any Text 
 
-- email_to 
+   - email_to 
 
-    The email address to send the completed report. 
+       The email address to send the completed report. 
 
-    This is a required field for a report to function.  
+       This is a required field for a report to function.  
 
-    **Allowed:** Any email address
+       **Allowed:** Any email address
 
-- showlogs
+   - showlogs
 
-    Include logs when creating the report
+       Include logs when creating the report
 
-    **Allowed:** yes/no
+       **Allowed:** yes/no
 
-    **Default:** no
+       **Default:** no

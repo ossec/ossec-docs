@@ -2,36 +2,36 @@
 - database_output 
 
 
-- hostname 
+   - hostname 
 
-    IP Address of the database server. 
+       IP Address of the database server. 
 
-    **Allowed:** any valid IP address 
+       **Allowed:** any valid IP address 
 
-- username 
+   - username 
 
-    Username to access the database. 
+       Username to access the database. 
 
-    **Allowed:** Any Valid Username 
+       **Allowed:** Any Valid Username 
 
-- password 
+   - password 
 
-    Password to access the database. 
+       Password to access the database. 
 
-    **Allowed:** Any Password 
+       **Allowed:** Any Password 
 
-- database  
+   - database  
 
-    Database name to store the alerts. 
+       Database name to store the alerts. 
 
-    **Allowed:** database name  
+       **Allowed:** database name  
 
-- type
+   - type
 
-    Type of database (Mysql or PostgreSQL). 
+       Type of database (Mysql or PostgreSQL). 
 
-    .. note:: 
-        
-         OSSEC must be compiled with the database type that is to be used. 
+       .. note:: 
 
-    **Allowed:** mysql/postgresql 
+            OSSEC must be compiled with the database type that is to be used. 
+
+       **Allowed:** mysql/postgresql 

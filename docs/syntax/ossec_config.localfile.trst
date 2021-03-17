@@ -2,218 +2,218 @@
 - localfile 
 
 
-- location 
+   - location 
 
-    Specify the location of the log to be read. strftime formats may be used for log file names.
-    For instance, a log file named ``file.log-2011-01-22`` could be referenced with ``file.log-%Y-%m-%d``.
-    Wildcards may be used on non-Windows systems. When wildcards are used, the log files must exist at the time ``ossec-logcollector`` is started.
-    It will not automatically begin monitoring new log files. ``strftime`` and wildcards cannot be used on the same entry.
+       Specify the location of the log to be read. strftime formats may be used for log file names.
+       For instance, a log file named ``file.log-2011-01-22`` could be referenced with ``file.log-%Y-%m-%d``.
+       Wildcards may be used on non-Windows systems. When wildcards are used, the log files must exist at the time ``ossec-logcollector`` is started.
+       It will not automatically begin monitoring new log files. ``strftime`` and wildcards cannot be used on the same entry.
 
-    **Default:** Multiple (eg /var/log/messages)
+       **Default:** Multiple (eg /var/log/messages)
 
-    **Allowed:** Any log file 
+       **Allowed:** Any log file 
 
-- log_format 
+   - log_format 
 
-    The format of the log being read. 
+       The format of the log being read. 
 
-    .. note:: 
+       .. note:: 
 
-        If the log has one entry per line, use syslog. 
+           If the log has one entry per line, use syslog. 
 
-    **Default:** syslog 
+       **Default:** syslog 
 
-    **Allowed:** 
+       **Allowed:** 
 
-      .. _logformat-syslog:
+         .. _logformat-syslog:
 
-      - syslog
-          This format is for plain text files in a syslog-like format. It can also be used when there is no support for the logging format, and the logs are single line messages.
+         - syslog
+             This format is for plain text files in a syslog-like format. It can also be used when there is no support for the logging format, and the logs are single line messages.
 
-      .. _logformat-snort-full:
+         .. _logformat-snort-full:
 
-      - snort-full 
-          This is used for Snort's full output format.
+         - snort-full 
+             This is used for Snort's full output format.
 
-      .. _logformat-snort-fast:
+         .. _logformat-snort-fast:
 
-      - snort-fast 
-          This is used for Snort's fast output format.
+         - snort-fast 
+             This is used for Snort's fast output format.
 
-      .. _logformat_squid:
+         .. _logformat_squid:
 
-      - squid 
+         - squid 
 
-      .. _logformat_iis:
+         .. _logformat_iis:
 
-      - iis 
+         - iis 
 
-      .. _logformat_eventlog:
+         .. _logformat_eventlog:
 
-      - eventlog 
-          This is used for Microsoft Windows eventlog format.
+         - eventlog 
+             This is used for Microsoft Windows eventlog format.
 
-      .. _logformat_eventchannel:
+         .. _logformat_eventchannel:
 
-      - eventchannel
-          This is used for Microsoft Windows eventlogs, using the new EventApi. This allows OSSEC to monitor both standard "Windows" eventlogs and more recent "Application and Services" logs. This support was added in 2.8.
+         - eventchannel
+             This is used for Microsoft Windows eventlogs, using the new EventApi. This allows OSSEC to monitor both standard "Windows" eventlogs and more recent "Application and Services" logs. This support was added in 2.8.
 
-      .. warning::
-          ``eventchannel`` cannot be used on Windows systems older than Vista.
+         .. warning::
+             ``eventchannel`` cannot be used on Windows systems older than Vista.
 
-      .. _logformat_mysql:
+         .. _logformat_mysql:
 
-      - mysql_log 
-          This is used for `MySQL <http://dev.mysql.com/>`_ logs. It does not support multi-line logs.
+         - mysql_log 
+             This is used for `MySQL <http://dev.mysql.com/>`_ logs. It does not support multi-line logs.
 
-      .. _logformat_postgresql:
+         .. _logformat_postgresql:
 
-      - postgresql_log 
-          This is used for `PostgreSQL <http://www.postgresql.org>`_ logs. It does not support multi-line logs.
+         - postgresql_log 
+             This is used for `PostgreSQL <http://www.postgresql.org>`_ logs. It does not support multi-line logs.
 
-      .. _logformat_nmapg:
+         .. _logformat_nmapg:
 
-      - nmapg 
-          This is used for monitoring files conforming to the grepable output from `nmap <http://nmap.org>`_.
+         - nmapg 
+             This is used for monitoring files conforming to the grepable output from `nmap <http://nmap.org>`_.
 
-      .. _logformat_apache:
+         .. _logformat_apache:
 
-      - apache
+         - apache
 
-          This format is for apache's default log format.
+             This format is for apache's default log format.
 
-          **Example:**
+             **Example:**
 
-          .. code-block:: console
+             .. code-block:: console
 
-                [Wed Jun  9 23:32:26 2010] [error] [client 192.168.1.100] File does not exist: /htdocs/favicon.ico
+                   [Wed Jun  9 23:32:26 2010] [error] [client 192.168.1.100] File does not exist: /htdocs/favicon.ico
 
-          **Example:**
+             **Example:**
 
-          .. code-block:: console
+             .. code-block:: console
 
-              192.168.1.100 - - [21/Jan/2010:08:31:09 -0500] "GET / HTTP/1.0" 200 2212
+                 192.168.1.100 - - [21/Jan/2010:08:31:09 -0500] "GET / HTTP/1.0" 200 2212
 
-      .. _logformat_command:
+         .. _logformat_command:
 
-      - command 
-          This format will be the output from the command (as run by root) defined by command_. Each line of output will be treated as a separate log.
+         - command 
+             This format will be the output from the command (as run by root) defined by command_. Each line of output will be treated as a separate log.
 
-      .. _full_command:
+         .. _full_command:
 
-      - full_command
-          This format will be the output from the command (as run by root) defined by command_. The entire output will be treated as a single log.
+         - full_command
+             This format will be the output from the command (as run by root) defined by command_. The entire output will be treated as a single log.
 
-      .. warning::
-          ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
+         .. warning::
+             ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
 
-      .. _logformat_djb:
+         .. _logformat_djb:
 
-      - djb-multilog
+         - djb-multilog
 
-      .. _logformat_multi-line:
+         .. _logformat_multi-line:
 
-      - multi-line
-          This option will allow applications that log multiple lines per event to be monitored. This format requires the number of lines to be consistent.
-          ``multi-line:`` is followed by the number of lines in each log entry. Each line will be combined with the previous lines until all lines are gathered.
-          There may be multiple timestamps in a finalized event.
+         - multi-line
+             This option will allow applications that log multiple lines per event to be monitored. This format requires the number of lines to be consistent.
+             ``multi-line:`` is followed by the number of lines in each log entry. Each line will be combined with the previous lines until all lines are gathered.
+             There may be multiple timestamps in a finalized event.
 
-          **Allowed:** <log_format>multi-line: NUMBER</log_format>
+             **Allowed:** <log_format>multi-line: NUMBER</log_format>
 
-          **Example:**
-              Log messages:
+             **Example:**
+                 Log messages:
 
-              .. code-block:: console
+                 .. code-block:: console
 
-                  Aug  9 14:22:47 hostname log line one
-                  Aug  9 14:22:47 hostname log line two
-                  Aug  9 14:22:47 hostname log line three
-                  Aug  9 14:22:47 hostname log line four
-                  Aug  9 14:22:47 hostname log line five
+                     Aug  9 14:22:47 hostname log line one
+                     Aug  9 14:22:47 hostname log line two
+                     Aug  9 14:22:47 hostname log line three
+                     Aug  9 14:22:47 hostname log line four
+                     Aug  9 14:22:47 hostname log line five
 
-              Log message as analyzed by `ossec-analysisd`:
+                 Log message as analyzed by `ossec-analysisd`:
 
-              .. code-block:: console
+                 .. code-block:: console
 
-                  Aug  9 14:22:47 hostname log line one Aug  9 14:22:47 hostname log line two Aug  9 14:22:47 hostname log line three Aug  9 14:22:47 hostname log line four Aug  9 14:22:47 hostname log line five
+                     Aug  9 14:22:47 hostname log line one Aug  9 14:22:47 hostname log line two Aug  9 14:22:47 hostname log line three Aug  9 14:22:47 hostname log line four Aug  9 14:22:47 hostname log line five
 
-      .. _logformat_multi-line_indented:
+         .. _logformat_multi-line_indented:
 
-      - multi-line_indented
-           This log format accepts logs spanning multiple lines with subsequent lines beginning with either a space or tab.
+         - multi-line_indented
+              This log format accepts logs spanning multiple lines with subsequent lines beginning with either a space or tab.
 
-           **Example:**
-               .. code-block:: xml
+              **Example:**
+                  .. code-block:: xml
 
-                  <log_format>multi-line_indented</log_format>
+                     <log_format>multi-line_indented</log_format>
 
-.. _command:
+   .. _command:
 
-- command 
+   - command 
 
-    The command to be run. All output from this command will be read as one or more log messages depending on whether command or full_command_ is used.
+       The command to be run. All output from this command will be read as one or more log messages depending on whether command or full_command_ is used.
 
-    **Allowed:** Any commandline and arguments. 
+       **Allowed:** Any commandline and arguments. 
 
 
-.. _command_alias:
+   .. _command_alias:
 
-- alias
+   - alias
 
-    An alias to identify the command. This will replace the command in the log message.
+       An alias to identify the command. This will replace the command in the log message.
 
-    For example ``<alias>usb-check</alias>`` would replace:
+       For example ``<alias>usb-check</alias>`` would replace:
 
-    .. code-block:: console
+       .. code-block:: console
 
-       ossec: output: 'reg QUERY HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR':
+          ossec: output: 'reg QUERY HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR':
 
-    with:
+       with:
 
-    .. code-block:: console
+       .. code-block:: console
 
-       ossec: output: 'usb-check':
+          ossec: output: 'usb-check':
 
-    **Allowed:** Any string.
+       **Allowed:** Any string.
 
-.. _command_frequency:
-- frequency
+   .. _command_frequency:
+   - frequency
 
-    The minimum time in seconds between command runs. The command will probably not run every ``frequency`` seconds exactly, but the time between runs will not be shorter than this setting. This is used with command_ and full_command_.
+       The minimum time in seconds between command runs. The command will probably not run every ``frequency`` seconds exactly, but the time between runs will not be shorter than this setting. This is used with command_ and full_command_.
 
-    **Allowed:** Time in seconds.
+       **Allowed:** Time in seconds.
 
 
-.. _check_diff:
-- check_diff 
+   .. _check_diff:
+   - check_diff 
 
-    The output from an event will be stored in an internal database. Every time the same event is received, the output is compared to the previous output. If the output has changed an alert will be generated.
+       The output from an event will be stored in an internal database. Every time the same event is received, the output is compared to the previous output. If the output has changed an alert will be generated.
 
-.. _only-future-events:
-- only-future-events
+   .. _only-future-events:
+   - only-future-events
 
-    Only used with the ``eventchannel`` log format. By default, when OSSEC starts the eventchannel log format will read all events that ossec-logcollector missed since it was last stopped. 
-    It is possible to set ``only-future-events`` to ``yes`` in order to prevent this behaviour. When set to ``yes``, OSSEC will only receive events that occured after the start of logcollector.
+       Only used with the ``eventchannel`` log format. By default, when OSSEC starts the eventchannel log format will read all events that ossec-logcollector missed since it was last stopped. 
+       It is possible to set ``only-future-events`` to ``yes`` in order to prevent this behaviour. When set to ``yes``, OSSEC will only receive events that occured after the start of logcollector.
 
-    .. code-block:: console
+       .. code-block:: console
 
-       <localfile>
-         <location>System</location>
-         <log_format>eventchannel</log_format>
-         <only-future-events>yes</only-future-events>
-       </localfile>
+          <localfile>
+            <location>System</location>
+            <log_format>eventchannel</log_format>
+            <only-future-events>yes</only-future-events>
+          </localfile>
 
-.. _query:
-- query
+   .. _query:
+   - query
 
-    Only used with the ``eventchannel`` log format. It is possible to specify an XPATH query following the event schema (see `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_) in order to filter the events that OSSEC will process.
+       Only used with the ``eventchannel`` log format. It is possible to specify an XPATH query following the event schema (see `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_) in order to filter the events that OSSEC will process.
 
-    For example, the following configuration will only process events with an ID of 7040:
+       For example, the following configuration will only process events with an ID of 7040:
 
-    .. code-block:: console
+       .. code-block:: console
 
-      <localfile>
-        <location>System</location>
-        <log_format>eventchannel</log_format>
-        <query>Event/System[EventID=7040]</query>
-      </localfile>
+         <localfile>
+           <location>System</location>
+           <log_format>eventchannel</log_format>
+           <query>Event/System[EventID=7040]</query>
+         </localfile>
