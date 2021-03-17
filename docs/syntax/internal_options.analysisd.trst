@@ -2,7 +2,7 @@
 
    - analysisd.default_timeframe 
 
-    Analysisd default rule timeframe
+       Analysisd default rule timeframe
 
        **Default:** 360 
 
