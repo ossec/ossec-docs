@@ -214,8 +214,8 @@
 
       .. code-block:: console
 
-      <global>
-        <md5_whitelist>/rules/lists/md5whitelist.db</md5_whitelist>
-      </global>
+         <global>
+           <md5_whitelist>/rules/lists/md5whitelist.db</md5_whitelist>
+         </global>
 
 

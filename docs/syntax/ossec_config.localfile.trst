@@ -177,6 +177,7 @@
        **Allowed:** Any string.
 
    .. _command_frequency:
+
    - frequency
 
        The minimum time in seconds between command runs. The command will probably not run every ``frequency`` seconds exactly, but the time between runs will not be shorter than this setting. This is used with command_ and full_command_.
@@ -185,11 +186,13 @@
 
 
    .. _check_diff:
+
    - check_diff 
 
        The output from an event will be stored in an internal database. Every time the same event is received, the output is compared to the previous output. If the output has changed an alert will be generated.
 
    .. _only-future-events:
+
    - only-future-events
 
        Only used with the ``eventchannel`` log format. By default, when OSSEC starts the eventchannel log format will read all events that ossec-logcollector missed since it was last stopped. 
@@ -204,6 +207,7 @@
           </localfile>
 
    .. _query:
+
    - query
 
        Only used with the ``eventchannel`` log format. It is possible to specify an XPATH query following the event schema (see `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_) in order to filter the events that OSSEC will process.
