@@ -1,2 +1,0 @@
-MD5(ossec-vm-2.8.1.ova)= bf3a01045e81b407d4c284e82e5bbeb2
-SHA1(ossec-vm-2.8.1.ova)= fda0b8b8d13a91b7fc42ca14c4af47e6feb09215
