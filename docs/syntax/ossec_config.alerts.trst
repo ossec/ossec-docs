@@ -1,36 +1,36 @@
 
-.. xml:element:: alerts 
+- alerts 
 
     
-.. xml:element:: email_alert_level 
+   - email_alert_level 
 
-    Minimum alert level to send e-mail notifications.
+       Minimum alert level to send e-mail notifications.
 
-    **Default:** 7 
+       **Default:** 7 
 
-    **Allowed:** Any level from 1 to 16 
+       **Allowed:** Any level from 1 to 16 
 
-    .. note::
+       .. note::
 
-       This is the minimum level for an alert to trigger an email. 
-       This overrides granular email alert levels. 
-       Setting this to 10 would prevent emails for alerts at levels 
-       lower than 10 to be sent despite settings in the granular email configuration.
-       Individual rules can override this with the `alert_by_email <head_rules.html#element-options>`_ option.
+          This is the minimum level for an alert to trigger an email. 
+          This overrides granular email alert levels. 
+          Setting this to 10 would prevent emails for alerts at levels 
+          lower than 10 to be sent despite settings in the granular email configuration.
+          Individual rules can override this with the `alert_by_email <head_rules.html#element-options>`_ option.
 
-.. xml:element:: log_alert_level 
+   - log_alert_level 
 
-    Minimum alert level to store the log messages.
+       Minimum alert level to store the log messages.
 
-    **Default:** 1 
+       **Default:** 1 
 
-    **Allowed:** Any level from 1 to 16 
+       **Allowed:** Any level from 1 to 16 
 
-.. xml:element:: use_geoip
+   - use_geoip
 
-    Enable or disable GeoIP lookups.
+       Enable or disable GeoIP lookups.
 
-    **Default:** Disabled
+       **Default:** Disabled
 
-    **Allowed:** yes/no
+       **Allowed:** yes/no
 

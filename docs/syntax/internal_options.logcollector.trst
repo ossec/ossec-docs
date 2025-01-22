@@ -1,24 +1,24 @@
 .. _logcollector:
 
-.. OS:intopt:: logcollector.loop_timeout
+   - logcollector.loop_timeout
 
-    **Default:** 2
+       **Default:** 2
 
-.. OS:intopt:: logcollector.open_attempts
+   - logcollector.open_attempts
 
-    **Default:** 8
+       **Default:** 8
 
-.. OS:intopt:: logcollector.remote_commands=0
+   - logcollector.remote_commands=0
 
-    Allow the agents to run commands defined in ``agent.conf``.
+       Allow the agents to run commands defined in ``agent.conf``.
 
-    **Allowed:** 0,1
+       **Allowed:** 0,1
 
-    **Default:** 0
+       **Default:** 0
 
-    .. note::
+       .. note::
 
-        This option first appeared in OSSEC 2.7.
+           This option first appeared in OSSEC 2.7.
 
 
 
