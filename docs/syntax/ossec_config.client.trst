@@ -42,3 +42,11 @@
 
     Time in seconds until a reconnection attempt. This should be set to a higher number than notify_time.
 
+- crypto_method
+
+    Specifies the encryption method to use for communication with the manager.
+
+    **Default:** aes
+
+    **Allowed:** aes, blowfish
+

@@ -1,3 +1,5 @@
 sphinx_rtd_theme
 recommonmark
 sphinx_bootstrap_theme
+myst-parser
+furo
