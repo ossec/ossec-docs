@@ -1,0 +1,116 @@
+/* OSSEC Custom Header Styles */
+
+:root {
+    --ossec-header-height: 50px;
+    --ossec-header-bg: #1a1c1e;
+    --ossec-header-text: #ffffff;
+    --ossec-header-link-hover: #007bff;
+}
+
+.ossec-header {
+    height: var(--ossec-header-height);
+    background-color: var(--ossec-header-bg);
+    color: var(--ossec-header-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: var(--font-stack);
+}
+
+.ossec-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.ossec-header-logo {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.ossec-header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.ossec-header-nav a {
+    color: var(--ossec-header-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.ossec-header-nav a:hover {
+    color: var(--ossec-header-link-hover);
+}
+
+.ossec-header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ossec-header-social-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ossec-top-search {
+    display: flex;
+    align-items: center;
+    background: #333;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+
+.ossec-top-search input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    outline: none;
+    font-size: 0.85rem;
+    width: 200px;
+}
+
+.ossec-top-search button {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.ossec-header-social,
+.ossec-header-social:visited {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ossec-header-social:hover {
+    color: #ffffff;
+}
+
+.ossec-header-social svg {
+    display: block;
+}
+
+/* Adjust Furo layout for the top header */
+body {
+    padding-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .ossec-header-nav {
+        display: none;
+        /* Hide links on mobile for now */
+    }
+}

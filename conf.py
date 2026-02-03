@@ -40,3 +40,11 @@ html_static_path = ['_static']
 # Not bad
 html_theme = "furo"
 
+html_static_path = ['_static']
+
+html_css_files = [
+    'custom.css',
+]
+
+html_logo = "ossec_logo_bare_small.png"
+
