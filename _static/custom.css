@@ -16,6 +16,7 @@
     justify-content: space-between;
     padding: 0 20px;
     width: 100%;
+    box-sizing: border-box;
     z-index: 100;
     font-family: var(--font-stack);
 }
@@ -49,12 +50,13 @@
 .ossec-header-right {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .ossec-top-search {
     display: flex;
     align-items: center;
-    background: #333;
+    background: #444;
     border-radius: 4px;
     padding: 2px 10px;
 }
@@ -66,6 +68,7 @@
     padding: 5px;
     outline: none;
     font-size: 0.85rem;
+    width: 200px;
 }
 
 .ossec-top-search button {
@@ -73,6 +76,20 @@
     border: none;
     color: #ccc;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.ossec-header-social {
+    color: var(--ossec-header-text);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ossec-header-social:hover {
+    color: #0085ff;
+    /* Bluesky blue */
 }
 
 /* Adjust Furo layout for the top header */
