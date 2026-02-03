@@ -1,4 +1,4 @@
-FROM sphinxdoc/sphinx
+FROM docker.io/sphinxdoc/sphinx
 WORKDIR /docs
 ADD requirements.txt /docs
 ADD run.sh /run.sh

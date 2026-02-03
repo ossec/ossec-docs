@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pushd docker/sphinx
-	docker build -t ossec-documentation .
+	podman build -t ossec-documentation .
 popd
 
-docker run --rm -v ${PWD}:/build ossec-documentation
+podman run --rm --userns=keep-id -v ${PWD}:/build ossec-documentation

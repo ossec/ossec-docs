@@ -62,3 +62,11 @@
        .. note::
 
           This is not well tested. For the time being I recommend using the full IPv6 address instead of one of the many shortcuts.
+
+   - crypto_accept
+
+       Specifies the encryption methods accepted by the manager.
+
+       **Default:** any
+
+       **Allowed:** aes, blowfish, any

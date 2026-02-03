@@ -1,6 +1,14 @@
 Change Log
 ----------
 
+4.0.0 (2026/02/01 12:00 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Major version release.
+- Added support for AES-256 encryption for agent communications.
+- Added support for SHA256 checksums in syscheck (File Integrity Monitoring).
+- Added support for OpenSUSE Leap 15/16 and Debian 13 (Trixie).
+- Updated CI/CD pipeline for more robust packaging.
 
 upcoming (2015/02/21 20:11 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

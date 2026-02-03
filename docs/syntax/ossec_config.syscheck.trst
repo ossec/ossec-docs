@@ -34,6 +34,10 @@
 
         - When used only the sha1 hash of the files will be checked.
 
+    - **check_sha256sum**: Value=yes
+
+        - When used only the sha256 hash of the files will be checked.
+
     - **check_md5sum**: Value=yes
 
         - The md5 hash of the files will be checked.
