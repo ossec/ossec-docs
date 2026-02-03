@@ -50,13 +50,19 @@
 .ossec-header-right {
     display: flex;
     align-items: center;
+    gap: 30px;
+}
+
+.ossec-header-social-group {
+    display: flex;
+    align-items: center;
     gap: 15px;
 }
 
 .ossec-top-search {
     display: flex;
     align-items: center;
-    background: #444;
+    background: #333;
     border-radius: 4px;
     padding: 2px 10px;
 }
@@ -80,16 +86,21 @@
     align-items: center;
 }
 
-.ossec-header-social {
-    color: var(--ossec-header-text);
+.ossec-header-social,
+.ossec-header-social:visited {
+    color: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .ossec-header-social:hover {
-    color: #0085ff;
-    /* Bluesky blue */
+    color: #ffffff;
+}
+
+.ossec-header-social svg {
+    display: block;
 }
 
 /* Adjust Furo layout for the top header */
