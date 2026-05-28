@@ -34,14 +34,103 @@
 
    - smtp_server
 
-       SMTP server.
+       SMTP server hostname, IP address, or full path to a local sendmail-compatible program.
 
-       **Allowed:** Any valid hostname or IP Address 
+       **Allowed:** Any valid hostname, IP address, or absolute path beginning with ``/``
+
+       .. note::
+
+          If ``smtp_server`` contains a hostname, ``/etc/resolv.conf`` will probably have to be
+          copied to OSSEC's ``etc`` directory (``/var/ossec/etc`` by default). When OSSEC is built
+          with libcurl (``USE_CURL=yes``), hostnames may be pre-resolved at startup for delivery
+          after ``ossec-maild`` chroots.
+
+   - auth_smtp
+
+       .. versionadded:: 4.1.0
+
+       Enable SMTP authentication (AUTH). Requires an OSSEC build with libcurl (``USE_CURL=yes``).
+
+       **Default:** no
+
+       **Allowed:** yes/no
+
+       When set to ``yes``, ``smtp_user`` and ``smtp_password`` must also be configured.
+
+   - secure_smtp
+
+       .. versionadded:: 4.1.0
+
+       Use implicit TLS (SMTPS) on connect. This is not the same as STARTTLS on the submission port.
+
+       **Default:** no
+
+       **Allowed:** yes/no
+
+       When ``yes``, mail is sent with ``smtps://`` (typically port 465). When ``no`` and
+       ``auth_smtp`` is ``yes``, STARTTLS is used on the submission port (typically 587).
+
+   - smtp_port
+
+       .. versionadded:: 4.1.0
+
+       SMTP port. If omitted or ``0``, the port is chosen automatically: 465 when
+       ``secure_smtp`` is ``yes``, 587 when ``auth_smtp`` is ``yes`` (and ``secure_smtp`` is
+       ``no``), otherwise 25.
+
+       **Default:** 0 (automatic)
+
+       **Allowed:** 1 to 65535
+
+   - smtp_tls_verify
+
+       .. versionadded:: 4.1.0
+
+       Verify the SMTP server TLS certificate and hostname when using libcurl.
+
+       **Default:** yes
+
+       **Allowed:** yes/no
+
+       Setting this to ``no`` disables peer and host verification (not recommended in production).
+
+   - smtp_user
+
+       .. versionadded:: 4.1.0
+
+       SMTP authentication username. Required when ``auth_smtp`` is ``yes``.
+
+       **Allowed:** Any string accepted by the mail server
+
+   - smtp_password
+
+       .. versionadded:: 4.1.0
+
+       SMTP authentication password. Required when ``auth_smtp`` is ``yes``.
+
+       **Allowed:** Any string accepted by the mail server
+
+       .. warning::
+
+          The password is stored in plain text in ``ossec.conf``. Restrict file permissions on
+          the manager (``chmod 640`` and appropriate ownership).
+
+   - helo_server
+
+       .. versionadded:: 4.1.0
+
+       Hostname sent in the SMTP EHLO/HELO greeting.
+
+       **Allowed:** Any valid hostname
 
    .. note::
 
-      If the `smtp_server` entry contains a hostname, `/etc/resolv.conf` will probably have to be
-      copied to OSSEC's `etc` directory (`/var/ossec/etc` by default).   
+      **SMTP TLS and authentication (4.1.0):** Options ``auth_smtp``, ``secure_smtp``, ``smtp_port``,
+      ``smtp_tls_verify``, ``smtp_user``, and ``smtp_password`` require OSSEC to be built with
+      libcurl (``USE_CURL=yes``). The installer enables this automatically when you choose SMTP
+      authentication, secure SMTP, a non-default port, or disable TLS verification. The same
+      ``<global>`` mail settings are used by ``ossec-maild`` for alert email and by ``ossec-monitord``
+      for scheduled report email.
 
    - email_maxperhour
 

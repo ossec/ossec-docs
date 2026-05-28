@@ -30,3 +30,13 @@
        **Default:** 1
 
        **Allowed:** 0 or 1
+
+   - maild.max_workers
+
+       .. versionadded:: 4.1.0
+
+       Maximum number of parallel SMTP send threads used by ``ossec-maild``.
+
+       **Default:** 6
+
+       **Allowed:** 1 to 32

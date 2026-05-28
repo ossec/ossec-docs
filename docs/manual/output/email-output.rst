@@ -18,6 +18,7 @@ There are currently three types of email alerts:
 
 .. toctree::
 
-    standard-email-output 
+    standard-email-output
+    smtp-authenticated-email
     granular-email-output
-    reports-email-output 
+    reports-email-output

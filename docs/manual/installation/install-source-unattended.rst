@@ -125,6 +125,14 @@ Example preloaded-vars.conf:
    # USER_EMAIL_SMTP defines the SMTP server to send the e-mails.
    #USER_EMAIL_SMTP="test.ossec.net"
 
+   # SMTP authentication and TLS (requires USE_CURL=yes at build; install.sh sets this automatically)
+   #USER_SMTP_AUTH="y"
+   #USER_SMTP_USER="user@example.com"
+   #USER_SMTP_PASS="secret"
+   #USER_SMTP_SECURE="n"
+   #USER_SMTP_PORT="587"
+   #USER_SMTP_TLS_VERIFY="y"
+
 
    # USER_ENABLE_SYSLOG enables or disables remote syslog.
    #USER_ENABLE_SYSLOG="y"
@@ -143,9 +151,9 @@ Example preloaded-vars.conf:
    #USER_PF_TABLE="ossec_fwtable"
 
 
-   # USER_WHITE_LIST is a list of IPs or networks
-   # that are going to be set to never be blocked.
-   #USER_WHITE_LIST="192.168.2.1 192.168.1.0/24"
+   # USER_WHITE_LIST is a list of IPs or networks (IPv4 or IPv6) that are never blocked
+   # by active response.
+   #USER_WHITE_LIST="192.168.2.1 192.168.1.0/24 2001:db8::1 2001:db8::/32"
 
 
    #### exit ? ###

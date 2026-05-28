@@ -94,6 +94,12 @@
    This option names the fields used by the `regex` or `pcre2` options.
    The field names are comma separated.
 
+   The number of fields in ``order`` and the number of capture groups in ``regex`` or ``pcre2``
+   are both limited by ``analysisd.decoder_order_size`` in ``internal_options.conf`` (default
+   **256** in 4.1.0). See :ref:`intopt_analysisd`. If the limit is exceeded, analysisd logs
+   ``Order has too many fields`` or ``Regex has too many groups``; raise the value in
+   ``local_internal_options.conf`` and restart.
+
    .. versionadded: 3.3
 
       The list below was previously the only field names that could be used.

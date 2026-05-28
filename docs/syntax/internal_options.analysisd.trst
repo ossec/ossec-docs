@@ -49,3 +49,20 @@
        **Default:** 0
 
        **Allowed:** Any integer 
+
+   - analysisd.decoder_order_size
+
+       .. versionadded:: 4.1.0
+
+       Maximum number of fields in a decoder ``<order>`` list and maximum number of capture
+       groups in a decoder ``<regex>`` or ``<pcre2>`` pattern.
+
+       **Default:** 256
+
+       **Allowed:** 8 to 1024
+
+       If a decoder exceeds this limit, ``ossec-analysisd`` logs an error such as
+       ``Order has too many fields`` or ``Regex has too many groups``. Increase this value in
+       ``/var/ossec/etc/local_internal_options.conf`` (not ``ossec.conf``) and restart OSSEC.
+
+       See also :ref:`rules_decoders` (``decoder.order``).

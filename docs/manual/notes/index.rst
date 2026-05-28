@@ -5,6 +5,7 @@ Misc. Notes
 .. toctree::
     :maxdepth: 2
 
+    aes_encryption
     active_directory_failures
     agentless_script
     checkpoint_configure

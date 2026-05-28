@@ -17,10 +17,12 @@ The destination email address and mail host should be configured inside the
         <global>
             <email_notification>yes</email_notification>
             <email_to>me@example.com</email_to>
-            <smtp_server>mx.example.com..</smtp_server>
+            <smtp_server>mx.example.com</smtp_server>
             <email_from>ossec@example.com</email_from>
 
 Full details on all the options are available at :ref:`ossec_config.global`
+
+If your mail provider requires authentication or TLS, see :ref:`manual-out-smtp-auth`.
 
 .. note::
 

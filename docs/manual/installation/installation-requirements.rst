@@ -66,6 +66,22 @@ libevent
 `libevent <http://libevent.org/>`_ was added for `ossec-agentd` and `ossec-maild`. A development package
 for this should be installed on the system.
 
+libcurl
+-------
+
+.. versionadded:: 4.1.0
+
+`libcurl <https://curl.se/libcurl/>`_ is required to build SMTP authentication and TLS support in
+``ossec-maild`` and ``ossec-monitord``. Install the development package on the build host. The
+installer enables ``USE_CURL=yes`` automatically when SMTP auth, secure SMTP, a non-default port,
+or disabled TLS verification is selected.
+
+If you compile manually and need authenticated or TLS SMTP, build with:
+
+.. code-block:: console
+
+   make USE_CURL=yes
+
 RedHat / Centos / Fedora / Amazon Linux
 ---------------------------------------
 
@@ -73,7 +89,7 @@ Step 1) At a minimum, the following packages should be installed:
 
 .. code-block:: console
 
-   yum install zlib-devel pcre2-devel make gcc sqlite-devel openssl-devel libevent-devel systemd-devel
+   yum install zlib-devel pcre2-devel make gcc sqlite-devel openssl-devel libevent-devel libcurl-devel systemd-devel
 
 Step 2) For optional database support add thepackage mysql-devel and/or postgresql-devel packages
 
@@ -97,7 +113,7 @@ At a minimum, the following packages should be installed:
 
 .. code-block:: console
 
-   apt-get install build-essential make zlib1g-dev libpcre2-dev libevent-dev libssl-dev libsystemd-dev
+   apt-get install build-essential make zlib1g-dev libpcre2-dev libevent-dev libssl-dev libcurl4-openssl-dev libsystemd-dev
 
 On Debian 10 Buster, `zlib` could be `libz`.
 
