@@ -1,6 +1,18 @@
 Change Log
 ----------
 
+4.1.0 (2026/05/28 12:00 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Stability and scalability release.
+- Added SMTP TLS and authentication support in ``ossec-maild`` and ``ossec-monitord`` (requires libcurl build).
+- Increased default decoder field limit (``analysisd.decoder_order_size``) to 256.
+- Increased maximum log message buffer (``OS_MAXSTR``) to 6144 to reduce truncation.
+- Improved IPv6 support in active-response whitelisting and ``install.sh``.
+- Added support for large files (>2GB) in file integrity monitoring and hash operations.
+- Added support for Rocky Linux 9.
+- Multiple bug fixes for ``analysisd``, ``logcollector``, FIM, and Windows agent stability.
+
 4.0.0 (2026/02/01 12:00 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

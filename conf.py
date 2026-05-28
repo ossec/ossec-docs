@@ -9,7 +9,7 @@
 project = 'OSSEC'
 copyright = 'Atomicorp, Inc. 2025'
 author = 'Atomicorp'
-release = '4.0.0'
+release = '4.1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

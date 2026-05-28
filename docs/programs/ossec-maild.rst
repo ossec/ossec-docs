@@ -8,6 +8,10 @@ The ``ossec-maild`` daemon sends OSSEC alerts via email.
 ``ossec-maild`` is started by ossec-control.
 Configuration for ossec-maild is handled in the ossec.conf. (see :ref:`ossec_config.global`)
 
+When OSSEC is built with libcurl (``USE_CURL=yes``, enabled automatically by ``install.sh`` when
+SMTP authentication or TLS is configured), ``ossec-maild`` delivers mail over authenticated SMTP
+with TLS support. See :ref:`manual-out-smtp-auth`.
+
 ossec-maild argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -43,7 +47,8 @@ ossec-maild argument options
 
 .. option:: -t
 
-    Test configuration.
+    Test the email configuration. When libcurl SMTP is enabled, this validates connectivity and
+    TLS settings against the configured ``smtp_server`` without sending alert mail.
 
 .. option:: -u <user>
 

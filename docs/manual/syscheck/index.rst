@@ -48,6 +48,10 @@ Quick facts
   
   - The scans are performed slowly to avoid using too much CPU/memory.
 
+* Are large files supported?
+
+  - Starting with OSSEC 4.1.0, files larger than 2GB can be monitored and hashed.
+
 * How are false positives handled? 
   
   - Files can be ignored manually in the configuration or using rules. By default when a file has changed 3 times further changes are automatically ignored.
