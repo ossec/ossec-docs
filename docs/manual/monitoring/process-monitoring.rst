@@ -140,21 +140,22 @@ Detecting USB Storage Usage
 OSSEC. He used our policy auditing module for that, but I think USB monitoring 
 can be done in a much easier way with our new :xml:`check_diff` feature. 
 
-To get started, first configure your Windows agents to monitor the USBSTOR 
-registry entry using the reg command:
+To get started, configure each Windows agent to monitor the USBSTOR registry entry
+using the ``reg`` command. This must be in the agent's local ``ossec.conf`` — the
+manager cannot push ``command`` or ``full_command`` localfile entries through
+``agent.conf`` (see :ref:`full_command`).
 
 .. code-block:: xml 
 
-    <agent_config os="windows">
+    <ossec_config>
         <localfile>
             <log_format>full_command</log_format>
             <command>reg QUERY HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR</command>
+            <frequency>3600</frequency>
         </localfile>
-    </agent_config>
+    </ossec_config>
 
-
-
-Next create a local rule for that command:
+Next create a local rule for that command on the manager:
 
 .. code-block:: xml 
 
