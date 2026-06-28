@@ -143,7 +143,7 @@ can be done in a much easier way with our new :xml:`check_diff` feature.
 To get started, configure each Windows agent to monitor the USBSTOR registry entry
 using the ``reg`` command. This must be in the agent's local ``ossec.conf`` — the
 manager cannot push ``command`` or ``full_command`` localfile entries through
-``agent.conf`` (see :ref:`full_command`).
+``agent.conf`` (see :ref:`ossec_config.localfile`).
 
 .. code-block:: xml 
 
