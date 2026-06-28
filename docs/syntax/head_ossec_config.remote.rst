@@ -31,6 +31,24 @@ XML excerpt to show location:
         </remote> 
     </ossec_config> 
 
+Choosing connection type
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``<connection>`` element selects how ``ossec-remoted`` accepts inbound events:
+
+**secure** (default, port 1514)
+    Use for **OSSEC agents**. Traffic uses the OSSEC agent protocol with optional
+    encryption (AES or Blowfish). Agents authenticate with keys from ``client.keys``.
+
+**syslog** (default port 514, UDP or TCP)
+    Use for **external devices** — firewalls, routers, switches, and other syslog
+    senders that are not OSSEC agents. There is no agent key exchange; restrict
+    sources with ``allowed-ips`` and ``deny-ips``.
+
+You can define multiple ``<remote>`` blocks (for example, one ``secure`` listener for
+agents and one ``syslog`` listener for network gear). See also
+:ref:`manual-remoted` for threading and tuning.
+
 Options 
 ------- 
 
