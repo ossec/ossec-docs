@@ -25,4 +25,5 @@ Misc. Notes
     portscan_detection
     rule_groups
     white_list
+    selinux_logrotate
 
