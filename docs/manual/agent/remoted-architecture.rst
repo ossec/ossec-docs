@@ -4,7 +4,8 @@ Remoted architecture and tuning
 ===============================
 
 ``ossec-remoted`` receives events from OSSEC agents (secure mode) and from remote syslog
-senders (UDP/TCP). Understanding its threading model helps when sizing syslog TCP
+senders (UDP/TCP). See :ref:`ossec_config.remote` for when to use ``secure`` versus
+``syslog``. Understanding its threading model helps when sizing syslog TCP
 forwarders and tuning ``internal_options.conf``.
 
 Process model
