@@ -16,8 +16,7 @@ More information on them can be found on the `OSSEC Architecture page <../ossec-
     Everything else is either comments or output. 
 
 
-1. Download the latest version and verify its signature. Github releases may change the actual
-   tarball downloads, so a checksum isn't a great way to verify it.
+1. Download the latest version and verify its GPG signature (see below).
 
 2. Verify the requirements listed in :ref:`install_req` are installed or available.
 
@@ -68,3 +67,41 @@ After the source tarball is downloaded and extracted:
 
 Build options can still be passed to `make` (`USE_ZEROMQ`, `USE_GEOIP`, etc.).
 
+
+Verify the tarball signature
+============================
+
+Release tarballs are signed with a GPG key. The detached signature file (``.asc``)
+is published alongside each release on `GitHub Releases <https://github.com/ossec/ossec-hids/releases>`_
+and on `https://www.ossec.net/download-ossec/ <https://www.ossec.net/download-ossec/>`_.
+
+Import the signing key from the official OSSEC site (do not rely on keyservers;
+``gpg --recv-key`` may fail for this key with a "contains no user ID" error):
+
+.. code-block:: console
+
+   curl -O https://www.ossec.net/files/OSSEC-ARCHIVE-KEY.asc
+   gpg --import OSSEC-ARCHIVE-KEY.asc
+
+Download the tarball and matching signature for the release you are installing.
+Replace ``VERSION`` with the release tag (for example ``4.1.0``):
+
+.. code-block:: console
+
+   curl -LO https://github.com/ossec/ossec-hids/releases/download/VERSION/ossec-hids-VERSION.tar.gz
+   curl -LO https://github.com/ossec/ossec-hids/releases/download/VERSION/ossec-hids-VERSION.tar.gz.asc
+   gpg --verify ossec-hids-VERSION.tar.gz.asc ossec-hids-VERSION.tar.gz
+
+A successful verification prints ``Good signature`` from
+``Scott R. Shinn <scott@atomicorp.com>``. GPG may also warn that the key is
+not certified with a trusted signature until you assign trust locally; that
+warning is expected on a first import.
+
+The signing key fingerprint is:
+
+.. code-block:: console
+
+   B50F B194 7A0A E311 45D0  5FAD EE1B 0E6B 2D83 87B7
+
+Only proceed with ``install.sh`` or ``make install`` after the signature verifies.
+See also :ref:`faq_gpg_verify`.
