@@ -1,7 +1,7 @@
 Syscheck: FAQ
 -------------
 
-.. contents:: 
+.. contents::
     :local:
 
 
@@ -104,6 +104,22 @@ To enable this functionality, <alert_new_files> must be set to yes inside the <s
 Also, the rule to alert on new files (rule 554) is set to level 0 by default. 
 The alert level will need to be raised in order to see the alert.
 Alerting on new files does not work in realtime, a full scan will be necessary to detect them.
+See :ref:`syscheck-realtime-limits`.
+
+Why don't permission changes alert immediately with realtime enabled?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+``realtime="yes"`` uses filesystem event notifications to re-check files quickly, but only
+**content integrity** changes (checksums/size) on existing files produce immediate alerts.
+A ``chmod`` or ownership change on a monitored file is detected on the next **scheduled
+syscheck scan**, not at the moment the permission is changed. See :ref:`syscheck-realtime-limits`.
+
+Why does auto_ignore not suppress noisy realtime alerts?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+``auto_ignore`` is applied on the manager when handling events from scheduled scans. Alerts
+from the realtime monitoring path are not subject to ``auto_ignore``. Use ``<ignore>`` or a
+local rule for files that change frequently in realtime directories.
 
 Add the following to local_rules.xml:
 

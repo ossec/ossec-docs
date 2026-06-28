@@ -10,7 +10,15 @@
 
     - **realtime**: Value=yes
 
-        - This will enable realtime/continuous monitoring on Linux (using the inotify system calls) and Windows systems.
+        - Enable realtime/continuous monitoring on Linux (inotify) and Windows
+          (``ReadDirectoryChangesW``).
+
+        .. note::
+
+           Realtime mode alerts immediately on **file content integrity** changes (checksums
+           and size) for files already in the syscheck database. Permission, ownership, and
+           group changes are detected on the **next scheduled scan**, not instantly. See
+           :ref:`syscheck-realtime-limits`.
 
     - **report_changes**: Value=yes
 
@@ -138,6 +146,13 @@
 
     **Valid:** server, local
 
+    .. note::
+
+       ``auto_ignore`` applies to syscheck events processed from **scheduled scans** on the
+       manager. It does **not** apply to alerts from realtime monitoring. For noisy files
+       under ``realtime="yes"`` directories, use ``<ignore>`` or a local rule instead. See
+       :ref:`syscheck-realtime-limits`.
+
 .. _alert_new_files:
 .. object:: alert_new_files
 
@@ -152,6 +167,7 @@
     .. note::
 
        New files will only be detected on a full scan, this option does not work in realtime.
+       See :ref:`syscheck-realtime-limits`.
 
 .. object:: scan_on_start
 
