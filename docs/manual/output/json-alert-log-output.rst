@@ -1,4 +1,5 @@
 
+.. _manual-out-json:
 
 Storing alerts as JSON
 =========================

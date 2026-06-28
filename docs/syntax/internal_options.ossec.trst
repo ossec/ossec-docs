@@ -1,0 +1,10 @@
+.. _ossec_global:
+
+   - ossec.thread_stack_size
+
+       Stack size in KiB for worker and listener threads used by ``ossec-remoted``,
+       ``ossec-maild``, ``ossec-authd``, and ``ossec-monitord``.
+
+       **Default:** 2048
+
+       **Allowed:** Any positive integer

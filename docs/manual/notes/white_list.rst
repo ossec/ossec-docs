@@ -1,7 +1,9 @@
 How to configure ossec to never block some IPs in the active response
 ---------------------------------------------------------------------
 
-OSSEC by default white lists localhost and your name servers. 
+.. _white_list:
+
+OSSEC by default white lists localhost and your name servers.
 To add more IPs to the white list, so they will never be blocked, just 
 add a new ``white_list`` entry inside the ``global`` section. 
 

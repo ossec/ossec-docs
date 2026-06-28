@@ -10,6 +10,8 @@ It runs as ossecr and is chrooted to ``/var/ossec`` by default.
 ``ossec-remoted`` is configured in the <remote> section of  ossec.conf. 
 (see :ref:`ossec_config.remote`)
 
+See also :ref:`manual-remoted` for threading model and syslog TCP tuning.
+
 
 ossec-remoted argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -7,6 +7,8 @@ ossec-logcollector
 The ``ossec-logcollector`` daemon monitors configured files and commands for new log messages.
 ``ossec-logcollector`` is configured in ossec.conf.  (see :ref:`ossec_config.localfile`)
 
+For systemd journal sources on Linux, see :ref:`journald-monitoring`.
+
 
 ossec-logcollector argument options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

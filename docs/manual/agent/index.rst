@@ -21,6 +21,7 @@ any RPC method (e.g. ssh, snmp rdp, wmi).
     agent-dhcp-nat
     agent-auth
     agent-configuration
+    remoted-architecture
 
 **Agentless** 
 

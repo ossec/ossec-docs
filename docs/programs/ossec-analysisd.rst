@@ -26,7 +26,7 @@ ossec-analysisd argument options
 
 .. option:: -f
 
-    Run ossec-agentlessd in the foreground.
+    Run ossec-analysisd in the foreground.
 
 .. option:: -g <group>
 

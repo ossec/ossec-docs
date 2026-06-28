@@ -19,6 +19,8 @@ The best installation tutorial is available in the `OSSEC book <http://www.amazo
     compile-ossec-mingw
     deployment_with_cfengine
     updates
+    upgrade-migration
+    systemd-deployment
 
 
 

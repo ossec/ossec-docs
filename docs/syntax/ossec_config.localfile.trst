@@ -94,6 +94,16 @@
 
                  192.168.1.100 - - [21/Jan/2010:08:31:09 -0500] "GET / HTTP/1.0" 200 2212
 
+         .. _logformat_journald:
+
+         - journald
+
+             .. versionadded:: 3.7.0
+
+             Read events from the local systemd journal (Linux only). Requires OSSEC to
+             be built with ``libsystemd`` support. Use ``location`` to filter by
+             ``SYSLOG_IDENTIFIER`` or ``all`` for every entry. See :ref:`journald-monitoring`.
+
          .. _logformat_command:
 
          - command 

@@ -1,0 +1,23 @@
+.. _authd:
+
+   - authd.worker_pool
+
+       Number of worker threads in ``ossec-authd`` for handling enrollment requests.
+
+       **Default:** 8
+
+       **Allowed:** Any positive integer
+
+   - authd.max_connections
+
+       Maximum concurrent connections to ``ossec-authd``.
+
+       **Default:** 64
+
+       **Allowed:** Any positive integer
+
+   - authd.debug
+
+       **Default:** 0
+
+       **Allowed:** 0 or 1

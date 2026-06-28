@@ -66,3 +66,12 @@
        ``/var/ossec/etc/local_internal_options.conf`` (not ``ossec.conf``) and restart OSSEC.
 
        See also :ref:`rules_decoders` (``decoder.order``).
+
+   - analysisd.geoip_jsonout
+
+       Include GeoIP fields in JSON alert output when GeoIP databases are configured.
+
+       **Default:** 0
+
+       **Allowed:** 0 or 1
+

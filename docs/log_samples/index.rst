@@ -1,15 +1,13 @@
-.. OSSEC Rules documentation master file, created byA
-   sphinx-quickstart on Sat Jul 17 09:20:30 2010.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. _log-samples:
 
-===========
 Log Samples
 ===========
 
-Stuff
-============
+These pages contain real log excerpts grouped by platform and application. Use them when
+writing or testing decoders and rules with :ref:`ossec-logtest`, or when validating that
+OSSEC correctly parses logs from a given source.
 
+Samples are organized by operating system, service type, and vendor where applicable.
 
 .. toctree::
    :maxdepth: 2
@@ -31,9 +29,4 @@ Stuff
    firewalls/*
    email/*
    vmware/*
-   
    ossec/*
-  
-
-
-
