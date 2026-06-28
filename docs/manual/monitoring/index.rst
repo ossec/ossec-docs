@@ -71,6 +71,7 @@ method has its own page and examples.
 
     process-monitoring
     file-log-monitoring
+    journald-monitoring
 
 
 

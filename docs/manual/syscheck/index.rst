@@ -21,7 +21,7 @@ This is the explanation from the `OSSEC book`_:
 
     Integrity checking is an essential part of intrusion detection, that
     detects changes in the integrity of the system. OSSEC does that by
-    looking for changes in the MD5/SHA1 checksums of the key files in the
+    looking for changes in the MD5, SHA1, and SHA256 checksums of the key files in the
     system and on the Windows registry.
 
     The way it works is that the agent scans the system every few hours
@@ -74,7 +74,7 @@ for the ``auto_ignore`` and ``alert_new_file`` which apply to manager and local 
 Configuration Examples
 ----------------------
 
-To configure syscheck, a list of files and directories must be provided. The check_all option checks md5, sha1, owner, and permissions of the file.
+To configure syscheck, a list of files and directories must be provided. The check_all option checks md5, sha1, sha256 (enabled by default since 4.0.0), owner, and permissions of the file.
 
 Example:
 
@@ -165,7 +165,10 @@ For example:
 .. note:: 
 
     Report Changes can only work with text files, and the changes are stored on the agent 
-    inside ``/var/ossec/queue/diff/local/dir/file``. 
+    inside ``/var/ossec/queue/diff/local/dir/file``.
+
+    When a diff exceeds the maximum message size, OSSEC truncates the output and records
+    a notice in the alert rather than failing silently.
     
     If OSSEC has not been compiled with libmagic support, report_changes will copy any file 
     designated, e.g. mp3, iso, executable, /chroot/dev/urandom (which would fill your hard drive). 
@@ -202,3 +205,10 @@ Schema:
 
 
 .. include:: ../../faq/syscheck.rst
+
+See also
+--------
+
+* :ref:`ossec_config.syscheck` — configuration reference
+* :ref:`ossec-syscheckd` — daemon manual page
+* :ref:`upgrade-migration` — SHA-256 default behavior in 4.0.0+

@@ -3,6 +3,11 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('_ext'))
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -16,6 +21,7 @@ release = '4.1.0'
 
 extensions = [
     'myst_parser',
+    'xml_domain',
 ]
 
 source_suffix = {
@@ -23,28 +29,32 @@ source_suffix = {
     '.md': 'markdown',
 }
 
+exclude_patterns = [
+    '_build',
+    'Thumbs.db',
+    '.DS_Store',
+    'conf.py.bak',
+    '_templates/*.bak',
+]
+
 # Optional: Enable MyST extensions
 myst_enable_extensions = [
-    "amsmath",         # Math support
-    "colon_fence",     # ::: fenced blocks
-    "deflist",         # Definition lists
-    "fieldlist",       # Field lists for directives
-    "html_admonition", # Admonitions
-    "html_image",      # Render Markdown images
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
 ]
 
 # Paths for custom templates and static files
 templates_path = ['_templates']
 html_static_path = ['_static']
 
-# Not bad
 html_theme = "furo"
-
-html_static_path = ['_static']
 
 html_css_files = [
     'custom.css',
 ]
 
 html_logo = "ossec_logo_bare_small.png"
-

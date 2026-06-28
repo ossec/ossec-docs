@@ -1,3 +1,5 @@
+.. _changelog:
+
 Change Log
 ----------
 
@@ -22,29 +24,12 @@ Change Log
 - Added support for OpenSUSE Leap 15/16 and Debian 13 (Trixie).
 - Updated CI/CD pipeline for more robust packaging.
 
-upcoming (2015/02/21 20:11 +00:00)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Older releases
+~~~~~~~~~~~~~~
 
--  `#553 <https://github.com/ossec/ossec-hids/pull/553>`__ Use the
-   MAKEBIN variable instead of hardcoded make (@ddpbsd)
--  `#551 <https://github.com/ossec/ossec-hids/pull/551>`__ Output
-   alerts.json, newline delimited json, beside the alerts.log file.
-   (@jondb)
--  `#547 <https://github.com/ossec/ossec-hids/pull/547>`__ Feature/nfs
-   exclusion v2 (@reyjrar)
--  `#549 <https://github.com/ossec/ossec-hids/pull/549>`__ Fixed typo
-   (@gustavo-gomez)
--  `#548 <https://github.com/ossec/ossec-hids/pull/548>`__ Fix
-   misspelling of 'source' (@DazWorrall)
--  `#546 <https://github.com/ossec/ossec-hids/pull/546>`__ several
-   Coverity fixes (@cgzones)
--  `#545 <https://github.com/ossec/ossec-hids/pull/545>`__ remove
-   coverity plugin from travis, because it does not work properly
-   (@cgzones)
--  `#537 <https://github.com/ossec/ossec-hids/pull/537>`__ fix most gcc
-   -Wall -Wextra warnings in windows build (@cgzones)
--  `#544 <https://github.com/ossec/ossec-hids/pull/544>`__ Correct some
-   spelling, and update based on ossec-docs (@ddpbsd)
+Release notes for OSSEC 3.x and earlier are preserved below. For the latest
+source-of-truth changelog, see the `ossec-hids CHANGELOG.md
+<https://github.com/ossec/ossec-hids/blob/main/CHANGELOG.md>`_ on GitHub.
 
 2.9.0-beta03 (2015/02/09 14:01 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

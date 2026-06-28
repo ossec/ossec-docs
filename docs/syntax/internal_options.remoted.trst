@@ -12,6 +12,41 @@
 
        **Default:** 1
 
+   - remoted.pass_empty_keyfile
+
+       Allow agents with empty key files to connect (not recommended for production).
+
+       **Default:** 0
+
+       **Allowed:** 0 or 1
+
+   - remoted.syslog_tcp_worker_pool
+
+       Number of worker threads per syslog TCP ``<remote>`` listener. Each worker handles
+       one long-lived client connection.
+
+       **Default:** 16
+
+       **Allowed:** Any positive integer
+
+   - remoted.syslog_tcp_max_tasks
+
+       Maximum queued plus active syslog TCP tasks per pool. When exceeded, new connections
+       are closed (backpressure).
+
+       **Default:** 64
+
+       **Allowed:** Any positive integer
+
+   - remoted.syslog_tcp_read_timeout
+
+       Socket read timeout in seconds for syslog TCP clients. Unblocks idle workers and
+       allows shutdown drain when clients stay connected.
+
+       **Default:** 30
+
+       **Allowed:** Any positive integer
+
    - remoted.debug
 
        **Default:** 0

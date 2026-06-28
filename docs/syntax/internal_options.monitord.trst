@@ -23,7 +23,23 @@
 
    - monitord.monitor_agents
 
-    
-
        **Default:** 1
+
+   - monitord.max_report_workers
+
+       .. versionadded:: 4.1.0
+
+       Maximum worker threads used by ``ossec-monitord`` when generating scheduled reports.
+
+       **Default:** 4
+
+       **Allowed:** Any positive integer
+
+   - monitord.notify_time
+
+       Interval in seconds between agent disconnection notifications.
+
+       **Default:** 600
+
+       **Allowed:** Any positive integer
 
