@@ -72,6 +72,7 @@ Development
    :glob:
 
    docs/development/build/index
+   docs/development/gpg/index
    docs/development/oRFC/index
    docs/development/doc-maintenance
    about/index
