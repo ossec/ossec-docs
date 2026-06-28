@@ -55,7 +55,7 @@ figurations>`_.
     </active-response>
 
 
-- **disabled**: Disables the active response capabilities if set to yes. If this is set, active response will not work.
+- **disabled**: When set to ``yes``, skips this active-response binding only. See :ref:`ossec_config.active-response` and :ref:`manual-ar`.
 - **command**: Used to link the response to the command
 - **location**: Where the command should be executed. You have four options:
 
