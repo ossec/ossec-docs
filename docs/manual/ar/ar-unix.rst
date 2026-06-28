@@ -73,6 +73,9 @@ figurations>`_.
 Active Response Tools
 ^^^^^^^^^^^^^^^^^^^^^
 
+See :ref:`manual-ar-scripts` for the full list of scripts shipped under
+``active-response/bin``, including notification and cloud integrations.
+
 By default, the ossec hids comes with the following pre-configured
 active-response tools:
 
