@@ -22,5 +22,4 @@ The best installation tutorial is available in the `OSSEC book <http://www.amazo
     upgrade-migration
     systemd-deployment
 
-
-
+See also :ref:`manager_backup` for backing up or migrating a manager to new hardware.
