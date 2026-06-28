@@ -50,3 +50,19 @@
 
     **Allowed:** aes, blowfish
 
+- disable-active-response
+
+    When set to ``yes``, disables **all** active-response execution on this agent.
+    The agent will not run any active-response scripts locally, regardless of
+    individual ``<active-response>`` blocks.
+
+    **Default:** no
+
+    **Allowed:** yes, no
+
+    .. note::
+
+       This is an agent-only option inside ``<client>``. To disable a single
+       active-response binding, use ``<disabled>yes</disabled>`` inside that
+       ``<active-response>`` block instead (see :ref:`ossec_config.active-response`).
+
