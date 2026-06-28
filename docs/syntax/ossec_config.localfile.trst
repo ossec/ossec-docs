@@ -114,6 +114,16 @@
          - full_command
              This format will be the output from the command (as run by root) defined by command_. The entire output will be treated as a single log.
 
+         .. note::
+
+             Command output is limited by the internal ``OS_MAXSTR`` buffer (6144 bytes
+             since OSSEC 4.1.0). ``full_command`` reads at most that amount in one run;
+             anything beyond it is discarded. Commands that produce large reports, JSON
+             blobs, or other multi-kilobyte output will not be captured in full. Filter
+             or summarize command output before OSSEC collects it, or use the ``command``
+             format if line-by-line handling is acceptable (each line is also subject to
+             ``OS_MAXSTR``).
+
          .. warning::
              ``command`` and ``full_command`` cannot be used in the agent.conf, and must be configured in each system's ossec.conf.
 
