@@ -85,6 +85,11 @@ a new port open in listening mode on our server.
 First, we configure OSSEC to run the ``netstat -tan |grep LISTEN`` command 
 by adding the following to ossec.conf:
 
+.. note::
+
+   ``full_command`` captures the entire command output as one event, but output
+   is capped at ``OS_MAXSTR`` (6144 bytes). See :ref:`ossec_config.localfile`.
+
 .. code-block:: xml 
 
     <localfile>
