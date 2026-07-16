@@ -113,7 +113,7 @@ At a minimum, the following packages should be installed:
 
 .. code-block:: console
 
-   apt-get install build-essential make zlib1g-dev libpcre2-dev libevent-dev libssl-dev libcurl4-openssl-dev libsystemd-dev
+   apt-get install build-essential make zlib1g-dev libpcre2-dev libevent-dev libssl-dev libcurl4-openssl-dev libmagic-dev libsystemd-dev
 
 On Debian 10 Buster, `zlib` could be `libz`.
 
