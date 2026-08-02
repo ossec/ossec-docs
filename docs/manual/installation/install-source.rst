@@ -84,7 +84,7 @@ Import the signing key from the official OSSEC site (do not rely on keyservers;
    gpg --import OSSEC-ARCHIVE-KEY.asc
 
 Download the tarball and matching signature for the release you are installing.
-Replace ``VERSION`` with the release tag (for example ``4.1.0``):
+Replace ``VERSION`` with the release tag (for example ``4.2.0``):
 
 .. code-block:: console
 

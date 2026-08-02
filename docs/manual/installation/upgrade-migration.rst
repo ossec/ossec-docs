@@ -4,7 +4,7 @@ Upgrading to OSSEC 4.x
 ======================
 
 This guide covers breaking changes and recommended upgrade order when moving from
-OSSEC 3.8.x or earlier to 4.0.0 and later, including 4.1.0.
+OSSEC 3.8.x or earlier to 4.0.0 and later, including 4.1.0 and 4.2.0.
 
 Recommended upgrade order
 -------------------------
@@ -103,6 +103,22 @@ Email and reporting (4.1.0+)
 SMTP TLS and authentication options in ``<global>`` apply to both ``ossec-maild`` and
 ``ossec-monitord`` report email. See :ref:`manual-out-email` and
 :ref:`ossec_config.global`.
+
+Analysisd and managers (4.2.0+)
+-------------------------------
+
+Linux server installs of 4.2.0 use an always-on multi-threaded ``analysisd``
+pipeline. Manager daemons also use pthreads and a shared thread pool. No
+configuration change is required for a normal upgrade; after upgrading the
+manager, confirm ``ossec-analysisd`` starts cleanly and that alert volume
+matches expectations under load.
+
+Windows agents (4.2.0+)
+-----------------------
+
+The Windows agent installer for 4.2.0 bundles the MinGW/OpenSSL runtime DLLs
+required by the agent. Prefer the official 4.2.0 installer over copying an
+older ``.exe`` and pairing it with system DLLs.
 
 See also
 --------

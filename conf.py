@@ -12,9 +12,9 @@ sys.path.insert(0, os.path.abspath('_ext'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'OSSEC'
-copyright = 'Atomicorp, Inc. 2025'
+copyright = 'Atomicorp, Inc. 2026'
 author = 'Atomicorp'
-release = '4.1.0'
+release = '4.2.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

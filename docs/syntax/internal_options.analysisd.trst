@@ -67,6 +67,143 @@
 
        See also :ref:`rules_decoders` (``decoder.order``).
 
+   - analysisd.event_threads
+
+       Number of general decode worker threads.
+       ``0`` means auto: ``min(online CPUs, 32)``.
+
+       **Default:** 0
+
+       **Allowed:** 0 to 32
+
+   - analysisd.rule_matching_threads
+
+       Number of rule-matching worker threads. Each thread has a private
+       EventList shard and a dedicated decode-output queue. Events are routed
+       by hashing location/hostname (``analysisd_shard_id``).
+       ``0`` means auto: ``min(online CPUs, 32)``.
+
+       **Default:** 0
+
+       **Allowed:** 0 to 32
+
+   - analysisd.syscheck_threads
+
+       Number of syscheck decode worker threads.
+       ``0`` means auto: ``min(online CPUs, 32)``.
+
+       **Default:** 0
+
+       **Allowed:** 0 to 32
+
+   - analysisd.rootcheck_threads
+
+       Number of rootcheck decode worker threads.
+       ``0`` means auto: ``min(online CPUs, 32)``.
+
+       **Default:** 0
+
+       **Allowed:** 0 to 32
+
+   - analysisd.hostinfo_threads
+
+       Number of hostinfo decode worker threads.
+       ``0`` means auto: ``min(online CPUs, 32)``.
+
+       **Default:** 0
+
+       **Allowed:** 0 to 32
+
+   - analysisd.decode_event_queue_size
+
+       Ring buffer size (minus one slot) for raw messages awaiting general decode.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.decode_syscheck_queue_size
+
+       Ring buffer size for raw syscheck messages awaiting decode.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.decode_rootcheck_queue_size
+
+       Ring buffer size for raw rootcheck messages awaiting decode.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.decode_hostinfo_queue_size
+
+       Ring buffer size for raw hostinfo messages awaiting decode.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.decode_output_queue_size
+
+       Ring buffer size for each rule-matching shard queue (decoded events).
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.alerts_queue_size
+
+       Ring buffer size for alert writer thread backlog.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.archives_queue_size
+
+       Ring buffer size for archive writer thread backlog. When full, archive
+       copies are dropped (non-blocking) so rule matching is not stalled.
+       ``logall`` is best-effort under backlog; see ``archives_dropped`` in
+       the analysisd ``.state`` file.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.firewall_queue_size
+
+       Ring buffer size for firewall writer thread backlog.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.fts_queue_size
+
+       Ring buffer size for the async FTS (first-time-seen) disk writer. Match
+       threads update in-memory FTS state under a short lock, then enqueue a
+       line for the writer thread. When the queue is full, the match thread
+       waits briefly then falls back to a synchronous write so entries are not
+       lost.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.state_interval
+
+       Seconds between updates of the pipeline metrics state file
+       (``OS_PIDFILE/ossec-analysisd.state``). ``0`` disables the state file.
+       Each write includes queue depth/usage, drop counts, and
+       ``events_processed_per_second`` (EPDS) for the prior interval.
+
+       **Default:** 5
+
+       **Allowed:** 0 to 86400
+
    - analysisd.geoip_jsonout
 
        Include GeoIP fields in JSON alert output when GeoIP databases are configured.

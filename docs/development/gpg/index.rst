@@ -20,7 +20,7 @@ Verify a release tarball
       curl -O https://www.ossec.net/files/OSSEC-ARCHIVE-KEY.asc
       gpg --import OSSEC-ARCHIVE-KEY.asc
 
-3. Verify (replace ``VERSION`` with the release tag, for example ``4.1.0``):
+3. Verify (replace ``VERSION`` with the release tag, for example ``4.2.0``):
 
    .. code-block:: console
 

@@ -3,6 +3,19 @@
 Change Log
 ----------
 
+4.2.0 (2026/08/02 12:00 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Scalability and stability release.
+- Always-on multi-threaded ``analysisd`` event pipeline for Linux servers.
+- Manager daemons migrated to pthreads with shared thread pool support.
+- Rootcheck alerts can include MD5/SHA1/SHA256 hashes of detected files.
+- Windows agent installer bundles required MinGW/OpenSSL runtime DLLs.
+- Security: ``ossec-authd`` under modern Linux crypto policies (RHEL 8+);
+  ``ossec-maild`` heap corruption fix when building alert email bodies.
+- Fixes across authd, maild, syscheck, logcollector, agent, AIX chroot RNG,
+  and rules.
+
 4.1.0 (2026/05/28 12:00 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

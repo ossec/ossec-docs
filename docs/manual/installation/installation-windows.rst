@@ -69,7 +69,17 @@ Enter the full ID of the agent to extract the key for. It will display the entir
 
 Step 4: The Windows Side
 ------------------------
-Next up, download the executable named Agent Windows from https://ossec.github.io/downloads.html. Run through the install wizard with all defaults. It should launch the Ossec Agent Manager when it's done. The Ossec Agent Manager looks like this: 
+Next up, download the executable named Agent Windows from https://ossec.github.io/downloads.html
+(or the matching ``ossec-agent-win32-*.exe`` from the
+`GitHub releases <https://github.com/ossec/ossec-hids/releases>`_ page).
+
+.. versionadded:: 4.2.0
+
+   The Windows agent installer ships the MinGW/OpenSSL runtime DLLs required by
+   the agent, so a normal install no longer depends on separately installed
+   toolchain DLLs on the host.
+
+Run through the install wizard with all defaults. It should launch the Ossec Agent Manager when it's done. The Ossec Agent Manager looks like this: 
 
 .. |image0| image:: https://github.com/Vendetta547/ossec-docs/blob/patch-1/OSSEC-Agent-Manager-Windows.png
 
