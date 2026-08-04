@@ -35,8 +35,8 @@ Urlscan Log samples
   [11-28-2002 - 08:31:41] Requests containing the following character sequences will be rejected:
   [11-28-2002 - 08:31:41] '..'
   [11-28-2002 - 08:31:41] './'
-  [11-29-2002 - 15:22:37] Client at 24.69.73.3: URL contains high bit character. Request will be rejected. Site Instance='1', Raw URL='/scripts/mail.exe/2001¤ë¾ä.jpg'
-  [11-29-2002 - 15:22:47] Client at 24.69.73.3: URL contains high bit character. Request will be rejected. Site Instance='1', Raw URL='/scripts/mail.exe/2001¤ë¾ä.jpg'
+  [11-29-2002 - 15:22:37] Client at 24.69.73.3: URL contains high bit character. Request will be rejected. Site Instance='1', Raw URL='/scripts/mail.exe/2001Â¤Ã«Â¾Ã¤.jpg'
+  [11-29-2002 - 15:22:47] Client at 24.69.73.3: URL contains high bit character. Request will be rejected. Site Instance='1', Raw URL='/scripts/mail.exe/2001Â¤Ã«Â¾Ã¤.jpg'
   [11-29-2002 - 21:15:17] Client at 24.67.253.204: URL contains extension '.com', which is disallowed. Request will be rejected. Site Instance='1', Raw URL='/scripts/www.the5yearjournal.com'
   [12-02-2002 - 09:52:33] Client at 142.27.68.15: URL contains high bit character. Request will be rejected. Site Instance='1', Raw URL='/scripts/mail.exe/2001%C2%A4%C3%AB%C2%BE%C3%A4.jpg'
   [12-02-2002 - 09:52:43] Client at 142.27.68.15: URL contains high bit character. Request will be rejected. Site Instance='1', Raw URL='/scripts/mail.exe/2001%C2%A4%C3%AB%C2%BE%C3%A4.jpg'
