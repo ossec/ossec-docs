@@ -14,7 +14,7 @@ Firewall and network blocking
 | Script            | Expect   | Notes                                         |
 +===================+==========+===============================================+
 | host-deny.sh      | srcip    | Adds IP to ``/etc/hosts.deny`` (tcp wrappers) |
-| firewall-drop.sh  | srcip    | iptables, ipfilter, or AIX IPSec (auto-detect)|
+| firewall-drop.sh  | srcip    | iptables ``OSSEC`` chain, ipfilter, AIX IPSec |
 | firewalld-drop.sh | srcip    | Linux with firewalld; enable manually         |
 | nftables-drop.sh  | srcip    | Linux nftables; requires pre-configured sets  |
 | pf.sh             | srcip    | OpenBSD/FreeBSD PF table ``ossec_fwtable``    |

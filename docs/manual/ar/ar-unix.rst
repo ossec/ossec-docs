@@ -80,9 +80,18 @@ By default, the ossec hids comes with the following pre-configured
 active-response tools:
 
 - **host-deny.sh**: Adds an IP to the /etc/hosts.deny file (most Unix systems).
-- **firewall-drop.sh** (iptables): Adds an IP to the iptables deny list (Linux 2.4 and 2.6).
+- **firewall-drop.sh** (iptables): Adds an IP to a dedicated ``OSSEC`` iptables chain (Linux).
 - **firewall-drop.sh** (ipfilter): Adds an IP to the ipfilter deny list (FreeBSD, NetBSD and Solaris).
 - **firewall-drop.sh** (ipfw): Adds an IP to the ipfw deny table (FreeBSD).
+
+    .. note::
+
+        On iptables, drops go into chain ``OSSEC`` (created on first use) with a
+        jump from ``INPUT`` and, when IP forwarding is enabled, ``FORWARD``.
+        That keeps active-response blocks out of the main filter chains so
+        configuration-management tools that purge unmanaged rules are less
+        likely to remove them. Override the chain name with the
+        ``OSSEC_FW_CHAIN`` environment variable if needed.
 
     .. note::
 
