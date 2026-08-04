@@ -18,11 +18,32 @@ Command Options
 
 - expect
 
-    The arguments this command is expecting (options are srcip and username). If a field is not within the ``expect`` option it will be passed as a dash (``-``) instead of the actual value. For instance, if ``srcip`` is required for an active-response script to work it **must** be inside of an ``expect`` option. ``expect`` is required.
+    Comma-separated fields this command needs from the alert. Valid values are
+    ``srcip``, ``user`` (alias ``username``), and ``filename``.
+
+    ``expect`` does **not** change script argument order. Active-response scripts
+    always receive:
+
+    1. action (``add`` / ``delete``)
+    2. username (or ``-``)
+    3. srcip (or ``-``)
+    4. alert id
+    5. rule id
+    6. agent / location
+    7. filename (or ``-``)
+
+    Fields listed in ``expect`` are filled from the decoded alert; fields omitted
+    from ``expect`` are passed as ``-``. If a listed field is missing from the
+    event, the active response is skipped. ``expect`` is required.
 
     .. note::
 
        ``expect`` is required, but it is not required to populate it. ``<expect></expect>`` is valid if no options need to be passed to the active-response script.
+
+    .. note::
+
+       ``username`` is accepted as an alias for ``user``. The username argument is
+       taken from the decoded ``dstuser`` field when present, otherwise ``srcuser``.
 
 - timeout_allowed
 
