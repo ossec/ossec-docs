@@ -100,10 +100,11 @@ Why aren't new files creating an alert?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default OSSEC does not alert on new files.
-To enable this functionality, <alert_new_files> must be set to yes inside the <syscheck> section of the manager's ossec.conf.
-Also, the rule to alert on new files (rule 554) is set to level 0 by default. 
-The alert level will need to be raised in order to see the alert.
-Alerting on new files does not work in realtime, a full scan will be necessary to detect them.
+To enable this functionality, ``<alert_new_files>`` must be set to yes inside the
+``<syscheck>`` section of the **manager's** ``ossec.conf`` (agent-only config is ignored
+for this option). Rule 554 already fires at level 5 when that is enabled; raise the
+level with ``overwrite="yes"`` only if you want a stronger alert.
+Alerting on new files does not work in realtime; a full scan is required.
 See :ref:`syscheck-realtime-limits`.
 
 Why don't permission changes alert immediately with realtime enabled?
@@ -121,7 +122,8 @@ Why does auto_ignore not suppress noisy realtime alerts?
 from the realtime monitoring path are not subject to ``auto_ignore``. Use ``<ignore>`` or a
 local rule for files that change frequently in realtime directories.
 
-Add the following to local_rules.xml:
+Add the following to local_rules.xml only if you want a higher alert level than the
+default (5):
 
 .. code-block:: xml
 
