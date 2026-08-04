@@ -54,3 +54,27 @@ Where are example active-response configurations?
 
 See :ref:`manual-ar-unix`, :ref:`ossec_config.active-response`, and the bundled
 scripts reference at :ref:`manual-ar-scripts`.
+
+Why does my script see ``add`` and ``-`` instead of srcip/username?
+-------------------------------------------------------------------
+
+Active-response scripts always receive a fixed argument list. ``<expect>``
+only chooses which decoded fields are filled (vs ``-``); it does **not** put
+``srcip`` in ``$1``.
+
+======= ==========================================================
+Arg     Value
+======= ==========================================================
+``$1``  action (``add`` or ``delete``)
+``$2``  username from the alert, or ``-``
+``$3``  srcip from the alert, or ``-``
+``$4``  alert id
+``$5``  rule id
+``$6``  agent / location
+``$7``  filename, or ``-``
+======= ==========================================================
+
+So ``$1`` will be ``add`` even when expect is ``srcip, username``. Use ``$3``
+for the IP and ``$2`` for the user. List ``srcip`` / ``user`` (or ``username``)
+in ``<expect>`` so those fields are populated from the decoder. Username is
+taken from ``dstuser``, or ``srcuser`` if ``dstuser`` is absent.

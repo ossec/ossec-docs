@@ -32,7 +32,11 @@ inside /var/ossec/active-response/bin/ ).
 
 .. note::
 
-    If you do need a srcip or username, just add it, eg: <expect>srcip</expect>
+    If you do need a srcip or username, list them in expect, e.g.
+    ``<expect>srcip</expect>`` or ``<expect>srcip, username</expect>``.
+    ``user`` and ``username`` are equivalent. Expect does not change argv
+    order: ``$1`` is always the action (``add``/``delete``), ``$2`` the
+    username, and ``$3`` the srcip.
 
 Configure the Active response 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

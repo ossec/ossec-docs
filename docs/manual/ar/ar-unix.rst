@@ -28,8 +28,10 @@ You can have as many commands as you want. Each one should be inside their own
   “/var/ossec/active-response/bin”.
 
   You don’t need to provide the whole path.
-- **expect**: The arguments this command is expecting (options are srcip and
-  username).
+- **expect**: Comma- or whitespace-separated fields required from the alert
+  (``srcip``, ``user`` / ``username``, ``filename``). This selects which
+  fields are filled; it does **not** reorder script arguments. Scripts always
+  receive ``action``, ``username``, ``srcip``, … (see :ref:`manual-ar-custom`).
 - **timeout_allowed**: Specifies if this command supports timeout.
 
 
