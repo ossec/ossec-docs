@@ -4,9 +4,11 @@
 
    - server
 
-       - IP Address of the syslog server. 
+       - Hostname or IP address of the syslog server.
 
-       - **Allowed:** any valid IP address 
+       - Hostnames are resolved once at startup (before chroot).
+
+       - **Allowed:** any valid hostname or IP address
 
    - port
 
