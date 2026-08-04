@@ -18,7 +18,7 @@ Command Options
 
 - expect
 
-    Comma-separated fields this command needs from the alert. Valid values are
+    Comma- or whitespace-separated fields this command needs from the alert. Valid values are
     ``srcip``, ``user`` (alias ``username``), and ``filename``.
 
     ``expect`` does **not** change script argument order. Active-response scripts
