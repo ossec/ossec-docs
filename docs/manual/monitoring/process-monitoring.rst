@@ -82,19 +82,26 @@ snapshot).
 To demonstrate with an example, we will create a rule to alert when there is 
 a new port open in listening mode on our server.
 
-First, we configure OSSEC to run the ``netstat -tan |grep LISTEN`` command 
-by adding the following to ossec.conf:
+First, we configure OSSEC to run a ``netstat`` listen check by adding the
+following to ossec.conf:
 
 .. note::
 
    ``full_command`` captures the entire command output as one event, but output
    is capped at ``OS_MAXSTR`` (6144 bytes). See :ref:`ossec_config.localfile`.
 
+.. note::
+
+   Omit Recv-Q / Send-Q from the compared output. Those columns change
+   constantly and trigger rule 533 false positives (GitHub issues #495 and
+   #2063). The default installer command uses ``awk`` to keep only proto,
+   addresses, and state.
+
 .. code-block:: xml 
 
     <localfile>
         <log_format>full_command</log_format>
-        <command>netstat -tan |grep LISTEN|grep -v 127.0.0.1</command>
+        <command>netstat -tan |grep LISTEN |egrep -v '(127.0.0.1| ::1)' | awk '{print $1,$4,$5,$6}' | sort</command>
     </localfile>
 
 After that, I add a rule to alert when its output changes:
@@ -103,7 +110,7 @@ After that, I add a rule to alert when its output changes:
 
     <rule id="140123" level="7">
         <if_sid>530</if_sid>
-        <match>ossec: output: 'netstat -tan |grep LISTEN</match>
+        <match>ossec: output: 'netstat -tan</match>
         <check_diff />
         <description>Listened ports have changed.</description>
     </rule>
@@ -119,18 +126,18 @@ In our example, after configuring OSSEC, I started netcat to listen on port
     OSSEC HIDS Notification.
     2010 Mar 11 19:56:30
 
-    Received From: XYZ->netstat -tan |grep LISTEN|grep -v 127.0.0.1
+    Received From: XYZ->netstat -tan |grep LISTEN |egrep -v '(127.0.0.1| ::1)' | awk '{print $1,$4,$5,$6}' | sort
     Rule: 140123 fired (level 7) -> "Listened ports have changed."
     Portion of the log(s):
 
-    ossec: output: 'netstat -tan |grep LISTEN|grep -v 127.0.0.1':
-    tcp4       0      0 *.23456           *.*               LISTEN
-    tcp4       0      0 *.3306            *.*               LISTEN
-    tcp4       0      0 *.25              *.*               LISTEN
+    ossec: output: 'netstat -tan |grep LISTEN |egrep -v '(127.0.0.1| ::1)' | awk '{print $1,$4,$5,$6}' | sort':
+    tcp4 *.23456 *.* LISTEN
+    tcp4 *.3306 *.* LISTEN
+    tcp4 *.25 *.* LISTEN
     Previous output:
-    ossec: output: 'netstat -tan |grep LISTEN|grep -v 127.0.0.1':
-    tcp4       0      0 *.3306            *.*               LISTEN
-    tcp4       0      0 *.25              *.*               LISTEN
+    ossec: output: 'netstat -tan |grep LISTEN |egrep -v '(127.0.0.1| ::1)' | awk '{print $1,$4,$5,$6}' | sort':
+    tcp4 *.3306 *.* LISTEN
+    tcp4 *.25 *.* LISTEN
 
 
 Detecting USB Storage Usage
