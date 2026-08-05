@@ -7,11 +7,16 @@ Rules Classification
 
 The rules are classified in multiple levels. From the lowest (00) to the maximum
 level 16. Some levels are not used right now. Other levels can be added between
-them or after them. 
+them or after them.
 
-**The rules will be read from the highest to the lowest level.**
+Among sibling rules (same parent in the rule tree), higher levels are tried
+before lower ones. Matching is not a flat global scan of every rule by level;
+decoder category and parent/child relationships also apply. See
+:ref:`manual-rule-matching` for details.
 
-00 - Ignored - No action taken. Used to avoid false positives. These rules are scanned before all the others. They include events with no security relevance.
+00 - Ignored - No action taken. Used to avoid false positives. When a level 0
+rule matches, evaluation stops and no alert is generated. These rules include
+events with no security relevance.
 
 01 - None -
 
