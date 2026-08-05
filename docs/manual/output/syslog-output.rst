@@ -80,4 +80,37 @@ rule, location and the actual event that generated it):
     srcip: 192.168.2.190; user: root; Jul 25 13:26:24 slacker sshd[20440]: Accepted password for root from 192.168.2.190 port 49737 ssh2
 
 
+TCP and TLS
+-----------
+
+By default ``ossec-csyslogd`` still uses UDP. Set ``protocol`` to ``tcp`` for a
+persistent stream with newline framing (RFC 6587 non-transparent). Enable TLS with
+``tls`` (implies TCP; requires an OpenSSL-enabled build). Optional ``tls_ca`` and
+``tls_verify`` control certificate validation (same idea as SMTP TLS in maild).
+
+.. code-block:: xml
+
+    <syslog_output>
+      <server>siem.example.com</server>
+      <port>6514</port>
+      <protocol>tcp</protocol>
+      <tls>yes</tls>
+      <tls_verify>yes</tls_verify>
+      <format>json</format>
+    </syslog_output>
+
+
+Message size limits
+-------------------
+
+``ossec-csyslogd`` builds each forwarded alert (default, CEF, JSON, or Splunk format)
+into a fixed buffer of ``OS_MAXSTR`` bytes (6144). Longer alert bodies are truncated
+with a trailing ``...``. Earlier releases used a 2048-byte buffer, which commonly
+cut off CEF ``msg=`` fields around 2–3 KB (#1762).
+
+**UDP** (default) may still fragment or drop large datagrams on the network path
+even when OSSEC emits the full buffer. **TCP** and **TLS** avoid UDP MTU truncation
+for those payloads (still capped at the 6K assemble buffer).
+
+
 .. include:: ../../examples/output/syslog_output_examples.trst

@@ -22,7 +22,45 @@
 
        - Minimum alert level of the alerts to be forwarded.
 
-       - **Allowed:** 1 - 16 
+       - **Allowed:** 1 - 16
+
+   - protocol
+
+       - Transport for this syslog destination. TCP uses newline framing
+         (RFC 6587 non-transparent; one alert per line). Prefer TCP or TLS when
+         CEF/JSON alerts approach the 6K assemble limit and UDP would truncate
+         on the wire.
+
+       - **Default** udp
+
+       - **Allowed:** udp, tcp
+
+   - tls
+
+       - Wrap the TCP connection in TLS (RFC 5425-style stream). Implies
+         ``protocol`` tcp. Requires an OSSEC build with OpenSSL
+         (``LIBOPENSSL_ENABLED``).
+
+       - **Default** no
+
+       - **Allowed:** yes, no
+
+   - tls_verify
+
+       - Verify the peer certificate and hostname when ``tls`` is yes. Same UX
+         idea as ``global.smtp_tls_verify`` for maild.
+
+       - **Default** yes
+
+       - **Allowed:** yes, no
+
+   - tls_ca
+
+       - Optional path to a CA certificate file (PEM). Loaded before chroot. If
+         unset, OpenSSL default verify locations are used when ``tls_verify``
+         is yes.
+
+       - **Allowed:** Path to a readable CA file
 
    - group
 
