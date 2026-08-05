@@ -158,32 +158,36 @@ Use **FIM maintenance mode** on the manager so syscheck updates the integrity
 database for that agent without generating alerts. The manager and other agents
 keep running.
 
-1. Enable maintenance for the agent::
+**Canonical workflow** (preferred)::
 
-       # /var/ossec/bin/agent_control -M enable -u AGENT_ID
+    # /var/ossec/bin/agent_control -M enable -u AGENT_ID
+    # … apply OS patches / package updates …
+    # /var/ossec/bin/agent_control -M end -u AGENT_ID
 
-2. Apply OS patches / package updates on the host.
+``-M end`` marks the agent for pending end, restarts syscheck/rootcheck, and
+**clears maintenance automatically** when the agent reports
+``syscheck-db-completed``. That avoids disabling mid-scan or forgetting a scan
+and getting a flood afterward.
 
-3. Force a syscheck scan and wait for it to finish::
+While maintenance is enabled:
 
-       # /var/ossec/bin/agent_control -r -u AGENT_ID
+* File modifications and new files update the syscheck DB as the new baseline
+  and do **not** alert.
+* Silent accepts are appended to ``logs/fim_maintenance.log`` on the manager.
+* ``agent_control -l`` shows ``Maint`` (or ``Maint(pending-end)``) for agents
+  in this mode.
+* Leaving maintenance on for more than 24 hours produces a periodic manager
+  WARN — keep windows short. Maintenance trusts FIM events (including malicious
+  ones) for that agent.
 
-   On the agent, look for ``Ending syscheck scan`` (and pre-scan completed if
-   applicable).
+**Emergency:** ``agent_control -M disable -u AGENT_ID`` clears the flag
+immediately without waiting for a scan. Prefer ``end`` for routine patching.
 
-4. Disable maintenance::
-
-       # /var/ossec/bin/agent_control -M disable -u AGENT_ID
-
-While maintenance is enabled, file modifications and new files are written into
-the syscheck database as the new baseline and do **not** alert. After you
-disable it, only subsequent changes generate alerts.
-
-Check status with ``agent_control -M status -u AGENT_ID`` or
+Check detail with ``agent_control -M status -u AGENT_ID`` or
 ``agent_control -i AGENT_ID``.
 
 The older workaround (stop the manager and run ``syscheck_control -u``) is no
 longer necessary for patch windows. Clearing the database with
 ``syscheck_control -u`` remains available if you intentionally want a full
-rebuild; prefer maintenance mode for routine updates.
+rebuild.
  

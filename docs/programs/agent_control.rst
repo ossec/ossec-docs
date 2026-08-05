@@ -59,18 +59,24 @@ agent_control argument options
 .. option:: -M <action>
 
     Per-agent FIM maintenance mode. ``<action>`` is one of ``enable``,
-    ``disable``, or ``status``. Must be used with :option:`agent_control -u`.
+    ``disable``, ``status``, or ``end``. Must be used with
+    :option:`agent_control -u`.
 
     While enabled, the manager updates that agent's syscheck integrity database
     from incoming scans **without** generating file-modified or file-added
-    alerts. Use this around OS patching so package updates do not flood alerts;
-    then disable maintenance after a forced scan has absorbed the new baseline.
+    alerts. Silent accepts are logged to ``logs/fim_maintenance.log``.
+    ``agent_control -l`` marks agents with ``Maint`` or ``Maint(pending-end)``.
 
-    Example::
+    **Preferred patch workflow**::
 
         # /var/ossec/bin/agent_control -M enable -u 002
-        # /var/ossec/bin/agent_control -r -u 002
-        # /var/ossec/bin/agent_control -M disable -u 002
+        # … apply OS patches …
+        # /var/ossec/bin/agent_control -M end -u 002
+
+    ``end`` restarts syscheck and clears maintenance when the baseline scan
+    completes. Use ``disable`` only for an immediate emergency clear (it does
+    not wait for a scan). Keep maintenance windows short; the manager warns if
+    an agent stays in maintenance longer than 24 hours.
 
 
 agent_control example usage
