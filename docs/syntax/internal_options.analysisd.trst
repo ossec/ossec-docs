@@ -114,6 +114,31 @@
 
        **Allowed:** 0 to 32
 
+   - analysisd.input_demux_threads
+
+       Workers that demux raw messages from the Unix MQ receive path onto the
+       per-type decode queues after the single receiver thread.
+
+       **Default:** 2
+
+       **Allowed:** 1 to 8
+
+   - analysisd.sid_prev_matched_max
+
+       Maximum retained events per ``if_matched_sid`` correlation list.
+
+       **Default:** 128
+
+       **Allowed:** Any positive integer (implementation-defined upper bound)
+
+   - analysisd.raw_input_queue_size
+
+       Front-door ring buffer between the Unix MQ receiver and demux workers.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
    - analysisd.decode_event_queue_size
 
        Ring buffer size (minus one slot) for raw messages awaiting general decode.
@@ -161,6 +186,27 @@
        **Default:** 16384
 
        **Allowed:** 128 to 2000000
+
+   - analysisd.statistical_queue_size
+
+       Ring buffer size for the statistical / hourly alert writer backlog.
+
+       **Default:** 16384
+
+       **Allowed:** 128 to 2000000
+
+   - analysisd.raw_input_push_wait_ms
+   - analysisd.demux_push_wait_ms
+   - analysisd.shard_push_wait_ms
+   - analysisd.alerts_push_wait_ms
+
+       Milliseconds to wait when a mid-pipe push would block before dropping.
+       ``0`` means immediate push/drop (no soak). Raise under bursty load together
+       with queue sizes; lower EPS if drops persist.
+
+       **Defaults:** 25 / 50 / 75 / 100
+
+       **Allowed:** 0 to 5000
 
    - analysisd.archives_queue_size
 

@@ -104,6 +104,54 @@ Do the rules get pushed to the agents automatically?
   Agents do not send alerts to the manager, they only send the raw logs.
 
 
+UDP port 1514 shows a large Recv-Q — is analysisd too slow?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  Often yes, indirectly. Agent traffic lands on ``ossec-remoted`` (UDP/TCP
+  ``secure`` listener, commonly port ``1514``). Remoted decrypts and immediately
+  forwards each event to ``ossec-analysisd`` over the local message queue. When
+  analysisd cannot keep up, remoted blocks or slows on that hand-off, the kernel
+  UDP receive buffer fills, and ``ss`` / ``netstat`` reports a growing
+  **Recv-Q**.
+
+  On **OSSEC 3.6** (the version in the original report), ``ossec-analysisd`` was
+  effectively single-threaded. On **current Linux managers** (4.2+), analysisd
+  always runs a multi-threaded pipeline. Prefer upgrading before heavy tuning.
+
+  Diagnose on the manager:
+
+  1. Confirm Recv-Q on the agent port (``ss -ulnp | grep 1514`` or equivalent).
+  2. Watch ``/var/ossec/var/run/ossec-analysisd.state`` (see
+     ``analysisd.state_interval``) for queue depth, drops, and
+     ``events_processed_per_second``.
+  3. Check ``ossec.log`` for remoted "Unable to send message to queue" and
+     analysisd pipeline pressure / drop warnings.
+
+  Tuning (``/var/ossec/etc/local_internal_options.conf``, then restart):
+
+  * Raise worker counts if CPUs are idle:
+    ``analysisd.event_threads``, ``analysisd.rule_matching_threads``,
+    ``analysisd.input_demux_threads`` (``0`` = auto for most ``*_threads``).
+  * Under bursty load, enlarge ring buffers
+    (``analysisd.raw_input_queue_size``, ``analysisd.decode_*_queue_size``,
+    ``analysisd.alerts_queue_size``, …) and/or mid-pipe soak
+    (``analysisd.*_push_wait_ms``).
+  * Reduce work: disable ``<logall>`` if enabled, quiet noisy rules, avoid
+    expensive regex where possible, and lower agent EPS at the source.
+
+  Kernel socket buffer (remoted side) can also help absorb short bursts::
+
+      # example — persist via sysctl.d as appropriate
+      sysctl -w net.core.rmem_max=16777216
+      sysctl -w net.core.rmem_default=16777216
+
+  That only buys time; sustained Recv-Q still means analysisd or the remoted →
+  analysisd path cannot keep up.
+
+  See :ref:`intopt_analysisd`, :ref:`manual-remoted`, and the 4.2 migration notes
+  in :ref:`upgrade-migration` for the threaded pipeline.
+
+
 How can I get ossec.log to rotate daily?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
