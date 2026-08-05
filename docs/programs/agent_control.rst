@@ -6,6 +6,8 @@ agent_control
 
 The agent_control tool allows you to query and get information from any agent you have configured 
 on your server and it also allows you to restart (run now) the syscheck/rootcheck scan on any agent.
+It can also enable **FIM maintenance mode** so integrity updates during OS patching are absorbed
+quietly into the syscheck database (see :option:`agent_control -M`).
 
 Enabling `active response <../manual/ar/index.html>`_ will be necessary to start scans remotely and possibly other functions.
 
@@ -52,6 +54,23 @@ agent_control argument options
 .. option:: -u <agent_id>
 
     <agent_id> that will perform the requested action. 
+
+
+.. option:: -M <action>
+
+    Per-agent FIM maintenance mode. ``<action>`` is one of ``enable``,
+    ``disable``, or ``status``. Must be used with :option:`agent_control -u`.
+
+    While enabled, the manager updates that agent's syscheck integrity database
+    from incoming scans **without** generating file-modified or file-added
+    alerts. Use this around OS patching so package updates do not flood alerts;
+    then disable maintenance after a forced scan has absorbed the new baseline.
+
+    Example::
+
+        # /var/ossec/bin/agent_control -M enable -u 002
+        # /var/ossec/bin/agent_control -r -u 002
+        # /var/ossec/bin/agent_control -M disable -u 002
 
 
 agent_control example usage
