@@ -17,8 +17,11 @@
 
            Realtime mode alerts immediately on **file content integrity** changes (checksums
            and size) for files already in the syscheck database. Permission, ownership, and
-           group changes are detected on the **next scheduled scan**, not instantly. See
-           :ref:`syscheck-realtime-limits`.
+           group changes are detected on the **next scheduled scan**, not instantly. On
+           Windows, when ``check_attrs="yes"`` is set, attribute changes (for example Hidden)
+           are also eligible for realtime notification; when ``check_acl="yes"`` is set,
+           NTFS DACL/security changes are likewise eligible via
+           ``FILE_NOTIFY_CHANGE_SECURITY``. See :ref:`syscheck-realtime-limits`.
 
     - **report_changes**: Value=yes
 
@@ -66,6 +69,31 @@
 
         - Check the UNIX permission of the files/directories selected.
           On windows this will only check the POSIX permissions.
+
+    - **check_attrs**: Value=yes
+
+        .. versionadded:: 4.3.0
+
+        - On Windows, include ``GetFileAttributes`` bits (Hidden, System,
+          Archive, and related) in the FIM integrity sum so attribute flips
+          alert. Ignored on non-Windows agents. Not enabled by ``check_all``;
+          set explicitly to avoid a one-time baseline churn on upgrade.
+
+        **Allowed:** yes/no
+
+    - **check_acl**: Value=yes
+
+        .. versionadded:: 4.3.0
+
+        - On Windows, monitor NTFS DACL/ACE changes (ALLOW/DENY matrix with
+          inheritance flags). Change detection uses a SID-stable digest in the
+          FIM sum; alert text includes Added/Removed/Modified ACE details when
+          permissions change. Ignored on non-Windows agents (safe in portable
+          ``agent.conf``). Not enabled by ``check_all``; enable explicitly and
+          expect a one-time baseline when first turned on (use FIM maintenance
+          mode or ``syscheck_control -u`` for a quiet transition).
+
+        **Allowed:** yes/no
 
     - **restrict**: Value=string
 
