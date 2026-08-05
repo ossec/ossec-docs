@@ -9,6 +9,34 @@ Access denied:
   [Sun Jan 16 10:56:49 2005] [error] [client 192.168.2.10] mod_security: Access denied with code 403. Pattern match "111" at THE_REQUEST [hostname "192.168.2.101"] [uri "/index.html?111"]
 
 
+Nginx / libmodsecurity error log:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+  2019/08/29 09:59:06 [error] 13#13: *1031 [client 203.0.113.10] ModSecurity: Access denied with code 403 (phase 2). Matched "Operator" against variable "ARGS:q" [id "941100"] [hostname "example.com"] [uri "/"] [unique_id "abc123"]
+
+
+Serial audit log (``modsec-audit``):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Configure logcollector with ``<log_format>modsec-audit</log_format>`` so each
+transaction (``--id-A--`` … ``--id-Z--``) is one event. Example sections:
+
+.. code-block:: console
+
+  --fbd13fc1-A--
+  [22/Dec/2015:15:25:00 +0000] VnhlYH8AAQEAADYdAUkAAAAA 127.0.0.1 55275 127.0.0.1 80
+  --fbd13fc1-B--
+  GET /?q=test HTTP/1.1
+  Host: localhost
+
+  --fbd13fc1-H--
+  Message: Access denied with code 403 (phase 2). Pattern match "test" at ARGS:q
+  Action: Intercepted (phase 2)
+  --fbd13fc1-Z--
+
+
 Access denied by pattern:
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

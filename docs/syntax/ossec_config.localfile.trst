@@ -131,6 +131,32 @@
 
          - djb-multilog
 
+         .. _logformat_audit:
+
+         - audit
+             Linux Auditd log format.
+
+         .. _logformat_modsec-audit:
+
+         - modsec-audit
+             Serial ModSecurity / libmodsecurity audit logs (for example
+             ``/var/log/modsec_audit.log``). Logcollector gathers one transaction
+             from the ``--id-A--`` header through the ``--id-Z--`` trailer and
+             emits a single event for analysisd.
+
+             **Example:**
+
+             .. code-block:: xml
+
+                <localfile>
+                  <log_format>modsec-audit</log_format>
+                  <location>/var/log/modsec_audit.log</location>
+                </localfile>
+
+             Prefer monitoring the web server error log when possible; Apache and
+             Nginx ModSecurity error-log lines are also decoded. Use
+             ``modsec-audit`` when you need the full serial audit file.
+
          .. _logformat_multi-line:
 
          - multi-line
