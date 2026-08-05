@@ -129,9 +129,30 @@ Creating cdb lists the following file format is specified: ::
 
     key1:value
     key2:value
-    key3:diff value 
+    key3:diff value
 
 Each key must be unique and is terminated with a colon ``:``.
+
+Comments
+^^^^^^^^
+
+Trailing comments are supported with the multi-character delimiter ``###``.
+Everything from ``###`` to the end of the line is discarded at compile time.
+Spaces and tabs immediately before ``###`` are also removed so the stored
+value does not retain trailing whitespace.
+
+A single ``#`` is **not** treated as a comment marker, so keys and values may
+still contain ``#`` (for example URL fragments).
+
+Example: ::
+
+    ### Approved internal networks
+    192.168.:RFC 1918 Address space ### private LAN
+    10.:RFC 1918 Address space
+    url:https://example.com/page#anchor ### keep the # in the value
+
+Blank lines and lines that are only a ``###`` comment are ignored.
+Lines without a ``:`` are also ignored.
 
 For IP addresses the dot notation is used for subnet matches ::
 
