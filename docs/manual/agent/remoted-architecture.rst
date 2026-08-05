@@ -58,6 +58,17 @@ Syslog UDP
 The listener thread receives datagrams and forwards them to ``ossec-analysisd`` with no
 worker pool.
 
+Agent port Recv-Q (backpressure)
+--------------------------------
+
+A large **Recv-Q** on the secure agent listener (often UDP ``1514``) usually means
+``ossec-remoted`` is not draining datagrams as fast as agents send them. The common
+cause is backpressure from ``ossec-analysisd``: remoted forwards every event into the
+local analysisd queue, so a slow or overloaded analyzer fills the kernel UDP buffer.
+
+See the FAQ entry *UDP port 1514 shows a large Recv-Q* in :ref:`faq_ossec` for
+diagnostics and ``internal_options.conf`` knobs on the analysisd pipeline.
+
 Shutdown
 --------
 
