@@ -44,6 +44,15 @@ To use the system's PCRE2, set the `PCRE2_SYSTEM` variable to yes:
    # cd ossec-hids-*
    # PCRE2_SYSTEM=yes ./install.sh
 
+PCRE2 JIT (``USE_PCRE2_JIT``) is an optional speedup. Matching always goes
+through ``pcre2_match``, which uses JIT when it is available and otherwise
+falls back to interpreted matching. Builds no longer treat a JIT compile
+failure as a fatal ``decoder.xml`` error (macOS and some system packages
+often ship libpcre2 without usable JIT). macOS defaults to
+``USE_PCRE2_JIT=no``. To force a non-JIT build explicitly::
+
+   # USE_PCRE2_JIT=no ./install.sh
+
 zlib
 ----
 
