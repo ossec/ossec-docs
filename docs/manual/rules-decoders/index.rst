@@ -12,3 +12,4 @@ Rules and Decoders
     create-custom
     rule_decoder_dir
     rule-levels
+    rule-matching
