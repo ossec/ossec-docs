@@ -18,6 +18,17 @@ More information on them can be found on the `OSSEC Architecture page <../ossec-
 
 1. Download the latest version and verify its GPG signature (see below).
 
+   Convenience source archives always track the current stable release via the
+   floating ``latest`` tag:
+
+   .. code-block:: console
+
+      curl -LO https://github.com/ossec/ossec-hids/archive/latest.tar.gz
+      curl -LO https://github.com/ossec/ossec-hids/archive/latest.zip
+
+   For GPG verification, download the versioned release tarball and matching
+   ``.asc`` from GitHub Releases (see "Verify the tarball signature" below).
+
 2. Verify the requirements listed in :ref:`install_req` are installed or available.
 
    .. versionadded: 3.3

@@ -27,8 +27,8 @@ install and unpack it (on the system with a compiler).
 
 .. code-block:: console 
 
-    # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8.1.tar.gz
-    # tar -zxvf ossec-hids-latest.tar.gz 
+    # curl -LO https://github.com/ossec/ossec-hids/archive/latest.tar.gz
+    # tar -zxvf latest.tar.gz
 
     
 Enter in the source directory of the downloaded package, and configure OSSEC to build the ``agent`` version.
