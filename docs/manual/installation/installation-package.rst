@@ -30,6 +30,11 @@ And for an agent run:
 
    # yum install ossec-hids ossec-hids-agent
 
+To upgrade an existing RPM install, use ``yum update`` / ``dnf upgrade`` on the
+same packages. The package scripts restart OSSEC through the normal service
+unit. See :ref:`manual-updates` for the full upgrade checklist (managers before
+agents, backups, and downtime expectations).
+
 
 Deb Installation
 ----------------
@@ -59,6 +64,15 @@ Or install OSSEC HIDS agent:
 .. code-block:: console
 
     # apt-get install ossec-hids-agent
+
+To upgrade later:
+
+.. code-block:: console
+
+    # apt-get update
+    # apt-get install --only-upgrade ossec-hids-server   # or ossec-hids-agent
+
+See :ref:`manual-updates` for manager/agent order and backup guidance.
 
 pkg Installation
 ----------------
