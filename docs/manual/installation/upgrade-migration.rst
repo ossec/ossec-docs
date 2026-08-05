@@ -9,6 +9,9 @@ OSSEC 3.8.x or earlier to 4.0.0 and later, including 4.1.0 and 4.2.0.
 Recommended upgrade order
 -------------------------
 
+Prefer Atomicorp **RPM/DEB package upgrades** when available; they update
+binaries and restart OSSEC through the service unit. See :ref:`manual-updates`.
+
 1. **Upgrade all managers first** (server and local installs) to 4.0.0 or later.
 2. **Verify manager connectivity** and that ``ossec-authd`` (if used) is running.
 3. **Upgrade agents** one group at a time, validating connectivity after each batch.
