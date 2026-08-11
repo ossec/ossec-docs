@@ -122,6 +122,52 @@ Why does auto_ignore not suppress noisy realtime alerts?
 from the realtime monitoring path are not subject to ``auto_ignore``. Use ``<ignore>`` or a
 local rule for files that change frequently in realtime directories.
 
+Can OSSEC monitor Windows Hidden files?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Yes. Syscheck already enumerates and checksums files with the Windows Hidden
+attribute; content changes are reported like any other file.
+
+To **alert when the Hidden (or other) attribute itself changes**, enable
+``check_attrs`` on the monitored directory (Windows agents only). This is not
+part of ``check_all``:
+
+.. code-block:: xml
+
+  <syscheck>
+    <directories check_all="yes" check_attrs="yes" realtime="yes">C:\\path\\to\\watch</directories>
+  </syscheck>
+
+The first scan after enabling ``check_attrs`` may re-baseline those paths
+(attribute field added to the sum). Use FIM maintenance mode or
+``syscheck_control -u`` if you need a quiet transition.
+
+
+Can OSSEC monitor Windows NTFS permissions (ACLs)?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Yes. Enable ``check_acl`` on the monitored directory (Windows agents only).
+This is **not** part of ``check_all``, and it is separate from Unix
+``check_perm`` (POSIX mode bits).
+
+.. code-block:: xml
+
+  <syscheck>
+    <directories check_all="yes" check_acl="yes" realtime="yes">C:\\path\\to\\watch</directories>
+  </syscheck>
+
+OSSEC stores a compact SID-stable digest in the integrity sum and attaches
+human-readable ACE details (including inheritance flags and Added/Removed/Modified
+sections) on change alerts. Account display-name renames without an ACL edit do
+not raise an alert.
+
+The first scan after enabling ``check_acl`` may re-baseline those paths. Use FIM
+maintenance mode or ``syscheck_control -u`` if you need a quiet transition.
+
+
+How do I get alerts for new files?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Add the following to local_rules.xml only if you want a higher alert level than the
 default (5):
 
