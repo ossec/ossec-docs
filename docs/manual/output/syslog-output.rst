@@ -83,10 +83,16 @@ rule, location and the actual event that generated it):
 TCP and TLS
 -----------
 
+.. versionadded:: 4.3.0
+
 By default ``ossec-csyslogd`` still uses UDP. Set ``protocol`` to ``tcp`` for a
 persistent stream with newline framing (RFC 6587 non-transparent). Enable TLS with
-``tls`` (implies TCP; requires an OpenSSL-enabled build). Optional ``tls_ca`` and
-``tls_verify`` control certificate validation (same idea as SMTP TLS in maild).
+``tls`` (implies TCP). Optional ``tls_ca`` and ``tls_verify`` control certificate
+validation (same idea as SMTP TLS in maild).
+
+TLS destinations require an OSSEC build with OpenSSL (``LIBOPENSSL_ENABLED``). The
+socket is opened before chroot so hostnames and ``tls_ca`` paths resolve on the
+host filesystem. On send failure, csyslogd reconnects once.
 
 .. code-block:: xml
 
@@ -96,6 +102,7 @@ persistent stream with newline framing (RFC 6587 non-transparent). Enable TLS wi
       <protocol>tcp</protocol>
       <tls>yes</tls>
       <tls_verify>yes</tls_verify>
+      <tls_ca>/etc/pki/tls/certs/ca-bundle.crt</tls_ca>
       <format>json</format>
     </syslog_output>
 

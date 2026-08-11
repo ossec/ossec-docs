@@ -28,3 +28,36 @@ Send all alerts level 6 and above to 10.10.10.127 on port 515:
      <port>515</port>
      <level>6</level>
    </syslog_output>
+
+
+Forward JSON alerts over TCP (no TLS):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.3.0
+
+.. code-block:: xml
+
+   <syslog_output>
+     <server>siem.example.com</server>
+     <port>514</port>
+     <protocol>tcp</protocol>
+     <format>json</format>
+   </syslog_output>
+
+
+Forward CEF alerts over TLS to a collector on 6514:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.3.0
+
+.. code-block:: xml
+
+   <syslog_output>
+     <server>siem.example.com</server>
+     <port>6514</port>
+     <protocol>tcp</protocol>
+     <tls>yes</tls>
+     <tls_verify>yes</tls_verify>
+     <tls_ca>/etc/pki/tls/certs/ca-bundle.crt</tls_ca>
+     <format>cef</format>
+   </syslog_output>
