@@ -202,11 +202,40 @@ and create a rule to alert when an appropriate log is created.
 How do I stop syscheck alerts during system updates?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There is no easy way to do this, but there are work-arounds.
-Stop the OSSEC processes on the manager, and run ``/var/ossec/bin/syscheck_control -u AGENT_ID``.
-This will clear the syscheck database for the agent,
-and the next time syscheck runs it will create a new baseline.
-Next, start the OSSEC processes on the manager.
-Once the system update is complete, run a syscheck scan on that agent.
-The database will be populated with new values, and should not trigger "file modified" alarms.
+Use **FIM maintenance mode** on the manager so syscheck updates the integrity
+database for that agent without generating alerts. The manager and other agents
+keep running.
+
+**Canonical workflow** (preferred)::
+
+    # /var/ossec/bin/agent_control -M enable -u AGENT_ID
+    # … apply OS patches / package updates …
+    # /var/ossec/bin/agent_control -M end -u AGENT_ID
+
+``-M end`` marks the agent for pending end, restarts syscheck/rootcheck, and
+**clears maintenance automatically** when the agent reports
+``syscheck-db-completed``. That avoids disabling mid-scan or forgetting a scan
+and getting a flood afterward.
+
+While maintenance is enabled:
+
+* File modifications and new files update the syscheck DB as the new baseline
+  and do **not** alert.
+* Silent accepts are appended to ``logs/fim_maintenance.log`` on the manager.
+* ``agent_control -l`` shows ``Maint`` (or ``Maint(pending-end)``) for agents
+  in this mode.
+* Leaving maintenance on for more than 24 hours produces a periodic manager
+  WARN — keep windows short. Maintenance trusts FIM events (including malicious
+  ones) for that agent.
+
+**Emergency:** ``agent_control -M disable -u AGENT_ID`` clears the flag
+immediately without waiting for a scan. Prefer ``end`` for routine patching.
+
+Check detail with ``agent_control -M status -u AGENT_ID`` or
+``agent_control -i AGENT_ID``.
+
+The older workaround (stop the manager and run ``syscheck_control -u``) is no
+longer necessary for patch windows. Clearing the database with
+``syscheck_control -u`` remains available if you intentionally want a full
+rebuild.
  
