@@ -3,6 +3,15 @@
 Change Log
 ----------
 
+4.3.0 (2026/08/25 14:05 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- FIM maintenance mode via ``agent_control -M``.
+- TCP/TLS ``syslog_output`` in ``ossec-csyslogd``, with larger alert payloads.
+- ModSecurity serial audit log collection (``modsec-audit``) and nginx
+  ModSecurity decoders/rules.
+- Additional decoder, rule, and bug fixes. See the GitHub 4.3.0 release notes.
+
 4.2.0 (2026/08/02 12:00 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
