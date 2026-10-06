@@ -3,6 +3,16 @@
 Change Log
 ----------
 
+4.4.0 (2026/10/05 20:19 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Opt-in Windows FIM ``check_attrs`` and ``check_acl``.
+- GeoIP lookups use libmaxminddb and GeoLite2 MMDB files (``geoipdb``,
+  ``geoipasn``).
+- ``ossec-csyslogd`` JSON format forwards analysisd ``alerts.json``, including
+  ``agent_name``. ``jsonout_output`` stays on when the tag is omitted.
+- Additional decoder, rule, and bug fixes. See the GitHub 4.4.0 release notes.
+
 4.3.0 (2026/08/25 14:05 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

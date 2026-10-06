@@ -114,7 +114,9 @@
 
        - CEF is the ArcSight Common Event Format.
 
-       - json can be used with a variety of tools.
+       - json forwards each analysisd JSON alert from ``alerts.json``, including ``agent_name``. ``jsonout_output`` must be on (it is, unless set to ``no``). ``ossec-monitord`` still rotates the alerts files.
+
+         .. versionadded:: 4.4.0
 
        - The splunk option is for sending data to a Splunk server.
 
