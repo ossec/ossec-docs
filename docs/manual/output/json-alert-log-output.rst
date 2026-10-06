@@ -20,8 +20,13 @@ This can provide the simplest method of exporting the entire alert message to ot
 Configuration
 -------------
 
-Turning it on or off is easy as setting a single configuration parameter in the ossec.conf.
-These configurations options require a server or local installation.
+Turning it on or off is a single option in ``ossec.conf``.
+These options require a server or local installation.
+
+.. versionchanged:: 4.4.0
+
+   JSON output stays on when ``<jsonout_output>`` is omitted. Set the tag to
+   ``no`` to disable it.
 
 
 Enabling json output
