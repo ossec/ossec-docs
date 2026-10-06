@@ -35,6 +35,8 @@ exclude_patterns = [
     '.DS_Store',
     'conf.py.bak',
     '_templates/*.bak',
+    # changelog.md is the old 3.5 notes and shadows changelog.rst
+    'changelog.md',
 ]
 
 # Optional: Enable MyST extensions
