@@ -14,8 +14,10 @@ Currently OSSEC supports three regex syntaxes:
 pcre2
 -----
 
-Information onthe syntax for pcre2 can be found in the `pcre <http://www.pcre.org/current/doc/html/>`_
+Information on the syntax for pcre2 can be found in the `pcre <http://www.pcre.org/current/doc/html/>`_
 documentation.
+Test a ``<pcre2>`` pattern with :ref:`ossec-regex` and the ``-p`` option.
+Without ``-p``, that program uses the legacy OSSEC regex syntax below.
 
 .. _os_regex:
 
