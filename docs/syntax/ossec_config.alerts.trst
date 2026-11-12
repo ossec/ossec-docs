@@ -28,7 +28,7 @@
 
    - use_geoip
 
-       Enable or disable GeoIP lookups.
+       Enable or disable GeoIP lookups. In 4.4.0 the lookup database is the MaxMind MMDB set with ``<geoipdb>`` (and optionally ``<geoipasn>``).
 
        **Default:** Disabled
 

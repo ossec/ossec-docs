@@ -3,6 +3,25 @@
 Change Log
 ----------
 
+4.4.1 (2026/10/18 17:27 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Maintenance release on the 4.4.0 branch.
+- Preserve syscheck ``report_changes`` (and ACL) framing across the
+  CVE-2020-8445 control-character strip so DecodeSyscheck can still split
+  path from diff (#2359).
+- See the GitHub 4.4.1 release notes.
+
+4.4.0 (2026/10/05 20:19 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Opt-in Windows FIM ``check_attrs`` and ``check_acl``.
+- GeoIP lookups use libmaxminddb and GeoLite2 MMDB files (``geoipdb``,
+  ``geoipasn``).
+- ``ossec-csyslogd`` JSON format forwards analysisd ``alerts.json``, including
+  ``agent_name``. ``jsonout_output`` stays on when the tag is omitted.
+- Additional decoder, rule, and bug fixes. See the GitHub 4.4.0 release notes.
+
 4.3.0 (2026/08/25 14:05 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

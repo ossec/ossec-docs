@@ -2,8 +2,9 @@
 JSON Format
 ###########
 
-OSSEC can write alerts in JSON format to ``/var/ossec/logs/alerts/alerts.json`` when
-``jsonout_output`` is enabled in ``<global>``. Each line is one JSON object.
+OSSEC writes alerts in JSON format to ``/var/ossec/logs/alerts/alerts.json``.
+``jsonout_output`` stays on when the tag is omitted; set it to ``no`` to disable
+JSON alerts. Each line is one JSON object.
 
 Enable JSON output
 ------------------
@@ -60,7 +61,7 @@ Common fields
 | ``dstuser``      | Destination user when extracted                          |
 | ``location``     | Log source path or label                                 |
 | ``syscheck``     | FIM details when present (hashes, paths, ownership)      |
-| ``GeoLocation``  | Present when GeoIP is enabled and ``analysisd.geoip_jsonout=1`` |
+| ``srcgeoip``     | Present when a GeoLite2 MMDB is configured and ``analysisd.geoip_jsonout=1`` |
 +------------------+----------------------------------------------------------+
 
 File integrity (syscheck) alerts may include ``md5``, ``sha1``, and ``sha256`` before/after

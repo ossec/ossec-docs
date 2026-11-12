@@ -107,6 +107,16 @@ host filesystem. On send failure, csyslogd reconnects once.
     </syslog_output>
 
 
+JSON alerts
+-----------
+
+.. versionadded:: 4.4.0
+
+``<format>json</format>`` forwards each analysisd JSON alert from
+``/var/ossec/logs/alerts/alerts.json``. ``agent_name`` is a field on that
+object. This requires ``jsonout_output``, which stays on when the tag is
+omitted. ``ossec-monitord`` still rotates the alerts files.
+
 Message size limits
 -------------------
 

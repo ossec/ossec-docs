@@ -4,7 +4,7 @@ Upgrading to OSSEC 4.x
 ======================
 
 This guide covers breaking changes and recommended upgrade order when moving from
-OSSEC 3.8.x or earlier to 4.0.0 and later, including 4.1.0 and 4.2.0.
+OSSEC 3.8.x or earlier to 4.0.0 and later, including 4.4.0.
 
 Recommended upgrade order
 -------------------------
@@ -122,6 +122,21 @@ Windows agents (4.2.0+)
 The Windows agent installer for 4.2.0 bundles the MinGW/OpenSSL runtime DLLs
 required by the agent. Prefer the official 4.2.0 installer over copying an
 older ``.exe`` and pairing it with system DLLs.
+
+GeoIP and JSON alerts (4.4.0+)
+------------------------------
+
+GeoIP lookups use libmaxminddb and a GeoLite2 ``.mmdb`` file (``<geoipdb>``,
+and optionally ``<geoipasn>``). A build needs ``USE_GEOIP=1``. GeoIP Legacy
+``.dat`` paths are not the lookup source. Point ``<geoipdb>`` at a GeoLite2
+City or Country database after upgrading.
+
+``<jsonout_output>`` stays on when the tag is omitted. Set it to ``no`` if a
+manager should not write ``alerts.json``. ``ossec-csyslogd`` JSON syslog
+output forwards those analysisd JSON alerts, including ``agent_name``.
+
+Windows ``check_attrs`` and ``check_acl`` stay off unless set on a
+``<directories>`` entry. Turning either on re-baselines those paths once.
 
 See also
 --------
