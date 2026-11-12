@@ -197,6 +197,19 @@
        New files will only be detected on a full scan, this option does not work in realtime.
        See :ref:`syscheck-realtime-limits`.
 
+.. object:: report_new_files_as_changed
+
+    When enabled alongside ``<alert_new_files>yes</alert_new_files>``, newly created files
+    detected after initial baseline establishment are recorded as modified (prefixed with ``!+++``)
+    in the manager's syscheck database. This allows new file creations to be queried via
+    ``syscheck_control -i`` and tracked across subsequent scans.
+
+    **Default:** no
+
+    **Allowed:** yes/no
+
+    **Valid:** server, local
+
 .. object:: scan_on_start
 
     Specifies if syscheck should do the first scan as soon as it is started.
@@ -228,17 +241,17 @@
 
 .. object:: prefilter_cmd
 
-    Command to run to prevent prelinking from creating false positives.
+    .. deprecated:: 4.5.0
+       This option has been retired for security reasons. In OSSEC 4.5.0+, the tag is
+       safely ignored with a configuration warning and no external process is executed.
+
+    Command previously run to prevent prelinking from creating false positives.
 
     **Example:**
 
     .. code-block:: xml
 
        <prefilter_cmd>/usr/sbin/prelink -y</prefilter_cmd>
-
-    .. note::
-
-       This option can potentially impact performance negatively. The configured command will be run for each and every file checked.
 
 .. object:: skip_nfs
 

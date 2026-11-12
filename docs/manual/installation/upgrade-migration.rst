@@ -138,6 +138,36 @@ output forwards those analysisd JSON alerts, including ``agent_name``.
 Windows ``check_attrs`` and ``check_acl`` stay off unless set on a
 ``<directories>`` entry. Turning either on re-baselines those paths once.
 
+OSSEC 4.5.0 Migration Notes
+---------------------------
+
+**Hostname and Agent Identity in Rules (#1668)**
+  Starting in 4.5.0, agent-forwarded syslog lines preserve the device hostname
+  reported in the syslog header for ``<hostname>`` rule matching. The reporting
+  OSSEC agent identity is separated and matched using ``<agent_name>`` or
+  ``<agent_name_pcre2>``, and the log file path or queue location is matched using
+  ``<location>`` or ``<location_pcre2>``. Custom rules that previously relied on
+  ``<hostname>`` matching the OSSEC agent name should be reviewed and migrated to
+  ``<agent_name>``.
+
+**Database Output: MySQL Location ID Widening**
+  The MySQL schema for ``location.id`` has been widened from ``SMALLINT UNSIGNED``
+  to ``INT UNSIGNED`` to prevent ID exhaustion in environments with large numbers
+  of unique log locations. Existing database installations should apply the migration
+  script provided in the source repository:
+  ``contrib/upgrade-location-id-mysql.sql``.
+
+**Log Rotation for ossec.log (#704)**
+  ``ossec-monitord`` on the manager now handles daily rotation of ``ossec.log``
+  into ``logs/ossec/YYYY/Mon/ossec-DD.log``, with optional GPG signing and compression.
+  Logrotate configurations on managers no longer rotate ``ossec.log`` using
+  ``copytruncate``. Standalone agent installations continue to use an agent-specific
+  logrotate configuration.
+
+**Retired Syscheck Prefilter Command**
+  The ``<prefilter_cmd>`` option in ``<syscheck>`` has been retired. The tag will
+  emit a warning during configuration loading and is ignored.
+
 See also
 --------
 

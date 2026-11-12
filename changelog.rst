@@ -3,6 +3,34 @@
 Change Log
 ----------
 
+4.5.0 (2026/11/12 18:00 +00:00)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Rule matching options: ``<agent_name>`` and ``<agent_name_pcre2>`` match
+  the OSSEC agent identity; ``<location>`` and ``<location_pcre2>`` match the
+  event location string. Log forwarding preserves the device hostname from
+  syslog lines for ``<hostname>`` matching (#1668).
+- CDB list matching on decoded ``system_name`` via ``<list lookup="..." field="system_name">`` (#628).
+- Syscheck ``<report_new_files_as_changed>`` option to record post-baseline
+  created files as modifications for tracking (#1831).
+- Retired legacy ``<prefilter_cmd>`` syscheck option with a configuration
+  warning (ANT-2026-3VN001L2).
+- Syscheck resource caps: ``syscheck.file_max_size`` (default 1024 MB),
+  ``syscheck.diff_max_size`` (default 10 MB), and ``syscheck.diff_quota_size``
+  (default 1 GB).
+- Logcollector ``logcollector.max_wildcard_files`` (default 256) caps the
+  number of files opened per wildcard location.
+- Monitord daily rotation of ``ossec.log`` into ``logs/ossec/YYYY/Mon/ossec-DD.log``,
+  signed and compressed alongside alert logs (#704).
+- Database output: widened MySQL ``location.id`` from ``SMALLINT`` to ``INT``
+  to prevent ID exhaustion; schema upgrade script provided for existing setups.
+- Windows agent installer hardening: installation directory ACL restricted to
+  SYSTEM and Administrators (#182).
+- Windows agent silent install options: ``/IISLogging=no`` and
+  ``/IntegrityChecking=no`` (#1000).
+- OpenSSL 4 support in ``ossec-authd``.
+- See the GitHub 4.5.0 release notes for the full list of enhancements and security fixes.
+
 4.4.1 (2026/10/18 17:27 +00:00)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

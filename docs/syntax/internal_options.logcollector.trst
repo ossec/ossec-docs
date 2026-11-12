@@ -8,6 +8,12 @@
 
        **Default:** 8
 
+   - logcollector.max_wildcard_files
+
+       Maximum number of files that a single wildcard ``<location>`` pattern may monitor simultaneously (range 1 to 100000). Matches beyond this limit are ignored and logged, preventing file descriptor exhaustion. ``ossec-logcollector`` automatically adjusts its open file descriptor limit to accommodate configured files up to this boundary.
+
+       **Default:** 256
+
    - logcollector.remote_commands=0
 
        Allow the agents to run commands defined in ``agent.conf``.
