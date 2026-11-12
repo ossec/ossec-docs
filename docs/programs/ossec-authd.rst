@@ -8,6 +8,12 @@ The ossec-authd daemon will automatically add an agent to an OSSEC manager and p
 The :ref:`agent-auth` application is the client application used with ossec-authd. 
 `ossec-authd` will create an agent with an ip address of `any` instead of using its actual IP.
 
+.. versionchanged:: 4.5.0
+
+    ``ossec-authd`` supports OpenSSL 4. TLS session negotiation uses generic ``TLS_method()``
+    with a minimum TLS 1.2 requirement, supporting modern cryptographic environments. Certificate
+    IP validation has also been modernized to use standard ASN.1 accessors.
+
 .. warning::
 
     By default there is no authentication or authorization involved in this transaction, so it is recommended that 
