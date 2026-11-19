@@ -175,9 +175,9 @@ Options / Variables
 
 .. envvar:: USE_GEOIP
 
-    ``USE_GEOIP`` enables support for `MAX Mind GeoIP
-    <https://www.maxmind.com/en/geoip2-services-and-databases>`_
-    looks on output.
+    ``USE_GEOIP`` enables MaxMind GeoLite2 lookups through libmaxminddb
+    (`GeoIP2 databases <https://www.maxmind.com/en/geoip2-services-and-databases>`_).
+    Install ``libmaxminddb-devel`` to build, and set ``<geoipdb>`` to a ``.mmdb`` file.
 
     **Applies to Target:** server/hybrid/local
 

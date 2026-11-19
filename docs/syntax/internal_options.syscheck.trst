@@ -11,3 +11,21 @@
        ``ossec-syscheckd`` reads this many files before sleeping for ``syscheck.sleep`` seconds.
 
        **Default:** 15
+
+   - syscheck.file_max_size
+
+       Maximum file size in megabytes (MB) that ``ossec-syscheckd`` will fully read and calculate checksums for (range 0 to 4095). Files exceeding this size are recorded with file size and attributes but assigned a placeholder checksum (``xxx``) to prevent high I/O or memory exhaustion. Setting this to 0 disables the limit.
+
+       **Default:** 1024
+
+   - syscheck.diff_max_size
+
+       Largest file size in kilobytes (KB) that ``ossec-syscheckd`` will copy for snapshot storage and diff generation when ``report_changes`` is enabled (range 0 to 1048576). Setting this to 0 disables the limit.
+
+       **Default:** 10240
+
+   - syscheck.diff_quota_size
+
+       Maximum total size in kilobytes (KB) that the ``queue/diff`` snapshot directory is permitted to occupy (range 0 to 2097151). When this quota is reached, new snapshot copies are halted to prevent disk exhaustion. Setting this to 0 disables the limit.
+
+       **Default:** 1048576

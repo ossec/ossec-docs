@@ -137,6 +137,36 @@
 
    - **Allowed:** any :ref:`os_match` 
 
+- hostname_pcre2
+
+   - Matches the decoded syslog hostname using PCRE2 regular expressions.
+
+   - **Allowed:** any PCRE2 expression
+
+- agent_name
+
+   - The OSSEC agent name that reported or forwarded the event.
+
+   - **Allowed:** any :ref:`os_match`
+
+- agent_name_pcre2
+
+   - Matches the OSSEC agent name using PCRE2 regular expressions.
+
+   - **Allowed:** any PCRE2 expression
+
+- location
+
+   - The log location path or queue source (for example ``/var/log/messages`` or ``syscheck-registry``).
+
+   - **Allowed:** any :ref:`os_match`
+
+- location_pcre2
+
+   - Matches the log location path using PCRE2 regular expressions.
+
+   - **Allowed:** any PCRE2 expression 
+
 - time 
 
    - Time that the event was generated.
@@ -322,13 +352,23 @@
        
        Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
 
+   **Attributes:**
+
+   - *field*
+
+     The event field to match against the list key: ``srcip``, ``srcport``, ``dstip``, ``dstport``, ``user``, ``url``, ``id``, ``hostname``, ``program_name``, ``system_name``, ``status``, or ``action``.
+
+   - *lookup*
+
+     Lookup behavior: ``match_key``, ``not_match_key``, ``address_match_key``, or ``not_address_match_key``.
+
    **Example:**
 
    .. code-block:: xml
 
       <rule id="100000" level="7">
-        <list lookup="match_key" field="srcip">path/to/list/file</list>
-        <description>Checking srcip against cdb list file</description>
+        <list lookup="match_key" field="system_name">path/to/list/file</list>
+        <description>Checking decoded system_name against cdb list file</description>
       </rule>
 
 

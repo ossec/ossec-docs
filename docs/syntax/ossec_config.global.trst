@@ -226,10 +226,13 @@
    - jsonout_output
 
        .. versionadded:: 2.9.0
+       .. versionchanged:: 4.4.0
 
-       Enable or disable writing of json-formated alerts at /var/ossec/logs/alerts/alerts.json
+       Enable or disable writing of JSON alerts at ``/var/ossec/logs/alerts/alerts.json``.
 
-       **Default:** no
+       When this tag is omitted, JSON output stays on. Set it to ``no`` to disable it.
+
+       **Default:** yes
 
        **Allowed:** yes/no
 
@@ -279,26 +282,29 @@
        This will listen for zeromq on the Unix Domain socket /alerts-zmq. 
 
 
-   - geoip_db_path
+   - geoipdb
 
-       The full path to the GeoIP IPv4 database file location.
+       .. versionadded:: 4.4.0
 
-       **Example:**
-
-       .. code-block:: console
-
-          <geoip_db_path>/etc/GeoLiteCity.dat</geoip_db_path>
-
-   - geoip6_db_path
-
-       The full path to the GeoIP IPv6 database file location.
-
+       Path to a MaxMind GeoLite2 City or Country MMDB file. One file covers IPv4 and IPv6. Requires a build with ``USE_GEOIP=1`` (libmaxminddb). GeoIP Legacy ``.dat`` paths are not used for lookups.
 
        **Example:**
 
-       .. code-block:: console
+       .. code-block:: xml
 
-          <geoip6_db_path>/etc/GeoLiteCity.dat</geoip6_db_path>
+          <geoipdb>/usr/share/GeoIP/GeoLite2-City.mmdb</geoipdb>
+
+   - geoipasn
+
+       .. versionadded:: 4.4.0
+
+       Optional path to a GeoLite2 ASN MMDB, used for ASN enrichment.
+
+       **Example:**
+
+       .. code-block:: xml
+
+          <geoipasn>/usr/share/GeoIP/GeoLite2-ASN.mmdb</geoipasn>
 
    -  md5_whitelist
 

@@ -79,6 +79,26 @@ Next up, download the executable named Agent Windows from https://ossec.github.i
    the agent, so a normal install no longer depends on separately installed
    toolchain DLLs on the host.
 
+.. versionchanged:: 4.5.0
+
+   **Installation Permissions Hardening (#182)**
+      The Windows agent install directory ACL is strictly configured to grant
+      access only to ``NT AUTHORITY\SYSTEM`` and ``BUILTIN\Administrators``,
+      mitigating local privilege escalation risks.
+
+   **Silent Install Options (#1000)**
+      When running unattended installs via command-line (``/S``), optional features
+      can be disabled using parameter flags:
+
+      - ``/IISLogging=no``: Skips configuring IIS W3C log monitoring.
+      - ``/IntegrityChecking=no``: Skips enabling syscheck file integrity monitoring.
+
+      Example:
+
+      .. code-block:: bat
+
+         ossec-win32-agent.exe /S /IISLogging=no /IntegrityChecking=no
+
 Run through the install wizard with all defaults. It should launch the Ossec Agent Manager when it's done. The Ossec Agent Manager looks like this: 
 
 .. |image0| image:: https://github.com/Vendetta547/ossec-docs/blob/patch-1/OSSEC-Agent-Manager-Windows.png

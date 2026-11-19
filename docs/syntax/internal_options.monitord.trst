@@ -37,9 +37,12 @@
 
    - monitord.notify_time
 
-       Interval in seconds between agent disconnection notifications.
+       Agent keepalive window used by ``ossec-monitord`` for agent disconnect alerts,
+       as well as ``agent_control`` / ``list_agents`` status and ``ossec-remoted`` message
+       transmission eligibility. An agent is considered active while its keepalive timestamp
+       is newer than ``(3 * notify_time + 30)`` seconds.
 
        **Default:** 600
 
-       **Allowed:** Any positive integer
+       **Allowed:** 60 to 3600
 
